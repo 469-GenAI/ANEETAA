@@ -12,7 +12,7 @@ def teacher_agent(state: State):
     lang = state['user_explanation_language']
     vectorstore = vector_stores.get(subject)
     
-    fallback_template = f"You are an expert tutor. Answer the question for a NEET Medical aspirant in simple English, then explain in {{user_explanation_language}}.\n\nQuestion:\n{{question}}  DO NOT MENTION NEET ASPIRANT IN OUTPUT & Do not add any extra text or repeat the English answer after the translation."
+    fallback_template = f"You are an expert tutor. Answer the question for a NEET Medical aspirant in simple English, then explain in {{user_explanation_language}}.\n\nQuestion:\n{{question}}  DO NOT MENTION NEET ASPIRANT IN OUTPUT & Do not add any extra text or repeat the English answer after the translation and If you don't know how to translate then use english word or skip it."
     fallback_chain = PromptTemplate.from_template(fallback_template) | llm | StrOutputParser()
 
     if not vectorstore:
@@ -35,7 +35,7 @@ def teacher_agent(state: State):
 def mcq_question_solver_agent(state:State):
     user_query = get_last_human_message(state['messages'])
     lang = state['user_explanation_language']
-    question_solver_system_template=f"You are a specialist in biology, chemistry, and physics, responsible for answering NEET entrance exam questions (MCQ format questions) and providing clear explanations in English and {{user_explanation_language}} to help NEET medical aspirants understand how the solution was reached.  DO NOT MENTION NEET ASPIRANT IN OUTPUT Do not add any extra text or repeat the English answer after the translation."
+    question_solver_system_template=f"You are a specialist in biology, chemistry, and physics, responsible for answering NEET entrance exam questions (MCQ format questions) and providing clear explanations in English and {{user_explanation_language}} to help NEET medical aspirants understand how the solution was reached.  DO NOT MENTION NEET ASPIRANT IN OUTPUT Do not add any extra text or repeat the English answer after the translation and If you don't know how to translate then use english word or skip it."
     prompt = ChatPromptTemplate.from_messages([("system", question_solver_system_template), ("human", "{question}")])
     question_solver_chain = prompt | llm | StrOutputParser()
     return {"response_stream": question_solver_chain.stream({"question": user_query, "user_explanation_language": lang})}
@@ -80,7 +80,7 @@ def mentor_agent(state: State):
     lang = state['user_explanation_language']
     vectorstore = vector_stores.get('mentor')
 
-    fallback_template = f"You are a helpful NEET mentor. Answer the user's question from your general knowledge as the internal knowledge base did not contain relevant information. Explain in simple English, then explain in {{user_explanation_language}}.\n\nQuestion:\n{{question}} Do not add any extra text or repeat the English answer after the translation."
+    fallback_template = f"You are a helpful NEET mentor. Answer the user's question from your general knowledge as the internal knowledge base did not contain relevant information. Explain in simple English, then explain in {{user_explanation_language}}.\n\nQuestion:\n{{question}} Do not add any extra text or repeat the English answer after the translation. If you don't know how to translate then use english word or skip it."
     fallback_chain = PromptTemplate.from_template(fallback_template) | llm | StrOutputParser()
 
     if not vectorstore:
@@ -98,7 +98,7 @@ def mentor_agent(state: State):
     
     if len(filtered_docs) >= 2:
         context_str = "\n\n".join(doc.page_content for doc in filtered_docs)
-        rag_template = f"You are a helpful NEET mentor. Answer the user's question based ONLY on the provided context. Explain in simple English, then explain in {{user_explanation_language}}.\n\nContext:\n{{context}}\n\nQuestion:\n{{question}} Do not add any extra text or repeat the English answer after the translation."
+        rag_template = f"You are a helpful NEET mentor. Answer the user's question based ONLY on the provided context. Explain in simple English, then explain in {{user_explanation_language}}.\n\nContext:\n{{context}}\n\nQuestion:\n{{question}} Do not add any extra text or repeat the English answer after the translation. If you don't know how to translate then use english word or skip it."
         rag_chain = PromptTemplate.from_template(rag_template) | llm | StrOutputParser()
         return {"response_stream": rag_chain.stream({"context": context_str, "question": query, "user_explanation_language": lang})}
     else:
@@ -112,6 +112,7 @@ def general_query_agent(state: State):
         "First, answer the user's question clearly and concisely in English. "
         "Then, on a new line, provide a direct translation of your English answer into {user_explanation_language}. "
         "Do not add any extra text or repeat the English answer after the translation."
+        "If you don't know how to translate then use english word or skip it."
     )
     prompt = ChatPromptTemplate.from_messages([("system", system_template), ("human", "{question}")])
     general_chain = prompt | llm | StrOutputParser()
