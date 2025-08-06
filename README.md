@@ -7,8 +7,7 @@
 
 ##  Vision
 
-ANEETA democratizes NEET coaching, making **high-quality medical education** accessible to every aspiring student in India, especially those in **underprivileged and underserved** communities.  
-Success in NEET often requires expensive coaching that excludes millions of talented students. ANEETA aims to break this barrier with an **offline, AI-powered tutor** designed to run on **low-cost, government-distributed laptops**, no internet connection required.
+ANEETA democratizes NEET coaching, making **high-quality medical education** accessible to every aspiring student in India, especially those in **underprivileged and underserved** communities. Success in NEET often requires expensive coaching that excludes millions of talented students. ANEETA aims to break this barrier with an **offline, AI-powered tutor** designed to run on low-cost, government-distributed laptops—no internet connection required. It delivers this through a sophisticated **custom multi-agent architecture**, ensuring the learning experience is not only accessible but also intelligent, adaptive, and deeply personalized.
 
 ---
 
@@ -102,10 +101,10 @@ The system is currently a **work in progress**. Contributions, suggestions, and 
 
 We'd love to hear from you! Reach out with questions, ideas, or just to say hi:
 
-### 👤 Jim Harrington  
+### 👤 Jim Harrington JSN 
 - 🧑‍💻 [GitHub](https://github.com/jimdatapro)  
-- 💼 [LinkedIn](https://linkedin.com/in/yourprofile)  
-- 📧 jim.harrington@example.com *(Update if needed)*
+- 💼 [LinkedIn](https://linkedin.com/in/jimdatapro)  
+- 📧 jimdatapro@gmail.com *(Update if needed)*
 
 ---
 
