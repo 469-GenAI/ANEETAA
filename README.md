@@ -17,6 +17,8 @@ Watch how ANEETA empowers aspiring doctors and levels the educational playing fi
 
 👉 [**Demo Video**](#) *(Insert YouTube or GIF link here)*
 
+Complete Technical Write-up: [**ANEETA Kaggle Write-up**](kaggle.com/competitions/google-gemma-3n-hackathon/writeups/aneeta-agent-for-national-eligibility-cum-entrance)
+
 ---
 
 ## Key Features
