@@ -15,7 +15,7 @@ ANEETA democratizes NEET coaching, making **high-quality medical education** acc
 
 Watch how ANEETA empowers aspiring doctors and levels the educational playing field:
 
-[**ANEETA**]([#](https://youtu.be/C5ptT20AH-4))
+**YouTube**: [**ANEETA**](https://youtu.be/C5ptT20AH-4)
 
 **Kaggle Write-up**: [**ANEETA Kaggle Write-up**](https://www.kaggle.com/competitions/google-gemma-3n-hackathon/writeups/aneeta-agent-for-national-eligibility-cum-entrance)
 
