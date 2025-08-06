@@ -38,7 +38,7 @@ ANEETA operates with a team of specialized agents, each designed for a specific 
 Guides students with **personalized study plans**, time management, and motivational coaching, drawing insights from **NEET toppers and experts**.
 
 <p align="center">
-  <i>![Mentor Agent Screenshot](#)</i>
+  <img src="Images/Mentor1.gif" alt="Agents of ANEETA" width="800"/>
 </p>
 
 ---
@@ -47,7 +47,7 @@ Guides students with **personalized study plans**, time management, and motivati
 Acts as a **subject-matter expert**, explaining complex concepts in **Physics, Chemistry, and Biology** aligned with the **NCERT** syllabus.
 
 <p align="center">
-  <i>![Teacher Agent Screenshot](#)</i>
+  <img src="Images/Teacher1.gif" alt="Agents of ANEETA" width="800"/>
 </p>
 
 ---
@@ -56,7 +56,7 @@ Acts as a **subject-matter expert**, explaining complex concepts in **Physics, C
 Generates **custom NEET-format quizzes**, based on the style and difficulty of the **last three years’ official papers**.
 
 <p align="center">
-  <i>![Trainer Agent Screenshot](#)</i>
+  <img src="Images/Quiz1.gif" alt="Agents of ANEETA" width="800"/>
 </p>
 
 ---
@@ -65,7 +65,7 @@ Generates **custom NEET-format quizzes**, based on the style and difficulty of t
 Provides **quick, precise, and step-by-step solutions** to tough NEET MCQs using **Gemma-3n’s zero-shot reasoning** power.
 
 <p align="center">
-  <i>![Doubt Solver Agent Screenshot](#)</i>
+  <img src="Images/Solver1.gif" alt="Agents of ANEETA" width="800"/>
 </p>
 
 ---
