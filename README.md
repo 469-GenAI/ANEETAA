@@ -1,10 +1,5 @@
 # ANEETA 👩🏾‍⚕️ - Agent for National Eligibility cum Entrance Test Assistance
 
-Official implementation of **ANEETA** for the **Google - The Gemma 3n Impact Challenge**
-
-<p align="center">
-  <img src="[LINK_TO_YOUR_PROJECT_LOGO_OR_BANNER_HERE]" alt="ANEETA Banner" width="800"/>
-</p>
 
 ### A Multi-Agent AI Tutor for Democratizing Medical Education in India for the Underserved & Underprivileged
 
