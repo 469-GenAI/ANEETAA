@@ -7,8 +7,8 @@
 
 ##  Vision
 
-ANEETA democratizes NEET coaching, making **high-quality medical education** accessible to every aspiring student in India—especially those in **underprivileged and underserved** communities.  
-Success in NEET often requires expensive coaching that excludes millions of talented students. ANEETA aims to break this barrier with an **offline, AI-powered tutor** designed to run on **low-cost, government-distributed laptops**—no internet connection required.
+ANEETA democratizes NEET coaching, making **high-quality medical education** accessible to every aspiring student in India, especially those in **underprivileged and underserved** communities.  
+Success in NEET often requires expensive coaching that excludes millions of talented students. ANEETA aims to break this barrier with an **offline, AI-powered tutor** designed to run on **low-cost, government-distributed laptops**, no internet connection required.
 
 ---
 
@@ -31,7 +31,7 @@ Powered by **Google’s lightweight Gemma-3n model**, ANEETA’s multi-agent sys
 ANEETA operates with a team of specialized agents, each designed for a specific role:
 
 ### Mentor Agent  
-Guides students with **personalized study plans**, time management, and motivational coaching—drawing insights from **NEET toppers and experts**.
+Guides students with **personalized study plans**, time management, and motivational coaching, drawing insights from **NEET toppers and experts**.
 
 <p align="center">
   <i>![Mentor Agent Screenshot](#)</i>
@@ -98,10 +98,15 @@ The system is currently a **work in progress**. Contributions, suggestions, and 
 
 We'd love to hear from you! Reach out with questions, ideas, or just to say hi:
 
-- **Name/Team**: [Your Name or Team Name]  
-- **GitHub**: [https://github.com/yourusername](https://github.com/yourusername)  
+- **Name**: [Jim Harrington]  
+- **GitHub**: [https://github.com/jimdatapro](https://github.com/jimdatapro)  
 - **LinkedIn**: [https://linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
 - **Email**: [your.email@example.com](mailto:your.email@example.com)
+
+- **Name**: [Jabin Joshua S]  
+- **GitHub**: [https://github.com/flarrow27](https://github.com/flarrow27)  
+- **LinkedIn**: [https://linkedin.com/in/jabinjoshua](https://linkedin.com/in/jabinjoshua)  
+- **Email**: [jabinjoshua.s@gmail.com](mailto:jabinjoshua.s@gmail.com)
 
 ---
 
