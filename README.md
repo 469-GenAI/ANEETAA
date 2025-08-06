@@ -83,7 +83,7 @@ Provides **quick, precise, and step-by-step solutions** to tough NEET MCQs using
 
 ANEETA represents a **major leap toward educational equity**. By providing a **sophisticated, offline, AI-powered tutor** on entry-level hardware, it removes the barriers that keep brilliant students from succeeding due to financial constraints.
 
-With ANEETA, **ambition—not access—defines success**.
+With ANEETA, **ambition defines success, not access**.
 
 ---
 
