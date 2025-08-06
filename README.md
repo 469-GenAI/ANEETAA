@@ -1,18 +1,18 @@
-# ANEETA 👩🏾‍⚕️ - Agent for National Eligibility cum Entrance Test Assistance
+# ANEETA - Agent for National Eligibility cum Entrance Test Assistance
 
 
 ### A Multi-Agent AI Tutor for Democratizing Medical Education in India for the Underserved & Underprivileged
 
 ---
 
-## 🎯 Vision
+##  Vision
 
 ANEETA democratizes NEET coaching, making **high-quality medical education** accessible to every aspiring student in India—especially those in **underprivileged and underserved** communities.  
 Success in NEET often requires expensive coaching that excludes millions of talented students. ANEETA aims to break this barrier with an **offline, AI-powered tutor** designed to run on **low-cost, government-distributed laptops**—no internet connection required.
 
 ---
 
-## 🎥 Demo
+##  Demo
 
 Watch how ANEETA empowers aspiring doctors and levels the educational playing field:
 
@@ -20,17 +20,17 @@ Watch how ANEETA empowers aspiring doctors and levels the educational playing fi
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 Powered by **Google’s lightweight Gemma-3n model**, ANEETA’s multi-agent system delivers personalized, adaptive learning in **English and various Indian regional languages**. All content is grounded in **NCERT textbooks** and **past NEET papers** for maximum accuracy and relevance.
 
 ---
 
-## 🧠 The Agentic Team
+## The Agentic Team
 
 ANEETA operates with a team of specialized agents, each designed for a specific role:
 
-### 👨‍🏫 Mentor Agent  
+### Mentor Agent  
 Guides students with **personalized study plans**, time management, and motivational coaching—drawing insights from **NEET toppers and experts**.
 
 <p align="center">
@@ -39,7 +39,7 @@ Guides students with **personalized study plans**, time management, and motivati
 
 ---
 
-### 🧑‍🏫 Teacher Agent  
+### Teacher Agent  
 Acts as a **subject-matter expert**, explaining complex concepts in **Physics, Chemistry, and Biology** aligned with the **NCERT** syllabus.
 
 <p align="center">
@@ -48,7 +48,7 @@ Acts as a **subject-matter expert**, explaining complex concepts in **Physics, C
 
 ---
 
-### 🏋️‍♀️ Trainer Agent  
+### Trainer Agent  
 Generates **custom NEET-format quizzes**, based on the style and difficulty of the **last three years’ official papers**.
 
 <p align="center">
@@ -57,7 +57,7 @@ Generates **custom NEET-format quizzes**, based on the style and difficulty of t
 
 ---
 
-### 💡 Doubt Solver Agent  
+### Doubt Solver Agent  
 Provides **quick, precise, and step-by-step solutions** to tough NEET MCQs using **Gemma-3n’s zero-shot reasoning** power.
 
 <p align="center">
@@ -66,7 +66,7 @@ Provides **quick, precise, and step-by-step solutions** to tough NEET MCQs using
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 | Component         | Purpose                                                                 |
 |------------------|-------------------------------------------------------------------------|
@@ -79,7 +79,7 @@ Provides **quick, precise, and step-by-step solutions** to tough NEET MCQs using
 
 ---
 
-## 🧾 Conclusion
+## Conclusion
 
 ANEETA represents a **major leap toward educational equity**. By providing a **sophisticated, offline, AI-powered tutor** on entry-level hardware, it removes the barriers that keep brilliant students from succeeding due to financial constraints.
 
@@ -87,14 +87,14 @@ With ANEETA, **ambition—not access—defines success**.
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This is an **experimental project** developed for the **Google - The Gemma 3n Impact Challenge**.  
 The system is currently a **work in progress**. Contributions, suggestions, and feedback are **warmly welcomed**!
 
 ---
 
-## 📬 Contact
+## Contact
 
 We'd love to hear from you! Reach out with questions, ideas, or just to say hi:
 
