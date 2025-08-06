@@ -7,7 +7,7 @@
 
 ##  Vision
 
-ANEETA democratizes NEET coaching, making **high-quality medical education** accessible to every aspiring student in India, especially those in **underprivileged and underserved** communities. Success in NEET often requires expensive coaching that excludes millions of talented students. ANEETA aims to break this barrier with an **offline, AI-powered tutor** designed to run on low-cost, government-distributed laptops—no internet connection required. It delivers this through a sophisticated **custom multi-agent architecture**, ensuring the learning experience is not only accessible but also intelligent, adaptive, and deeply personalized.
+ANEETA democratizes NEET coaching, making **high-quality medical education** accessible to every aspiring student in India, especially those in **underprivileged and underserved** communities. Success in NEET often requires expensive coaching that excludes millions of talented students. ANEETA aims to break this barrier with an **offline, AI-powered tutor** designed to run on **low-cost, government-distributed laptops**, no internet connection required.
 
 ---
 
@@ -21,7 +21,7 @@ Watch how ANEETA empowers aspiring doctors and levels the educational playing fi
 
 ## Key Features
 
-Powered by **Google’s lightweight Gemma-3n model**, ANEETA’s multi-agent system delivers personalized, adaptive learning in **English and various Indian regional languages**. All content is grounded in **NCERT textbooks** and **past NEET papers** for maximum accuracy and relevance.
+Powered by **Google’s lightweight Gemma-3n model**, ANEETA delivers personalized learning through a **custom multi-agent architecture**. This system operates in **English and various Indian regional languages**, with all content grounded in NCERT textbooks and past NEET papers for maximum accuracy and relevance. This architecture allows a team of specialized agents to collaborate, providing a **holistic and intelligent learning experience** that goes beyond a single chatbot.
 
 <p align="center">
   <img src="Images/ANEETA Tech Report-5_1.png" alt="Agents of ANEETA" width="800"/>
@@ -104,7 +104,7 @@ We'd love to hear from you! Reach out with questions, ideas, or just to say hi:
 ### 👤 Jim Harrington JSN 
 - 🧑‍💻 [GitHub](https://github.com/jimdatapro)  
 - 💼 [LinkedIn](https://linkedin.com/in/jimdatapro)  
-- 📧 jimdatapro@gmail.com *(Update if needed)*
+- 📧 jimdatapro@gmail.com
 
 ---
 
