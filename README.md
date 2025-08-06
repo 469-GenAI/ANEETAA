@@ -98,15 +98,17 @@ The system is currently a **work in progress**. Contributions, suggestions, and 
 
 We'd love to hear from you! Reach out with questions, ideas, or just to say hi:
 
-- **Name**: [Jim Harrington]  
-- **GitHub**: [https://github.com/jimdatapro](https://github.com/jimdatapro)  
-- **LinkedIn**: [https://linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
+### 👤 Jim Harrington  
+- 🧑‍💻 [GitHub](https://github.com/jimdatapro)  
+- 💼 [LinkedIn](https://linkedin.com/in/yourprofile)  
+- 📧 jim.harrington@example.com *(Update if needed)*
 
-- **Name**: [Jabin Joshua S]  
-- **GitHub**: [https://github.com/flarrow27](https://github.com/flarrow27)  
-- **LinkedIn**: [https://linkedin.com/in/jabinjoshua](https://linkedin.com/in/jabinjoshua)  
-- **Email**: [jabinjoshua.s@gmail.com](mailto:jabinjoshua.s@gmail.com)
+---
+
+### 👤 Jabin Joshua S  
+- 🧑‍💻 [GitHub](https://github.com/flarrow27)  
+- 💼 [LinkedIn](https://linkedin.com/in/jabinjoshua)  
+- 📧 jabinjoshua.s@gmail.com
 
 ---
 
