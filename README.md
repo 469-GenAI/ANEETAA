@@ -24,7 +24,7 @@ Watch how ANEETA empowers aspiring doctors and levels the educational playing fi
 
 Powered by **Google’s lightweight Gemma-3n model**, ANEETA’s multi-agent system delivers personalized, adaptive learning in **English and various Indian regional languages**. All content is grounded in **NCERT textbooks** and **past NEET papers** for maximum accuracy and relevance.
 
-[https://github.com/jimdatapro/ANEETA/blob/d159ee234ce15402f8e5732604ab9f8b2e0283f8/Images/ANEETA%20Tech%20Report-5_1.png]()
+[](Images/ANEETA Tech Report-5_1.png)
 
 ---
 
