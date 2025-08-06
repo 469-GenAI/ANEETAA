@@ -1,4 +1,4 @@
-# ANEETA - Agent for National Eligibility cum Entrance Test Assistance
+# ANEETA - Agents for National Eligibility cum Entrance Test Assistance
 
 
 ### A Multi-Agent AI Tutor for Democratizing Medical Education in India for the Underserved & Underprivileged
