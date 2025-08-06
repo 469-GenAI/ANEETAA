@@ -63,7 +63,7 @@ Generates **custom NEET-format quizzes**, based on the style and difficulty of t
 ---
 
 ### Doubt Solver Agent  
-Provides **quick, precise, and step-by-step solutions** to tough NEET MCQs using **Gemma-3n’s zero-shot reasoning** power.
+Provides **quick, precise, and step-by-step solutions** to tough NEET MCQs using **Gemma-3n’**.
 
 <p align="center">
   <img src="Images/Solver1.gif" alt="Agents of ANEETA" width="800"/>
