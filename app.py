@@ -3,6 +3,8 @@ import os
 import streamlit as st
 import time
 
+st.set_page_config(page_title="👩🏽‍⚕️ ANEETA", layout="wide")
+
 # --- Path Correction (Robust Version) ---
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__)))
 sys.path.insert(0, PROJECT_ROOT)
@@ -21,7 +23,6 @@ from src.aneeta.graph.workflow import get_graph
 from src.aneeta.ui.quiz import handle_quiz_ui
 
 # --- Page Configuration ---
-st.set_page_config(page_title="👩🏽‍⚕️ " + PAGE_TITLE, layout="wide")
 st.title("👩🏽‍⚕️ " + PAGE_TITLE)
 st.markdown(f"*{TAG_LINE}*")
 
