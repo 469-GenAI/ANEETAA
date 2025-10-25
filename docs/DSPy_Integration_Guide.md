@@ -27,7 +27,6 @@ DSPy is a framework for algorithmically optimizing LM prompts and weights. Inste
 3. **Optimize** - Use training data to improve prompts automatically
 
 ### Key Benefits:
-
 - **Automated prompt engineering** - No manual tweaking
 - **Consistent quality** - Systematic optimization
 - **Composable** - Build complex pipelines easily
@@ -38,14 +37,12 @@ DSPy is a framework for algorithmically optimizing LM prompts and weights. Inste
 ## Why DSPy for ANEETAA?
 
 ### Challenges with Manual Prompts:
-
 ❌ Time-consuming to craft effective prompts  
 ❌ Inconsistent quality across agents  
 ❌ Hard to maintain and update  
 ❌ No systematic way to improve
 
 ### DSPy Solutions:
-
 ✅ Automatically optimize prompts using NEET training data  
 ✅ Consistent structure across all agents  
 ✅ Easy to update and maintain  
@@ -56,13 +53,11 @@ DSPy is a framework for algorithmically optimizing LM prompts and weights. Inste
 ## Architecture
 
 ### Original ANEETAA Flow:
-
 ```
 User Query → Router → Agent (Manual Prompts) → LLM → Response
 ```
 
 ### DSPy-Enhanced Flow:
-
 ```
 User Query → Router → DSPy Agent (Optimized Signatures) → LLM → Response
                                     ↓
@@ -71,9 +66,7 @@ User Query → Router → DSPy Agent (Optimized Signatures) → LLM → Response
 ```
 
 ### Hybrid Approach:
-
 ANEETAA supports **both** original and DSPy agents:
-
 - Toggle via `USE_DSPY_AGENTS` environment variable
 - Fallback to original agents if DSPy fails
 - A/B testing capability for comparison
@@ -87,11 +80,10 @@ ANEETAA supports **both** original and DSPy agents:
 **Purpose**: Explain NEET concepts from NCERT syllabus
 
 **Signature**:
-
 ```python
 class TeacherSignature(dspy.Signature):
     """Explain a NEET concept clearly and accurately."""
-
+    
     context: str = dspy.InputField(desc="NCERT textbook content")
     question: str = dspy.InputField(desc="Student question")
     language: str = dspy.InputField(desc="Target language")
@@ -99,7 +91,6 @@ class TeacherSignature(dspy.Signature):
 ```
 
 **Optimization**:
-
 - Trained on 200+ NCERT Q&A pairs
 - SIMBA optimizer with k=3 demonstrations
 - Optimizes for clarity and accuracy
@@ -111,18 +102,16 @@ class TeacherSignature(dspy.Signature):
 **Purpose**: Solve NEET MCQs with step-by-step reasoning
 
 **Signature**:
-
 ```python
 class MCQSolverSignature(dspy.Signature):
     """Solve a NEET MCQ with reasoning."""
-
+    
     question: str = dspy.InputField(desc="MCQ with 4 options")
     language: str = dspy.InputField(desc="Explanation language")
     solution: str = dspy.OutputField(desc="Step-by-step solution")
 ```
 
 **Optimization**:
-
 - Trained on solved NEET papers (3 years)
 - SIMBA optimizer focuses on reasoning steps
 - Optimizes for correct answer + explanation quality
@@ -134,11 +123,10 @@ class MCQSolverSignature(dspy.Signature):
 **Purpose**: Generate unique NEET-style practice questions
 
 **Signature**:
-
 ```python
 class QuizGenerationSignature(dspy.Signature):
     """Generate a unique NEET MCQ."""
-
+    
     topic: str = dspy.InputField(desc="Subject/topic")
     context: str = dspy.InputField(desc="Reference questions")
     history: str = dspy.InputField(desc="Already asked questions")
@@ -146,7 +134,6 @@ class QuizGenerationSignature(dspy.Signature):
 ```
 
 **Optimization**:
-
 - Trained on question bank diversity
 - Optimizes for uniqueness and difficulty
 - Learns to avoid repetition
@@ -158,11 +145,10 @@ class QuizGenerationSignature(dspy.Signature):
 **Purpose**: Provide NEET preparation guidance
 
 **Signature**:
-
 ```python
 class MentorSignature(dspy.Signature):
     """Provide NEET exam guidance."""
-
+    
     context: str = dspy.InputField(desc="Expert advice")
     question: str = dspy.InputField(desc="Student query")
     language: str = dspy.InputField(desc="Response language")
@@ -170,7 +156,6 @@ class MentorSignature(dspy.Signature):
 ```
 
 **Optimization**:
-
 - Trained on topper strategies and mentor guides
 - SIMBA optimizer for motivational quality
 - Optimizes for actionable advice
@@ -237,7 +222,6 @@ See `notebooks/prepare_training_data.ipynb`:
 3. Format as DSPy examples
 
 Example:
-
 ```python
 from dspy.datasets import Dataset
 
@@ -298,13 +282,11 @@ with mlflow.start_run():
 ### Optimization Strategies
 
 **SIMBA** (Similarity-Based Matching & Bootstrapping):
-
 - Bootstraps examples from training data
 - Uses random search for prompt variations
 - Fast and effective for small datasets (50-200 examples)
 
 **Metrics Used**:
-
 - `exact_match`: For MCQ answer correctness
 - `semantic_f1`: For explanation quality
 - `llm_judge`: For subjective quality assessment
@@ -333,13 +315,11 @@ response = result['response_stream']
 ### Toggle Between Agents
 
 **Use DSPy**:
-
 ```env
 USE_DSPY_AGENTS=true
 ```
 
 **Use Original**:
-
 ```env
 USE_DSPY_AGENTS=false
 ```
@@ -367,30 +347,28 @@ result = teacher_agent(
 
 ### Quantitative Results
 
-| Agent      | Metric                     | Baseline | DSPy | Improvement |
-| ---------- | -------------------------- | -------- | ---- | ----------- |
-| Teacher    | Explanation Quality (1-10) | 6.2      | 7.8  | **+25.8%**  |
-| Teacher    | Fact Accuracy              | 82%      | 94%  | **+12 pp**  |
-| MCQ Solver | Step Quality               | 7.1      | 8.9  | **+25.4%**  |
-| MCQ Solver | Correct Rate               | 88%      | 96%  | **+8 pp**   |
-| Trainer    | Uniqueness                 | 65%      | 91%  | **+26 pp**  |
-| Mentor     | Helpfulness                | 7.3      | 8.6  | **+17.8%**  |
+| Agent | Metric | Baseline | DSPy | Improvement |
+|-------|--------|----------|------|-------------|
+| Teacher | Explanation Quality (1-10) | 6.2 | 7.8 | **+25.8%** |
+| Teacher | Fact Accuracy | 82% | 94% | **+12 pp** |
+| MCQ Solver | Step Quality | 7.1 | 8.9 | **+25.4%** |
+| MCQ Solver | Correct Rate | 88% | 96% | **+8 pp** |
+| Trainer | Uniqueness | 65% | 91% | **+26 pp** |
+| Mentor | Helpfulness | 7.3 | 8.6 | **+17.8%** |
 
 ### Qualitative Improvements
 
 **Before DSPy**:
-
 ```
 Q: Explain mitosis
 A: Mitosis is cell division. It has stages.
 ```
 
 **After DSPy**:
-
 ```
 Q: Explain mitosis
-A: Mitosis is the process of nuclear division in eukaryotic cells
-that produces two genetically identical daughter nuclei.
+A: Mitosis is the process of nuclear division in eukaryotic cells 
+that produces two genetically identical daughter nuclei. 
 
 Key stages (NEET important):
 1. Prophase - Chromatin condenses into chromosomes
@@ -408,7 +386,6 @@ Tamil: மைட்டோசிஸ் என்பது கலப் பிர�
 ### Issue: "DSPy agents not loading"
 
 **Solution**:
-
 1. Check `USE_DSPY_AGENTS=true` in `.env`
 2. Verify DSPy is installed: `pip show dspy`
 3. Check logs for errors in Streamlit console
@@ -416,7 +393,6 @@ Tamil: மைட்டோசிஸ் என்பது கலப் பிர�
 ### Issue: "OpenAI API key error"
 
 **Solution**:
-
 ```env
 # Add to .env
 OPENAI_API_KEY=sk-your-key-here
@@ -426,7 +402,6 @@ DSPY_LM_MODEL=openai/gpt-4o-mini
 ### Issue: "Want to use Ollama instead of OpenAI"
 
 **Solution**:
-
 ```env
 # Use local Ollama model
 DSPY_LM_MODEL=ollama/llama3.1:8b
@@ -437,7 +412,6 @@ Note: Some DSPy features work better with OpenAI. For production, recommend Open
 ### Issue: "Optimization takes too long"
 
 **Solution**:
-
 1. Reduce training set size (start with 20-50 examples)
 2. Reduce `num_threads` in optimizer
 3. Use smaller model for optimization
@@ -446,7 +420,6 @@ Note: Some DSPy features work better with OpenAI. For production, recommend Open
 ### Issue: "MLflow not tracking DSPy calls"
 
 **Solution**:
-
 1. Ensure MLflow server is running: `mlflow ui`
 2. Check `MLFLOW_ENABLE_TRACING=true`
 3. Call `mlflow.dspy.autolog()` before using agents
@@ -456,31 +429,26 @@ Note: Some DSPy features work better with OpenAI. For production, recommend Open
 ## Best Practices
 
 ### 1. Start Small
-
 - Begin with one agent (e.g., Teacher)
 - Use 20-50 training examples
 - Validate improvements before scaling
 
 ### 2. Use Good Training Data
-
 - Ensure Q&A pairs are accurate
 - Cover diverse topics
 - Include edge cases
 
 ### 3. Evaluate Properly
-
 - Always use held-out test set
 - Use multiple metrics (accuracy, quality, latency)
 - Get human evaluation for subjective tasks
 
 ### 4. Version Control
-
 - Tag models with git commits
 - Use MLflow for model versioning
 - Document optimization runs
 
 ### 5. Monitor in Production
-
 - Track agent performance metrics
 - Use MLflow tracing for debugging
 - Set up alerts for degradation

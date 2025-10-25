@@ -14,3 +14,13 @@ VECTOR_DB_CONFIGS = {
     'question_bank': 'chroma_vector_db_questionbank_nomic',
     'mentor': 'chroma_vector_db_mentor_nomic'
 }
+
+# --- DSPy Configuration ---
+import os
+USE_DSPY_AGENTS = os.getenv("USE_DSPY_AGENTS", "false").lower() == "true"
+DSPY_LM_MODEL = os.getenv("DSPY_LM_MODEL", "openai/gpt-4o-mini")  # Can also use Ollama models
+
+# --- MLflow Configuration ---
+MLFLOW_TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI", "http://localhost:5000")
+MLFLOW_EXPERIMENT_NAME = os.getenv("MLFLOW_EXPERIMENT_NAME", "aneeta-production")
+MLFLOW_ENABLE_TRACING = os.getenv("MLFLOW_ENABLE_TRACING", "true").lower() == "true"
