@@ -1,0 +1,32 @@
+﻿# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ChromaDB vector databases
+**/chroma_vector_db_*/chroma.sqlite3
+
+# Logs
+*.log
+
