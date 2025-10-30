@@ -1,0 +1,109 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Data files and caches
+*.pyc
+.cache/
+*.cache
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# Large data files
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.json (optional - comment out if needed)
+*.jsonl (optional - comment out if needed)
+
+# Chroma Vector Database (local) - regenerable from source data
+chroma_vector_db*/
+src/aneeta/vectordb/chroma_vector_db_*/
+*.sqlite3
+*.db
+
+# Logs and temporary files
+*.log
+logs/
+*.tmp
+temp/
+tmp/
+
+# OS Files
+.DS_Store
+Thumbs.db
+*.exe
+*.dll
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Test and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Node modules (if using Markdown Preview or other tools)
+node_modules/
+
+# VS Code extensions cache
+.vscode/extensions/
+
+# Processed outputs (optional - uncomment if you want to track these)
+# Processed Data/
+# Split_Question_Papers/
+# Split_Question_Papers_Organized/
+
+# Misc
+*.bak
+*.swp
+.DS_Store
