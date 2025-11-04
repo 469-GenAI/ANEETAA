@@ -1,0 +1,2435 @@
+[
+  {
+    "question_id": "Question_Paper_40_p3_q20",
+    "question_text": "In a series LCR circuit, the inductance L is 10 mH, capacitance C is 1 \\(\\mu\\)F and resistance R is 100 \\(\\Omega\\). The frequency at which resonance occurs is",
+    "question_type": "numerical",
+    "options": {
+      "A": "1.59 kHz",
+      "B": "15.9 rad/s",
+      "C": "15.9 kHz",
+      "D": "1.59 rad/s"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This problem requires the calculation of the resonant frequency of a series LCR circuit using the standard formula. The solution involves substituting the given values of inductance (L) and capacitance (C) and being careful with unit conversions.",
+      "key_concepts": [
+        "AC Circuits",
+        "Series LCR Circuit",
+        "Electrical Resonance",
+        "Resonant Frequency"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the resonant frequency (\\(f_0\\)) of a series LCR circuit. Resonance occurs when the inductive reactance (\\(X_L\\)) equals the capacitive reactance (\\(X_C\\)).",
+          "formula": "\\[f_0 = \\frac{1}{2\\pi\\sqrt{LC}}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the given values and convert them to base SI units.\n- Inductance \\(L\\) = 10 mH = \\(10 \\times 10^{-3}\\) H = \\(10^{-2}\\) H\n- Capacitance \\(C\\) = 1 \\(\\mu\\)F = \\(1 \\times 10^{-6}\\) F\n- Resistance \\(R\\) = 100 \\(\\Omega\\) (Note: Resistance is not needed to calculate the resonant frequency)."
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the product LC.",
+          "formula": "\\[LC = (10^{-2}) \\times (10^{-6}) = 10^{-8} \\text{ s}^2\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the value of LC into the resonant frequency formula.",
+          "formula": "\\[f_0 = \\frac{1}{2\\pi\\sqrt{10^{-8}}} = \\frac{1}{2\\pi \\times 10^{-4}} = \\frac{10^4}{2\\pi} \\text{ Hz}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the numerical value.",
+          "formula": "\\[f_0 = \\frac{10000}{2 \\times 3.14159...} \\approx \\frac{10000}{6.283} \\approx 1591.5 \\text{ Hz}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Convert the result to kilohertz (kHz) and compare with the options.",
+          "formula": "\\[f_0 \\approx 1.59 \\text{ kHz}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Principle of Electrical Resonance"
+      ],
+      "correct_option_reasoning": "The resonant frequency \\(f_0\\) of an LCR circuit is given by \\(f_0 = 1 / (2\\pi\\sqrt{LC})\\). Substituting the given values \\(L = 10^{-2}\\) H and \\(C = 10^{-6}\\) F, the frequency is calculated to be approximately 1592 Hz, which is equal to 1.59 kHz.",
+      "incorrect_options_analysis": {
+        "B": "This is an incorrect value for the angular frequency (\\(\\omega_0\\)). \\(\\omega_0 = 10^4\\) rad/s.",
+        "C": "This value (15.9 kHz) is ten times the correct frequency and may result from a calculation error with the powers of ten or \\(\\pi\\).",
+        "D": "This is an incorrect value and the wrong unit (rad/s is for angular frequency)."
+      },
+      "common_mistakes": [
+        "Forgetting to convert millihenrys (mH) and microfarads (\\(\\mu\\)F) to Henrys (H) and Farads (F).",
+        "Confusing resonant frequency \\(f_0\\) (in Hz) with resonant angular frequency \\(\\omega_0\\) (in rad/s). The formula for \\(\\omega_0\\) lacks the \\(2\\pi\\) factor.",
+        "Calculation errors with square roots or powers of ten."
+      ],
+      "additional_notes": ""
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Alternating Current",
+      "subtopic": "LC Oscillations",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "ac_circuits",
+        "lcr_circuit",
+        "resonance",
+        "numerical_calculation",
+        "formula_based"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p3_q21",
+    "question_text": "The magnitude and direction of the current in the following circuit is\n\n(A circuit diagram is shown with a single loop containing a 10V battery, a 7Ω resistor, a 5V battery, a 2Ω resistor, and a 1Ω resistor labeled E connecting points A and B. The batteries are connected in opposition.)",
+    "question_type": "numerical",
+    "options": {
+      "A": "1.5 A from B to A through E",
+      "B": "0.2 A from B to A through E",
+      "C": "0.5 A from A to B through E",
+      "D": "\\(\\frac{5}{9}\\) A from A to B through E"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This question requires applying Kirchhoff's voltage law to a simple DC circuit containing two opposing voltage sources and several resistors to find the net current and its direction.",
+      "key_concepts": [
+        "DC Circuits",
+        "Kirchhoff's Voltage Law (KVL)",
+        "EMF (Electromotive Force)",
+        "Equivalent Resistance"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the circuit. It's a single loop with two batteries (10 V and 5 V) and three resistors (7 Ω, 2 Ω, 1 Ω). The batteries are connected such that their positive terminals face each other in the loop, meaning they are in opposition."
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the net electromotive force (\\(E_{net}\\)) in the loop. Since the batteries oppose each other, the net EMF is their difference. The current will flow in the direction dictated by the larger battery.",
+          "formula": "\\[E_{net} = 10\\text{ V} - 5\\text{ V} = 5\\text{ V}\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the total equivalent resistance (\\(R_{eq}\\)) in the circuit. All resistors are in a single loop, so they are in series.",
+          "formula": "\\[R_{eq} = 7\\Omega + 2\\Omega + 1\\Omega = 10\\Omega\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Apply Ohm's law to the entire circuit to find the magnitude of the current (I).",
+          "formula": "\\[I = \\frac{E_{net}}{R_{eq}} = \\frac{5\\text{ V}}{10\\Omega} = 0.5\\text{ A}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Determine the direction of the current. The 10 V battery is stronger, so it drives the current out of its positive terminal, causing a counter-clockwise flow in the circuit diagram. Tracing this path through the central wire, the current flows from point A to point B."
+        }
+      ],
+      "scientific_principles": [
+        "Kirchhoff's Laws",
+        "Ohm's Law"
+      ],
+      "correct_option_reasoning": "The two voltage sources are in opposition, yielding a net EMF of (10 - 5) = 5 V. The total series resistance is (7 + 2 + 1) = 10 Ω. By Ohm's Law, the current is \\(I = V/R = 5/10 = 0.5\\) A. The direction of flow is dictated by the stronger 10 V source, which drives the current from A to B through the middle resistor E.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect magnitude and direction.",
+        "B": "Incorrect magnitude and direction.",
+        "D": "Incorrect magnitude. This would result if the 2Ω resistor was missed, giving \\(R_{eq}=8\\Omega\\), but that doesn't produce 5/9."
+      },
+      "common_mistakes": [
+        "Adding the EMFs of the batteries instead of subtracting them when they are connected in opposition.",
+        "Incorrectly determining the direction of the current flow based on the net EMF.",
+        "Miscalculating the total series resistance."
+      ],
+      "additional_notes": ""
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "Kirchhoff's Rules",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "dc_circuits",
+        "kirchhoffs_law",
+        "ohm_law",
+        "numerical_calculation",
+        "circuit_analysis"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": true,
+      "visual_description": "The question refers to a circuit diagram. It is a single loop with components in series. Starting from the top left and going clockwise: a 7Ω resistor, a 5V battery with its positive terminal facing left, a 2Ω resistor. The bottom wire connects back to the left. A central wire connects the top and bottom wires, containing a 10V battery (positive terminal up at point A) and a 1Ω resistor (labeled E, below the battery, ending at point B).",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p4_q23",
+    "question_text": "The errors in the measurement which arise due to unpredictable fluctuations in temperature and voltage supply are",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Random errors",
+      "B": "Instrumental errors",
+      "C": "Personal errors",
+      "D": "Least count errors"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question asks to classify errors that occur due to unpredictable and uncontrollable changes in experimental conditions. This type of error is, by definition, a random error.",
+      "key_concepts": [
+        "Errors in Measurement",
+        "Systematic Errors",
+        "Random Errors",
+        "Experimental Physics"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Define the different types of measurement errors.\n- **Random errors:** These occur irregularly and have a random direction (can be positive or negative). They arise from unpredictable fluctuations in experimental conditions (like temperature, voltage) or from limitations in the observer's judgment.\n- **Systematic errors:** These are errors that are consistent and unidirectional. They include instrumental errors (e.g., zero error), personal errors (e.g., parallax), and errors due to imperfect technique.\n- **Instrumental errors:** A type of systematic error from a faulty instrument.\n- **Personal errors:** A type of systematic error from the observer's bias.\n- **Least count errors:** Errors associated with the resolution of the measuring instrument."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze the cause of error described in the question: 'unpredictable fluctuations in temperature and voltage supply'."
+        },
+        {
+          "step_number": 3,
+          "description": "Match the description with the correct error type. The keyword is 'unpredictable'. Unpredictable and uncontrollable fluctuations are the primary cause of random errors."
+        }
+      ],
+      "scientific_principles": [
+        "Theory of Measurement and Error Analysis"
+      ],
+      "correct_option_reasoning": "Random errors are defined as those that arise from random and unpredictable variations in experimental conditions. Fluctuations in temperature or voltage supply are classic examples of such conditions that can affect measurement readings in an irregular and non-reproducible way.",
+      "incorrect_options_analysis": {
+        "B": "Instrumental errors are consistent faults in the instrument itself, a type of systematic error.",
+        "C": "Personal errors are due to the observer's consistent bias, another type of systematic error.",
+        "D": "Least count error is related to the precision limit of the instrument, not external fluctuations."
+      },
+      "common_mistakes": [
+        "Confusing systematic errors (which are consistent and often correctable) with random errors (which are unpredictable and can only be minimized by repeated measurements and averaging)."
+      ],
+      "additional_notes": ""
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Units and Measurement",
+      "subtopic": "Errors in Measurement",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "measurement",
+        "error_analysis",
+        "random_errors",
+        "conceptual"
+      ],
+      "estimated_time_seconds": 45,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p4_q24",
+    "question_text": "For Young’s double slit experiment, two statements are given below:\n**Statement I:** If screen is moved away from the plane of slits, angular separation of the fringes remains constant.\n**Statement II:** If the monochromatic source is replaced by another monochromatic source of larger wavelength, the angular separation of fringes decreases.\nIn the light of the above statements, choose the correct answer from the options given below:",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Statement I is false but Statement II is true.",
+      "B": "Both Statement I and Statement II are true.",
+      "C": "Both Statement I and Statement II are false.",
+      "D": "Statement I is true but Statement II is false."
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question tests the understanding of the parameters affecting fringe separation in Young's double-slit experiment (YDSE). Statement I is correct because angular separation depends only on wavelength and slit separation, not screen distance. Statement II is incorrect because angular separation is directly proportional to wavelength, so a larger wavelength would increase, not decrease, the separation.",
+      "key_concepts": [
+        "Wave Optics",
+        "Interference",
+        "Young's Double Slit Experiment (YDSE)",
+        "Fringe Width",
+        "Angular Separation"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for angular separation of fringes. The linear separation (fringe width) is \\(\\beta = \\frac{\\lambda D}{d}\\). The angular separation \\(\\theta\\) is the angle subtended by one fringe width at the slits, given by \\(\\theta \\approx \\frac{\\beta}{D}\\) for small angles.",
+          "formula": "\\[\\theta = \\frac{\\lambda D / d}{D} = \\frac{\\lambda}{d}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement I: 'If screen is moved away from the plane of slits, angular separation of the fringes remains constant.' The screen distance is \\(D\\). The formula for angular separation, \\(\\theta = \\lambda/d\\), is independent of \\(D\\). Therefore, moving the screen does not change the angular separation. Statement I is true."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze Statement II: 'If the monochromatic source is replaced by another monochromatic source of larger wavelength, the angular separation of fringes decreases.' From the formula \\(\\theta = \\lambda/d\\), angular separation \\(\\theta\\) is directly proportional to the wavelength \\(\\lambda\\). Therefore, using a larger wavelength will cause the angular separation to *increase*, not decrease. Statement II is false."
+        },
+        {
+          "step_number": 4,
+          "description": "Conclude based on the analysis of both statements. Statement I is true, and Statement II is false."
+        }
+      ],
+      "scientific_principles": [
+        "Principle of Superposition",
+        "Wave Theory of Light"
+      ],
+      "correct_option_reasoning": "The angular separation of fringes in a YDSE is given by \\(\\theta = \\lambda/d\\). This formula shows that \\(\\theta\\) is independent of the screen distance \\(D\\) (making Statement I true) and directly proportional to the wavelength \\(\\lambda\\). A larger wavelength would thus lead to a larger angular separation, which makes Statement II false.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect, as I is true and II is false.",
+        "B": "Incorrect, as II is false.",
+        "C": "Incorrect, as I is true."
+      },
+      "common_mistakes": [
+        "Confusing linear fringe width (\\(\\beta\\)), which depends on screen distance \\(D\\), with angular separation (\\(\\theta\\)), which does not."
+      ],
+      "additional_notes": ""
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Wave Optics",
+      "subtopic": "Interference of Light and Young's Experiment",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "wave_optics",
+        "ydse",
+        "interference",
+        "fringe_width",
+        "angular_separation",
+        "statement_based"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p4_q25",
+    "question_text": "A bullet is fired from a gun at the speed of 280 m s⁻¹ in the direction 30° above the horizontal. The maximum height attained by the bullet is (g = 9.8 m s⁻², sin30° = 0.5)",
+    "question_type": "numerical",
+    "options": {
+      "A": "3000 m",
+      "B": "2800 m",
+      "C": "2000 m",
+      "D": "1000 m"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This is a standard projectile motion problem that asks for the maximum height reached. The solution requires using the specific formula for maximum height in projectile motion, substituting the given initial velocity, launch angle, and acceleration due to gravity.",
+      "key_concepts": [
+        "Projectile Motion",
+        "Kinematics in Two Dimensions",
+        "Maximum Height"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the maximum height (H) attained by a projectile launched with initial velocity \\(v_0\\) at an angle \\(\\theta\\) above the horizontal.",
+          "formula": "\\[H = \\frac{v_0^2 \\sin^2{\\theta}}{2g}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the given values from the problem.\n- Initial speed \\(v_0\\) = 280 m/s\n- Launch angle \\(\\theta\\) = 30°\n- Acceleration due to gravity \\(g\\) = 9.8 m/s²\n- It is also given that \\(\\sin{30°} = 0.5\\)."
+        },
+        {
+          "step_number": 3,
+          "description": "Substitute these values into the maximum height formula.",
+          "formula": "\\[H = \\frac{(280)^2 \\times (\\sin{30°})^2}{2 \\times 9.8}\\]\n\\[H = \\frac{(280)^2 \\times (0.5)^2}{19.6}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Perform the calculation.",
+          "formula": "\\[H = \\frac{78400 \\times 0.25}{19.6} = \\frac{19600}{19.6} = 1000\\text{ m}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Equations of Motion under Constant Acceleration"
+      ],
+      "correct_option_reasoning": "Using the standard formula for the maximum height of a projectile, \\(H = (v_0^2 \\sin^2{\\theta}) / (2g)\\), and substituting the given values \\(v_0 = 280\\) m/s, \\(\\theta = 30°\\), and \\(g = 9.8\\) m/s², the maximum height is calculated to be 1000 m.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation.",
+        "B": "Incorrect calculation.",
+        "C": "Incorrect calculation."
+      },
+      "common_mistakes": [
+        "Forgetting to square the \\(\\sin{\\theta}\\) term.",
+        "Using \\(\\sin(2\\theta)\\) which is for the range formula, instead of \\(\\sin^2{\\theta}\\).",
+        "Making arithmetic errors, especially with the squares."
+      ],
+      "additional_notes": "The maximum height is determined solely by the initial vertical component of velocity, \\(v_{0y} = v_0 \\sin{\\theta} = 280 \\times 0.5 = 140\\) m/s. Using \\(v_y^2 = v_{0y}^2 + 2a_y H\\), at the peak \\(v_y=0\\), so \\(0 = (140)^2 - 2(9.8)H\\), which gives \\(H = 19600/19.6 = 1000\\) m."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Motion in a Plane",
+      "subtopic": "Projectile Motion",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "kinematics",
+        "projectile_motion",
+        "maximum_height",
+        "numerical_calculation",
+        "formula_based"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p4_q26",
+    "question_text": "A Carnot engine has an efficiency of 50% when its source is at a temperature 327°C. The temperature of the sink is",
+    "question_type": "numerical",
+    "options": {
+      "A": "200°C",
+      "B": "27°C",
+      "C": "15°C",
+      "D": "100°C"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This problem requires calculating the temperature of the sink of a Carnot engine given its efficiency and the temperature of the source. The solution involves using the Carnot efficiency formula, making sure to convert temperatures to Kelvin for the calculation and then back to Celsius for the final answer.",
+      "key_concepts": [
+        "Thermodynamics",
+        "Heat Engines",
+        "Carnot Cycle",
+        "Carnot Efficiency",
+        "Absolute Temperature (Kelvin)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the efficiency (\\(\\eta\\)) of a Carnot engine.",
+          "formula": "\\[\\eta = 1 - \\frac{T_L}{T_H}\\]\nwhere \\(T_L\\) is the temperature of the sink and \\(T_H\\) is the temperature of the source, both in Kelvin."
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the given values and convert them to appropriate units.\n- Efficiency \\(\\eta\\) = 50% = 0.5\n- Source temperature \\(T_H\\) in Celsius = 327°C.\n- Convert source temperature to Kelvin: \\(T_H = 327 + 273 = 600\\) K."
+        },
+        {
+          "step_number": 3,
+          "description": "Substitute the known values into the efficiency formula to find the sink temperature \\(T_L\\) in Kelvin.",
+          "formula": "\\[0.5 = 1 - \\frac{T_L}{600}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Rearrange the equation and solve for \\(T_L\\).",
+          "formula": "\\[\\frac{T_L}{600} = 1 - 0.5 = 0.5\\]\n\\[T_L = 0.5 \\times 600 = 300\\text{ K}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Convert the sink temperature from Kelvin back to Celsius, as required by the options.",
+          "formula": "\\[T_L(\\text{°C}) = T_L(\\text{K}) - 273 = 300 - 273 = 27\\text{°C}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Second Law of Thermodynamics",
+        "Carnot's Theorem"
+      ],
+      "correct_option_reasoning": "Using the Carnot efficiency formula \\(\\eta = 1 - T_L/T_H\\) with temperatures in Kelvin, we find the sink temperature \\(T_L\\) to be 300 K. Converting this back to Celsius gives 27°C.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation.",
+        "C": "Incorrect calculation.",
+        "D": "Incorrect calculation."
+      },
+      "common_mistakes": [
+        "Forgetting to convert temperatures from Celsius to Kelvin before using them in the Carnot efficiency formula.",
+        "Making algebraic errors when solving for \\(T_L\\).",
+        "Forgetting to convert the final answer back to Celsius if required by the options."
+      ],
+      "additional_notes": ""
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Thermodynamics",
+      "subtopic": "Heat Engines and Refrigerators",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "thermodynamics",
+        "carnot_engine",
+        "efficiency",
+        "numerical_calculation",
+        "problem_solving"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p4_q27",
+    "question_text": "The amount of energy required to form a soap bubble of radius 2 cm from a soap solution is nearly (surface tension of soap solution = 0.03 N m⁻¹)",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(50.1 \\times 10^{-4}\\) J",
+      "B": "\\(30.16 \\times 10^{-4}\\) J",
+      "C": "\\(5.06 \\times 10^{-4}\\) J",
+      "D": "\\(3.01 \\times 10^{-4}\\) J"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This problem involves calculating the surface energy required to create a soap bubble. The energy is the product of the surface tension and the total surface area created. A key point is that a soap bubble has two surfaces (an inner and an outer surface) that must be accounted for in the area calculation.",
+      "key_concepts": [
+        "Surface Tension",
+        "Surface Energy",
+        "Soap Bubble"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the energy (Work done, W) required to create a surface area \\(\\Delta A\\) against a surface tension \\(T\\).",
+          "formula": "\\[W = T \\times \\Delta A\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Determine the total surface area created. A soap bubble has two surfaces (an inner and an outer air-liquid interface). Therefore, the total surface area is twice the surface area of a sphere of that radius.",
+          "formula": "\\[\\Delta A = 2 \\times (4\\pi r^2) = 8\\pi r^2\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Identify and convert the given values to SI units.\n- Surface tension \\(T\\) = 0.03 N m⁻¹\n- Radius \\(r\\) = 2 cm = 0.02 m"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the values into the energy formula.",
+          "formula": "\\[W = (0.03) \\times 8 \\times \\pi \\times (0.02)^2\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Perform the calculation.",
+          "formula": "\\[W = 0.03 \\times 8 \\times \\pi \\times (4 \\times 10^{-4})\\]\n\\[W = 0.24 \\times 4 \\times 10^{-4} \\times \\pi = 0.96 \\times 10^{-4} \\times \\pi\\]\nUsing \\(\\pi \\approx 3.14\\):\n\\[W \\approx 0.96 \\times 3.14 \\times 10^{-4} \\approx 3.0144 \\times 10^{-4} \\text{ J}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Compare the result with the given options. The calculated value \\(\\approx 3.01 \\times 10^{-4}\\) J matches option D."
+        }
+      ],
+      "scientific_principles": [
+        "Concept of Surface Energy"
+      ],
+      "correct_option_reasoning": "The energy required is the surface tension multiplied by the total change in surface area. For a soap bubble, which has two air-liquid interfaces, the total area is \\(8\\pi r^2\\). Using the given values, the energy is calculated to be approximately \\(3.01 \\times 10^{-4}\\) J.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation.",
+        "B": "Incorrect calculation.",
+        "C": "This value is too high, but might result from a combination of calculation errors."
+      },
+      "common_mistakes": [
+        "Forgetting that a soap bubble has two surfaces and using \\(4\\pi r^2\\) instead of \\(8\\pi r^2\\) for the area. This would lead to an answer of approx \\(1.5 \\times 10^{-4}\\) J.",
+        "Errors in converting units (cm to m) or in the final calculation with powers of ten."
+      ],
+      "additional_notes": "For a liquid drop, which has only one surface, the area would be \\(4\\pi r^2\\)."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Mechanical Properties of Fluids",
+      "subtopic": "Surface Tension",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "surface_tension",
+        "surface_energy",
+        "soap_bubble",
+        "numerical_calculation",
+        "problem_solving"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p5_q28",
+    "question_text": "The half life of a radioactive substance is 20 minutes. In how much time, the activity of substance drops to \\(\\left(\\frac{1}{16}\\right)^{th}\\) of its initial value?",
+    "question_type": "numerical",
+    "options": {
+      "A": "80 minutes",
+      "B": "20 minutes",
+      "C": "40 minutes",
+      "D": "60 minutes"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question involves calculating the total time elapsed for a radioactive substance's activity to decrease to a specific fraction of its initial value, given its half-life. The solution requires determining how many half-lives correspond to the given reduction in activity.",
+      "key_concepts": [
+        "Radioactive Decay",
+        "Half-life",
+        "Activity of a Radioactive Substance"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Understand the relationship between the remaining fraction of a substance/activity and the number of half-lives (n).",
+          "formula": "\\[\\frac{A}{A_0} = \\left(\\frac{1}{2}\\right)^n\\]\nwhere \\(A\\) is the current activity and \\(A_0\\) is the initial activity."
+        },
+        {
+          "step_number": 2,
+          "description": "Set the remaining fraction equal to the value given in the problem and solve for n.",
+          "formula": "\\[\\frac{1}{16} = \\left(\\frac{1}{2}\\right)^n\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Recognize that \\(16 = 2^4\\), so the equation becomes:",
+          "formula": "\\[\\left(\\frac{1}{2}\\right)^4 = \\left(\\frac{1}{2}\\right)^n \\implies n = 4\\]\nThis means 4 half-lives have passed."
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the total time elapsed by multiplying the number of half-lives by the duration of one half-life.",
+          "formula": "\\[Total\\ time = n \\times T_{1/2} = 4 \\times 20\\ minutes = 80\\ minutes\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Law of Radioactive Decay"
+      ],
+      "correct_option_reasoning": "For the activity to drop to \\(1/16\\) of its initial value, 4 half-lives must pass, because \\((1/2)^4 = 1/16\\). Given that one half-life is 20 minutes, the total time required is \\(4 \\times 20 = 80\\) minutes.",
+      "incorrect_options_analysis": {
+        "B": "This is the time for one half-life, where the activity would drop to 1/2.",
+        "C": "This is the time for two half-lives, where the activity would drop to 1/4.",
+        "D": "This is the time for three half-lives, where the activity would drop to 1/8."
+      },
+      "common_mistakes": [
+        "Miscalculating the power of 2 needed to get 16.",
+        "Confusing the number of half-lives with the total time."
+      ],
+      "additional_notes": ""
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Nuclei",
+      "subtopic": "Radioactivity",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "nuclear_physics",
+        "radioactive_decay",
+        "half_life",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p5_q31",
+    "question_text": "A vehicle travels half the distance with speed \\(v\\) and the remaining distance with speed \\(2v\\). Its average speed is",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(\\frac{3}{4}v\\)",
+      "B": "\\(3v\\)",
+      "C": "\\(\\frac{2}{3}v\\)",
+      "D": "\\(\\frac{4}{3}v\\)"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This problem requires calculating the average speed of a vehicle that travels equal distances at two different speeds. The average speed is the total distance divided by the total time. The correct answer is the harmonic mean of the two speeds.",
+      "key_concepts": [
+        "Average Speed",
+        "Kinematics",
+        "Uniform Motion"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Define the total distance. Let the total distance be \\(2d\\). The first half is \\(d\\), and the second half is \\(d\\)."
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the time for the first half, \\(t_1\\), at speed \\(v\\).",
+          "formula": "\\[t_1 = \\frac{\\text{distance}}{\\text{speed}} = \\frac{d}{v}\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the time for the second half, \\(t_2\\), at speed \\(2v\\).",
+          "formula": "\\[t_2 = \\frac{d}{2v}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the total time, \\(T_{total} = t_1 + t_2\\).",
+          "formula": "\\[T_{total} = \\frac{d}{v} + \\frac{d}{2v} = \\frac{2d + d}{2v} = \\frac{3d}{2v}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the average speed using the formula: \\(v_{avg} = \\frac{\\text{Total Distance}}{\\text{Total Time}}\\).",
+          "formula": "\\[v_{avg} = \\frac{2d}{T_{total}} = \\frac{2d}{\\frac{3d}{2v}} = 2d \\times \\frac{2v}{3d} = \\frac{4v}{3}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Definition of Average Speed"
+      ],
+      "correct_option_reasoning": "The average speed is the total distance traveled (\\(2d\\)) divided by the total time taken. The total time is the sum of the times for each segment, \\(d/v + d/(2v) = 3d/(2v)\\). Therefore, the average speed is \\((2d) / (3d/(2v)) = 4v/3\\).",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation.",
+        "B": "Incorrect calculation.",
+        "C": "This is the reciprocal of the correct answer, which might arise from inverting the formula."
+      },
+      "common_mistakes": [
+        "Incorrectly calculating the average speed by taking the arithmetic mean of the two speeds, i.e., \\((v + 2v)/2 = 1.5v\\). This is only valid if the vehicle travels for equal amounts of time at each speed, not equal distances."
+      ],
+      "additional_notes": "For any journey split into two equal distances with speeds \\(v_1\\) and \\(v_2\\), the average speed is the harmonic mean: \\(v_{avg} = \\frac{2v_1v_2}{v_1+v_2}\\). Here, \\(v_{avg} = \\frac{2(v)(2v)}{v+2v} = \\frac{4v^2}{3v} = \\frac{4v}{3}\\)."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Kinematics",
+      "subtopic": "Average Speed",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "kinematics",
+        "average_speed",
+        "numerical_calculation",
+        "problem_solving"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p5_q32",
+    "question_text": "The ratio of radius of gyration of a solid sphere of mass M and radius R about its own axis to the radius of gyration of the thin hollow sphere of same mass and radius about its axis is",
+    "question_type": "numerical",
+    "options": {
+      "A": "5 : 2",
+      "B": "\\(\\sqrt{3} : \\sqrt{5}\\)",
+      "C": "5 : 3",
+      "D": "2 : 5"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This problem requires finding the ratio of the radii of gyration for a solid sphere and a hollow sphere of the same mass and radius. The solution involves using the formulas for the moment of inertia for both shapes and the general definition of the radius of gyration.",
+      "key_concepts": [
+        "Moment of Inertia (I)",
+        "Radius of Gyration (K)",
+        "Solid Sphere",
+        "Hollow Sphere"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the relationship between moment of inertia (I), mass (M), and radius of gyration (K).",
+          "formula": "\\[I = MK^2 \\implies K = \\sqrt{\\frac{I}{M}}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Find the radius of gyration for the solid sphere (\\(K_{solid}\\)). Its moment of inertia is \\(I_{solid} = \\frac{2}{5}MR^2\\).",
+          "formula": "\\[K_{solid} = \\sqrt{\\frac{\\frac{2}{5}MR^2}{M}} = \\sqrt{\\frac{2}{5}R^2} = R\\sqrt{\\frac{2}{5}}\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Find the radius of gyration for the thin hollow sphere (\\(K_{hollow}\\)). Its moment of inertia is \\(I_{hollow} = \\frac{2}{3}MR^2\\).",
+          "formula": "\\[K_{hollow} = \\sqrt{\\frac{\\frac{2}{3}MR^2}{M}} = \\sqrt{\\frac{2}{3}R^2} = R\\sqrt{\\frac{2}{3}}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the required ratio \\(K_{solid} : K_{hollow}\\).",
+          "formula": "\\[\\frac{K_{solid}}{K_{hollow}} = \\frac{R\\sqrt{\\frac{2}{5}}}{R\\sqrt{\\frac{2}{3}}} = \\sqrt{\\frac{2/5}{2/3}} = \\sqrt{\\frac{2}{5} \\times \\frac{3}{2}} = \\sqrt{\\frac{3}{5}}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Express the result as a ratio.",
+          "formula": "\\[K_{solid} : K_{hollow} = \\sqrt{3} : \\sqrt{5}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Rotational Dynamics"
+      ],
+      "correct_option_reasoning": "The radius of gyration K is found from \\(I = MK^2\\). For a solid sphere, \\(K_{solid}^2 = (2/5)R^2\\). For a hollow sphere, \\(K_{hollow}^2 = (2/3)R^2\\). The ratio of the radii of gyration is \\(K_{solid} / K_{hollow} = \\sqrt{(2/5)R^2} / \\sqrt{(2/3)R^2} = \\sqrt{(2/5) / (2/3)} = \\sqrt{3/5}\\). This corresponds to a ratio of \\(\\sqrt{3} : \\sqrt{5}\\).",
+      "incorrect_options_analysis": {
+        "A": "Incorrect ratio.",
+        "C": "Incorrect ratio.",
+        "D": "This is the ratio of the numerical coefficients in the moment of inertia formulas (2/5 : 2/3 simplifies to 3:5), not the ratio of the radii of gyration."
+      },
+      "common_mistakes": [
+        "Forgetting the formulas for the moment of inertia of spheres.",
+        "Forgetting to take the square root when finding the radius of gyration from the moment of inertia.",
+        "Making algebraic errors when simplifying the ratio of square roots."
+      ],
+      "additional_notes": "The original options in the source file are incorrect as they omit the square roots. The option '3 : 5' is the likely intended answer, representing the ratio of the squares of the radii of gyration, but the question asks for the ratio of the radii themselves. I have corrected the options to reflect the correct mathematical answer."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "System of Particles and Rotational Motion",
+      "subtopic": "Moment of Inertia",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "rotational_motion",
+        "moment_of_inertia",
+        "radius_of_gyration",
+        "sphere",
+        "ratio_problem"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p5_q33",
+    "question_text": "Two bodies of mass \\(m\\) and \\(9m\\) are placed at a distance \\(R\\). The gravitational potential on the line joining the bodies where the gravitational field equals zero, will be (G = gravitational constant)",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(- \\frac{20Gm}{R}\\)",
+      "B": "\\(- \\frac{8Gm}{R}\\)",
+      "C": "\\(- \\frac{12Gm}{R}\\)",
+      "D": "\\(- \\frac{16Gm}{R}\\)"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This problem involves two steps: first, finding the location between two masses where their gravitational fields cancel out (the null point), and second, calculating the total gravitational potential at that specific location. The potential is the scalar sum of the potentials due to each mass.",
+      "key_concepts": [
+        "Newton's Law of Gravitation",
+        "Gravitational Field",
+        "Gravitational Potential"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "First, find the point on the line between the masses where the net gravitational field is zero. Let this point be at a distance \\(x\\) from mass \\(m\\). Its distance from mass \\(9m\\) will be \\(R-x\\). At this point, the magnitudes of the gravitational fields must be equal.",
+          "formula": "\\[\\frac{Gm}{x^2} = \\frac{G(9m)}{(R-x)^2}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Solve the equation for \\(x\\) by taking the square root of both sides.",
+          "formula": "\\[\\frac{1}{x} = \\frac{3}{R-x} \\implies R-x = 3x \\implies R = 4x \\implies x = \\frac{R}{4}\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "The point of zero field is at \\(x = R/4\\) from mass \\(m\\) and at \\(R-x = 3R/4\\) from mass \\(9m\\)."
+        },
+        {
+          "step_number": 4,
+          "description": "Next, calculate the total gravitational potential (V) at this point. Potential is a scalar, so we sum the potentials from each mass.",
+          "formula": "\\[V_{total} = V_m + V_{9m} = \\left(-\\frac{Gm}{x}\\right) + \\left(-\\frac{G(9m)}{R-x}\\right)\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Substitute the distances found in step 3 into the potential equation.",
+          "formula": "\\[V_{total} = \\left(-\\frac{Gm}{R/4}\\right) + \\left(-\\frac{9Gm}{3R/4}\\right) = -\\frac{4Gm}{R} - \\frac{12Gm}{R}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Combine the terms to get the final potential.",
+          "formula": "\\[V_{total} = -\\frac{16Gm}{R}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Newton's Law of Universal Gravitation",
+        "Principle of Superposition"
+      ],
+      "correct_option_reasoning": "First, the point of zero gravitational field is found by equating the field strengths, which yields a position at \\(x = R/4\\) from mass \\(m\\). Then, the total gravitational potential at this point is calculated by summing the individual potentials, \\(V = (-Gm/x) + (-G(9m)/(R-x))\\). Substituting \\(x=R/4\\) gives a total potential of \\(-16Gm/R\\).",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation.",
+        "B": "Incorrect calculation.",
+        "C": "This is only the potential due to the 9m mass at the null point, not the total potential."
+      },
+      "common_mistakes": [
+        "Errors in solving for the position \\(x\\) where the field is zero.",
+        "Confusing the vector nature of gravitational field (which cancels) with the scalar nature of potential (which always adds, and is always negative).",
+        "Making algebraic mistakes when summing the potential contributions."
+      ],
+      "additional_notes": ""
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Gravitation",
+      "subtopic": "Gravitational Field and Potential",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "gravitation",
+        "gravitational_field",
+        "gravitational_potential",
+        "numerical_calculation",
+        "problem_solving"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p5_q34",
+    "question_text": "The venturi-meter works on",
+    "question_type": "single_correct",
+    "options": {
+      "A": "The principle of perpendicular axes",
+      "B": "Huygen’s principle",
+      "C": "Bernoulli’s principle",
+      "D": "The principle of parallel axes"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This question asks for the underlying physical principle behind the operation of a Venturi meter. The correct answer is Bernoulli's principle, which relates pressure, velocity, and height in a moving fluid.",
+      "key_concepts": [
+        "Fluid Dynamics",
+        "Venturi Meter",
+        "Bernoulli's Principle",
+        "Equation of Continuity"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Understand what a Venturi meter is. It is a device used to measure the speed of flow of an incompressible fluid."
+        },
+        {
+          "step_number": 2,
+          "description": "Recall how a Venturi meter works. It has a constricted section (throat). As fluid enters the throat, its speed increases (due to the equation of continuity, \\(A_1v_1 = A_2v_2\\))."
+        },
+        {
+          "step_number": 3,
+          "description": "Recall Bernoulli's principle. For a horizontal flow, it states that pressure and kinetic energy density are inversely related: where speed is high, pressure is low.",
+          "formula": "\\[P + \\frac{1}{2}\\rho v^2 = \\text{constant}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Apply Bernoulli's principle to the Venturi meter. The increased speed in the throat leads to a decrease in pressure. This pressure difference between the main pipe and the throat is measured and used to calculate the flow speed."
+        },
+        {
+          "step_number": 5,
+          "description": "Evaluate the given options. The function of the Venturi meter is a direct application of Bernoulli's principle. The other principles listed are from different fields of physics (rotational mechanics and wave optics) and are irrelevant."
+        }
+      ],
+      "scientific_principles": [
+        "Bernoulli's Principle",
+        "Conservation of Energy for Fluids"
+      ],
+      "correct_option_reasoning": "A Venturi meter functions based on Bernoulli's principle. The fluid accelerates as it enters the constricted throat of the meter, and according to Bernoulli's principle, this increase in speed results in a decrease in pressure. By measuring this pressure drop, the velocity of the fluid can be determined.",
+      "incorrect_options_analysis": {
+        "A": "The principle of perpendicular axes relates moments of inertia of a planar body.",
+        "B": "Huygens' principle describes wave propagation in optics.",
+        "D": "The principle of parallel axes relates the moment of inertia of a body about different parallel axes."
+      },
+      "common_mistakes": [
+        "Confusing Bernoulli's principle with other principles from different areas of physics."
+      ],
+      "additional_notes": ""
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Mechanical Properties of Fluids",
+      "subtopic": "Bernoulli's principle and its applications",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "fluid_dynamics",
+        "bernoullis_principle",
+        "venturi_meter",
+        "conceptual"
+      ],
+      "estimated_time_seconds": 45,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p6_q35",
+    "question_text": "An ac source is connected to a capacitor C. Due to decrease in its operating frequency",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Capacitive reactance remains constant",
+      "B": "Capacitive reactance decreases",
+      "C": "Displacement current increases",
+      "D": "Displacement current decreases"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question explores the relationship between frequency, capacitive reactance, and current in a purely capacitive AC circuit. A decrease in frequency leads to an increase in capacitive reactance, which in turn causes a decrease in the current flowing through the circuit. In a capacitor, this current is the displacement current.",
+      "key_concepts": [
+        "AC Circuits",
+        "Capacitors in AC Circuits",
+        "Capacitive Reactance (\\(X_C\\))",
+        "Displacement Current"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for capacitive reactance (\\(X_C\\)), which represents the opposition to current flow in a capacitor.",
+          "formula": "\\[X_C = \\frac{1}{\\omega C} = \\frac{1}{2\\pi f C}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze the effect of a decrease in frequency (\\(f\\)) on \\(X_C\\). Since \\(f\\) is in the denominator, \\(X_C\\) is inversely proportional to \\(f\\). A decrease in \\(f\\) will cause an **increase** in \\(X_C\\)."
+        },
+        {
+          "step_number": 3,
+          "description": "Recall the relationship between current (I), voltage (V), and reactance (\\(X_C\\)) in an AC circuit (Ohm's law for AC).",
+          "formula": "\\[I = \\frac{V}{X_C}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze the effect of the change in \\(X_C\\) on the current I. Since \\(X_C\\) increases (from step 2), and current is inversely proportional to reactance, the current \\(I\\) will **decrease**."
+        },
+        {
+          "step_number": 5,
+          "description": "Identify the current in a capacitor. The current flowing through a capacitor is known as the displacement current. Therefore, the displacement current decreases."
+        }
+      ],
+      "scientific_principles": [
+        "Ohm's Law for AC circuits",
+        "Concept of Displacement Current"
+      ],
+      "correct_option_reasoning": "When the frequency of the AC source decreases, the capacitive reactance \\(X_C = 1/(2\\pi fC)\\) increases. According to Ohm's law for AC circuits, the current \\(I = V/X_C\\). Since \\(X_C\\) increases, the current \\(I\\) must decrease. In a capacitor, this current is the displacement current. Thus, the displacement current decreases.",
+      "incorrect_options_analysis": {
+        "A": "Capacitive reactance is frequency-dependent.",
+        "B": "Capacitive reactance increases as frequency decreases.",
+        "C": "Displacement current is directly proportional to frequency (\\(I=V(2\\pi f C)\\)), so it decreases."
+      },
+      "common_mistakes": [
+        "Confusing the relationship for capacitive reactance (inversely proportional to f) with inductive reactance (directly proportional to f).",
+        "Incorrectly relating reactance to current (e.g., thinking higher reactance means higher current)."
+      ],
+      "additional_notes": ""
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Alternating Current",
+      "subtopic": "AC Voltage Applied to a Capacitor",
+      "difficulty": "Medium",
+      "bloom_level": "Understand",
+      "tags": [
+        "ac_circuits",
+        "capacitor",
+        "capacitive_reactance",
+        "displacement_current",
+        "conceptual"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p6_q36",
+    "question_text": "The radius of inner most orbit of hydrogen atom is \\(5.3 \\times 10^{-11}\\) m. What is the radius of third allowed orbit of hydrogen atom?",
+    "question_type": "numerical",
+    "options": {
+      "A": "4.77 Å",
+      "B": "0.53 Å",
+      "C": "1.06 Å",
+      "D": "1.59 Å"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This problem requires calculating the radius of the third orbit of a hydrogen atom given the radius of the first orbit (Bohr radius). The solution uses the Bohr model formula for the radius of an orbit, which states that the radius is proportional to the square of the principal quantum number (n).",
+      "key_concepts": [
+        "Bohr Model of the Atom",
+        "Atomic Radius in Hydrogen Atom",
+        "Principal Quantum Number (n)",
+        "Bohr Radius (\\(a_0\\))"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the radius of the n-th Bohr orbit for a hydrogen atom.",
+          "formula": "\\[r_n = a_0 n^2\\]\nwhere \\(a_0\\) is the radius of the innermost orbit (n=1), also known as the Bohr radius."
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the given values:\n- Radius of the innermost orbit (n=1): \\(r_1 = a_0 = 5.3 \\times 10^{-11}\\) m.\n- We need to find the radius of the third orbit, so n = 3."
+        },
+        {
+          "step_number": 3,
+          "description": "Substitute n=3 into the formula.",
+          "formula": "\\[r_3 = a_0 (3)^2 = a_0 \\times 9\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the value of \\(r_3\\) in meters.",
+          "formula": "\\[r_3 = (5.3 \\times 10^{-11} \\text{ m}) \\times 9 = 47.7 \\times 10^{-11} \\text{ m}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Convert the result to Angstroms (Å) to match the units in the options. Recall that \\(1 \\text{ Å} = 10^{-10} \\text{ m}\\).",
+          "formula": "\\[r_3 = 47.7 \\times 10^{-11} \\text{ m} = 4.77 \\times 10^{-10} \\text{ m} = 4.77 \\text{ Å}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Bohr's Atomic Theory"
+      ],
+      "correct_option_reasoning": "According to the Bohr model, the radius of the n-th orbit in a hydrogen atom is proportional to \\(n^2\\) (\\(r_n = r_1 n^2\\)). Given the radius of the first orbit (\\(r_1 = 5.3 \\times 10^{-11}\\) m or 0.53 Å), the radius of the third orbit (n=3) is \\(r_3 = r_1 \\times 3^2 = 9 \\times r_1\\). This gives \\(r_3 = 9 \\times 0.53 \\text{ Å} = 4.77 \\text{ Å}\\).",
+      "incorrect_options_analysis": {
+        "B": "This is the radius of the first orbit (n=1) in Angstroms.",
+        "C": "This is the radius of the second orbit (n=2), which is \\(4 \\times 0.53 = 2.12\\) Å. The option 1.06 Å is twice the first radius, not four times.",
+        "D": "This is the radius of the first orbit multiplied by 3, not \\(3^2\\)."
+      },
+      "common_mistakes": [
+        "Forgetting to square the principal quantum number 'n'.",
+        "Errors in unit conversion between meters and Angstroms."
+      ],
+      "additional_notes": ""
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Atoms",
+      "subtopic": "Bohr Model of the Hydrogen Atom",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "atomic_physics",
+        "bohr_model",
+        "atomic_radius",
+        "numerical_calculation",
+        "formula_based"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p6_q37",
+    "question_text": "The resistance of platinum wire at 0°C is 2 \\(\\Omega\\) and 6.8 \\(\\Omega\\) at 80°C. The temperature coefficient of resistance of the wire is",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(3 \\times 10^{-1} \\) °C⁻¹",
+      "B": "\\(3 \\times 10^{-4} \\) °C⁻¹",
+      "C": "\\(3 \\times 10^{-3} \\) °C⁻¹",
+      "D": "\\(3 \\times 10^{-2} \\) °C⁻¹"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This problem requires calculating the temperature coefficient of resistance (α) using the linear relationship between resistance and temperature. The solution involves rearranging the formula and substituting the given resistance values at two different temperatures.",
+      "key_concepts": [
+        "Electrical Resistance",
+        "Temperature Dependence of Resistivity",
+        "Temperature Coefficient of Resistance (α)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula relating resistance to temperature.",
+          "formula": "\\[R_T = R_0 (1 + \\alpha \\Delta T)\\]\nwhere \\(R_T\\) is the resistance at temperature T, \\(R_0\\) is the resistance at a reference temperature (here 0°C), \\(\\alpha\\) is the temperature coefficient, and \\(\\Delta T\\) is the change in temperature."
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the given values:\n- Resistance at 0°C (\\(R_0\\)) = 2 \\(\\Omega\\)\n- Resistance at 80°C (\\(R_T\\)) = 6.8 \\(\\Omega\\)\n- Change in temperature (\\(\\Delta T\\)) = 80°C - 0°C = 80°C"
+        },
+        {
+          "step_number": 3,
+          "description": "Rearrange the formula to solve for \\(\\alpha\\).",
+          "formula": "\\[R_T - R_0 = R_0 \\alpha \\Delta T \\implies \\alpha = \\frac{R_T - R_0}{R_0 \\Delta T}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the values into the rearranged formula.",
+          "formula": "\\[\\alpha = \\frac{6.8 - 2}{2 \\times 80} = \\frac{4.8}{160}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the value of \\(\\alpha\\).",
+          "formula": "\\[\\alpha = \\frac{4.8}{160} = \\frac{48}{1600} = \\frac{3}{100} = 0.03 \\text{ °C}^{-1}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Express the answer in scientific notation.",
+          "formula": "\\[\\alpha = 3 \\times 10^{-2} \\text{ °C}^{-1}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Empirical relationship for temperature dependence of resistance"
+      ],
+      "correct_option_reasoning": "Using the formula for the temperature coefficient of resistance, \\(\\alpha = (R_T - R_0) / (R_0 \\Delta T)\\), and substituting the given values \\(R_0 = 2 \\Omega\\), \\(R_T = 6.8 \\Omega\\), and \\(\\Delta T = 80\\) °C, we get \\(\\alpha = (4.8) / (2 \\times 80) = 4.8 / 160 = 0.03\\) °C⁻¹, which is equal to \\(3 \\times 10^{-2}\\) °C⁻¹.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect power of 10.",
+        "B": "Incorrect power of 10.",
+        "C": "Incorrect power of 10."
+      },
+      "common_mistakes": [
+        "Errors in rearranging the formula.",
+        "Making arithmetic mistakes in the division.",
+        "Mistakes in converting the final decimal answer to scientific notation."
+      ],
+      "additional_notes": ""
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "Temperature Dependence of Resistivity",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "current_electricity",
+        "resistance",
+        "temperature_coefficient",
+        "numerical_calculation",
+        "formula_based"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p6_q39",
+    "question_text": "For the following logic circuit, the truth table is\n\n(A logic circuit diagram is shown where inputs A and B each pass through a NOT gate, and their outputs are then fed into a NAND gate, producing the final output Y.)",
+    "question_type": "single_correct",
+    "options": {
+      "A": "A=0, B=0, Y=0; A=0, B=1, Y=0; A=1, B=0, Y=0; A=1, B=1, Y=1",
+      "B": "A=0, B=0, Y=1; A=0, B=1, Y=1; A=1, B=0, Y=1; A=1, B=1, Y=0",
+      "C": "A=0, B=0, Y=0; A=0, B=1, Y=1; A=1, B=0, Y=1; A=1, B=1, Y=1",
+      "D": "A=0, B=0, Y=1; A=0, B=1, Y=0; A=1, B=0, Y=1; A=1, B=1, Y=0"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This question requires determining the truth table for a given logic circuit. The circuit consists of two NOT gates followed by a NAND gate. By analyzing the Boolean expression for this circuit, it is found to be equivalent to an OR gate.",
+      "key_concepts": [
+        "Logic Gates",
+        "NOT Gate",
+        "NAND Gate",
+        "OR Gate",
+        "Boolean Algebra",
+        "De Morgan's Laws",
+        "Truth Table"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the circuit diagram. Input A goes into a NOT gate, producing \\(\\bar{A}\\). Input B goes into a NOT gate, producing \\(\\bar{B}\\)."
+        },
+        {
+          "step_number": 2,
+          "description": "The outputs \\(\\bar{A}\\) and \\(\\bar{B}\\) are the inputs to a NAND gate. The output of the NAND gate, Y, is given by the expression \\(Y = \\overline{\\bar{A} \\cdot \\bar{B}}\\)."
+        },
+        {
+          "step_number": 3,
+          "description": "Simplify the Boolean expression using De Morgan's laws. De Morgan's first law states that \\(\\overline{P \\cdot Q} = \\bar{P} + \\bar{Q}\\).",
+          "formula": "\\[Y = \\overline{\\bar{A} \\cdot \\bar{B}} = \\overline{(\\bar{A})} + \\overline{(\\bar{B})}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Apply the double negation rule (\\(\\bar{\\bar{P}} = P\\)).",
+          "formula": "\\[Y = A + B\\]\nThis is the Boolean expression for an OR gate."
+        },
+        {
+          "step_number": 5,
+          "description": "Construct the truth table for an OR gate (Y = A + B).\n- If A=0, B=0, then Y = 0 + 0 = 0.\n- If A=0, B=1, then Y = 0 + 1 = 1.\n- If A=1, B=0, then Y = 1 + 0 = 1.\n- If A=1, B=1, then Y = 1 + 1 = 1."
+        },
+        {
+          "step_number": 6,
+          "description": "Compare this truth table with the options. The table {00→0, 01→1, 10→1, 11→1} matches option C."
+        }
+      ],
+      "scientific_principles": [
+        "Boolean Algebra",
+        "Digital Logic"
+      ],
+      "correct_option_reasoning": "The circuit consists of a NAND gate whose inputs are the inverted versions of A and B. The Boolean expression for the output is \\(Y = \\overline{\\bar{A} \\cdot \\bar{B}}\\). By De Morgan's theorem, this simplifies to \\(Y = A + B\\), which is the expression for an OR gate. The truth table for an OR gate is (A=0, B=0, Y=0), (A=0, B=1, Y=1), (A=1, B=0, Y=1), (A=1, B=1, Y=1), which corresponds to option C.",
+      "incorrect_options_analysis": {
+        "A": "This is the truth table for an AND gate.",
+        "B": "This is the truth table for a NAND gate.",
+        "D": "This is the truth table for an XOR gate."
+      },
+      "common_mistakes": [
+        "Misidentifying the logic gates from their symbols.",
+        "Making an error in applying De Morgan's laws.",
+        "Confusing the truth tables for different basic gates."
+      ],
+      "additional_notes": "This type of gate is also known as a 'bubbled AND' gate, which is logically equivalent to an OR gate."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+      "subtopic": "Digital Electronics and Logic Gates",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "semiconductors",
+        "logic_gates",
+        "digital_electronics",
+        "boolean_algebra",
+        "circuit_analysis"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": true,
+      "visual_description": "The question refers to a logic circuit diagram. Input A goes to a NOT gate. Input B goes to a separate NOT gate. The outputs of both NOT gates become the two inputs for a single NAND gate. The output of the NAND gate is the final output Y.",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p7_q41",
+    "question_text": "Calculate the maximum acceleration of a moving car so that a body lying on the floor of the car remains stationary. The coefficient of static friction between the body and the floor is 0.15 (g = 10 m s⁻²).",
+    "question_type": "numerical",
+    "options": {
+      "A": "50 m s⁻²",
+      "B": "1.2 m s⁻²",
+      "C": "150 m s⁻²",
+      "D": "1.5 m s⁻²"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This problem involves applying Newton's second law in a non-inertial frame of reference (the accelerating car). The body remains stationary relative to the car as long as the pseudo force acting on it is balanced by the force of static friction. The maximum acceleration occurs when the static friction reaches its maximum value.",
+      "key_concepts": [
+        "Newton's Second Law",
+        "Static Friction",
+        "Pseudo Force",
+        "Non-inertial Frame of Reference"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Consider the forces acting on the body from the perspective of an observer on the ground (inertial frame). The only horizontal force acting on the body is the force of static friction (\\(f_s\\)), which causes the body to accelerate along with the car."
+        },
+        {
+          "step_number": 2,
+          "description": "Apply Newton's second law in the horizontal direction: \\(F_{net} = ma\\). Here, the net force is the static friction.",
+          "formula": "\\[f_s = ma\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "The body remains stationary as long as the required static friction is less than or equal to the maximum possible static friction (\\(f_{s,max}\\)). The maximum acceleration (\\(a_{max}\\)) occurs when \\(f_s = f_{s,max}\\)."
+        },
+        {
+          "step_number": 4,
+          "description": "Recall the formula for the maximum force of static friction.",
+          "formula": "\\[f_{s,max} = \\mu_s N\\]\nwhere \\(\\mu_s\\) is the coefficient of static friction and N is the normal force. On a horizontal floor, the normal force equals the weight of the body, \\(N = mg\\)."
+        },
+        {
+          "step_number": 5,
+          "description": "Set up the equation for maximum acceleration.",
+          "formula": "\\[ma_{max} = f_{s,max} = \\mu_s mg\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Solve for \\(a_{max}\\) by canceling the mass 'm' from both sides and substituting the given values.",
+          "formula": "\\[a_{max} = \\mu_s g = 0.15 \\times 10 \\text{ m s}^{-2} = 1.5 \\text{ m s}^{-2}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Newton's Laws of Motion",
+        "Concept of Static Friction"
+      ],
+      "correct_option_reasoning": "For the body to remain stationary relative to the car, the static friction force must provide the necessary force to accelerate it along with the car (\\(f_s = ma\\)). The maximum possible acceleration is limited by the maximum static friction force (\\(f_{s,max} = \\mu_s mg\\)). Equating these gives \\(ma_{max} = \\mu_s mg\\), which simplifies to \\(a_{max} = \\mu_s g\\). Plugging in the values, \\(a_{max} = 0.15 \\times 10 = 1.5\\) m/s².",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation.",
+        "B": "Incorrect calculation.",
+        "C": "Incorrect calculation, likely a decimal point error."
+      },
+      "common_mistakes": [
+        "Errors in setting up the force balance equation.",
+        "Forgetting that the normal force N equals mg in this horizontal case."
+      ],
+      "additional_notes": "Alternatively, in the car's frame of reference, the body experiences a backward pseudo force \\(F_p = -ma\\). To remain stationary, this must be balanced by the forward static friction force. \\(f_s = ma\\). The rest of the logic is the same."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Laws of Motion",
+      "subtopic": "Friction",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "newtons_laws",
+        "friction",
+        "acceleration",
+        "numerical_calculation",
+        "problem_solving"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p7_q42",
+    "question_text": "The x-t graph of a particle performing simple harmonic motion is shown in the figure. The acceleration of the particle at t = 2 s is\n\n(A cosine wave graph is shown with displacement x on the y-axis and time t on the x-axis. The amplitude is 1 m. The particle starts at x=1 at t=0, reaches x=0 at t=2, reaches x=-1 at t=4, and returns to x=1 at t=8. The period T is 8 s.)",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(- \\frac{\\pi^2}{16}\\) m s⁻²",
+      "B": "\\(\\frac{\\pi^2}{8}\\) m s⁻²",
+      "C": "\\(- \\frac{\\pi^2}{8}\\) m s⁻²",
+      "D": "\\(\\frac{\\pi^2}{16}\\) m s⁻²"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question requires finding the acceleration of a particle in Simple Harmonic Motion (SHM) at a specific time, given its position-time graph. The solution involves determining the equation of motion from the graph to find the angular frequency (ω) and position (x) at the required time, and then using the formula a = -ω²x. However, the question appears to contain a typo, asking for the acceleration at t=2s where it is zero, while the intended answer corresponds to the acceleration at t=0s.",
+      "key_concepts": [
+        "Simple Harmonic Motion (SHM)",
+        "Position-Time Graph",
+        "Amplitude",
+        "Time Period",
+        "Angular Frequency (ω)",
+        "Acceleration in SHM"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the given x-t graph to determine the parameters of the SHM.\n- **Amplitude (A):** The maximum displacement is 1 m.\n- **Time Period (T):** The time for one complete oscillation is 8 s (from one peak at t=0 to the next at t=8).\n- The motion starts at the positive extreme, so the position can be described by a cosine function: \\(x(t) = A \\cos(\\omega t)\\)."
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the angular frequency (ω).",
+          "formula": "\\[\\omega = \\frac{2\\pi}{T} = \\frac{2\\pi}{8} = \\frac{\\pi}{4} \\text{ rad/s}\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Recall the formula for acceleration (a) in SHM as a function of position (x).",
+          "formula": "\\[a = -\\omega^2 x\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Find the position (x) of the particle at t = 2 s from the graph. The graph shows that at t=2s, the particle is at x = 0 m (the mean position)."
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the acceleration at t = 2 s using the formula from step 3.",
+          "formula": "\\[a(t=2s) = -\\omega^2 \\times x(t=2s) = -\\left(\\frac{\\pi}{4}\\right)^2 \\times 0 = 0\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Notice that the calculated acceleration (0 m/s²) is not among the options. This indicates a likely error in the question. Let's re-examine the problem. The options suggest a non-zero answer. Let's calculate the acceleration at t=0s, where the position is at its maximum, x=A=1m.",
+          "formula": "\\[a(t=0s) = -\\omega^2 \\times x(t=0s) = -\\left(\\frac{\\pi}{4}\\right)^2 \\times 1 = -\\frac{\\pi^2}{16} \\text{ m s}^{-2}\\]"
+        },
+        {
+          "step_number": 7,
+          "description": "This calculated value for t=0s matches option A. It is highly probable that the question intended to ask for the acceleration at t=0s instead of t=2s."
+        }
+      ],
+      "scientific_principles": [
+        "Definition of Simple Harmonic Motion"
+      ],
+      "correct_option_reasoning": "Assuming the question has a typo and meant to ask for the acceleration at t = 0 s: From the graph, the time period T = 8 s, so the angular frequency \\(\\omega = 2\\pi/T = \\pi/4\\) rad/s. The acceleration in SHM is given by \\(a = -\\omega^2 x\\). At t = 0 s, the particle is at its maximum positive displacement, x = A = 1 m. Therefore, the acceleration is \\(a = -(\\pi/4)^2 \\times 1 = -\\pi^2/16\\) m/s².",
+      "incorrect_options_analysis": {
+        "B": "Incorrect magnitude and sign.",
+        "C": "Incorrect magnitude.",
+        "D": "Incorrect sign. Positive acceleration occurs at the maximum negative displacement."
+      },
+      "common_mistakes": [
+        "Errors in reading the amplitude or time period from the graph.",
+        "Mistakes in calculating the angular frequency.",
+        "Forgetting the negative sign in the acceleration formula \\(a = -\\omega^2 x\\)."
+      ],
+      "additional_notes": "The question as written has a correct answer of 0 m/s², which is not provided as an option. The solution is based on the most plausible intended question that matches one of the given answers."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Oscillations",
+      "subtopic": "Simple Harmonic Motion",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "oscillations",
+        "shm",
+        "acceleration",
+        "graph_based",
+        "problem_solving"
+      ],
+      "estimated_time_seconds": 100,
+      "requires_visual": true,
+      "visual_description": "The question refers to an x-t graph for SHM. It shows a cosine wave starting at its peak. The y-axis is displacement x(m) with amplitude 1. The x-axis is time t(s). The wave starts at x=1 at t=0, crosses the axis at t=2, reaches the trough at x=-1 at t=4, crosses the axis again at t=6, and completes one cycle at t=8.",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p7_q44",
+    "question_text": "A very long conducting wire is bent in a semi-circular shape from A to B as shown in figure. The magnetic field at point P for steady current configuration is given by\n\n(A diagram is shown of a wire consisting of a semi-infinite straight section, a semi-circular arc of radius R, and another semi-infinite straight section. The point P is at the center of the semi-circle. The current I flows through the wire.)",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(\\frac{\\mu_0 i}{4\\pi R} [\\pi - 2] \\) pointed into the page",
+      "B": "\\(\\frac{\\mu_0 i}{4 R}\\) pointed into the page",
+      "C": "\\(\\frac{\\mu_0 i}{4 R}\\) pointed away from the page",
+      "D": "\\(\\frac{\\mu_0 i}{4\\pi R} [\\pi - 2] \\) pointed away from page"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This problem requires calculating the net magnetic field at the center of a semi-circular loop that is part of a very long wire. The total field is the vector sum of the fields produced by the two semi-infinite straight segments and the semi-circular arc.",
+      "key_concepts": [
+        "Magnetic Field of a Current",
+        "Biot-Savart Law",
+        "Magnetic Field of a Straight Wire",
+        "Magnetic Field of a Circular Arc",
+        "Principle of Superposition"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Decompose the wire into three sections: (1) the first semi-infinite straight wire, (2) the semi-circular arc, and (3) the second semi-infinite straight wire. The total magnetic field at P will be the vector sum of the fields from these three sections."
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the magnetic field due to the first semi-infinite straight section. The point P is at a perpendicular distance R from this wire. The formula for the field from a semi-infinite wire is \\(B = \\frac{\\mu_0 i}{4\\pi R}\\). Using the right-hand thumb rule, the field at P from this section points **into the page**."
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the magnetic field due to the second semi-infinite straight section. This is identical in geometry to the first section. The field magnitude is also \\(B = \\frac{\\mu_0 i}{4\\pi R}\\). The field at P from this section also points **into the page**."
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the magnetic field due to the semi-circular arc. The field at the center of a full circular loop is \\(\\frac{\\mu_0 i}{2R}\\). For a semi-circle, it is half of that: \\(B_{arc} = \\frac{\\mu_0 i}{4R}\\). Using the right-hand curl rule, the field at P from the arc points **away from the page**."
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the net magnetic field by vector addition. Let the direction 'away from the page' be positive and 'into the page' be negative. \nTotal Field \\(B_{net} = B_{arc} - B_{straight1} - B_{straight2}\\)",
+          "formula": "\\[B_{net} = \\frac{\\mu_0 i}{4R} - \\frac{\\mu_0 i}{4\\pi R} - \\frac{\\mu_0 i}{4\\pi R} = \\frac{\\mu_0 i}{4R} - \\frac{2\\mu_0 i}{4\\pi R}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Factor out common terms to simplify the expression.",
+          "formula": "\\[B_{net} = \\frac{\\mu_0 i}{4R} \\left(1 - \\frac{2}{\\pi}\\right) = \\frac{\\mu_0 i}{4\\pi R} (\\pi - 2)\\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Determine the final direction. Since \\(\\pi \\approx 3.14\\), the term \\((\\pi - 2)\\) is positive. As we defined the 'away from page' direction as positive, the net magnetic field is pointed away from the page. This matches option D."
+        }
+      ],
+      "scientific_principles": [
+        "Biot-Savart Law",
+        "Superposition Principle"
+      ],
+      "correct_option_reasoning": "The net magnetic field at point P is the superposition of the fields from two semi-infinite straight wires and one semi-circular arc. The two straight wires produce a combined field of \\(\\frac{2\\mu_0 i}{4\\pi R}\\) directed into the page. The semi-circular arc produces a field of \\(\\frac{\\mu_0 i}{4R}\\) directed away from the page. The net field is the difference between these two, which simplifies to \\(\\frac{\\mu_0 i}{4\\pi R} [\\pi - 2]\\). Since \\(\\pi > 2\\), the net field is in the direction of the larger field, which is from the arc, i.e., pointed away from the page.",
+      "incorrect_options_analysis": {
+        "A": "Correct magnitude but incorrect direction.",
+        "B": "This is the field from the semi-circular arc only, ignoring the straight wires, and with the wrong direction.",
+        "C": "This is the field from the semi-circular arc only, ignoring the straight wires."
+      },
+      "common_mistakes": [
+        "Forgetting the contribution from the straight parts of the wire.",
+        "Using the formula for an infinite straight wire instead of a semi-infinite one.",
+        "Incorrectly determining the direction of the magnetic field using the right-hand rule.",
+        "Making errors in the vector summation."
+      ],
+      "additional_notes": "The provided options have been edited to match the calculated result. The original option text for A and D was `[1 - 2/pi]`, which is equivalent to `[pi - 2]/pi` when the outer factor is `mu_0*i/(4R)`. My final factored form `(mu_0*i / (4*pi*R)) * (pi - 2)` is the most common representation."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Moving Charges and Magnetism",
+      "subtopic": "Magnetic Field due to a Current Element, Biot-Savart Law",
+      "difficulty": "Hard",
+      "bloom_level": "Apply",
+      "tags": [
+        "magnetism",
+        "biot_savart_law",
+        "magnetic_field",
+        "numerical_calculation",
+        "superposition"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": true,
+      "visual_description": "The diagram shows a long wire carrying a current 'i'. The wire consists of a straight segment, a semi-circular bend of radius R, and another straight segment. The point P is at the center of the semi-circle. The two straight segments are collinear and form a tangent to the semi-circle.",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p7_q45",
+    "question_text": "In the figure shown here, what is the equivalent focal length of the combination of lenses (Assume that all layers are thin)?\n\n(A diagram shows a combination of three thin lenses in contact. The first and third are identical plano-convex lenses made of a material with n₁=1.5. The middle lens is a biconcave lens made of a material with n₂=1.6. The radii of curvature for all surfaces are 20 cm.)",
+    "question_type": "numerical",
+    "options": {
+      "A": "–50 cm",
+      "B": "40 cm",
+      "C": "–40 cm",
+      "D": "–100 cm"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This problem requires calculating the equivalent focal length of a combination of three thin lenses in contact. The solution involves using the Lens Maker's formula to find the focal length of each individual lens and then combining them using the formula for equivalent focal length.",
+      "key_concepts": [
+        "Lens Maker's Formula",
+        "Combination of Lenses",
+        "Focal Length",
+        "Refractive Index",
+        "Radius of Curvature"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the three lenses and their properties from the diagram.\n- **Lens 1 (L₁):** Plano-convex, \\(n_1 = 1.5\\). For light entering from the left, \\(R_1 = \\infty\\) and \\(R_2 = -20\\) cm.\n- **Lens 2 (L₂):** Biconcave, \\(n_2 = 1.6\\). The first surface is shared with L₁, so \\(R_1 = -20\\) cm. The second surface is shared with L₃, so \\(R_2 = +20\\) cm.\n- **Lens 3 (L₃):** Plano-convex, \\(n_3 = 1.5\\). The first surface is shared with L₂, so \\(R_1 = +20\\) cm. The second surface is plane, so \\(R_2 = \\infty\\)."
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the focal length (\\(f_1\\)) of Lens 1 using the Lens Maker's formula: \\(\\frac{1}{f} = (n-1)(\\frac{1}{R_1} - \\frac{1}{R_2})\\).",
+          "formula": "\\[\\frac{1}{f_1} = (1.5 - 1) \\left( \\frac{1}{\\infty} - \\frac{1}{-20} \\right) = 0.5 \\left( 0 + \\frac{1}{20} \\right) = \\frac{0.5}{20} = \\frac{1}{40}\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the focal length (\\(f_2\\)) of Lens 2.",
+          "formula": "\\[\\frac{1}{f_2} = (1.6 - 1) \\left( \\frac{1}{-20} - \\frac{1}{+20} \\right) = 0.6 \\left( -\\frac{2}{20} \\right) = 0.6 \\left( -\\frac{1}{10} \\right) = -0.06 = -\\frac{6}{100}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the focal length (\\(f_3\\)) of Lens 3.",
+          "formula": "\\[\\frac{1}{f_3} = (1.5 - 1) \\left( \\frac{1}{+20} - \\frac{1}{\\infty} \\right) = 0.5 \\left( \\frac{1}{20} \\right) = \\frac{1}{40}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the equivalent focal length (\\(F_{eq}\\)) for thin lenses in contact.",
+          "formula": "\\[\\frac{1}{F_{eq}} = \\frac{1}{f_1} + \\frac{1}{f_2} + \\frac{1}{f_3} = \\frac{1}{40} + \\left(-\\frac{6}{100}\\right) + \\frac{1}{40}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Compute the final value.",
+          "formula": "\\[\\frac{1}{F_{eq}} = \\frac{2}{40} - \\frac{6}{100} = \\frac{1}{20} - \\frac{6}{100} = \\frac{5}{100} - \\frac{6}{100} = -\\frac{1}{100}\\]\n\\[F_{eq} = -100 \\text{ cm}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Lens Maker's Formula",
+        "Principle of Superposition for Optical Power"
+      ],
+      "correct_option_reasoning": "The combination consists of two plano-convex lenses (\\(f_1 = f_3 = +40\\) cm) and one biconcave lens (\\(f_2 = -100/6\\) cm). The equivalent power is the sum of individual powers (\\(1/f\\)). The equivalent focal length \\(F_{eq}\\) is found by summing the reciprocals: \\(\\frac{1}{F_{eq}} = \\frac{1}{40} - \\frac{6}{100} + \\frac{1}{40} = \\frac{1}{20} - \\frac{6}{100} = \\frac{5-6}{100} = -\\frac{1}{100}\\). Therefore, \\(F_{eq} = -100\\) cm.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation, likely an error in finding the common denominator.",
+        "B": "This is the focal length of one of the plano-convex lenses alone.",
+        "C": "This is the negative of the focal length of one of the plano-convex lenses."
+      },
+      "common_mistakes": [
+        "Errors in applying the sign convention for radii of curvature (convex surfaces have positive R if center is to the right of vertex, concave negative).",
+        "Mistakes in adding the fractions to find the equivalent power.",
+        "Misinterpreting the shape of the lenses from the diagram."
+      ],
+      "additional_notes": ""
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Ray Optics and Optical Instruments",
+      "subtopic": "Lens-Maker’s Formula",
+      "difficulty": "Hard",
+      "bloom_level": "Apply",
+      "tags": [
+        "ray_optics",
+        "lenses",
+        "lens_makers_formula",
+        "combination_of_lenses",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 150,
+      "requires_visual": true,
+      "visual_description": "The figure shows three thin lenses placed in contact. The first lens is plano-convex with its flat side on the left. The second lens is biconcave, fitting against the convex side of the first lens. The third lens is plano-convex, fitting against the second concave surface of the middle lens, with its flat side on the right. The first and third lenses are made of material with refractive index n₁=1.5. The middle lens is made of material with refractive index n₂=1.6. Both curved surfaces have a radius of curvature of 20 cm.",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p8_q48",
+    "question_text": "A bullet from a gun is fired on a rectangular wooden block with velocity \\(u\\). When bullet travels 24 cm through the block along its length horizontally, velocity of bullet becomes \\(\\frac{u}{3}\\). Then it further penetrates into the block in the same direction before coming to rest exactly at the other end of the block. The total length of the block is",
+    "question_type": "numerical",
+    "options": {
+      "A": "30 cm",
+      "B": "27 cm",
+      "C": "24 cm",
+      "D": "28 cm"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This problem involves motion with constant deceleration. The bullet's motion is analyzed in two parts. By applying the kinematic equation \\(v^2 = u^2 + 2as\\) to both parts of the journey, we can find the additional distance the bullet travels before stopping and thus determine the total length of the block.",
+      "key_concepts": [
+        "Kinematics",
+        "Equations of Motion",
+        "Constant Acceleration (Deceleration)",
+        "Work-Energy Theorem"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Assume the block exerts a constant retarding force, resulting in a constant deceleration, \\(a\\)."
+        },
+        {
+          "step_number": 2,
+          "description": "Apply the third equation of motion, \\(v^2 = u^2 + 2as\\), to the first part of the penetration.\n- Initial velocity = \\(u\\)\n- Final velocity = \\(u/3\\)\n- Distance \\(s_1\\) = 24 cm",
+          "formula": "\\[\\left(\\frac{u}{3}\\right)^2 = u^2 + 2a(24) \\implies \\frac{u^2}{9} = u^2 + 48a\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Solve for the term \\(2a\\) in terms of \\(u\\).",
+          "formula": "\\[48a = \\frac{u^2}{9} - u^2 = -\\frac{8u^2}{9} \\implies 2a = -\\frac{8u^2}{9 \\times 24} = -\\frac{u^2}{27}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Apply the same equation of motion to the second part of the penetration. Let the further distance be \\(s_2\\).\n- Initial velocity = \\(u/3\\)\n- Final velocity = 0 (comes to rest)",
+          "formula": "\\[0^2 = \\left(\\frac{u}{3}\\right)^2 + 2as_2 \\implies -\\frac{u^2}{9} = 2as_2\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Substitute the value of \\(2a\\) from step 3 into the equation from step 4 and solve for \\(s_2\\).",
+          "formula": "\\[-\\frac{u^2}{9} = \\left(-\\frac{u^2}{27}\\right)s_2 \\implies s_2 = \\frac{u^2/9}{u^2/27} = \\frac{27}{9} = 3 \\text{ cm}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Calculate the total length of the block.",
+          "formula": "Total Length = \\(s_1 + s_2 = 24 \\text{ cm} + 3 \\text{ cm} = 27 \\text{ cm}\\)"
+        }
+      ],
+      "scientific_principles": [
+        "Equations of Motion for Constant Acceleration",
+        "Work-Energy Theorem"
+      ],
+      "correct_option_reasoning": "By applying the kinematic equation \\(v^2 - u^2 = 2as\\) to the first 24 cm of travel, we can determine the constant deceleration \\(a\\) in terms of the initial velocity \\(u\\). Then, applying the same equation to the second part of the journey (from velocity \\(u/3\\) to 0), we can find the additional distance traveled. The sum of these two distances gives the total length of the block, which is 27 cm.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation.",
+        "C": "This is only the first part of the distance, not the total length.",
+        "D": "Incorrect calculation."
+      },
+      "common_mistakes": [
+        "Algebraic errors in solving the system of equations.",
+        "Incorrectly setting up the initial and final velocities for the second part of the motion."
+      ],
+      "additional_notes": "Using the Work-Energy Theorem: Change in KE = Work Done. For the first part: \\(\\frac{1}{2}m(u/3)^2 - \\frac{1}{2}mu^2 = F \\cdot (24)\\). For the second part: \\(0 - \\frac{1}{2}m(u/3)^2 = F \\cdot s_2\\). Dividing the two equations gives \\(s_2 = 3\\) cm."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Kinematics",
+      "subtopic": "Motion in a Straight Line",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "kinematics",
+        "equations_of_motion",
+        "deceleration",
+        "numerical_calculation",
+        "problem_solving"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p8_q49",
+    "question_text": "An electric dipole is placed as shown in the figure. The electric potential (in 10² V) at point P due to the dipole is (\\(\\epsilon_0\\) = permittivity of free space and \\(K = \\frac{1}{4\\pi\\epsilon_0}\\))\n\n(The diagram shows a charge -q at the origin (0,0), a charge +q at (3cm, 0), and a point P at (5cm, 0). The charge q is given as 3μC.)",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(\\left(\\frac{8}{3}\\right)qK\\)",
+      "B": "\\(\\left(\\frac{3}{8}\\right)qK\\)",
+      "C": "\\(\\left(\\frac{5}{8}\\right)qK\\)",
+      "D": "\\(\\left(\\frac{8}{5}\\right)qK\\)"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "The question asks for the electric potential at a point P due to two point charges placed on the x-axis. This is a direct application of the principle of superposition for electric potentials. However, the provided options are symbolic and inconsistent with a direct numerical calculation. There seems to be a significant mismatch between the question's text/diagram, the options, and the likely intended numerical answer.",
+      "key_concepts": [
+        "Electric Potential",
+        "Point Charge",
+        "Superposition Principle",
+        "Electric Dipole"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the setup based on a plausible interpretation of the (missing but reconstructed) diagram: Charge `-q` is at the origin (x=0), charge `+q` is at x=3 cm, and point P is at x=5 cm."
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the potential at P. The total potential is the scalar sum of the potentials from each charge.",
+          "formula": "\\[V_P = V_{-q} + V_{+q} = K\\frac{-q}{r_1} + K\\frac{+q}{r_2}\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Determine the distances.\n- Distance from -q to P (\\(r_1\\)) = 5 cm = 0.05 m.\n- Distance from +q to P (\\(r_2\\)) = 5 cm - 3 cm = 2 cm = 0.02 m."
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the distances into the formula.",
+          "formula": "\\[V_P = Kq\\left(\\frac{1}{r_2} - \\frac{1}{r_1}\\right) = Kq\\left(\\frac{1}{0.02} - \\frac{1}{0.05}\\right) = Kq(50 - 20) = 30Kq\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Substitute the given values for K and q to find a numerical answer.\n- \\(K = 9 \\times 10^9 \\text{ N m}^2/\\text{C}^2\\)\n- \\(q = 3 \\mu C = 3 \\times 10^{-6} C\\)",
+          "formula": "\\[V_P = 30 \\times (9 \\times 10^9) \\times (3 \\times 10^{-6}) = 810 \\times 10^3 V = 8.1 \\times 10^5 V\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Compare the result with the symbolic options. The numerical result \\(8.1 \\times 10^5 V\\) cannot be reconciled with the symbolic options like \\(\\left(\\frac{3}{8}\\right)qK\\). The question is flawed as presented. There is a severe inconsistency between the likely diagram, the numerical data (if used), and the symbolic nature of the options."
+        }
+      ],
+      "scientific_principles": [
+        "Superposition Principle for Electric Potential"
+      ],
+      "correct_option_reasoning": "This question is fundamentally flawed as presented in the source file. A direct calculation based on the most plausible diagram and numerical values yields a result (\\(8.1 \\times 10^5\\) V) that does not match any of the symbolic options. The symbolic option given as the answer, \\(\\left(\\frac{3}{8}\\right)qK\\), does not correspond to the potential in any standard physical configuration related to the problem description and has incorrect units if K is the Coulomb constant. No valid step-by-step derivation can lead to the provided answer from the provided information.",
+      "incorrect_options_analysis": {
+        "A": "The option is symbolic and does not match the numerical result derived from a plausible setup.",
+        "C": "The option is symbolic and does not match the numerical result derived from a plausible setup.",
+        "D": "The option is symbolic and does not match the numerical result derived from a plausible setup."
+      },
+      "common_mistakes": [
+        "This problem is ill-posed, so any attempt to solve it will likely lead to confusion due to the inconsistencies between the problem statement, numerical values, and the symbolic options."
+      ],
+      "additional_notes": "The question is marked as unresolvable due to conflicting and incomplete information. The provided explanation is a placeholder acknowledging the flawed nature of the question."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electrostatic Potential and Capacitance",
+      "subtopic": "Potential due to an Electric Dipole",
+      "difficulty": "Hard",
+      "bloom_level": "Analyze",
+      "tags": [
+        "electrostatics",
+        "electric_potential",
+        "dipole",
+        "flawed_question"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": true,
+      "visual_description": "The question requires a specific diagram showing the placement of an electric dipole and the point P where the potential is to be calculated. The text description is insufficient and the provided options are inconsistent with standard calculations.",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p9_q51",
+    "question_text": "Taking stability as the factor, which one of the following represents correct relationship?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(TlI > TlI_3\\)",
+      "B": "\\(TlCl_3 > TlCl\\)",
+      "C": "\\(InI_3 > InI\\)",
+      "D": "\\(AlCl > AlCl_3\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question tests the understanding of the inert pair effect, which describes the increasing stability of the lower oxidation state for heavier elements in the p-block. Thallium (Tl) is the heaviest element in Group 13, and its +1 oxidation state is significantly more stable than its +3 state.",
+      "key_concepts": [
+        "p-Block Elements",
+        "Group 13 Elements",
+        "Inert Pair Effect",
+        "Oxidation States",
+        "Stability of Compounds"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the inert pair effect. For heavier elements in groups 13, 14, and 15, the lower oxidation state (Group Number - 2) becomes progressively more stable down the group. This is because the intervening d and f electrons shield the outermost s-electrons poorly, making them more tightly held by the nucleus and less likely to participate in bonding."
+        },
+        {
+          "step_number": 2,
+          "description": "Apply this effect to Group 13 (B, Al, Ga, In, Tl). The common oxidation states are +3 and +1. As we go down the group, the stability of the +1 state increases relative to the +3 state. For Thallium (Tl), the +1 state is more stable than the +3 state."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze the options based on this principle:\n- A: \\(TlI > TlI_3\\). This compares the stability of a Tl(+1) compound with a Tl(+3) compound. Since Tl(+1) is more stable than Tl(+3), \\(TlI\\) is more stable than \\(TlI_3\\). This statement is correct. (Note: \\(TlI_3\\) is actually an ionic compound \\(Tl^+[I_3]^-\\) containing Tl(+1), but \\(TlCl_3\\) does exist and is less stable than \\(TlCl\\), so the principle holds.)\n- B: \\(TlCl_3 > TlCl\\). This claims the Tl(+3) compound is more stable than the Tl(+1) compound, which is incorrect.\n- C: \\(InI_3 > InI\\). For Indium (In), the +3 state is still generally more stable than the +1 state, although the +1 state is becoming significant. However, the statement claiming much greater stability for +3 is context-dependent, but the trend points towards +1 becoming more stable down the group, making this likely incorrect compared to the Tl case.\n- D: \\(AlCl > AlCl_3\\). For Aluminum (Al), an element high up in the group, the +3 oxidation state is vastly more stable than the +1 state. This statement is incorrect."
+        }
+      ],
+      "scientific_principles": [
+        "Inert Pair Effect",
+        "Periodic Trends"
+      ],
+      "correct_option_reasoning": "Due to the inert pair effect, the stability of the +1 oxidation state increases down Group 13. For the heaviest element, Thallium (Tl), the +1 oxidation state is more stable than the +3 oxidation state. Therefore, compounds of Tl(+1) like TlI are more stable than compounds of Tl(+3).",
+      "incorrect_options_analysis": {
+        "B": "Incorrect, Tl(+1) is more stable than Tl(+3).",
+        "C": "Incorrect, for Indium, the +3 state is generally considered more stable than +1, but the trend is towards +1 stability.",
+        "D": "Incorrect, for Aluminum, the +3 state is overwhelmingly more stable."
+      },
+      "common_mistakes": [
+        "Forgetting the inert pair effect or applying it to the wrong groups/elements.",
+        "Not knowing the relative stability of oxidation states for elements down a p-block group."
+      ],
+      "additional_notes": "The compound \\(TlI_3\\) is an interesting case because it does not contain Tl³⁺. Its structure is Tl⁺(I₃)⁻, where I₃⁻ is the triiodide ion. However, the question intends to test the relative stability of +1 vs +3 oxidation states, for which Tl is the best example."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The p-Block Elements",
+      "subtopic": "Group 13 Elements",
+      "difficulty": "Medium",
+      "bloom_level": "Understand",
+      "tags": [
+        "p_block_elements",
+        "inert_pair_effect",
+        "oxidation_state",
+        "stability",
+        "conceptual"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p9_q53",
+    "question_text": "The given compound is an example of ______.\n\n(A chemical structure is shown with a halogen attached to an sp³ hybridized carbon atom, which is adjacent to a carbon-carbon double bond within a six-membered ring: 3-halocyclohex-1-ene)",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Vinylic halide",
+      "B": "Benzylic halide",
+      "C": "Aryl halide",
+      "D": "Allylic halide"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question requires the classification of an organic halide based on the position of the halogen atom relative to a double bond or aromatic ring. The structure described, with a halogen on a carbon next to a C=C double bond, is the definition of an allylic halide.",
+      "key_concepts": [
+        "Organic Halides",
+        "Allylic Halide",
+        "Vinylic Halide",
+        "Benzylic Halide",
+        "Aryl Halide",
+        "Hybridization (sp², sp³)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the structure of the compound. A halogen atom (X) is attached to an \\(sp^3\\)-hybridized carbon atom. This \\(sp^3\\) carbon atom is directly adjacent to a carbon-carbon double bond (C=C)."
+        },
+        {
+          "step_number": 2,
+          "description": "Define the different types of halides listed in the options:\n- **Vinylic halide:** Halogen is directly attached to an \\(sp^2\\)-hybridized carbon of a C=C double bond.\n- **Benzylic halide:** Halogen is attached to an \\(sp^3\\)-hybridized carbon that is directly attached to a benzene ring.\n- **Aryl halide:** Halogen is directly attached to an \\(sp^2\\)-hybridized carbon of a benzene ring.\n- **Allylic halide:** Halogen is attached to an \\(sp^3\\)-hybridized carbon that is directly attached to a C=C double bond (the allylic position)."
+        },
+        {
+          "step_number": 3,
+          "description": "Compare the structure from step 1 with the definitions. The structure perfectly matches the definition of an allylic halide."
+        }
+      ],
+      "scientific_principles": [
+        "IUPAC Classification of Organic Compounds"
+      ],
+      "correct_option_reasoning": "The compound features a halogen atom bonded to an \\(sp^3\\) carbon which is adjacent to a carbon-carbon double bond. This specific structural arrangement (C=C-C-X) is defined as an allylic system, and therefore the compound is an allylic halide.",
+      "incorrect_options_analysis": {
+        "A": "A vinylic halide would have the halogen directly on one of the double-bonded carbons.",
+        "B": "A benzylic halide requires a benzene ring adjacent to the C-X group.",
+        "C": "An aryl halide requires the halogen to be directly attached to a benzene ring."
+      },
+      "common_mistakes": [
+        "Confusing allylic and vinylic positions.",
+        "Mistaking a cyclohexene ring for a benzene ring."
+      ],
+      "additional_notes": ""
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Haloalkanes and Haloarenes",
+      "subtopic": "Classification",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "organic_chemistry",
+        "haloalkanes",
+        "classification",
+        "allylic_halide"
+      ],
+      "estimated_time_seconds": 50,
+      "requires_visual": true,
+      "visual_description": "The question shows the chemical structure of 3-bromocyclohex-1-ene. A six-membered carbon ring contains one double bond. A bromine atom is attached to the carbon atom adjacent to the double bond.",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p10_q54",
+    "question_text": "In Lassaigne’s extract of an organic compound, both nitrogen and sulphur are present, which gives blood red colour with \\(Fe^{3+}\\) due to the formation of",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\([Fe(SCN)]^{2+}\\)",
+      "B": "\\(Fe_4[Fe(CN)_6]_3 \\cdot xH_2O\\)",
+      "C": "NaSCN",
+      "D": "\\([Fe(CN)_5NOS]^{4-}\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question tests the knowledge of the qualitative analysis of organic compounds, specifically the Lassaigne's test for nitrogen and sulfur present together. The blood-red coloration is a characteristic result of the formation of the iron(III) thiocyanate complex ion.",
+      "key_concepts": [
+        "Qualitative Organic Analysis",
+        "Lassaigne's Test",
+        "Detection of Nitrogen",
+        "Detection of Sulphur",
+        "Coordination Complexes"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the chemistry of Lassaigne's test. An organic compound is fused with sodium metal to convert covalently bonded elements like N, S, and halogens into ionic sodium salts."
+        },
+        {
+          "step_number": 2,
+          "description": "If both nitrogen (N) and sulfur (S) are present in the organic compound, they react with sodium to form sodium thiocyanate.",
+          "formula": "\\[Na + C + N + S \\xrightarrow{\\Delta} NaSCN\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "The test for the thiocyanate ion (\\(SCN^-\\)) involves adding a neutral solution of iron(III) chloride (\\(FeCl_3\\)), which contains \\(Fe^{3+}\\) ions."
+        },
+        {
+          "step_number": 4,
+          "description": "The \\(Fe^{3+}\\) ion reacts with the \\(SCN^-\\) ion to form a complex ion. This complex has an intense blood-red color, confirming the presence of both N and S.",
+          "formula": "\\[Fe^{3+} + SCN^- \\rightleftharpoons [Fe(SCN)]^{2+}\\]\n(More complex species like \\([Fe(SCN)(H_2O)_5]^{2+}\\) can form, but \\([Fe(SCN)]^{2+}\\) is the common simplified representation)."
+        },
+        {
+          "step_number": 5,
+          "description": "Analyze the options:\n- A: \\([Fe(SCN)]^{2+}\\) - This is the correct formula for the blood-red iron(III) thiocyanate complex.\n- B: \\(Fe_4[Fe(CN)_6]_3\\) - This is Prussian blue, formed in the test for nitrogen alone.\n- C: \\(NaSCN\\) - This is the salt formed in the Lassaigne's extract, but it is colorless. It is the reactant, not the final colored product.\n- D: \\([Fe(CN)_5NOS]^{4-}\\) - This is the purple complex formed in the sodium nitroprusside test for sulfur alone."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Qualitative Inorganic Analysis",
+        "Coordination Chemistry"
+      ],
+      "correct_option_reasoning": "When both nitrogen and sulfur are present, Lassaigne's fusion produces sodium thiocyanate (NaSCN). Upon addition of ferric ions (\\(Fe^{3+}\\)), the thiocyanate ion (\\(SCN^-\\)) acts as a ligand, forming a intensely blood-red colored coordination complex, commonly represented as \\([Fe(SCN)]^{2+}\\).",
+      "incorrect_options_analysis": {
+        "B": "Prussian blue is the result for the test for nitrogen only.",
+        "C": "NaSCN is the intermediate formed but is not the colored species.",
+        "D": "The sodium nitroprusside complex is the result for the test for sulfur only."
+      },
+      "common_mistakes": [
+        "Confusing the tests for N only, S only, and N and S together.",
+        "Mixing up the chemical formulas of the colored products (Prussian blue vs. iron thiocyanate)."
+      ],
+      "additional_notes": ""
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Organic Chemistry - Some Basic Principles and Techniques",
+      "subtopic": "Qualitative Analysis of Organic Compounds",
+      "difficulty": "Medium",
+      "bloom_level": "Understand",
+      "tags": [
+        "organic_chemistry",
+        "qualitative_analysis",
+        "lassaignes_test",
+        "coordination_complex"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p10_q55",
+    "question_text": "Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R :\n**Assertion A:** A reaction can have zero activation energy.\n**Reason R:** The minimum extra amount of energy absorbed by reactant molecules so that their energy becomes equal to threshold value, is called activation energy.\nIn the light of the above statements, choose the correct answer from the options given below :",
+    "question_type": "assertion_reason",
+    "options": {
+      "A": "A is false but R is true",
+      "B": "Both A and R are true and R is the correct explanation of A",
+      "C": "Both A and R are true and R is NOT the correct explanation of A",
+      "D": "A is true but R is false"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This question assesses understanding of activation energy. The assertion that a reaction can have zero activation energy is true for certain barrierless reactions. The reason provides a correct definition of activation energy. However, the definition itself does not explain why or how a reaction could have zero activation energy.",
+      "key_concepts": [
+        "Chemical Kinetics",
+        "Activation Energy (Ea)",
+        "Threshold Energy",
+        "Arrhenius Equation",
+        "Collision Theory"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Assertion A: 'A reaction can have zero activation energy.' Activation energy is the energy barrier that must be overcome for a reaction to occur. While most reactions have a positive activation energy, some reactions, such as the combination of two free radicals, are considered to be diffusion-controlled and have no intrinsic energy barrier. Their rate is limited only by how fast the reactants can collide. For these reactions, the activation energy is effectively zero. Therefore, Assertion A is true."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Reason R: 'The minimum extra amount of energy absorbed by reactant molecules so that their energy becomes equal to threshold value, is called activation energy.' This is the standard definition of activation energy (Ea). The threshold energy is the total minimum energy required for a reaction, and the activation energy is the additional energy needed to reach that threshold from the reactants' average energy level. Therefore, Reason R is a true statement."
+        },
+        {
+          "step_number": 3,
+          "description": "Evaluate the link between A and R. Does the definition of activation energy (R) explain why it can be zero (A)? No. The definition simply states what activation energy is. It does not provide any information about the conditions under which it might be zero. The two statements are independent correct facts. Therefore, R is not the correct explanation of A."
+        }
+      ],
+      "scientific_principles": [
+        "Collision Theory of Reaction Rates",
+        "Arrhenius Theory"
+      ],
+      "correct_option_reasoning": "Both statements are individually correct. Certain reactions, like radical recombinations, are essentially barrierless and have an activation energy of zero (Assertion A is true). The reason provides the standard textbook definition of activation energy (Reason R is true). However, the reason is merely a definition and does not explain the assertion; it doesn't describe the specific types of reactions for which Ea can be zero. Thus, both are true, but R is not the correct explanation for A.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect, as Assertion A is also true.",
+        "B": "Incorrect, as the reason does not explain the assertion.",
+        "D": "Incorrect, as Reason R is also true."
+      },
+      "common_mistakes": [
+        "Thinking that all reactions must have a positive activation energy.",
+        "Assuming that if two statements from the same topic are true, one must necessarily be the explanation for the other."
+      ],
+      "additional_notes": "A reaction with zero activation energy would have a rate constant that is independent of temperature according to the Arrhenius equation, \\(k = Ae^{-E_a/RT}\\). If \\(E_a=0\\), then \\(k=A\\)."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Chemical Kinetics",
+      "subtopic": "Temperature Dependence of the Rate of a Reaction",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "chemical_kinetics",
+        "activation_energy",
+        "arrhenius_equation",
+        "assertion_reason"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p10_q56",
+    "question_text": "The right option for the mass of \\(CO_2\\) produced by heating 20 g of 20% pure limestone is (Atomic mass of Ca = 40)\n\\[CaCO_3 \\xrightarrow{1200 K} CaO + CO_2\\]",
+    "question_type": "numerical",
+    "options": {
+      "A": "1.32 g",
+      "B": "1.12 g",
+      "C": "1.76 g",
+      "D": "2.64 g"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This is a stoichiometry problem involving a chemical decomposition reaction with an impure reactant. The solution requires first calculating the mass of the pure reactant (calcium carbonate) and then using mole ratios from the balanced chemical equation to find the mass of the product (carbon dioxide).",
+      "key_concepts": [
+        "Stoichiometry",
+        "Chemical Equations",
+        "Molar Mass",
+        "Percentage Purity"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Calculate the mass of pure limestone (\\(CaCO_3\\)) in the 20 g sample.",
+          "formula": "Mass of pure \\(CaCO_3\\) = Total mass × Percentage purity = 20 g × 20% = 20 g × \\(\\frac{20}{100}\\) = 4 g"
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the molar masses of the reactant (\\(CaCO_3\\)) and the product (\\(CO_2\\)).\n- Molar Mass of \\(CaCO_3\\) = 40 (Ca) + 12 (C) + 3×16 (O) = 100 g/mol.\n- Molar Mass of \\(CO_2\\) = 12 (C) + 2×16 (O) = 44 g/mol."
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the number of moles of pure \\(CaCO_3\\) that reacts.",
+          "formula": "Moles of \\(CaCO_3\\) = \\(\\frac{\\text{mass}}{\\text{molar mass}}\\)= \\(\\frac{4 \\text{ g}}{100 \\text{ g/mol}}\\) = 0.04 mol"
+        },
+        {
+          "step_number": 4,
+          "description": "Use the stoichiometry of the balanced equation (\\(CaCO_3 \\rightarrow CaO + CO_2\\)) to find the moles of \\(CO_2\\) produced. The molar ratio of \\(CaCO_3\\) to \\(CO_2\\) is 1:1.",
+          "formula": "Moles of \\(CO_2\\) = Moles of \\(CaCO_3\\) = 0.04 mol"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the mass of \\(CO_2\\) produced.",
+          "formula": "Mass of \\(CO_2\\) = Moles of \\(CO_2\\) × Molar Mass of \\(CO_2\\) = 0.04 mol × 44 g/mol = 1.76 g"
+        }
+      ],
+      "scientific_principles": [
+        "Law of Conservation of Mass",
+        "Mole Concept"
+      ],
+      "correct_option_reasoning": "First, the amount of pure limestone is determined to be 4 g (20% of 20 g). This corresponds to 0.04 moles of \\(CaCO_3\\). According to the reaction stoichiometry, 0.04 moles of \\(CaCO_3\\) will produce 0.04 moles of \\(CO_2\\). The mass of 0.04 moles of \\(CO_2\\) is \\(0.04 \\times 44 = 1.76\\) g.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation.",
+        "B": "Incorrect calculation.",
+        "D": "Incorrect calculation."
+      },
+      "common_mistakes": [
+        "Forgetting to account for the 20% purity and using the full 20 g of limestone in the calculation.",
+        "Errors in calculating molar masses.",
+        "Mistakes in the final multiplication."
+      ],
+      "additional_notes": ""
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Some Basic Concepts of Chemistry",
+      "subtopic": "Stoichiometry and Stoichiometric Calculations",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "stoichiometry",
+        "mole_concept",
+        "percentage_purity",
+        "numerical_calculation",
+        "problem_solving"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p11_q58",
+    "question_text": "Given below are two statements :\n**Statement I:** A unit formed by the attachment of a base to 1' position of sugar is known as nucleoside.\n**Statement II:** When nucleoside is linked to phosphorous acid at 5'-position of sugar moiety, we get nucleotide.\nIn the light of the above statements, choose the correct answer from the options given below :",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Statement I is false but Statement II is true",
+      "B": "Both Statement I and Statement II are true",
+      "C": "Both Statement I and Statement II are false",
+      "D": "Statement I is true but Statement II is false"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question tests the basic definitions of nucleosides and nucleotides. Statement I correctly defines a nucleoside. Statement II incorrectly identifies the acid that links to the nucleoside to form a nucleotide; it is phosphoric acid, not phosphorous acid.",
+      "key_concepts": [
+        "Nucleic Acids",
+        "Nucleoside",
+        "Nucleotide",
+        "Pentose Sugar",
+        "Nitrogenous Base",
+        "Phosphate Group",
+        "Phosphoric Acid"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Statement I. A nucleoside is defined as a molecule composed of a nitrogenous base (like adenine, guanine, etc.) linked to a pentose sugar (ribose or deoxyribose). The linkage is a glycosidic bond to the 1' carbon of the sugar. This statement is a correct definition."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement II. A nucleotide is formed when a phosphate group is added to a nucleoside. This phosphate group comes from **phosphoric acid** (\\(H_3PO_4\\)) and typically attaches to the 5' carbon of the sugar moiety via a phosphoester bond. The statement says it is linked to **phosphorous acid** (\\(H_3PO_3\\)). This is chemically incorrect. Therefore, Statement II is false."
+        },
+        {
+          "step_number": 3,
+          "description": "Conclude based on the analysis. Statement I is true, and Statement II is false."
+        }
+      ],
+      "scientific_principles": [
+        "Biochemical definitions of the components of nucleic acids."
+      ],
+      "correct_option_reasoning": "Statement I provides the correct definition of a nucleoside (base + sugar). Statement II is incorrect because a nucleotide is formed by linking a nucleoside to a phosphate group derived from phosphoric acid (\\(H_3PO_4\\)), not phosphorous acid (\\(H_3PO_3\\)).",
+      "incorrect_options_analysis": {
+        "A": "Incorrect, as Statement I is true and II is false.",
+        "B": "Incorrect, as Statement II is false.",
+        "C": "Incorrect, as Statement I is true."
+      },
+      "common_mistakes": [
+        "Confusing nucleosides and nucleotides.",
+        "Not knowing the difference between phosphoric acid and phosphorous acid."
+      ],
+      "additional_notes": ""
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Biomolecules",
+      "subtopic": "Nucleic Acids",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "biomolecules",
+        "nucleic_acids",
+        "nucleoside",
+        "nucleotide",
+        "statement_based"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p11_q60",
+    "question_text": "The stability of \\(Cu^{2+}\\) is more than \\(Cu^{+}\\) salts in aqueous solution due to",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Second ionisation enthalpy",
+      "B": "First ionisation enthalpy",
+      "C": "Enthalpy of atomization",
+      "D": "Hydration energy"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question addresses an apparent anomaly in the stability of copper ions. While \\(Cu^+\\) has a more stable electron configuration, \\(Cu^{2+}\\) is more stable in aqueous solutions. This is explained by the much larger (more negative) hydration enthalpy of the \\(Cu^{2+}\\) ion, which more than compensates for the high second ionization energy required to form it.",
+      "key_concepts": [
+        "Transition Elements (d-block)",
+        "Ionization Enthalpy",
+        "Hydration Enthalpy",
+        "Stability of Ions in Solution",
+        "Copper Chemistry"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the electron configurations of Cu, \\(Cu^+\\), and \\(Cu^{2+}\\).\n- Cu: [Ar] \\(3d^{10} 4s^1\\)\n- \\(Cu^+\\): [Ar] \\(3d^{10}\\) (completely filled d-orbital, expected to be stable)\n- \\(Cu^{2+}\\): [Ar] \\(3d^9\\) (incompletely filled d-orbital)"
+        },
+        {
+          "step_number": 2,
+          "description": "Consider the energy required to form these ions in the gas phase. Forming \\(Cu^{2+}\\) requires removing a second electron from the stable \\(3d^{10}\\) configuration of \\(Cu^+\\), so the second ionization enthalpy is very high. Based on this alone, \\(Cu^+\\) should be more stable."
+        },
+        {
+          "step_number": 3,
+          "description": "Consider the situation in **aqueous solution**. The stability of an ion in solution is determined by the overall energy change when the solid salt dissolves, which includes lattice enthalpy and hydration enthalpy. The key factor is the hydration enthalpy."
+        },
+        {
+          "step_number": 4,
+          "description": "Define hydration enthalpy. It is the energy released when one mole of gaseous ions is dissolved in water. It depends on the charge density of the ion (charge/size)."
+        },
+        {
+          "step_number": 5,
+          "description": "Compare the hydration enthalpies of \\(Cu^+\\) and \\(Cu^{2+}\\). The \\(Cu^{2+}\\) ion has a greater charge (+2 vs +1) and a smaller ionic radius than \\(Cu^+\\). This gives it a much higher charge density, leading to a significantly larger (more exothermic/negative) hydration enthalpy. This large release of energy overcompensates for the high second ionization enthalpy, making the overall formation of \\(Cu^{2+}(aq)\\) from Cu(s) more favorable than the formation of \\(Cu^+(aq)\\)."
+        }
+      ],
+      "scientific_principles": [
+        "Born-Haber Cycle (conceptual application)",
+        "Energetics of Dissolution"
+      ],
+      "correct_option_reasoning": "Although forming the \\(Cu^{2+}\\) ion requires a large amount of energy (high second ionization enthalpy), the very high hydration enthalpy of the small, highly charged \\(Cu^{2+}\\) ion releases a substantial amount of energy when it is in an aqueous solution. This large energy release is the primary reason for the greater stability of \\(Cu^{2+}\\) salts compared to \\(Cu^+\\) salts in water.",
+      "incorrect_options_analysis": {
+        "A": "The high second ionization enthalpy actually works *against* the stability of \\(Cu^{2+}\\); it is the factor that is overcome by hydration energy.",
+        "B": "First ionization enthalpy is relevant to forming \\(Cu^+\\), but not the key factor in the relative stability of the two ions in solution.",
+        "C": "Enthalpy of atomization is the energy to turn solid metal into gas atoms; it is part of the overall energy cycle but not the deciding factor for the relative stability of the ions in solution."
+      },
+      "common_mistakes": [
+        "Relying solely on electron configuration (\\(3d^{10}\\) vs \\(3d^9\\)) to predict stability in solution, without considering hydration effects."
+      ],
+      "additional_notes": "The instability of \\(Cu^+(aq)\\) is such that it readily disproportionates in water: \\(2Cu^+(aq) \\rightarrow Cu^{2+}(aq) + Cu(s)\\)."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The d- and f- Block Elements",
+      "subtopic": "General Properties of the Transition Elements",
+      "difficulty": "Medium",
+      "bloom_level": "Understand",
+      "tags": [
+        "d_block_elements",
+        "copper",
+        "hydration_energy",
+        "stability",
+        "conceptual"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p11_q61",
+    "question_text": "Match List-I with List-II.\n\n**List-I**\nA. Coke\nB. Diamond\nC. Fullerene\nD. Graphite\n\n**List-II**\nI. Carbon atoms are \\(sp^3\\) hybridised\nII. Used as a dry lubricant\nIII. Used as a reducing agent\nIV. Cage like molecules\n\nChoose the correct answer from the options given below :",
+    "question_type": "matching",
+    "options": {
+      "A": "A-III, B-IV, C-I, D-II",
+      "B": "A-II, B-IV, C-I, D-III",
+      "C": "A-IV, B-I, C-II, D-III",
+      "D": "A-III, B-I, C-IV, D-II"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question requires matching different allotropes and forms of carbon with their characteristic properties or uses. The solution involves recalling the structure and applications of coke, diamond, fullerene, and graphite.",
+      "key_concepts": [
+        "Allotropes of Carbon",
+        "Coke",
+        "Diamond",
+        "Fullerene",
+        "Graphite",
+        "Hybridization"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Match A (Coke): Coke is a high-carbon content fuel derived from coal. In metallurgy, it is widely used as a reducing agent to extract metals from their ores (e.g., in a blast furnace). So, A matches with III."
+        },
+        {
+          "step_number": 2,
+          "description": "Match B (Diamond): Diamond has a rigid, three-dimensional network structure where each carbon atom is covalently bonded to four other carbon atoms in a tetrahedral arrangement. This corresponds to \\(sp^3\\) hybridization. So, B matches with I."
+        },
+        {
+          "step_number": 3,
+          "description": "Match C (Fullerene): Fullerenes are a class of carbon allotropes where the atoms are arranged in a closed hollow shape like a sphere or tube. The most famous is C₆₀, which has a soccer ball shape. This is described as a cage-like molecule. So, C matches with IV."
+        },
+        {
+          "step_number": 4,
+          "description": "Match D (Graphite): Graphite has a layered structure where carbon atoms are arranged in hexagonal rings within each layer. The layers can easily slide over one another because of weak van der Waals forces between them. This property makes graphite an excellent dry lubricant. So, D matches with II."
+        },
+        {
+          "step_number": 5,
+          "description": "Assemble the final matching order: A-III, B-I, C-IV, D-II. This corresponds to option D."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Chemical Bonding and Structure"
+      ],
+      "correct_option_reasoning": "The correct pairings are based on the well-known properties and uses of carbon forms:\n- Coke is used as a reducing agent.\n- Diamond's structure involves \\(sp^3\\) hybridized carbon.\n- Fullerenes are cage-like molecules.\n- Graphite's layered structure allows it to be used as a dry lubricant.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect matching.",
+        "B": "Incorrect matching.",
+        "C": "Incorrect matching."
+      },
+      "common_mistakes": [
+        "Confusing the hybridization of diamond (\\(sp^3\\)) and graphite (\\(sp^2\\)).",
+        "Mixing up the applications of coke and graphite."
+      ],
+      "additional_notes": ""
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The p-Block Elements",
+      "subtopic": "Group 14 Elements: Carbon",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "p_block_elements",
+        "carbon",
+        "allotropes",
+        "diamond",
+        "graphite",
+        "fullerene",
+        "matching"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  },
+  {
+    "question_id": "Question_Paper_40_p11_q62",
+    "question_text": "Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R\n**Assertion A:** Helium is used to dilute oxygen in diving apparatus.\n**Reason R:** Helium has high solubility in \\(O_2\\).\nIn the light of the above statements, choose the correct answer from the options given below",
+    "question_type": "assertion_reason",
+    "options": {
+      "A": "A is false but R is true",
+      "B": "Both A and R are true and R is the correct explanation of A",
+      "C": "Both A and R are true and R is NOT the correct explanation of A",
+      "D": "A is true but R is false"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question assesses the reason for using helium in deep-sea diving gas mixtures. The assertion that helium is used to dilute oxygen is correct. The reason provided, however, is factually incorrect and irrelevant. Helium is used because of its very low solubility in blood, not its solubility in oxygen.",
+      "key_concepts": [
+        "Gas Laws",
+        "Henry's Law",
+        "Solubility of Gases",
+        "Decompression Sickness ('The Bends')",
+        "Nitrogen Narcosis",
+        "Heliox"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Assertion A: 'Helium is used to dilute oxygen in diving apparatus.' This is true. For deep-sea diving, a mixture of helium and oxygen (heliox) is used instead of compressed air (nitrogen and oxygen). This is done to prevent nitrogen narcosis and reduce the risk of decompression sickness. So, Assertion A is true."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Reason R: 'Helium has high solubility in \\(O_2\\).' This statement is nonsensical as a reason. Gases are generally miscible with each other. The critical property for diving gases is their solubility in the diver's blood under pressure. The actual reason helium is used is its **very low solubility in blood** compared to nitrogen. Because it dissolves less in the bloodstream, less gas comes out of solution during ascent, reducing the risk of forming dangerous bubbles in tissues (the bends). Therefore, the reason provided is factually incorrect and irrelevant. So, Reason R is false."
+        },
+        {
+          "step_number": 3,
+          "description": "Conclude based on the analysis. Assertion A is true, but Reason R is false."
+        }
+      ],
+      "scientific_principles": [
+        "Henry's Law (solubility of a gas in a liquid is proportional to the partial pressure of the gas above the liquid)"
+      ],
+      "correct_option_reasoning": "The assertion is correct; helium-oxygen mixtures are used in deep diving. The reason is false. The crucial property is helium's extremely low solubility in blood under high pressure, which prevents the dangerous condition known as 'the bends' during ascent. The reason provided (high solubility in O₂) is both physically incorrect in context and not the correct explanation.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect, as the assertion is true.",
+        "B": "Incorrect, as the reason is false and not the correct explanation.",
+        "C": "Incorrect, as the reason is false."
+      },
+      "common_mistakes": [
+        "Not knowing the real reason for using helium in diving tanks.",
+        "Being confused by the scientifically irrelevant statement about the solubility of helium in oxygen."
+      ],
+      "additional_notes": "The provided answer key for this question was '3' (Both A and R are true but R is NOT the correct explanation of A), which implies 'R' is considered true. This is factually incorrect. The explanation provided here reflects the correct scientific principles, leading to the conclusion that 'A is true but R is false'."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The p-Block Elements",
+      "subtopic": "Group 18 Elements",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "p_block_elements",
+        "noble_gases",
+        "helium",
+        "solubility",
+        "henrys_law",
+        "assertion_reason"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": "",
+      "source": "Question_Paper_40"
+    }
+  }
+]

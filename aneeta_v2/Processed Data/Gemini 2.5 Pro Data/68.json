@@ -1,0 +1,2473 @@
+[
+  {
+    "question_id": "Question_Paper_20_p10_q27",
+    "question_text": "Given below are two statements:\n\n**Statement I:** Biot-Savart’s law gives us the expression for the magnetic field strength of an infinitesimal current element (\\(I d\\vec{l}\\)) of a current carrying conductor only.\n\n**Statement II:** Biot-Savart’s law is analogous to Coulomb’s inverse square law of charge \\(q\\), with the former being related to the field produced by a scalar source, \\(I d\\vec{l}\\), while the latter being produced by a vector source, \\(q\\).\n\nIn light of the above statements choose the most appropriate answer from the options given below:",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Both Statement I and Statement II are incorrect",
+      "B": "Statement I is correct and Statement II is incorrect",
+      "C": "Statement I is incorrect and Statement II is correct",
+      "D": "Both Statement I and Statement II are correct"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Statement I correctly describes that Biot-Savart's law applies to an infinitesimal current element. Statement II incorrectly identifies the nature of the sources; the magnetic field's source (current element) is a vector, while the electric field's source (charge) is a scalar.",
+      "key_concepts": [
+        "Biot-Savart Law",
+        "Coulomb's Law",
+        "Magnetic Field",
+        "Electric Field",
+        "Vector Source",
+        "Scalar Source"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Statement I. Biot-Savart's law provides the magnetic field \\(d\\vec{B}\\) from an infinitesimal segment of a wire carrying current, \\(I d\\vec{l}\\). The formula is \\[d\\vec{B} = \\frac{\\mu_0}{4\\pi} \\frac{I d\\vec{l} \\times \\hat{r}}{r^2}\\]. This law specifically applies to a small current element, and the total field is found by integrating over the entire conductor. Thus, Statement I is correct."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement II. This statement draws an analogy between Biot-Savart's law and Coulomb's law. Both are inverse square laws. However, it misidentifies the nature of the sources. The source of the magnetic field in Biot-Savart's law is the current element, \\(I d\\vec{l}\\), which is a **vector** (it has magnitude and direction). The source of the electric field in Coulomb's law is the electric charge, \\(q\\), which is a **scalar**. The statement claims the opposite, making Statement II incorrect."
+        }
+      ],
+      "scientific_principles": [
+        "Fundamental Laws of Electromagnetism"
+      ],
+      "correct_option_reasoning": "Statement I is a correct description of the scope of Biot-Savart's law. Statement II correctly points out the analogy but incorrectly swaps the vector and scalar nature of the sources for magnetic and electric fields.",
+      "incorrect_options_analysis": {
+        "A": "Statement I is correct.",
+        "C": "Statement I is correct and Statement II is incorrect.",
+        "D": "Statement II is incorrect."
+      },
+      "common_mistakes": [
+        "Confusing the vector and scalar nature of physical quantities, especially sources of fields."
+      ],
+      "additional_notes": "The analogy is that both fields fall off as \\(1/r^2\\), and both rely on a fundamental constant (\\(\\mu_0\\) for magnetism, \\(\\epsilon_0\\) for electricity)."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Magnetic Effects of Current and Magnetism",
+      "subtopic": "Biot-Savart Law",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "statement_based",
+        "biot_savart_law",
+        "coulombs_law",
+        "electromagnetism"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p11_q28",
+    "question_text": "As the temperature increases, the electrical resistance:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Decreases for both conductors and semiconductors",
+      "B": "Increases for conductors but decreases for semiconductors",
+      "C": "Decreases for conductors but increases for semiconductors",
+      "D": "Increases for both conductors and semiconductors"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "The electrical resistance of conductors and semiconductors responds oppositely to temperature changes. In conductors, higher temperature leads to increased atomic vibrations and more electron scattering, increasing resistance. In semiconductors, higher temperature excites more electrons into the conduction band, increasing the number of charge carriers and decreasing resistance.",
+      "key_concepts": [
+        "Electrical Resistance",
+        "Temperature Dependence of Resistivity",
+        "Conductors",
+        "Semiconductors",
+        "Charge Carriers"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Consider conductors (metals). As temperature increases, the metal ions in the lattice vibrate with greater amplitude. This increases the frequency of collisions between the free-flowing electrons and the ions. These collisions impede the flow of current, thus increasing the electrical resistance."
+        },
+        {
+          "step_number": 2,
+          "description": "Consider semiconductors. In a semiconductor, the number of free charge carriers (electrons and holes) is highly dependent on temperature. As temperature increases, more thermal energy is available to excite electrons from the valence band across the band gap to the conduction band. This creates more free electrons and holes, drastically increasing the number of charge carriers. This effect far outweighs the increased scattering, leading to a significant decrease in electrical resistance."
+        },
+        {
+          "step_number": 3,
+          "description": "Combine the two effects. Resistance increases for conductors and decreases for semiconductors as temperature rises."
+        }
+      ],
+      "scientific_principles": [
+        "Band Theory of Solids",
+        "Drude Model of Electrical Conduction"
+      ],
+      "correct_option_reasoning": "This option correctly summarizes the opposite behaviors of conductors and semiconductors with respect to temperature changes in their electrical resistance.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect, conductors and semiconductors have opposite responses.",
+        "C": "Incorrect, this is the reverse of the actual behavior.",
+        "D": "Incorrect, resistance decreases for semiconductors."
+      },
+      "common_mistakes": [
+        "Applying the logic for conductors to semiconductors, or vice versa.",
+        "Forgetting the role of charge carrier concentration in semiconductors."
+      ],
+      "additional_notes": "The temperature coefficient of resistivity (α) is positive for conductors and negative for semiconductors."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "Temperature Dependence of Resistivity",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "resistance",
+        "resistivity",
+        "conductors",
+        "semiconductors",
+        "temperature_dependence"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p11_q29",
+    "question_text": "The energy that will be ideally radiated by a 100 kW transmitter in 1 hour is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(36 \\times 10^4\\) J",
+      "B": "\\(36 \\times 10^5\\) J",
+      "C": "\\(1 \\times 10^5\\) J",
+      "D": "\\(36 \\times 10^7\\) J"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This is a direct calculation of energy using the formula Energy = Power × Time. The key is to convert all units to standard SI units (Watts for power, seconds for time) before performing the multiplication.",
+      "key_concepts": [
+        "Energy",
+        "Power",
+        "Unit Conversion",
+        "SI Units"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "State the relationship between energy (E), power (P), and time (t).",
+          "formula": "E = P \\times t"
+        },
+        {
+          "step_number": 2,
+          "description": "Convert the given power from kilowatts (kW) to watts (W).",
+          "formula": "P = 100 \\text{ kW} = 100 \\times 10^3 \\text{ W} = 10^5 \\text{ W}"
+        },
+        {
+          "step_number": 3,
+          "description": "Convert the given time from hours to seconds.",
+          "formula": "t = 1 \\text{ hour} = 60 \\text{ minutes} = 60 \\times 60 \\text{ seconds} = 3600 \\text{ s}"
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the energy by multiplying the power in watts by the time in seconds.",
+          "formula": "E = (10^5 \\text{ W}) \\times (3600 \\text{ s}) = 3600 \\times 10^5 \\text{ J}"
+        },
+        {
+          "step_number": 5,
+          "description": "Express the final answer in scientific notation.",
+          "formula": "E = 36 \\times 10^2 \\times 10^5 \\text{ J} = 36 \\times 10^7 \\text{ J}"
+        }
+      ],
+      "scientific_principles": [
+        "Definition of Power"
+      ],
+      "correct_option_reasoning": "The product of the power (\\(10^5\\) W) and the time (3600 s) correctly yields an energy of \\(36 \\times 10^7\\) J.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect magnitude, likely due to a power-of-ten error in conversion.",
+        "B": "Incorrect magnitude, likely due to a power-of-ten error in conversion.",
+        "C": "This is the value for power in Watts, not the total energy over one hour."
+      },
+      "common_mistakes": [
+        "Forgetting to convert kilowatts to watts.",
+        "Forgetting to convert hours to seconds before multiplying.",
+        "Making arithmetic errors with scientific notation."
+      ],
+      "additional_notes": "A watt is a joule per second (J/s), so the units work out correctly: W × s = (J/s) × s = J."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Work, Energy and Power",
+      "subtopic": "Power",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "energy",
+        "power",
+        "work",
+        "unit_conversion",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p11_q30",
+    "question_text": "A body of mass 60 g experiences a gravitational force of 3.0 N, when placed at a particular point. The magnitude of the gravitational field intensity at that point is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "50 N/kg",
+      "B": "20 N/kg",
+      "C": "180 N/kg",
+      "D": "0.05 N/kg"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "Gravitational field intensity is defined as the gravitational force experienced per unit mass. To calculate it, divide the given force by the mass of the body, ensuring the mass is in kilograms.",
+      "key_concepts": [
+        "Gravitational Field Intensity",
+        "Gravitational Force",
+        "Mass",
+        "Unit Conversion"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "State the definition of gravitational field intensity (\\(E_G\\)).",
+          "formula": "E_G = \\frac{F}{m}"
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the given values. Force F = 3.0 N. Mass m = 60 g."
+        },
+        {
+          "step_number": 3,
+          "description": "Convert the mass from grams (g) to kilograms (kg).",
+          "formula": "m = 60 \\text{ g} = \\frac{60}{1000} \\text{ kg} = 0.060 \\text{ kg}"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the values into the formula and calculate the field intensity.",
+          "formula": "E_G = \\frac{3.0 \\text{ N}}{0.060 \\text{ kg}} = \\frac{300}{6} \\text{ N/kg} = 50 \\text{ N/kg}"
+        }
+      ],
+      "scientific_principles": [
+        "Newton's Law of Universal Gravitation"
+      ],
+      "correct_option_reasoning": "Dividing the force (3.0 N) by the mass in kilograms (0.060 kg) gives a gravitational field intensity of 50 N/kg.",
+      "incorrect_options_analysis": {
+        "B": "Incorrect calculation.",
+        "C": "This result (3.0 N × 60 g) is obtained by incorrectly multiplying force and mass.",
+        "D": "This result might be obtained by dividing 3.0 N by 60 g without converting grams to kilograms."
+      },
+      "common_mistakes": [
+        "Forgetting to convert the mass from grams to kilograms before performing the calculation."
+      ],
+      "additional_notes": "The unit N/kg is dimensionally equivalent to \\(m/s^2\\), so the gravitational field intensity is also the acceleration due to gravity at that point."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Gravitation",
+      "subtopic": "Gravitational Field",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "gravitation",
+        "gravitational_field",
+        "newtons_law_of_gravitation",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p11_q31",
+    "question_text": "In the given nuclear reaction, the element X is:\n\\[^{22}_{11}Na \\rightarrow X + e^+ + \\nu\\]",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(^{23}_{10}Ne\\)",
+      "B": "\\(^{22}_{10}Ne\\)",
+      "C": "\\(^{22}_{12}Mg\\)",
+      "D": "\\(^{23}_{11}Na\\)"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This nuclear reaction represents positron emission (beta-plus decay). To find the resulting element X, we must apply the principles of conservation of mass number (A) and atomic number (Z).",
+      "key_concepts": [
+        "Nuclear Reactions",
+        "Beta-Plus Decay (Positron Emission)",
+        "Conservation of Mass Number",
+        "Conservation of Atomic Number",
+        "Isotopes"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Write the full reaction with placeholders for the mass number (A) and atomic number (Z) of the unknown element X. The positron (\\(e^+\\)) has a mass number of 0 and an atomic number of +1. The neutrino (\\(\\nu\\)) has mass number 0 and atomic number 0.",
+          "formula": "\\[^{22}_{11}Na \\rightarrow ^A_Z X + ^0_{+1}e + \\nu\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Apply the conservation of mass number (the sum of superscripts on both sides must be equal).",
+          "formula": "22 = A + 0 \\Rightarrow A = 22"
+        },
+        {
+          "step_number": 3,
+          "description": "Apply the conservation of atomic number (the sum of subscripts on both sides must be equal).",
+          "formula": "11 = Z + 1 \\Rightarrow Z = 10"
+        },
+        {
+          "step_number": 4,
+          "description": "Identify the element with atomic number Z = 10. From the periodic table, the element is Neon (Ne)."
+        },
+        {
+          "step_number": 5,
+          "description": "Combine the results to identify X.",
+          "formula": "X = \\(^{A}_{Z}Ne\\) = \\(^{22}_{10}Ne\\)"
+        }
+      ],
+      "scientific_principles": [
+        "Conservation Laws in Nuclear Physics"
+      ],
+      "correct_option_reasoning": "By conserving both the mass number (A=22) and the atomic number (Z=10), the resulting nucleus is identified as Neon-22, which is \\(^{22}_{10}Ne\\).",
+      "incorrect_options_analysis": {
+        "A": "Incorrect mass number.",
+        "C": "Incorrect atomic number. This would correspond to electron capture or a different type of decay.",
+        "D": "Incorrect mass number and atomic number."
+      },
+      "common_mistakes": [
+        "Incorrectly applying the conservation laws, especially for the charge of a positron (+1).",
+        "Confusing positron emission with electron emission (beta-minus decay), where Z would increase by 1."
+      ],
+      "additional_notes": "In beta-plus decay, a proton in the nucleus is converted into a neutron, a positron, and a neutrino. This causes the atomic number to decrease by one while the mass number remains unchanged."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Nuclei",
+      "subtopic": "Radioactivity",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "nuclear_reaction",
+        "beta_decay",
+        "positron_emission",
+        "conservation_laws",
+        "radioactivity"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p12_q33",
+    "question_text": "A copper wire of length 10 m and radius \\((\\frac{10^{-2}}{\\sqrt{\\pi}})\\) m has electrical resistance of 10 \\(\\Omega\\). The current density in the wire for an electric field strength of 10 (V/m) is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(10^6 \\text{ A/m}^2\\)",
+      "B": "\\(10^{-5} \\text{ A/m}^2\\)",
+      "C": "\\(10^5 \\text{ A/m}^2\\)",
+      "D": "\\(10^4 \\text{ A/m}^2\\)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This problem combines the macroscopic definition of resistance (involving length and area) with the microscopic form of Ohm's Law (relating current density, conductivity, and electric field). First, the conductivity of the material is determined from its geometric properties and resistance. Then, this conductivity is used with the given electric field to find the current density.",
+      "key_concepts": [
+        "Current Density (J)",
+        "Conductivity (σ)",
+        "Ohm's Law (microscopic)",
+        "Resistance (R)",
+        "Resistivity (ρ)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "State the relationship between current density (J), conductivity (σ), and electric field (E), which is the microscopic form of Ohm's law.",
+          "formula": "J = \\sigma E"
+        },
+        {
+          "step_number": 2,
+          "description": "To find J, we first need to determine the conductivity σ. The formula for resistance (R) is \\(R = \\rho \\frac{L}{A}\\), where ρ is resistivity. Since conductivity is the reciprocal of resistivity (\\(\\sigma = 1/\\rho\\)), we can write:",
+          "formula": "R = \\frac{L}{\\sigma A} \\implies \\sigma = \\frac{L}{R A}"
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the cross-sectional area (A) of the wire using the given radius \\(r = \\frac{10^{-2}}{\\sqrt{\\pi}}\\) m.",
+          "formula": "A = \\pi r^2 = \\pi \\left( \\frac{10^{-2}}{\\sqrt{\\pi}} \\right)^2 = \\pi \\left( \\frac{10^{-4}}{\\pi} \\right) = 10^{-4} \\text{ m}^2"
+        },
+        {
+          "step_number": 4,
+          "description": "Now calculate the conductivity σ using L = 10 m, R = 10 Ω, and A = \\(10^{-4} \\text{ m}^2\\).",
+          "formula": "\\sigma = \\frac{10 \\text{ m}}{(10 \\Omega)(10^{-4} \\text{ m}^2)} = \\frac{1}{10^{-4}} = 10^4 \\, (\\Omega \\cdot \\text{m})^{-1}"
+        },
+        {
+          "step_number": 5,
+          "description": "Finally, calculate the current density J using the calculated conductivity σ and the given electric field E = 10 V/m.",
+          "formula": "J = \\sigma E = (10^4) \\times (10) = 10^5 \\text{ A/m}^2"
+        }
+      ],
+      "scientific_principles": [
+        "Ohm's Law"
+      ],
+      "correct_option_reasoning": "The conductivity of the wire is calculated to be \\(10^4 \\, (\\Omega \\cdot m)^{-1}\\). Multiplying this by the electric field of 10 V/m gives the current density as \\(10^5 \\text{ A/m}^2\\).",
+      "incorrect_options_analysis": {
+        "A": "This value would result from a calculation error, likely involving the exponents.",
+        "B": "This value has an incorrect sign in the exponent, suggesting a major calculation error.",
+        "D": "This is the value of the conductivity (σ), not the current density (J)."
+      },
+      "common_mistakes": [
+        "Errors in calculating the cross-sectional area.",
+        "Confusing resistivity (ρ) with conductivity (σ).",
+        "Stopping the calculation after finding conductivity and mistaking it for the final answer."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "Ohm's Law and Current Density",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "current_density",
+        "conductivity",
+        "resistance",
+        "ohms_law",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p12_q34",
+    "question_text": "The ratio of the distances travelled by a freely falling body in the 1st, 2nd, 3rd and 4th second:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "1 : 4 : 9 : 16",
+      "B": "1 : 3 : 5 : 7",
+      "C": "1 : 1 : 1 : 1",
+      "D": "1 : 2 : 3 : 4"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This question relates to the distance covered by a freely falling object (starting from rest) in successive intervals of time. According to Galileo's law of odd numbers, this ratio is always 1 : 3 : 5 : 7 : ...",
+      "key_concepts": [
+        "Kinematics",
+        "Motion under Gravity",
+        "Equations of Motion",
+        "Galileo's Law of Odd Numbers"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the distance (\\(S_n\\)) covered in the n-th second of motion under constant acceleration.",
+          "formula": "S_n = u + \\frac{a}{2}(2n - 1)"
+        },
+        {
+          "step_number": 2,
+          "description": "For a freely falling body starting from rest, the initial velocity \\(u = 0\\) and the acceleration \\(a = g\\)."
+        },
+        {
+          "step_number": 3,
+          "description": "Apply the formula for n = 1, 2, 3, and 4.\n- For the 1st second (n=1): \\(S_1 = 0 + \\frac{g}{2}(2(1) - 1) = \\frac{g}{2}\\)\n- For the 2nd second (n=2): \\(S_2 = 0 + \\frac{g}{2}(2(2) - 1) = 3\\frac{g}{2}\\)\n- For the 3rd second (n=3): \\(S_3 = 0 + \\frac{g}{2}(2(3) - 1) = 5\\frac{g}{2}\\)\n- For the 4th second (n=4): \\(S_4 = 0 + \\frac{g}{2}(2(4) - 1) = 7\\frac{g}{2}\\)"
+        },
+        {
+          "step_number": 4,
+          "description": "Find the ratio of these distances: \\(S_1 : S_2 : S_3 : S_4\\).",
+          "formula": "\\frac{g}{2} : 3\\frac{g}{2} : 5\\frac{g}{2} : 7\\frac{g}{2}"
+        },
+        {
+          "step_number": 5,
+          "description": "Simplify the ratio by dividing all terms by the common factor \\(\\frac{g}{2}\\).",
+          "formula": "1 : 3 : 5 : 7"
+        }
+      ],
+      "scientific_principles": [
+        "Galileo's Law of Odd Numbers"
+      ],
+      "correct_option_reasoning": "The distances covered in successive seconds by a body starting from rest under constant acceleration are in the ratio of odd integers (1:3:5:7...).",
+      "incorrect_options_analysis": {
+        "A": "This ratio (\\(1^2 : 2^2 : 3^2 : 4^2\\)) represents the ratio of the *total* distances covered after 1, 2, 3, and 4 seconds, not the distances in each individual second.",
+        "C": "This would imply the body travels the same distance each second, meaning constant velocity, which contradicts free fall.",
+        "D": "This ratio represents the average velocities over each second, not the distances."
+      },
+      "common_mistakes": [
+        "Confusing the distance traveled *in* the n-th second with the total distance traveled *after* n seconds."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Kinematics",
+      "subtopic": "Motion in a Straight Line",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "kinematics",
+        "free_fall",
+        "motion_under_gravity",
+        "galileos_law"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p13_q35",
+    "question_text": "An electric lift with a maximum load of 2000 kg (lift + passengers) is moving up with a constant speed of 1.5 \\(ms^{-1}\\). The frictional force opposing the motion is 3000 N. The minimum power delivered by the motor to the lift in watts is: (g = 10 \\(ms^{-2}\\))",
+    "question_type": "numerical",
+    "options": {
+      "A": "20000",
+      "B": "34500",
+      "C": "23500",
+      "D": "23000"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "To find the minimum power delivered by the motor, we must first calculate the total upward force the motor needs to exert to move the lift at a constant velocity. This force must balance the sum of the gravitational force and the frictional force. Power is then calculated as this total force multiplied by the constant speed.",
+      "key_concepts": [
+        "Power",
+        "Force",
+        "Newton's First Law",
+        "Gravitational Force",
+        "Frictional Force"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Since the lift is moving at a constant speed, the net force on it is zero (Newton's First Law). This means the upward force provided by the motor (\\(F_{motor}\\)) must be equal in magnitude to the total downward force."
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the total downward force. This is the sum of the gravitational force (weight) and the frictional force.",
+          "formula": "F_{downward} = F_{gravity} + F_{friction}"
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the gravitational force.",
+          "formula": "F_{gravity} = mg = (2000 \\text{ kg}) \\times (10 \\text{ m/s}^2) = 20000 \\text{ N}"
+        },
+        {
+          "step_number": 4,
+          "description": "Add the given frictional force.",
+          "formula": "F_{downward} = 20000 \\text{ N} + 3000 \\text{ N} = 23000 \\text{ N}"
+        },
+        {
+          "step_number": 5,
+          "description": "The required upward force from the motor is therefore \\(F_{motor} = 23000 \\text{ N}\\)."
+        },
+        {
+          "step_number": 6,
+          "description": "Calculate the power delivered by the motor using the formula \\(P = F \\cdot v\\). Since the force and velocity are in the same direction, \\(P = F_{motor} \\times v\\).",
+          "formula": "P = (23000 \\text{ N}) \\times (1.5 \\text{ m/s}) = 34500 \\text{ W}"
+        }
+      ],
+      "scientific_principles": [
+        "Newton's First Law of Motion",
+        "Definition of Power"
+      ],
+      "correct_option_reasoning": "The motor must exert a total force of 23000 N to counteract gravity and friction. At a speed of 1.5 m/s, the power required is 23000 N × 1.5 m/s = 34500 W.",
+      "incorrect_options_analysis": {
+        "A": "This is just the gravitational force (weight) of the lift.",
+        "C": "This value does not correspond to a clear step in the calculation; likely an arithmetic error.",
+        "D": "This is the magnitude of the total force required, not the power."
+      },
+      "common_mistakes": [
+        "Forgetting to include the frictional force in the total force calculation.",
+        "Calculating the force and forgetting to multiply by velocity to find power.",
+        "Using g = 9.8 m/s² when the question specifies g = 10 m/s²."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Work, Energy and Power",
+      "subtopic": "Power",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "power",
+        "force",
+        "newtons_laws",
+        "friction",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p13_q36",
+    "question_text": "The volume occupied by the molecules contained in 4.5 kg water at STP, if the intermolecular forces vanish away, is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(5.6 \\times 10^3 \\text{ m}^3\\)",
+      "B": "\\(5.6 \\times 10^{-3} \\text{ m}^3\\)",
+      "C": "\\(5.6 \\text{ m}^3\\)",
+      "D": "\\(5.6 \\times 10^6 \\text{ m}^3\\)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The condition 'if the intermolecular forces vanish away' implies that the water should be treated as an ideal gas. Using the ideal gas law (PV = nRT) with the standard temperature and pressure (STP) conditions, we can calculate the volume occupied by the given mass of water.",
+      "key_concepts": [
+        "Ideal Gas Law",
+        "Mole Concept",
+        "Standard Temperature and Pressure (STP)",
+        "States of Matter"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Calculate the number of moles (n) of water (H₂O) in 4.5 kg. The molar mass of H₂O is approximately 18 g/mol or 0.018 kg/mol.",
+          "formula": "n = \\frac{\\text{mass}}{\\text{molar mass}} = \\frac{4.5 \\text{ kg}}{0.018 \\text{ kg/mol}} = 250 \\text{ mol}"
+        },
+        {
+          "step_number": 2,
+          "description": "State the ideal gas law.",
+          "formula": "PV = nRT"
+        },
+        {
+          "step_number": 3,
+          "description": "Identify the values for STP conditions and the ideal gas constant. We will use T = 273.15 K and P = 1 atm ≈ \\(1.013 \\times 10^5\\) Pa. The gas constant R = 8.314 J/(mol·K). (Note: Some definitions use P = 1 bar = \\(10^5\\) Pa; the result is very similar)."
+        },
+        {
+          "step_number": 4,
+          "description": "Rearrange the ideal gas law to solve for volume (V).",
+          "formula": "V = \\frac{nRT}{P}"
+        },
+        {
+          "step_number": 5,
+          "description": "Substitute the values and calculate V.",
+          "formula": "V = \\frac{(250 \\text{ mol}) \\times (8.314 \\text{ J/(mol·K)}) \\times (273.15 \\text{ K})}{1.013 \\times 10^5 \\text{ Pa}} \\approx 5.6 \\text{ m}^3"
+        },
+        {
+          "step_number": 6,
+          "description": "Alternative method: At STP, 1 mole of an ideal gas occupies approximately 22.4 liters (\\(0.0224 \\text{ m}^3\\)).",
+          "formula": "V = n \\times V_{molar} = 250 \\text{ mol} \\times 0.0224 \\text{ m}^3/\\text{mol} = 5.6 \\text{ m}^3"
+        }
+      ],
+      "scientific_principles": [
+        "Ideal Gas Law"
+      ],
+      "correct_option_reasoning": "Treating water as an ideal gas as per the question's premise, 250 moles at STP will occupy a volume of approximately 5.6 cubic meters.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect power of 10.",
+        "B": "This would be the volume of 5.6 liters, a result of forgetting to convert from L to m³. A very common mistake.",
+        "D": "Incorrect power of 10."
+      },
+      "common_mistakes": [
+        "Not understanding that the question requires treating water as an ideal gas.",
+        "Using the density of liquid water (1000 kg/m³), which would give \\(4.5/1000 = 0.0045 \\text{ m}^3\\).",
+        "Making errors in unit conversions (e.g., L to m³) or in calculating the number of moles."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Kinetic Theory",
+      "subtopic": "Ideal Gas Equation",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "ideal_gas_law",
+        "kinetic_theory",
+        "stp",
+        "mole_concept",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 100,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p13_q37",
+    "question_text": "The area of a rectangular field (in \\(m^2\\)) of length 55.3 m and breadth 25 m after rounding off the value for correct significant digits is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "1382",
+      "B": "1382.5",
+      "C": "\\(1.4 \\times 10^3\\)",
+      "D": "\\(1.38 \\times 10^3\\)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "To find the area with the correct number of significant figures, we first multiply the length and breadth. Then, we round the result to the same number of significant figures as the input measurement with the least number of significant figures.",
+      "key_concepts": [
+        "Significant Figures",
+        "Rules for Multiplication and Division",
+        "Scientific Notation",
+        "Measurement and Uncertainty"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Calculate the area of the rectangle without considering significant figures.",
+          "formula": "Area = Length \\times Breadth = 55.3 \\text{ m} \\times 25 \\text{ m} = 1382.5 \\text{ m}^2"
+        },
+        {
+          "step_number": 2,
+          "description": "Determine the number of significant figures in each measurement.\n- Length (55.3 m) has three significant figures (5, 5, 3).\n- Breadth (25 m) has two significant figures (2, 5)."
+        },
+        {
+          "step_number": 3,
+          "description": "Apply the rule for multiplication: The final answer should be rounded to the least number of significant figures from the original measurements. In this case, that is two significant figures."
+        },
+        {
+          "step_number": 4,
+          "description": "Round the calculated area (1382.5) to two significant figures. The first two digits are '1' and '3'. The third digit is '8', which is 5 or greater, so we round up the preceding digit. '13' rounds up to '14'. We fill the remaining places with zeros to maintain the magnitude."
+        },
+        {
+          "step_number": 5,
+          "description": "The rounded value is 1400. To unambiguously show that there are only two significant figures, we should express this in scientific notation.",
+          "formula": "1400 \\text{ m}^2 = 1.4 \\times 10^3 \\text{ m}^2"
+        },
+        {
+          "step_number": 6,
+          "description": "Comparing with the options, \\(14 \\times 10^2\\) (from the source) is equivalent to \\(1.4 \\times 10^3\\). I will use standard scientific notation for clarity."
+        }
+      ],
+      "scientific_principles": [
+        "Rules for Handling Significant Figures in Calculations"
+      ],
+      "correct_option_reasoning": "The product of 55.3 (3 sig figs) and 25 (2 sig figs) is 1382.5. The result must be rounded to 2 significant figures, which gives 1400. Expressed in scientific notation to show 2 significant figures, this is \\(1.4 \\times 10^3\\).",
+      "incorrect_options_analysis": {
+        "A": "This is the result rounded to four significant figures, which is incorrect.",
+        "B": "This is the exact calculated value with five significant figures, which is incorrect as it implies more precision than is available from the input data.",
+        "D": "This represents the result rounded to three significant figures (1380), which is incorrect. The least number of significant figures is two."
+      },
+      "common_mistakes": [
+        "Keeping all the digits from the calculator's result.",
+        "Rounding to the wrong number of significant figures.",
+        "Incorrectly rounding the number itself."
+      ],
+      "additional_notes": "The original option was \\(14 \\times 10^2\\). While \\(1.4 \\times 10^3\\) is standard scientific notation, \\(14 \\times 10^2\\) is mathematically equivalent and clearly shows two significant figures. I have updated the options to be more standard."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Units and Measurements",
+      "subtopic": "Significant Figures",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "significant_figures",
+        "units_and_measurements",
+        "error_analysis",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p14_q38",
+    "question_text": "A capacitor of capacitance C = 900 pF is charged fully by a 100 V battery B as shown in figure (a). Then it is disconnected from the battery and connected to another uncharged capacitor of capacitance C = 900 pF as shown in figure (b). The electrostatic energy stored by the system (b) is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(3.25 \\times 10^{-6}\\) J",
+      "B": "\\(2.25 \\times 10^{-6}\\) J",
+      "C": "\\(1.5 \\times 10^{-6}\\) J",
+      "D": "\\(4.5 \\times 10^{-6}\\) J"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "When a charged capacitor is connected to an identical uncharged capacitor, the charge is shared equally, and the final voltage becomes half the initial voltage. The final energy of the system will be half of the initial energy, with the other half being dissipated as heat during the charge redistribution.",
+      "key_concepts": [
+        "Capacitors",
+        "Energy Stored in a Capacitor",
+        "Conservation of Charge",
+        "Charge Sharing"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Calculate the initial charge (Q) on the first capacitor (let's call it C₁).",
+          "formula": "Q = C_1 V_1 = (900 \\times 10^{-12} \\text{ F}) \\times (100 \\text{ V}) = 9 \\times 10^{-8} \\text{ C}"
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the initial energy (U₁) stored in the first capacitor.",
+          "formula": "U_1 = \\frac{1}{2} C_1 V_1^2 = \\frac{1}{2} (900 \\times 10^{-12} \\text{ F}) (100 \\text{ V})^2 = 4.5 \\times 10^{-6} \\text{ J}"
+        },
+        {
+          "step_number": 3,
+          "description": "When C₁ is connected to an identical uncharged capacitor C₂, the total charge Q is conserved and redistributes across the new total capacitance, \\(C_{eq} = C_1 + C_2\\).",
+          "formula": "C_{eq} = 900 \\text{ pF} + 900 \\text{ pF} = 1800 \\text{ pF} = 1.8 \\times 10^{-9} \\text{ F}"
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the final common voltage (\\(V_f\\)) across the parallel combination.",
+          "formula": "V_f = \\frac{Q}{C_{eq}} = \\frac{9 \\times 10^{-8} \\text{ C}}{1.8 \\times 10^{-9} \\text{ F}} = 50 \\text{ V}"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the final total energy (\\(U_f\\)) stored in the system of two capacitors.",
+          "formula": "U_f = \\frac{1}{2} C_{eq} V_f^2 = \\frac{1}{2} (1.8 \\times 10^{-9} \\text{ F}) (50 \\text{ V})^2 = 0.9 \\times 10^{-9} \\times 2500 = 2250 \\times 10^{-9} = 2.25 \\times 10^{-6} \\text{ J}"
+        }
+      ],
+      "scientific_principles": [
+        "Principle of Conservation of Charge"
+      ],
+      "correct_option_reasoning": "The final energy stored in the two-capacitor system is calculated to be \\(2.25 \\times 10^{-6}\\) J. This is exactly half the initial energy stored in the first capacitor.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation.",
+        "C": "Incorrect calculation.",
+        "D": "This is the initial energy stored in the first capacitor, not the final energy of the system."
+      },
+      "common_mistakes": [
+        "Assuming energy is conserved. In this process, energy is not conserved as some is dissipated as heat and electromagnetic radiation when the charge redistributes.",
+        "Incorrectly calculating the final voltage or final equivalent capacitance."
+      ],
+      "additional_notes": "A useful shortcut for the case where a charged capacitor C is connected to an identical uncharged capacitor C is that the final energy is always \\(U_{initial}/2\\)."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electrostatic Potential and Capacitance",
+      "subtopic": "Capacitors and Capacitance",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "capacitor",
+        "electrostatic_energy",
+        "charge_sharing",
+        "conservation_of_charge",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": true,
+      "visual_description": "Figure (a) shows a 900 pF capacitor connected to a 100 V battery. Figure (b) shows the same capacitor, now disconnected from the battery and connected in parallel to another uncharged 900 pF capacitor.",
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p14_q39",
+    "question_text": "Match List-I with List-II.\n\n**List-I**\n(a) Gravitational constant (G)\n(b) Gravitational potential energy\n(c) Gravitational potential\n(d) Gravitational intensity\n\n**List-II**\n(i) \\([L^2T^{-2}]\\)\n(ii) \\([M^{-1}L^3T^{-2}]\\)\n(iii) \\([LT^{-2}]\\)\n(iv) \\([ML^2T^{-2}]\\)\n\nChoose the correct answer from the options given below:",
+    "question_type": "matching",
+    "options": {
+      "A": "(a) - (ii), (b) - (iv), (c) - (i), (d) - (iii)",
+      "B": "(a) - (ii), (b) - (iv), (c) - (iii), (d) - (i)",
+      "C": "(a) - (iv), (b) - (ii), (c) - (i), (d) - (iii)",
+      "D": "(a) - (ii), (b) - (i), (c) - (iv), (d) - (iii)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question requires finding the dimensional formulas for four fundamental quantities in the study of gravitation. This is done by starting from their defining equations and substituting the dimensions of basic physical quantities like mass, length, and time.",
+      "key_concepts": [
+        "Dimensional Analysis",
+        "Gravitational Constant",
+        "Gravitational Potential Energy",
+        "Gravitational Potential",
+        "Gravitational Field Intensity"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Find the dimensions of (a) Gravitational constant (G). Start from Newton's law of gravitation: \\(F = G \\frac{m_1 m_2}{r^2}\\). Rearrange for G: \\(G = \\frac{F r^2}{m_1 m_2}\\).",
+          "formula": "[G] = \\frac{[F][r^2]}{[m_1 m_2]} = \\frac{([MLT^{-2}])([L^2])}{[M^2]} = [M^{-1}L^3T^{-2}]. This matches (ii)."
+        },
+        {
+          "step_number": 2,
+          "description": "Find the dimensions of (b) Gravitational potential energy. All forms of energy have the same dimensions, which are the dimensions of work (Force × Distance).",
+          "formula": "[Energy] = [F][L] = ([MLT^{-2}])[L] = [ML^2T^{-2}]. This matches (iv)."
+        },
+        {
+          "step_number": 3,
+          "description": "Find the dimensions of (c) Gravitational potential. Potential is defined as potential energy per unit mass.",
+          "formula": "[Potential] = \\frac{[Energy]}{[mass]} = \\frac{[ML^2T^{-2}]}{[M]} = [L^2T^{-2}]. This matches (i)."
+        },
+        {
+          "step_number": 4,
+          "description": "Find the dimensions of (d) Gravitational intensity. Intensity (or field strength) is defined as force per unit mass.",
+          "formula": "[Intensity] = \\frac{[Force]}{[mass]} = \\frac{[MLT^{-2}]}{[M]} = [LT^{-2}]. This matches (iii)."
+        }
+      ],
+      "scientific_principles": [
+        "Principle of Dimensional Homogeneity"
+      ],
+      "correct_option_reasoning": "The derived dimensional formulas for each quantity correctly correspond to the options in List-II as follows: (a)-(ii), (b)-(iv), (c)-(i), (d)-(iii). This combination is found in option A.",
+      "incorrect_options_analysis": {
+        "B": "Incorrectly matches potential and intensity.",
+        "C": "Incorrectly matches G and potential energy.",
+        "D": "Incorrectly matches potential energy and potential."
+      },
+      "common_mistakes": [
+        "Making algebraic errors when combining exponents.",
+        "Confusing the definitions of potential (energy/mass) and intensity (force/mass).",
+        "Not remembering the basic dimensions of force and energy."
+      ],
+      "additional_notes": "Gravitational intensity has the same dimensions as acceleration."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Units and Measurements",
+      "subtopic": "Dimensional Analysis",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "dimensional_analysis",
+        "gravitation",
+        "units_and_measurements",
+        "matching"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p15_q41",
+    "question_text": "Given below are two statements : One is labelled as Assertion (A) and the other is labelled as Reason (R).\n\n**Assertion (A):** The stretching of a spring is determined by the shear modulus of the material of the spring.\n\n**Reason (R):** A coil spring of copper has more tensile strength than a steel spring of the same dimensions.\n\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "question_type": "assertion_reason",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is not the correct explanation of (A)",
+      "B": "(A) is true but (R) is false",
+      "C": "(A) is false but (R) is true",
+      "D": "Both (A) and (R) are true and (R) is the correct explanation of (A)"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "The Assertion is true because stretching a coil spring actually involves a twisting or shearing of the wire material. The Reason is false because steel has a significantly higher tensile strength and modulus of elasticity than copper.",
+      "key_concepts": [
+        "Elasticity",
+        "Shear Modulus",
+        "Young's Modulus",
+        "Springs",
+        "Tensile Strength"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Evaluate Assertion (A). When a helical spring is stretched or compressed, the wire it is made of undergoes torsion or twisting. This twisting action is a form of shear deformation. Therefore, the spring's stiffness and stretching behavior are determined by the shear modulus (modulus of rigidity) of the wire's material, not the Young's modulus (tensile modulus). The Assertion is true."
+        },
+        {
+          "step_number": 2,
+          "description": "Evaluate Reason (R). Tensile strength is a measure of the maximum stress a material can withstand while being stretched before breaking. Steel is an alloy of iron and carbon and is well-known for its high tensile strength, which is significantly greater than that of pure copper. Therefore, the statement that a copper spring has more tensile strength than a steel one is false."
+        },
+        {
+          "step_number": 3,
+          "description": "Based on the analysis, Assertion (A) is true and Reason (R) is false."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Material Science and Elasticity"
+      ],
+      "correct_option_reasoning": "The assertion correctly identifies the shear modulus as the relevant elastic property for a stretching spring. The reason makes a factually incorrect comparison of the tensile strengths of copper and steel.",
+      "incorrect_options_analysis": {
+        "A": "Reason (R) is false.",
+        "C": "Assertion (A) is true.",
+        "D": "Reason (R) is false."
+      },
+      "common_mistakes": [
+        "Incorrectly assuming that stretching a spring involves tensile stress and Young's modulus, without considering the twisting geometry of the coil.",
+        "Not knowing the relative mechanical properties of common materials like steel and copper."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Mechanical Properties of Solids",
+      "subtopic": "Elastic Moduli",
+      "difficulty": "Hard",
+      "bloom_level": "Analyze",
+      "tags": [
+        "assertion_reason",
+        "elasticity",
+        "shear_modulus",
+        "spring",
+        "tensile_strength",
+        "material_properties"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p16_q42",
+    "question_text": "A ball is projected with a velocity, 10 \\(ms^{-1}\\), at an angle of 60° with the vertical direction. Its speed at the highest point of its trajectory will be:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(5\\sqrt{3} \\text{ ms}^{-1}\\)",
+      "B": "5 \\(ms^{-1}\\)",
+      "C": "10 \\(ms^{-1}\\)",
+      "D": "Zero"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "In projectile motion, the vertical component of velocity is zero at the highest point of the trajectory, but the horizontal component remains constant (neglecting air resistance). The speed at the highest point is therefore equal to the initial horizontal velocity.",
+      "key_concepts": [
+        "Projectile Motion",
+        "Velocity Components",
+        "Trajectory"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Be careful with the given angle. The angle of projection is 60° with the *vertical* direction."
+        },
+        {
+          "step_number": 2,
+          "description": "The angle of projection with the *horizontal* (\\(\\theta\\)) is therefore \\(90° - 60° = 30°\\)."
+        },
+        {
+          "step_number": 3,
+          "description": "Resolve the initial velocity (\\(v = 10 \\text{ ms}^{-1}\\)) into horizontal (\\(v_x\\)) and vertical (\\(v_y\\)) components.\n- \\(v_x = v \\cos(\\theta) = 10 \\cos(30°)\\)\n- \\(v_y = v \\sin(\\theta) = 10 \\sin(30°)\\)"
+        },
+        {
+          "step_number": 4,
+          "description": "At the highest point of the trajectory, the vertical component of velocity becomes momentarily zero (\\(v_y' = 0\\)). The horizontal component of velocity remains unchanged throughout the flight (assuming no air resistance).",
+          "formula": "v_x' = v_x = 10 \\cos(30°)"
+        },
+        {
+          "step_number": 5,
+          "description": "The speed at the highest point is the magnitude of the velocity vector at that point, which is just the horizontal component.",
+          "formula": "Speed = \\sqrt{(v_x')^2 + (v_y')^2} = \\sqrt{(10 \\cos(30°))^2 + 0^2} = 10 \\cos(30°)"
+        },
+        {
+          "step_number": 6,
+          "description": "Calculate the final value, knowing that \\(\\cos(30°) = \\frac{\\sqrt{3}}{2}\\).",
+          "formula": "Speed = 10 \\times \\frac{\\sqrt{3}}{2} = 5\\sqrt{3} \\text{ ms}^{-1}"
+        }
+      ],
+      "scientific_principles": [
+        "Principle of Superposition of Motion"
+      ],
+      "correct_option_reasoning": "The speed at the highest point is the constant horizontal velocity component, which is calculated as \\(10 \\cos(30°) = 5\\sqrt{3} \\text{ ms}^{-1}\\).",
+      "incorrect_options_analysis": {
+        "B": "This would be the result if the angle with the horizontal was 60° (\\(10 \\cos(60°) = 5\\)). The question gives the angle with the vertical.",
+        "C": "This is the initial speed, not the speed at the highest point.",
+        "D": "The speed is zero only if the object is thrown straight up vertically."
+      },
+      "common_mistakes": [
+        "Not reading the question carefully and using 60° as the angle with the horizontal.",
+        "Assuming the speed at the highest point is zero."
+      ],
+      "additional_notes": "Alternatively, one could use the angle with the vertical (\\(\\phi = 60°\\)). The horizontal component would then be \\(v_x = v \\sin(\\phi) = 10 \\sin(60°) = 10 \\times \\frac{\\sqrt{3}}{2} = 5\\sqrt{3} \\text{ ms}^{-1}\\), yielding the same result."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Kinematics",
+      "subtopic": "Projectile Motion",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "projectile_motion",
+        "kinematics",
+        "velocity_components",
+        "trajectory",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p16_q43",
+    "question_text": "Two transparent media A and B are separated by a plane boundary. The speed of light in those media are 1.5 × 10⁸ m/s and 2.0 × 10⁸ m/s, respectively. The critical angle for a ray of light for these two media is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(\\sin^{-1}(0.750)\\)",
+      "B": "\\(\\tan^{-1}(0.500)\\)",
+      "C": "\\(\\tan^{-1}(0.750)\\)",
+      "D": "\\(\\sin^{-1}(0.500)\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "The critical angle is the angle of incidence in a denser medium for which the angle of refraction in the rarer medium is 90°. It can be calculated using Snell's law, where the sine of the critical angle is equal to the ratio of the refractive index of the rarer medium to that of the denser medium (or equivalently, the ratio of the speed of light in the denser medium to that in the rarer medium).",
+      "key_concepts": [
+        "Total Internal Reflection (TIR)",
+        "Critical Angle",
+        "Snell's Law",
+        "Refractive Index",
+        "Speed of Light in a Medium"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "First, identify which medium is optically denser and which is rarer. The speed of light is slower in a denser medium. Since \\(v_A = 1.5 \\times 10^8 \\text{ m/s} < v_B = 2.0 \\times 10^8 \\text{ m/s}\\), medium A is denser and medium B is rarer."
+        },
+        {
+          "step_number": 2,
+          "description": "Total internal reflection and the critical angle phenomenon occur only when light travels from a denser medium to a rarer medium. So, the light must be traveling from medium A to medium B."
+        },
+        {
+          "step_number": 3,
+          "description": "Apply Snell's Law at the boundary for the critical angle (\\(\\theta_C\\)). The angle of incidence in the denser medium (A) is \\(\\theta_C\\), and the angle of refraction in the rarer medium (B) is 90°.",
+          "formula": "n_A \\sin(\\theta_C) = n_B \\sin(90°)"
+        },
+        {
+          "step_number": 4,
+          "description": "Rearrange the formula to solve for \\(\\sin(\\theta_C)\\).",
+          "formula": "\\sin(\\theta_C) = \\frac{n_B}{n_A}"
+        },
+        {
+          "step_number": 5,
+          "description": "Recall the relationship between refractive index (n) and the speed of light in a medium (v): \\(n = c/v\\). Therefore, the ratio of refractive indices is the inverse ratio of the speeds: \\(\\frac{n_B}{n_A} = \\frac{c/v_B}{c/v_A} = \\frac{v_A}{v_B}\\)."
+        },
+        {
+          "step_number": 6,
+          "description": "Substitute the speeds into the equation for \\(\\sin(\\theta_C)\\).",
+          "formula": "\\sin(\\theta_C) = \\frac{v_A}{v_B} = \\frac{1.5 \\times 10^8 \\text{ m/s}}{2.0 \\times 10^8 \\text{ m/s}} = \\frac{1.5}{2.0} = 0.75"
+        },
+        {
+          "step_number": 7,
+          "description": "Solve for the critical angle \\(\\theta_C\\).",
+          "formula": "\\theta_C = \\sin^{-1}(0.75)"
+        }
+      ],
+      "scientific_principles": [
+        "Snell's Law of Refraction"
+      ],
+      "correct_option_reasoning": "The sine of the critical angle is the ratio of the speed in the denser medium to the speed in the rarer medium, which is 1.5/2.0 = 0.75. Therefore, the critical angle is \\(\\sin^{-1}(0.75)\\).",
+      "incorrect_options_analysis": {
+        "B": "Incorrect trigonometric function and value.",
+        "C": "Incorrect trigonometric function.",
+        "D": "This would be the result if the ratio was inverted (rarer/denser speed), which is incorrect."
+      },
+      "common_mistakes": [
+        "Inverting the ratio of refractive indices or speeds when calculating the critical angle.",
+        "Not identifying correctly which medium is denser and which is rarer."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Ray Optics and Optical Instruments",
+      "subtopic": "Total Internal Reflection",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "total_internal_reflection",
+        "critical_angle",
+        "snells_law",
+        "refractive_index",
+        "ray_optics",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p16_q44",
+    "question_text": "The truth table for the given logic circuit is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "A=0, B=0, C=1; A=0, B=1, C=0; A=1, B=0, C=0; A=1, B=1, C=1",
+      "B": "A=0, B=0, C=1; A=0, B=1, C=0; A=1, B=0, C=1; A=1, B=1, C=0",
+      "C": "A=0, B=0, C=0; A=0, B=1, C=1; A=1, B=0, C=0; A=1, B=1, C=1",
+      "D": "A=0, B=0, C=0; A=0, B=1, C=1; A=1, B=0, C=1; A=1, B=1, C=0"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "The provided explanation simplifies a Boolean expression to \\(C = \\bar{B}\\), indicating that the output C is the logical NOT of the input B, regardless of input A. The correct truth table will reflect this relationship.",
+      "key_concepts": [
+        "Logic Gates",
+        "Boolean Algebra",
+        "Truth Tables"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the final Boolean expression for the circuit's output, which is determined to be \\(C = \\bar{B}\\) (C equals NOT B)."
+        },
+        {
+          "step_number": 2,
+          "description": "Construct the truth table based on the relationship \\(C = \\bar{B}\\). The output C only depends on input B."
+        },
+        {
+          "step_number": 3,
+          "description": "Case 1: A=0, B=0. C = NOT(0) = 1.",
+          "formula": ""
+        },
+        {
+          "step_number": 4,
+          "description": "Case 2: A=0, B=1. C = NOT(1) = 0.",
+          "formula": ""
+        },
+        {
+          "step_number": 5,
+          "description": "Case 3: A=1, B=0. C = NOT(0) = 1.",
+          "formula": ""
+        },
+        {
+          "step_number": 6,
+          "description": "Case 4: A=1, B=1. C = NOT(1) = 0.",
+          "formula": ""
+        },
+        {
+          "step_number": 7,
+          "description": "Combine the results into a single table: \nA B | C\n--|--\n0 0 | 1\n0 1 | 0\n1 0 | 1\n1 1 | 0\nThis matches the table in option B."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Digital Logic"
+      ],
+      "correct_option_reasoning": "The truth table in option B correctly represents the logical function C = NOT B, where the output C is always the inverse of the input B.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect for rows where A=1.",
+        "C": "Incorrect for rows where B=0.",
+        "D": "Incorrect for rows where B=0."
+      },
+      "common_mistakes": [
+        "Misinterpreting the logic gates in the diagram.",
+        "Making an error in the Boolean algebra simplification.",
+        "Incorrectly constructing the truth table from the final expression."
+      ],
+      "additional_notes": "The original source's explanation contains an unclear Boolean expression. However, its final conclusion is that the circuit simplifies to \\(C=\\bar{B}\\), which leads to the correct truth table. The physical circuit would be very simple: just a NOT gate with input B connected to output C, and input A being unused."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Semiconductor Electronics",
+      "subtopic": "Logic Gates",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "logic_gates",
+        "truth_table",
+        "boolean_algebra",
+        "digital_electronics"
+      ],
+      "requires_visual": true,
+      "visual_description": "The question requires a diagram of a logic circuit with two inputs, A and B, and one output, C. Based on the correct answer, the circuit's function must simplify to C = NOT B.",
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p17_q45",
+    "question_text": "A series LCR circuit with inductance 10 H, capacitance 10 \\(\\mu F\\), and resistance 50 \\(\\Omega\\) is connected to an AC source of voltage, V = 200sin(100t) volt. If the resonant frequency of the LCR circuit is \\(\\nu_0\\) and the frequency of the AC source is \\(\\nu\\), then:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(\\nu_0 = \\frac{50}{\\pi} \\text{ Hz}, \\nu = \\frac{50}{\\pi} \\text{ Hz}\\)",
+      "B": "\\(\\nu_0 = 50 \\text{ Hz}, \\nu = 50 \\text{ Hz}\\)",
+      "C": "\\(\\nu_0 = 100 \\text{ Hz}, \\nu = \\frac{100}{\\pi} \\text{ Hz}\\)",
+      "D": "\\(\\nu_0 = \\frac{50}{\\pi} \\text{ Hz}, \\nu = 50 \\text{ Hz}\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This problem requires calculating two frequencies: the natural resonant frequency of the LCR circuit, which depends on L and C, and the frequency of the connected AC source, which is determined from the voltage equation. Comparing these two reveals the relationship between them.",
+      "key_concepts": [
+        "LCR Circuits",
+        "Resonant Frequency",
+        "AC Voltage",
+        "Angular Frequency (ω)",
+        "Frequency (ν)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Calculate the natural resonant angular frequency (\\(\\omega_0\\)) of the LCR circuit.",
+          "formula": "\\omega_0 = \\frac{1}{\\sqrt{LC}}"
+        },
+        {
+          "step_number": 2,
+          "description": "Substitute the values L = 10 H and C = 10 \\(\\mu F\\) = \\(10 \\times 10^{-6} \\text{ F}\\).",
+          "formula": "\\omega_0 = \\frac{1}{\\sqrt{10 \\times 10 \\times 10^{-6}}} = \\frac{1}{\\sqrt{100 \\times 10^{-6}}} = \\frac{1}{\\sqrt{10^{-4}}} = 100 \\text{ rad/s}"
+        },
+        {
+          "step_number": 3,
+          "description": "Convert the resonant angular frequency (\\(\\omega_0\\)) to linear frequency (\\(\\nu_0\\)).",
+          "formula": "\\omega_0 = 2\\pi \\nu_0 \\implies \\nu_0 = \\frac{\\omega_0}{2\\pi} = \\frac{100}{2\\pi} = \\frac{50}{\\pi} \\text{ Hz}"
+        },
+        {
+          "step_number": 4,
+          "description": "Determine the angular frequency (\\(\\omega\\)) of the AC source from the given voltage equation V = 200sin(100t). The general form is V = V₀sin(ωt).",
+          "formula": "\\omega = 100 \\text{ rad/s}"
+        },
+        {
+          "step_number": 5,
+          "description": "Convert the source's angular frequency (\\(\\omega\\)) to linear frequency (\\(\\nu\\)).",
+          "formula": "\\nu = \\frac{\\omega}{2\\pi} = \\frac{100}{2\\pi} = \\frac{50}{\\pi} \\text{ Hz}"
+        },
+        {
+          "step_number": 6,
+          "description": "Compare the two frequencies. We find that \\(\\nu_0 = \\nu = \\frac{50}{\\pi}\\) Hz. This means the circuit is being driven at its resonant frequency."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of AC Circuits and Resonance"
+      ],
+      "correct_option_reasoning": "The calculation shows that both the natural resonant frequency of the circuit and the frequency of the driving AC source are equal to \\(\\frac{50}{\\pi}\\) Hz.",
+      "incorrect_options_analysis": {
+        "B": "Incorrectly omits the \\(\\pi\\) factor from the frequencies.",
+        "C": "Incorrectly identifies the angular frequency as the linear frequency.",
+        "D": "Incorrectly omits the \\(\\pi\\) factor from the source frequency \\(\\nu\\)."
+      },
+      "common_mistakes": [
+        "Confusing angular frequency (ω, in rad/s) with linear frequency (ν or f, in Hz).",
+        "Making calculation errors with square roots or powers of 10.",
+        "Forgetting the \\(2\\pi\\) factor when converting between ω and ν."
+      ],
+      "additional_notes": "Since the driving frequency equals the resonant frequency, the circuit is in a state of resonance. This means the impedance is at its minimum (Z = R), and the current will be at its maximum."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Alternating Current",
+      "subtopic": "LCR Circuits and Resonance",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "lcr_circuit",
+        "ac_circuits",
+        "resonance",
+        "resonant_frequency",
+        "angular_frequency",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p17_q46",
+    "question_text": "A Wheatstone bridge is used to determine the value of unknown resistance X by adjusting the variable resistance Y as shown in the figure. For the most precise measurement of X, the resistances P and Q:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Should be approximately equal and are small",
+      "B": "Should be very large and unequal",
+      "C": "Do not play any significant role",
+      "D": "Should be approximately equal to 2X"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "A Wheatstone bridge is most sensitive, and therefore provides the most precise measurement, when all four resistances in the arms (P, Q, X, and the adjusted Y) are of the same order of magnitude. This implies that the ratio arms P and Q should be approximately equal.",
+      "key_concepts": [
+        "Wheatstone Bridge",
+        "Balanced Bridge Condition",
+        "Sensitivity of a Wheatstone Bridge",
+        "Resistance Measurement"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the balanced condition for a Wheatstone bridge: \\(\\frac{P}{Q} = \\frac{X}{Y}\\). At balance, the galvanometer shows zero deflection."
+        },
+        {
+          "step_number": 2,
+          "description": "Consider the condition for the 'most precise measurement'. Precision is related to the sensitivity of the bridge. The sensitivity is defined as the deflection of the galvanometer for a small change in the variable resistance."
+        },
+        {
+          "step_number": 3,
+          "description": "It is a standard result from the analysis of the Wheatstone bridge circuit that the sensitivity is maximal when all four resistors (P, Q, X, Y) are of the same order of magnitude."
+        },
+        {
+          "step_number": 4,
+          "description": "If all resistors are of the same order, then for the bridge to balance (\\(\\frac{P}{Q} = \\frac{X}{Y}\\)), the ratio arms P and Q must also be of the same order, ideally approximately equal. When P=Q, the balance condition simplifies to X=Y, which is a common setup."
+        },
+        {
+          "step_number": 5,
+          "description": "Evaluate the options. Option A states that P and Q should be approximately equal, which aligns with the condition for maximum sensitivity. The condition 'and are small' is not strictly necessary but having them of the same order as the unknown resistance is key. Among the given choices, this is the best description."
+        }
+      ],
+      "scientific_principles": [
+        "Kirchhoff's Laws",
+        "Principles of Electrical Measurements"
+      ],
+      "correct_option_reasoning": "For maximum sensitivity and precision of a Wheatstone bridge, it is desirable that all four resistance arms have values of a similar order of magnitude. This implies that the ratio arms P and Q should be approximately equal.",
+      "incorrect_options_analysis": {
+        "B": "Using very large and unequal resistances would decrease the sensitivity of the bridge.",
+        "C": "The ratio arms P and Q are crucial for establishing the balance condition and affect sensitivity.",
+        "D": "This is an arbitrary condition. The ideal case is \\(P \\approx Q \\approx X\\)."
+      },
+      "common_mistakes": [
+        "Only remembering the balance condition but not the conditions for maximum sensitivity."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "Wheatstone Bridge",
+      "difficulty": "Medium",
+      "bloom_level": "Understand",
+      "tags": [
+        "wheatstone_bridge",
+        "current_electricity",
+        "resistance",
+        "sensitivity",
+        "electrical_measurements"
+      ],
+      "requires_visual": true,
+      "visual_description": "A standard diagram of a Wheatstone bridge circuit. It shows four resistors P, Q, X, and Y arranged in a diamond shape. A galvanometer is connected between the middle two vertices, and a voltage source is connected between the top and bottom vertices. P and Q are the ratio arms, X is the unknown resistance, and Y is a variable resistance.",
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p18_q47",
+    "question_text": "From Ampere’s circuital law for a long straight wire of circular cross-section carrying a steady current, the variation of magnetic field in the inside and outside region of the wire is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "A linearly increasing function of distance up to the boundary of the wire and then linearly decreasing for the outside region.",
+      "B": "A linearly increasing function of distance r up to the boundary of the wire and then decreasing with \\(1/r\\) dependence for the outside region.",
+      "C": "A linearly decreasing function of distance up to the boundary of the wire and then a linearly increasing one for the outside region.",
+      "D": "Uniform and remains constant for both the regions."
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Using Ampere's Law, we can find the magnetic field both inside and outside a long straight wire. The result shows that the field increases linearly with distance from the center inside the wire and decreases inversely with distance from the center outside the wire.",
+      "key_concepts": [
+        "Ampere's Circuital Law",
+        "Magnetic Field of a Straight Wire",
+        "Current Density"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Case 1: Inside the wire (\\(r < R\\)), where R is the radius of the wire. We apply Ampere's law to a circular loop of radius r.",
+          "formula": "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_{enc}"
+        },
+        {
+          "step_number": 2,
+          "description": "The current enclosed, \\(I_{enc}\\), is the total current I times the ratio of the areas: \\(I_{enc} = I \\frac{\\pi r^2}{\\pi R^2} = I \\frac{r^2}{R^2}\\).",
+          "formula": "B(2\\pi r) = \\mu_0 I \\frac{r^2}{R^2} \\implies B_{in} = \\frac{\\mu_0 I r}{2\\pi R^2}"
+        },
+        {
+          "step_number": 3,
+          "description": "From this result, we see that inside the wire, the magnetic field B is directly proportional to the distance r from the center (a linear increase)."
+        },
+        {
+          "step_number": 4,
+          "description": "Case 2: Outside the wire (\\(r > R\\)). We apply Ampere's law to a circular loop of radius r. The enclosed current is the total current I.",
+          "formula": "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_{enc} \\implies B(2\\pi r) = \\mu_0 I"
+        },
+        {
+          "step_number": 5,
+          "description": "Solving for B gives the standard formula for the field outside a long wire.",
+          "formula": "B_{out} = \\frac{\\mu_0 I}{2\\pi r}"
+        },
+        {
+          "step_number": 6,
+          "description": "From this result, we see that outside the wire, the magnetic field B is inversely proportional to the distance r (decreases as \\(1/r\\))."
+        },
+        {
+          "step_number": 7,
+          "description": "Combining the results, the field increases linearly up to the boundary (r=R) and then decreases with a \\(1/r\\) dependence. This matches option B."
+        }
+      ],
+      "scientific_principles": [
+        "Ampere's Circuital Law"
+      ],
+      "correct_option_reasoning": "The application of Ampere's law correctly predicts a linear increase of the magnetic field inside the wire (B ∝ r) and an inverse decrease outside the wire (B ∝ 1/r).",
+      "incorrect_options_analysis": {
+        "A": "The decrease outside is not linear; it follows a 1/r curve.",
+        "C": "The field increases inside the wire, not decreases.",
+        "D": "The field is not uniform; it varies with distance r."
+      },
+      "common_mistakes": [
+        "Incorrectly calculating the enclosed current for the region inside the wire.",
+        "Confusing the r and 1/r dependencies or their respective regions."
+      ],
+      "additional_notes": "A graph of B vs. r would show a straight line from the origin up to r=R, and then a hyperbolic curve (1/r) for r>R."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Magnetic Effects of Current and Magnetism",
+      "subtopic": "Ampere's Circuital Law",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "amperes_law",
+        "magnetic_field",
+        "straight_wire",
+        "electromagnetism"
+      ],
+      "estimated_time_seconds": 100,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p18_q48",
+    "question_text": "A big circular coil of 1000 turns and average radius 10 m is rotating about its horizontal diameter at 2 \\(rad s^{-1}\\). If the vertical component of earth’s magnetic field at that place is \\(2 \\times 10^{-5}\\) T and electrical resistance of the coil is 12.56 \\(\\Omega\\), then the maximum induced current in the coil will be:",
+    "question_type": "numerical",
+    "options": {
+      "A": "1.5 A",
+      "B": "1 A",
+      "C": "2 A",
+      "D": "0.25 A"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This problem describes a basic AC generator. The rotation of the coil in the Earth's magnetic field induces an electromotive force (EMF) and a current. We need to find the maximum value of this induced current, which occurs when the rate of change of magnetic flux is at its peak.",
+      "key_concepts": [
+        "Electromagnetic Induction",
+        "Faraday's Law of Induction",
+        "AC Generator",
+        "Induced EMF",
+        "Induced Current",
+        "Magnetic Flux"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "The coil rotates about a horizontal diameter in the vertical component of the Earth's magnetic field. The magnetic flux (\\(\\Phi_B\\)) through the coil at any time t is given by:",
+          "formula": "\\Phi_B(t) = N B A \\cos(\\theta) = N B A \\cos(\\omega t)"
+        },
+        {
+          "step_number": 2,
+          "description": "According to Faraday's Law of Induction, the induced EMF (\\(\\varepsilon\\)) is the negative rate of change of magnetic flux.",
+          "formula": "\\varepsilon(t) = -\\frac{d\\Phi_B}{dt} = -\\frac{d}{dt}(NBA \\cos(\\omega t)) = NBA\\omega \\sin(\\omega t)"
+        },
+        {
+          "step_number": 3,
+          "description": "The maximum induced EMF (\\(\\varepsilon_{max}\\)) occurs when \\(\\sin(\\omega t) = 1\\).",
+          "formula": "\\varepsilon_{max} = NBA\\omega"
+        },
+        {
+          "step_number": 4,
+          "description": "Identify the given values: N = 1000, B = \\(2 \\times 10^{-5}\\) T, r = 10 m, \\(\\omega = 2 \\text{ rad s}^{-1}\\), R = 12.56 Ω. Calculate the area A.",
+          "formula": "A = \\pi r^2 = \\pi (10)^2 = 100\\pi \\text{ m}^2"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the maximum EMF.",
+          "formula": "\\varepsilon_{max} = (1000) \\times (2 \\times 10^{-5} \\text{ T}) \\times (100\\pi \\text{ m}^2) \\times (2 \\text{ rad/s}) = 4\\pi \\times 10^{-5} \\times 10^5 = 4\\pi \\text{ V}"
+        },
+        {
+          "step_number": 6,
+          "description": "Calculate the maximum induced current (\\(i_{max}\\)) using Ohm's Law.",
+          "formula": "i_{max} = \\frac{\\varepsilon_{max}}{R} = \\frac{4\\pi \\text{ V}}{12.56 \\Omega}"
+        },
+        {
+          "step_number": 7,
+          "description": "Substitute \\(\\pi \\approx 3.14\\). Notice that \\(12.56 = 4 \\times 3.14 = 4\\pi\\).",
+          "formula": "i_{max} = \\frac{4\\pi}{4\\pi} = 1 \\text{ A}"
+        }
+      ],
+      "scientific_principles": [
+        "Faraday's Law of Electromagnetic Induction",
+        "Ohm's Law"
+      ],
+      "correct_option_reasoning": "The maximum induced EMF is calculated to be \\(4\\pi\\) V. Dividing this by the resistance of \\(12.56 \\Omega\\) (which is \\(4\\pi \\Omega\\)) gives a maximum current of 1 A.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation.",
+        "C": "Incorrect calculation.",
+        "D": "Incorrect calculation."
+      },
+      "common_mistakes": [
+        "Using degrees instead of radians for angular velocity.",
+        "Forgetting to calculate the area from the radius.",
+        "Making an arithmetic error or a mistake with powers of 10."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electromagnetic Induction",
+      "subtopic": "AC Generator",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "electromagnetic_induction",
+        "faradays_law",
+        "ac_generator",
+        "induced_current",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p19_q49",
+    "question_text": "Two point charges –q and +q are placed at a distance of L, as shown in the figure. The magnitude of the electric field intensity at a distance R (R >> L) varies as:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(1/R^3\\)",
+      "B": "\\(1/R^4\\)",
+      "C": "\\(1/R^6\\)",
+      "D": "\\(1/R^2\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "The arrangement of two equal and opposite charges separated by a small distance is an electric dipole. The electric field produced by a dipole at a large distance (R) from its center decreases much faster than the field of a single point charge, varying inversely with the cube of the distance (\\(1/R^3\\)).",
+      "key_concepts": [
+        "Electric Dipole",
+        "Electric Field of a Dipole",
+        "Dipole Moment",
+        "Far-field Approximation"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the system: A pair of equal and opposite charges (–q and +q) separated by a distance L constitutes an electric dipole."
+        },
+        {
+          "step_number": 2,
+          "description": "Consider the condition given: The distance to the point of observation, R, is much larger than the separation of the charges, L (\\(R \\gg L\\)). This is the condition for the 'far-field' or 'short dipole' approximation."
+        },
+        {
+          "step_number": 3,
+          "description": "Recall the standard formulas for the electric field of a short dipole:\n- On the axial line: \\(E_{axial} = \\frac{1}{4\\pi\\epsilon_0} \\frac{2p}{R^3}\\)\n- On the equatorial line: \\(E_{equatorial} = \\frac{1}{4\\pi\\epsilon_0} \\frac{p}{R^3}\\)\nwhere p = qL is the dipole moment."
+        },
+        {
+          "step_number": 4,
+          "description": "In both cases (and for any general point in the far-field), the magnitude of the electric field intensity E is proportional to \\(1/R^3\\)."
+        }
+      ],
+      "scientific_principles": [
+        "Principle of Superposition for Electric Fields"
+      ],
+      "correct_option_reasoning": "For a short electric dipole (which is the case when \\(R \\gg L\\)), the electric field strength at a distant point R varies as \\(1/R^3\\).",
+      "incorrect_options_analysis": {
+        "B": "Incorrect dependence.",
+        "C": "Incorrect dependence.",
+        "D": "The \\(1/R^2\\) dependence is characteristic of the electric field of a single point charge (monopole), not a dipole."
+      },
+      "common_mistakes": [
+        "Confusing the field of a dipole (\\(1/R^3\\)) with the field of a point charge (\\(1/R^2\\)).",
+        "Confusing the electric field dependence with the electric potential dependence of a dipole (which is \\(1/R^2\\))."
+      ],
+      "additional_notes": "The faster fall-off of the dipole field compared to the monopole field is because, from a large distance, the fields of the two opposite charges nearly cancel each other out."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electric Charges and Fields",
+      "subtopic": "Electric Dipole",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "electric_dipole",
+        "electric_field",
+        "electrostatics",
+        "far_field_approximation"
+      ],
+      "requires_visual": true,
+      "visual_description": "A simple diagram showing a point charge -q and a point charge +q separated by a distance L along an axis. A point P is shown at a large distance R from the center of the dipole.",
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p19_q50",
+    "question_text": "A nucleus of mass number 189 splits into two nuclei having mass numbers 125 and 64. The ratio of the radii of the two daughter nuclei respectively is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "4 : 5",
+      "B": "5 : 4",
+      "C": "25 : 16",
+      "D": "1 : 1"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "The radius of a nucleus is empirically related to its mass number (A) by the formula \\(R = R_0 A^{1/3}\\). To find the ratio of the radii of the two daughter nuclei, we can set up a ratio of this formula for the two given mass numbers.",
+      "key_concepts": [
+        "Nuclear Radius",
+        "Mass Number (A)",
+        "Nuclear Structure"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the empirical formula for the radius of a nucleus.",
+          "formula": "R = R_0 A^{1/3}"
+        },
+        {
+          "step_number": 2,
+          "description": "Here, \\(R_0\\) is an empirical constant (approx. 1.2 fm) and A is the mass number."
+        },
+        {
+          "step_number": 3,
+          "description": "Let the two daughter nuclei have mass numbers \\(A_1 = 125\\) and \\(A_2 = 64\\). Let their radii be \\(R_1\\) and \\(R_2\\)."
+        },
+        {
+          "step_number": 4,
+          "description": "Set up the ratio of the radii \\(\\frac{R_1}{R_2}\\).",
+          "formula": "\\frac{R_1}{R_2} = \\frac{R_0 A_1^{1/3}}{R_0 A_2^{1/3}} = \\left(\\frac{A_1}{A_2}\\right)^{1/3}"
+        },
+        {
+          "step_number": 5,
+          "description": "Substitute the given mass numbers.",
+          "formula": "\\frac{R_1}{R_2} = \\left(\\frac{125}{64}\\right)^{1/3}"
+        },
+        {
+          "step_number": 6,
+          "description": "Calculate the cube root. Note that \\(125 = 5^3\\) and \\(64 = 4^3\\).",
+          "formula": "\\frac{R_1}{R_2} = \\frac{(125)^{1/3}}{(64)^{1/3}} = \\frac{5}{4}"
+        },
+        {
+          "step_number": 7,
+          "description": "The ratio of the radii is 5 : 4."
+        }
+      ],
+      "scientific_principles": [
+        "Empirical Model of Nuclear Size"
+      ],
+      "correct_option_reasoning": "The ratio of the radii is the ratio of the cube roots of their mass numbers, which is \\((125)^{1/3} : (64)^{1/3}\\), simplifying to 5 : 4.",
+      "incorrect_options_analysis": {
+        "A": "This is the inverse of the correct ratio (\\(R_2 : R_1\\)).",
+        "C": "This would be the ratio of the areas (\\(R^2\\)), not the radii.",
+        "D": "The radii are not equal as the mass numbers are different."
+      },
+      "common_mistakes": [
+        "Forgetting to take the cube root of the mass numbers.",
+        "Inverting the ratio.",
+        "Using the mass numbers directly (125:64)."
+      ],
+      "additional_notes": "The initial mass number of 189 splitting into 125 and 64 (125+64=189) confirms conservation of nucleons, but is not needed for the radius ratio calculation."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Nuclei",
+      "subtopic": "Size of the Nucleus",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "nuclear_physics",
+        "nuclear_radius",
+        "mass_number",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p20_q51",
+    "question_text": "Given below are two statements:\n\n**Statement I:** In the coagulation of a negative sol, the flocculating power of the three given ions is in the order \\(Al^{3+} > Ba^{2+} > Na^+\\).\n\n**Statement II:** In the coagulation of a positive sol, the flocculating power of the three given salts is in the order \\(NaCl > Na_2SO_4 > Na_3PO_4\\).\n\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Both Statement I and Statement II are incorrect.",
+      "B": "Statement I is correct but Statement II is incorrect.",
+      "C": "Statement I is incorrect but Statement II is correct.",
+      "D": "Both Statement I and Statement II are correct."
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Statement I correctly applies the Hardy-Schulze rule for the coagulation of a negative sol by cations, where higher charge leads to greater flocculating power. Statement II incorrectly applies the rule for a positive sol, stating the reverse of the correct order for the effectiveness of anions.",
+      "key_concepts": [
+        "Colloids",
+        "Coagulation (Flocculation)",
+        "Hardy-Schulze Rule",
+        "Flocculating Power"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the Hardy-Schulze Rule. It states that for the coagulation of a colloidal sol, the effective ion is the one with a charge opposite to that of the colloidal particles. The greater the magnitude of the charge on this flocculating ion, the greater its coagulating (flocculating) power."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement I. For a negative sol, coagulation is caused by positive ions (cations). The ions are \\(Na^+\\), \\(Ba^{2+}\\), and \\(Al^{3+}\\). According to the rule, higher charge means greater flocculating power. Therefore, the order is \\(Al^{3+} > Ba^{2+} > Na^+\\). Statement I is correct."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze Statement II. For a positive sol, coagulation is caused by negative ions (anions). The salts are NaCl, \\(Na_2SO_4\\), and \\(Na_3PO_4\\), providing the anions \\(Cl^-\\) (charge -1), \\(SO_4^{2-}\\) (charge -2), and \\(PO_4^{3-}\\) (charge -3). According to the rule, the greater the magnitude of the negative charge, the greater the flocculating power. Therefore, the correct order is \\(PO_4^{3-} > SO_4^{2-} > Cl^-\\) which corresponds to the salts \\(Na_3PO_4 > Na_2SO_4 > NaCl\\). Statement II gives the exact opposite order. Statement II is incorrect."
+        }
+      ],
+      "scientific_principles": [
+        "Hardy-Schulze Rule for Colloid Coagulation"
+      ],
+      "correct_option_reasoning": "Statement I correctly states that flocculating power increases with cation charge for a negative sol. Statement II incorrectly reverses the order for anions on a positive sol; it should be \\(Na_3PO_4 > Na_2SO_4 > NaCl\\).",
+      "incorrect_options_analysis": {
+        "A": "Statement I is correct.",
+        "C": "Statement I is correct and II is incorrect.",
+        "D": "Statement II is incorrect."
+      },
+      "common_mistakes": [
+        "Reversing the Hardy-Schulze rule, thinking lower charge is more effective.",
+        "Forgetting the charges of common polyatomic ions like sulfate (\\(SO_4^{2-}\\)) and phosphate (\\(PO_4^{3-}\\))."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Surface Chemistry",
+      "subtopic": "Colloids and Coagulation",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "statement_based",
+        "surface_chemistry",
+        "colloids",
+        "coagulation",
+        "hardy_schulze_rule"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p20_q52",
+    "question_text": "Which statement regarding polymers is not correct?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Fibers possess high tensile strength.",
+      "B": "Thermoplastic polymers are capable of repeatedly softening and hardening on heating and cooling respectively.",
+      "C": "Thermosetting polymers are reusable.",
+      "D": "Elastomers have polymer chains held together by weak intermolecular forces."
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The statement that thermosetting polymers are reusable is incorrect. Once these polymers are heated and set into a shape, they form extensive, permanent cross-links that prevent them from being remelted or reshaped.",
+      "key_concepts": [
+        "Polymers",
+        "Thermoplastic Polymers",
+        "Thermosetting Polymers",
+        "Elastomers",
+        "Fibers"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze statement A: Fibers are polymers whose chains are packed closely in a crystalline structure, allowing for strong intermolecular forces like hydrogen bonding. This structure gives them high tensile strength and modulus. This statement is correct."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze statement B: Thermoplastic polymers consist of long chains with intermolecular forces that weaken upon heating, allowing the material to soften and be remolded. These forces reform upon cooling, hardening the material. This process is reversible. This statement is correct."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze statement C: Thermosetting polymers are initially in a soft or liquid state but undergo an irreversible chemical reaction (curing) upon heating, forming a rigid, 3D cross-linked network. Once 'set', they cannot be softened by reheating and are therefore not reusable or recyclable by melting. This statement is not correct."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze statement D: Elastomers are polymers that can undergo large elastic deformation. Their polymer chains are held together by weak intermolecular forces, which allow the chains to uncoil and stretch when a force is applied. A few cross-links are present to ensure the material returns to its original shape. This statement is correct."
+        }
+      ],
+      "scientific_principles": [
+        "Structure-Property Relationships in Polymers"
+      ],
+      "correct_option_reasoning": "Thermosetting polymers are defined by their property of becoming permanently hard and rigid after initial heating and shaping. The formation of extensive covalent cross-links during curing is an irreversible process, meaning they cannot be remelted and reused.",
+      "incorrect_options_analysis": {
+        "A": "High tensile strength is a defining characteristic of fiber-forming polymers like nylon and polyester.",
+        "B": "Reusability/recyclability through melting is the key feature of thermoplastics like polyethylene and PVC.",
+        "D": "The elastic properties of elastomers like rubber are due to weakly interacting, coiled polymer chains."
+      },
+      "common_mistakes": [
+        "Confusing the properties of thermoplastic and thermosetting polymers."
+      ],
+      "additional_notes": "Examples of thermosetting polymers include Bakelite and epoxy resins."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Polymers",
+      "subtopic": "Classification of Polymers",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "polymers",
+        "thermosetting_polymers",
+        "thermoplastic_polymers",
+        "polymer_classification"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p21_q53",
+    "question_text": "The incorrect statement regarding chirality is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "The product obtained by an \\(S_N2\\) reaction of a haloalkane having chirality at the reactive site shows inversion of configuration.",
+      "B": "Enantiomers are superimposable mirror images on each other.",
+      "C": "A racemic mixture shows zero optical rotation.",
+      "D": "An \\(S_N1\\) reaction yields a 1:1 mixture of both enantiomers."
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "The statement that enantiomers are superimposable mirror images is incorrect. The very definition of enantiomers is that they are stereoisomers that are non-superimposable mirror images of each other, like a left and right hand.",
+      "key_concepts": [
+        "Chirality",
+        "Enantiomers",
+        "Stereochemistry",
+        "Racemic Mixture",
+        "Optical Activity",
+        "\\(S_N1\\) and \\(S_N2\\) Reactions"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze statement A: The \\(S_N2\\) mechanism involves a backside attack by the nucleophile, which leads to a Walden inversion, or an inversion of the stereochemical configuration at the chiral center. This statement is correct."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze statement B: This is the definition of enantiomers. Enantiomers are pairs of molecules that are mirror images of each other but are *non-superimposable*. The statement claims they are superimposable, which is the definition of identical, achiral molecules. This statement is incorrect."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze statement C: A racemic mixture contains equal (50:50) amounts of two enantiomers. Since the enantiomers rotate plane-polarized light by equal amounts in opposite directions, their effects cancel out, leading to zero net optical rotation. This statement is correct."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze statement D: The \\(S_N1\\) reaction proceeds through a planar carbocation intermediate. The nucleophile can attack this intermediate from either face with equal probability, leading to the formation of both enantiomers in equal amounts, a process called racemization. This statement is correct (ideally)."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Stereochemistry"
+      ],
+      "correct_option_reasoning": "The fundamental definition of enantiomers is that they are non-superimposable mirror images. Statement B contradicts this core concept and is therefore incorrect.",
+      "incorrect_options_analysis": {
+        "A": "This correctly describes the stereochemical outcome of an Sₙ2 reaction (inversion).",
+        "C": "This correctly describes a key property of racemic mixtures.",
+        "D": "This correctly describes the stereochemical outcome of an Sₙ1 reaction (racemization)."
+      },
+      "common_mistakes": [
+        "Confusing 'superimposable' and 'non-superimposable' in the context of stereoisomers."
+      ],
+      "additional_notes": "Objects that are non-superimposable mirror images of each other are called chiral."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Haloalkanes and Haloarenes",
+      "subtopic": "Stereochemical Aspects of Nucleophilic Substitution",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "chirality",
+        "enantiomers",
+        "stereochemistry",
+        "sn1_reaction",
+        "sn2_reaction",
+        "racemic_mixture"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p21_q54",
+    "question_text": "In the reaction below, what is Y?\n\\[RMgX + CO_2 \\xrightarrow{\\text{dry ether}} Y \\xrightarrow{H_3O^+} RCOOH\\]",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(R_3CO^-Mg^+X\\)",
+      "B": "\\(RCOO^-X^+\\)",
+      "C": "\\((RCOO)_2Mg\\)",
+      "D": "\\(RCOO^-Mg^+X\\)"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This reaction shows the carboxylation of a Grignard reagent (RMgX). The nucleophilic R group of the Grignard reagent attacks the electrophilic carbon of carbon dioxide (CO₂). The intermediate product, Y, is a magnesium carboxylate salt, which is then protonated by acid workup to yield a carboxylic acid.",
+      "key_concepts": [
+        "Grignard Reaction",
+        "Organometallic Reagents",
+        "Carboxylation",
+        "Nucleophilic Addition",
+        "Carboxylic Acid Synthesis"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the reactants. RMgX is a Grignard reagent, where the R group acts as a potent nucleophile (effectively \\(R^-\\)). \\(CO_2\\) (O=C=O) has an electrophilic carbon atom."
+        },
+        {
+          "step_number": 2,
+          "description": "The nucleophilic R group attacks the central carbon of \\(CO_2\\). One of the C=O double bonds breaks, and the electrons move to the oxygen atom."
+        },
+        {
+          "step_number": 3,
+          "description": "This forms a new C-C bond, resulting in the structure \\(R-C(=O)O^-\\). The positive counterion, \\(MgX^+\\), immediately forms an ionic bond with the newly formed carboxylate oxygen."
+        },
+        {
+          "step_number": 4,
+          "description": "The resulting intermediate salt, Y, is a magnesium halocarboxylate with the structure \\(RCOO^-Mg^+X\\)."
+        },
+        {
+          "step_number": 5,
+          "description": "In the second step, acid workup (\\(H_3O^+\\)) protonates the carboxylate anion to form the final carboxylic acid product, RCOOH."
+        }
+      ],
+      "scientific_principles": [
+        "Mechanism of Nucleophilic Acyl Addition"
+      ],
+      "correct_option_reasoning": "The nucleophilic attack of the Grignard reagent on carbon dioxide forms a magnesium carboxylate salt intermediate. The correct structure for this salt is \\(RCOO^-Mg^+X\\).",
+      "incorrect_options_analysis": {
+        "A": "This structure is incorrect and does not represent the product of the reaction.",
+        "B": "This shows the halide X as the cation, which is incorrect. The cation is \\(MgX^+\\).",
+        "C": "This structure would imply two RCOO groups per magnesium, which would not be formed from one equivalent of RMgX."
+      },
+      "common_mistakes": [
+        "Incorrectly drawing the structure of the intermediate salt.",
+        "Confusing the intermediate Y with the final product."
+      ],
+      "additional_notes": "This is a very important synthetic route for creating carboxylic acids with one more carbon than the starting alkyl/aryl halide used to make the Grignard reagent."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Aldehydes, Ketones and Carboxylic Acids",
+      "subtopic": "Preparation of Carboxylic Acids",
+      "difficulty": "Medium",
+      "bloom_level": "Understand",
+      "tags": [
+        "grignard_reagent",
+        "carboxylation",
+        "carboxylic_acid",
+        "organic_synthesis",
+        "reaction_intermediate"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p21_q55",
+    "question_text": "In a one molal solution that contains 0.5 mole of a solute, there is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "500 g of solvent",
+      "B": "100 mL of solvent",
+      "C": "1000 g of solvent",
+      "D": "500 mL of solvent"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question tests the definition of molality. Molality is defined as moles of solute per kilogram of solvent. By using the given molality and moles of solute, we can directly calculate the mass of the solvent.",
+      "key_concepts": [
+        "Concentration Units",
+        "Molality (m)",
+        "Solute",
+        "Solvent"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the definition of molality (m).",
+          "formula": "Molality (m) = \\frac{\\text{moles of solute}}{\\text{mass of solvent in kg}}"
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the given values: molality = 1 m (which is 1 mol/kg), and moles of solute = 0.5 mol."
+        },
+        {
+          "step_number": 3,
+          "description": "Rearrange the formula to solve for the mass of the solvent.",
+          "formula": "\\text{Mass of solvent in kg} = \\frac{\\text{moles of solute}}{\\text{Molality (m)}}"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the given values into the rearranged formula.",
+          "formula": "\\text{Mass of solvent in kg} = \\frac{0.5 \\text{ mol}}{1 \\text{ mol/kg}} = 0.5 \\text{ kg}"
+        },
+        {
+          "step_number": 5,
+          "description": "Convert the mass of the solvent from kilograms (kg) to grams (g).",
+          "formula": "0.5 \\text{ kg} \\times 1000 \\text{ g/kg} = 500 \\text{ g}"
+        }
+      ],
+      "scientific_principles": [
+        "Definition of Molality"
+      ],
+      "correct_option_reasoning": "According to the definition of molality, a 1 molal solution with 0.5 moles of solute must contain 0.5 kg of solvent, which is equal to 500 g.",
+      "incorrect_options_analysis": {
+        "B": "This is a volume, not a mass, and the value is incorrect.",
+        "C": "1000 g of solvent would be required for 1 mole of solute in a 1 molal solution.",
+        "D": "This is a volume, not a mass. For water, 500 mL would be approximately 500 g, but molality is defined by mass, not volume."
+      },
+      "common_mistakes": [
+        "Confusing molality (moles solute / kg solvent) with molarity (moles solute / L solution).",
+        "Making a simple arithmetic error in the calculation."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Solutions",
+      "subtopic": "Concentration of Solutions",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "molality",
+        "solutions",
+        "concentration",
+        "physical_chemistry"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p22_q56",
+    "question_text": "Match List-I with List-II.\n\n**List-I (Hydrides)**\n(a) \\(MgH_2\\)\n(b) \\(GeH_4\\)\n(c) \\(B_2H_6\\)\n(d) \\(HF\\)\n\n**List-II (Nature)**\n(i) Electron precise\n(ii) Electron deficient\n(iii) Electron rich\n(iv) Ionic\n\nChoose the correct answer from the options given below:",
+    "question_type": "matching",
+    "options": {
+      "A": "(a) – (iii), (b) – (i), (c) – (ii), (d) – (iv)",
+      "B": "(a) – (i), (b) – (ii), (c) – (iv), (d) – (iii)",
+      "C": "(a) – (ii), (b) – (iii), (c) – (iv), (d) – (i)",
+      "D": "(a) – (iv), (b) – (i), (c) – (ii), (d) – (iii)"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question requires classifying different types of hydrides based on their chemical bonding and electronic structure. The classification depends on the group number and electronegativity of the element forming the hydride.",
+      "key_concepts": [
+        "Types of Hydrides",
+        "Ionic (Saline) Hydrides",
+        "Covalent (Molecular) Hydrides",
+        "Electron Deficient Hydrides",
+        "Electron Precise Hydrides",
+        "Electron Rich Hydrides"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze (a) \\(MgH_2\\): Magnesium (Mg) is a Group 2 (alkaline earth) metal. These highly electropositive metals form ionic (or saline) hydrides with hydrogen, containing the hydride ion \\(H^-\\). This matches **(iv) Ionic**."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze (b) \\(GeH_4\\): Germanium (Ge) is a Group 14 element. These elements have exactly the right number of valence electrons (four) to form four normal covalent bonds with hydrogen. These hydrides have complete octets and are called **(i) Electron precise**."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze (c) \\(B_2H_6\\): Boron (B) is a Group 13 element and has only three valence electrons. It cannot form enough traditional two-electron bonds to satisfy its valency, leading to structures with multicenter bonds (like the 3c-2e bonds in diborane). These are called **(ii) Electron deficient** hydrides."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze (d) \\(HF\\): Fluorine (F) is a Group 17 element. Elements in groups 15-17 have more valence electrons than needed for single bonds, resulting in lone pairs on the central atom. These are called **(iii) Electron rich** hydrides, as the lone pairs can act as Lewis bases."
+        }
+      ],
+      "scientific_principles": [
+        "Periodic Trends in Bonding"
+      ],
+      "correct_option_reasoning": "The pairings (a)-(iv), (b)-(i), (c)-(ii), and (d)-(iii) correctly classify each hydride based on the periodic properties of its central element. This combination is found in option D.",
+      "incorrect_options_analysis": {
+        "A": "Contains multiple incorrect matches.",
+        "B": "Contains multiple incorrect matches.",
+        "C": "Contains multiple incorrect matches."
+      },
+      "common_mistakes": [
+        "Confusing electron-deficient, electron-precise, and electron-rich hydrides.",
+        "Incorrectly classifying hydrides of s-block metals."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Hydrogen",
+      "subtopic": "Hydrides",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "matching",
+        "hydrides",
+        "ionic_hydride",
+        "covalent_hydride",
+        "inorganic_chemistry"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p22_q57",
+    "question_text": "Given below are two statements:\n\n**Statement I:** The boiling points of aldehydes and ketones are higher than hydrocarbons of comparable molecular masses because of weak molecular association in aldehydes and ketones due to dipole-dipole interactions.\n\n**Statement II:** The boiling points of aldehydes and ketones are lower than the alcohols of similar molecular masses due to the absence of H-bonding.\n\nIn the light of the above statements, choose the most appropriate answer from the given below:",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Both Statement I and Statement II are incorrect",
+      "B": "Statement I is correct but Statement II is incorrect",
+      "C": "Statement I is incorrect but Statement II is correct",
+      "D": "Both Statement I and Statement II are correct"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "Both statements correctly describe the boiling point trends of aldehydes and ketones relative to other classes of organic compounds, attributing them to the appropriate intermolecular forces. Their boiling points are higher than hydrocarbons due to dipole-dipole forces and lower than alcohols due to the absence of intermolecular hydrogen bonding.",
+      "key_concepts": [
+        "Boiling Point",
+        "Intermolecular Forces",
+        "Dipole-Dipole Interactions",
+        "Hydrogen Bonding",
+        "Van der Waals Forces",
+        "Aldehydes and Ketones"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Statement I. Aldehydes and ketones possess a polar carbonyl group (C=O), which creates a molecular dipole. This polarity leads to intermolecular dipole-dipole attractions. Nonpolar hydrocarbons of similar mass only exhibit weaker London dispersion forces. Since dipole-dipole forces are stronger than dispersion forces, aldehydes and ketones have higher boiling points than comparable hydrocarbons. This statement is correct."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement II. Alcohols contain a hydroxyl (-OH) group, where a hydrogen atom is bonded to a highly electronegative oxygen atom. This allows alcohol molecules to form strong intermolecular hydrogen bonds with each other. Aldehydes and ketones lack this H-O bond and thus cannot form hydrogen bonds among themselves. As hydrogen bonds are much stronger than dipole-dipole interactions, alcohols have significantly higher boiling points than aldehydes and ketones of similar mass. This statement is correct."
+        }
+      ],
+      "scientific_principles": [
+        "Relationship between Intermolecular Force Strength and Physical Properties"
+      ],
+      "correct_option_reasoning": "Both statements accurately explain the boiling point trends by correctly identifying the dominant intermolecular forces present in each class of compound (dipole-dipole in carbonyls, hydrogen bonding in alcohols, dispersion in hydrocarbons) and their relative strengths.",
+      "incorrect_options_analysis": {
+        "A": "Both statements are correct.",
+        "B": "Statement II is also correct.",
+        "C": "Statement I is also correct."
+      },
+      "common_mistakes": [
+        "Thinking that aldehydes/ketones can form hydrogen bonds with each other (they can act as H-bond acceptors, but not donors)."
+      ],
+      "additional_notes": "The typical order of boiling points for compounds of similar molar mass is: alkanes < ethers < aldehydes/ketones < alcohols < carboxylic acids."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Aldehydes, Ketones and Carboxylic Acids",
+      "subtopic": "Physical Properties",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "statement_based",
+        "boiling_point",
+        "intermolecular_forces",
+        "dipole_dipole_interaction",
+        "hydrogen_bonding",
+        "aldehydes",
+        "ketones"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p23_q58",
+    "question_text": "Match List-I with List-II.\n\n**List-I (Products formed)**\n(a) Cyanohydrin\n(b) Acetal\n(c) Schiff's base\n(d) Oxime\n\n**List-II (Reaction of carbonyl compound with)**\n(i) \\(NH_2OH\\)\n(ii) \\(RNH_2\\)\n(iii) alcohol\n(iv) \\(HCN\\)\n\nChoose the correct answer from the options given below:",
+    "question_type": "matching",
+    "options": {
+      "A": "(a) – (ii), (b) – (iii), (c) – (iv), (d) – (i)",
+      "B": "(a) – (i), (b) – (iii), (c) – (ii), (d) – (iv)",
+      "C": "(a) – (iv), (b) – (iii), (c) – (ii), (d) – (i)",
+      "D": "(a) – (iii), (b) – (iv), (c) – (ii), (d) – (i)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This question tests the knowledge of characteristic nucleophilic addition and addition-elimination reactions of carbonyl compounds (aldehydes and ketones), matching the specific product with the reagent required for its formation.",
+      "key_concepts": [
+        "Reactions of Carbonyl Compounds",
+        "Nucleophilic Addition",
+        "Cyanohydrin Formation",
+        "Acetal Formation",
+        "Schiff's Base (Imine) Formation",
+        "Oxime Formation"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Match (a) Cyanohydrin: This product is formed by the nucleophilic addition of hydrogen cyanide (\\(HCN\\)) across the carbonyl group. This matches **(iv)**."
+        },
+        {
+          "step_number": 2,
+          "description": "Match (b) Acetal: This product is formed when a carbonyl compound reacts with two equivalents of an alcohol in the presence of an acid catalyst. This matches **(iii)**."
+        },
+        {
+          "step_number": 3,
+          "description": "Match (c) Schiff's base: Also known as an imine, this product is formed from the reaction of a carbonyl compound with a primary amine (\\(RNH_2\\)). This matches **(ii)**."
+        },
+        {
+          "step_number": 4,
+          "description": "Match (d) Oxime: This product is formed from the reaction of a carbonyl compound with hydroxylamine (\\(NH_2OH\\)). This matches **(i)**."
+        }
+      ],
+      "scientific_principles": [
+        "Mechanisms of Carbonyl Chemistry"
+      ],
+      "correct_option_reasoning": "The pairings (a)-(iv), (b)-(iii), (c)-(ii), and (d)-(i) correctly link each named product to the specific reagent that reacts with a carbonyl compound to form it. This combination is presented in option C.",
+      "incorrect_options_analysis": {
+        "A": "Contains multiple incorrect matches.",
+        "B": "Contains multiple incorrect matches.",
+        "D": "Contains multiple incorrect matches."
+      },
+      "common_mistakes": [
+        "Confusing the reagents for forming a Schiff's base (primary amine) and an oxime (hydroxylamine).",
+        "Mixing up the products of reaction with HCN and alcohols."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Aldehydes, Ketones and Carboxylic Acids",
+      "subtopic": "Reactions of Aldehydes and Ketones",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "matching",
+        "carbonyl_compounds",
+        "organic_reactions",
+        "cyanohydrin",
+        "acetal",
+        "schiffs_base",
+        "oxime"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p24_q59",
+    "question_text": "Which one is not a correct mathematical equation for Dalton’s Law of partial pressure? Here p = total pressure of gaseous mixture.",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(p = n_1 \\frac{RT}{V} + n_2 \\frac{RT}{V} + n_3 \\frac{RT}{V}\\)",
+      "B": "\\(p_i = \\chi_i p\\), where \\(p_i\\) = partial pressure of i-th gas, \\(\\chi_i\\) = mole fraction of i-th gas in gaseous mixture",
+      "C": "\\(p_i = p_i^\\circ \\chi_i\\), where \\(\\chi_i\\) = mole fraction of i-th gas in gaseous mixture, \\(p_i^\\circ\\) = pressure of i-th gas in pure state",
+      "D": "\\(p = p_1 + p_2 + p_3\\)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The equation \\(p_i = p_i^\\circ \\chi_i\\) is Raoult's Law, which describes the vapor pressure of a component in a liquid solution, not Dalton's Law of partial pressures for a mixture of gases. The other options are all valid expressions of Dalton's Law.",
+      "key_concepts": [
+        "Dalton's Law of Partial Pressures",
+        "Raoult's Law",
+        "Ideal Gas Law",
+        "Partial Pressure",
+        "Mole Fraction"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Option D: \\(p = p_1 + p_2 + p_3\\). This is the fundamental statement of Dalton's Law: the total pressure of a gas mixture is the sum of the partial pressures of its components. This is correct."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Option A: Using the Ideal Gas Law for each component, \\(p_i = n_i \\frac{RT}{V}\\). Substituting this into the equation from Option D gives \\(p = n_1 \\frac{RT}{V} + n_2 \\frac{RT}{V} + n_3 \\frac{RT}{V}\\). This is a correct derivation. It can also be written as \\(p = (n_1+n_2+n_3)\\frac{RT}{V}\\)."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Option B: This equation, \\(p_i = \\chi_i p\\), relates the partial pressure of a gas (\\(p_i\\)) to its mole fraction (\\(\\chi_i\\)) in the mixture and the total pressure (\\(p\\)). This is another standard and very useful form of Dalton's Law. This is correct."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze Option C: The equation \\(p_i = p_i^\\circ \\chi_i\\) is Raoult's Law. It states that the partial vapor pressure of a component above a liquid solution is equal to the vapor pressure of the pure component (\\(p_i^\\circ\\)) multiplied by its mole fraction in the *liquid phase*. This law applies to solutions, not to mixtures of gases. Therefore, this is not an equation for Dalton's Law."
+        }
+      ],
+      "scientific_principles": [
+        "Gas Laws",
+        "Laws of Solutions"
+      ],
+      "correct_option_reasoning": "The equation in option C is Raoult's Law, which pertains to the vapor pressure of solutions, and is distinct from Dalton's Law, which pertains to the total pressure of gas mixtures. The other three options are all valid representations of Dalton's Law.",
+      "incorrect_options_analysis": {
+        "A": "This is a correct expression of Dalton's Law using the Ideal Gas Law.",
+        "B": "This is a correct expression relating partial pressure to mole fraction.",
+        "D": "This is the primary definition of Dalton's Law."
+      },
+      "common_mistakes": [
+        "Confusing Dalton's Law (for gas mixtures) with Raoult's Law (for liquid solutions)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "States of Matter",
+      "subtopic": "Dalton's Law of Partial Pressures",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "gas_laws",
+        "daltons_law",
+        "raoults_law",
+        "partial_pressure",
+        "physical_chemistry"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  },
+  {
+    "question_id": "Question_Paper_20_p24_q60",
+    "question_text": "Match List-I with List-II.\n\n**List-I (Drug class)**\n(a) Antacids\n(b) Antihistamines\n(c) Analgesics\n(d) Antimicrobials\n\n**List-II (Drug molecule)**\n(i) Salvarsan\n(ii) Morphine\n(iii) Cimetidine\n(iv) Seldane\n\nChoose the correct answer from the options given below:",
+    "question_type": "matching",
+    "options": {
+      "A": "(a) - (iii), (b) – (iv), (c) – (ii), (d) – (i)",
+      "B": "(a) - (i), (b) – (iv), (c) – (ii), (d) – (iii)",
+      "C": "(a) - (iv), (b) – (iii), (c) – (i), (d) – (ii)",
+      "D": "(a) - (iii), (b) – (ii), (c) – (iv), (d) – (i)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question requires matching specific drug molecules to their therapeutic class. This is a knowledge-based question from the 'Chemistry in Everyday Life' chapter.",
+      "key_concepts": [
+        "Drugs",
+        "Drug Classification",
+        "Antacids",
+        "Antihistamines",
+        "Analgesics",
+        "Antimicrobials"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Match (a) Antacids: These drugs neutralize excess stomach acid. Cimetidine (Tagamet) is a well-known H₂-receptor antagonist that inhibits acid secretion, thus acting as an antacid. This matches **(iii)**."
+        },
+        {
+          "step_number": 2,
+          "description": "Match (b) Antihistamines: These drugs counteract the effects of histamine, which is released during allergic reactions. Seldane (terfenadine) is an example of an antihistamine. This matches **(iv)**."
+        },
+        {
+          "step_number": 3,
+          "description": "Match (c) Analgesics: These are painkillers. Morphine is a powerful opioid analgesic used for severe pain. This matches **(ii)**."
+        },
+        {
+          "step_number": 4,
+          "description": "Match (d) Antimicrobials: These drugs are used to treat infections caused by microorganisms. Salvarsan (arsphenamine) was an early synthetic antimicrobial used to treat syphilis. This matches **(i)**."
+        }
+      ],
+      "scientific_principles": [
+        "Pharmacology"
+      ],
+      "correct_option_reasoning": "The pairings (a)-(iii), (b)-(iv), (c)-(ii), and (d)-(i) correctly classify each drug molecule into its respective drug class. This combination is found in option A.",
+      "incorrect_options_analysis": {
+        "B": "Contains multiple incorrect matches.",
+        "C": "Contains multiple incorrect matches.",
+        "D": "Contains multiple incorrect matches."
+      },
+      "common_mistakes": [
+        "Not being familiar with the examples of drugs for each therapeutic class."
+      ],
+      "additional_notes": "Salvarsan is historically significant as one of the first effective chemotherapeutic agents, developed by Paul Ehrlich."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Chemistry in Everyday Life",
+      "subtopic": "Therapeutic Action of Different Classes of Drugs",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "matching",
+        "chemistry_in_everyday_life",
+        "drugs",
+        "pharmacology"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_20"
+    }
+  }
+]

@@ -1,0 +1,2493 @@
+[
+  {
+    "question_id": "Question_Paper_29_p9_q50",
+    "question_text": "An electric dipole is placed as shown in the figure. The electric potential (in \\(10^2\\) V) at point P due to the dipole is (\\(\\epsilon_0\\) = permittivity of free space and \\(K = \\frac{1}{4\\pi\\epsilon_0}\\))",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(\\left(\\frac{3}{8}\\right)qK\\)",
+      "B": "\\(\\left(\\frac{5}{8}\\right)qK\\)",
+      "C": "\\(\\left(\\frac{8}{5}\\right)qK\\)",
+      "D": "\\(\\left(\\frac{8}{3}\\right)qK\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "The electric potential at a point is the scalar sum of the potentials due to individual charges. By calculating the potential from the positive and negative charges of the dipole at point P and summing them, we find the net potential. The distances must be converted to meters.",
+      "key_concepts": [
+        "Electric Potential",
+        "Electric Dipole",
+        "Superposition Principle"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the locations of the charges and point P from the figure. The dipole consists of charge \\(-q\\) at \\(x = -3\\) cm and charge \\(+q\\) at \\(x = +3\\) cm. Point P is located at \\(x = 5\\) cm."
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the distance from the positive charge (\\(+q\\)) to point P, denoted as \\(r_+\\).",
+          "formula": "\\(r_+ = 5 \\text{ cm} - 3 \\text{ cm} = 2 \\text{ cm} = 2 \\times 10^{-2} \\text{ m}\\)"
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the distance from the negative charge (\\(-q\\)) to point P, denoted as \\(r_-\\).",
+          "formula": "\\(r_- = 5 \\text{ cm} - (-3 \\text{ cm}) = 8 \\text{ cm} = 8 \\times 10^{-2} \\text{ m}\\)"
+        },
+        {
+          "step_number": 4,
+          "description": "Apply the superposition principle to find the total potential at P, \\(V_P\\), by adding the potentials from each charge.",
+          "formula": "\\(V_P = V_{at P \\text{ due to } +q} + V_{at P \\text{ due to } -q} = \\frac{K(+q)}{r_+} + \\frac{K(-q)}{r_-}\\)"
+        },
+        {
+          "step_number": 5,
+          "description": "Substitute the distances and factor out common terms.",
+          "formula": "\\(V_P = Kq \\left( \\frac{1}{r_+} - \\frac{1}{r_-} \\right) = Kq \\left( \\frac{1}{2 \\times 10^{-2}} - \\frac{1}{8 \\times 10^{-2}} \\right)\\)"
+        },
+        {
+          "step_number": 6,
+          "description": "Simplify the expression.",
+          "formula": "\\(V_P = \\frac{Kq}{10^{-2}} \\left( \\frac{1}{2} - \\frac{1}{8} \\right) = Kq \\times 10^2 \\left( \\frac{4 - 1}{8} \\right) = Kq \\times 10^2 \\left( \\frac{3}{8} \\right)\\)"
+        },
+        {
+          "step_number": 7,
+          "description": "The question asks for the potential in units of \\(10^2\\) V. From the final expression, this value is \\(\\left(\\frac{3}{8}\\right)qK\\)."
+        }
+      ],
+      "scientific_principles": [
+        "Superposition Principle for Electric Fields and Potentials"
+      ],
+      "correct_option_reasoning": "The potential at point P is the algebraic sum of the potentials due to the individual charges. The potential is \\(V_P = Kq(\\frac{1}{r_+} - \\frac{1}{r_-})\\). Substituting \\(r_+ = 0.02\\) m and \\(r_- = 0.08\\) m gives \\(V_P = Kq(\\frac{1}{0.02} - \\frac{1}{0.08}) = Kq(50 - 12.5) = 37.5 Kq\\). To express this in units of \\(10^2\\) V, we write \\(37.5 Kq = (\\frac{3}{8} \\times 100) Kq = (\\frac{3}{8})qK \\times 10^2\\). Thus, the value is \\((\\frac{3}{8})qK\\).",
+      "incorrect_options_analysis": {
+        "B": "This results from an incorrect distance calculation or arithmetic error.",
+        "C": "This is the inverse of the correct fractional part.",
+        "D": "This is the inverse of the correct fractional part."
+      },
+      "common_mistakes": [
+        "Forgetting to convert distances from centimeters to meters.",
+        "Making a mistake in calculating the distances, especially for the negative charge.",
+        "Confusing the formulas for electric field (a vector) and electric potential (a scalar)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electrostatic Potential and Capacitance",
+      "subtopic": "Potential due to an Electric Dipole",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "electrostatics",
+        "electric_potential",
+        "dipole"
+      ],
+      "estimated_time_seconds": 100,
+      "requires_visual": true,
+      "visual_description": "The figure shows an electric dipole on the x-axis, with a negative charge -q at x=-3cm and a positive charge +q at x=+3cm. Point P is located on the x-axis at x=5cm."
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p10_q51",
+    "question_text": "Which of the following statements are NOT correct?\nA. Hydrogen is used to reduce heavy metal oxides to metals.\nB. Heavy water is used to study reaction mechanism.\nC. Hydrogen is used to make saturated fats from oils.\nD. The H–H bond dissociation enthalpy is lowest as compared to a single bond between two atoms of any elements.\nE. Hydrogen reduces oxides of metals that are more active than iron.\nChoose the most appropriate answer from the options given below:",
+    "question_type": "multiple_correct",
+    "options": {
+      "A": "B, C, D, E only",
+      "B": "B, D only",
+      "C": "D, E only",
+      "D": "A, B, C only"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This question requires evaluating the correctness of several statements related to hydrogen and its compounds. Statements D and E are factually incorrect. The H-H bond is very strong, not the weakest. Hydrogen is a good reducing agent but not strong enough to reduce oxides of highly reactive metals (those more active than iron).",
+      "key_concepts": [
+        "Hydrogen",
+        "Heavy Water (D2O)",
+        "Hydrogenation",
+        "Reducing Agent",
+        "Bond Dissociation Enthalpy",
+        "Reactivity Series"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Evaluate statement A: Hydrogen is a good reducing agent and is used in metallurgy to reduce oxides of metals that are less reactive than zinc (e.g., Cu, W, Mo). This statement is correct."
+        },
+        {
+          "step_number": 2,
+          "description": "Evaluate statement B: Heavy water (\\(D_2O\\)) is used as a tracer compound in various reactions to study their mechanisms by tracking the path of the deuterium atom. This statement is correct."
+        },
+        {
+          "step_number": 3,
+          "description": "Evaluate statement C: The catalytic hydrogenation of unsaturated vegetable oils (liquids) using hydrogen gas is a major industrial process to produce saturated fats like vanaspati ghee (solids). This statement is correct."
+        },
+        {
+          "step_number": 4,
+          "description": "Evaluate statement D: The H-H bond has a very high bond dissociation enthalpy (approximately 436 kJ/mol), which is one of the highest for a single bond between two atoms. It is not the lowest. This statement is NOT correct."
+        },
+        {
+          "step_number": 5,
+          "description": "Evaluate statement E: Hydrogen can reduce oxides of metals that are less active than it in the reactivity series (e.g., copper, lead, zinc). It cannot reduce the oxides of highly active metals like Na, K, Ca, Mg, Al, which are all more active than iron. This statement is NOT correct."
+        },
+        {
+          "step_number": 6,
+          "description": "Identify the incorrect statements. Statements D and E are the incorrect ones."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Thermodynamics and Reactivity"
+      ],
+      "correct_option_reasoning": "The question asks for the set of incorrect statements. Statement D is false because the H-H single bond is exceptionally strong, not the weakest. Statement E is false because hydrogen is not a strong enough reducing agent to reduce oxides of metals that are highly electropositive and more active than iron.",
+      "incorrect_options_analysis": {
+        "A": "Includes B and C, which are correct statements.",
+        "B": "Includes B, which is a correct statement.",
+        "D": "A, B, and C are all correct statements."
+      },
+      "common_mistakes": [
+        "Misremembering the strength of the H-H bond.",
+        "Being unclear about the position of hydrogen in the reactivity series and its limitations as a reducing agent."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Hydrogen",
+      "subtopic": "Properties and Uses of Hydrogen",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "multiple_correct",
+        "statement_based",
+        "hydrogen",
+        "bond_enthalpy",
+        "reducing_agent",
+        "heavy_water"
+      ],
+      "estimated_time_seconds": 100,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p10_q52",
+    "question_text": "The given compound is an example of ______.",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Benzylic halide",
+      "B": "Aryl halide",
+      "C": "Allylic halide",
+      "D": "Vinylic halide"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The compound shown in the figure has a halogen atom bonded to an \\(sp^3\\)-hybridized carbon atom which is adjacent to a carbon-carbon double bond within a cyclic ring. This structural feature defines it as an allylic halide.",
+      "key_concepts": [
+        "Classification of Organic Halides",
+        "Allylic Halide",
+        "Vinylic Halide",
+        "Aryl Halide",
+        "Benzylic Halide"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the structure of the given compound (3-Bromocyclohexene). Identify the carbon atom to which the halogen (bromine) is attached."
+        },
+        {
+          "step_number": 2,
+          "description": "Determine the hybridization of this carbon atom. It is bonded to two other carbon atoms and one hydrogen atom (not shown) via single bonds, so it is \\(sp^3\\)-hybridized."
+        },
+        {
+          "step_number": 3,
+          "description": "Observe the position of this \\(sp^3\\) carbon relative to other functional groups. It is directly adjacent to a carbon atom that is part of a carbon-carbon double bond (\\(C=C\\))."
+        },
+        {
+          "step_number": 4,
+          "description": "Recall the definitions of the different types of halides:\n- **Allylic halide:** Halogen is bonded to an \\(sp^3\\) carbon next to a \\(C=C\\) double bond.\n- **Vinylic halide:** Halogen is bonded directly to an \\(sp^2\\) carbon of a \\(C=C\\) double bond.\n- **Aryl halide:** Halogen is bonded directly to an \\(sp^2\\) carbon of an aromatic ring.\n- **Benzylic halide:** Halogen is bonded to an \\(sp^3\\) carbon next to an aromatic ring."
+        },
+        {
+          "step_number": 5,
+          "description": "The given compound's structure matches the definition of an allylic halide."
+        }
+      ],
+      "scientific_principles": [
+        "IUPAC Nomenclature and Classification of Organic Compounds"
+      ],
+      "correct_option_reasoning": "The compound shown is 3-Bromocyclohexene. The bromine atom is attached to an \\(sp^3\\)-hybridized carbon which is adjacent to the \\(C=C\\) double bond of the cyclohexene ring. This specific arrangement is defined as an allylic position, making the compound an allylic halide.",
+      "incorrect_options_analysis": {
+        "A": "A benzylic halide requires an aromatic ring adjacent to the \\(sp^3\\) carbon bearing the halogen.",
+        "B": "An aryl halide requires the halogen to be attached directly to an aromatic (e.g., benzene) ring.",
+        "D": "A vinylic halide would have the bromine attached directly to one of the carbons in the double bond."
+      },
+      "common_mistakes": [
+        "Confusing allylic and vinylic positions."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Haloalkanes and Haloarenes",
+      "subtopic": "Classification",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "single_correct",
+        "organic_chemistry",
+        "haloalkanes",
+        "allylic_halide",
+        "classification"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": true,
+      "visual_description": "The chemical structure of 3-Bromocyclohexene is shown. It is a six-membered carbon ring containing one double bond. A bromine atom is attached to the saturated carbon atom adjacent to one end of the double bond."
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p10_q53",
+    "question_text": "Match List-I with List-II.\n\n**List-I**\nA. Coke\nB. Diamond\nC. Fullerene\nD. Graphite\n\n**List-II**\nI. Carbon atoms are \\(sp^3\\) hybridised\nII. Used as a dry lubricant\nIII. Used as a reducing agent\nIV. Cage like molecules\n\nChoose the correct answer from the options given below:",
+    "question_type": "matching",
+    "options": {
+      "A": "A-II, B-IV, C-I, D-III",
+      "B": "A-IV, B-I, C-II, D-III",
+      "C": "A-III, B-I, C-IV, D-II",
+      "D": "A-III, B-IV, C-I, D-II"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This question requires matching different forms of carbon with their characteristic properties or structures. Coke is a reducing agent, diamond is \\(sp^3\\) hybridized, fullerenes have a cage-like structure, and graphite is used as a lubricant.",
+      "key_concepts": [
+        "Allotropes of Carbon",
+        "Coke",
+        "Diamond",
+        "Fullerene",
+        "Graphite",
+        "Hybridization",
+        "Properties of Carbon Forms"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Match A (Coke): Coke is an impure, high-carbon content fuel and is a key reducing agent used in metallurgy, particularly in blast furnaces to reduce iron ore. Thus, A matches with III."
+        },
+        {
+          "step_number": 2,
+          "description": "Match B (Diamond): In diamond, each carbon atom is tetrahedrally bonded to four other carbon atoms, a geometry that corresponds to \\(sp^3\\) hybridization. Thus, B matches with I."
+        },
+        {
+          "step_number": 3,
+          "description": "Match C (Fullerene): Fullerenes are a class of carbon allotropes where the carbon atoms are arranged in a spherical or tube-like structure, forming a closed cage. The most famous example is Buckminsterfullerene (\\(C_{60}\\)), which has a soccer-ball shape. Thus, C matches with IV."
+        },
+        {
+          "step_number": 4,
+          "description": "Match D (Graphite): Graphite has a layered structure of \\(sp^2\\) hybridized carbon atoms. These layers can easily slide over one another, making graphite an excellent solid or dry lubricant. Thus, D matches with II."
+        },
+        {
+          "step_number": 5,
+          "description": "Combine the pairings: A-III, B-I, C-IV, D-II. This corresponds to option C."
+        }
+      ],
+      "scientific_principles": [
+        "Structure and Bonding in Elements"
+      ],
+      "correct_option_reasoning": "The correct matches are based on the well-known properties of carbon's allotropes and forms: Coke as a reducing agent in metallurgy, Diamond's tetrahedral \\(sp^3\\) structure, Fullerene's unique cage-like molecular shape, and Graphite's use as a lubricant due to its layered structure.",
+      "incorrect_options_analysis": {
+        "A": "Incorrectly matches A, B, C, and D.",
+        "B": "Incorrectly matches C and D.",
+        "D": "Incorrectly matches B, C, and I."
+      },
+      "common_mistakes": [
+        "Confusing the properties of diamond and graphite.",
+        "Not knowing the specific use of coke in industry."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The p-Block Elements",
+      "subtopic": "Allotropes of Carbon",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "matching",
+        "allotropes_of_carbon",
+        "diamond",
+        "graphite",
+        "fullerene",
+        "coke"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p10_q54",
+    "question_text": "In Lassaigne’s extract of an organic compound, both nitrogen and sulphur are present, which gives blood red colour with \\(Fe^{3+}\\) due to the formation of:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(Fe_4[Fe(CN)_6]_3 \\cdot xH_2O\\)",
+      "B": "NaSCN",
+      "C": "\\([Fe(CN)_5NOS]^{4-}\\)",
+      "D": "\\([Fe(SCN)]^{2+}\\)"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "In the Lassaigne's test, if an organic compound contains both nitrogen and sulfur, they react with sodium to form sodium thiocyanate (NaSCN). Upon addition of an acidic solution of iron(III) chloride, the thiocyanate ion (\\(SCN^-\\)) reacts with the ferric ion (\\(Fe^{3+}\\)) to form a blood-red complex, primarily \\([Fe(SCN)(H_2O)_5]^{2+}\\), which is simplified as \\([Fe(SCN)]^{2+}\\).",
+      "key_concepts": [
+        "Qualitative Analysis of Organic Compounds",
+        "Lassaigne's Test",
+        "Detection of Nitrogen and Sulphur",
+        "Coordination Complexes",
+        "Thiocyanate Ion"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the initial reaction during sodium fusion when both N and S are present in the organic compound.",
+          "formula": "\\(Na + C + N + S \\xrightarrow{\\Delta} NaSCN\\) (Sodium thiocyanate)"
+        },
+        {
+          "step_number": 2,
+          "description": "Recall the confirmatory test for thiocyanate. The Lassaigne's extract (containing \\(SCN^-\\) ions) is acidified and treated with a few drops of ferric chloride (\\(FeCl_3\\)) solution."
+        },
+        {
+          "step_number": 3,
+          "description": "Identify the reaction that produces the characteristic blood-red coloration. The ferric ion (\\(Fe^{3+}\\)) reacts with the thiocyanate ion (\\(SCN^-\\) to form a complex ion.",
+          "formula": "\\(Fe^{3+} + SCN^- \\rightleftharpoons [Fe(SCN)]^{2+}\\)"
+        },
+        {
+          "step_number": 4,
+          "description": "Examine the options. Option D, \\([Fe(SCN)]^{2+}\\), represents the blood-red complex formed. (Note: The actual complex is often hydrated, e.g., \\([Fe(SCN)(H_2O)_5]^{2+}\\), but this is the simplified representation)."
+        }
+      ],
+      "scientific_principles": [
+        "Coordination Chemistry",
+        "Qualitative Inorganic Analysis"
+      ],
+      "correct_option_reasoning": "When both nitrogen and sulfur are present, sodium fusion creates sodium thiocyanate (NaSCN). The addition of \\(Fe^{3+}\\) ions to the thiocyanate solution produces a series of intensely blood-red iron(III) thiocyanate complexes, the simplest of which is represented as \\([Fe(SCN)]^{2+}\\). This coloration is the positive test.",
+      "incorrect_options_analysis": {
+        "A": "\\(Fe_4[Fe(CN)_6]_3 \\cdot xH_2O\\) is Prussian blue, which is formed in the test for nitrogen alone.",
+        "B": "NaSCN is the substance formed in the fusion tube, but it is not the colored complex itself.",
+        "C": "\\([Fe(CN)_5NOS]^{4-}\\) is the sodium nitroprusside complex, which gives a violet color in the test for sulfur alone (as sulfide), not for both N and S as thiocyanate."
+      },
+      "common_mistakes": [
+        "Confusing the tests for nitrogen only (Prussian blue), sulfur only (sodium nitroprusside), and both N and S together (ferric thiocyanate)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Organic Chemistry - Some Basic Principles and Techniques",
+      "subtopic": "Qualitative Analysis of Organic Compounds",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "single_correct",
+        "qualitative_analysis",
+        "lassaignes_test",
+        "nitrogen_detection",
+        "sulphur_detection"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p11_q55",
+    "question_text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R:\n**Assertion A:** A reaction can have zero activation energy.\n**Reason R:** The minimum extra amount of energy absorbed by reactant molecules so that their energy becomes equal to threshold value, is called activation energy.\nIn the light of the above statements, choose the correct answer from the options given below:",
+    "question_type": "assertion_reason",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true and R is NOT the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Assertion A is true in certain specific cases, such as the recombination of free radicals, which are barrierless reactions. Reason R is also true as it provides the correct definition of activation energy. However, the general definition of activation energy does not explain the specific and rare case of it being zero. Therefore, both statements are true, but the reason is not the correct explanation for the assertion.",
+      "key_concepts": [
+        "Chemical Kinetics",
+        "Activation Energy (\\(E_a\\))",
+        "Collision Theory",
+        "Arrhenius Equation",
+        "Threshold Energy",
+        "Barrierless Reactions"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Evaluate Assertion A: 'A reaction can have zero activation energy.' While most reactions have a positive activation energy barrier, some reactions, particularly the recombination of two free radicals, are known to be barrierless and proceed with effectively zero activation energy. The reaction rate for such processes is limited only by the frequency of collisions. Therefore, this statement is considered true."
+        },
+        {
+          "step_number": 2,
+          "description": "Evaluate Reason R: 'The minimum extra amount of energy absorbed by reactant molecules so that their energy becomes equal to threshold value, is called activation energy.' This is the standard and correct definition of activation energy. The threshold energy is the minimum total energy required for a reaction, and activation energy is the difference between the threshold energy and the average energy of the reactants. This statement is true."
+        },
+        {
+          "step_number": 3,
+          "description": "Evaluate the relationship between A and R. The Reason (R) provides a general definition of activation energy. The Assertion (A) states a specific, limiting case. A general definition cannot, by itself, explain an exceptional case. The existence of zero activation energy reactions is explained by the nature of the potential energy surface for those specific reactions (e.g., no energy barrier for radical recombination), not by the general definition of activation energy. Thus, R is not the correct explanation of A."
+        }
+      ],
+      "scientific_principles": [
+        "Collision Theory of Reaction Rates",
+        "Potential Energy Surfaces"
+      ],
+      "correct_option_reasoning": "Both statements are correct facts in chemical kinetics. The assertion is true for barrierless reactions like radical recombination. The reason gives the correct definition of activation energy. However, the general definition of activation energy does not explain why some specific reactions have an activation energy of zero. The two statements are correct but not causally linked in the required manner for an Assertion-Reason question.",
+      "incorrect_options_analysis": {
+        "A": "R does not explain A.",
+        "C": "Reason R is true.",
+        "D": "Assertion A is true, but Reason R is not."
+      },
+      "common_mistakes": [
+        "Assuming that all reactions must have a positive activation energy, which is a common simplification at introductory levels.",
+        "Thinking that a correct definition (Reason) automatically explains any related fact (Assertion)."
+      ],
+      "additional_notes": "For NEET and similar exams, there can be ambiguity. Some interpretations consider the Assertion false in a general context. However, given the options, the most likely intended answer is that both are factually correct statements but are not explanatorily linked."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Chemical Kinetics",
+      "subtopic": "Collision Theory and Activation Energy",
+      "difficulty": "Hard",
+      "bloom_level": "Evaluate",
+      "tags": [
+        "assertion_reason",
+        "chemical_kinetics",
+        "activation_energy",
+        "arrhenius_equation"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p11_q57",
+    "question_text": "Taking stability as the factor, which one of the following represents correct relationship?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(TlCl_3 > TlCl\\)",
+      "B": "\\(InI_3 > InI\\)",
+      "C": "\\(AlCl > AlCl_3\\)",
+      "D": "\\(TlI > TlI_3\\)"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question relates to the stability of oxidation states in Group 13 elements, specifically the 'inert pair effect'. The stability of the +1 oxidation state increases down the group, while the stability of the +3 oxidation state decreases. For Thallium (Tl), the heaviest element in the group, the +1 state is significantly more stable than the +3 state.",
+      "key_concepts": [
+        "p-Block Elements",
+        "Group 13 Elements",
+        "Oxidation States",
+        "Inert Pair Effect"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the trend in stability of oxidation states for Group 13 (B, Al, Ga, In, Tl). The common oxidation state is +3. However, due to the inert pair effect, the stability of the +1 oxidation state increases as we move down the group, while the stability of the +3 state decreases."
+        },
+        {
+          "step_number": 2,
+          "description": "The stability order for the +3 state is \\(Al^{3+} > Ga^{3+} > In^{3+} > Tl^{3+}\\). The stability order for the +1 state is \\(Al^{+} < Ga^{+} < In^{+} < Tl^{+}\\)."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze option A: \\(TlCl_3 > TlCl\\). This compares the stability of Tl(+3) vs Tl(+1). For Thallium, the +1 state is much more stable than the +3 state due to the inert pair effect. This statement is incorrect."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze option B: \\(InI_3 > InI\\). This compares In(+3) vs In(+1). For Indium, the +3 oxidation state is generally more stable than the +1 state. This statement is likely correct, but let's evaluate all options."
+        },
+        {
+          "step_number": 5,
+          "description": "Analyze option C: \\(AlCl > AlCl_3\\). This compares Al(+1) vs Al(+3). For Aluminum, the +3 state is overwhelmingly more stable. This statement is incorrect."
+        },
+        {
+          "step_number": 6,
+          "description": "Analyze option D: \\(TlI > TlI_3\\). This compares Tl(+1) vs Tl(+3). As established, for Thallium, the +1 oxidation state is significantly more stable than the +3 state. This statement is correct and represents the most pronounced example of the inert pair effect in this group."
+        }
+      ],
+      "scientific_principles": [
+        "Inert Pair Effect"
+      ],
+      "correct_option_reasoning": "Due to the inert pair effect, which is the reluctance of the ns² pair of electrons to participate in bonding, the stability of the lower (+1) oxidation state increases down Group 13. For Thallium (Tl), the heaviest element, the +1 state is significantly more stable than the +3 state. Therefore, TlI (containing Tl⁺) is more stable than \\(TlI_3\\) (which would contain Tl³⁺).",
+      "incorrect_options_analysis": {
+        "A": "For Tl, the +1 state is more stable than the +3 state.",
+        "B": "While In(+3) is generally more stable than In(+1), the trend for Tl is the most definitive and the correct answer.",
+        "C": "For Al, the +3 state is far more stable than the +1 state."
+      },
+      "additional_notes": "Interestingly, \\(TlI_3\\) exists not as a Tl(III) compound, but as an ionic compound of Tl(I) and the triiodide ion, \\(Tl^+(I_3)^-\\), which further underscores the stability of the Tl⁺ ion."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The p-Block Elements",
+      "subtopic": "Group 13 Elements",
+      "difficulty": "Medium",
+      "bloom_level": "Understand",
+      "tags": [
+        "single_correct",
+        "p_block_elements",
+        "group_13",
+        "inert_pair_effect",
+        "oxidation_state"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p11_q58",
+    "question_text": "The relation between \\(n_m\\), (\\(n_m\\) = the number of permissible values of magnetic quantum number (m)) for a given value of azimuthal quantum number (l), is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(l = \\frac{n_m - 1}{2}\\)",
+      "B": "\\(l = 2n_m + 1\\)",
+      "C": "\\(n_m = 2l^2 + 1\\)",
+      "D": "\\(n_m = l + 2\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "For a given value of the azimuthal quantum number, \\(l\\), the magnetic quantum number, \\(m_l\\), can take on integer values from \\(-l\\) to \\(+l\\), including 0. This results in a total of \\(2l+1\\) possible values. The question asks for the relationship between the number of these values (\\(n_m\\)) and \\(l\\).",
+      "key_concepts": [
+        "Quantum Numbers",
+        "Azimuthal Quantum Number (l)",
+        "Magnetic Quantum Number (m)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the rule for the possible values of the magnetic quantum number, \\(m_l\\), for a given azimuthal quantum number, \\(l\\).",
+          "formula": "\\(m_l = -l, -l+1, ..., 0, ..., l-1, +l\\)"
+        },
+        {
+          "step_number": 2,
+          "description": "Count the total number of these values. There are \\(l\\) negative values, \\(l\\) positive values, and one zero value. The total number of values is \\(l + l + 1 = 2l + 1\\)."
+        },
+        {
+          "step_number": 3,
+          "description": "The question defines \\(n_m\\) as the number of permissible values of \\(m\\). So, we have the relation:",
+          "formula": "\\(n_m = 2l + 1\\)"
+        },
+        {
+          "step_number": 4,
+          "description": "The options express \\(l\\) in terms of \\(n_m\\) or vice versa. We need to rearrange our formula to solve for \\(l\\).",
+          "formula": "\\(n_m - 1 = 2l \\implies l = \\frac{n_m - 1}{2}\\)"
+        },
+        {
+          "step_number": 5,
+          "description": "Compare this result with the given options. It matches option A."
+        }
+      ],
+      "scientific_principles": [
+        "Quantum Mechanical Model of the Atom"
+      ],
+      "correct_option_reasoning": "The number of possible values for the magnetic quantum number \\(m\\) for a given azimuthal quantum number \\(l\\) is \\(n_m = 2l + 1\\). This represents the number of orbitals in a subshell. Rearranging this equation to solve for \\(l\\) gives \\(l = \\frac{n_m - 1}{2}\\), which corresponds to the correct option.",
+      "incorrect_options_analysis": {
+        "B": "Incorrect rearrangement of the formula.",
+        "C": "Incorrect formula; this is not a standard quantum number relationship.",
+        "D": "Incorrect formula."
+      },
+      "common_mistakes": [
+        "Forgetting the '+1' for the zero value when counting the number of orbitals.",
+        "Making an error in algebraic rearrangement."
+      ],
+      "additional_notes": "The corrupt text in the original option 1, 'm n – 1 2 = l', is interpreted as \\(l = (n_m - 1)/2\\)."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Structure of Atom",
+      "subtopic": "Quantum Numbers",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "single_correct",
+        "atomic_structure",
+        "quantum_numbers"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p12_q60",
+    "question_text": "The right option for the mass of \\(CO_2\\) produced by heating 20 g of 20% pure limestone is (Atomic mass of Ca = 40)\n\\[CaCO_3 \\xrightarrow{1200 K} CaO + CO_2\\]",
+    "question_type": "numerical",
+    "options": {
+      "A": "1.12 g",
+      "B": "1.76 g",
+      "C": "2.64 g",
+      "D": "1.32 g"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This is a stoichiometry problem involving percentage purity. First, calculate the actual mass of pure limestone (\\(CaCO_3\\)) in the sample. Then, use the molar masses and the 1:1 mole ratio from the balanced equation to find the mass of \\(CO_2\\) produced from the thermal decomposition of this amount of \\(CaCO_3\\).",
+      "key_concepts": [
+        "Stoichiometry",
+        "Percentage Purity",
+        "Molar Mass",
+        "Thermal Decomposition"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Calculate the mass of pure \\(CaCO_3\\) in the 20 g sample.",
+          "formula": "\\(\\text{Mass of pure } CaCO_3 = 20 \\text{ g} \\times \\frac{20}{100} = 4 \\text{ g}\\)"
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the molar masses of \\(CaCO_3\\) and \\(CO_2\\). (Atomic masses: C=12, O=16, Ca=40)",
+          "formula": "\\(M_{CaCO_3} = 40 + 12 + 3(16) = 100 \\text{ g/mol}\\)\n\\(M_{CO_2} = 12 + 2(16) = 44 \\text{ g/mol}\\)"
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the number of moles of pure \\(CaCO_3\\) that react.",
+          "formula": "\\(\\text{Moles of } CaCO_3 = \\frac{\\text{mass}}{\\text{molar mass}} = \\frac{4 \\text{ g}}{100 \\text{ g/mol}} = 0.04 \\text{ mol}\\)"
+        },
+        {
+          "step_number": 4,
+          "description": "Use the stoichiometry of the reaction \\(CaCO_3 \\rightarrow CaO + CO_2\\). The mole ratio of \\(CaCO_3\\) to \\(CO_2\\) is 1:1. Therefore, 0.04 moles of \\(CaCO_3\\) will produce 0.04 moles of \\(CO_2\\)."
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the mass of \\(CO_2\\) produced.",
+          "formula": "\\(\\text{Mass of } CO_2 = \\text{moles} \\times \\text{molar mass} = 0.04 \\text{ mol} \\times 44 \\text{ g/mol} = 1.76 \\text{ g}\\)"
+        }
+      ],
+      "scientific_principles": [
+        "Law of Conservation of Mass"
+      ],
+      "correct_option_reasoning": "First, find the mass of pure \\(CaCO_3\\) in the sample: \\(20 \\text{ g} \\times 20\\% = 4 \\text{ g}\\). Convert this to moles: \\(4 \\text{ g} / 100 \\text{ g/mol} = 0.04 \\text{ mol}\\). From the reaction stoichiometry, 0.04 mol of \\(CaCO_3\\) produces 0.04 mol of \\(CO_2\\). The mass of this \\(CO_2\\) is \\(0.04 \\text{ mol} \\times 44 \\text{ g/mol} = 1.76 \\text{ g}\\).",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation.",
+        "C": "Incorrect calculation.",
+        "D": "Incorrect calculation."
+      },
+      "common_mistakes": [
+        "Forgetting to account for the 20% purity and using the full 20 g of limestone in the calculation.",
+        "Making an error in calculating molar masses or in the final multiplication."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Some Basic Concepts of Chemistry",
+      "subtopic": "Stoichiometry and Stoichiometric Calculations",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "stoichiometry",
+        "percentage_purity",
+        "mole_concept"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p12_q61",
+    "question_text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R\n**Assertion A:** In equation \\(\\Delta_rG = –nFE_{cell}\\), value of \\(\\Delta_rG\\) depends on n.\n**Reason R:** \\(E_{cell}\\) is an intensive property and \\(\\Delta_rG\\) is an extensive property.\nIn the light of the above statements, choose the correct answer from the options given below:",
+    "question_type": "assertion_reason",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true and R is NOT the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Both the Assertion and the Reason are correct statements. However, the Reason, while correctly identifying the thermodynamic properties of \\(E_{cell}\\) and \\(\\Delta_rG\\), is not the direct explanation for why \\(\\Delta_rG\\) depends on 'n'. The dependence is a direct mathematical consequence of 'n' (moles of electrons) appearing in the formula that connects these two quantities.",
+      "key_concepts": [
+        "Electrochemistry",
+        "Gibbs Free Energy (\\(\\Delta G\\))",
+        "Cell Potential (\\(E_{cell}\\))",
+        "Extensive Properties",
+        "Intensive Properties"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Evaluate Assertion A: The equation is \\(\\Delta_rG = –nFE_{cell}\\). \\(\\Delta_rG\\) is the Gibbs free energy change for the reaction, 'n' is the number of moles of electrons transferred in the balanced redox reaction, F is the Faraday constant, and \\(E_{cell}\\) is the cell potential. From the equation, it is clear that \\(\\Delta_rG\\) is directly proportional to 'n'. Therefore, its value depends on 'n'. Assertion A is true."
+        },
+        {
+          "step_number": 2,
+          "description": "Evaluate Reason R: \\(E_{cell}\\) (cell potential) is a potential difference, which is an intensive property; its value does not depend on the size of the cell or the amount of reactants. \\(\\Delta_rG\\) (Gibbs free energy change) is an extensive property; its value is proportional to the amount of substance reacting (which is related to 'n'). Reason R is true."
+        },
+        {
+          "step_number": 3,
+          "description": "Evaluate the relationship. Does R explain A? The assertion A is a direct mathematical observation from the formula. The reason R states the nature of the properties involved. The fact that an extensive property (\\(\\Delta_rG\\)) is related to an intensive property (\\(E_{cell}\\)) requires a scaling factor that accounts for the 'amount of substance'. This factor is 'n'. So, R is consistent with A and provides context, but in the strict logic of Assertion-Reason questions, a statement of properties (R) is often not considered a direct 'explanation' for a mathematical dependence (A). The dependence is because of how Gibbs energy is defined and related to electrical work. Therefore, both are true, but R is not the correct explanation."
+        }
+      ],
+      "scientific_principles": [
+        "Thermodynamics of Electrochemical Cells"
+      ],
+      "correct_option_reasoning": "Both statements are correct. The Gibbs free energy (\\(\\Delta_rG\\)) is an extensive property, meaning it depends on the amount of substance (represented by 'n', the moles of electrons). The cell potential (\\(E_{cell}\\)) is an intensive property, independent of the amount. The equation \\(\\Delta_rG = –nFE_{cell}\\) correctly relates them. While the reason correctly identifies the nature of these properties, it doesn't fundamentally explain the origin of the equation itself, but rather describes a consequence of it. Thus, both are true, but R is not the direct explanation of A.",
+      "incorrect_options_analysis": {
+        "A": "The explanatory link is considered weak in the context of these question types. R describes the properties, while A describes a mathematical dependence.",
+        "C": "Reason R is a true statement.",
+        "D": "Assertion A is a true statement."
+      },
+      "common_mistakes": [
+        "Confusing extensive and intensive properties.",
+        "Thinking that two related true statements automatically mean one explains the other."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Electrochemistry",
+      "subtopic": "Gibbs Energy and Cell Potential",
+      "difficulty": "Hard",
+      "bloom_level": "Evaluate",
+      "tags": [
+        "assertion_reason",
+        "electrochemistry",
+        "gibbs_free_energy",
+        "cell_potential",
+        "extensive_property",
+        "intensive_property"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p12_q63",
+    "question_text": "Homoleptic complex from the following complexes is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Potassium trioxalatoaluminate(III)",
+      "B": "Diamminechloridonitrito-N-platinum(II)",
+      "C": "Pentaamminecarbonatocobalt(III) chloride",
+      "D": "Triamminetriaquachromium(III) chloride"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "A homoleptic complex is a coordination complex in which the central metal atom or ion is bonded to only one type of ligand. By analyzing the names of the given complexes, we can determine the types of ligands present in each and identify the homoleptic one.",
+      "key_concepts": [
+        "Coordination Compounds",
+        "Ligands",
+        "Homoleptic Complex",
+        "Heteroleptic Complex",
+        "IUPAC Nomenclature of Coordination Compounds"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Define a homoleptic complex: A complex where the central metal is coordinated to only one kind of ligand."
+        },
+        {
+          "step_number": 2,
+          "description": "Define a heteroleptic complex: A complex where the central metal is coordinated to more than one kind of ligand."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze option A: 'Potassium trioxalatoaluminate(III)'. The formula is \\(K_3[Al(C_2O_4)_3]\\). The complex ion is \\([Al(C_2O_4)_3]^{3-}\\). The central metal ion, aluminate(III) (\\(Al^{3+}\\)), is coordinated to only one type of ligand: oxalato (\\(C_2O_4^{2-}\\)). This is a homoleptic complex."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze option B: 'Diamminechloridonitrito-N-platinum(II)'. The name indicates the presence of three different types of ligands: ammine (\\(NH_3\\)), cholrido (\\(Cl^-\\)), and nitrito-N (\\(NO_2^-\\)). This is a heteroleptic complex."
+        },
+        {
+          "step_number": 5,
+          "description": "Analyze option C: 'Pentaamminecarbonatocobalt(III) chloride'. The complex ion is [Co(NH₃)₅(CO₃)]⁺. It contains two different types of ligands: ammine (\\(NH_3\\)) and carbonato (\\(CO_3^{2-}\\)). This is a heteroleptic complex."
+        },
+        {
+          "step_number": 6,
+          "description": "Analyze option D: 'Triamminetriaquachromium(III) chloride'. The complex ion is [Cr(NH₃)₃(H₂O)₃]³⁺. It contains two different types of ligands: ammine (\\(NH_3\\)) and aqua (\\(H_2O\\)). This is a heteroleptic complex."
+        }
+      ],
+      "scientific_principles": [
+        "Nomenclature of Coordination Chemistry"
+      ],
+      "correct_option_reasoning": "By definition, a homoleptic complex contains only one type of ligand. Examining the names, 'Potassium trioxalatoaluminate(III)' describes the complex ion \\([Al(C_2O_4)_3]^{3-}\\), in which the aluminum ion is bonded only to oxalate ligands. The other three options clearly name more than one type of ligand (ammine and chloro, ammine and carbonato, ammine and aqua), making them heteroleptic.",
+      "incorrect_options_analysis": {
+        "B": "This is a heteroleptic complex with three types of ligands.",
+        "C": "This is a heteroleptic complex with two types of ligands.",
+        "D": "This is a heteroleptic complex with two types of ligands."
+      },
+      "common_mistakes": [
+        "Misinterpreting the IUPAC names of the complexes.",
+        "Confusing the definition of homoleptic and heteroleptic."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Coordination Compounds",
+      "subtopic": "Nomenclature and Definitions",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "single_correct",
+        "coordination_compounds",
+        "homoleptic",
+        "heteroleptic",
+        "ligands"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p13_q64",
+    "question_text": "The number of \\(\\sigma\\) bonds, \\(\\pi\\) bonds and lone pair of electrons in pyridine, respectively are:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "11, 2, 0",
+      "B": "12, 3, 0",
+      "C": "11, 3, 1",
+      "D": "12, 2, 1"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "To determine the number of sigma bonds, pi bonds, and lone pairs in pyridine, one must first draw its structure. Pyridine is a six-membered aromatic ring containing one nitrogen atom. Counting the bonds and the non-bonding electrons on the nitrogen atom gives the final answer.",
+      "key_concepts": [
+        "Chemical Bonding",
+        "Sigma (\\(\\sigma\\)) Bonds",
+        "Pi (\\(\\pi\\)) Bonds",
+        "Lone Pair Electrons",
+        "Aromatic Compounds",
+        "Pyridine"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Draw the structure of pyridine. It is a hexagonal ring, similar to benzene, but with one CH group replaced by a nitrogen atom. Its formula is \\(C_5H_5N\\)."
+        },
+        {
+          "step_number": 2,
+          "description": "Count the \\(\\sigma\\) bonds. \n- There are 5 C-H single bonds.\n- In the ring, there are 6 single bonds between the atoms (4 C-C bonds and 2 C-N bonds).\n- Total \\(\\sigma\\) bonds = 5 (C-H) + 6 (in-ring) = 11."
+        },
+        {
+          "step_number": 3,
+          "description": "Count the \\(\\pi\\) bonds. Like benzene, pyridine is aromatic and has a delocalized system of \\(\\pi\\) electrons, which is represented by 3 alternating double bonds in the ring. Each double bond consists of one \\(\\sigma\\) and one \\(\\pi\\) bond. So, there are 3 \\(\\pi\\) bonds."
+        },
+        {
+          "step_number": 4,
+          "description": "Determine the number of lone pairs. Each carbon atom forms 4 bonds. The nitrogen atom is part of the ring, forming one single bond and one double bond (total of 3 bonds). Nitrogen is in group 15 and has 5 valence electrons. It has used 3 electrons for bonding (1 in a \\(\\sigma\\) bond, 1 in another \\(\\sigma\\) bond, 1 in a \\(\\pi\\) bond). This leaves \\(5-3=2\\) electrons as one lone pair. This lone pair resides in an \\(sp^2\\) orbital in the plane of the ring and is not part of the aromatic \\(\\pi\\) system."
+        },
+        {
+          "step_number": 5,
+          "description": "Summarize the counts: 11 \\(\\sigma\\) bonds, 3 \\(\\pi\\) bonds, and 1 lone pair."
+        }
+      ],
+      "scientific_principles": [
+        "Valence Bond Theory",
+        "Lewis Structures"
+      ],
+      "correct_option_reasoning": "Pyridine (\\(C_5H_5N\\)) has a 6-membered aromatic ring. Counting the bonds reveals 5 C-H sigma bonds and 6 sigma bonds within the ring (4 C-C, 2 C-N), totaling 11 sigma bonds. The aromatic system contains 3 pi bonds. The nitrogen atom uses three of its five valence electrons for bonding and has one lone pair remaining. Thus, the counts are 11, 3, and 1.",
+      "incorrect_options_analysis": {
+        "A": "Incorrectly counts pi bonds or assumes no lone pair on nitrogen.",
+        "B": "Incorrectly counts sigma bonds or assumes no lone pair on nitrogen.",
+        "D": "Incorrectly counts sigma or pi bonds."
+      },
+      "common_mistakes": [
+        "Miscounting the number of sigma bonds within the ring.",
+        "Forgetting to count the C-H sigma bonds.",
+        "Forgetting about the lone pair on the nitrogen atom."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Chemical Bonding and Molecular Structure",
+      "subtopic": "Sigma and Pi Bonds",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "single_correct",
+        "chemical_bonding",
+        "sigma_bonds",
+        "pi_bonds",
+        "lone_pairs",
+        "pyridine"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": true,
+      "visual_description": "The chemical structure of pyridine, a six-membered ring with alternating double bonds, containing five carbon atoms and one nitrogen atom. Each of the five carbon atoms is also bonded to one hydrogen atom."
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p13_q65",
+    "question_text": "Intermolecular forces are forces of attraction and repulsion between interacting particles that will include:\nA. dipole - dipole forces\nB. dipole - induced dipole forces\nC. hydrogen bonding\nD. covalent bonding\nE. dispersion forces\nChoose the most appropriate answer from the options given below:",
+    "question_type": "multiple_correct",
+    "options": {
+      "A": "B, C, D, E are correct",
+      "B": "A, B, C, D are correct",
+      "C": "A, B, C, E are correct",
+      "D": "A, C, D, E are correct"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "Intermolecular forces are the forces that exist *between* molecules. Covalent bonding is an *intramolecular* force, which holds atoms together *within* a molecule. All the other options listed (dipole-dipole, dipole-induced dipole, hydrogen bonding, and dispersion forces) are types of intermolecular forces.",
+      "key_concepts": [
+        "Intermolecular Forces",
+        "Intramolecular Forces",
+        "Van der Waals Forces",
+        "Dipole-Dipole Forces",
+        "London Dispersion Forces",
+        "Hydrogen Bonding",
+        "Covalent Bonding"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Define intermolecular forces: forces of attraction or repulsion that act between neighboring particles (atoms, molecules, or ions)."
+        },
+        {
+          "step_number": 2,
+          "description": "Define intramolecular forces: forces that hold atoms together within a molecule (e.g., covalent bonds, ionic bonds)."
+        },
+        {
+          "step_number": 3,
+          "description": "Evaluate each item in the list:"
+        },
+        {
+          "step_number": 4,
+          "description": "A. dipole-dipole forces: Occur between polar molecules. This is an intermolecular force."
+        },
+        {
+          "step_number": 5,
+          "description": "B. dipole-induced dipole forces: Occur between a polar and a nonpolar molecule. This is an intermolecular force."
+        },
+        {
+          "step_number": 6,
+          "description": "C. hydrogen bonding: A special, strong type of dipole-dipole interaction. This is an intermolecular force."
+        },
+        {
+          "step_number": 7,
+          "description": "D. covalent bonding: A strong force that involves the sharing of electrons between atoms to form a molecule. This is an intramolecular force."
+        },
+        {
+          "step_number": 8,
+          "description": "E. dispersion forces (London forces): Occur between all molecules due to temporary fluctuations in electron distribution. This is an intermolecular force."
+        },
+        {
+          "step_number": 9,
+          "description": "Identify the correct set. A, B, C, and E are all types of intermolecular forces. D is not."
+        }
+      ],
+      "scientific_principles": [
+        "Theories of Chemical Bonding"
+      ],
+      "correct_option_reasoning": "The question asks to identify the intermolecular forces from the given list. Dipole-dipole forces, dipole-induced dipole forces, hydrogen bonding, and dispersion forces are all categories of forces that act between molecules. Covalent bonding, however, is an intramolecular force that holds a molecule together. Therefore, A, B, C, and E are the correct items.",
+      "incorrect_options_analysis": {
+        "A": "Includes D (covalent bonding), which is an intramolecular force.",
+        "B": "Includes D (covalent bonding), which is an intramolecular force.",
+        "D": "Includes D (covalent bonding), which is an intramolecular force."
+      },
+      "common_mistakes": [
+        "Confusing intermolecular forces (between molecules) and intramolecular forces (within molecules)."
+      ],
+      "additional_notes": "Van der Waals forces is a general term that typically includes dipole-dipole, dipole-induced dipole, and dispersion forces."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "States of Matter",
+      "subtopic": "Intermolecular Forces",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "multiple_correct",
+        "statement_based",
+        "intermolecular_forces",
+        "intramolecular_forces",
+        "van_der_waals",
+        "hydrogen_bonding",
+        "covalent_bond"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p13_q66",
+    "question_text": "Select the correct statements from the following:\nA. Atoms of all elements are composed of two fundamental particles.\nB. The mass of the electron is \\(9.10939 \\times 10^{-31}\\) kg.\nC. All the isotopes of a given element show same chemical properties.\nD. Protons and electrons are collectively known as nucleons.\nE. Dalton’s atomic theory, regarded the atom as an ultimate particle of matter.\nChoose the correct answer from the options given below:",
+    "question_type": "multiple_correct",
+    "options": {
+      "A": "A, B and C only",
+      "B": "C, D and E only",
+      "C": "A and E only",
+      "D": "B, C and E only"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question requires evaluating several fundamental statements about atomic structure and theory. Statements B, C, and E are correct historical or factual statements. Statements A and D are incorrect because atoms have three fundamental particles, and nucleons are only protons and neutrons.",
+      "key_concepts": [
+        "Atomic Structure",
+        "Subatomic Particles (Proton, Neutron, Electron)",
+        "Isotopes",
+        "Nucleons",
+        "Dalton's Atomic Theory"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Evaluate statement A: Atoms are composed of three fundamental particles: protons, neutrons, and electrons (with the exception of protium, ¹H, which has no neutron). Stating they are composed of only two is incorrect."
+        },
+        {
+          "step_number": 2,
+          "description": "Evaluate statement B: This gives the accepted value for the mass of an electron. This statement is correct."
+        },
+        {
+          "step_number": 3,
+          "description": "Evaluate statement C: Isotopes of an element have the same number of protons and thus the same number of electrons. Since chemical properties are determined by the electron configuration, all isotopes of an element exhibit the same chemical properties. This statement is correct."
+        },
+        {
+          "step_number": 4,
+          "description": "Evaluate statement D: The term 'nucleons' refers to the particles found in the nucleus, which are protons and neutrons. Electrons are not nucleons. This statement is incorrect."
+        },
+        {
+          "step_number": 5,
+          "description": "Evaluate statement E: A central tenet of John Dalton's original atomic theory was that atoms are the fundamental, indivisible ('ultimate') particles of matter. This was later proven incorrect with the discovery of subatomic particles, but the statement about what his theory regarded is historically correct."
+        },
+        {
+          "step_number": 6,
+          "description": "Identify the set of correct statements. B, C, and E are the correct statements."
+        }
+      ],
+      "scientific_principles": [
+        "Modern Atomic Theory",
+        "History of Chemistry"
+      ],
+      "correct_option_reasoning": "Statements B, C, and E are factually correct. The mass of the electron is a known physical constant. Isotopes share chemical properties because they have the same electron configuration. Dalton's theory did propose atoms as indivisible particles. Statements A and D are incorrect because there are three fundamental particles, and electrons are not nucleons.",
+      "incorrect_options_analysis": {
+        "A": "Includes the incorrect statement A.",
+        "B": "Includes the incorrect statement D.",
+        "C": "Includes the incorrect statement A and omits correct statements B and C."
+      },
+      "common_mistakes": [
+        "Confusing the components of the nucleus (nucleons) with all subatomic particles.",
+        "Forgetting the historical context of Dalton's theory."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Structure of Atom",
+      "subtopic": "Sub-atomic Particles and Atomic Models",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "multiple_correct",
+        "statement_based",
+        "atomic_structure",
+        "isotopes",
+        "daltons_theory",
+        "subatomic_particles"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p13_q67",
+    "question_text": "Some tranquilizers are listed below. Which one from the following belongs to barbiturates?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Chlordiazepoxide",
+      "B": "Meprobamate",
+      "C": "Valium",
+      "D": "Veronal"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question requires identifying a barbiturate from a list of tranquilizers belonging to different chemical classes. Veronal is a trade name for barbital, which is a derivative of barbituric acid and thus a barbiturate. The other options are non-barbiturate tranquilizers.",
+      "key_concepts": [
+        "Chemistry in Everyday Life",
+        "Neurologically Active Drugs",
+        "Tranquilizers",
+        "Barbiturates",
+        "Benzodiazepines"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Understand the classification of tranquilizers. They are a broad class of drugs used to treat anxiety and sleep disorders and include several chemical families."
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the chemical class of each drug in the options."
+        },
+        {
+          "step_number": 3,
+          "description": "Veronal: This is an early and well-known example of a barbiturate, a class of drugs that are derivatives of barbituric acid. They act as central nervous system depressants."
+        },
+        {
+          "step_number": 4,
+          "description": "Chlordiazepoxide (brand name: Librium): This was the first benzodiazepine to be synthesized and is also a tranquilizer in that class."
+        },
+        {
+          "step_number": 5,
+          "description": "Meprobamate: This is a tranquilizer belonging to the carbamate class of drugs."
+        },
+        {
+          "step_number": 6,
+          "description": "Valium (generic name: Diazepam): This is one of the most famous examples of a benzodiazepine, another major class of tranquilizers."
+        },
+        {
+          "step_number": 7,
+          "description": "The question asks which one is a barbiturate. The correct answer is Veronal."
+        }
+      ],
+      "scientific_principles": [
+        "Medicinal Chemistry"
+      ],
+      "correct_option_reasoning": "Barbiturates are a specific class of tranquilizers derived from barbituric acid. Veronal (also known as barbital) is a classic member of this class. Chlordiazepoxide and Valium belong to a different class called benzodiazepines, and meprobamate is a carbamate.",
+      "incorrect_options_analysis": {
+        "A": "Chlordiazepoxide is a benzodiazepine.",
+        "B": "Meprobamate is a carbamate tranquilizer.",
+        "C": "Valium (diazepam) is a benzodiazepine."
+      },
+      "common_mistakes": [
+        "Not knowing the specific classification of different tranquilizer drugs."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Chemistry in Everyday Life",
+      "subtopic": "Therapeutic Action of Different Classes of Drugs",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "single_correct",
+        "chemistry_in_everyday_life",
+        "tranquilizers",
+        "barbiturates",
+        "veronal"
+      ],
+      "estimated_time_seconds": 50,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p13_q68",
+    "question_text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R\n**Assertion A:** Helium is used to dilute oxygen in diving apparatus.\n**Reason R:** Helium has high solubility in \\(O_2\\).\nIn the light of the above statements, choose the correct answer from the options given below:",
+    "question_type": "assertion_reason",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true and R is NOT the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "The assertion that helium is used in diving tanks is correct. The reason given, however, is incorrect as a justification. Helium is used because of its very low solubility in blood under high pressure, which prevents a dangerous condition called 'the bends'. The 'high solubility in O2' is a physically ambiguous and irrelevant statement.",
+      "key_concepts": [
+        "Henry's Law",
+        "Solubility of Gases",
+        "Decompression Sickness (The Bends)",
+        "Diving Gas Mixtures (Heliox)",
+        "Noble Gases"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Evaluate Assertion A: 'Helium is used to dilute oxygen in diving apparatus.' This is true. For deep-sea diving, a mixture of helium and oxygen (heliox) is used instead of compressed air to avoid nitrogen narcosis and decompression sickness."
+        },
+        {
+          "step_number": 2,
+          "description": "Evaluate Reason R: 'Helium has high solubility in \\(O_2\\).' This statement is physically confusing. Gases are generally miscible with each other. This is considered a true statement in the sense that they mix. However, the *reason* helium is used in diving has to do with its *low solubility in blood*, not its miscibility with oxygen."
+        },
+        {
+          "step_number": 3,
+          "description": "Evaluate the relationship. The real reason helium is used is its low solubility in blood under pressure, as per Henry's Law. This prevents it from dissolving in the bloodstream in large amounts and then forming dangerous bubbles during ascent. The reason provided (solubility in O2) does not explain this benefit. Therefore, while both statements might be considered true in a loose sense, R is not the correct explanation of A."
+        }
+      ],
+      "scientific_principles": [
+        "Gas Laws (Henry's Law)"
+      ],
+      "correct_option_reasoning": "Assertion A is true; heliox is used by deep-sea divers. Reason R, stating helium has high solubility in oxygen, is technically true in the sense that gases are miscible, but it is entirely irrelevant to the reason why helium is used. The actual reason is helium's low solubility in blood, which prevents decompression sickness. Since the reason is not the correct explanation for the assertion, this option is the most appropriate.",
+      "incorrect_options_analysis": {
+        "A": "R is not the correct explanation for A.",
+        "C": "Reason R can be considered true (gases are miscible), even if it's irrelevant.",
+        "D": "Assertion A is true."
+      },
+      "common_mistakes": [
+        "Not knowing the specific reason for using helium in diving tanks (low solubility in blood).",
+        "Accepting the reason as the correct explanation just because it involves the same substances."
+      ],
+      "additional_notes": "Note: Some sources might interpret 'high solubility in O2' as a false statement because solubility is typically for a solute in a liquid solvent. If R is considered false, then option C would be correct. However, given the frequent ambiguity in A-R questions, interpreting them as two separate true/false statements and then checking the explanatory link is the standard method. Here, B is the most likely intended answer."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The p-Block Elements",
+      "subtopic": "Group 18 Elements",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "assertion_reason",
+        "p_block_elements",
+        "noble_gases",
+        "helium",
+        "henrys_law"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p14_q69",
+    "question_text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R:\n**Assertion A:** Metallic sodium dissolves in liquid ammonia giving a deep blue solution, which is paramagnetic.\n**Reason R:** The deep blue solution is due to the formation of amide.\nIn the light of the above statements, choose the correct answer from the options given below:",
+    "question_type": "assertion_reason",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is NOT the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The Assertion is correct; alkali metals like sodium dissolve in liquid ammonia to form deep blue, conducting, and paramagnetic solutions. However, the Reason is incorrect. The blue color and paramagnetism are due to the presence of ammoniated (solvated) electrons, not the formation of sodium amide.",
+      "key_concepts": [
+        "Alkali Metals",
+        "Solutions in Liquid Ammonia",
+        "Solvated Electron",
+        "Paramagnetism",
+        "Sodium Amide"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Evaluate Assertion A: 'Metallic sodium dissolves in liquid ammonia giving a deep blue solution, which is paramagnetic.' This is a characteristic reaction of alkali metals. The metal atom ionizes, and the electron becomes solvated by ammonia molecules. The presence of these unpaired, solvated electrons makes the solution paramagnetic and gives it a deep blue color by absorbing light in the red region of the spectrum. Thus, Assertion A is true."
+        },
+        {
+          "step_number": 2,
+          "description": "Write the reaction for dissolution.",
+          "formula": "\\(Na_{(s)} + (x+y)NH_{3(l)} \\rightarrow [Na(NH_3)_x]^+ + [e(NH_3)_y]^-\\) (ammoniated electron)"
+        },
+        {
+          "step_number": 3,
+          "description": "Evaluate Reason R: 'The deep blue solution is due to the formation of amide.' The blue color is due to the ammoniated electron. Sodium amide (\\(NaNH_2\\)) is formed very slowly from this solution (or faster with a catalyst), and its formation causes the blue color to fade as the electrons are consumed. The amide itself is not the source of the color. Thus, Reason R is false."
+        },
+        {
+          "step_number": 4,
+          "description": "Write the reaction for amide formation.",
+          "formula": "\\(2Na_{(s)} + 2NH_{3(l)} \\rightarrow 2NaNH_{2(s)} + H_{2(g)}\\)"
+        }
+      ],
+      "scientific_principles": [
+        "Properties of s-Block Elements",
+        "Redox Chemistry"
+      ],
+      "correct_option_reasoning": "Assertion A is a correct description of the properties of sodium-ammonia solutions. The Reason R is false because the characteristic blue color and paramagnetism are due to the presence of ammoniated electrons. The formation of sodium amide is a subsequent, slow decomposition reaction that results in the loss of the blue color.",
+      "incorrect_options_analysis": {
+        "A": "Reason R is false.",
+        "B": "Reason R is false.",
+        "D": "Assertion A is true."
+      },
+      "common_mistakes": [
+        "Confusing the initial product of dissolution (solvated ions and electrons) with the final decomposition product (amide)."
+      ],
+      "additional_notes": "At higher concentrations, the solution becomes bronze-colored and diamagnetic as the solvated electrons pair up."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The s-Block Elements",
+      "subtopic": "Chemical Properties of Alkali Metals",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "assertion_reason",
+        "s_block_elements",
+        "alkali_metals",
+        "liquid_ammonia",
+        "solvated_electron"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p14_q71",
+    "question_text": "The correct order of energies of molecular orbitals of \\(N_2\\) molecule, is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(\\sigma1s < \\sigma^*1s < \\sigma2s < \\sigma^*2s < (\\pi2p_x = \\pi2p_y) < \\sigma2p_z < (\\pi^*2p_x = \\pi^*2p_y) < \\sigma^*2p_z\\)",
+      "B": "\\(\\sigma1s < \\sigma^*1s < \\sigma2s < \\sigma^*2s < \\sigma2p_z < (\\pi2p_x = \\pi2p_y) < (\\pi^*2p_x = \\pi^*2p_y) < \\sigma^*2p_z\\)",
+      "C": "\\(\\sigma1s < \\sigma^*1s < \\sigma2s < \\sigma^*2s < \\sigma2p_z < \\sigma^*2p_z < (\\pi2p_x = \\pi2p_y) < (\\pi^*2p_x = \\pi^*2p_y)\\)",
+      "D": "\\(\\sigma1s < \\sigma^*1s < \\sigma2s < \\sigma^*2s < (\\pi2p_x = \\pi2p_y) < (\\pi^*2p_x = \\pi^*2p_y) < \\sigma2p_z < \\sigma^*2p_z\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "The molecular orbital energy level diagram for diatomic molecules of the second period depends on whether s-p mixing is significant. For lighter diatomics like \\(Li_2\\), \\(Be_2\\), \\(B_2\\), \\(C_2\\), and \\(N_2\\), s-p mixing causes the \\(\\sigma_{2p_z}\\) orbital to be higher in energy than the \\(\\pi_{2p_x}\\) and \\(\\pi_{2p_y}\\) orbitals.",
+      "key_concepts": [
+        "Molecular Orbital Theory (MOT)",
+        "Molecular Orbital Energy Diagram",
+        "s-p Mixing",
+        "Diatomic Molecules"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the two different energy orderings for the molecular orbitals derived from the 2p atomic orbitals in second-period homonuclear diatomics."
+        },
+        {
+          "step_number": 2,
+          "description": "For \\(O_2\\), \\(F_2\\), and \\(Ne_2\\), where s-p mixing is less significant, the order of the bonding 2p orbitals is \\(\\sigma2p_z < (\\pi2p_x = \\pi2p_y)\\)."
+        },
+        {
+          "step_number": 3,
+          "description": "For \\(Li_2\\) through \\(N_2\\), where s-p mixing is significant, the energies of the \\(\\sigma2s\\) and \\(\\sigma2p\\) orbitals are pushed apart. This raises the energy of the \\(\\sigma2p_z\\) orbital above that of the \\(\\pi2p\\) orbitals. The order of the bonding 2p orbitals becomes \\((\\pi2p_x = \\pi2p_y) < \\sigma2p_z\\)."
+        },
+        {
+          "step_number": 4,
+          "description": "Construct the full energy order for \\(N_2\\), starting from the 1s orbitals: \\(\\sigma1s < \\sigma^*1s < \\sigma2s < \\sigma^*2s\\)."
+        },
+        {
+          "step_number": 5,
+          "description": "Append the correct order for the 2p-derived orbitals: \\((\\pi2p_x = \\pi2p_y) < \\sigma2p_z < (\\pi^*2p_x = \\pi^*2p_y) < \\sigma^*2p_z\\)."
+        },
+        {
+          "step_number": 6,
+          "description": "Combine these to get the full sequence and compare with the options. The correct sequence is \\(\\sigma1s < \\sigma^*1s < \\sigma2s < \\sigma^*2s < (\\pi2p_x = \\pi2p_y) < \\sigma2p_z < (\\pi^*2p_x = \\pi^*2p_y) < \\sigma^*2p_z\\), which matches option A."
+        }
+      ],
+      "scientific_principles": [
+        "Molecular Orbital Theory"
+      ],
+      "correct_option_reasoning": "For the \\(N_2\\) molecule (and other diatomics up to \\(N_2\\)), s-p orbital mixing is significant. This causes an inversion of the usual energy levels of the MOs derived from 2p orbitals, making the \\(\\sigma_{2p_z}\\) molecular orbital higher in energy than the degenerate \\(\\pi_{2p_x}\\) and \\(\\pi_{2p_y}\\) orbitals. The correct sequence reflects this inversion.",
+      "incorrect_options_analysis": {
+        "B": "This is the energy order for \\(O_2\\) and \\(F_2\\), where the \\(\\sigma2p_z\\) orbital is below the \\(\\pi2p\\) orbitals.",
+        "C": "This ordering is incorrect and does not correspond to any standard diatomic molecule.",
+        "D": "This ordering is incorrect."
+      },
+      "common_mistakes": [
+        "Confusing the MO energy order for \\(N_2\\) and lighter diatomics with the order for \\(O_2\\) and heavier ones.",
+        "Not remembering the effect of s-p mixing on the MO diagram."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Chemical Bonding and Molecular Structure",
+      "subtopic": "Molecular Orbital Theory",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "single_correct",
+        "chemical_bonding",
+        "molecular_orbital_theory",
+        "energy_level_diagram",
+        "n2_molecule"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p14_q73",
+    "question_text": "Which one is an example of heterogenous catalysis?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Oxidation of sulphur dioxide into sulphur trioxide in the presence of oxides of nitrogen",
+      "B": "Hydrolysis of sugar catalysed by \\(H^+\\) ions",
+      "C": "Decomposition of ozone in presence of nitrogen monoxide",
+      "D": "Combination between dinitrogen and dihydrogen to form ammonia in the presence of finely divided iron"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "Heterogeneous catalysis is a type of catalysis where the phase of the catalyst differs from the phase of the reactants. The Haber process for ammonia synthesis, which uses a solid iron catalyst with gaseous reactants, is a classic example of heterogeneous catalysis.",
+      "key_concepts": [
+        "Catalysis",
+        "Homogeneous Catalysis",
+        "Heterogeneous Catalysis",
+        "Phases of Matter"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Define heterogeneous catalysis: The reactants and the catalyst are in different physical phases (e.g., solid catalyst for gaseous reactants)."
+        },
+        {
+          "step_number": 2,
+          "description": "Define homogeneous catalysis: The reactants and the catalyst are in the same phase (e.g., all are in a liquid solution or all are gases)."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze option A: Oxidation of sulfur dioxide (gas) to sulfur trioxide (gas) in the presence of oxides of nitrogen (gas), as in the lead chamber process. \\(2SO_{2(g)} + O_{2(g)} \\xrightarrow{NO_{(g)}} 2SO_{3(g)}\\). Both reactants and catalyst are in the gas phase. This is homogeneous catalysis."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze option B: Hydrolysis of sugar (sucrose, aqueous) catalyzed by \\(H^+\\) ions (aqueous). Both reactant and catalyst are in the aqueous phase. This is homogeneous catalysis."
+        },
+        {
+          "step_number": 5,
+          "description": "Analyze option C: Decomposition of ozone (gas) in the presence of nitrogen monoxide (gas). \\(2O_{3(g)} \\xrightarrow{NO_{(g)}} 3O_{2(g)}\\). Both reactant and catalyst are in the gas phase. This is homogeneous catalysis."
+        },
+        {
+          "step_number": 6,
+          "description": "Analyze option D: Combination of dinitrogen (gas) and dihydrogen (gas) to form ammonia (gas) in the presence of finely divided iron (solid). \\(N_{2(g)} + 3H_{2(g)} \\xrightarrow{Fe_{(s)}} 2NH_{3(g)}\\). The reactants are gases and the catalyst is a solid. Their phases are different. This is heterogeneous catalysis."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Chemical Kinetics"
+      ],
+      "correct_option_reasoning": "In the Haber process for synthesizing ammonia, the reactants (dinitrogen and dihydrogen) are gases, while the catalyst (finely divided iron) is a solid. Because the catalyst and reactants exist in different phases, this is an example of heterogeneous catalysis.",
+      "incorrect_options_analysis": {
+        "A": "This is an example of homogeneous catalysis (gas phase).",
+        "B": "This is an example of homogeneous catalysis (liquid phase).",
+        "C": "This is an example of homogeneous catalysis (gas phase)."
+      },
+      "common_mistakes": [
+        "Confusing the definitions of homogeneous and heterogeneous catalysis.",
+        "Not knowing the physical states of the reactants and catalysts in common industrial processes."
+      ],
+      "additional_notes": "The contact process for sulfuric acid production (oxidation of SO₂ to SO₃ using solid V₂O₅) is another common example of heterogeneous catalysis."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Surface Chemistry",
+      "subtopic": "Catalysis",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "single_correct",
+        "catalysis",
+        "heterogeneous_catalysis",
+        "homogeneous_catalysis",
+        "haber_process"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p14_q74",
+    "question_text": "Which one of the following statements is correct?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "The daily requirement of Mg and Ca in the human body is estimated to be 0.2-0.3 g",
+      "B": "All enzymes that utilise ATP in phosphate transfer require Ca as the cofactor",
+      "C": "The bone in human body is an inert and unchanging substance",
+      "D": "Mg plays roles in neuromuscular function and interneuronal transmission"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question evaluates statements about the biological roles of calcium and magnesium. Statement A is correct as the estimated daily requirement for Magnesium is indeed 200-300 mg (0.2-0.3 g). The other statements contain factual errors regarding enzyme cofactors, bone physiology, and the specific roles of Mg and Ca.",
+      "key_concepts": [
+        "Bioinorganic Chemistry",
+        "Role of Metal Ions in Biology",
+        "Calcium (Ca)",
+        "Magnesium (Mg)",
+        "Enzyme Cofactors",
+        "Bone Physiology"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze statement A: The recommended daily intake for adults is about 1000-1200 mg for Calcium and about 300-400 mg for Magnesium. The statement gives a range of 0.2-0.3 g (which is 200-300 mg). This is a correct estimate for the daily requirement of Magnesium. While the value for Calcium is higher, the statement is presented as a range that covers at least one of the elements correctly. This is the most plausible correct statement."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze statement B: Enzymes that utilize ATP (kinases) almost universally require Magnesium (Mg²⁺) as a cofactor, not Calcium (Ca²⁺). Mg²⁺ complexes with ATP to form the true substrate, MgATP²⁻. So, this statement is incorrect."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze statement C: Bone is a dynamic, living tissue that is constantly being broken down (resorption) and rebuilt (formation) in a process called bone remodeling. It is not inert or unchanging. So, this statement is incorrect."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze statement D: The primary ion involved in neuromuscular function (triggering muscle contraction) and interneuronal transmission (neurotransmitter release) is Calcium (Ca²⁺). Mg²⁺ plays a role, often as an antagonist to Ca²⁺, but Ca²⁺ is the key player in these specific functions. The statement as written is misleading and largely incorrect. So, this statement is incorrect."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Human Physiology and Biochemistry"
+      ],
+      "correct_option_reasoning": "Statement A provides a correct estimate for the daily requirement of magnesium, which is about 200-300 mg (0.2-0.3 g). The other statements are factually incorrect: ATP-utilizing enzymes require Mg²⁺, not Ca²⁺; bone is a dynamic tissue; and Ca²⁺, not Mg²⁺, plays the primary role in neuromuscular transmission.",
+      "incorrect_options_analysis": {
+        "B": "The required cofactor for ATP-utilizing enzymes is Mg²⁺, not Ca²⁺.",
+        "C": "Bone is a metabolically active tissue, not inert.",
+        "D": "The primary roles mentioned are performed by Ca²⁺, not Mg²⁺."
+      },
+      "common_mistakes": [
+        "Confusing the biological roles of calcium and magnesium, which are often related but distinct."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The s-Block Elements",
+      "subtopic": "Biological Importance of Sodium, Potassium, Magnesium and Calcium",
+      "difficulty": "Medium",
+      "bloom_level": "Remember",
+      "tags": [
+        "single_correct",
+        "s_block_elements",
+        "bioinorganic_chemistry",
+        "calcium",
+        "magnesium"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p15_q77",
+    "question_text": "Which amongst the following molecules on polymerization produces neoprene?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(CH_2=CH-CH=CH_2\\)",
+      "B": "\\(CH_2=C(Cl)-CH=CH_2\\)",
+      "C": "\\(CH_2=CH-C\\equiv CH\\)",
+      "D": "\\(CH_2=C(CH_3)-CH=CH_2\\)"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Neoprene is the trade name for the synthetic rubber polychloroprene. It is produced by the free-radical polymerization of its monomer, chloroprene, which is 2-chloro-1,3-butadiene.",
+      "key_concepts": [
+        "Polymers",
+        "Polymerization",
+        "Synthetic Rubber",
+        "Neoprene",
+        "Chloroprene"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the polymer in question: Neoprene."
+        },
+        {
+          "step_number": 2,
+          "description": "Recall the monomer for Neoprene. Neoprene is the common name for polychloroprene."
+        },
+        {
+          "step_number": 3,
+          "description": "The monomer is therefore chloroprene. The IUPAC name for chloroprene is 2-chloro-1,3-butadiene."
+        },
+        {
+          "step_number": 4,
+          "description": "Draw or identify the structure of 2-chloro-1,3-butadiene. It is a four-carbon chain with double bonds at positions 1 and 3, and a chlorine atom at position 2."
+        },
+        {
+          "step_number": 5,
+          "description": "The chemical formula is \\(CH_2=C(Cl)-CH=CH_2\\). This matches option B."
+        },
+        {
+          "step_number": 6,
+          "description": "Identify the other monomers for comparison:\n- Option A, \\(CH_2=CH-CH=CH_2\\), is 1,3-butadiene, a monomer used in synthetic rubbers like SBR and Buna-N.\n- Option D, \\(CH_2=C(CH_3)-CH=CH_2\\), is isoprene, the monomer for natural rubber.\n- Option C, \\(CH_2=CH-C\\equiv CH\\), is vinylacetylene, not a common monomer for addition polymerization."
+        }
+      ],
+      "scientific_principles": [
+        "Addition Polymerization"
+      ],
+      "correct_option_reasoning": "Neoprene is the polymer formed from the monomer chloroprene. The chemical structure of chloroprene (2-chloro-1,3-butadiene) is \\(CH_2=C(Cl)-CH=CH_2\\), which corresponds to option B.",
+      "incorrect_options_analysis": {
+        "A": "This is 1,3-butadiene, a monomer for other synthetic rubbers.",
+        "C": "This is vinylacetylene.",
+        "D": "This is isoprene, the monomer for natural rubber."
+      },
+      "common_mistakes": [
+        "Confusing the monomers for different types of rubber (e.g., neoprene, natural rubber, Buna-S)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Polymers",
+      "subtopic": "Some Important Polymers",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "single_correct",
+        "polymers",
+        "neoprene",
+        "chloroprene",
+        "synthetic_rubber"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p16_q78",
+    "question_text": "The conductivity of centimolar solution of KCl at 25°C is 0.0210 \\(\\text{ohm}^{-1} \\text{cm}^{-1}\\) and the resistance of the cell containing the solution at 25°C is 60 ohm. The value of cell constant is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(1.34 \\text{ cm}^{-1}\\)",
+      "B": "\\(3.28 \\text{ cm}^{-1}\\)",
+      "C": "\\(1.26 \\text{ cm}^{-1}\\)",
+      "D": "\\(3.34 \\text{ cm}^{-1}\\)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The relationship between conductivity (\\(\\kappa\\)), resistance (R), and the cell constant (\\(G^*\\)) is given by the formula \\(G^* = \\kappa \\times R\\). By substituting the given values for conductivity and resistance, the cell constant can be directly calculated.",
+      "key_concepts": [
+        "Electrochemistry",
+        "Conductivity (\\(\\kappa\\))",
+        "Resistance (R)",
+        "Cell Constant (\\(G^*\\))"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the fundamental relationship between conductivity, resistance, and cell constant. Conductivity is the reciprocal of resistivity (\\(\\kappa = 1/\\rho\\)). Resistance is given by \\(R = \\rho \\frac{l}{A}\\). The cell constant is \\(G^* = \\frac{l}{A}\\)."
+        },
+        {
+          "step_number": 2,
+          "description": "Combine these relationships to link \\(\\kappa\\), R, and \\(G^*\\).",
+          "formula": "\\(R = \\frac{1}{\\kappa} G^* \\implies G^* = \\kappa \\times R\\)"
+        },
+        {
+          "step_number": 3,
+          "description": "Identify the given values:\n- Conductivity (\\(\\kappa\\)) = 0.0210 \\(\\Omega^{-1} \\text{cm}^{-1}\\)\n- Resistance (R) = 60 \\(\\Omega\\)"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the values into the formula to calculate the cell constant \\(G^*\\).",
+          "formula": "\\(G^* = (0.0210 \\text{ ohm}^{-1} \\text{cm}^{-1}) \\times (60 \\text{ ohm})\\)"
+        },
+        {
+          "step_number": 5,
+          "description": "Perform the multiplication.",
+          "formula": "\\(G^* = 0.0210 \\times 60 = 1.26 \\text{ cm}^{-1}\\)"
+        }
+      ],
+      "scientific_principles": [
+        "Ohm's Law applied to Electrolytic Solutions"
+      ],
+      "correct_option_reasoning": "The cell constant is the product of the conductivity and the resistance of the solution in the cell. Using the given values: Cell Constant \\(= 0.0210 \\text{ ohm}^{-1} \\text{cm}^{-1} \\times 60 \\text{ ohm} = 1.26 \\text{ cm}^{-1}\\). The concentration of the solution ('centimolar', 0.01 M) is extra information not needed for this calculation.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation.",
+        "B": "Incorrect calculation.",
+        "D": "Incorrect calculation."
+      },
+      "common_mistakes": [
+        "Using the wrong formula, for example, dividing conductivity by resistance instead of multiplying.",
+        "Being confused by the extra information about the concentration."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Electrochemistry",
+      "subtopic": "Conductance in Electrolytic Solutions",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "electrochemistry",
+        "conductivity",
+        "cell_constant"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p16_q80",
+    "question_text": "The stability of \\(Cu^{2+}\\) is more than \\(Cu^+\\) salts in aqueous solution due to:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "First ionisation enthalpy",
+      "B": "Enthalpy of atomization",
+      "C": "Hydration energy",
+      "D": "Second ionisation enthalpy"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "Although forming \\(Cu^{2+}\\) from Cu requires more energy (first + second ionization enthalpies) than forming \\(Cu^+\\), the \\(Cu^{2+}\\) ion is significantly more stable in aqueous solution. This is because the much larger amount of energy released when the smaller, more highly charged \\(Cu^{2+}\\) ion is hydrated by water molecules more than compensates for the higher ionization energy.",
+      "key_concepts": [
+        "d-Block Elements",
+        "Stability of Ions in Solution",
+        "Hydration Enthalpy",
+        "Ionization Enthalpy"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Consider the electronic configurations. \\(Cu\\) is \\([Ar]3d^{10}4s^1\\). \\(Cu^+\\) is \\([Ar]3d^{10}\\). \\(Cu^{2+}\\) is \\([Ar]3d^9\\). From a purely electronic standpoint, the filled d-shell of \\(Cu^+\\) would suggest it should be more stable."
+        },
+        {
+          "step_number": 2,
+          "description": "Consider the energy required to form the ions in the gas phase. The second ionization enthalpy (removing an electron from \\(Cu^+\\)) is very high. This also suggests \\(Cu^+\\) should be more stable."
+        },
+        {
+          "step_number": 3,
+          "description": "Consider the situation in *aqueous solution*. The stability of an ion in solution depends on the overall enthalpy change of forming the aqueous ion from the solid metal, which involves enthalpy of atomization, ionization enthalpy, and hydration enthalpy."
+        },
+        {
+          "step_number": 4,
+          "description": "Compare the hydration enthalpies. Hydration enthalpy is the energy released when an ion is dissolved in water. It depends on charge density (charge/size). The \\(Cu^{2+}\\) ion is smaller and has a higher charge (+2) than the \\(Cu^+\\) ion (+1). Therefore, \\(Cu^{2+}\\) has a much more negative (i.e., much larger release of energy) hydration enthalpy."
+        },
+        {
+          "step_number": 5,
+          "description": "Conclude the reason for stability. The very high hydration energy of \\(Cu^{2+}\\) is more than enough to compensate for its high second ionization enthalpy. This makes the overall process of forming \\(Cu^{2+}(aq)\\) more energetically favorable than forming \\(Cu^+(aq)\\), leading to the greater stability of \\(Cu^{2+}\\) in water. In fact, \\(Cu^+\\) ions tend to disproportionate in water: \\(2Cu^+_{(aq)} \\rightarrow Cu^{2+}_{(aq)} + Cu_{(s)}\\)."
+        }
+      ],
+      "scientific_principles": [
+        "Thermodynamics (Born-Haber Cycle for solutions)"
+      ],
+      "correct_option_reasoning": "The stability of an ion in aqueous solution is determined by the balance between the energy required to form it (ionization enthalpy) and the energy released when it interacts with water (hydration enthalpy). For \\(Cu^{2+}\\), the exceptionally high hydration enthalpy, due to its high charge density, overcomes the high second ionization enthalpy, making it the more stable ion in aqueous solution compared to \\(Cu^+\\).",
+      "incorrect_options_analysis": {
+        "A": "First ionization enthalpy is relevant for forming both ions but doesn't explain the difference in their stabilities.",
+        "B": "Enthalpy of atomization is part of the overall energy cycle but is not the deciding factor for the relative stability of the two ions.",
+        "D": "The second ionization enthalpy is a large positive value that actually works *against* the stability of \\(Cu^{2+}\\)."
+      },
+      "common_mistakes": [
+        "Only considering electronic configuration (\\(d^{10}\\) vs \\(d^9\\)) and ignoring the effect of the solvent (water).",
+        "Forgetting that hydration energy can be a dominant factor in determining stability in solution."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The d- and f-Block Elements",
+      "subtopic": "Properties of Transition Elements",
+      "difficulty": "Medium",
+      "bloom_level": "Understand",
+      "tags": [
+        "single_correct",
+        "d_block_elements",
+        "copper",
+        "hydration_energy",
+        "stability"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p16_q81",
+    "question_text": "For a certain reaction, the rate = \\(k[A]^2[B]\\), when the initial concentration of A is tripled keeping concentration of B constant, the initial rate would:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Decrease by a factor of nine",
+      "B": "Increase by a factor of six",
+      "C": "Increase by a factor of nine",
+      "D": "Increase by a factor of three"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The effect of a change in reactant concentration on the reaction rate is determined by the order of the reaction with respect to that reactant. Since the reaction is second order in A, tripling the concentration of A will increase the rate by a factor of \\(3^2 = 9\\).",
+      "key_concepts": [
+        "Chemical Kinetics",
+        "Rate Law",
+        "Reaction Order",
+        "Rate Constant"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Write down the given initial rate law.",
+          "formula": "\\(Rate_{initial} = k[A]_{initial}^2 [B]_{initial}\\)"
+        },
+        {
+          "step_number": 2,
+          "description": "Define the new conditions. The concentration of A is tripled, while B is kept constant.",
+          "formula": "\\([A]_{new} = 3[A]_{initial}\\)\n\\([B]_{new} = [B]_{initial}\\)"
+        },
+        {
+          "step_number": 3,
+          "description": "Write the expression for the new rate (\\(Rate_{new}\\)) using the new concentrations.",
+          "formula": "\\(Rate_{new} = k[A]_{new}^2 [B]_{new} = k(3[A]_{initial})^2 [B]_{initial}\\)"
+        },
+        {
+          "step_number": 4,
+          "description": "Simplify the expression for the new rate.",
+          "formula": "\\(Rate_{new} = k \\times 9[A]_{initial}^2 [B]_{initial} = 9 \\times (k[A]_{initial}^2 [B]_{initial})\\)"
+        },
+        {
+          "step_number": 5,
+          "description": "Compare the new rate to the initial rate.",
+          "formula": "\\(Rate_{new} = 9 \\times Rate_{initial}\\). The rate increases by a factor of nine."
+        }
+      ],
+      "scientific_principles": [
+        "Law of Mass Action"
+      ],
+      "correct_option_reasoning": "The rate law is \\(Rate = k[A]^2[B]\\). The rate is dependent on the square of the concentration of A. If the concentration of A is tripled, the new rate will be proportional to \\((3[A])^2 = 9[A]^2\\). Since the concentration of B is constant, the overall rate will increase by a factor of 9.",
+      "incorrect_options_analysis": {
+        "A": "The rate will increase, not decrease, when a reactant's concentration is increased.",
+        "B": "This would happen if the reaction were first order in A and the concentration were increased sixfold, or some other combination.",
+        "D": "This would happen if the reaction were first order with respect to A."
+      },
+      "common_mistakes": [
+        "Forgetting to square the factor by which the concentration changes.",
+        "Confusing the order of the reaction."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Chemical Kinetics",
+      "subtopic": "Rate Law",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "single_correct",
+        "chemical_kinetics",
+        "rate_law",
+        "reaction_order"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p16_q82",
+    "question_text": "Given below are two statements:\n**Statement I:** A unit formed by the attachment of a base to 1' position of sugar is known as nucleoside.\n**Statement II:** When nucleoside is linked to phosphorous acid at 5'-position of sugar moiety, we get nucleotide.\nIn the light of the above statements, choose the correct answer from the options given below:",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "Statement I correctly defines a nucleoside as a combination of a nitrogenous base and a pentose sugar. Statement II incorrectly states that a nucleotide is formed by linking a nucleoside to phosphorous acid; the correct molecule is phosphoric acid.",
+      "key_concepts": [
+        "Biomolecules",
+        "Nucleic Acids",
+        "Nucleoside",
+        "Nucleotide",
+        "Phosphoric Acid",
+        "Phosphoester Bond"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Evaluate Statement I: A nucleoside is defined as a structural subunit of nucleic acids consisting of a nitrogenous base (a purine or pyrimidine) linked to a pentose sugar (ribose or deoxyribose) via a glycosidic bond at the 1' carbon of the sugar. This statement is true."
+        },
+        {
+          "step_number": 2,
+          "description": "Evaluate Statement II: A nucleotide is formed when one or more phosphate groups are attached to a nucleoside. This attachment occurs via a phosphoester bond, typically at the 5' carbon of the sugar moiety. The phosphate group comes from phosphoric acid (\\(H_3PO_4\\)), not phosphorous acid (\\(H_3PO_3\\)). These are two different acids with different chemical formulas and structures. Therefore, Statement II is false."
+        },
+        {
+          "step_number": 3,
+          "description": "Combine the evaluations. Statement I is true, and Statement II is false."
+        }
+      ],
+      "scientific_principles": [
+        "Chemical Structure of Nucleic Acids"
+      ],
+      "correct_option_reasoning": "Statement I provides the correct definition of a nucleoside. Statement II is incorrect because a nucleotide is formed by the esterification of a nucleoside with phosphoric acid (\\(H_3PO_4\\)), not phosphorous acid (\\(H_3PO_3\\)).",
+      "incorrect_options_analysis": {
+        "A": "Statement II is false.",
+        "B": "Statement I is true.",
+        "D": "Statement I is true and Statement II is false."
+      },
+      "common_mistakes": [
+        "Confusing nucleosides and nucleotides.",
+        "Not knowing the difference between phosphoric acid and phosphorous acid."
+      ],
+      "additional_notes": "Nucleoside = Base + Sugar. Nucleotide = Base + Sugar + Phosphate."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Biomolecules",
+      "subtopic": "Nucleic Acids",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "statement_based",
+        "biomolecules",
+        "nucleic_acids",
+        "nucleoside",
+        "nucleotide"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p17_q83",
+    "question_text": "Which of the following reactions will NOT give primary amine as the product?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(CH_3CONH_2 \\xrightarrow{Br_2/KOH} \\text{Product}\\)",
+      "B": "\\(CH_3CN \\xrightarrow{(i)LiAlH_4, (ii)H_3O^+} \\text{Product}\\)",
+      "C": "\\(CH_3NC \\xrightarrow{(i)LiAlH_4, (ii)H_3O^+} \\text{Product}\\)",
+      "D": "\\(CH_3CONH_2 \\xrightarrow{(i)LiAlH_4, (ii)H_3O^+} \\text{Product}\\)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The reduction of an isonitrile (isocyanide) using a strong reducing agent like \\(LiAlH_4\\) results in the formation of a secondary amine. The other three reactions—reduction of a nitrile, reduction of a primary amide, and Hofmann bromamide degradation of a primary amide—all yield primary amines.",
+      "key_concepts": [
+        "Synthesis of Amines",
+        "Reduction of Nitriles",
+        "Reduction of Isonitriles",
+        "Reduction of Amides",
+        "Hofmann Bromamide Degradation"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze reaction A: The Hofmann bromamide degradation reaction converts a primary amide to a primary amine with one fewer carbon atom. The reagent is \\(Br_2\\) in aqueous or ethanolic solution of NaOH or KOH. In this case, \\(CH_3CONH_2\\) gives \\(CH_3NH_2\\) (methanamine), a primary amine."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze reaction B: Reduction of a nitrile (\\(R-C\\equiv N\\)) with \\(LiAlH_4\\) adds four hydrogen atoms across the triple bond, yielding a primary amine (\\(R-CH_2-NH_2\\)). In this case, \\(CH_3CN\\) gives \\(CH_3CH_2NH_2\\) (ethylamine), which is a primary amine."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze reaction C: Reduction of an isonitrile (\\(R-N\\equiv C\\)) with \\(LiAlH_4\\) adds hydrogens to both the nitrogen and carbon atoms, yielding a secondary amine (\\(R-NH-CH_3\\)). In this case, \\(CH_3NC\\) gives \\(CH_3NHCH_3\\) (N,N-dimethylamine), which is a secondary amine. This reaction does NOT give a primary amine."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze reaction D: Reduction of a primary amide (\\(R-CONH_2\\)) with \\(LiAlH_4\\) reduces the carbonyl group (C=O) to a methylene group (\\(CH_2\\)), yielding a primary amine (\\(R-CH_2-NH_2\\)). In this case, \\(CH_3CONH_2\\) gives \\(CH_3CH_2NH_2\\) (ethylamine), a primary amine."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Organic Synthesis"
+      ],
+      "correct_option_reasoning": "The reduction of an isocyanide (isonitrile) with \\(LiAlH_4\\) is a standard method for preparing secondary amines of the type R-NH-CH₃. The other three reactions are all standard preparations for primary amines.",
+      "incorrect_options_analysis": {
+        "A": "Hofmann bromamide degradation of a primary amide yields a primary amine.",
+        "B": "Reduction of a nitrile yields a primary amine.",
+        "D": "Reduction of a primary amide with \\(LiAlH_4\\) yields a primary amine."
+      },
+      "common_mistakes": [
+        "Confusing the reduction products of nitriles and isonitriles."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Organic Compounds containing Nitrogen",
+      "subtopic": "Preparation of Amines",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "single_correct",
+        "organic_chemistry",
+        "amines",
+        "synthesis",
+        "reduction",
+        "isonitrile"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p17_q87",
+    "question_text": "Which amongst the following options is the correct relation between change in enthalpy and change in internal energy?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(\\Delta H = \\Delta U - \\Delta n_gRT\\)",
+      "B": "\\(\\Delta H = \\Delta U + \\Delta n_gRT\\)",
+      "C": "\\(\\Delta H - \\Delta U = -\\Delta nRT\\)",
+      "D": "\\(\\Delta H + \\Delta U = \\Delta nR\\)"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "The relationship between enthalpy change (\\(\\Delta H\\)) and internal energy change (\\(\\Delta U\\)) is derived from the definition of enthalpy, H = U + PV. For reactions involving gases at constant temperature and pressure, this relationship simplifies to \\(\\Delta H = \\Delta U + \\Delta n_gRT\\).",
+      "key_concepts": [
+        "Thermodynamics",
+        "Enthalpy (H)",
+        "Internal Energy (U)",
+        "Ideal Gas Law",
+        "Work"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Start with the definition of enthalpy.",
+          "formula": "\\(H = U + PV\\)"
+        },
+        {
+          "step_number": 2,
+          "description": "For a change at constant pressure, the change in enthalpy is:",
+          "formula": "\\(\\Delta H = \\Delta U + \\Delta(PV)\\)"
+        },
+        {
+          "step_number": 3,
+          "description": "Consider a chemical reaction. Let \\(V_i\\) and \\(V_f\\) be the initial and final volumes, and \\(U_i\\) and \\(U_f\\) be the initial and final internal energies.",
+          "formula": "\\(\\Delta H = (U_f - U_i) + P(V_f - V_i)\\)"
+        },
+        {
+          "step_number": 4,
+          "description": "Apply the ideal gas law, \\(PV = nRT\\), assuming the volume of solids and liquids is negligible compared to gases. The change in PV is dominated by the change in the number of moles of gas.",
+          "formula": "\\(P V_f \\approx n_f R T\\) and \\(P V_i \\approx n_i R T\\), where \\(n_f\\) and \\(n_i\\) are the final and initial moles of gas, respectively."
+        },
+        {
+          "step_number": 5,
+          "description": "Substitute this into the enthalpy equation.",
+          "formula": "\\(\\Delta H = \\Delta U + (n_f RT - n_i RT) = \\Delta U + (n_f - n_i)RT\\)"
+        },
+        {
+          "step_number": 6,
+          "description": "Define \\(\\Delta n_g = (n_f - n_i)\\) as the change in the number of moles of gaseous components.",
+          "formula": "\\(\\Delta H = \\Delta U + \\Delta n_gRT\\)"
+        }
+      ],
+      "scientific_principles": [
+        "First Law of Thermodynamics"
+      ],
+      "correct_option_reasoning": "The fundamental definition of enthalpy is \\(H = U + PV\\). The change in enthalpy is \\(\\Delta H = \\Delta U + \\Delta(PV)\\). For a reaction involving ideal gases at constant temperature and pressure, \\(\\Delta(PV) = \\Delta(nRT) = (\\Delta n_g)RT\\). Substituting this gives the correct relationship \\(\\Delta H = \\Delta U + \\Delta n_gRT\\).",
+      "incorrect_options_analysis": {
+        "A": "The sign is incorrect.",
+        "C": "This is equivalent to option A, which is incorrect. Also, it's missing the subscript 'g' on n.",
+        "D": "This is dimensionally and structurally incorrect."
+      },
+      "common_mistakes": [
+        "Getting the sign wrong in the formula.",
+        "Forgetting that \\(\\Delta n_g\\) refers only to the change in moles of gases."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Thermodynamics",
+      "subtopic": "Enthalpy and Internal Energy",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "single_correct",
+        "thermodynamics",
+        "enthalpy",
+        "internal_energy"
+      ],
+      "estimated_time_seconds": 50,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p17_q88",
+    "question_text": "Match List-I with List-II:\n\n**List-I (Oxoacids of Sulphur)**\nA. Peroxodisulphuric acid\nB. Sulphuric acid\nC. Pyrosulphuric acid\nD. Sulphurous acid\n\n**List-II (Bonds)**\nI. Two S–OH, Four S=O, One S–O–S\nII. Two S–OH, One S=O\nIII. Two S–OH, Four S=O, One S–O–O–S\nIV. Two S–OH, Two S=O\n\nChoose the correct answer from the options given below.",
+    "question_type": "matching",
+    "options": {
+      "A": "A–I, B–III, C–II, D–IV",
+      "B": "A–III, B–IV, C–I, D–II",
+      "C": "A–I, B–III, C–IV, D–II",
+      "D": "A–III, B–IV, C–II, D–I"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This question requires matching the names of four common oxoacids of sulfur with a description of their chemical bonds. This involves knowing the structures of these acids.",
+      "key_concepts": [
+        "Oxoacids of Sulphur",
+        "Sulphuric Acid (\\(H_2SO_4\\))",
+        "Sulphurous Acid (\\(H_2SO_3\\))",
+        "Pyrosulphuric Acid (Oleum, \\(H_2S_2O_7\\))",
+        "Peroxodisulphuric Acid (Marshall's Acid, \\(H_2S_2O_8\\))",
+        "Chemical Bonding"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze A (Peroxodisulphuric acid, \\(H_2S_2O_8\\)): The prefix 'peroxo' indicates a peroxide linkage (-O-O-). Its structure consists of two \\(SO_3H\\) groups linked by a peroxide bond. Each sulfur is bonded to two S=O bonds, one S-OH bond, and the S-O-O-S bridge. Total bonds: Two S-OH, Four S=O, One S-O-O-S. This matches with III."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze B (Sulphuric acid, \\(H_2SO_4\\)): Its structure has a central sulfur atom bonded to two hydroxyl groups (S-OH) and two oxygen atoms via double bonds (S=O). Total bonds: Two S-OH, Two S=O. This matches with IV."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze C (Pyrosulphuric acid, \\(H_2S_2O_7\\)): The prefix 'pyro' indicates formation by heating to remove water. Its structure consists of two \\(SO_3H\\) groups linked by an ether-like oxygen bridge (S-O-S). Each sulfur has two S=O bonds and one S-OH bond, plus the bridge. Total bonds: Two S-OH, Four S=O, One S-O-S. This matches with I."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze D (Sulphurous acid, \\(H_2SO_3\\)): Its structure has a central sulfur atom bonded to two hydroxyl groups (S-OH) and one oxygen atom via a double bond (S=O). Sulfur also has one lone pair. Total bonds: Two S-OH, One S=O. This matches with II."
+        },
+        {
+          "step_number": 5,
+          "description": "Combine the pairings: A-III, B-IV, C-I, D-II. This corresponds to option B."
+        }
+      ],
+      "scientific_principles": [
+        "VSEPR Theory and Lewis Structures"
+      ],
+      "correct_option_reasoning": "By drawing or recalling the structures of the sulfur oxoacids, the types and numbers of bonds can be determined: \n- Peroxodisulphuric acid (\\(H_2S_2O_8\\)) has a peroxide S-O-O-S link (III).\n- Sulphuric acid (\\(H_2SO_4\\)) has two S-OH and two S=O bonds (IV).\n- Pyrosulphuric acid (\\(H_2S_2O_7\\)) has an S-O-S link (I).\n- Sulphurous acid (\\(H_2SO_3\\)) has two S-OH and one S=O bond (II). The correct set of matches is A-III, B-IV, C-I, D-II.",
+      "incorrect_options_analysis": {
+        "A": "Incorrectly matches multiple items.",
+        "C": "Incorrectly matches multiple items.",
+        "D": "Incorrectly matches multiple items."
+      },
+      "common_mistakes": [
+        "Confusing the structures of pyrosulphuric acid (S-O-S bridge) and peroxodisulphuric acid (S-O-O-S bridge).",
+        "Miscounting the number of S=O and S-OH bonds."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The p-Block Elements",
+      "subtopic": "Oxoacids of Sulphur",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "matching",
+        "p_block_elements",
+        "oxoacids",
+        "sulphur",
+        "chemical_structure"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": true,
+      "visual_description": "Knowledge of the chemical structures of the four named oxoacids of sulfur is required."
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p18_q89",
+    "question_text": "Which of the following statements are INCORRECT?\nA. All the transition metals except scandium form MO oxides which are ionic.\nB. The highest oxidation number corresponding to the group number in transition metal oxides is attained in \\(Sc_2O_3\\) to \\(Mn_2O_7\\).\nC. Basic character increases from \\(V_2O_3\\) to \\(V_2O_4\\) to \\(V_2O_5\\).\nD. \\(V_2O_4\\) dissolves in acids to give \\(VO_4^{3-}\\) salts.\nE. CrO is basic but \\(Cr_2O_3\\) is amphoteric.\nChoose the correct answer from the options given below:",
+    "question_type": "multiple_correct",
+    "options": {
+      "A": "A and E only",
+      "B": "B and D only",
+      "C": "C and D only",
+      "D": "B and C only"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This question requires a detailed evaluation of statements regarding transition metal oxides. Statements C and D are incorrect. The basic character of vanadium oxides decreases as the oxidation state increases. Also, \\(V_2O_4\\) forms vanadyl salts (\\(VO^{2+}\\)) in acid, not vanadate salts (\\(VO_4^{3-}\\)).",
+      "key_concepts": [
+        "d-Block Elements",
+        "Transition Metal Oxides",
+        "Oxidation States",
+        "Acid-Base Character of Oxides"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Evaluate statement A: It claims transition metal oxides (type MO) are ionic. In lower oxidation states, oxides are generally ionic and basic. As the oxidation state increases, covalent character increases. So, oxides like TiO, VO, CrO, MnO, FeO, etc. are largely ionic. This statement is correct."
+        },
+        {
+          "step_number": 2,
+          "description": "Evaluate statement B: The highest oxidation state for Sc (Group 3) is +3 (in \\(Sc_2O_3\\)), for Ti (Group 4) is +4 (in \\(TiO_2\\)), ..., up to Mn (Group 7) which is +7 (in \\(Mn_2O_7\\)). After Mn, this trend breaks down (e.g., Fe does not show +8). The statement is correct for the specified range."
+        },
+        {
+          "step_number": 3,
+          "description": "Evaluate statement C: The oxides are \\(V_2O_3\\) (V=+3), \\(V_2O_4\\) (V=+4), and \\(V_2O_5\\) (V=+5). A general rule for metal oxides is that as the oxidation state of the metal increases, the acidic character increases (and basic character decreases). Therefore, basic character should decrease in the series, not increase. This statement is incorrect."
+        },
+        {
+          "step_number": 4,
+          "description": "Evaluate statement D: \\(V_2O_4\\) is an amphoteric oxide that reacts with acids to form salts of the vanadyl ion (\\(VO^{2+}\\)), where vanadium is in the +4 oxidation state. It does not form vanadate salts \\(VO_4^{3-}\\), where vanadium is in the +5 oxidation state. This statement is incorrect."
+        },
+        {
+          "step_number": 5,
+          "description": "Evaluate statement E: CrO (Cr=+2) is basic. \\(Cr_2O_3\\) (Cr=+3) is amphoteric (reacts with both acids and bases). \\(CrO_3\\) (Cr=+6) is acidic. This statement is correct."
+        },
+        {
+          "step_number": 6,
+          "description": "Identify the incorrect statements: C and D are incorrect."
+        }
+      ],
+      "scientific_principles": [
+        "Periodic Trends"
+      ],
+      "correct_option_reasoning": "Statement C is incorrect because the acidic nature of metal oxides increases with an increase in the oxidation state of the metal, meaning the basic character decreases. Statement D is incorrect because the oxide of V(IV), like \\(V_2O_4\\) or \\(VO_2\\), dissolves in acid to form the vanadyl ion, \\(VO^{2+}\\), not the vanadate(V) ion, \\(VO_4^{3-}\\). Statements A, B, and E are correct descriptions of the properties of transition metal oxides.",
+      "incorrect_options_analysis": {
+        "A": "Includes A and E, which are correct.",
+        "B": "Includes B, which is correct.",
+        "D": "Includes B, which is correct."
+      },
+      "common_mistakes": [
+        "Forgetting the trend of acidity/basicity of oxides with changing oxidation state.",
+        "Not knowing the specific ions formed by transition metals like vanadium in different oxidation states."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The d- and f-Block Elements",
+      "subtopic": "Properties of Transition Elements",
+      "difficulty": "Hard",
+      "bloom_level": "Analyze",
+      "tags": [
+        "multiple_correct",
+        "statement_based",
+        "d_block_elements",
+        "transition_metals",
+        "oxides",
+        "oxidation_state"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p18_q90",
+    "question_text": "Which complex compound is most stable?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\([Co(NH_3)_4(H_2O)Br](NO_2)_2\\)",
+      "B": "\\([Co(NH_3)_3(NO_2)_3]\\)",
+      "C": "\\([CoCl_2(en)_2]NO_3\\)",
+      "D": "\\([Co(NH_3)_6]_2(SO_4)_3\\)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The stability of a coordination complex is significantly enhanced by the chelate effect. This effect arises when multidentate (or chelating) ligands bind to the central metal ion, forming stable ring structures. Among the given options, only the complex containing ethylenediamine (en), a bidentate ligand, will exhibit this effect.",
+      "key_concepts": [
+        "Coordination Compounds",
+        "Stability of Complexes",
+        "Chelate Effect",
+        "Ligands (Monodentate, Bidentate)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Understand the factors affecting complex stability. One of the most important factors is the chelate effect."
+        },
+        {
+          "step_number": 2,
+          "description": "Define the chelate effect: Complexes with chelating ligands (ligands that bind to the metal ion through more than one donor atom, like bidentate or polydentate ligands) are thermodynamically more stable than analogous complexes with non-chelating (monodentate) ligands."
+        },
+        {
+          "step_number": 3,
+          "description": "Examine the ligands in each complex to identify any chelating ligands."
+        },
+        {
+          "step_number": 4,
+          "description": "Option A: Ligands are ammine (\\(NH_3\\)), aqua (\\(H_2O\\)), and bromo (\\(Br^-\\)). All are monodentate. No chelate effect."
+        },
+        {
+          "step_number": 5,
+          "description": "Option B: Ligands are ammine (\\(NH_3\\)) and nitro (\\(NO_2^-\\)). Both are monodentate. No chelate effect."
+        },
+        {
+          "step_number": 6,
+          "description": "Option C: Ligands are chloro (\\(Cl^-\\)) and ethylenediamine (en). Ethylenediamine is a bidentate ligand, meaning each 'en' molecule binds to the cobalt ion at two points, forming a stable five-membered ring. This complex exhibits the chelate effect."
+        },
+        {
+          "step_number": 7,
+          "description": "Option D: The ligand is ammine (\\(NH_3\\)), which is monodentate. No chelate effect."
+        },
+        {
+          "step_number": 8,
+          "description": "Conclusion: The complex containing the chelating ligand 'en' will be the most stable due to the chelate effect."
+        }
+      ],
+      "scientific_principles": [
+        "Thermodynamics of Complexation (Entropy)"
+      ],
+      "correct_option_reasoning": "The stability of coordination complexes is greatly enhanced by the presence of chelating ligands due to the chelate effect, which is an entropically favorable process. Ethylenediamine (en) is a bidentate (chelating) ligand. The complex \\([CoCl_2(en)_2]NO_3\\) is the only one among the options that contains a chelating ligand, and therefore it will be the most stable.",
+      "incorrect_options_analysis": {
+        "A": "Contains only monodentate ligands.",
+        "B": "Contains only monodentate ligands.",
+        "D": "Contains only monodentate ligands."
+      },
+      "common_mistakes": [
+        "Not recognizing ethylenediamine (en) as a bidentate ligand.",
+        "Forgetting about the chelate effect as a major contributor to complex stability."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Coordination Compounds",
+      "subtopic": "Stability of Coordination Compounds",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "single_correct",
+        "coordination_compounds",
+        "stability",
+        "chelate_effect",
+        "ligands"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p18_q91",
+    "question_text": "The reaction that does NOT take place in a blast furnace between 900 K to 1500 K temperature range during extraction of iron is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(Fe_2O_3 + CO \\rightarrow 2FeO + CO_2\\)",
+      "B": "\\(FeO + CO \\rightarrow Fe + CO_2\\)",
+      "C": "\\(C + CO_2 \\rightarrow 2CO\\)",
+      "D": "\\(CaO + SiO_2 \\rightarrow CaSiO_3\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "The reactions in a blast furnace occur at different temperature zones. The reduction of hematite (\\(Fe_2O_3\\)) to iron(II) oxide (FeO) occurs at lower temperatures, typically in the range of 500 K to 800 K, in the upper part of the furnace. The other reactions listed occur at the higher temperature range of 900 K to 1500 K.",
+      "key_concepts": [
+        "Metallurgy",
+        "Extraction of Iron",
+        "Blast Furnace",
+        "Ellingham Diagram",
+        "Redox Reactions"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the main zones and reactions in a blast furnace for iron extraction."
+        },
+        {
+          "step_number": 2,
+          "description": "Lower Zone (Zone of Combustion/Fusion, >1500 K): Coke burns to form \\(CO_2\\), which is then reduced to CO. Slag formation also begins."
+        },
+        {
+          "step_number": 3,
+          "description": "Middle Zone (Zone of Reduction, 900 K - 1500 K): This is the main reduction zone where iron oxides are reduced to iron. \n- \\(FeO + CO \\rightarrow Fe + CO_2\\) (Main reduction to iron metal).\n- \\(C + CO_2 \\rightarrow 2CO\\) (Boudouard reaction, regenerates the reducing agent CO).\n- \\(CaCO_3 \\rightarrow CaO + CO_2\\) (Decomposition of limestone).\n- \\(CaO + SiO_2 \\rightarrow CaSiO_3\\) (Slag formation)."
+        },
+        {
+          "step_number": 4,
+          "description": "Upper Zone (Zone of Reduction, 500 K - 800 K): In this cooler, upper region, the iron ore is preheated and partially reduced.\n- \\(3Fe_2O_3 + CO \\rightarrow 2Fe_3O_4 + CO_2\\)\n- \\(Fe_3O_4 + CO \\rightarrow 3FeO + CO_2\\)\n- \\(Fe_2O_3 + CO \\rightarrow 2FeO + CO_2\\) (This overall reduction also occurs here)."
+        },
+        {
+          "step_number": 5,
+          "description": "Evaluate the options based on the temperature zones. The reaction \\(Fe_2O_3 + CO \\rightarrow 2FeO + CO_2\\) is the initial reduction step that occurs at lower temperatures, below the 900 K - 1500 K range. The other three reactions all occur within this hotter, middle zone of the furnace."
+        }
+      ],
+      "scientific_principles": [
+        "Thermodynamics of Metallurgical Processes (Ellingham Diagram)"
+      ],
+      "correct_option_reasoning": "The reduction of iron oxides in a blast furnace happens in stages at different temperatures. The reduction of \\(Fe_2O_3\\) to FeO occurs in the upper part of the furnace at lower temperatures (around 500-800 K). The other reactions listed, including the final reduction of FeO to Fe, the formation of the reducing agent CO from coke, and the formation of slag, all occur at the higher temperatures specified (900-1500 K).",
+      "incorrect_options_analysis": {
+        "B": "This is the main reduction of iron oxide to molten iron, occurring at around 1070 K.",
+        "C": "This reaction (Boudouard reaction) is endothermic and favored at high temperatures (>1000 K) to regenerate the CO reducing agent.",
+        "D": "This is the formation of slag from the flux (CaO) and impurity (SiO₂), which occurs at high temperatures (around 1200 K)."
+      },
+      "common_mistakes": [
+        "Not knowing the specific temperature zones for the different reactions in the blast furnace."
+      ],
+      "additional_notes": "The Ellingham diagram helps predict which reducing agent (C or CO) is effective at different temperatures for reducing metal oxides."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "General Principles and Processes of Isolation of Elements",
+      "subtopic": "Thermodynamic Principles of Metallurgy",
+      "difficulty": "Medium",
+      "bloom_level": "Understand",
+      "tags": [
+        "single_correct",
+        "metallurgy",
+        "blast_furnace",
+        "extraction_of_iron"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  },
+  {
+    "question_id": "Question_Paper_29_p18_q92",
+    "question_text": "The equilibrium concentrations of the species in the reaction \\(A + B \\rightleftharpoons C + D\\) are 2, 3, 10 and 6 mol \\(L^{-1}\\), respectively at 300 K. \\(\\Delta G^\\circ\\) for the reaction is (R = 2 \\(\\text{cal/mol K}\\))",
+    "question_type": "numerical",
+    "options": {
+      "A": "1372.60 cal",
+      "B": "–137.26 cal",
+      "C": "–1381.80 cal",
+      "D": "–13.73 cal"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This problem requires calculating the standard Gibbs free energy change (\\(\\Delta G^\\circ\\)) from the equilibrium constant (\\(K_c\\)). First, \\(K_c\\) is calculated from the given equilibrium concentrations. Then, the relationship \\(\\Delta G^\\circ = -RT \\ln K_c\\) is used to find \\(\\Delta G^\\circ\\).",
+      "key_concepts": [
+        "Chemical Equilibrium",
+        "Equilibrium Constant (\\(K_c\\))",
+        "Gibbs Free Energy (\\(\\Delta G^\\circ\\))",
+        "Thermodynamics"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Write the expression for the equilibrium constant \\(K_c\\) for the reaction \\(A + B \\rightleftharpoons C + D\\).",
+          "formula": "\\(K_c = \\frac{[C][D]}{[A][B]}\\)"
+        },
+        {
+          "step_number": 2,
+          "description": "Substitute the given equilibrium concentrations: [A]=2, [B]=3, [C]=10, [D]=6.",
+          "formula": "\\(K_c = \\frac{(10)(6)}{(2)(3)} = \\frac{60}{6} = 10\\)"
+        },
+        {
+          "step_number": 3,
+          "description": "Recall the relationship between the standard Gibbs free energy change and the equilibrium constant.",
+          "formula": "\\(\\Delta G^\\circ = -RT \\ln K_c\\)"
+        },
+        {
+          "step_number": 4,
+          "description": "Convert the natural logarithm (ln) to the base-10 logarithm (log) for easier calculation, if needed.",
+          "formula": "\\(\\Delta G^\\circ = -2.303 RT \\log K_c\\)"
+        },
+        {
+          "step_number": 5,
+          "description": "Substitute the known values: R = 2 cal/mol K, T = 300 K, and \\(K_c = 10\\).",
+          "formula": "\\(\\Delta G^\\circ = -2.303 \\times (2) \\times (300) \\times \\log(10)\\)"
+        },
+        {
+          "step_number": 6,
+          "description": "Calculate the result, knowing that \\(\\log(10) = 1\\).",
+          "formula": "\\(\\Delta G^\\circ = -2.303 \\times 600 \\times 1 = -1381.8 \\text{ cal}\\)"
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Chemical Thermodynamics"
+      ],
+      "correct_option_reasoning": "First, the equilibrium constant \\(K_c\\) is calculated from the concentrations: \\(K_c = [C][D]/[A][B] = (10 \\times 6)/(2 \\times 3) = 10\\). Then, the standard Gibbs free energy change is found using the formula \\(\\Delta G^\\circ = -2.303 RT \\log K_c\\). Substituting the values \\(R=2\\), \\(T=300\\), and \\(K_c=10\\), we get \\(\\Delta G^\\circ = -2.303 \\times 2 \\times 300 \\times \\log(10) = -1381.8\\) cal.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect sign.",
+        "B": "Incorrect magnitude, likely a decimal point error.",
+        "D": "Incorrect magnitude, likely a decimal point error."
+      },
+      "common_mistakes": [
+        "Writing the \\(K_c\\) expression incorrectly (e.g., reactants over products).",
+        "Forgetting the negative sign in the \\(\\Delta G^\\circ\\) formula.",
+        "Mixing up ln and log or using the wrong conversion factor."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Equilibrium",
+      "subtopic": "Gibbs Energy and Equilibrium Constant",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "thermodynamics",
+        "chemical_equilibrium",
+        "gibbs_free_energy",
+        "equilibrium_constant"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_29"
+    }
+  }
+]

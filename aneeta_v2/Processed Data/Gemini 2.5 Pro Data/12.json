@@ -1,0 +1,2582 @@
+[
+  {
+    "question_id": "Question_Paper_10_p70_q198",
+    "question_text": "Ten E.coli cells with \\(^{15}N\\)-dsDNA are incubated in a medium containing \\(^{14}N\\) nucleotide. After 60 minutes, how many E.coli cells will have DNA totally free from \\(^{15}N\\)?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "80 cells",
+      "B": "20 cells",
+      "C": "40 cells",
+      "D": "60 cells"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question tests the understanding of semi-conservative DNA replication, as demonstrated by the Meselson-Stahl experiment. After three generations (60 minutes), the initial 10 cells will produce a total of 80 cells. Out of these, 20 will contain hybrid DNA and 60 will contain DNA made entirely of the new, lighter isotope.",
+      "key_concepts": [
+        "Semi-conservative DNA replication",
+        "Meselson-Stahl experiment",
+        "Bacterial cell division (Binary Fission)",
+        "Isotopic labeling"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Determine the number of generations. E.coli divides every 20 minutes. The total incubation time is 60 minutes. Therefore, the number of generations is \\(60 \\text{ minutes} / 20 \\text{ minutes/generation} = 3\\) generations."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze the initial state (Generation 0). We start with 10 E.coli cells. Their DNA is double-stranded and both strands are labeled with heavy nitrogen, \\(^{15}N\\). So, all 10 cells have \\(^{15}N/^{15}N\\) DNA."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze the first generation (after 20 minutes). Each of the 10 cells replicates its DNA semi-conservatively. Each new DNA molecule will have one old \\(^{15}N\\) strand and one new \\(^{14}N\\) strand. This results in \\(10 \\times 2 = 20\\) cells, all containing hybrid \\(^{15}N/^{14}N\\) DNA. None are free of \\(^{15}N\\)."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze the second generation (after 40 minutes). The 20 cells from the first generation replicate. Each cell's hybrid DNA unwinds. The \\(^{15}N\\) strand pairs with a new \\(^{14}N\\) strand (forming a hybrid). The \\(^{14}N\\) strand pairs with a new \\(^{14}N\\) strand (forming a light DNA molecule). This results in \\(20 \\times 2 = 40\\) cells. Out of these, 20 cells will have hybrid \\(^{15}N/^{14}N\\) DNA and 20 cells will have light \\(^{14}N/^{14}N\\) DNA."
+        },
+        {
+          "step_number": 5,
+          "description": "Analyze the third generation (after 60 minutes). The 40 cells from the second generation replicate. The 20 hybrid cells produce 20 hybrid and 20 light DNA cells. The 20 light cells produce 40 light DNA cells. Total cells = \\(40 \\times 2 = 80\\). Total hybrid cells = 20. Total light cells (free from \\(^{15}N\\)) = \\(20 + 40 = 60\\)."
+        }
+      ],
+      "scientific_principles": [
+        "Semi-Conservative Replication: Each new DNA molecule consists of one parental strand and one newly synthesized strand."
+      ],
+      "correct_option_reasoning": "After 3 generations, the initial 10 parental DNA molecules (with two \\(^{15}N\\) strands each) result in a total of \\(10 \\times 2^3 = 80\\) cells. The original 20 strands of \\(^{15}N\\) will be distributed among 20 cells, creating 20 hybrid DNA molecules. The remaining \\(80 - 20 = 60\\) cells will contain DNA made exclusively from \\(^{14}N\\) nucleotides, making them totally free from \\(^{15}N\\).",
+      "incorrect_options_analysis": {
+        "A": "80 cells is the total number of cells after 60 minutes, not the number of cells free from \\(^{15}N\\).",
+        "B": "20 cells is the number of cells containing hybrid DNA (\\(^{15}N/^{14}N\\)) after 60 minutes.",
+        "C": "40 cells is the total number of cells after the second generation (40 minutes)."
+      },
+      "common_mistakes": [
+        "Confusing the total number of cells with the number of cells containing a specific type of DNA.",
+        "Incorrectly calculating the number of generations or the distribution of DNA strands."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Biology",
+      "topic": "Molecular Basis of Inheritance",
+      "subtopic": "DNA Replication",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "semi-conservative_replication",
+        "meselson-stahl_experiment",
+        "e_coli"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_10"
+    }
+  },
+  {
+    "question_id": "Question_Paper_10_p70_q199",
+    "question_text": "Which of the following is not a desirable feature of a cloning vector?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Presence of two or more recognition sites for the same restriction enzyme",
+      "B": "Presence of origin of replication",
+      "C": "Presence of a marker gene",
+      "D": "Presence of a single restriction enzyme site"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "A cloning vector should ideally have a single recognition site for a commonly used restriction enzyme to ensure the vector is cut only once, allowing for the insertion of the gene of interest without fragmenting the vector itself. The presence of multiple sites is undesirable.",
+      "key_concepts": [
+        "Cloning Vector",
+        "Restriction Enzyme",
+        "Recognition Site",
+        "Origin of Replication (ori)",
+        "Selectable Marker"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the function of a cloning vector. A cloning vector is a DNA molecule used as a vehicle to artificially carry foreign genetic material into another cell, where it can be replicated and/or expressed."
+        },
+        {
+          "step_number": 2,
+          "description": "Evaluate the essential features of a vector. Key features include: an origin of replication (ori) to allow replication in the host, a selectable marker to identify transformed cells, and unique cloning sites (restriction sites) for inserting the DNA."
+        },
+        {
+          "step_number": 3,
+          "description": "Consider the role of restriction sites. To insert a gene, the vector is cut with a restriction enzyme. If there are multiple recognition sites for the same enzyme, the vector will be cut into multiple fragments. This would complicate or prevent the successful ligation of the gene of interest and the re-circularization of the plasmid."
+        },
+        {
+          "step_number": 4,
+          "description": "Conclude which feature is undesirable. Therefore, having a single, unique recognition site for each restriction enzyme used is a highly desirable feature. The presence of two or more sites for the same enzyme is undesirable."
+        }
+      ],
+      "scientific_principles": [
+        "Recombinant DNA Technology: The process of joining together DNA molecules from two different species.",
+        "Gene Cloning: The production of multiple identical copies of a specific gene."
+      ],
+      "correct_option_reasoning": "Presence of two or more recognition sites for the same restriction enzyme is not a desirable feature because it would lead to the vector being cleaved into multiple fragments, preventing the proper insertion of the desired gene.",
+      "incorrect_options_analysis": {
+        "B": "The presence of an origin of replication (ori) is essential. It's the sequence where replication is initiated, allowing the vector (and the inserted gene) to be copied within the host cell.",
+        "C": "The presence of a marker gene (e.g., for antibiotic resistance) is crucial for selecting host cells that have successfully taken up the vector from those that have not.",
+        "D": "The presence of a single restriction enzyme site (within the marker gene or elsewhere) is a desirable feature as it allows the vector to be cut at a specific location for the insertion of foreign DNA."
+      },
+      "common_mistakes": [
+        "Confusing the need for multiple different restriction sites (for versatility) with multiple sites for the *same* enzyme (which is problematic)."
+      ],
+      "additional_notes": "Modern vectors may be designed with a Multiple Cloning Site (MCS) or polylinker, which is a short segment of DNA containing many (up to ~20) restriction sites. However, each of these sites is typically unique within the vector."
+    },
+    "metadata": {
+      "subject": "Biology",
+      "topic": "Biotechnology: Principles and Processes",
+      "subtopic": "Tools of Recombinant DNA Technology",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "conceptual",
+        "cloning_vector",
+        "recombinant_dna_technology",
+        "restriction_site"
+      ],
+      "estimated_time_seconds": 45,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_10"
+    }
+  },
+  {
+    "question_id": "Question_Paper_10_p71_q200",
+    "question_text": "Match List-I with List-II\\n\\n**List-I (Biological Molecules)**\\n(a) Glycogen\\n(b) Globulin\\n(c) Steroids\\n(d) Thrombin\\n\\n**List-II (Biological functions)**\\n(i) Hormone\\n(ii) Biocatalyst\\n(iii) Antibody\\n(iv) Storage product\\n\\nChoose the correct answer from the options given below:",
+    "question_type": "matching",
+    "options": {
+      "A": "(a) - (iv), (b) - (iii), (c) - (i), (d) - (ii)",
+      "B": "(a) - (iii), (b) - (ii), (c) - (iv), (d) - (i)",
+      "C": "(a) - (iv), (b) - (ii), (c) - (i), (d) - (iii)",
+      "D": "(a) - (ii), (b) - (iv), (c) - (iii), (d) - (i)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question requires matching key biological molecules with their primary functions. Glycogen is a storage polysaccharide, globulins include antibodies, steroids can be hormones, and thrombin is a biocatalyst (enzyme) in blood clotting.",
+      "key_concepts": [
+        "Biomolecules",
+        "Carbohydrates (Polysaccharides)",
+        "Proteins (Globular proteins, Enzymes)",
+        "Lipids (Steroids)",
+        "Hormones",
+        "Antibodies",
+        "Enzymes (Biocatalysts)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "**Match (a) Glycogen:** Glycogen is a multibranched polysaccharide of glucose that serves as a form of energy storage in animals, fungi, and bacteria. Thus, its function is as a 'Storage product'. (a) matches with (iv)."
+        },
+        {
+          "step_number": 2,
+          "description": "**Match (b) Globulin:** Globulins are a family of globular proteins. A major class of globulins is the immunoglobulins, which function as antibodies in the immune system. Thus, 'Globulin' matches with 'Antibody'. (b) matches with (iii)."
+        },
+        {
+          "step_number": 3,
+          "description": "**Match (c) Steroids:** Steroids are a class of lipids characterized by a specific four-ring carbon structure. Many steroid-based molecules function as hormones, such as testosterone, estrogen, and cortisol, which act as signaling molecules. Thus, 'Steroids' matches with 'Hormone'. (c) matches with (i)."
+        },
+        {
+          "step_number": 4,
+          "description": "**Match (d) Thrombin:** Thrombin is a serine protease, an enzyme that converts soluble fibrinogen into insoluble strands of fibrin, playing a central role in blood coagulation. As an enzyme, it is a 'Biocatalyst'. (d) matches with (ii)."
+        },
+        {
+          "step_number": 5,
+          "description": "Combine the correct pairings: (a)-(iv), (b)-(iii), (c)-(i), (d)-(ii). This corresponds to option A."
+        }
+      ],
+      "scientific_principles": [
+        "Structure-Function Relationship in Biomolecules: The specific structure of a molecule dictates its biological role."
+      ],
+      "correct_option_reasoning": "The correct pairings are: Glycogen is a storage product, Globulins include antibodies, Steroids are a class of hormones, and Thrombin is a biocatalyst. This combination matches option A.",
+      "incorrect_options_analysis": {
+        "B": "Incorrectly matches Glycogen with Antibody and Globulin with Biocatalyst.",
+        "C": "Incorrectly matches Globulin with Biocatalyst and Thrombin with Antibody.",
+        "D": "Incorrectly matches almost all items, for example, linking Glycogen to Biocatalyst."
+      },
+      "common_mistakes": [
+        "Confusing the functions of different types of proteins, such as enzymes (thrombin) and structural/immune proteins (globulins)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Biology",
+      "topic": "Biomolecules",
+      "subtopic": "Functions of Biomolecules",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "matching",
+        "biomolecules",
+        "proteins",
+        "carbohydrates",
+        "lipids",
+        "enzymes"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_10"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p1_q1",
+    "question_text": "Two objects of mass 10 kg and 20 kg respectively are connected to the two ends of a rigid rod of length 10 m with negligible mass. The distance of the center of mass of the system from the 10 kg mass is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "5 m",
+      "B": "\\(\\frac{10},{3} \\text{ m}\\)",
+      "C": "\\(\\frac{20},{3} \\text{ m}\\)",
+      "D": "10 m"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "To find the center of mass of a two-body system, we use the standard formula. By setting the 10 kg mass at the origin of a coordinate system, the position of the center of mass can be calculated relative to it.",
+      "key_concepts": [
+        "Center of Mass",
+        "Two-particle system",
+        "Coordinate system"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Establish a coordinate system. Let the 10 kg mass (\\(m_1\\)) be at the origin. So, its position is \\(x_1 = 0\\).",
+          "formula": "\\(m_1 = 10 \\text{ kg}, x_1 = 0 \\text{ m}\\)"
+        },
+        {
+          "step_number": 2,
+          "description": "Determine the position of the second mass. The 20 kg mass (\\(m_2\\)) is at the other end of the 10 m rod. So, its position is \\(x_2 = 10 \\text{ m}\\).",
+          "formula": "\\(m_2 = 20 \\text{ kg}, x_2 = 10 \\text{ m}\\)"
+        },
+        {
+          "step_number": 3,
+          "description": "Apply the formula for the center of mass (\\(X_{cm}\\)) for a two-particle system along the x-axis.",
+          "formula": "\\[X_{cm} = \\frac{m_1 x_1 + m_2 x_2},{m_1 + m_2}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the values into the formula and solve.",
+          "formula": "\\[X_{cm} = \\frac{(10 \\text{ kg} \\times 0 \\text{ m}) + (20 \\text{ kg} \\times 10 \\text{ m})},{10 \\text{ kg} + 20 \\text{ kg}} = \\frac{0 + 200},{30} = \\frac{20},{3} \\text{ m}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "The result, \\(\\frac{20},{3} \\text{ m}\\), is the distance of the center of mass from the origin, which is where the 10 kg mass was placed."
+        }
+      ],
+      "scientific_principles": [
+        "Definition of Center of Mass: The weighted average position of the parts of a system."
+      ],
+      "correct_option_reasoning": "The calculation using the center of mass formula yields \\(\\frac{20},{3} \\text{ m}\\) as the distance from the 10 kg mass, which corresponds to option C.",
+      "incorrect_options_analysis": {
+        "A": "5 m would be the geometric center of the rod, which is only the center of mass if the masses were equal.",
+        "B": "\\(\\frac{10},{3} \\text{ m}\\) would be the distance from the 20 kg mass, not the 10 kg mass.",
+        "D": "10 m is the position of the 20 kg mass, not the center of mass of the system."
+      },
+      "common_mistakes": [
+        "Calculating the geometric center instead of the center of mass.",
+        "Calculating the distance from the wrong mass."
+      ],
+      "additional_notes": "The center of mass is always closer to the heavier mass. Since 20 kg > 10 kg, the center of mass should be more than halfway from the 10 kg mass, i.e., > 5 m. This helps in eliminating options A and B quickly."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "System of Particles and Rotational Motion",
+      "subtopic": "Center of Mass",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "center_of_mass",
+        "two-body_system",
+        "mechanics"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p1_q2",
+    "question_text": "Match List-I with List-II\\n\\n**List-I (Electromagnetic waves)**\\n(a) AM radio waves\\n(b) Microwaves\\n(c) Infrared radiations\\n(d) X-rays\\n\\n**List-II (Wavelength)**\\n(i) \\(10^{-10} \\text{ m}\\)\\n(ii) \\(10^2 \\text{ m}\\)\\n(iii) \\(10^{-2} \\text{ m}\\)\\n(iv) \\(10^{-4} \\text{ m}\\)\\n\\nChoose the correct answer from the options given below:",
+    "question_type": "matching",
+    "options": {
+      "A": "(a) - (ii), (b) - (iii), (c) - (iv), (d) - (i)",
+      "B": "(a) - (iv), (b) - (iii), (c) - (ii), (d) - (i)",
+      "C": "(a) - (iii), (b) - (ii), (c) - (i), (d) - (iv)",
+      "D": "(a) - (iii), (b) - (iv), (c) - (ii), (d) - (i)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question requires knowledge of the electromagnetic spectrum and the typical order of magnitude of wavelengths for different types of electromagnetic waves, from long-wavelength radio waves to short-wavelength X-rays.",
+      "key_concepts": [
+        "Electromagnetic Spectrum",
+        "Wavelength",
+        "Frequency",
+        "Radio Waves",
+        "Microwaves",
+        "Infrared Radiation",
+        "X-rays"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the order of the electromagnetic spectrum by decreasing wavelength (increasing frequency/energy): Radio waves > Microwaves > Infrared > Visible > Ultraviolet > X-rays > Gamma rays."
+        },
+        {
+          "step_number": 2,
+          "description": "**Match (a) AM radio waves:** Radio waves have the longest wavelengths in the spectrum. Among the given options, \\(10^2 \\text{ m}\\) (100 m) is the largest wavelength, typical for AM radio. So, (a) matches (ii)."
+        },
+        {
+          "step_number": 3,
+          "description": "**Match (b) Microwaves:** Microwaves have shorter wavelengths than radio waves. A typical wavelength is in the centimeter range, so \\(10^{-2} \\text{ m}\\) (1 cm) is the correct match. So, (b) matches (iii)."
+        },
+        {
+          "step_number": 4,
+          "description": "**Match (c) Infrared radiations:** Infrared radiation has wavelengths shorter than microwaves but longer than visible light. The value \\(10^{-4} \\text{ m}\\) (100 micrometers) falls into this range. So, (c) matches (iv)."
+        },
+        {
+          "step_number": 5,
+          "description": "**Match (d) X-rays:** X-rays have very short wavelengths, much shorter than UV light. The value \\(10^{-10} \\text{ m}\\) (1 Angstrom) is a characteristic wavelength for X-rays. So, (d) matches (i)."
+        },
+        {
+          "step_number": 6,
+          "description": "Assemble the final matching: (a)-(ii), (b)-(iii), (c)-(iv), (d)-(i). This corresponds to option A."
+        }
+      ],
+      "scientific_principles": [
+        "Inverse relationship between wavelength and frequency/energy for electromagnetic waves (\\(c = f\\lambda\\), \\(E = hf\\))."
+      ],
+      "correct_option_reasoning": "The correct pairings based on the standard electromagnetic spectrum are: AM radio waves (\\(10^2 \\text{ m}\\)), Microwaves (\\(10^{-2} \\text{ m}\\)), Infrared radiations (\\(10^{-4} \\text{ m}\\)), and X-rays (\\(10^{-10} \\text{ m}\\)). This sequence corresponds to option A.",
+      "incorrect_options_analysis": {
+        "B": "Incorrectly assigns a short wavelength to radio waves.",
+        "C": "Incorrectly assigns microwave and radio wave wavelengths.",
+        "D": "Incorrectly assigns microwave and infrared wavelengths."
+      },
+      "common_mistakes": [
+        "Memorizing the order of the EM spectrum incorrectly.",
+        "Confusing the orders of magnitude for different wave types."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electromagnetic Waves",
+      "subtopic": "Electromagnetic Spectrum",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "matching",
+        "conceptual",
+        "electromagnetic_spectrum",
+        "wavelength"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p2_q3",
+    "question_text": "The energy that will be ideally radiated by a 100 kW transmitter in 1 hour is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(1 \\times 10^5 \\text{ J}\\)",
+      "B": "\\(36 \\times 10^7 \\text{ J}\\)",
+      "C": "\\(36 \\times 10^4 \\text{ J}\\)",
+      "D": "\\(36 \\times 10^5 \\text{ J}\\)"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This is a direct application of the formula relating energy, power, and time. The power and time must be converted to SI units (Watts and seconds) before calculating the energy in Joules.",
+      "key_concepts": [
+        "Energy",
+        "Power",
+        "SI Units"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the given quantities. Power (P) = 100 kW, Time (t) = 1 hour."
+        },
+        {
+          "step_number": 2,
+          "description": "Convert the given quantities to SI units. \\nPower: \\(P = 100 \\text{ kW} = 100 \\times 10^3 \\text{ W} = 10^5 \\text{ W}\\). \\nTime: \\(t = 1 \\text{ hour} = 60 \\text{ minutes/hour} \\times 60 \\text{ seconds/minute} = 3600 \\text{ s}\\).",
+          "formula": null
+        },
+        {
+          "step_number": 3,
+          "description": "Use the formula relating energy (E), power (P), and time (t).",
+          "formula": "\\[E = P \\times t\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the SI unit values into the formula and calculate the energy.",
+          "formula": "\\[E = (10^5 \\text{ W}) \\times (3600 \\text{ s}) = 36 \\times 10^2 \\times 10^5 \\text{ J} = 36 \\times 10^7 \\text{ J}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Definition of Power: Power is the rate at which energy is transferred or converted, \\(P = dE/dt\\)."
+      ],
+      "correct_option_reasoning": "By converting power to Watts (\\(10^5\\) W) and time to seconds (3600 s), the total energy radiated is \\(10^5 \\times 3600 = 36 \\times 10^7\\) Joules, which matches option B.",
+      "incorrect_options_analysis": {
+        "A": "\\(1 \\times 10^5 \\text{ J}\\) is the energy radiated in just one second, not one hour.",
+        "C": "This result might be obtained by incorrect handling of powers of ten during multiplication.",
+        "D": "This result might be obtained by an error in the power of ten, possibly by using 360s instead of 3600s for time."
+      },
+      "common_mistakes": [
+        "Forgetting to convert units to SI (kW to W, hours to seconds).",
+        "Making calculation errors with scientific notation."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Work, Energy and Power",
+      "subtopic": "Power",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "power",
+        "energy",
+        "unit_conversion"
+      ],
+      "estimated_time_seconds": 45,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p2_q5",
+    "question_text": "Plane angle and solid angle have:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Both units and dimensions",
+      "B": "Units but no dimensions",
+      "C": "Dimensions but no units",
+      "D": "No units and no dimensions"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Plane angle and solid angle are supplementary physical quantities that have units (radian and steradian, respectively) but are dimensionless. This is because they are defined as ratios of two quantities with the same dimension (length and area).",
+      "key_concepts": [
+        "Physical Quantities",
+        "Fundamental and Supplementary Units",
+        "Dimensional Analysis",
+        "Plane Angle (radian)",
+        "Solid Angle (steradian)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the definition of a plane angle (\\(\\theta\\)). It is defined as the ratio of the arc length (s) to the radius (r) of a circle.",
+          "formula": "\\[\\theta = \\frac{\\text{Arc length}},{\\text{Radius}} = \\frac{s},{r}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Determine the dimensions of the plane angle. Since both arc length and radius have the dimension of length [L], the dimension of the plane angle is \\([\\theta] = \\frac{[L]},{[L]} = [L^0] = [M^0L^0T^0]\\). It is dimensionless. Its SI unit is the radian (rad)."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze the definition of a solid angle (\\(\\Omega\\)). It is defined as the ratio of the surface area (A) on a sphere to the square of the sphere's radius (r).",
+          "formula": "\\[\\Omega = \\frac{\\text{Area}},{(\\text{Radius})^2} = \\frac{A},{r^2}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Determine the dimensions of the solid angle. Since area has dimensions of \\([L^2]\\) and radius squared also has dimensions of \\([L^2]\\), the dimension of the solid angle is \\([\\Omega] = \\frac{[L^2]},{[L^2]} = [L^0] = [M^0L^0T^0]\\). It is dimensionless. Its SI unit is the steradian (sr)."
+        },
+        {
+          "step_number": 5,
+          "description": "Conclude that both quantities have SI units (radian and steradian) but are dimensionless."
+        }
+      ],
+      "scientific_principles": [
+        "Principle of Dimensional Homogeneity: A physical quantity is dimensionless if it is a ratio of two quantities with the same dimensions."
+      ],
+      "correct_option_reasoning": "Both plane angle and solid angle are defined as ratios of quantities with the same base dimensions (length/length and length²/length² respectively). Therefore, they are dimensionless quantities. However, they are assigned specific SI units, the radian and steradian, to denote their nature. Hence, they have units but no dimensions.",
+      "incorrect_options_analysis": {
+        "A": "They are dimensionless, so they cannot have both units and dimensions.",
+        "C": "This is incorrect. A quantity with dimensions must have units.",
+        "D": "They have specific SI units (radian and steradian), so this is incorrect."
+      },
+      "common_mistakes": [
+        "Thinking that having a unit automatically implies having dimensions.",
+        "Forgetting that radian and steradian are SI supplementary units."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Units and Measurements",
+      "subtopic": "Dimensions of Physical Quantities",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "conceptual",
+        "units",
+        "dimensions",
+        "plane_angle",
+        "solid_angle"
+      ],
+      "estimated_time_seconds": 45,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p3_q6",
+    "question_text": "In half wave rectification, if the input frequency is 60 Hz, then the output frequency would be:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "120 Hz",
+      "B": "Zero",
+      "C": "30 Hz",
+      "D": "60 Hz"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "In a half-wave rectifier, only one half of the AC input cycle is allowed to pass through to the output. This means that for every one full cycle of the input, there is one pulse at the output. Therefore, the fundamental frequency of the output waveform is the same as the input frequency.",
+      "key_concepts": [
+        "Rectification",
+        "Half-wave rectifier",
+        "AC (Alternating Current)",
+        "DC (Direct Current)",
+        "Frequency"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Understand the input signal. The input is an AC signal with a frequency \\(f_{in} = 60 \\text{ Hz}\\). This means the signal completes 60 full cycles every second."
+        },
+        {
+          "step_number": 2,
+          "description": "Understand the operation of a half-wave rectifier. A half-wave rectifier uses a single diode to block either the positive or negative half of the AC waveform, allowing only the other half to pass."
+        },
+        {
+          "step_number": 3,
+          "description": "Visualize the output waveform. The output consists of a series of pulses. For each complete cycle of the input wave, one pulse is generated at the output. The time period between the start of one output pulse and the start of the next is the same as the time period of the input wave."
+        },
+        {
+          "step_number": 4,
+          "description": "Relate time period and frequency. Since the time period of the output waveform (\\(T_{out}\\)) is equal to the time period of the input waveform (\\(T_{in}\\)), their frequencies must also be equal.",
+          "formula": "\\[T_{out} = T_{in} \\implies f_{out} = \\frac{1},{T_{out}} = \\frac{1},{T_{in}} = f_{in}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the output frequency. Given \\(f_{in} = 60 \\text{ Hz}\\), the output frequency \\(f_{out}\\) is also 60 Hz."
+        }
+      ],
+      "scientific_principles": [
+        "Diode operation: Acts as a one-way gate for current."
+      ],
+      "correct_option_reasoning": "A half-wave rectifier produces one output pulse for every input cycle. Therefore, the fundamental frequency of the output ripple is the same as the input AC frequency, which is 60 Hz.",
+      "incorrect_options_analysis": {
+        "A": "120 Hz is the output frequency for a full-wave rectifier, which utilizes both halves of the input AC cycle, thus doubling the frequency.",
+        "B": "Zero frequency would imply a pure DC output with no ripple, which is the ideal goal but not the actual output of a simple rectifier without a filter.",
+        "C": "30 Hz would mean the frequency is halved, which has no physical basis in rectification."
+      },
+      "common_mistakes": [
+        "Confusing the output frequency of a half-wave rectifier with that of a full-wave rectifier."
+      ],
+      "additional_notes": "While the fundamental frequency is 60 Hz, the output waveform of a rectifier is not a pure sine wave and contains harmonics (multiples of the fundamental frequency)."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Semiconductor Electronics",
+      "subtopic": "Rectifiers",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "conceptual",
+        "half-wave_rectifier",
+        "frequency",
+        "semiconductors"
+      ],
+      "estimated_time_seconds": 40,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p3_q7",
+    "question_text": "When two monochromatic lights of frequency \\(\\nu\\) and \\(\\frac{\\nu},{2}\\) are incident on a photoelectric metal, their stopping potential becomes \\(\\frac{V_s},{2}\\) and \\(V_s\\) respectively. The threshold frequency for this metal is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(\\frac{3},{2} \\nu\\)",
+      "B": "\\(2\\nu\\)",
+      "C": "\\(3\\nu\\)",
+      "D": "\\(\\frac{2},{3} \\nu\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This problem uses Einstein's photoelectric equation to find the threshold frequency. By setting up two equations for the two given conditions and solving them simultaneously, the threshold frequency can be determined. Note: The question seems to have swapped the stopping potentials; higher frequency light should produce a higher stopping potential. Assuming \\(V_s\\) corresponds to \\(\\nu\\) and \\(V_s/2\\) corresponds to \\(\\nu/2\\) leads to a nonsensical answer. We proceed by assuming the values are correct as stated, implying a typo in the question's premise.",
+      "key_concepts": [
+        "Photoelectric Effect",
+        "Einstein's Photoelectric Equation",
+        "Stopping Potential",
+        "Work Function",
+        "Threshold Frequency"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Write down Einstein's photoelectric equation, which relates the energy of the incident photon (h\\(\\nu\\)), the work function (\\(\\phi_0\\)), and the maximum kinetic energy of the photoelectron (\\(K_{max}\\)). The kinetic energy is related to the stopping potential \\(V_s\\) by \\(K_{max} = eV_s\\).",
+          "formula": "\\[h\\nu = \\phi_0 + K_{max} \\implies eV_s = h\\nu - \\phi_0\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "The work function \\(\\phi_0\\) is related to the threshold frequency \\(\\nu_0\\) by \\(\\phi_0 = h\\nu_0\\). Substitute this into the equation.",
+          "formula": "\\[eV_s = h\\nu - h\\nu_0\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Apply the equation to the first condition: frequency \\(\\nu\\) and stopping potential \\(V_s/2\\).",
+          "formula": "\\[e\\frac{V_s},{2} = h\\nu - h\\nu_0 \\quad \\text{(Equation 1)}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Apply the equation to the second condition: frequency \\(\\nu/2\\) and stopping potential \\(V_s\\).",
+          "formula": "\\[eV_s = h\\frac{\\nu},{2} - h\\nu_0 \\quad \\text{(Equation 2)}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Solve the system of equations. Multiply Equation 1 by 2 to get \\(eV_s = 2h\\nu - 2h\\nu_0\\). Now equate this with Equation 2.",
+          "formula": "\\[2h\\nu - 2h\\nu_0 = h\\frac{\\nu},{2} - h\\nu_0\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Rearrange the equation to solve for the threshold frequency \\(\\nu_0\\).",
+          "formula": "\\[2h\\nu - h\\frac{\\nu},{2} = 2h\\nu_0 - h\\nu_0 \\implies h\\frac{3\\nu},{2} = h\\nu_0 \\implies \\nu_0 = \\frac{3},{2}\\nu\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Conservation of Energy",
+        "Quantization of Light (Photons)"
+      ],
+      "correct_option_reasoning": "By setting up and solving the photoelectric equations for the two given scenarios, we find that the threshold frequency \\(\\nu_0\\) is \\(\\frac{3},{2}\\nu\\). The fact that a lower frequency (\\(\\nu/2\\)) results in a higher stopping potential (\\(V_s\\)) is physically inconsistent, but solving the problem as written gives this result.",
+      "incorrect_options_analysis": {
+        "B": "Incorrect algebraic manipulation would lead to this answer.",
+        "C": "Incorrect algebraic manipulation would lead to this answer.",
+        "D": "Incorrect algebraic manipulation would lead to this answer."
+      },
+      "common_mistakes": [
+        "Setting up the photoelectric equations incorrectly.",
+        "Making errors when solving the simultaneous equations."
+      ],
+      "additional_notes": "The problem statement is physically flawed. A higher frequency photon should impart more kinetic energy to the electron, resulting in a higher stopping potential. Here, a frequency of \\(\\nu/2\\) gives a stopping potential of \\(V_s\\), while a higher frequency of \\(\\nu\\) gives a lower potential of \\(V_s/2\\). This implies \\(h\\nu/2 > h\\nu\\), which is impossible. Despite this, the mathematical solution based on the given values leads to option A."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Dual Nature of Radiation and Matter",
+      "subtopic": "Photoelectric Effect",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "photoelectric_effect",
+        "stopping_potential",
+        "threshold_frequency",
+        "flawed_question"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p3_q8",
+    "question_text": "The displacement-time graphs of two moving particles make angles of 30° and 45° with the time-axis (x-axis) as shown in the figure. The ratio of their respective velocity is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(1 : \\sqrt{3}\\)",
+      "B": "\\(\\sqrt{3} : 1\\)",
+      "C": "1 : 1",
+      "D": "1 : 2"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "The velocity of a particle can be determined from the slope of its displacement-time (x-t) graph. The slope of a line is given by the tangent of the angle it makes with the horizontal axis. By finding the ratio of the tangents of the given angles, we can find the ratio of the velocities.",
+      "key_concepts": [
+        "Displacement-Time Graph",
+        "Velocity",
+        "Slope of a Graph",
+        "Trigonometry (Tangent)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the relationship between velocity and the displacement-time graph. The velocity (v) is equal to the slope (m) of the x-t graph.",
+          "formula": "\\[v = \\frac{dx},{dt} = \\text{slope of x-t graph}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "The slope of a line is also given by the tangent of the angle (\\(\\theta\\)) it makes with the positive x-axis (time-axis in this case).",
+          "formula": "\\[m = \\tan(\\theta)\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the velocity of the first particle (\\(v_1\\)), whose graph makes an angle \\(\\theta_1 = 30°\\) with the time-axis.",
+          "formula": "\\[v_1 = \\tan(30°) = \\frac{1},{\\sqrt{3}}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the velocity of the second particle (\\(v_2\\)), whose graph makes an angle \\(\\theta_2 = 45°\\) with the time-axis.",
+          "formula": "\\[v_2 = \\tan(45°) = 1\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Find the ratio of their respective velocities, \\(v_1 : v_2\\).",
+          "formula": "\\[\\frac{v_1},{v_2} = \\frac{\\tan(30°)},{\\tan(45°)} = \\frac{1/\\sqrt{3}},{1} = \\frac{1},{\\sqrt{3}}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Express this as a ratio: \\(v_1 : v_2 = 1 : \\sqrt{3}\\)."
+        }
+      ],
+      "scientific_principles": [
+        "Kinematics: The study of motion.",
+        "Graphical representation of motion."
+      ],
+      "correct_option_reasoning": "The ratio of the velocities is the ratio of the slopes of the displacement-time graphs, which is \\(\\tan(30°):\\tan(45°)\\). This evaluates to \\(\\frac{1},{\\sqrt{3}} : 1\\), which is equivalent to \\(1 : \\sqrt{3}\\).",
+      "incorrect_options_analysis": {
+        "B": "\\(\\sqrt{3} : 1\\) would be the ratio \\(v_2 : v_1\\), not \\(v_1 : v_2\\).",
+        "C": "1 : 1 would be correct only if the angles were the same.",
+        "D": "1 : 2 does not correspond to the tangent values of 30° and 45°."
+      },
+      "common_mistakes": [
+        "Confusing displacement-time graphs with velocity-time graphs (where the area under the curve gives displacement).",
+        "Calculating the ratio in the wrong order (e.g., \\(v_2:v_1\\) instead of \\(v_1:v_2\\)).",
+        "Using sine or cosine instead of tangent to find the slope."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Kinematics",
+      "subtopic": "Graphical Analysis of Motion",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "kinematics",
+        "displacement-time_graph",
+        "velocity",
+        "slope"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": true,
+      "visual_description": "A displacement-time graph showing two straight lines starting from the origin, making angles of 30 degrees and 45 degrees with the horizontal time-axis.",
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p4_q9",
+    "question_text": "The dimensions \\([MLT^{-2}A^{-2}]\\) belong to the:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Electric permittivity (\\(\\epsilon_0\\))",
+      "B": "Magnetic flux (\\(\\Phi_B\\))",
+      "C": "Self inductance (L)",
+      "D": "Magnetic permeability (\\(\\mu_0\\))"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question requires deriving the dimensional formula for each of the given physical quantities to see which one matches \\([MLT^{-2}A^{-2}]\\). The formula for magnetic force between two parallel currents is a good starting point for finding the dimensions of magnetic permeability.",
+      "key_concepts": [
+        "Dimensional Analysis",
+        "Magnetic Permeability",
+        "Electric Permittivity",
+        "Magnetic Flux",
+        "Self Inductance"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the target dimension: \\([MLT^{-2}A^{-2}]\\)."
+        },
+        {
+          "step_number": 2,
+          "description": "Derive the dimension for **Magnetic permeability (\\(\\mu_0\\))**. Use the formula for the force per unit length between two parallel conductors: \\(F/L = \\frac{\\mu_0 I_1 I_2},{2\\pi r}\\).",
+          "formula": "\\[[\\mu_0] = \\frac{[F],[r]},{[I_1],[I_2],[L]} = \\frac{([MLT^{-2}])([L])},{([A])([A])([L])} = [MLT^{-2}A^{-2}]\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "This matches the given dimension. For completeness, let's check the other options."
+        },
+        {
+          "step_number": 4,
+          "description": "Derive the dimension for **Electric permittivity (\\(\\epsilon_0\\))**. Use Coulomb's Law: \\(F = \\frac{1},{4\\pi\\epsilon_0} \\frac{q_1 q_2},{r^2}\\).",
+          "formula": "\\[[\\epsilon_0] = \\frac{[q_1],[q_2]},{[F],[r^2]} = \\frac{([AT])([AT])},{([MLT^{-2}])([L^2])} = [M^{-1}L^{-3}T^{4}A^{2}]\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Derive the dimension for **Magnetic flux (\\(\\Phi_B\\))**. Use \\(\\Phi_B = B \\cdot A\\) and \\(F = qvB\\). From \\(F = qvB\\), \\([B] = \\frac{[F]},{[q],[v]} = \\frac{[MLT^{-2}]},{([AT])([LT^{-1}])} = [MT^{-2}A^{-1}]\\).",
+          "formula": "\\[[\\Phi_B] = [B],[A] = ([MT^{-2}A^{-1}])([L^2]) = [ML^2T^{-2}A^{-1}]\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Derive the dimension for **Self inductance (L)**. Use the formula for induced EMF: \\(\\mathcal{E} = -L \\frac{dI},{dt}\\). EMF (voltage) has dimensions of work per charge.",
+          "formula": "\\[[L] = \\frac{[\\mathcal{E}],[dt]},{[dI]} = \\frac{([\\text{Work}]/[\\text{Charge}])([T])},{[A]} = \\frac{([ML^2T^{-2}]/[AT])([T])},{[A]} = [ML^2T^{-2}A^{-2}]\\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Comparing the derived dimensions, only Magnetic permeability matches \\([MLT^{-2}A^{-2}]\\)."
+        }
+      ],
+      "scientific_principles": [
+        "Dimensional Analysis: The analysis of the relationships between different physical quantities by identifying their base quantities and units of measure."
+      ],
+      "correct_option_reasoning": "The dimensional formula for magnetic permeability (\\(\\mu_0\\)) derived from the force equation between parallel currents is \\([MLT^{-2}A^{-2}]\\), which matches the dimension given in the question.",
+      "incorrect_options_analysis": {
+        "A": "Electric permittivity has dimensions of \\([M^{-1}L^{-3}T^{4}A^{2}]\\).",
+        "B": "Magnetic flux has dimensions of \\([ML^2T^{-2}A^{-1}]\\).",
+        "C": "Self inductance has dimensions of \\([ML^2T^{-2}A^{-2}]\\)."
+      },
+      "common_mistakes": [
+        "Using incorrect formulas to derive the dimensions.",
+        "Making algebraic errors during the derivation process."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Units and Measurements",
+      "subtopic": "Dimensional Analysis",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "conceptual",
+        "dimensional_analysis",
+        "magnetic_permeability",
+        "electromagnetism"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p4_q10",
+    "question_text": "The peak voltage of the ac source is equal to:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(1/\\sqrt{2}\\) times the rms value of the ac source",
+      "B": "The value of voltage supplied to the circuit",
+      "C": "The rms value of the ac source",
+      "D": "\\(\\sqrt{2}\\) times the rms value of the ac source"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question asks for the relationship between the peak voltage (amplitude) and the Root Mean Square (RMS) voltage of a sinusoidal AC source. The RMS value is defined as the peak value divided by the square root of 2.",
+      "key_concepts": [
+        "Alternating Current (AC)",
+        "Peak Voltage (Amplitude)",
+        "RMS (Root Mean Square) Voltage"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the definition of the RMS value for a sinusoidal AC voltage. The RMS value (\\(V_{rms}\\)) is the effective value of the varying voltage. It is the DC voltage that would deliver the same average power to a resistor as the AC voltage does.",
+          "formula": null
+        },
+        {
+          "step_number": 2,
+          "description": "State the standard formula that connects the peak voltage (\\(V_0\\) or \\(V_{peak}\\)) and the RMS voltage (\\(V_{rms}\\)).",
+          "formula": "\\[V_{rms} = \\frac{V_{peak}},{\\sqrt{2}}\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Rearrange the formula to express the peak voltage in terms of the RMS voltage.",
+          "formula": "\\[V_{peak} = V_{rms} \\times \\sqrt{2}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Interpret the result. The peak voltage is \\(\\sqrt{2}\\) times the RMS value of the AC source."
+        }
+      ],
+      "scientific_principles": [
+        "Theory of Alternating Currents"
+      ],
+      "correct_option_reasoning": "By definition, the RMS value of a sinusoidal AC voltage is the peak voltage divided by \\(\\sqrt{2}\\). Therefore, the peak voltage is \\(\\sqrt{2}\\) times the RMS value.",
+      "incorrect_options_analysis": {
+        "A": "\\(1/\\sqrt{2}\\) times the RMS value would be \\(V_{peak}/2\\), which is incorrect.",
+        "B": "The 'value of voltage supplied' is ambiguous. Usually, when a voltage value for an AC source is given without qualification (e.g., 220 V mains), it refers to the RMS value, not the peak value.",
+        "C": "The peak voltage is always greater than the RMS value for a sinusoidal AC source. They are not equal."
+      },
+      "common_mistakes": [
+        "Inverting the relationship, i.e., thinking \\(V_{peak} = V_{rms} / \\sqrt{2}\\)."
+      ],
+      "additional_notes": "The numerical value of \\(\\sqrt{2}\\) is approximately 1.414. So, for a standard 220 V (RMS) outlet, the peak voltage is about \\(220 \\times 1.414 \\approx 311\\) V."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Alternating Current",
+      "subtopic": "RMS and Peak Values",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "conceptual",
+        "alternating_current",
+        "rms_voltage",
+        "peak_voltage"
+      ],
+      "estimated_time_seconds": 30,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p4_q11",
+    "question_text": "The ratio of the distances travelled by a freely falling body in the 1st, 2nd, 3rd and 4th second:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "1 : 1 : 1 : 1",
+      "B": "1 : 2 : 3 : 4",
+      "C": "1 : 4 : 9 : 16",
+      "D": "1 : 3 : 5 : 7"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This problem requires calculating the distance traveled during specific time intervals (each second) for a body in free fall starting from rest. The ratio of distances traveled in successive seconds follows the ratio of odd numbers, a result known as Galileo's law of odd numbers.",
+      "key_concepts": [
+        "Free Fall",
+        "Equations of Motion",
+        "Distance in the nth second",
+        "Galileo's Law of Odd Numbers"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Use the formula for the distance (\\(S_n\\)) traveled in the nth second for an object undergoing uniform acceleration. The body is in free fall, so initial velocity \\(u=0\\) and acceleration \\(a=g\\).",
+          "formula": "\\[S_n = u + \\frac{a},{2}(2n - 1)\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Substitute \\(u=0\\) and \\(a=g\\) into the formula.",
+          "formula": "\\[S_n = 0 + \\frac{g},{2}(2n - 1) = \\frac{g},{2}(2n - 1)\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the distance for the 1st second (n=1).",
+          "formula": "\\[S_1 = \\frac{g},{2}(2(1) - 1) = \\frac{g},{2}(1)\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the distance for the 2nd second (n=2).",
+          "formula": "\\[S_2 = \\frac{g},{2}(2(2) - 1) = \\frac{g},{2}(3)\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the distance for the 3rd second (n=3).",
+          "formula": "\\[S_3 = \\frac{g},{2}(2(3) - 1) = \\frac{g},{2}(5)\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Calculate the distance for the 4th second (n=4).",
+          "formula": "\\[S_4 = \\frac{g},{2}(2(4) - 1) = \\frac{g},{2}(7)\\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Find the ratio \\(S_1 : S_2 : S_3 : S_4\\).",
+          "formula": "\\[\\frac{g},{2}(1) : \\frac{g},{2}(3) : \\frac{g},{2}(5) : \\frac{g},{2}(7)\\]"
+        },
+        {
+          "step_number": 8,
+          "description": "Simplify the ratio by canceling the common factor \\(\\frac{g},{2}\\).",
+          "formula": "\\[1 : 3 : 5 : 7\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Newton's Laws of Motion (specifically for constant acceleration)"
+      ],
+      "correct_option_reasoning": "The distance covered in the nth second by a body starting from rest is proportional to \\((2n-1)\\). Therefore, the ratio of distances covered in the 1st, 2nd, 3rd, and 4th seconds is \\((2(1)-1) : (2(2)-1) : (2(3)-1) : (2(4)-1)\\), which simplifies to 1 : 3 : 5 : 7.",
+      "incorrect_options_analysis": {
+        "A": "1 : 1 : 1 : 1 would imply constant velocity, not constant acceleration.",
+        "B": "1 : 2 : 3 : 4 is the ratio of average velocities over successive intervals, not distances.",
+        "C": "1 : 4 : 9 : 16 is the ratio of the *total distance* traveled after 1, 2, 3, and 4 seconds (since \\(S = \\frac{1},{2}gt^2\\)), not the distance in each successive second."
+      },
+      "common_mistakes": [
+        "Confusing the distance traveled *in* the nth second with the total distance traveled *by* the end of n seconds."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Kinematics",
+      "subtopic": "Motion under Gravity",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "conceptual",
+        "kinematics",
+        "free_fall",
+        "equations_of_motion",
+        "ratio"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p4_q12",
+    "question_text": "A body of mass 60 g experiences a gravitational force of 3.0 N, when placed at a particular point. The magnitude of the gravitational field intensity at that point is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "180 N/kg",
+      "B": "0.05 N/kg",
+      "C": "50 N/kg",
+      "D": "20 N/kg"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "Gravitational field intensity (or gravitational field strength) is defined as the gravitational force experienced per unit mass at a point. The problem can be solved by dividing the given force by the mass, ensuring the mass is in SI units (kg).",
+      "key_concepts": [
+        "Gravitational Field Intensity",
+        "Gravitational Force",
+        "Mass",
+        "SI Units"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the given quantities: Gravitational force \\(F = 3.0 \\text{ N}\\) and mass \\(m = 60 \\text{ g}\\)."
+        },
+        {
+          "step_number": 2,
+          "description": "Convert the mass from grams (g) to kilograms (kg) to use SI units.",
+          "formula": "\\[m = 60 \\text{ g} = 60 \\times 10^{-3} \\text{ kg} = 0.06 \\text{ kg}\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Recall the definition of gravitational field intensity (E or g). It is the force per unit mass.",
+          "formula": "\\[E = \\frac{F},{m}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the given values into the formula and calculate E.",
+          "formula": "\\[E = \\frac{3.0 \\text{ N}},{0.06 \\text{ kg}} = \\frac{300},{6} \\frac{\\text{N}},{\\text{kg}} = 50 \\frac{\\text{N}},{\\text{kg}}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Newton's Law of Universal Gravitation"
+      ],
+      "correct_option_reasoning": "Using the formula \\(E = F/m\\), with force \\(F = 3.0\\) N and mass \\(m = 0.06\\) kg, the gravitational field intensity is calculated as \\(3.0 / 0.06 = 50\\) N/kg.",
+      "incorrect_options_analysis": {
+        "A": "180 N/kg would be the result of multiplying the force by the mass in grams (\\(3 \\times 60\\)).",
+        "B": "0.05 N/kg would be the result of dividing the mass in kg by the force (\\(0.06 / 3\\)) and getting the units wrong.",
+        "D": "20 N/kg would be the result of dividing the mass in grams by the force (\\(60 / 3\\))."
+      },
+      "common_mistakes": [
+        "Forgetting to convert the mass from grams to kilograms before calculation.",
+        "Dividing mass by force instead of force by mass."
+      ],
+      "additional_notes": "The unit N/kg is dimensionally equivalent to the unit for acceleration, \\(m/s^2\\). So, the gravitational field intensity is also the acceleration due to gravity at that point."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Gravitation",
+      "subtopic": "Gravitational Field",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "gravitation",
+        "gravitational_field",
+        "unit_conversion"
+      ],
+      "estimated_time_seconds": 45,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p5_q13",
+    "question_text": "In the given nuclear reaction, the element X is:\\n\\[{}^{22}_{11}Na \\rightarrow X + e^+ + \\nu\\]",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\({}^{22}_{12}Mg\\)",
+      "B": "\\({}^{23}_{11}Na\\)",
+      "C": "\\({}^{23}_{10}Ne\\)",
+      "D": "\\({}^{22}_{10}Ne\\)"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question describes a nuclear decay process, specifically positron emission (beta-plus decay). To identify the unknown daughter nucleus X, we must apply the laws of conservation of mass number (A) and atomic number (Z) to the nuclear reaction.",
+      "key_concepts": [
+        "Nuclear Reactions",
+        "Beta-Plus Decay (Positron Emission)",
+        "Conservation of Mass Number",
+        "Conservation of Atomic Number (Charge)",
+        "Nuclide Notation"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Write down the full nuclear reaction, representing the positron (\\(e^+\\)) as \\({}^{0}_{+1}e\\) and the unknown element X as \\({}^{A}_{Z}X\\). The neutrino (\\(\\nu\\)) has no mass number or charge.",
+          "formula": "\\[{}^{22}_{11}Na \\rightarrow {}^{A}_{Z}X + {}^{0}_{+1}e + \\nu\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Apply the principle of conservation of mass number (the superscripts). The sum of mass numbers on the left must equal the sum on the right.",
+          "formula": "\\[22 = A + 0 \\implies A = 22\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Apply the principle of conservation of atomic number (the subscripts). The sum of atomic numbers on the left must equal the sum on the right.",
+          "formula": "\\[11 = Z + 1 \\implies Z = 11 - 1 = 10\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Identify the element with atomic number Z = 10. From the periodic table, the element with Z=10 is Neon (Ne)."
+        },
+        {
+          "step_number": 5,
+          "description": "Combine the mass number (A=22) and the element symbol (Ne) to identify the daughter nucleus X.",
+          "formula": "\\[X = {}^{22}_{10}Ne\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Conservation Laws in Nuclear Physics"
+      ],
+      "correct_option_reasoning": "By conserving the mass number (A) and atomic number (Z), we find that the resulting nucleus X must have A=22 and Z=10. The element with Z=10 is Neon (Ne). Therefore, X is \\({}^{22}_{10}Ne\\).",
+      "incorrect_options_analysis": {
+        "A": "\\({}^{22}_{12}Mg\\) would be the product of electron capture or beta-minus decay from a different parent, as Z increases.",
+        "B": "\\({}^{23}_{11}Na\\) would mean the mass number changed, which does not happen in beta decay.",
+        "C": "\\({}^{23}_{10}Ne\\) has the wrong mass number."
+      },
+      "common_mistakes": [
+        "Confusing positron emission (Z decreases by 1) with electron emission (beta-minus decay, where Z increases by 1).",
+        "Making a simple arithmetic error when conserving Z."
+      ],
+      "additional_notes": "Positron emission is a type of beta decay that occurs in proton-rich nuclei. A proton is converted into a neutron, a positron, and an electron neutrino."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Nuclei",
+      "subtopic": "Radioactivity",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "nuclear_reaction",
+        "beta_decay",
+        "positron_emission",
+        "conservation_laws"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p5_q14",
+    "question_text": "If a soap bubble expands, the pressure inside the bubble:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Is equal to the atmospheric pressure",
+      "B": "Decreases",
+      "C": "Increases",
+      "D": "Remains the same"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "The pressure inside a soap bubble is greater than the outside atmospheric pressure due to surface tension. This excess pressure is inversely proportional to the radius of the bubble. Therefore, as the soap bubble expands (its radius increases), the excess pressure decreases, causing the total pressure inside to decrease.",
+      "key_concepts": [
+        "Surface Tension",
+        "Excess Pressure",
+        "Soap Bubble",
+        "Laplace's Law"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the excess pressure (\\(\\Delta P\\)) inside a soap bubble. A soap bubble has two surfaces (inner and outer), so the formula is:",
+          "formula": "\\[\\Delta P = P_{inside} - P_{outside} = \\frac{4T},{R}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "In this formula, \\(T\\) is the surface tension of the soap solution and \\(R\\) is the radius of the bubble."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze the relationship between excess pressure and radius. The formula shows that \\(\\Delta P\\) is inversely proportional to the radius \\(R\\).",
+          "formula": "\\[\\Delta P \\propto \\frac{1},{R}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Consider what happens when the bubble expands. Expansion means the radius \\(R\\) increases."
+        },
+        {
+          "step_number": 5,
+          "description": "Since \\(\\Delta P \\propto 1/R\\), as \\(R\\) increases, the excess pressure \\(\\Delta P\\) must decrease."
+        },
+        {
+          "step_number": 6,
+          "description": "The total pressure inside is \\(P_{inside} = P_{outside} + \\Delta P\\). Assuming the outside atmospheric pressure remains constant, a decrease in \\(\\Delta P\\) will cause \\(P_{inside}\\) to decrease."
+        }
+      ],
+      "scientific_principles": [
+        "Surface Tension: The tendency of liquid surfaces to shrink into the minimum surface area possible."
+      ],
+      "correct_option_reasoning": "The excess pressure inside a soap bubble is given by \\(\\Delta P = 4T/R\\). As the bubble expands, its radius R increases. Since \\(\\Delta P\\) is inversely proportional to R, the excess pressure decreases. Consequently, the total pressure inside the bubble decreases.",
+      "incorrect_options_analysis": {
+        "A": "The pressure inside is always greater than atmospheric pressure due to surface tension, so it cannot be equal.",
+        "C": "Pressure would increase if the bubble were to shrink (R decreases).",
+        "D": "The pressure only remains the same if the radius is constant."
+      },
+      "common_mistakes": [
+        "Using the formula for a liquid drop (\\(\\Delta P = 2T/R\\)) instead of a soap bubble (\\(\\Delta P = 4T/R\\)). However, this does not change the inverse relationship with R.",
+        "Incorrectly assuming that expansion implies an increase in internal pressure."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Mechanical Properties of Fluids",
+      "subtopic": "Surface Tension",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "conceptual",
+        "surface_tension",
+        "excess_pressure",
+        "soap_bubble"
+      ],
+      "estimated_time_seconds": 50,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p5_q15",
+    "question_text": "Two resistors of resistance, 100 \\(\\Omega\\) and 200 \\(\\Omega\\) are connected in parallel in an electrical circuit. The ratio of the thermal energy developed in 100 \\(\\Omega\\) to that in 200 \\(\\Omega\\) in a given time is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "4 : 1",
+      "B": "1 : 2",
+      "C": "2 : 1",
+      "D": "1 : 4"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "For components connected in parallel, the voltage across them is the same. The thermal energy developed (or power dissipated) is given by \\(H = (V^2/R)t\\). Since voltage (V) and time (t) are the same for both resistors, the heat developed is inversely proportional to the resistance (R).",
+      "key_concepts": [
+        "Parallel Circuit",
+        "Joule's Law of Heating",
+        "Electrical Power",
+        "Resistance",
+        "Voltage"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the key characteristic of a parallel connection: the voltage (V) across all components is the same."
+        },
+        {
+          "step_number": 2,
+          "description": "Choose the appropriate formula for thermal energy (H) or power (P). Since voltage is constant, the formula \\(P = V^2/R\\) is most convenient. The thermal energy developed in time 't' is \\(H = P \\times t = \\frac{V^2},{R}t\\)."
+        },
+        {
+          "step_number": 3,
+          "description": "Let \\(R_1 = 100 \\Omega\\) and \\(R_2 = 200 \\Omega\\). Let \\(H_1\\) and \\(H_2\\) be the thermal energy developed in them, respectively."
+        },
+        {
+          "step_number": 4,
+          "description": "Write the expressions for \\(H_1\\) and \\(H_2\\).",
+          "formula": "\\[H_1 = \\frac{V^2},{R_1}t \\quad \\text{and} \\quad H_2 = \\frac{V^2},{R_2}t\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the ratio \\(\\frac{H_1},{H_2}\\).",
+          "formula": "\\[\\frac{H_1},{H_2} = \\frac{\\frac{V^2},{R_1}t},{\\frac{V^2},{R_2}t} = \\frac{R_2},{R_1}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Substitute the values of the resistances.",
+          "formula": "\\[\\frac{H_1},{H_2} = \\frac{200 \\Omega},{100 \\Omega} = \\frac{2},{1}\\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Express the result as a ratio: \\(H_1 : H_2 = 2 : 1\\)."
+        }
+      ],
+      "scientific_principles": [
+        "Ohm's Law",
+        "Principle of Conservation of Energy"
+      ],
+      "correct_option_reasoning": "In a parallel circuit, voltage is constant. Since thermal energy \\(H = (V^2/R)t\\), energy is inversely proportional to resistance (\\(H \\propto 1/R\\)). Therefore, the ratio of heat developed in the 100 \\(\\Omega\\) resistor to the 200 \\(\\Omega\\) resistor is \\(H_{100} : H_{200} = R_{200} : R_{100} = 200 : 100 = 2 : 1\\).",
+      "incorrect_options_analysis": {
+        "A": "4 : 1 would involve a squared relationship, which is incorrect.",
+        "B": "1 : 2 would be the correct ratio if the resistors were in series (where current is constant and \\(H = I^2Rt\\), so \\(H \\propto R\\)).",
+        "D": "1 : 4 would be the ratio if the resistors were in series and there was a squared relationship."
+      },
+      "common_mistakes": [
+        "Using the formula \\(H = I^2Rt\\) for a parallel circuit. While not wrong, it requires first calculating the different currents, which is an extra step and prone to error.",
+        "Forgetting that heat is *inversely* proportional to resistance when voltage is constant."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "Heating Effects of Current",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "parallel_circuit",
+        "joule_heating",
+        "electrical_power",
+        "ratio"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p6_q16",
+    "question_text": "Two hollow conducting spheres of radii \\(R_1\\) and \\(R_2\\) (\\(R_1 \\gg R_2\\)) have equal charges. The potential would be:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Dependent on the material property of the sphere",
+      "B": "More on bigger sphere",
+      "C": "More on smaller sphere",
+      "D": "Equal on both the spheres"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The electric potential on the surface of a conducting sphere is given by the formula \\(V = kQ/R\\). Since both spheres have equal charge (Q), the potential is inversely proportional to the radius (R). The sphere with the smaller radius will therefore have a higher potential.",
+      "key_concepts": [
+        "Electric Potential",
+        "Conducting Sphere",
+        "Electric Charge",
+        "Electrostatics"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the electric potential (V) on the surface of a conducting sphere of radius R carrying a charge Q.",
+          "formula": "\\[V = \\frac{1},{4\\pi\\epsilon_0} \\frac{Q},{R} = \\frac{kQ},{R}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the given conditions. The charges on both spheres are equal (\\(Q_1 = Q_2 = Q\\)). The radii are different, with \\(R_1 \\gg R_2\\) (meaning \\(R_1\\) is the radius of the bigger sphere and \\(R_2\\) is the radius of the smaller sphere)."
+        },
+        {
+          "step_number": 3,
+          "description": "Write the potential for each sphere.",
+          "formula": "\\[V_1 = \\frac{kQ},{R_1} \\quad \\text{and} \\quad V_2 = \\frac{kQ},{R_2}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze the relationship between potential and radius. Since Q and k are constant, the potential V is inversely proportional to the radius R.",
+          "formula": "\\[V \\propto \\frac{1},{R}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Compare the potentials. Since \\(R_1 > R_2\\), it follows from the inverse relationship that \\(V_1 < V_2\\). This means the potential on the smaller sphere (\\(V_2\\)) is greater than the potential on the bigger sphere (\\(V_1\\))."
+        }
+      ],
+      "scientific_principles": [
+        "Properties of Conductors in Electrostatic Equilibrium: The potential is constant everywhere on and inside a conductor."
+      ],
+      "correct_option_reasoning": "Because electric potential \\(V\\) is inversely proportional to the radius \\(R\\) (\\(V = kQ/R\\)) for a constant charge \\(Q\\), the sphere with the smaller radius (\\(R_2\\)) will have the higher electric potential.",
+      "incorrect_options_analysis": {
+        "A": "For an ideal conductor in electrostatics, the potential depends only on charge and geometry (radius), not on the specific material (e.g., copper vs. aluminum).",
+        "B": "This is incorrect. A bigger sphere has a larger radius, which leads to a smaller potential for the same amount of charge.",
+        "D": "The potentials would only be equal if the radii were equal, or if the ratio Q/R was the same for both."
+      },
+      "common_mistakes": [
+        "Assuming potential is directly proportional to radius.",
+        "Confusing potential with charge density or electric field."
+      ],
+      "additional_notes": "This principle is fundamental to the operation of a Van de Graaff generator, where charge is transferred from a larger sphere to a smaller one, allowing a very high potential to be built up."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electrostatic Potential and Capacitance",
+      "subtopic": "Potential due to a Charged Sphere",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "conceptual",
+        "electrostatics",
+        "electric_potential",
+        "conducting_sphere"
+      ],
+      "estimated_time_seconds": 50,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p6_q18",
+    "question_text": "When light propagates through a material medium of relative permittivity \\(\\epsilon_r\\) and relative permeability \\(\\mu_r\\), the velocity of light, v is given by (c-velocity of light in vacuum):",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(v = \\frac{c},{\\sqrt{\\epsilon_r \\mu_r}}\\)",
+      "B": "\\(v = c\\)",
+      "C": "\\(v = \\frac{c\\mu_r},{\\epsilon_r}\\)",
+      "D": "\\(v = \\frac{c\\epsilon_r},{\\mu_r}\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "The speed of an electromagnetic wave (like light) in any medium is determined by the permeability and permittivity of that medium. By relating the speed in the medium to the speed in a vacuum, we can express the medium's speed in terms of relative permeability, relative permittivity, and the speed of light in vacuum (c).",
+      "key_concepts": [
+        "Speed of Light",
+        "Electromagnetic Waves",
+        "Permittivity (\\(\\epsilon\\))",
+        "Permeability (\\(\\mu\\))",
+        "Relative Permittivity (\\(\\epsilon_r\\))",
+        "Relative Permeability (\\(\\mu_r\\))",
+        "Refractive Index"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the speed of light in a vacuum (c), which depends on the permittivity of free space (\\(\\epsilon_0\\)) and the permeability of free space (\\(\\mu_0\\)).",
+          "formula": "\\[c = \\frac{1},{\\sqrt{\\epsilon_0 \\mu_0}}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Recall the formula for the speed of light in a material medium (v), which depends on the permittivity (\\(\\epsilon\\)) and permeability (\\(\\mu\\)) of that medium.",
+          "formula": "\\[v = \\frac{1},{\\sqrt{\\epsilon \\mu}}\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Express the medium's permittivity and permeability in terms of their relative values: \\(\\epsilon = \\epsilon_r \\epsilon_0\\) and \\(\\mu = \\mu_r \\mu_0\\).",
+          "formula": null
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute these expressions into the formula for v.",
+          "formula": "\\[v = \\frac{1},{\\sqrt{(\\epsilon_r \\epsilon_0)(\\mu_r \\mu_0)}} = \\frac{1},{\\sqrt{\\epsilon_r \\mu_r} \\sqrt{\\epsilon_0 \\mu_0}}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Recognize that the term \\(\\frac{1},{\\sqrt{\\epsilon_0 \\mu_0}}\\) is equal to c.",
+          "formula": "\\[v = \\frac{1},{\\sqrt{\\epsilon_r \\mu_r}} \\times c = \\frac{c},{\\sqrt{\\epsilon_r \\mu_r}}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Maxwell's Equations of Electromagnetism"
+      ],
+      "correct_option_reasoning": "The speed of light in a medium is \\(v = 1/\\sqrt{\\epsilon\\mu}\\). By substituting \\(\\epsilon = \\epsilon_r\\epsilon_0\\) and \\(\\mu = \\mu_r\\mu_0\\), and knowing that \\(c = 1/\\sqrt{\\epsilon_0\\mu_0}\\), we arrive at the relationship \\(v = c / \\sqrt{\\epsilon_r \\mu_r}\\).",
+      "incorrect_options_analysis": {
+        "B": "\\(v = c\\) is only true in a vacuum, where \\(\\epsilon_r = 1\\) and \\(\\mu_r = 1\\).",
+        "C": "This option has an incorrect arrangement of the terms.",
+        "D": "This option has an incorrect arrangement of the terms."
+      },
+      "common_mistakes": [
+        "Forgetting the square root in the formula.",
+        "Confusing the relationship between absolute and relative permittivity/permeability."
+      ],
+      "additional_notes": "The term \\(\\sqrt{\\epsilon_r \\mu_r}\\) is the refractive index (n) of the medium. So, the formula can also be written as \\(v = c/n\\)."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electromagnetic Waves",
+      "subtopic": "Speed of Electromagnetic Waves",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "conceptual",
+        "electromagnetic_waves",
+        "speed_of_light",
+        "permittivity",
+        "permeability"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p7_q19",
+    "question_text": "A long solenoid of radius 1 mm has 100 turns per mm. If 1 A current flows in the solenoid, the magnetic field strength at the centre of the solenoid is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(6.28 \\times 10^{-4} \\text{ T}\\)",
+      "B": "\\(6.28 \\times 10^{-2} \\text{ T}\\)",
+      "C": "\\(12.56 \\times 10^{-2} \\text{ T}\\)",
+      "D": "\\(12.56 \\times 10^{-4} \\text{ T}\\)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The magnetic field inside a long solenoid is uniform and given by the formula \\(B = \\mu_0 n I\\). First, we need to convert the given turns density (turns per mm) to the standard SI unit (turns per m), and then substitute the values into the formula.",
+      "key_concepts": [
+        "Solenoid",
+        "Magnetic Field",
+        "Magnetic Permeability of Free Space (\\(\\mu_0\\))",
+        "Turns Density (n)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the given values: Radius \\(r = 1\\) mm (this is irrelevant for a long solenoid's central field), current \\(I = 1\\) A, and turns per mm = 100."
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the turns density \\(n\\) in SI units (turns per meter).",
+          "formula": "\\[n = \\frac{100 \\text{ turns}},{1 \\text{ mm}} = \\frac{100 \\text{ turns}},{10^{-3} \\text{ m}} = 100 \\times 10^3 \\frac{\\text{turns}},{\\text{m}} = 10^5 \\frac{\\text{turns}},{\\text{m}}\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Recall the formula for the magnetic field at the center of a long solenoid.",
+          "formula": "\\[B = \\mu_0 n I\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the values, using \\(\\mu_0 = 4\\pi \\times 10^{-7} \\text{ T}\\cdot\\text{m/A}\\).",
+          "formula": "\\[B = (4\\pi \\times 10^{-7}) \\times (10^5) \\times (1) = 4\\pi \\times 10^{-2} \\text{ T}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the numerical value using \\(\\pi \\approx 3.14\\).",
+          "formula": "\\[B = 4 \\times 3.14 \\times 10^{-2} \\text{ T} = 12.56 \\times 10^{-2} \\text{ T}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Ampere's Circuital Law"
+      ],
+      "correct_option_reasoning": "After converting the turns density to \\(10^5\\) turns/m, the magnetic field is calculated as \\(B = \\mu_0 n I = (4\\pi \\times 10^{-7}) \\times 10^5 \\times 1 = 4\\pi \\times 10^{-2} \\text{ T} \\approx 12.56 \\times 10^{-2} \\text{ T}\\).",
+      "incorrect_options_analysis": {
+        "A": "This may result from an error in calculating turns density or a calculation mistake.",
+        "B": "This would be the answer if \\(\\mu_0\\) was taken as \\(2\\pi \\times 10^{-7}\\) instead of \\(4\\pi \\times 10^{-7}\\), or \\(\\pi\\) was missed.",
+        "D": "This may result from an error in the power of 10, perhaps by not converting mm to m correctly."
+      },
+      "common_mistakes": [
+        "Forgetting to convert turns per mm to turns per meter.",
+        "Using the radius in the calculation, which is only needed for the field outside the solenoid or at the ends.",
+        "Calculation errors with powers of ten."
+      ],
+      "additional_notes": "For an 'infinitely' long solenoid, the magnetic field inside is uniform and parallel to the axis. The field at the ends of a long solenoid is half the value at the center, i.e., \\(B_{end} = \\frac{1},{2}\\mu_0 n I\\)."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Magnetic Effects of Current and Magnetism",
+      "subtopic": "Solenoid",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "solenoid",
+        "magnetic_field",
+        "ampere's_law"
+      ],
+      "estimated_time_seconds": 75,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p7_q21",
+    "question_text": "As the temperature increases, the electrical resistance:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Decreases for conductors but increases for semiconductors",
+      "B": "Increases for both conductors and semiconductors",
+      "C": "Decreases for both conductors and semiconductors",
+      "D": "Increases for conductors but decreases for semiconductors"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question addresses the temperature dependence of electrical resistance for two different classes of materials: conductors (metals) and semiconductors. Their behavior is opposite due to different mechanisms of charge conduction.",
+      "key_concepts": [
+        "Electrical Resistance",
+        "Resistivity",
+        "Conductors (Metals)",
+        "Semiconductors",
+        "Temperature Dependence of Resistance"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the behavior of **conductors**. In metallic conductors, the charge carriers are free electrons. As temperature increases, the metal ions vibrate more vigorously. This increases the frequency of collisions between the free electrons and the ions, which impedes the flow of electrons. This increased scattering leads to an increase in resistivity, and therefore, an increase in resistance.",
+          "formula": "\\[\\rho_T = \\rho_0 [1 + \\alpha(T - T_0)]\\], where \\(\\alpha\\) is positive for conductors."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze the behavior of **semiconductors**. In semiconductors (like silicon or germanium), the number of free charge carriers (electrons and holes) is highly dependent on temperature. As temperature increases, more thermal energy becomes available to break covalent bonds, creating more electron-hole pairs. This significant increase in the number of charge carriers drastically increases conductivity (decreases resistivity). This effect is much more dominant than the increased scattering effect. Therefore, for semiconductors, resistance decreases as temperature increases.",
+          "formula": null
+        },
+        {
+          "step_number": 3,
+          "description": "Combine the two findings. As temperature increases, the resistance of conductors increases, while the resistance of semiconductors decreases."
+        }
+      ],
+      "scientific_principles": [
+        "Drift Velocity and Electron Mobility in Conductors",
+        "Band Theory of Solids (Energy Bands in Semiconductors)"
+      ],
+      "correct_option_reasoning": "For conductors, rising temperature increases ionic vibrations, which increases electron scattering and thus resistance. For semiconductors, rising temperature increases the number of charge carriers (electrons and holes) by breaking covalent bonds, which decreases resistance. This matches option D.",
+      "incorrect_options_analysis": {
+        "A": "This option states the opposite behavior for both material types.",
+        "B": "This is incorrect; only conductors show an increase in resistance with temperature.",
+        "C": "This is incorrect; only semiconductors show a decrease in resistance with temperature."
+      },
+      "common_mistakes": [
+        "Confusing the behavior of conductors with semiconductors.",
+        "Thinking that increased thermal energy always leads to lower resistance due to 'more energetic' electrons, without considering the dominant effect of scattering in metals."
+      ],
+      "additional_notes": "The temperature coefficient of resistivity (\\(\\alpha\\)) is positive for conductors and negative for semiconductors."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "Temperature Dependence of Resistivity",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "conceptual",
+        "resistance",
+        "conductors",
+        "semiconductors",
+        "temperature_dependence"
+      ],
+      "estimated_time_seconds": 50,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p8_q22",
+    "question_text": "A biconvex lens has radii of curvature, 20 cm each. If the refractive index of the material of the lens is 1.5, the power of the lens is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Infinity",
+      "B": "+2 D",
+      "C": "+20 D",
+      "D": "+5 D"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This problem requires using the Lens Maker's formula to find the focal length of the biconvex lens, and then using the formula for optical power (P = 1/f) to find the power in diopters. It is crucial to use the correct sign convention for the radii of curvature and to express the focal length in meters for the power calculation.",
+      "key_concepts": [
+        "Biconvex Lens",
+        "Lens Maker's Formula",
+        "Focal Length",
+        "Optical Power",
+        "Refractive Index",
+        "Sign Convention"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the given values: Refractive index \\(\\mu = 1.5\\). For a biconvex lens, both surfaces are convex. According to the Cartesian sign convention (light incident from the left), the first surface has a positive radius of curvature (\\(R_1 = +20\\) cm) and the second surface has a negative radius of curvature (\\(R_2 = -20\\) cm)."
+        },
+        {
+          "step_number": 2,
+          "description": "Apply the Lens Maker's formula to find the focal length (f).",
+          "formula": "\\[\\frac{1},{f} = (\\mu - 1) \\left( \\frac{1},{R_1} - \\frac{1},{R_2} \\right)\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Substitute the values into the formula.",
+          "formula": "\\[\\frac{1},{f} = (1.5 - 1) \\left( \\frac{1},{+20} - \\frac{1},{-20} \\right) = 0.5 \\left( \\frac{1},{20} + \\frac{1},{20} \\right)\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Simplify the expression.",
+          "formula": "\\[\\frac{1},{f} = 0.5 \\left( \\frac{2},{20} \\right) = 0.5 \\times \\frac{1},{10} = \\frac{1},{20}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "From the result, the focal length is \\(f = +20\\) cm. The positive sign indicates a converging lens, as expected for a biconvex lens."
+        },
+        {
+          "step_number": 6,
+          "description": "Calculate the power (P) of the lens. The formula is \\(P = 1/f\\), where f must be in meters.",
+          "formula": "\\[f = 20 \\text{ cm} = 0.2 \\text{ m}\\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Substitute the focal length in meters into the power formula.",
+          "formula": "\\[P = \\frac{1},{0.2 \\text{ m}} = 5 \\text{ D}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Refraction",
+        "Thin Lens Approximation"
+      ],
+      "correct_option_reasoning": "Using the Lens Maker's formula with \\(R_1 = +20\\) cm and \\(R_2 = -20\\) cm, the focal length is found to be 20 cm or 0.2 m. The power, which is the reciprocal of the focal length in meters, is \\(1 / 0.2 = +5\\) Diopters.",
+      "incorrect_options_analysis": {
+        "A": "Power is infinite only if the focal length is zero, which is not the case.",
+        "B": "+2 D would result if the focal length were 50 cm (0.5 m).",
+        "C": "+20 D would result if the focal length were 5 cm (0.05 m)."
+      },
+      "common_mistakes": [
+        "Using an incorrect sign convention for the radii of curvature (e.g., using +20 for both).",
+        "Forgetting to convert the focal length from centimeters to meters before calculating the power."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Ray Optics and Optical Instruments",
+      "subtopic": "Lenses",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "lens_maker's_formula",
+        "optical_power",
+        "biconvex_lens",
+        "ray_optics"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p8_q23",
+    "question_text": "Given below are two statements\\n**Statement I** : Biot-Savart’s law gives us the expression for the magnetic field strength of an infinitesimal current element (Idl) of a current carrying conductor only.\\n**Statement II** : Biot-Savart’s law is analogous to Coulomb’s inverse square law of charge q, with the former being related to the field produced by a scalar source, Idl while the latter being produced by a vector source, q.\\nIn light of above statements choose the most appropriate answer from the options given below:",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Statement I is incorrect and Statement II is correct",
+      "B": "Both Statement I and Statement II are correct",
+      "C": "Both Statement I and Statement II are incorrect",
+      "D": "Statement I is correct and Statement II is incorrect"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question requires a careful analysis of the definitions and properties of Biot-Savart's law and Coulomb's law. Statement I correctly describes the application of Biot-Savart's law. Statement II incorrectly identifies the nature of the sources; the current element (Idl) is a vector, and the electric charge (q) is a scalar.",
+      "key_concepts": [
+        "Biot-Savart's Law",
+        "Coulomb's Law",
+        "Magnetic Field",
+        "Electric Field",
+        "Scalar and Vector Sources"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze **Statement I**. Biot-Savart's law is expressed as \\(d\\vec{B} = \\frac{\\mu_0},{4\\pi} \\frac{I d\\vec{l} \\times \\hat{r}},{r^2}\\). This formula calculates the magnetic field \\(d\\vec{B}\\) produced by an infinitesimal current element \\(I d\\vec{l}\\). To find the total magnetic field of a conductor, one must integrate this expression over the entire length of the conductor. Therefore, the law itself gives the field for an infinitesimal element. Statement I is correct."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze **Statement II**. This statement compares Biot-Savart's law with Coulomb's law (\\(\\vec{E} = \\frac{1},{4\\pi\\epsilon_0} \\frac{q},{r^2} \\hat{r}\\)). Both are inverse square laws. The statement claims that the source for the magnetic field, the current element \\(I d\\vec{l}\\), is a scalar. This is incorrect. The current element \\(I d\\vec{l}\\) is a vector, as it has both magnitude and direction. The statement also claims the source for the electric field, the charge \\(q\\), is a vector. This is also incorrect. Electric charge \\(q\\) is a scalar quantity. The statement has reversed the nature of the sources. Therefore, Statement II is incorrect."
+        },
+        {
+          "step_number": 3,
+          "description": "Conclude based on the analysis. Statement I is correct, and Statement II is incorrect."
+        }
+      ],
+      "scientific_principles": [
+        "Fundamental Laws of Electromagnetism"
+      ],
+      "correct_option_reasoning": "Statement I is a correct definition of the scope of Biot-Savart's law. Statement II incorrectly classifies the sources: the current element \\(I d\\vec{l}\\) is a vector source for the magnetic field, while the electric charge \\(q\\) is a scalar source for the electric field. Thus, Statement I is correct and Statement II is incorrect.",
+      "incorrect_options_analysis": {
+        "A": "Statement I is correct, not incorrect.",
+        "B": "Statement II is incorrect.",
+        "C": "Statement I is correct."
+      },
+      "common_mistakes": [
+        "Not recognizing that the current element \\(I d\\vec{l}\\) is treated as a vector quantity in Biot-Savart's law.",
+        "Confusing the properties of electric and magnetic field sources."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Magnetic Effects of Current and Magnetism",
+      "subtopic": "Biot-Savart Law",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "statement_based",
+        "conceptual",
+        "biot-savart_law",
+        "coulomb_law",
+        "vector_source",
+        "scalar_source"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p8_q24",
+    "question_text": "A square loop of side 1 m and resistance 1 \\(\\Omega\\) is placed in a magnetic field of 0.5 T. If the plane of loop is perpendicular to the direction of magnetic field, the magnetic flux through the loop is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Zero weber",
+      "B": "2 weber",
+      "C": "0.5 weber",
+      "D": "1 weber"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "Magnetic flux is defined as the product of the magnetic field component perpendicular to a surface and the area of that surface. In this case, the magnetic field is perpendicular to the plane of the loop, so the calculation is a straightforward multiplication of the magnetic field strength and the area of the square loop. The resistance of the loop is irrelevant for calculating magnetic flux.",
+      "key_concepts": [
+        "Magnetic Flux (\\(\\Phi_B\\))",
+        "Magnetic Field (B)",
+        "Area Vector (A)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for magnetic flux (\\(\\Phi_B\\)).",
+          "formula": "\\[\\Phi_B = \\vec{B} \\cdot \\vec{A} = BA \\cos(\\theta)\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the given values: Side of square loop \\(s = 1\\) m, Magnetic field \\(B = 0.5\\) T. The resistance \\(R = 1 \\Omega\\) is extra information not needed for this calculation."
+        },
+        {
+          "step_number": 3,
+          "description": "Determine the angle \\(\\theta\\). The plane of the loop is perpendicular to the magnetic field. The area vector \\(\\vec{A}\\) is, by convention, normal (perpendicular) to the plane of the loop. Therefore, the area vector is parallel to the magnetic field vector \\(\\vec{B}\\). The angle \\(\\theta\\) between \\(\\vec{B}\\) and \\(\\vec{A}\\) is 0°."
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the area of the square loop (A).",
+          "formula": "\\[A = s^2 = (1 \\text{ m})^2 = 1 \\text{ m}^2\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Substitute the values into the flux formula.",
+          "formula": "\\[\\Phi_B = (0.5 \\text{ T}) \\times (1 \\text{ m}^2) \\times \\cos(0°) = 0.5 \\times 1 \\times 1 = 0.5 \\text{ Wb}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Faraday's Law of Induction (though only the concept of flux is tested here)"
+      ],
+      "correct_option_reasoning": "The magnetic field is perpendicular to the plane of the loop, meaning it is parallel to the area vector (\\(\\theta=0°\\)). The magnetic flux is \\(\\Phi_B = BA\\cos(0°) = BA\\). With \\(B = 0.5\\) T and \\(A = 1^2 = 1\\) m², the flux is \\(0.5 \\times 1 = 0.5\\) Wb.",
+      "incorrect_options_analysis": {
+        "A": "Flux would be zero if the magnetic field were parallel to the plane of the loop (perpendicular to the area vector, \\(\\theta=90°\\)).",
+        "B": "2 weber would require a magnetic field of 2 T or an area of 4 m².",
+        "D": "1 weber would require a magnetic field of 1 T."
+      },
+      "common_mistakes": [
+        "Confusing the angle between the field and the *plane* with the angle between the field and the *area vector*.",
+        "Unnecessarily using the given resistance value."
+      ],
+      "additional_notes": "The unit of magnetic flux is the weber (Wb), where \\(1 \\text{ Wb} = 1 \\text{ T} \\cdot \\text{m}^2\\)."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electromagnetic Induction",
+      "subtopic": "Magnetic Flux",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "magnetic_flux",
+        "electromagnetic_induction"
+      ],
+      "estimated_time_seconds": 50,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p9_q25",
+    "question_text": "An electric lift with a maximum load of 2000 kg (lift + passengers) is moving up with a constant speed of 1.5 m/s. The frictional force opposing the motion is 3000 N. The minimum power delivered by the motor to the lift in watts is : (g = 10 m/s²)",
+    "question_type": "single_correct",
+    "options": {
+      "A": "23500 W",
+      "B": "23000 W",
+      "C": "20000 W",
+      "D": "34500 W"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "To find the minimum power delivered by the motor, we first need to calculate the total upward force the motor must provide. Since the lift moves at a constant speed, the net force is zero. Therefore, the upward force from the motor must balance the downward forces of gravity and friction. Power is then calculated as this total force multiplied by the constant velocity.",
+      "key_concepts": [
+        "Power",
+        "Force",
+        "Velocity",
+        "Newton's First Law",
+        "Gravitational Force",
+        "Frictional Force"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the given values: Total mass \\(m = 2000\\) kg, constant speed \\(v = 1.5\\) m/s, frictional force \\(f = 3000\\) N, and acceleration due to gravity \\(g = 10\\) m/s²."
+        },
+        {
+          "step_number": 2,
+          "description": "Since the lift is moving at a constant speed, its acceleration is zero. According to Newton's First Law, the net force on the lift is zero. This means the upward force provided by the motor (\\(F_{motor}\\)) must be equal in magnitude to the total downward force."
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the total downward force. This is the sum of the gravitational force (weight, \\(W\\)) and the frictional force (\\(f\\)).",
+          "formula": "\\[F_{downward} = W + f = mg + f\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the values to find the total downward force.",
+          "formula": "\\[F_{downward} = (2000 \\text{ kg} \\times 10 \\text{ m/s}^2) + 3000 \\text{ N} = 20000 \\text{ N} + 3000 \\text{ N} = 23000 \\text{ N}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "The motor must provide an upward force \\(F_{motor} = 23000\\) N to maintain constant velocity."
+        },
+        {
+          "step_number": 6,
+          "description": "Calculate the power delivered by the motor using the formula \\(P = F \\times v\\).",
+          "formula": "\\[P = F_{motor} \\times v = 23000 \\text{ N} \\times 1.5 \\text{ m/s}\\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Perform the final calculation.",
+          "formula": "\\[P = 34500 \\text{ W}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Newton's Laws of Motion",
+        "Definition of Power"
+      ],
+      "correct_option_reasoning": "The motor must overcome both the gravitational force (\\(2000 \\times 10 = 20000\\) N) and the frictional force (3000 N). The total upward force required is \\(20000 + 3000 = 23000\\) N. The power delivered at a constant speed of 1.5 m/s is \\(P = F \\times v = 23000 \\times 1.5 = 34500\\) W.",
+      "incorrect_options_analysis": {
+        "A": "This value does not seem to arise from a simple miscalculation of the primary components.",
+        "B": "23000 W is the magnitude of the required force in Newtons, not the power in Watts.",
+        "C": "20000 W would be the power required to overcome gravity alone, ignoring friction."
+      },
+      "common_mistakes": [
+        "Forgetting to include the frictional force in the calculation of the total force.",
+        "Confusing the value of the force with the value of the power.",
+        "Forgetting to include the force of gravity."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Work, Energy and Power",
+      "subtopic": "Power",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "power",
+        "newton's_laws",
+        "friction",
+        "work-energy"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p9_q27",
+    "question_text": "A copper wire of length 10 m and radius \\(\\left(\\frac{10^{-2}},{\\sqrt{\\pi}}\\right) \\text{m}\\) has electrical resistance of 10 \\(\\Omega\\). The current density in the wire for an electric field strength of 10 V/m is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(10^5 \\text{ A/m}^2\\)",
+      "B": "\\(10^4 \\text{ A/m}^2\\)",
+      "C": "\\(10^6 \\text{ A/m}^2\\)",
+      "D": "\\(10^{-5} \\text{ A/m}^2\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This problem can be solved by relating current density (J), electric field (E), and conductivity (\\(\\sigma\\)) or resistivity (\\(\\rho\\)) using the microscopic form of Ohm's law, \\(J = \\sigma E\\). The conductivity can be found from the macroscopic resistance formula \\(R = \\rho L/A = L/(\\sigma A)\\). Alternatively, one can directly calculate \\(J=\\sigma E\\) after finding \\(\\sigma\\).",
+      "key_concepts": [
+        "Current Density (J)",
+        "Electric Field (E)",
+        "Conductivity (\\(\\sigma\\))",
+        "Resistivity (\\(\\rho\\))",
+        "Resistance (R)",
+        "Ohm's Law (microscopic form)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the given values: Length \\(L = 10\\) m, Radius \\(r = \\frac{10^{-2}},{\\sqrt{\\pi}}\\) m, Resistance \\(R = 10 \\Omega\\), Electric Field \\(E = 10\\) V/m."
+        },
+        {
+          "step_number": 2,
+          "description": "Recall the relationship between resistance, resistivity (\\(\\rho\\)), length (L), and cross-sectional area (A).",
+          "formula": "\\[R = \\rho \\frac{L},{A}\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Recall the relationship between current density (J), electric field (E), and resistivity (\\(\\rho\\)), which is a form of Ohm's law.",
+          "formula": "\\[J = \\frac{E},{\\rho}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "From the resistance formula, express resistivity as \\(\\rho = \\frac{RA},{L}\\). Substitute this into the current density formula.",
+          "formula": "\\[J = \\frac{E},{(RA/L)} = \\frac{EL},{RA}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the cross-sectional area (A) of the wire.",
+          "formula": "\\[A = \\pi r^2 = \\pi \\left( \\frac{10^{-2}},{\\sqrt{\\pi}} \\right)^2 = \\pi \\left( \\frac{10^{-4}},{\\pi} \\right) = 10^{-4} \\text{ m}^2\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Now substitute all the known values into the combined formula for J.",
+          "formula": "\\[J = \\frac{(10 \\text{ V/m}) \\times (10 \\text{ m})},{(10 \\Omega) \\times (10^{-4} \\text{ m}^2)} = \\frac{100},{10^{-3}} = 100 \\times 10^3 = 10^5 \\text{ A/m}^2\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Ohm's Law (Macroscopic and Microscopic forms)"
+      ],
+      "correct_option_reasoning": "By first calculating the area \\(A = 10^{-4} \\text{ m}^2\\) and then using the derived formula \\(J = EL/RA\\), the current density is found to be \\(\\frac{10 \\times 10},{10 \\times 10^{-4}} = 10^5 \\text{ A/m}^2\\).",
+      "incorrect_options_analysis": {
+        "B": "This would result from an error in the power of ten, possibly miscalculating the area or the final division.",
+        "C": "This would result from an error in the power of ten.",
+        "D": "This would result from a significant error, likely inverting a fraction during the calculation."
+      },
+      "common_mistakes": [
+        "Errors in calculating the area, especially with \\(\\pi\\) in the denominator of the radius.",
+        "Confusing resistivity with conductivity.",
+        "Making algebraic errors when combining formulas or errors with powers of ten."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "Ohm's Law and Resistivity",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "current_density",
+        "resistivity",
+        "ohm's_law"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p10_q28",
+    "question_text": "In the given circuits (a), (b) and (c), the potential drop across the two p-n junctions are equal in:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Both circuits (a) and (c)",
+      "B": "Circuit (a) only",
+      "C": "Circuit (b) only",
+      "D": "Circuit (c) only"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "The potential drop across two p-n junctions will be equal if they are in the same biasing condition (either both forward-biased or both reverse-biased). By analyzing the polarity of the connections in each circuit, we can determine the biasing of each junction.",
+      "key_concepts": [
+        "p-n Junction Diode",
+        "Forward Bias",
+        "Reverse Bias",
+        "Potential Drop"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Understand biasing conditions. A p-n junction is **forward-biased** when the positive terminal of the battery is connected to the p-side and the negative terminal to the n-side. The potential drop is small (typically ~0.7 V for Si). A junction is **reverse-biased** when the positive terminal is connected to the n-side and the negative to the p-side. The potential drop is nearly equal to the applied voltage and is large."
+        },
+        {
+          "step_number": 2,
+          "description": "**Analyze Circuit (a):** The battery's positive terminal is connected to the p-side of the first diode, and its negative terminal is connected to the n-side of the second diode. The point between the diodes is connected to both an n-side and a p-side. In this configuration, both diodes are connected in a way that allows current to flow (assuming the voltage is sufficient), meaning both are **forward-biased**. Therefore, the potential drops across them will be approximately equal and small.",
+          "formula": null
+        },
+        {
+          "step_number": 3,
+          "description": "**Analyze Circuit (b):** The first diode (left) has its p-side connected to the positive terminal, so it is **forward-biased**. The second diode (right) is flipped; its n-side is connected towards the positive terminal and its p-side towards the negative. This makes the second diode **reverse-biased**. Since one is forward-biased and the other is reverse-biased, their potential drops will be very different.",
+          "formula": null
+        },
+        {
+          "step_number": 4,
+          "description": "**Analyze Circuit (c):** The battery's positive terminal is connected to the p-side of both diodes (which are in parallel). The negative terminal is connected to the n-side of both diodes. Both diodes are therefore **forward-biased**. As they are identical junctions connected to the same voltage source, the potential drop across them will be equal.",
+          "formula": null
+        },
+        {
+          "step_number": 5,
+          "description": "Conclude which circuits have equal potential drops. In circuits (a) and (c), both junctions are in the same (forward-biased) state, so their potential drops will be equal. In circuit (b), the junctions have different biasing, so the drops are unequal."
+        }
+      ],
+      "scientific_principles": [
+        "Semiconductor Physics"
+      ],
+      "correct_option_reasoning": "In circuit (a), the two diodes are in series and both are forward-biased. In circuit (c), the two diodes are in parallel and both are forward-biased. In both these cases, the two junctions are in an identical state of biasing, and thus will have equal potential drops. In circuit (b), one diode is forward-biased while the other is reverse-biased, leading to vastly different potential drops.",
+      "incorrect_options_analysis": {
+        "B": "Circuit (c) also has equal potential drops, so this option is incomplete.",
+        "C": "Circuit (b) has unequal potential drops.",
+        "D": "Circuit (a) also has equal potential drops, so this option is incomplete."
+      },
+      "common_mistakes": [
+        "Incorrectly identifying the p-side (triangle base) and n-side (line) of the diode symbol.",
+        "Misinterpreting the polarity of the connections to determine forward or reverse bias."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Semiconductor Electronics",
+      "subtopic": "p-n Junction Diode",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "conceptual",
+        "circuit_analysis",
+        "p-n_junction",
+        "diode",
+        "forward_bias",
+        "reverse_bias"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": true,
+      "visual_description": "Three electrical circuits labeled (a), (b), and (c). Each circuit contains a voltage source and two p-n junction diodes. Circuit (a) shows two diodes in series, both oriented in the same direction. Circuit (b) shows two diodes in series, oriented in opposite directions. Circuit (c) shows two diodes in parallel, both oriented in the same direction.",
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p10_q29",
+    "question_text": "If the initial tension on a stretched string is doubled, then the ratio of the initial and final speeds of a transverse wave along the string is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(1 : \\sqrt{2}\\)",
+      "B": "1 : 1",
+      "C": "\\(\\sqrt{2} : 1\\)",
+      "D": "1 : 2"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "The speed of a transverse wave on a stretched string depends on the tension in the string and its linear mass density. By using the formula \\(v = \\sqrt{T/\\mu}\\), we can determine how the speed changes when the tension is doubled and then find the required ratio.",
+      "key_concepts": [
+        "Transverse Wave",
+        "Wave Speed",
+        "Tension",
+        "Linear Mass Density"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the speed (v) of a transverse wave on a string.",
+          "formula": "\\[v = \\sqrt{\\frac{T},{\\mu}}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Here, T is the tension and \\(\\mu\\) is the linear mass density (mass per unit length) of the string. The problem states the string is the same, so \\(\\mu\\) is constant."
+        },
+        {
+          "step_number": 3,
+          "description": "Let the initial tension be \\(T_i\\) and the initial speed be \\(v_i\\). Let the final tension be \\(T_f\\) and the final speed be \\(v_f\\).",
+          "formula": "\\[v_i = \\sqrt{\\frac{T_i},{\\mu}}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "According to the problem, the initial tension is doubled. So, \\(T_f = 2T_i\\).",
+          "formula": "\\[v_f = \\sqrt{\\frac{T_f},{\\mu}} = \\sqrt{\\frac{2T_i},{\\mu}}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Find the ratio of the initial speed to the final speed (\\(v_i / v_f\\)).",
+          "formula": "\\[\\frac{v_i},{v_f} = \\frac{\\sqrt{T_i/\\mu}},{\\sqrt{2T_i/\\mu}} = \\sqrt{\\frac{T_i/\\mu},{2T_i/\\mu}} = \\sqrt{\\frac{1},{2}} = \\frac{1},{\\sqrt{2}}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Express the result as a ratio: \\(v_i : v_f = 1 : \\sqrt{2}\\)."
+        }
+      ],
+      "scientific_principles": [
+        "Wave Mechanics"
+      ],
+      "correct_option_reasoning": "The wave speed is proportional to the square root of the tension (\\(v \\propto \\sqrt{T}\\)). If the tension is doubled (\\(T_f = 2T_i\\)), the new speed will be \\(v_f = \\sqrt{2} v_i\\). The ratio of initial to final speed is \\(v_i / v_f = v_i / (\\sqrt{2} v_i) = 1/\\sqrt{2}\\), or \\(1 : \\sqrt{2}\\).",
+      "incorrect_options_analysis": {
+        "B": "1 : 1 would mean the speed does not change, which is incorrect as it depends on tension.",
+        "C": "\\(\\sqrt{2} : 1\\) is the ratio of the final speed to the initial speed, not the initial to the final.",
+        "D": "1 : 2 would be the ratio if the speed were directly proportional to the tension, not its square root."
+      },
+      "common_mistakes": [
+        "Forgetting the square root in the wave speed formula.",
+        "Calculating the ratio in the reverse order (final : initial instead of initial : final)."
+      ],
+      "additional_notes": "Note that option 1 and 4 in the source data are identical. Assuming option '1' is the intended '1 : \\sqrt{2}' and '4' is a typo for '1 : 2'."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Waves",
+      "subtopic": "Waves on a String",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "transverse_wave",
+        "wave_speed",
+        "tension",
+        "ratio"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p11_q30",
+    "question_text": "The ratio of the radius of gyration of a thin uniform disc about an axis passing through its centre and normal to its plane to the radius of gyration of the disc about its diameter is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(1 : \\sqrt{2}\\)",
+      "B": "2 : 1",
+      "C": "\\(\\sqrt{2} : 1\\)",
+      "D": "4 : 1"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This problem requires knowing the formulas for the moment of inertia of a thin uniform disc about two different axes: one perpendicular to its plane through the center, and one along a diameter. From the moment of inertia, the radius of gyration is found using \\(I = Mk^2\\). The ratio of the two radii of gyration can then be calculated.",
+      "key_concepts": [
+        "Moment of Inertia (I)",
+        "Radius of Gyration (k)",
+        "Thin Uniform Disc",
+        "Perpendicular Axis Theorem"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Define the first case: axis passing through the centre and normal (perpendicular) to its plane. Let the moment of inertia be \\(I_z\\) and the radius of gyration be \\(k_1\\).",
+          "formula": "\\[I_z = \\frac{1},{2}MR^2\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Relate \\(I_z\\) to \\(k_1\\) using the definition of radius of gyration, \\(I = Mk^2\\).",
+          "formula": "\\[Mk_1^2 = \\frac{1},{2}MR^2 \\implies k_1^2 = \\frac{R^2},{2} \\implies k_1 = \\frac{R},{\\sqrt{2}}\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Define the second case: axis is a diameter of the disc. Let the moment of inertia be \\(I_d\\) and the radius of gyration be \\(k_2\\). We can find \\(I_d\\) using the Perpendicular Axis Theorem: \\(I_z = I_x + I_y\\). For a disc, the moment of inertia about any diameter is the same, so \\(I_x = I_y = I_d\\).",
+          "formula": "\\[I_z = 2I_d \\implies I_d = \\frac{I_z},{2} = \\frac{1},{2} \\left( \\frac{1},{2}MR^2 \\right) = \\frac{1},{4}MR^2\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Relate \\(I_d\\) to \\(k_2\\).",
+          "formula": "\\[Mk_2^2 = \\frac{1},{4}MR^2 \\implies k_2^2 = \\frac{R^2},{4} \\implies k_2 = \\frac{R},{2}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the required ratio, \\(k_1 : k_2\\).",
+          "formula": "\\[\\frac{k_1},{k_2} = \\frac{R/\\sqrt{2}},{R/2} = \\frac{2},{\\sqrt{2}} = \\sqrt{2}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Express the result as a ratio: \\(k_1 : k_2 = \\sqrt{2} : 1\\)."
+        }
+      ],
+      "scientific_principles": [
+        "Perpendicular Axis Theorem: For a planar lamina, the moment of inertia about an axis perpendicular to the plane is the sum of the moments of inertia about two perpendicular axes in the plane intersecting at the same point."
+      ],
+      "correct_option_reasoning": "The radius of gyration about the central axis normal to the plane is \\(k_1 = R/\\sqrt{2}\\). The radius of gyration about a diameter is \\(k_2 = R/2\\). The ratio \\(k_1/k_2\\) is \\((R/\\sqrt{2}) / (R/2) = 2/\\sqrt{2} = \\sqrt{2}\\). The ratio is \\(\\sqrt{2} : 1\\).",
+      "incorrect_options_analysis": {
+        "A": "\\(1 : \\sqrt{2}\\) is the reciprocal of the correct ratio.",
+        "B": "2 : 1 is the ratio of the moments of inertia (\\(I_z : I_d\\)), not the radii of gyration.",
+        "D": "4 : 1 is not obtained from these calculations."
+      },
+      "common_mistakes": [
+        "Confusing the formulas for moment of inertia about the two different axes.",
+        "Forgetting to take the square root when finding k from \\(k^2\\).",
+        "Mixing up the ratio, i.e., calculating \\(k_2 : k_1\\) instead of \\(k_1 : k_2\\)."
+      ],
+      "additional_notes": "Note that option 2 and 3 in the source data are identical ('2 : 1'). Assuming option 3 is a typo for '\\(\\sqrt{2} : 1\\)' which is the correct physics answer."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "System of Particles and Rotational Motion",
+      "subtopic": "Moment of Inertia and Radius of Gyration",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "moment_of_inertia",
+        "radius_of_gyration",
+        "thin_disc",
+        "perpendicular_axis_theorem",
+        "ratio"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p12_q34",
+    "question_text": "Let \\(T_1\\) and \\(T_2\\) be the energy of an electron in the first and second excited states of hydrogen atoms, respectively. According to the Bohr’s model of an atom, the ratio \\(T_1 : T_2\\) is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "9 : 4",
+      "B": "1 : 4",
+      "C": "4 : 1",
+      "D": "4 : 9"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question asks for the ratio of the total energies of an electron in the first and second excited states of a hydrogen atom. According to the Bohr model, the energy of an electron in the nth state is inversely proportional to \\(n^2\\). It is important to correctly identify the principal quantum numbers (n) for the excited states.",
+      "key_concepts": [
+        "Bohr Model of the Hydrogen Atom",
+        "Energy Levels",
+        "Principal Quantum Number (n)",
+        "Ground State",
+        "Excited States"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the energy (\\(E_n\\)) of an electron in the nth energy level of a hydrogen atom according to the Bohr model.",
+          "formula": "\\[E_n = -\\frac{E_0},{n^2}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "In this formula, \\(E_0\\) is the ionization energy (13.6 eV) and \\(n\\) is the principal quantum number. The question uses 'T' for energy, so we will use \\(T_n = E_n\\)."
+        },
+        {
+          "step_number": 3,
+          "description": "Identify the principal quantum number for the 'first excited state'. The ground state is n=1, so the first excited state corresponds to \\(n=2\\).",
+          "formula": "\\[T_1 = E_2 = -\\frac{E_0},{2^2} = -\\frac{E_0},{4}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Identify the principal quantum number for the 'second excited state'. This corresponds to \\(n=3\\).",
+          "formula": "\\[T_2 = E_3 = -\\frac{E_0},{3^2} = -\\frac{E_0},{9}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the ratio \\(T_1 : T_2\\).",
+          "formula": "\\[\\frac{T_1},{T_2} = \\frac{-E_0/4},{-E_0/9} = \\frac{1/4},{1/9} = \\frac{9},{4}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Express the result as a ratio: \\(T_1 : T_2 = 9 : 4\\)."
+        }
+      ],
+      "scientific_principles": [
+        "Quantization of Energy in Atoms"
+      ],
+      "correct_option_reasoning": "The energy of the first excited state (n=2) is proportional to \\(1/2^2 = 1/4\\). The energy of the second excited state (n=3) is proportional to \\(1/3^2 = 1/9\\). The ratio \\(T_1 : T_2\\) is therefore \\((1/4) : (1/9)\\), which is equivalent to \\(9 : 4\\).",
+      "incorrect_options_analysis": {
+        "B": "1 : 4 would be related to the ratio of energies for n=1 and n=2, but not calculated correctly.",
+        "C": "4 : 1 would be the inverse of the ratio of total energies for n=2 and n=1.",
+        "D": "4 : 9 is the inverse of the correct ratio, \\(T_2 : T_1\\)."
+      },
+      "common_mistakes": [
+        "Confusing the 'first excited state' with the ground state (n=1). The first excited state is n=2.",
+        "Inverting the ratio during the final calculation (calculating \\(T_2:T_1\\) instead)."
+      ],
+      "additional_notes": "The question uses 'T' which often denotes kinetic energy. However, in the context of atomic states, it's almost certain to mean total energy. If it were kinetic energy, \\(K.E. = -E_{total} \\propto 1/n^2\\), the ratio would be the same. If it were potential energy, \\(P.E. = 2E_{total} \\propto -1/n^2\\), the ratio would also be the same."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Atoms",
+      "subtopic": "Bohr Model",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "bohr_model",
+        "hydrogen_atom",
+        "energy_levels",
+        "excited_state",
+        "ratio"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p14_q37",
+    "question_text": "The volume occupied by the molecules contained in 4.5 kg water at STP, if the intermolecular forces vanish away is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(5.6 \\text{ m}^3\\)",
+      "B": "\\(5.6 \\times 10^6 \\text{ m}^3\\)",
+      "C": "\\(5.6 \\times 10^3 \\text{ m}^3\\)",
+      "D": "\\(5.6 \\times 10^{-3} \\text{ m}^3\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "The condition 'if the intermolecular forces vanish away' implies that the water should be treated as an ideal gas. The problem then becomes a straightforward application of the ideal gas law (PV=nRT) to find the volume. We need to calculate the number of moles of water, use the standard values for STP conditions and the ideal gas constant.",
+      "key_concepts": [
+        "Ideal Gas Law",
+        "Standard Temperature and Pressure (STP)",
+        "Mole Concept",
+        "Molar Mass of Water"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Interpret the problem statement. 'Intermolecular forces vanish' means we treat water (H₂O) as an ideal gas. STP conditions are: Temperature \\(T = 273.15\\) K and Pressure \\(P = 1 \\text{ atm} \\approx 1.013 \\times 10^5 \\text{ Pa}\\). For many calculations, \\(P \\approx 10^5 \\text{ Pa}\\) is used."
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the number of moles (n) of water. The mass of water is \\(m = 4.5\\) kg = 4500 g. The molar mass of water (H₂O) is approximately \\(M = 2(1) + 16 = 18\\) g/mol.",
+          "formula": "\\[n = \\frac{\\text{mass}},{\\text{molar mass}} = \\frac{4500 \\text{ g}},{18 \\text{ g/mol}} = 250 \\text{ mol}\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Apply the Ideal Gas Law to find the volume (V).",
+          "formula": "\\[PV = nRT \\implies V = \\frac{nRT},{P}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the values. Use \\(n = 250\\) mol, \\(R \\approx 8.314 \\text{ J/(mol K)}\\), \\(T = 273.15\\) K, and \\(P \\approx 1.013 \\times 10^5 \\text{ Pa}\\).",
+          "formula": "\\[V = \\frac{250 \\times 8.314 \\times 273.15},{1.013 \\times 10^5}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Alternatively, use the molar volume at STP. At STP, 1 mole of any ideal gas occupies approximately 22.4 liters (or 22.4 x 10⁻³ m³). We have 250 moles.",
+          "formula": "\\[V = n \\times V_{molar} = 250 \\text{ mol} \\times 22.4 \\frac{\\text{L}},{\\text{mol}} = 5600 \\text{ L}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Convert the volume from liters to cubic meters (\\(1 \\text{ m}^3 = 1000 \\text{ L}\\)).",
+          "formula": "\\[V = 5600 \\text{ L} \\times \\frac{1 \\text{ m}^3},{1000 \\text{ L}} = 5.6 \\text{ m}^3\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Ideal Gas Law",
+        "Avogadro's Law"
+      ],
+      "correct_option_reasoning": "Treating the 4.5 kg (250 moles) of water as an ideal gas at STP, we can use the molar volume of an ideal gas (22.4 L/mol). The total volume is \\(250 \\text{ mol} \\times 22.4 \\text{ L/mol} = 5600 \\text{ L}\\), which is equal to \\(5.6 \\text{ m}^3\\).",
+      "incorrect_options_analysis": {
+        "B": "\\(5.6 \\times 10^6 \\text{ m}^3\\) would be a massive volume, incorrect order of magnitude.",
+        "C": "\\(5.6 \\times 10^3 \\text{ m}^3\\) is 5600 m³, a factor of 1000 too large.",
+        "D": "\\(5.6 \\times 10^{-3} \\text{ m}^3\\) is 5.6 L. This would be the volume for 0.25 moles, not 250 moles."
+      },
+      "common_mistakes": [
+        "Using the density of liquid water instead of treating it as an ideal gas as implied by the question.",
+        "Errors in converting units (kg to g, L to m³).",
+        "Incorrectly calculating the number of moles."
+      ],
+      "additional_notes": "The phrase 'intermolecular forces vanish away' is the key to solving this problem correctly. It transforms a question about a liquid into a question about an ideal gas."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Thermal Properties of Matter",
+      "subtopic": "Ideal Gas Equation",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "ideal_gas_law",
+        "stp",
+        "molar_volume",
+        "thermodynamics"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  },
+  {
+    "question_id": "Question_Paper_11_p14_q38",
+    "question_text": "A nucleus of mass number 189 splits into two nuclei having mass number 125 and 64. The ratio of radius of two daughter nuclei respectively is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "25 : 16",
+      "B": "1 : 1",
+      "C": "4 : 5",
+      "D": "5 : 4"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "The radius of a nucleus is empirically related to its mass number (A) by the formula \\(R = R_0 A^{1/3}\\). To find the ratio of the radii of the two daughter nuclei, we can set up a ratio using this formula, which simplifies to the ratio of the cube roots of their mass numbers.",
+      "key_concepts": [
+        "Nuclear Radius",
+        "Mass Number (A)",
+        "Nuclear Fission"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the empirical formula for the radius of a nucleus (R) in terms of its mass number (A). \\(R_0\\) is an empirical constant approximately equal to 1.2 fm.",
+          "formula": "\\[R = R_0 A^{1/3}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Let the two daughter nuclei be nucleus 1 and nucleus 2. Identify their mass numbers: \\(A_1 = 125\\) and \\(A_2 = 64\\). Note that \\(125 + 64 = 189\\), so the mass number is conserved."
+        },
+        {
+          "step_number": 3,
+          "description": "Write the expressions for the radii of the two daughter nuclei, \\(R_1\\) and \\(R_2\\).",
+          "formula": "\\[R_1 = R_0 A_1^{1/3} \\quad \\text{and} \\quad R_2 = R_0 A_2^{1/3}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Set up the ratio of the radii, \\(R_1 / R_2\\).",
+          "formula": "\\[\\frac{R_1},{R_2} = \\frac{R_0 A_1^{1/3}},{R_0 A_2^{1/3}} = \\left( \\frac{A_1},{A_2} \\right)^{1/3}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Substitute the mass numbers into the ratio formula.",
+          "formula": "\\[\\frac{R_1},{R_2} = \\left( \\frac{125},{64} \\right)^{1/3} = \\frac{125^{1/3}},{64^{1/3}}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Calculate the cube roots. \\(125^{1/3} = 5\\) (since \\(5^3=125\\)) and \\(64^{1/3} = 4\\) (since \\(4^3=64\\)).",
+          "formula": "\\[\\frac{R_1},{R_2} = \\frac{5},{4}\\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Express the result as a ratio: \\(R_1 : R_2 = 5 : 4\\)."
+        }
+      ],
+      "scientific_principles": [
+        "Empirical Model of Nuclear Structure"
+      ],
+      "correct_option_reasoning": "The ratio of the radii is equal to the ratio of the cube roots of the mass numbers. The ratio is \\(125^{1/3} : 64^{1/3}\\), which simplifies to \\(5 : 4\\).",
+      "incorrect_options_analysis": {
+        "A": "25 : 16 is the ratio of the square of the radii, not the radii themselves.",
+        "B": "1 : 1 would imply the mass numbers are equal, which they are not.",
+        "C": "4 : 5 is the inverse of the correct ratio."
+      },
+      "common_mistakes": [
+        "Forgetting to take the cube root of the mass numbers.",
+        "Calculating the ratio of the mass numbers directly (125:64).",
+        "Inverting the final ratio."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Nuclei",
+      "subtopic": "Size and Structure of Nucleus",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "nuclear_radius",
+        "mass_number",
+        "ratio",
+        "nuclear_physics"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_11"
+    }
+  }
+]

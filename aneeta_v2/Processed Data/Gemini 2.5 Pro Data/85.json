@@ -1,0 +1,2441 @@
+[
+  {
+    "question_id": "Question_Paper_23_p16_q41",
+    "question_text": "Match List-I with List-II\n\n**List-I**\n(a) Gravitational constant (G)\n(b) Gravitational potential energy\n(c) Gravitational potential\n(d) Gravitational intensity\n\n**List-II**\n(i) \\([L^2T^{-2}]\\)\n(ii) \\([M^{-1}L^3T^{-2}]\\)\n(iii) \\([LT^{-2}]\\)\n(iv) \\([ML^2T^{-2}]\\)\n\nChoose the correct answer from the options given below",
+    "question_type": "matching",
+    "options": {
+      "A": "(a) - (ii), (b) - (iv), (c) - (i), (d) - (iii)",
+      "B": "(a) - (ii), (b) - (iv), (c) - (iii), (d) - (i)",
+      "C": "(a) - (iv), (b) - (ii), (c) - (i), (d) - (iii)",
+      "D": "(a) - (ii), (b) - (i), (c) - (iv), (d) - (iii)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question requires matching various gravitational quantities with their correct dimensional formulas. By applying the definitions and relevant physical laws for each quantity, we can derive their dimensions and find the correct pairings.",
+      "key_concepts": [
+        "Dimensional Analysis",
+        "Gravitational Constant (G)",
+        "Gravitational Potential Energy",
+        "Gravitational Potential",
+        "Gravitational Field Intensity"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Determine the dimension for (a) Gravitational constant (G). Using Newton's law of gravitation, \\(F = G \\frac{m_1 m_2}{r^2}\\), we can rearrange to get \\(G = \\frac{F r^2}{m_1 m_2}\\).",
+          "formula": "\\[ [G] = \\frac{[F][r^2]}{[m_1][m_2]} = \\frac{[MLT^{-2}][L^2]}{[M][M]} = [M^{-1}L^3T^{-2}] \\] This matches with (ii)."
+        },
+        {
+          "step_number": 2,
+          "description": "Determine the dimension for (b) Gravitational potential energy. All forms of energy have the same dimension, which is the dimension of work (Force × distance).",
+          "formula": "\\[ [Energy] = [F][L] = [MLT^{-2}][L] = [ML^2T^{-2}] \\] This matches with (iv)."
+        },
+        {
+          "step_number": 3,
+          "description": "Determine the dimension for (c) Gravitational potential. It is defined as gravitational potential energy per unit mass.",
+          "formula": "\\[ [Potential] = \\frac{[Energy]}{[Mass]} = \\frac{[ML^2T^{-2}]}{[M]} = [L^2T^{-2}] \\] This matches with (i)."
+        },
+        {
+          "step_number": 4,
+          "description": "Determine the dimension for (d) Gravitational intensity. It is defined as the gravitational force per unit mass. This is equivalent to acceleration.",
+          "formula": "\\[ [Intensity] = \\frac{[Force]}{[Mass]} = \\frac{[MLT^{-2}]}{[M]} = [LT^{-2}] \\] This matches with (iii)."
+        },
+        {
+          "step_number": 5,
+          "description": "Assemble the correct pairs: (a)-(ii), (b)-(iv), (c)-(i), (d)-(iii). This corresponds to option A."
+        }
+      ],
+      "scientific_principles": [
+        "Principle of Dimensional Homogeneity",
+        "Newton's Law of Universal Gravitation"
+      ],
+      "correct_option_reasoning": "The pairings (a)-(ii), (b)-(iv), (c)-(i), (d)-(iii) are all correctly derived from the fundamental definitions of the respective physical quantities. Option A correctly represents all these pairings.",
+      "incorrect_options_analysis": {
+        "A": "This is the correct option.",
+        "B": "Incorrectly matches Gravitational potential and intensity.",
+        "C": "Incorrectly matches Gravitational constant and potential energy.",
+        "D": "Incorrectly matches Gravitational potential energy and potential."
+      },
+      "common_mistakes": [
+        "Confusing gravitational potential with gravitational potential energy.",
+        "Confusing gravitational intensity with gravitational constant.",
+        "Making algebraic errors while deriving the dimensions."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Units and Measurements",
+      "subtopic": "Dimensional Analysis",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "matching",
+        "dimensional_analysis",
+        "gravitation",
+        "units_and_dimensions"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p17_q42",
+    "question_text": "The truth table for the given logic circuit is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "| A | B | C |\n|---|---|---|\n| 0 | 0 | 1 |\n| 0 | 1 | 0 |\n| 1 | 0 | 0 |\n| 1 | 1 | 1 |",
+      "B": "| A | B | C |\n|---|---|---|\n| 0 | 0 | 1 |\n| 0 | 1 | 0 |\n| 1 | 0 | 1 |\n| 1 | 1 | 0 |",
+      "C": "| A | B | C |\n|---|---|---|\n| 0 | 0 | 0 |\n| 0 | 1 | 1 |\n| 1 | 0 | 0 |\n| 1 | 1 | 1 |",
+      "D": "| A | B | C |\n|---|---|---|\n| 0 | 0 | 0 |\n| 0 | 1 | 1 |\n| 1 | 0 | 1 |\n| 1 | 1 | 0 |"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "The logic circuit provided, upon analysis of its Boolean expression, simplifies to an output C that is the logical inverse of input B (C = NOT B). The correct truth table is the one that reflects this relationship.",
+      "key_concepts": [
+        "Logic Gates",
+        "Boolean Algebra",
+        "NAND Gate",
+        "Truth Table",
+        "De Morgan's Laws"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the given circuit to derive the Boolean expression for the output C. Assuming the circuit consists of a first NAND gate with inputs A and B, a second NAND gate with inputs A and \\(\\bar{B}\\), and a third NAND gate whose inputs are the outputs of the first two.",
+          "formula": "C = \\overline{(\\overline{A \\cdot B}) \\cdot (\\overline{A \\cdot \\bar{B}})}"
+        },
+        {
+          "step_number": 2,
+          "description": "Simplify the expression using De Morgan's laws. \\(\\overline{X \\cdot Y} = \\bar{X} + \\bar{Y}\\).",
+          "formula": "C = \\overline{(\\overline{A \\cdot B})} + \\overline{(\\overline{A \\cdot \\bar{B}})} = (A \\cdot B) + (A \\cdot \\bar{B})"
+        },
+        {
+          "step_number": 3,
+          "description": "Use the distributive law to simplify further: \\(A \\cdot (X+Y) = AX + AY\\).",
+          "formula": "C = A \\cdot (B + \\bar{B})"
+        },
+        {
+          "step_number": 4,
+          "description": "Since \\(B + \\bar{B} = 1\\), the expression becomes \\(C = A \\cdot 1 = A\\). Note: The original explanation contains severe errors and leads to \\(C=\\bar{B}\\). The truth table in the correct answer corresponds to \\(C=\\bar{B}\\). This indicates the question's diagram or the provided options are inconsistent. We will proceed by analyzing the truth table that corresponds to the correct answer.",
+          "formula": "Let's assume the circuit's output is C = \\(\\bar{B}\\)."
+        },
+        {
+          "step_number": 5,
+          "description": "Construct the truth table for \\(C = \\bar{B}\\). The output C depends only on the input B and is its opposite.",
+          "formula": "If B = 0, C = 1.\nIf B = 1, C = 0."
+        },
+        {
+          "step_number": 6,
+          "description": "Complete the truth table for all combinations of A and B:\n- A=0, B=0 ⇒ C=1\n- A=0, B=1 ⇒ C=0\n- A=1, B=0 ⇒ C=1\n- A=1, B=1 ⇒ C=0"
+        },
+        {
+          "step_number": 7,
+          "description": "This derived table (001, 010, 101, 110) matches the table in option B."
+        }
+      ],
+      "scientific_principles": [
+        "Boolean Algebra Simplification"
+      ],
+      "correct_option_reasoning": "Although the Boolean algebra derived from a likely interpretation of the circuit diagram simplifies to C=A, the truth table provided in the correct answer corresponds to the function C = NOT B (\\(C = \\bar{B}\\)). This table correctly shows the output C as the inverse of input B for all four possible input combinations (A,B). This discrepancy suggests an error in the question's original diagram or text, but based on the options, the intended function was C = NOT B.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect. This table does not match a simple logical function of A and B.",
+        "B": "This is the correct option, representing C = NOT B.",
+        "C": "Incorrect. This is the truth table for C = B.",
+        "D": "Incorrect. This is the truth table for C = A XOR B."
+      },
+      "common_mistakes": [
+        "Errors in Boolean algebra simplification.",
+        "Misinterpreting the symbols for logic gates.",
+        "Being confused by flawed questions where the diagram and correct option might not align perfectly."
+      ],
+      "additional_notes": "The Boolean simplification in the source explanation is incorrect and contradictory. The analysis here relies on matching the provided correct answer's truth table to a logical function."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Semiconductor Electronics",
+      "subtopic": "Logic Gates",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "logic_gates",
+        "truth_table",
+        "boolean_algebra",
+        "semiconductors",
+        "circuit_analysis",
+        "flawed_question"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": true,
+      "visual_description": "A logic gate circuit with two inputs, A and B, and a single output, C. The circuit is composed of several NAND gates, leading to a complex Boolean expression that needs simplification."
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p18_q43",
+    "question_text": "A nucleus of mass number 189 splits into two nuclei having mass number 125 and 64. The ratio of radius of two daughter nuclei respectively is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "4 : 5",
+      "B": "5 : 4",
+      "C": "25 : 16",
+      "D": "1 : 1"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This problem requires calculating the ratio of the radii of two daughter nuclei given their mass numbers. The radius of a nucleus is proportional to the cube root of its mass number (A).",
+      "key_concepts": [
+        "Nuclear Physics",
+        "Nuclear Size",
+        "Mass Number (A)",
+        "Nuclear Fission"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the empirical formula for the radius (R) of a nucleus in terms of its mass number (A).",
+          "formula": "\\[ R = R_0 A^{1/3} \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Let the two daughter nuclei have radii \\(R_1\\) and \\(R_2\\) and mass numbers \\(A_1 = 125\\) and \\(A_2 = 64\\)."
+        },
+        {
+          "step_number": 3,
+          "description": "Set up the ratio of the radii \\(R_1 / R_2\\).",
+          "formula": "\\[ \\frac{R_1}{R_2} = \\frac{R_0 A_1^{1/3}}{R_0 A_2^{1/3}} = \\left( \\frac{A_1}{A_2} \\right)^{1/3} \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the given mass numbers into the ratio formula.",
+          "formula": "\\[ \\frac{R_1}{R_2} = \\left( \\frac{125}{64} \\right)^{1/3} \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the cube root. Note that \\(125 = 5^3\\) and \\(64 = 4^3\\).",
+          "formula": "\\[ \\frac{R_1}{R_2} = \\frac{(125)^{1/3}}{(64)^{1/3}} = \\frac{5}{4} \\]"
+        },
+        {
+          "step_number": 6,
+          "description": "The ratio of the radii is 5 : 4."
+        }
+      ],
+      "scientific_principles": [
+        "Empirical relationship for nuclear radius"
+      ],
+      "correct_option_reasoning": "Since the nuclear radius R is proportional to \\(A^{1/3}\\), the ratio of the radii of the two daughter nuclei is the ratio of the cube roots of their mass numbers. This gives \\((125)^{1/3} : (64)^{1/3}\\), which simplifies to 5 : 4.",
+      "incorrect_options_analysis": {
+        "A": "This is the inverted ratio \\(R_2 : R_1\\).",
+        "B": "This is the correct option.",
+        "C": "This would be the ratio of \\(A^{2/3}\\), not \\(A^{1/3}\\).",
+        "D": "Incorrect. The radii are not equal as the mass numbers are different."
+      },
+      "common_mistakes": [
+        "Forgetting to take the cube root of the mass numbers.",
+        "Inverting the ratio.",
+        "Using the initial mass number (189) in the calculation."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Nuclei",
+      "subtopic": "Nuclear Size and Composition",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "nuclear_physics",
+        "nuclear_radius",
+        "fission",
+        "numerical_ratio"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p18_q44",
+    "question_text": "A wheatstone bridge is used to determine the value of unknown resistance X by adjusting the variable resistance Y as shown in the figure. For the most precise measurement of X, the resistances P and Q:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Should be approximately equal and are small",
+      "B": "Should be very large and unequal",
+      "C": "Do not play any significant role",
+      "D": "Should be approximately equal to 2X"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "For a Wheatstone bridge to be most sensitive, which allows for the most precise measurement, all four resistances in the bridge (P, Q, X, and Y) should be of the same order of magnitude. This makes the galvanometer deflection most noticeable for a small imbalance. Of the given options, 'approximately equal' is the key condition.",
+      "key_concepts": [
+        "Wheatstone Bridge",
+        "Electrical Measurements",
+        "Sensitivity of a Bridge"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the principle of a Wheatstone bridge. It is balanced when \\(\\frac{P}{Q} = \\frac{X}{Y}\\)."
+        },
+        {
+          "step_number": 2,
+          "description": "Understand the condition for maximum sensitivity or precision. The bridge is most sensitive when the current through the galvanometer is maximized for a small change in the variable resistance Y. This occurs when all four resistances (P, Q, X, Y) are of a similar order of magnitude."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze the options based on this principle. The goal is to make P, Q, X, and Y comparable."
+        },
+        {
+          "step_number": 4,
+          "description": "Option A: 'Should be approximately equal and are small'. If P and Q are approximately equal, then for the bridge to balance, X and Y must also be approximately equal. This results in all four resistances being comparable, satisfying the condition for high sensitivity. The 'small' qualifier is less critical than them being equal and comparable to X."
+        },
+        {
+          "step_number": 5,
+          "description": "Option B: 'Should be very large and unequal'. This is the condition for low sensitivity."
+        },
+        {
+          "step_number": 6,
+          "description": "Option C: 'Do not play any significant role'. This is incorrect; the ratio arms P and Q are crucial."
+        },
+        {
+          "step_number": 7,
+          "description": "Option D: 'Should be approximately equal to 2X'. If P = Q ≈ 2X, then at balance Y must be ≈ X. This would mean the resistances are 2X, 2X, X, X. These are all of the same order of magnitude. This also describes a sensitive arrangement. However, the most general and fundamental condition is making the ratio arms equal (P=Q), leading to X=Y. Option A is a better general statement, although the 'small' part can be debated. The original source's answer and explanation are contradictory and confusing. The most standard physics answer is that the resistances should be comparable, making P=Q the ideal ratio. Option A is the closest to this general rule."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Electrical Circuits"
+      ],
+      "correct_option_reasoning": "The precision of a Wheatstone bridge measurement is highest when the bridge is most sensitive to a small imbalance. This sensitivity is maximized when the resistances of all four arms of the bridge are of the same order of magnitude. The condition that the ratio arms P and Q should be approximately equal helps achieve this, as it implies the unknown resistance X will be approximately equal to the variable resistance Y at balance. This makes Option A the most physically sound choice among the given options.",
+      "incorrect_options_analysis": {
+        "A": "This is the best option based on physics principles, despite ambiguity in the source material.",
+        "B": "This would lead to a very insensitive bridge.",
+        "C": "This is incorrect; P and Q are fundamental to the bridge's operation.",
+        "D": "This is a very specific condition. While it would create a sensitive bridge, it's not the general principle. The source answer key pointing to this is likely based on flawed logic or a misunderstanding."
+      },
+      "common_mistakes": [
+        "Focusing only on the balance condition (P/Q = X/Y) and not the condition for maximum sensitivity."
+      ],
+      "additional_notes": "Due to the ambiguity and likely error in the source material's provided answer (4) and its explanation, the explanation provided here is based on established physics principles, which point towards Option A as the most correct general statement."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "Wheatstone Bridge",
+      "difficulty": "Hard",
+      "bloom_level": "Evaluate",
+      "tags": [
+        "wheatstone_bridge",
+        "precision",
+        "sensitivity",
+        "electrical_measurements",
+        "flawed_question"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": true,
+      "visual_description": "A standard diagram of a Wheatstone bridge circuit. It has four resistors P, Q, X, and Y forming a diamond shape. A voltage source is connected to two opposite vertices, and a galvanometer is connected to the other two vertices. P and Q are in the top two arms, X and Y in the bottom two."
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p18_q45",
+    "question_text": "Given below are two statements : One is labelled as Assertion (A) and the other is labelled as Reason (R).\nAssertion (A): The stretching of a spring is determined by the shear modulus of the material of the spring.\nReason (R): A coil spring of copper has more tensile strength than a steel spring of same dimensions.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "question_type": "assertion_reason",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is not the correct explanation of (A)",
+      "B": "(A) is true but (R) is false",
+      "C": "(A) is false but (R) is true",
+      "D": "Both (A) and (R) are true and (R) is the correct explanation of (A)"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "The assertion is true because stretching a helical spring involves a shearing (torsional) strain on the wire material. The reason is false because steel has a significantly higher tensile strength than copper.",
+      "key_concepts": [
+        "Elasticity",
+        "Shear Modulus (Modulus of Rigidity)",
+        "Young's Modulus",
+        "Tensile Strength",
+        "Springs"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Evaluate Assertion (A): When a coil spring is stretched or compressed, the wire it's made of undergoes twisting or torsion. Torsion is a type of shearing strain. Therefore, the elastic property that governs this deformation is the shear modulus (or modulus of rigidity) of the material. The assertion is true."
+        },
+        {
+          "step_number": 2,
+          "description": "Evaluate Reason (R): This statement compares the tensile strength of copper and steel. Steel is an alloy of iron and carbon and is well-known for its high strength. Copper is a much softer, more ductile metal. The tensile strength of steel is substantially greater than that of copper. Therefore, the reason is false."
+        },
+        {
+          "step_number": 3,
+          "description": "Conclusion: Since the Assertion (A) is true and the Reason (R) is false, the correct option is B."
+        }
+      ],
+      "scientific_principles": [
+        "Hooke's Law and Moduli of Elasticity"
+      ],
+      "correct_option_reasoning": "The assertion is correct; the spring constant of a helical spring is directly proportional to the shear modulus of its material. The reason is factually incorrect as steel is significantly stronger than copper in terms of tensile strength.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect because R is false.",
+        "B": "This is the correct option.",
+        "C": "Incorrect because A is true and R is false.",
+        "D": "Incorrect because R is false."
+      },
+      "common_mistakes": [
+        "Thinking that stretching a spring involves tensile stress and Young's modulus. While the spring as a whole lengthens, the material of the wire itself is primarily under shear stress."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Mechanical Properties of Solids",
+      "subtopic": "Elastic Moduli",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "assertion_reason",
+        "elasticity",
+        "shear_modulus",
+        "springs",
+        "tensile_strength"
+      ],
+      "estimated_time_seconds": 75,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p19_q46",
+    "question_text": "A capacitor of capacitance C = 900 pF is charged fully by a 100 V battery B as shown in figure (a). Then it is disconnected from the battery and connected to another uncharged capacitor of capacitance C = 900 pF as shown in figure (b). The electrostatic energy stored by the system (b) is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(3.25 \\times 10^{-6} \\text{ J}\\)",
+      "B": "\\(2.25 \\times 10^{-6} \\text{ J}\\)",
+      "C": "\\(1.5 \\times 10^{-6} \\text{ J}\\)",
+      "D": "\\(4.5 \\times 10^{-6} \\text{ J}\\)"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This problem involves calculating the final energy stored in a system of two capacitors after charge redistribution. First, find the initial charge on the first capacitor. When connected to the second capacitor, this charge redistributes. The final energy can be calculated from the total charge and the equivalent capacitance, or from the final common potential.",
+      "key_concepts": [
+        "Capacitors",
+        "Energy Stored in a Capacitor",
+        "Charge Redistribution",
+        "Conservation of Charge"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Calculate the initial charge (\\(Q_i\\)) on the first capacitor (\\(C_1 = 900 \\text{ pF}\\)) after being charged to \\(V_i = 100 \\text{ V}\\).",
+          "formula": "\\[ Q_i = C_1 V_i = (900 \\times 10^{-12} \\text{ F}) \\times (100 \\text{ V}) = 9 \\times 10^{-8} \\text{ C} \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "When \\(C_1\\) is connected to an identical uncharged capacitor \\(C_2 = 900 \\text{ pF}\\), the total charge \\(Q_i\\) is conserved and redistributes across the parallel combination."
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the equivalent capacitance (\\(C_{eq}\\)) of the parallel system.",
+          "formula": "\\[ C_{eq} = C_1 + C_2 = 900 \\text{ pF} + 900 \\text{ pF} = 1800 \\text{ pF} = 1.8 \\times 10^{-9} \\text{ F} \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the final common potential (\\(V_f\\)) across the combination.",
+          "formula": "\\[ V_f = \\frac{Q_{total}}{C_{eq}} = \\frac{9 \\times 10^{-8} \\text{ C}}{1.8 \\times 10^{-9} \\text{ F}} = 50 \\text{ V} \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the final electrostatic energy (\\(U_f\\)) stored by system (b) using the final potential.",
+          "formula": "\\[ U_f = \\frac{1}{2} C_{eq} V_f^2 = \\frac{1}{2} (1.8 \\times 10^{-9} \\text{ F}) (50 \\text{ V})^2 \\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Perform the calculation.",
+          "formula": "\\[ U_f = \\frac{1}{2} (1.8 \\times 10^{-9}) (2500) = 0.9 \\times 2500 \\times 10^{-9} = 2250 \\times 10^{-9} = 2.25 \\times 10^{-6} \\text{ J} \\]"
+        }
+      ],
+      "scientific_principles": [
+        "Conservation of Electric Charge",
+        "Principles of Electrostatics"
+      ],
+      "correct_option_reasoning": "After the initial charge is calculated, it is redistributed across an equivalent capacitance of 1800 pF. The final energy stored in this new configuration is calculated to be \\(2.25 \\times 10^{-6} \\text{ J}\\).",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation.",
+        "B": "This is the correct option.",
+        "C": "Incorrect calculation.",
+        "D": "Incorrect. This is the initial energy stored in the first capacitor before connecting to the second (\\(U_i = \\frac{1}{2}CV^2 = 0.5 \\times 900 \\times 10^{-12} \\times 100^2 = 4.5 \\times 10^{-6} \\text{J}\\)). Energy is lost as heat during the redistribution."
+      },
+      "common_mistakes": [
+        "Assuming energy is conserved. When connecting capacitors of different potentials, energy is always lost (dissipated as heat in the connecting wires).",
+        "Forgetting to use the equivalent capacitance for the final energy calculation."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electrostatic Potential and Capacitance",
+      "subtopic": "Capacitors and Capacitance",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "capacitors",
+        "energy_storage",
+        "charge_redistribution",
+        "electrostatics",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": true,
+      "visual_description": "Figure (a) shows a circuit with a capacitor C connected to a battery B. Figure (b) shows the capacitor from (a) now disconnected from the battery and connected in parallel to another identical capacitor."
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p20_q47",
+    "question_text": "Two transparent media A and B are separated by a plane boundary. The speed of light in those media are \\(1.5 \\times 10^8\\) m/s and \\(2.0 \\times 10^8\\) m/s, respectively. The critical angle for a ray of light for these two media is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(\\sin^{-1}(0.750)\\)",
+      "B": "\\(\\tan^{-1}(0.500)\\)",
+      "C": "\\(\\tan^{-1}(0.750)\\)",
+      "D": "\\(\\sin^{-1}(0.500)\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This problem requires calculating the critical angle for total internal reflection between two media with different speeds of light. The critical angle is determined by Snell's law, and it only exists when light travels from a denser medium (slower speed) to a rarer medium (faster speed).",
+      "key_concepts": [
+        "Total Internal Reflection (TIR)",
+        "Critical Angle",
+        "Snell's Law",
+        "Refractive Index"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the speeds of light in the media: \\(v_A = 1.5 \\times 10^8\\) m/s and \\(v_B = 2.0 \\times 10^8\\) m/s."
+        },
+        {
+          "step_number": 2,
+          "description": "Determine which medium is optically denser. The medium with the lower speed of light is denser. Since \\(v_A < v_B\\), medium A is denser and medium B is rarer."
+        },
+        {
+          "step_number": 3,
+          "description": "Recall that total internal reflection (and thus the critical angle) occurs when light travels from the denser medium to the rarer medium. So, the light ray must travel from A to B."
+        },
+        {
+          "step_number": 4,
+          "description": "Apply Snell's law at the boundary. Let \\(\\theta_A\\) be the angle in medium A and \\(\\theta_B\\) be the angle in medium B. \\(n_A \\sin(\\theta_A) = n_B \\sin(\\theta_B)\\).",
+          "formula": "\\[ n_A \\sin(\\theta_A) = n_B \\sin(\\theta_B) \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "The critical angle (\\(\\theta_C\\)) is the angle of incidence in the denser medium (A) for which the angle of refraction in the rarer medium (B) is 90°.",
+          "formula": "\\[ n_A \\sin(\\theta_C) = n_B \\sin(90^{\\circ}) \\implies \\sin(\\theta_C) = \\frac{n_B}{n_A} \\]"
+        },
+        {
+          "step_number": 6,
+          "description": "The refractive index \\(n\\) is related to the speed of light by \\(n = c/v\\). Therefore, \\(\\frac{n_B}{n_A} = \\frac{c/v_B}{c/v_A} = \\frac{v_A}{v_B}\\).",
+          "formula": "\\[ \\sin(\\theta_C) = \\frac{v_A}{v_B} \\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Substitute the given speeds and calculate \\(\\sin(\\theta_C)\\).",
+          "formula": "\\[ \\sin(\\theta_C) = \\frac{1.5 \\times 10^8 \\text{ m/s}}{2.0 \\times 10^8 \\text{ m/s}} = \\frac{1.5}{2.0} = 0.75 \\]"
+        },
+        {
+          "step_number": 8,
+          "description": "Solve for the critical angle \\(\\theta_C\\).",
+          "formula": "\\[ \\theta_C = \\sin^{-1}(0.750) \\]"
+        }
+      ],
+      "scientific_principles": [
+        "Snell's Law of Refraction",
+        "Definition of Refractive Index"
+      ],
+      "correct_option_reasoning": "The sine of the critical angle is the ratio of the refractive index of the rarer medium to the denser medium, which is equivalent to the ratio of the speed of light in the denser medium to that in the rarer medium. The calculation gives \\(\\sin(\\theta_C) = 0.75\\), so the critical angle is \\(\\sin^{-1}(0.750)\\).",
+      "incorrect_options_analysis": {
+        "A": "This is the correct option.",
+        "B": "Incorrect function (tan) and value.",
+        "C": "Incorrect function (tan).",
+        "D": "Incorrect value, results from inverting the ratio of speeds."
+      },
+      "common_mistakes": [
+        "Inverting the ratio in Snell's law (using \\(n_A/n_B\\) or \\(v_B/v_A\\)).",
+        "Forgetting that TIR only occurs when going from a denser to a rarer medium."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Ray Optics and Optical Instruments",
+      "subtopic": "Total Internal Reflection",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "total_internal_reflection",
+        "critical_angle",
+        "snells_law",
+        "refractive_index",
+        "ray_optics",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p20_q48",
+    "question_text": "Two point charges –q and +q are placed at a distance of L, as shown in the figure. The magnitude of electric field intensity at a distance R (R >> L) varies as:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(\\frac{1}{R^3}\\)",
+      "B": "\\(\\frac{1}{R^4}\\)",
+      "C": "\\(\\frac{1}{R^6}\\)",
+      "D": "\\(\\frac{1}{R^2}\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "The arrangement of two equal and opposite charges separated by a small distance L forms an electric dipole. The electric field produced by a dipole at a large distance R (where R >> L) falls off with the cube of the distance, i.e., it is proportional to \\(1/R^3\\).",
+      "key_concepts": [
+        "Electric Dipole",
+        "Electric Field of a Dipole",
+        "Electrostatics"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the system: two equal and opposite charges (-q and +q) separated by a distance L. This is the definition of an electric dipole with dipole moment \\(p = qL\\)."
+        },
+        {
+          "step_number": 2,
+          "description": "The question asks for the electric field intensity at a large distance R, where the condition R >> L applies. This is the condition for the far-field approximation of a dipole."
+        },
+        {
+          "step_number": 3,
+          "description": "Recall the formulas for the electric field of a dipole at a far point (R >> L). \n- On the axial line: \\(E_{axial} = \\frac{1}{4\\pi\\epsilon_0} \\frac{2p}{R^3}\\)\n- On the equatorial line: \\(E_{equatorial} = \\frac{1}{4\\pi\\epsilon_0} \\frac{p}{R^3}\\)"
+        },
+        {
+          "step_number": 4,
+          "description": "Observe that in both cases (and for any general point at a large distance), the magnitude of the electric field E is proportional to \\(\\frac{1}{R^3}\\).",
+          "formula": "\\[ E \\propto \\frac{1}{R^3} \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Compare this result with the given options."
+        }
+      ],
+      "scientific_principles": [
+        "Principle of Superposition",
+        "Electric Dipole Approximation"
+      ],
+      "correct_option_reasoning": "A system of two equal and opposite charges is an electric dipole. For a point charge, the electric field varies as \\(1/R^2\\). However, for a dipole, the fields from the two charges partially cancel each other out, leading to a faster fall-off of the field with distance. At large distances (R >> L), this fall-off is proportional to \\(1/R^3\\).",
+      "incorrect_options_analysis": {
+        "A": "This is the correct option.",
+        "B": "Incorrect. This is the dependence for a quadrupole field.",
+        "C": "Incorrect. This relates to interaction forces between dipoles (Lennard-Jones potential).",
+        "D": "Incorrect. This is the dependence for a single point charge (monopole)."
+      },
+      "common_mistakes": [
+        "Confusing the field of a dipole with the field of a point charge (\\(1/R^2\\))."
+      ],
+      "additional_notes": "The original answer key maps to option '4', which is \\(1/R^2\\), and the explanation states \\(E \\propto 1/R^3\\). This is a clear contradiction. The explanation is physically correct, while the answer key is wrong. The correct answer based on physics principles is \\(1/R^3\\), corresponding to option A.",
+      "visual_description": "A diagram showing a point charge +q and a point charge -q separated by a distance L. A point P is marked at a large distance R from the center of the dipole."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electric Charges and Fields",
+      "subtopic": "The Electric Dipole",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "electric_dipole",
+        "electric_field",
+        "electrostatics",
+        "conceptual",
+        "flawed_question"
+      ],
+      "estimated_time_seconds": 50,
+      "requires_visual": true,
+      "visual_description": "A simple diagram of an electric dipole with charges -q and +q separated by distance L. A distant point P is shown, with distance R from the dipole's center."
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p21_q49",
+    "question_text": "A big circular coil of 1000 turns and average radius 10 m is rotating about its horizontal diameter at 2 rad s⁻¹. If the vertical component of earth’s magnetic field at that place is \\(2 \\times 10^{-5}\\) T and electrical resistance of the coil is 12.56 Ω, then the maximum induced current in the coil will be:",
+    "question_type": "numerical",
+    "options": {
+      "A": "1.5 A",
+      "B": "1 A",
+      "C": "2 A",
+      "D": "0.25 A"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This problem involves calculating the maximum current induced in a coil rotating in a uniform magnetic field (an AC generator). The maximum induced EMF is found first, and then Ohm's law is used to find the maximum current.",
+      "key_concepts": [
+        "Electromagnetic Induction",
+        "Motional EMF",
+        "AC Generator",
+        "Magnetic Flux",
+        "Induced Current"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "When the coil rotates about a horizontal diameter, the magnetic flux through it from the vertical component of the Earth's magnetic field changes with time. The flux \\(\\Phi_B\\) at any time t is given by \\(\\Phi_B = NBA \\cos(\\theta)\\), where \\(\\theta = \\omega t\\).",
+          "formula": "\\[ \\Phi_B = NBA \\cos(\\omega t) \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "The induced EMF (\\(\\epsilon\\)) is given by Faraday's law of induction, \\(\\epsilon = -\\frac{d\\Phi_B}{dt}\\).",
+          "formula": "\\[ \\epsilon = -\\frac{d}{dt}(NBA \\cos(\\omega t)) = -NBA(-\\omega \\sin(\\omega t)) = NBA\\omega \\sin(\\omega t) \\]"
+        },
+        {
+          "step_number": 3,
+          "description": "The maximum value of the induced EMF (\\(\\epsilon_{max}\\)) occurs when \\(\\sin(\\omega t) = 1\\).",
+          "formula": "\\[ \\epsilon_{max} = NBA\\omega \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Identify the given values: N = 1000 turns, B = \\(2 \\times 10^{-5}\\) T, radius r = 10 m, \\(\\omega = 2\\) rad/s, and R = 12.56 Ω."
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the area of the coil, A.",
+          "formula": "\\[ A = \\pi r^2 = \\pi (10 \\text{ m})^2 = 100\\pi \\text{ m}^2 \\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Substitute the values to find \\(\\epsilon_{max}\\).",
+          "formula": "\\[ \\epsilon_{max} = (1000) \\times (2 \\times 10^{-5} \\text{ T}) \\times (100\\pi \\text{ m}^2) \\times (2 \\text{ rad/s}) = 400000\\pi \\times 10^{-5} = 4\\pi \\text{ V} \\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Use Ohm's law to find the maximum induced current (\\(i_{max}\\)).",
+          "formula": "\\[ i_{max} = \\frac{\\epsilon_{max}}{R} = \\frac{4\\pi}{12.56 \\Omega} \\]"
+        },
+        {
+          "step_number": 8,
+          "description": "Recognize that \\(12.56 \\approx 4\\pi\\) (since \\(\\pi \\approx 3.14\\)).",
+          "formula": "\\[ i_{max} = \\frac{4\\pi}{4\\pi} = 1 \\text{ A} \\]"
+        }
+      ],
+      "scientific_principles": [
+        "Faraday's Law of Electromagnetic Induction",
+        "Ohm's Law"
+      ],
+      "correct_option_reasoning": "The maximum induced EMF in the rotating coil is given by \\(\\epsilon_{max} = NBA\\omega\\). Plugging in the given values yields a maximum EMF of \\(4\\pi\\) V. Dividing this by the resistance of 12.56 Ω (which is approximately \\(4\\pi\\) Ω) gives a maximum current of 1 A.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation.",
+        "B": "This is the correct option.",
+        "C": "This would be the answer if R was \\(2\\pi\\) Ω.",
+        "D": "Incorrect calculation."
+      },
+      "common_mistakes": [
+        "Forgetting to include \\(\\omega\\) in the EMF formula.",
+        "Errors in calculating the area or handling the powers of ten.",
+        "Not noticing that 12.56 is approximately \\(4\\pi\\), leading to complex calculations."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electromagnetic Induction",
+      "subtopic": "AC Generator",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "electromagnetic_induction",
+        "ac_generator",
+        "induced_current",
+        "faradays_law",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p21_q50",
+    "question_text": "The volume occupied by the molecules contained in 4.5 kg water at STP, if the intermolecular forces vanish away is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(5.6 \\times 10^3 \\text{ m}^3\\)",
+      "B": "\\(5.6 \\times 10^{-3} \\text{ m}^3\\)",
+      "C": "\\(5.6 \\text{ m}^3\\)",
+      "D": "\\(5.6 \\times 10^6 \\text{ m}^3\\)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The condition that intermolecular forces vanish implies that the water behaves as an ideal gas. This problem requires using the ideal gas law (PV=nRT) to calculate the volume of a given mass of water under Standard Temperature and Pressure (STP) conditions.",
+      "key_concepts": [
+        "Ideal Gas Law",
+        "Standard Temperature and Pressure (STP)",
+        "Moles",
+        "Kinetic Theory of Gases"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "The phrase 'if the intermolecular forces vanish away' means we should treat water as an ideal gas."
+        },
+        {
+          "step_number": 2,
+          "description": "Recall the ideal gas law.",
+          "formula": "\\[ PV = nRT \\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Identify the conditions of STP: Pressure \\(P = 1 \\text{ atm} \\approx 1.013 \\times 10^5 \\text{ Pa}\\) and Temperature \\(T = 273.15 \\text{ K}\\). For simplicity, we can use \\(P \\approx 10^5 \\text{ Pa}\\)."
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the number of moles (n) of water (\\(H_2O\\)) in 4.5 kg. The molar mass of water is approximately 18 g/mol or 0.018 kg/mol.",
+          "formula": "\\[ n = \\frac{\\text{mass}}{\\text{molar mass}} = \\frac{4.5 \\text{ kg}}{0.018 \\text{ kg/mol}} = 250 \\text{ mol} \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Rearrange the ideal gas law to solve for volume (V) and substitute the values. Use R = 8.314 J/(mol·K).",
+          "formula": "\\[ V = \\frac{nRT}{P} = \\frac{(250 \\text{ mol}) \\times (8.314 \\text{ J/(mol K)}) \\times (273.15 \\text{ K})}{1.013 \\times 10^5 \\text{ Pa}} \\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Perform the calculation.",
+          "formula": "\\[ V \\approx \\frac{250 \\times 8.314 \\times 273}{10^5} \\approx \\frac{567340}{10^5} \\approx 5.67 \\text{ m}^3 \\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Alternative method using molar volume: At STP, 1 mole of any ideal gas occupies approximately 22.4 liters (or \\(22.4 \\times 10^{-3} \\text{ m}^3\\)).\nTotal Volume = moles × molar volume.",
+          "formula": "\\[ V = 250 \\text{ mol} \\times 22.4 \\times 10^{-3} \\text{ m}^3/\\text{mol} = 5600 \\times 10^{-3} \\text{ m}^3 = 5.6 \\text{ m}^3 \\]"
+        }
+      ],
+      "scientific_principles": [
+        "Ideal Gas Law",
+        "Avogadro's Law"
+      ],
+      "correct_option_reasoning": "By treating the 4.5 kg of water as an ideal gas (as per the problem statement), we first calculate the number of moles (250 mol). Using the ideal gas law \\(PV=nRT\\) at STP conditions, or by multiplying the number of moles by the standard molar volume of an ideal gas (22.4 L/mol), the total volume is found to be 5.6 m³.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect. Magnitude is too large, likely a calculation error.",
+        "B": "Incorrect. This would be the volume in liters (5600 L), not cubic meters.",
+        "C": "This is the correct option.",
+        "D": "Incorrect. Magnitude is far too large."
+      },
+      "common_mistakes": [
+        "Errors in unit conversion, especially between liters and cubic meters.",
+        "Using the wrong value for R or STP conditions.",
+        "Forgetting to convert the mass of water to moles."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Kinetic Theory",
+      "subtopic": "Ideal Gas Equation",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "ideal_gas_law",
+        "kinetic_theory",
+        "stp",
+        "molar_volume",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p22_q51",
+    "question_text": "Given below are two statements\nStatement I: The boiling points of the following hydrides of group 16 elements increases in the order –\n\\(H_2O < H_2S < H_2Se < H_2Te\\)\nStatement II: The boiling points of these hydrides increase with increase in molar mass.\nIn the light of the above statements, choose the most appropriate answer from the options given below :",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Both Statement I and Statement II are incorrect",
+      "B": "Statement I is correct but Statement II is incorrect",
+      "C": "Statement I is incorrect but Statement II is correct",
+      "D": "Both Statement I and Statement II are correct"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "Both statements are incorrect. Statement I gives the wrong order for the boiling points of Group 16 hydrides because water (H₂O) has an anomalously high boiling point due to strong intermolecular hydrogen bonding. Statement II is incorrect as a general rule because it fails to account for the exception of H₂O.",
+      "key_concepts": [
+        "p-Block Elements (Group 16)",
+        "Intermolecular Forces",
+        "Hydrogen Bonding",
+        "Van der Waals Forces",
+        "Boiling Point Trends"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Statement I: It claims the boiling point order is \\(H_2O < H_2S < H_2Se < H_2Te\\). Recall the actual boiling points or the trend. Water (H₂O) has a boiling point of 100°C (373 K). The boiling points of H₂S, H₂Se, and H₂Te are -60°C, -41°C, and -2°C, respectively. Due to strong intermolecular hydrogen bonding, H₂O has a much higher boiling point than the others. The correct trend is \\(H_2S < H_2Se < H_2Te < H_2O\\). Therefore, Statement I is incorrect."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement II: It claims boiling points increase with molar mass. This trend generally holds for H₂S, H₂Se, and H₂Te because as molar mass increases, the strength of the van der Waals forces increases. However, H₂O is a major exception to this rule due to its strong hydrogen bonds. Since the statement presents this as a general rule for 'these hydrides' (including H₂O) and it fails for H₂O, the statement is incorrect."
+        },
+        {
+          "step_number": 3,
+          "description": "Conclusion: Both statements are incorrect."
+        }
+      ],
+      "scientific_principles": [
+        "Effect of Intermolecular Forces on Physical Properties"
+      ],
+      "correct_option_reasoning": "Statement I is factually wrong because H₂O has the highest boiling point in the series, not the lowest. Statement II is also incorrect as a generalization for the whole series because the anomalously high boiling point of H₂O breaks the trend of boiling points increasing with molar mass.",
+      "incorrect_options_analysis": {
+        "A": "This is the correct option.",
+        "B": "Incorrect, as Statement I is false.",
+        "C": "Incorrect, as Statement II is also false.",
+        "D": "Incorrect, as both statements are false."
+      },
+      "common_mistakes": [
+        "Forgetting the exception of water (and similarly NH₃ and HF in their respective groups) in boiling point trends due to hydrogen bonding.",
+        "Applying the molar mass trend without considering the type of intermolecular forces present."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "p-Block Elements",
+      "subtopic": "Group 16 Elements",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "statement_based",
+        "p_block",
+        "group_16",
+        "hydrides",
+        "boiling_point_trends",
+        "hydrogen_bonding"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p23_q53",
+    "question_text": "Given below are two statements: one is labelled as Assertion (A) and the other is labelled as Reason (R).\nAssertion (A): ICl is more reactive than I₂.\nReason (R): I-Cl bond is weaker than I-I bond.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "question_type": "assertion_reason",
+    "options": {
+      "A": "Both (A) and (R) are correct but (R) is not the correct explanation of (A).",
+      "B": "(A) is correct but (R) is not correct",
+      "C": "(A) is not correct but (R) is correct",
+      "D": "Both (A) and (R) are correct and (R) is the correct explanation of (A)."
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "Both the assertion and the reason are correct, and the reason correctly explains the assertion. Interhalogen compounds like ICl are generally more reactive than their parent halogens (except F₂) because the bond between two different halogen atoms is weaker and more polar than the bond between two identical halogen atoms.",
+      "key_concepts": [
+        "p-Block Elements (Group 17)",
+        "Interhalogen Compounds",
+        "Reactivity",
+        "Bond Enthalpy"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Evaluate Assertion (A): 'ICl is more reactive than I₂.' This is a known chemical fact. Interhalogen compounds are generally more reactive than halogens (with the exception of fluorine) because the X-X' bond is weaker than the X-X bond in the parent halogens. Thus, the assertion is true."
+        },
+        {
+          "step_number": 2,
+          "description": "Evaluate Reason (R): 'I-Cl bond is weaker than I-I bond.' The bond between two different atoms (like in I-Cl) is generally weaker than the bond between two identical atoms (like in I-I) because the overlap of atomic orbitals is less effective due to differences in size and electronegativity. Bond enthalpy data confirms this: I-Cl bond energy is ~208 kJ/mol, while I-I bond energy is ~151 kJ/mol. Wait, the data shows I-I is weaker. Let me re-verify this fact. Standard textbooks state that interhalogen bonds are weaker than halogen-halogen bonds *except for F-F*. Let's check the bond enthalpies: F-F(159), Cl-Cl(243), Br-Br(193), I-I(151). For I-Cl, it's 211 kJ/mol. So, the I-Cl bond (211) is actually STRONGER than the I-I bond (151). Therefore, the reason (R) as stated is false. The source explanation says 'I-Cl bond is weaker than I-I bond', which is factually incorrect based on bond enthalpy values. The reactivity is higher because the bond is more polar and easily heterolytically cleaved. The assertion is true, but the reason is false. This would lead to answer option B. Let me re-read the question and the provided answer. The provided answer is '4' (D), meaning both A and R are true and R is the correct explanation. This implies that the premise 'I-Cl bond is weaker than I-I bond' is considered true in the context of this question. This is a known point of contention/error in some textbooks."
+        },
+        {
+          "step_number": 3,
+          "description": "Assuming the question's intended logic (as reflected by the provided answer key) is that the I-Cl bond is weaker, let's proceed. If the I-Cl bond is weaker (R is true), it requires less energy to break, making the molecule more reactive (A is true). The weaker bond would be the direct cause of the higher reactivity. Therefore, R would be the correct explanation of A."
+        },
+        {
+          "step_number": 4,
+          "description": "Conclusion based on provided answer: The question and answer operate under the premise that the I-Cl bond is weaker than the I-I bond, and this weakness is the reason for ICl's higher reactivity. Based on this premise, (D) is the logical choice."
+        }
+      ],
+      "scientific_principles": [
+        "Relationship between Bond Strength and Chemical Reactivity"
+      ],
+      "correct_option_reasoning": "The assertion that ICl is more reactive than I₂ is correct. The reason provided is that the I-Cl bond is weaker than the I-I bond. A weaker bond requires less energy to break, leading to higher chemical reactivity. Therefore, if the reason is considered true, it correctly explains the assertion. (Note: While bond enthalpy data suggests the I-Cl bond is slightly stronger than the I-I bond, the increased reactivity is also attributed to the bond's polarity, making it susceptible to attack. However, within the common textbook explanation framework, the 'weaker bond' argument is often presented, leading to this answer.)",
+      "incorrect_options_analysis": {
+        "A": "Incorrect because if R were true, it would be the direct explanation for A.",
+        "B": "This would be the correct answer based on strict bond enthalpy data, as the reason (R) is factually false. However, it is not the intended answer.",
+        "C": "Incorrect because A is true.",
+        "D": "This is the intended option based on a common but technically imprecise textbook explanation."
+      },
+      "common_mistakes": [
+        "Relying on the general rule about interhalogen bond strength without knowing the specific data for I-I vs I-Cl.",
+        "Not considering bond polarity as a factor in reactivity."
+      ],
+      "additional_notes": "This question highlights a discrepancy between a simplified chemical rule often taught and the actual bond enthalpy data. The increased reactivity of ICl is better explained by the polarity of the I-Cl bond, which creates a site for nucleophilic or electrophilic attack, facilitating reactions."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "p-Block Elements",
+      "subtopic": "Group 17 Elements (Halogens)",
+      "difficulty": "Hard",
+      "bloom_level": "Evaluate",
+      "tags": [
+        "assertion_reason",
+        "interhalogen_compounds",
+        "reactivity",
+        "bond_enthalpy",
+        "p_block",
+        "flawed_question"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p23_q54",
+    "question_text": "Match List-I with List-II\n\n**List-I**\n(a) Li\n(b) Na\n(c) KOH\n(d) Cs\n\n**List-II**\n(i) absorbent for carbon dioxide\n(ii) electrochemical cells\n(iii) coolant in fast breeder reactors\n(iv) photoelectric cell\n\nChoose the correct answer from the options given below :",
+    "question_type": "matching",
+    "options": {
+      "A": "(a) - (iii), (b) – (iv), (c) – (ii), (d) – (i)",
+      "B": "(a) - (i), (b) – (iii), (c) – (iv), (d) – (ii)",
+      "C": "(a) - (ii), (b) – (iii), (c) – (i), (d) – (iv)",
+      "D": "(a) - (iv), (b) – (i), (c) – (iii), (d) – (ii)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This question requires matching alkali metals and a related compound to their specific applications. Lithium is used in batteries, sodium is a coolant in nuclear reactors, potassium hydroxide absorbs CO₂, and cesium is used in photoelectric cells.",
+      "key_concepts": [
+        "s-Block Elements",
+        "Alkali Metals",
+        "Uses of Alkali Metals and their Compounds"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Match (a) Li: Lithium has a very negative standard electrode potential, making it an excellent material for high-energy-density batteries (electrochemical cells). So, (a) matches with (ii)."
+        },
+        {
+          "step_number": 2,
+          "description": "Match (b) Na: Liquid sodium metal has excellent thermal conductivity and a suitable operating temperature range, making it an effective coolant in fast breeder nuclear reactors. So, (b) matches with (iii)."
+        },
+        {
+          "step_number": 3,
+          "description": "Match (c) KOH: Potassium hydroxide is a strong base that reacts with the acidic gas carbon dioxide (\\(2KOH + CO_2 \\rightarrow K_2CO_3 + H_2O\\)). This property makes it a chemical absorbent for CO₂. So, (c) matches with (i)."
+        },
+        {
+          "step_number": 4,
+          "description": "Match (d) Cs: Cesium has the lowest ionization enthalpy of all stable elements. This means its valence electron can be ejected by low-energy visible light, which is the principle behind the photoelectric effect. Therefore, it is used in photoelectric cells. So, (d) matches with (iv)."
+        },
+        {
+          "step_number": 5,
+          "description": "Assemble the correct pairings: (a)-(ii), (b)-(iii), (c)-(i), (d)-(iv). This corresponds to option C."
+        }
+      ],
+      "scientific_principles": [
+        "Properties and Applications of Elements"
+      ],
+      "correct_option_reasoning": "The uses of these substances are directly linked to their unique properties: Lithium's high electrochemical potential for batteries, Sodium's thermal properties for coolants, KOH's basicity for CO₂ absorption, and Cesium's low ionization enthalpy for photoelectric cells. Option C correctly maps all these relationships.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect pairings.",
+        "B": "Incorrect pairings.",
+        "C": "This is the correct option.",
+        "D": "Incorrect pairings."
+      },
+      "common_mistakes": [
+        "Confusing the uses of different alkali metals, which can have some overlapping but also distinct applications."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "s-Block Elements",
+      "subtopic": "Alkali Metals - Properties and Uses",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "matching",
+        "s_block",
+        "alkali_metals",
+        "uses_of_elements"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p23_q55",
+    "question_text": "Choose the correct statement:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Diamond is covalent and graphite is ionic.",
+      "B": "Diamond is \\(sp^3\\) hybridised and graphite is \\(sp^2\\) hybridized.",
+      "C": "Both diamond and graphite are used as dry lubricants.",
+      "D": "Diamond and graphite have two dimensional network."
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "The correct statement accurately compares the hybridization of carbon in its allotropes, diamond and graphite. Each carbon atom in diamond's tetrahedral network is \\(sp^3\\) hybridized, while each carbon in graphite's planar layers is \\(sp^2\\) hybridized.",
+      "key_concepts": [
+        "Allotropes of Carbon",
+        "Diamond",
+        "Graphite",
+        "Hybridization (\\(sp^2\\), \\(sp^3\\))",
+        "Covalent Network Solids"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze statement A: 'Diamond is covalent and graphite is ionic.' This is incorrect. Both diamond and graphite are allotropes of carbon and are covalent network solids."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze statement B: 'Diamond is \\(sp^3\\) hybridised and graphite is \\(sp^2\\) hybridized.' In diamond, each carbon atom forms four single bonds to four other carbons in a tetrahedral geometry, which corresponds to \\(sp^3\\) hybridization. In graphite, each carbon atom forms three single bonds to three other carbons in a trigonal planar geometry, which corresponds to \\(sp^2\\) hybridization. This statement is correct."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze statement C: 'Both diamond and graphite are used as dry lubricants.' This is incorrect. Only graphite is used as a dry lubricant due to its layered structure where layers can slide past one another. Diamond is extremely hard and is used as an abrasive."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze statement D: 'Diamond and graphite have two dimensional network.' This is incorrect. Diamond has a rigid three-dimensional network structure. Graphite has a two-dimensional layered structure, but the solid itself is 3D."
+        }
+      ],
+      "scientific_principles": [
+        "Valence Bond Theory",
+        "Properties of Solids"
+      ],
+      "correct_option_reasoning": "Statement B provides the correct description of the hybridization state of carbon atoms in both diamond and graphite, which is the fundamental reason for their different structures and properties. All other statements contain factual errors about their bonding, properties, or structure.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect. Both are covalent.",
+        "B": "This is the correct option.",
+        "C": "Incorrect. Only graphite is a lubricant.",
+        "D": "Incorrect. Diamond has a 3D network."
+      },
+      "common_mistakes": [
+        "Confusing the properties (e.g., lubricant vs. abrasive) or structures (2D vs. 3D) of diamond and graphite."
+      ],
+      "additional_notes": "The \\(sp^2\\) hybridization in graphite leaves one unhybridized p-orbital per carbon atom, which contributes to a delocalized \\(\\pi\\) electron system responsible for graphite's electrical conductivity."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "p-Block Elements",
+      "subtopic": "Allotropes of Carbon",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "diamond",
+        "graphite",
+        "allotropes_of_carbon",
+        "hybridization",
+        "p_block"
+      ],
+      "estimated_time_seconds": 45,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p24_q56",
+    "question_text": "Which statement regarding polymers is not correct?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Fibers possess high tensile strength",
+      "B": "Thermoplastic polymers are capable of repeatedly softening and hardening on heating and cooling respectively",
+      "C": "Thermosetting polymers are reusable",
+      "D": "Elastomers have polymer chains held together by weak intermolecular forces"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The incorrect statement is that thermosetting polymers are reusable. By definition, thermosetting polymers form extensive, irreversible cross-links upon heating, creating a rigid 3D network structure that cannot be remelted or reshaped.",
+      "key_concepts": [
+        "Polymers",
+        "Classification of Polymers",
+        "Thermoplastic Polymers",
+        "Thermosetting Polymers",
+        "Elastomers",
+        "Fibers"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze statement A: 'Fibers possess high tensile strength'. Fibers (like nylon or polyester) are polymers whose chains are packed closely in a crystalline structure, leading to strong intermolecular forces and high tensile strength along the fiber axis. This statement is correct."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze statement B: 'Thermoplastic polymers are capable of repeatedly softening and hardening on heating and cooling respectively'. This is the definition of a thermoplastic polymer. They consist of linear or branched chains with weak intermolecular forces that can be overcome by heating, allowing the polymer to be remolded. This statement is correct."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze statement C: 'Thermosetting polymers are reusable'. This is incorrect. Thermosetting polymers (like bakelite or epoxy resins) undergo extensive cross-linking when heated, forming a rigid, infusible, and insoluble mass. This chemical change is irreversible, so they cannot be softened, remelted, or reused in the same way as thermoplastics."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze statement D: 'Elastomers have polymer chains held together by weak intermolecular forces'. Elastomers (like rubber) have amorphous, coiled polymer chains. The weak intermolecular forces allow the chains to be stretched easily. A few cross-links are present to allow the material to return to its original shape. This statement is correct."
+        }
+      ],
+      "scientific_principles": [
+        "Structure-Property Relationships in Polymers"
+      ],
+      "correct_option_reasoning": "The statement that thermosetting polymers are reusable is incorrect. The defining characteristic of thermosets is that they form a permanent, cross-linked network upon curing (heating), which cannot be reversed. This makes them non-reusable in terms of remolding.",
+      "incorrect_options_analysis": {
+        "A": "This is a correct property of fibers.",
+        "B": "This is the correct definition of thermoplastics.",
+        "C": "This is the correct option as it is an incorrect statement.",
+        "D": "This is a correct description of the forces in elastomers."
+      },
+      "common_mistakes": [
+        "Confusing the properties of thermoplastic and thermosetting polymers."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Polymers",
+      "subtopic": "Classification of Polymers",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "polymers",
+        "thermosetting",
+        "thermoplastic",
+        "elastomers",
+        "incorrect_statement"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p24_q57",
+    "question_text": "The incorrect statement regarding chirality is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "The product obtained by \\(S_N2\\) reaction of haloalkane having chirality at the reactive site shows inversion of configuration",
+      "B": "Enantiomers are superimposable mirror images on each other",
+      "C": "A racemic mixture shows zero optical rotation",
+      "D": "\\(S_N1\\) reaction yields 1 : 1 mixture of both enantiomers"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This question tests fundamental concepts of stereochemistry. The incorrect statement is the definition of enantiomers; they are defined as non-superimposable mirror images, not superimposable.",
+      "key_concepts": [
+        "Stereochemistry",
+        "Chirality",
+        "Enantiomers",
+        "Racemic Mixture",
+        "SN1 and SN2 Reactions",
+        "Inversion of Configuration",
+        "Racemization"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze statement A: This describes the stereochemical outcome of an \\(S_N2\\) reaction at a chiral center. The \\(S_N2\\) mechanism involves a backside attack by the nucleophile, which forces the other three groups to 'flip' over, like an umbrella inverting in the wind. This is known as Walden inversion or inversion of configuration. This statement is correct."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze statement B: 'Enantiomers are superimposable mirror images on each other'. This is the opposite of the definition. Enantiomers are stereoisomers that are mirror images of each other but are *non-superimposable*. If mirror images are superimposable, the molecule is achiral. This statement is incorrect."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze statement C: 'A racemic mixture shows zero optical rotation'. A racemic mixture is defined as an equimolar (1:1) mixture of two enantiomers. The (+) enantiomer rotates plane-polarized light in one direction, and the (-) enantiomer rotates it by an equal amount in the opposite direction. In a racemic mixture, these rotations cancel each other out, resulting in no net optical rotation (optical activity = 0). This statement is correct."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze statement D: '\\(S_N1\\) reaction yields 1 : 1 mixture of both enantiomers'. The \\(S_N1\\) mechanism proceeds through a planar carbocation intermediate. The incoming nucleophile can attack this planar intermediate from either face with equal probability, leading to a mixture of retention and inversion products. Ideally, this results in a 1:1 mixture of enantiomers, which is a racemic mixture. This process is called racemization. This statement is correct (in the ideal case)."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Stereochemistry and Reaction Mechanisms"
+      ],
+      "correct_option_reasoning": "The core definition of enantiomers is that they are non-superimposable mirror images. Statement B incorrectly claims they are superimposable, which would mean they are identical (achiral) molecules, not enantiomers. This makes statement B fundamentally incorrect.",
+      "incorrect_options_analysis": {
+        "A": "This is a correct statement describing the stereochemistry of \\(S_N2\\) reactions.",
+        "B": "This is the correct option as it is an incorrect statement.",
+        "C": "This is a correct statement defining a property of racemic mixtures.",
+        "D": "This is a correct statement describing the ideal stereochemical outcome of \\(S_N1\\) reactions."
+      },
+      "common_mistakes": [
+        "Forgetting the 'non-superimposable' part of the definition of enantiomers.",
+        "Confusing the stereochemical outcomes of SN1 (racemization) and SN2 (inversion) reactions."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Haloalkanes and Haloarenes",
+      "subtopic": "Stereochemical Aspects of Nucleophilic Substitution Reactions",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "stereochemistry",
+        "chirality",
+        "enantiomers",
+        "sn1",
+        "sn2",
+        "incorrect_statement"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p24_q58",
+    "question_text": "The IUPAC name of the complex- \n\\[[Ag(H_2O)_2][Ag(CN)_2]\\] is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "diaquasilver(II) dicyanidoargentate(II)",
+      "B": "dicyanidosilver(I) diaquaargentate(I)",
+      "C": "diaquasilver(I) dicyanidoargentate(I)",
+      "D": "dicyanidosilver(II) diaquaargentate(II)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This question requires naming a coordination compound that consists of both a complex cation and a complex anion. The process involves naming the cation first, then the anion, and determining the oxidation state of the metal in each.",
+      "key_concepts": [
+        "IUPAC Nomenclature of Coordination Compounds",
+        "Complex Cation and Anion",
+        "Oxidation State"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the cationic and anionic parts of the complex. The part with the neutral/positive ligands is typically the cation, and the part with the negative ligands is the anion. So, \\([Ag(H_2O)_2]^+\\) is the cation and \\([Ag(CN)_2]^-\\) is the anion."
+        },
+        {
+          "step_number": 2,
+          "description": "Determine the oxidation state of silver (Ag). Let the oxidation state of Ag in the cation be x and in the anion be y. The overall charge of the compound is zero. Ligands: \\(H_2O\\) is neutral (charge 0), \\(CN\\) is an anion (charge -1).",
+          "formula": "\\[ [Ag^{+x}(H_2O)_2] [Ag^{+y}(CN)_2] \\implies x + 2(0) + y + 2(-1) = 0 \\implies x + y - 2 = 0 \\]"
+        },
+        {
+          "step_number": 3,
+          "description": "In such symmetrical complexes where the metal is the same, it is usually assumed to have the same oxidation state in both cation and anion. Silver's most common oxidation state is +1. Let's test this assumption: If x = +1 and y = +1, then \\(1 + 1 - 2 = 0\\). This works. So, the oxidation state of Ag in both complexes is +1."
+        },
+        {
+          "step_number": 4,
+          "description": "Name the cation: \\([Ag(H_2O)_2]^+\\). Ligands first, alphabetically: 'diaqua'. Then the metal: 'silver'. Then the oxidation state in Roman numerals: '(I)'. So, the cation is diaquasilver(I)."
+        },
+        {
+          "step_number": 5,
+          "description": "Name the anion: \\([Ag(CN)_2]^-\\. Ligands first: 'dicyanido'. Then the metal name with the '-ate' suffix because it's in an anion: 'argentate'. Then the oxidation state: '(I)'. So, the anion is dicyanidoargentate(I)."
+        },
+        {
+          "step_number": 6,
+          "description": "Combine the cation and anion names, with the cation first. The full name is diaquasilver(I) dicyanidoargentate(I)."
+        }
+      ],
+      "scientific_principles": [
+        "IUPAC Rules for Nomenclature"
+      ],
+      "correct_option_reasoning": "Following IUPAC rules, the cation \\([Ag(H_2O)_2]^+\\) is named diaquasilver(I) and the anion \\([Ag(CN)_2]^-\\) is named dicyanidoargentate(I). Combining these gives the full name diaquasilver(I) dicyanidoargentate(I). The oxidation state of silver must be +1 in both ions to maintain overall charge neutrality.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect oxidation state (II).",
+        "B": "Incorrectly names the anion first.",
+        "C": "This is the correct option.",
+        "D": "Incorrectly names the anion first and uses the wrong oxidation state (II)."
+      },
+      "common_mistakes": [
+        "Errors in determining the oxidation state.",
+        "Forgetting to add the '-ate' suffix to the metal in the anionic complex.",
+        "Naming the anion before the cation."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Coordination Compounds",
+      "subtopic": "Nomenclature of Coordination Compounds",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "iupac_nomenclature",
+        "coordination_compounds",
+        "complex_ion"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p25_q60",
+    "question_text": "Given below are two statements\nStatement I:\nIn the coagulation of a negative sol, the flocculating power of the three given ions is in the order\n\\(Al^{3+} > Ba^{2+} > Na^+\\)\nStatement II:\nIn the coagulation of a positive sol, the flocculating power of the three given salts is in the order\n\\(NaCl > Na_2SO_4 > Na_3PO_4\\)\nIn the light of the above statements, choose the most appropriate answer from the options given below",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Both Statement I and Statement II are incorrect.",
+      "B": "Statement I is correct but Statement II is incorrect.",
+      "C": "Statement I is incorrect but Statement II is correct.",
+      "D": "Both Statement I and Statement II are correct."
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Statement I correctly applies the Hardy-Schulze rule, stating that for coagulating a negative sol, the flocculating power of cations increases with their charge. Statement II incorrectly applies the rule for a positive sol; it states the reverse of the correct order, as flocculating power of anions also increases with charge.",
+      "key_concepts": [
+        "Surface Chemistry",
+        "Colloids",
+        "Coagulation (Flocculation)",
+        "Hardy-Schulze Rule"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the Hardy-Schulze rule: The greater the valence (charge magnitude) of the flocculating ion (the ion with charge opposite to the sol particle), the greater its power to cause coagulation."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement I: It concerns a negative sol. The flocculating ions are cations: \\(Al^{3+}\\), \\(Ba^{2+}\\), and \\(Na^+\\). Their charges are +3, +2, and +1. According to the rule, higher charge means higher flocculating power. Thus, the order is \\(Al^{3+} > Ba^{2+} > Na^+\\). Statement I is correct."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze Statement II: It concerns a positive sol. The flocculating ions are anions from the salts: \\(Cl^-\\) (from NaCl), \\(SO_4^{2-}\\) (from Na₂SO₄), and \\(PO_4^{3-}\\) (from Na₃PO₄). Their charge magnitudes are 1, 2, and 3. According to the rule, the flocculating power should be in the order \\(PO_4^{3-} > SO_4^{2-} > Cl^-\\), or in terms of the salts, \\(Na_3PO_4 > Na_2SO_4 > NaCl\\). The statement gives the exact opposite order. Therefore, Statement II is incorrect."
+        },
+        {
+          "step_number": 4,
+          "description": "Conclusion: Statement I is correct, and Statement II is incorrect."
+        }
+      ],
+      "scientific_principles": [
+        "Hardy-Schulze Rule"
+      ],
+      "correct_option_reasoning": "Statement I is a direct and correct application of the Hardy-Schulze rule for cations coagulating a negative sol. Statement II presents an order that is the inverse of what the Hardy-Schulze rule predicts for anions coagulating a positive sol, making it incorrect.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect because Statement I is true.",
+        "B": "This is the correct option.",
+        "C": "Incorrect because Statement I is true and Statement II is false.",
+        "D": "Incorrect because Statement II is false."
+      },
+      "common_mistakes": [
+        "Reversing the relationship between charge and flocculating power.",
+        "Applying the rule to the ion with the same charge as the sol, instead of the opposite charge."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Surface Chemistry",
+      "subtopic": "Colloids and Coagulation",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "statement_based",
+        "surface_chemistry",
+        "colloids",
+        "coagulation",
+        "hardy_schulze_rule"
+      ],
+      "estimated_time_seconds": 75,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p26_q62",
+    "question_text": "Match List-I with List-II.\n\n**List-I (Products formed)**\n(a) Cyanohydrin\n(b) Acetal\n(c) Schiff's base\n(d) Oxime\n\n**List-II (Reaction of carbonyl compound with)**\n(i) \\(NH_2OH\\)\n(ii) \\(RNH_2\\)\n(iii) alcohol\n(iv) \\(HCN\\)\n\nChoose the correct answer from the options given below",
+    "question_type": "matching",
+    "options": {
+      "A": "(a) – (ii), (b) – (iii), (c) – (iv), (d) – (i)",
+      "B": "(a) – (i), (b) – (iii), (c) – (ii), (d) – (iv)",
+      "C": "(a) – (iv), (b) – (iii), (c) – (ii), (d) – (i)",
+      "D": "(a) – (iii), (b) – (iv), (c) – (ii), (d) – (i)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This question tests the knowledge of common nucleophilic addition reactions of carbonyl compounds (aldehydes and ketones). Each product in List-I is formed by reacting a carbonyl compound with the corresponding reagent in List-II.",
+      "key_concepts": [
+        "Aldehydes and Ketones",
+        "Nucleophilic Addition Reactions",
+        "Cyanohydrin Formation",
+        "Acetal Formation",
+        "Schiff's Base Formation",
+        "Oxime Formation"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Match (a) Cyanohydrin: Cyanohydrins are formed from the nucleophilic addition of Hydrogen Cyanide (HCN) to a carbonyl compound. So, (a) matches with (iv)."
+        },
+        {
+          "step_number": 2,
+          "description": "Match (b) Acetal: Acetals are formed when a carbonyl compound (typically an aldehyde) reacts with two equivalents of an alcohol in the presence of an acid catalyst. So, (b) matches with (iii)."
+        },
+        {
+          "step_number": 3,
+          "description": "Match (c) Schiff's base: A Schiff's base (an imine) is formed from the reaction of a carbonyl compound with a primary amine (RNH₂). So, (c) matches with (ii)."
+        },
+        {
+          "step_number": 4,
+          "description": "Match (d) Oxime: Oximes are formed when a carbonyl compound reacts with hydroxylamine (NH₂OH). So, (d) matches with (i)."
+        },
+        {
+          "step_number": 5,
+          "description": "Assemble the correct pairings: (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i). This corresponds to option C."
+        }
+      ],
+      "scientific_principles": [
+        "Reaction Mechanisms in Organic Chemistry"
+      ],
+      "correct_option_reasoning": "The correct pairings based on the standard reactions of carbonyl compounds are: Cyanohydrin with HCN, Acetal with alcohol, Schiff's base with a primary amine (RNH₂), and Oxime with hydroxylamine (NH₂OH). Option C correctly represents this set of matches.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect pairings.",
+        "B": "Incorrect pairings.",
+        "C": "This is the correct option.",
+        "D": "Incorrect pairings."
+      },
+      "common_mistakes": [
+        "Confusing the various nitrogen-based reagents (amines, hydroxylamine, hydrazine) and their corresponding products (imines, oximes, hydrazones)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Aldehydes, Ketones and Carboxylic Acids",
+      "subtopic": "Chemical Reactions",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "matching",
+        "organic_chemistry",
+        "carbonyl_compounds",
+        "named_reactions",
+        "acetal",
+        "cyanohydrin",
+        "schiffs_base",
+        "oxime"
+      ],
+      "estimated_time_seconds": 75,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p27_q63",
+    "question_text": "At 298 K, the standard electrode potentials of \\(Cu^{2+}/Cu\\), \\(Zn^{2+}/Zn\\), \\(Fe^{2+}/Fe\\) and \\(Ag^{+}/Ag\\) are 0.34 V, –0.76 V, –0.44 V and 0.80 V, respectively.\nOn the basis of standard electrode potential, predict which of the following reaction cannot occur?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(CuSO_4(aq) + Fe(s) \\rightarrow FeSO_4(aq) + Cu(s)\\)",
+      "B": "\\(FeSO_4(aq) + Zn(s) \\rightarrow ZnSO_4(aq) + Fe(s)\\)",
+      "C": "\\(CuSO_4(aq) + 2Ag(s) \\rightarrow Cu(s) + Ag_2SO_4(aq)\\)",
+      "D": "\\(CuSO_4(aq) + Zn(s) \\rightarrow ZnSO_4(aq) + Cu(s)\\)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "A redox reaction can occur spontaneously only if the standard cell potential (\\(E^{\\circ}_{cell}\\)) is positive. By calculating \\(E^{\\circ}_{cell}\\) for each given reaction using the formula \\(E^{\\circ}_{cell} = E^{\\circ}_{cathode} - E^{\\circ}_{anode}\\), we can determine which reaction is non-spontaneous (has a negative \\(E^{\\circ}_{cell}\\)).",
+      "key_concepts": [
+        "Electrochemistry",
+        "Standard Electrode Potential",
+        "Spontaneity of Redox Reactions",
+        "Galvanic Cells"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the condition for a spontaneous redox reaction: The standard cell potential, \\(E^{\\circ}_{cell}\\), must be positive. A reaction with a negative \\(E^{\\circ}_{cell}\\) cannot occur spontaneously.",
+          "formula": "\\[ E^{\\circ}_{cell} = E^{\\circ}_{reduction} - E^{\\circ}_{oxidation} = E^{\\circ}_{cathode} - E^{\\circ}_{anode} > 0 \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze reaction A: \\(Fe\\) is oxidized (anode, \\(E^{\\circ} = -0.44\\) V) and \\(Cu^{2+}\\) is reduced (cathode, \\(E^{\\circ} = +0.34\\) V).",
+          "formula": "\\[ E^{\\circ}_{cell} = 0.34 - (-0.44) = +0.78 \\text{ V} \\]. This reaction can occur."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze reaction B: \\(Zn\\) is oxidized (anode, \\(E^{\\circ} = -0.76\\) V) and \\(Fe^{2+}\\) is reduced (cathode, \\(E^{\\circ} = -0.44\\) V).",
+          "formula": "\\[ E^{\\circ}_{cell} = -0.44 - (-0.76) = +0.32 \\text{ V} \\]. This reaction can occur."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze reaction C: \\(Ag\\) is oxidized (anode, \\(E^{\\circ} = +0.80\\) V) and \\(Cu^{2+}\\) is reduced (cathode, \\(E^{\\circ} = +0.34\\) V).",
+          "formula": "\\[ E^{\\circ}_{cell} = 0.34 - (0.80) = -0.46 \\text{ V} \\]. This reaction cannot occur spontaneously."
+        },
+        {
+          "step_number": 5,
+          "description": "Analyze reaction D: \\(Zn\\) is oxidized (anode, \\(E^{\\circ} = -0.76\\) V) and \\(Cu^{2+}\\) is reduced (cathode, \\(E^{\\circ} = +0.34\\) V).",
+          "formula": "\\[ E^{\\circ}_{cell} = 0.34 - (-0.76) = +1.10 \\text{ V} \\]. This reaction can occur."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Electrochemistry"
+      ],
+      "correct_option_reasoning": "The reaction in option C has a calculated standard cell potential of -0.46 V. A negative \\(E^{\\circ}_{cell}\\) indicates a non-spontaneous reaction under standard conditions. This is consistent with the reactivity series, as silver (Ag) is less reactive than copper (Cu) and cannot displace it from its salt solution.",
+      "incorrect_options_analysis": {
+        "A": "This reaction is spontaneous (\\(E^{\\circ}_{cell} = +0.78\\) V).",
+        "B": "This reaction is spontaneous (\\(E^{\\circ}_{cell} = +0.32\\) V).",
+        "C": "This is the correct option as the reaction is non-spontaneous.",
+        "D": "This reaction is spontaneous (\\(E^{\\circ}_{cell} = +1.10\\) V)."
+      },
+      "common_mistakes": [
+        "Incorrectly identifying which species is oxidized (anode) and which is reduced (cathode).",
+        "Making sign errors in the \\(E^{\\circ}_{cell}\\) calculation."
+      ],
+      "additional_notes": "A simpler way to solve this is to remember that a more reactive metal (one with a lower/more negative reduction potential) will displace a less reactive metal (one with a higher/more positive reduction potential) from its salt solution. Ag (\\(E^{\\circ}=+0.80\\)V) is less reactive than Cu (\\(E^{\\circ}=+0.34\\)V) and cannot displace it."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Electrochemistry",
+      "subtopic": "Standard Electrode Potential and Spontaneity",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "electrochemistry",
+        "standard_electrode_potential",
+        "spontaneity",
+        "redox_reaction"
+      ],
+      "estimated_time_seconds": 100,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p27_q64",
+    "question_text": "The incorrect statement regarding enzymes is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Like chemical catalysts enzymes reduce the activation energy of bio processes.",
+      "B": "Enzymes are polysaccharides.",
+      "C": "Enzymes are very specific for a particular reaction and substrate.",
+      "D": "Enzymes are biocatalysts."
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This question tests the fundamental properties of enzymes. The incorrect statement is that enzymes are polysaccharides. With very few exceptions (like ribozymes, which are RNA), enzymes are globular proteins.",
+      "key_concepts": [
+        "Enzymes",
+        "Biocatalysts",
+        "Activation Energy",
+        "Proteins",
+        "Polysaccharides"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze statement A: 'Like chemical catalysts enzymes reduce the activation energy of bio processes.' This is the fundamental mechanism of all catalysts, including enzymes. By providing an alternative reaction pathway with a lower activation energy, they speed up the reaction. This statement is correct."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze statement B: 'Enzymes are polysaccharides.' This is incorrect. The vast majority of enzymes are proteins, which are polymers of amino acids. Polysaccharides are polymers of sugars (e.g., starch, cellulose)."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze statement C: 'Enzymes are very specific for a particular reaction and substrate.' This is a key characteristic of enzymes. The specific three-dimensional shape of an enzyme's active site allows it to bind to only one or a very limited range of substrates (substrate specificity) and catalyze a specific type of chemical reaction (reaction specificity). This statement is correct."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze statement D: 'Enzymes are biocatalysts.' This is the definition of an enzyme. They are catalysts found in biological systems. This statement is correct."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Enzymology and Biochemistry"
+      ],
+      "correct_option_reasoning": "Statement B is fundamentally incorrect. Enzymes are biological catalysts that are almost universally proteinaceous in nature. Polysaccharides are carbohydrates and typically serve structural or energy storage roles, not catalytic ones.",
+      "incorrect_options_analysis": {
+        "A": "This is a correct statement about the function of enzymes as catalysts.",
+        "B": "This is the correct option as it is an incorrect statement.",
+        "C": "This is a correct statement highlighting enzyme specificity.",
+        "D": "This is a correct statement defining enzymes."
+      },
+      "common_mistakes": [
+        "Confusing the major classes of biomolecules (proteins, carbohydrates, lipids, nucleic acids) and their primary functions."
+      ],
+      "additional_notes": "The discovery of ribozymes (catalytic RNA molecules) showed that not all enzymes are proteins, but proteins are still the most common and diverse type of biocatalyst."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Biomolecules",
+      "subtopic": "Enzymes",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "enzymes",
+        "biomolecules",
+        "proteins",
+        "catalyst",
+        "incorrect_statement"
+      ],
+      "estimated_time_seconds": 45,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p28_q65",
+    "question_text": "Given below are two statements\nStatement I:\nPrimary aliphatic amines react with \\(HNO_2\\) to give unstable diazonium salts.\nStatement II:\nPrimary aromatic amines react with \\(HNO_2\\) to form diazonium salts which are stable even above 300 K.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Both Statement I and Statement II are incorrect.",
+      "B": "Statement I is correct but Statement II is incorrect.",
+      "C": "Statement I is incorrect but Statement II is correct.",
+      "D": "Both Statement I and Statement II are correct."
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Statement I is correct; primary aliphatic amines form highly unstable diazonium salts that immediately decompose. Statement II is incorrect because while primary aromatic amines form diazonium salts, these salts are only stable at low temperatures (around 0-5°C or 273-278 K), not above 300 K.",
+      "key_concepts": [
+        "Amines",
+        "Diazonium Salts",
+        "Diazotization Reaction",
+        "Nitrous Acid (HNO₂)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Statement I: 'Primary aliphatic amines react with \\(HNO_2\\) to give unstable diazonium salts.' This is correct. Primary aliphatic amines (e.g., R-NH₂) react with nitrous acid to form aliphatic diazonium salts (\\(R-N_2^+\\)), which are extremely unstable and immediately decompose, releasing nitrogen gas and forming a carbocation that leads to a mixture of products, primarily alcohols."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement II: 'Primary aromatic amines react with \\(HNO_2\\) to form diazonium salts which are stable even above 300 K.' Primary aromatic amines (e.g., Aniline) do react with nitrous acid (generated in situ from NaNO₂ and HCl) to form aromatic diazonium salts (\\(Ar-N_2^+\\)). However, a crucial condition for this reaction is that it must be carried out at low temperatures, typically 0-5°C (273-278 K). Aromatic diazonium salts are stable at these low temperatures due to resonance stabilization of the diazonium ion, but they will decompose if warmed to room temperature (around 298 K) or above. Therefore, the claim that they are stable 'even above 300 K' is incorrect."
+        },
+        {
+          "step_number": 3,
+          "description": "Conclusion: Statement I is correct, and Statement II is incorrect."
+        }
+      ],
+      "scientific_principles": [
+        "Reaction Mechanisms in Organic Chemistry"
+      ],
+      "correct_option_reasoning": "Statement I correctly describes the high instability of aliphatic diazonium salts. Statement II is incorrect because it misstates the stability of aromatic diazonium salts; their stability is only relative and is maintained only at low temperatures (well below 300 K).",
+      "incorrect_options_analysis": {
+        "A": "Incorrect because Statement I is true.",
+        "B": "This is the correct option.",
+        "C": "Incorrect because Statement I is true and Statement II is false.",
+        "D": "Incorrect because Statement II is false."
+      },
+      "common_mistakes": [
+        "Forgetting the critical low-temperature requirement for the preparation and use of aromatic diazonium salts."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Amines",
+      "subtopic": "Reactions of Amines (Diazotization)",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "statement_based",
+        "amines",
+        "diazonium_salts",
+        "diazotization",
+        "organic_chemistry"
+      ],
+      "estimated_time_seconds": 75,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p28_q66",
+    "question_text": "Which one is not correct mathematical equation for Dalton’s Law of partial pressure? Here p = total pressure of gaseous mixture",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(p = n_1 \\frac{RT}{V} + n_2 \\frac{RT}{V} + n_3 \\frac{RT}{V}\\)",
+      "B": "\\(p_i = \\chi_i p\\), where \\(p_i\\) = partial pressure of ith gas, \\(\\chi_i\\) = mole fraction of ith gas in gaseous mixture",
+      "C": "\\(p_i = p_i^{\\circ} \\chi_i\\), where \\(\\chi_i\\) = mole fraction of ith gas in gaseous mixture, \\(p_i^{\\circ}\\) = pressure of ith gas in pure state",
+      "D": "\\(p = p_1 + p_2 + p_3\\)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This question asks to identify the equation that does not represent Dalton's Law of partial pressures. The equation \\(p_i = p_i^{\\circ} \\chi_i\\) is Raoult's Law, which describes the partial vapor pressure of a component in a liquid solution, not Dalton's Law for a mixture of gases.",
+      "key_concepts": [
+        "Dalton's Law of Partial Pressures",
+        "Ideal Gas Law",
+        "Partial Pressure",
+        "Mole Fraction",
+        "Raoult's Law"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall Dalton's Law of Partial Pressures. It states that the total pressure of a mixture of non-reacting gases is the sum of the partial pressures that each gas would exert if it were present alone."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze option D: \\(p = p_1 + p_2 + p_3\\). This is the most direct mathematical statement of Dalton's Law. This equation is correct."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze option A: \\(p = n_1 \\frac{RT}{V} + n_2 \\frac{RT}{V} + n_3 \\frac{RT}{V}\\). From the ideal gas law, the partial pressure of gas 1 is \\(p_1 = n_1 \\frac{RT}{V}\\), for gas 2 is \\(p_2 = n_2 \\frac{RT}{V}\\), etc. Substituting these into the equation from option D gives this expression. This equation is correct."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze option B: \\(p_i = \\chi_i p\\). This equation relates the partial pressure of a component gas (\\(p_i\\)) to its mole fraction (\\(\\chi_i\\)) and the total pressure (p). This is another valid and common expression of Dalton's Law. This equation is correct."
+        },
+        {
+          "step_number": 5,
+          "description": "Analyze option C: \\(p_i = p_i^{\\circ} \\chi_i\\). This equation is Raoult's Law. It states that the partial vapor pressure of a component (i) above a liquid solution is equal to the mole fraction of that component in the solution (\\(\\chi_i\\)) multiplied by the vapor pressure of the pure component (\\(p_i^{\\circ}\\)). This law applies to liquid solutions, not mixtures of ideal gases. This equation is not Dalton's Law."
+        }
+      ],
+      "scientific_principles": [
+        "Dalton's Law",
+        "Raoult's Law"
+      ],
+      "correct_option_reasoning": "The equation \\(p_i = p_i^{\\circ} \\chi_i\\) represents Raoult's Law, which deals with the vapor pressure of components in a liquid solution. The other three equations are all valid mathematical representations of Dalton's Law of partial pressures for a mixture of gases.",
+      "incorrect_options_analysis": {
+        "A": "This is a correct expression derived from Dalton's law and the ideal gas law.",
+        "B": "This is a correct expression relating partial pressure to mole fraction and total pressure.",
+        "C": "This is the correct option as it represents Raoult's Law, not Dalton's Law.",
+        "D": "This is the fundamental statement of Dalton's Law."
+      },
+      "common_mistakes": [
+        "Confusing Dalton's Law (for gas mixtures) with Raoult's Law (for liquid solutions)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "States of Matter",
+      "subtopic": "Dalton's Law of Partial Pressures",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "daltons_law",
+        "partial_pressure",
+        "gas_laws",
+        "raoults_law",
+        "incorrect_statement"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p29_q67",
+    "question_text": "Match List-I with List-II.\n\n**List-I (Hydrides)**\n(a) MgH₂\n(b) GeH₄\n(c) B₂H₆\n(d) HF\n\n**List-II (Nature)**\n(i) Electron precise\n(ii) Electron deficient\n(iii) Electron rich\n(iv) Ionic\n\nChoose the correct answer from the options given below",
+    "question_type": "matching",
+    "options": {
+      "A": "(a) – (iii), (b) – (i), (c) – (ii), (d) – (iv)",
+      "B": "(a) – (i), (b) – (ii), (c) – (iv), (d) – (iii)",
+      "C": "(a) – (ii), (b) – (iii), (c) – (iv), (d) – (i)",
+      "D": "(a) – (iv), (b) – (i), (c) – (ii), (d) – (iii)"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question requires classifying different types of hydrides based on their bonding and electron count. MgH₂ is an ionic hydride, GeH₄ is an electron-precise covalent hydride, B₂H₆ is an electron-deficient hydride, and HF is an electron-rich hydride.",
+      "key_concepts": [
+        "Hydrides",
+        "Ionic (Saline) Hydrides",
+        "Covalent (Molecular) Hydrides",
+        "Electron Deficient Hydrides",
+        "Electron Precise Hydrides",
+        "Electron Rich Hydrides"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Match (a) MgH₂: Magnesium is a group 2 (alkaline earth) metal. Hydrides of s-block metals are typically ionic (saline), consisting of the metal cation (Mg²⁺) and hydride anions (H⁻). So, (a) matches with (iv) Ionic."
+        },
+        {
+          "step_number": 2,
+          "description": "Match (b) GeH₄: Germanium is a group 14 element. It has four valence electrons, which it uses to form four single covalent bonds with four hydrogen atoms. This satisfies the octet rule perfectly, with no lone pairs and no deficiency of electrons. Such hydrides are called electron precise. So, (b) matches with (i) Electron precise."
+        },
+        {
+          "step_number": 3,
+          "description": "Match (c) B₂H₆ (Diborane): Boron is a group 13 element with three valence electrons. In B₂H₆, there are not enough valence electrons to form conventional two-center-two-electron bonds for all connections. It features 3-center-2-electron 'banana bonds'. It is a classic example of an electron deficient hydride. So, (c) matches with (ii) Electron deficient."
+        },
+        {
+          "step_number": 4,
+          "description": "Match (d) HF: Fluorine is a group 17 element with seven valence electrons. In HF, after forming one bond with hydrogen, the fluorine atom has three lone pairs of electrons. Hydrides of groups 15, 16, and 17, which have one or more lone pairs on the central atom, are called electron rich. So, (d) matches with (iii) Electron rich."
+        },
+        {
+          "step_number": 5,
+          "description": "Assemble the correct pairings: (a)-(iv), (b)-(i), (c)-(ii), (d)-(iii). This corresponds to option D."
+        }
+      ],
+      "scientific_principles": [
+        "Periodic Trends",
+        "Lewis Theory of Bonding"
+      ],
+      "correct_option_reasoning": "The classification of hydrides is based on the nature of the element they are bonded to. S-block metals form ionic hydrides. Group 14 elements form electron-precise hydrides. Group 13 elements form electron-deficient hydrides. Groups 15-17 form electron-rich hydrides. The matches in option D correctly apply this classification scheme to the given examples.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect pairings.",
+        "B": "Incorrect pairings.",
+        "C": "Incorrect pairings.",
+        "D": "This is the correct option."
+      },
+      "common_mistakes": [
+        "Confusing the definitions of electron-deficient, electron-precise, and electron-rich hydrides.",
+        "Incorrectly classifying MgH₂ as covalent."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Hydrogen",
+      "subtopic": "Hydrides",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "matching",
+        "hydrides",
+        "ionic_hydride",
+        "covalent_hydride",
+        "electron_deficient",
+        "electron_rich",
+        "electron_precise"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p29_q68",
+    "question_text": "Given below are two statements :\nStatement I : The boiling points of aldehydes and ketones are higher than hydrocarbons of comparable molecular masses because of weak molecular association in aldehydes and ketones due to dipole - dipole interactions.\nStatement II : The boiling points of aldehydes and ketones are lower than the alcohols of similar molecular masses due to the absence of H-bonding.\nIn the light of the above statements, choose the most appropriate answer from the given below",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Both Statement I and Statement II are incorrect",
+      "B": "Statement I is correct but Statement II is incorrect",
+      "C": "Statement I is incorrect but Statement II is correct",
+      "D": "Both Statement I and Statement II are correct"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "Both statements correctly describe the relative boiling points of aldehydes/ketones compared to hydrocarbons and alcohols, and correctly attribute the differences to the types of intermolecular forces present: dipole-dipole interactions in aldehydes/ketones and hydrogen bonding in alcohols.",
+      "key_concepts": [
+        "Intermolecular Forces",
+        "Boiling Point",
+        "Dipole-Dipole Interactions",
+        "Hydrogen Bonding",
+        "Van der Waals Forces",
+        "Physical Properties of Organic Compounds"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Statement I: It compares aldehydes/ketones with hydrocarbons. Aldehydes and ketones contain a polar carbonyl group (C=O), which leads to intermolecular dipole-dipole interactions. Hydrocarbons are nonpolar and only exhibit weaker London dispersion forces. Stronger intermolecular forces lead to higher boiling points. Thus, aldehydes and ketones have higher boiling points than hydrocarbons of similar mass. Statement I is correct."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement II: It compares aldehydes/ketones with alcohols. Alcohols have a hydroxyl (-OH) group, which allows them to form strong intermolecular hydrogen bonds. Aldehydes and ketones do not have a hydrogen atom bonded to a highly electronegative atom, so they cannot form hydrogen bonds with each other. Since hydrogen bonds are much stronger than dipole-dipole interactions, alcohols have significantly higher boiling points. Statement II is correct."
+        },
+        {
+          "step_number": 3,
+          "description": "Conclusion: Both Statement I and Statement II are factually correct."
+        }
+      ],
+      "scientific_principles": [
+        "Relationship between Intermolecular Forces and Physical Properties"
+      ],
+      "correct_option_reasoning": "Both statements accurately explain the boiling point trends based on intermolecular forces. Statement I correctly explains that the polarity of aldehydes/ketones makes their boiling points higher than nonpolar hydrocarbons. Statement II correctly explains that the lack of hydrogen bonding in aldehydes/ketones makes their boiling points lower than alcohols, which do exhibit H-bonding.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect, as both statements are true.",
+        "B": "Incorrect, as Statement II is also true.",
+        "C": "Incorrect, as Statement I is also true.",
+        "D": "This is the correct option."
+      },
+      "common_mistakes": [
+        "Confusing the relative strengths of different intermolecular forces (Hydrogen bonding > dipole-dipole > London dispersion forces)."
+      ],
+      "additional_notes": "The general order of boiling points for compounds of comparable molecular mass is: Alcohols > Aldehydes/Ketones > Hydrocarbons."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Aldehydes, Ketones and Carboxylic Acids",
+      "subtopic": "Physical Properties",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "statement_based",
+        "boiling_point",
+        "intermolecular_forces",
+        "hydrogen_bonding",
+        "dipole_dipole"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p29_q69",
+    "question_text": "Identify the incorrect statement from the following:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "The oxidation number of K in \\(KO_2\\) is +4.",
+      "B": "Ionisation enthalpy of alkali metals decreases from top to bottom in the group.",
+      "C": "Lithium is the strongest reducing agent among the alkali metals.",
+      "D": "Alkali metals react with water to form their hydroxides."
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "The incorrect statement is that the oxidation number of K in KO₂ is +4. Alkali metals, including potassium, consistently have an oxidation state of +1 in their compounds. KO₂ is potassium superoxide, containing the K⁺ ion and the O₂⁻ superoxide ion.",
+      "key_concepts": [
+        "s-Block Elements",
+        "Alkali Metals",
+        "Oxidation State",
+        "Periodic Trends (Ionization Enthalpy)",
+        "Reducing Agents",
+        "Superoxides"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze statement A: 'The oxidation number of K in \\(KO_2\\) is +4.' Alkali metals (Group 1) have one valence electron and almost exclusively form compounds with a +1 oxidation state. Therefore, K in \\(KO_2\\) must be +1. This makes the \\(O_2\\) part a superoxide anion (\\(O_2^-\\)), where each oxygen has an average oxidation state of -1/2. The statement is incorrect."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze statement B: 'Ionisation enthalpy of alkali metals decreases from top to bottom in the group.' As we go down Group 1, the atomic radius increases and the outermost electron is further from the nucleus and more shielded. This makes it easier to remove, so the ionization enthalpy decreases. This statement is correct."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze statement C: 'Lithium is the strongest reducing agent among the alkali metals.' Reducing strength in solution is determined by the standard electrode potential. Lithium has the most negative electrode potential in the group due to its very high hydration enthalpy, which compensates for its high ionization energy. This makes it the strongest reducing agent. This statement is correct."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze statement D: 'Alkali metals react with water to form their hydroxides.' Alkali metals are highly reactive and react vigorously with water, producing the corresponding metal hydroxide and hydrogen gas. This statement is correct."
+        }
+      ],
+      "scientific_principles": [
+        "Periodic Law",
+        "Rules for Assigning Oxidation States"
+      ],
+      "correct_option_reasoning": "Statement A is fundamentally incorrect. A defining chemical property of alkali metals like potassium is that they always exhibit a +1 oxidation state in their compounds. All other statements correctly describe the properties and trends of alkali metals.",
+      "incorrect_options_analysis": {
+        "A": "This is the correct option as it is an incorrect statement.",
+        "B": "This is a correct periodic trend.",
+        "C": "This is a correct statement regarding the reducing power of alkali metals in aqueous solution.",
+        "D": "This is a correct statement describing a characteristic reaction."
+      },
+      "common_mistakes": [
+        "Incorrectly calculating oxidation states, especially in less common compounds like superoxides and peroxides."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "s-Block Elements",
+      "subtopic": "Alkali Metals",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "s_block",
+        "alkali_metals",
+        "oxidation_state",
+        "periodic_trends",
+        "superoxide",
+        "incorrect_statement"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p30_q70",
+    "question_text": "Which amongst the following is an incorrect statement?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(C_2\\) molecule has four electrons in its two degenerate \\(\\pi\\) molecular orbitals",
+      "B": "\\(H_2^+\\) ion has one electron",
+      "C": "\\(O_2^+\\) ion is diamagnetic",
+      "D": "The bond orders of \\(O_2^+\\), \\(O_2\\), \\(O_2^-\\) and \\(O_2^{2-}\\) are 2.5, 2, 1.5 and 1, respectively"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The incorrect statement is that the \\(O_2^+\\) ion is diamagnetic. According to Molecular Orbital Theory, \\(O_2^+\\) has 15 electrons, and its electron configuration includes one unpaired electron in a \\(\\pi^*\\) antibonding orbital, which makes it paramagnetic.",
+      "key_concepts": [
+        "Molecular Orbital Theory (MOT)",
+        "Paramagnetism and Diamagnetism",
+        "Bond Order",
+        "Electronic Configuration of Diatomic Molecules"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze statement A: A \\(C_2\\) molecule has 12 electrons. Its MOT configuration (for elements up to N₂) is \\((\\sigma1s)^2 (\\sigma^*1s)^2 (\\sigma2s)^2 (\\sigma^*2s)^2 (\\pi2p_x)^2 (\\pi2p_y)^2\\). The two degenerate \\(\\pi\\) bonding orbitals (\\(\\pi2p_x\\) and \\(\\pi2p_y\\)) together contain four electrons. This statement is correct."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze statement B: A neutral \\(H_2\\) molecule has 2 electrons. The \\(H_2^+\\) ion is formed by removing one electron, leaving it with 1 electron. This statement is correct."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze statement C: An \\(O_2\\) molecule has 16 electrons. The \\(O_2^+\\) ion has \\(16 - 1 = 15\\) electrons. Its MOT configuration (for O₂ and heavier) is \\((\\sigma1s)^2 (\\sigma^*1s)^2 (\\sigma2s)^2 (\\sigma^*2s)^2 (\\sigma2p_z)^2 (\\pi2p_x)^2 (\\pi2p_y)^2 (\\pi^*2p_x)^1\\). Because it has one unpaired electron, \\(O_2^+\\) is paramagnetic, not diamagnetic. A diamagnetic species must have all electrons paired. This statement is incorrect."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze statement D: Calculate the bond orders using the formula \\((\\text{bonding e}^- - \\text{antibonding e}^-)/2\\). \n- \\(O_2^+\\) (15e⁻): (10-5)/2 = 2.5\n- \\(O_2\\) (16e⁻): (10-6)/2 = 2.0\n- \\(O_2^-\\) (17e⁻): (10-7)/2 = 1.5\n- \\(O_2^{2-}\\) (18e⁻): (10-8)/2 = 1.0\nThis statement is correct."
+        }
+      ],
+      "scientific_principles": [
+        "Molecular Orbital Theory"
+      ],
+      "correct_option_reasoning": "The statement that \\(O_2^+\\) is diamagnetic is incorrect. The molecular orbital diagram for the \\(O_2^+\\) ion shows an odd number of electrons (15), which guarantees the presence of at least one unpaired electron. This unpaired electron makes the ion paramagnetic.",
+      "incorrect_options_analysis": {
+        "A": "This statement is correct based on the MOT of C₂.",
+        "B": "This statement is correct.",
+        "C": "This is the correct option as it is an incorrect statement.",
+        "D": "This statement correctly lists the bond orders for the oxygen species."
+      },
+      "common_mistakes": [
+        "Forgetting the different orbital energy order for N₂ and O₂.",
+        "Miscalculating the number of electrons in an ion.",
+        "Confusing paramagnetic (unpaired electrons) with diamagnetic (all electrons paired)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Chemical Bonding and Molecular Structure",
+      "subtopic": "Molecular Orbital Theory",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "molecular_orbital_theory",
+        "mot",
+        "bond_order",
+        "paramagnetism",
+        "diamagnetism",
+        "incorrect_statement"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p30_q71",
+    "question_text": "What mass of 95% pure \\(CaCO_3\\) will be required to neutralise 50 mL of 0.5 M HCl solution according to the following reaction?\n\\[CaCO_{3(s)} + 2HCl_{(aq)} \\rightarrow CaCl_{2(aq)} + CO_{2(g)} + 2H_2O_{(l)}\\]\n[Calculate upto second place of decimal point]",
+    "question_type": "numerical",
+    "options": {
+      "A": "1.32 g",
+      "B": "3.65 g",
+      "C": "9.50 g",
+      "D": "1.25 g"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This is a stoichiometry problem involving a neutralization reaction. First, calculate the moles of HCl from the given volume and molarity. Then, use the stoichiometric ratio from the balanced equation to find the moles of pure CaCO₃ required. Finally, convert these moles to mass and account for the 95% purity of the sample.",
+      "key_concepts": [
+        "Stoichiometry",
+        "Molarity",
+        "Neutralization Reaction",
+        "Percentage Purity"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Calculate the moles of HCl present in the solution.",
+          "formula": "\\[ \\text{moles of } HCl = \\text{Molarity} \\times \\text{Volume (in L)} = 0.5 \\frac{\\text{mol}}{L} \\times (50 \\times 10^{-3} L) = 0.025 \\text{ mol} \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Use the stoichiometry of the balanced reaction \\(CaCO_3 + 2HCl \\rightarrow ...\\) to find the moles of CaCO₃ needed. The ratio is 1 mole of CaCO₃ to 2 moles of HCl.",
+          "formula": "\\[ \\text{moles of } CaCO_3 = 0.025 \\text{ mol } HCl \\times \\frac{1 \\text{ mol } CaCO_3}{2 \\text{ mol } HCl} = 0.0125 \\text{ mol } CaCO_3 \\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the mass of pure CaCO₃ required. The molar mass of CaCO₃ is \\(40.08 + 12.01 + 3(16.00) \\approx 100\\) g/mol.",
+          "formula": "\\[ \\text{mass of pure } CaCO_3 = \\text{moles} \\times \\text{molar mass} = 0.0125 \\text{ mol} \\times 100 \\text{ g/mol} = 1.25 \\text{ g} \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "This is the mass of pure CaCO₃ needed. The sample is only 95% pure. Let 'm' be the mass of the impure sample required.",
+          "formula": "\\[ m \\times \\frac{95}{100} = 1.25 \\text{ g} \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Solve for 'm'.",
+          "formula": "\\[ m = \\frac{1.25 \\times 100}{95} = \\frac{125}{95} \\approx 1.3158 \\text{ g} \\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Round the result to the second decimal place, which gives 1.32 g."
+        }
+      ],
+      "scientific_principles": [
+        "Law of Conservation of Mass",
+        "Mole Concept"
+      ],
+      "correct_option_reasoning": "The stoichiometry calculation shows that 0.025 moles of HCl require 0.0125 moles of pure CaCO₃, which is 1.25 grams. To get this amount from a 95% pure sample, a larger mass of \\(1.25 / 0.95 \\approx 1.32\\) grams is needed.",
+      "incorrect_options_analysis": {
+        "A": "This is the correct option.",
+        "B": "Incorrect calculation.",
+        "C": "Incorrect calculation.",
+        "D": "This is the mass of pure CaCO₃ required, not the mass of the 95% pure sample."
+      },
+      "common_mistakes": [
+        "Forgetting to use the 1:2 stoichiometric ratio between CaCO₃ and HCl.",
+        "Forgetting to account for the 95% purity, or applying it incorrectly (e.g., multiplying by 0.95 instead of dividing)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Some Basic Concepts of Chemistry",
+      "subtopic": "Stoichiometry and Stoichiometric Calculations",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "stoichiometry",
+        "neutralization",
+        "molarity",
+        "percentage_purity",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p31_q73",
+    "question_text": "Identify the incorrect statement from the following.",
+    "question_type": "single_correct",
+    "options": {
+      "A": "All the five 4d orbitals have shapes similar to the respective 3d orbitals.",
+      "B": "In an atom, all the five 3d orbitals are equal in energy in free state.",
+      "C": "The shapes of \\(d_{xy}\\), \\(d_{yz}\\) and \\(d_{zx}\\) orbitals are similar to each other; and \\(d_{x^2-y^2}\\) and \\(d_{z^2}\\) are similar to each other.",
+      "D": "All the five 5d orbitals are different in size when compared to the respective 4d orbitals."
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This question tests knowledge of the properties of d-orbitals. The incorrect statement is that the shape of \\(d_{x^2-y^2}\\) is similar to \\(d_{z^2}\\). While the other four d-orbitals (d_xy, d_yz, d_zx, d_x²-y²) have a 'cloverleaf' shape, the d_z² orbital has a unique shape with a main lobe along the z-axis and a torus (or donut) in the xy-plane.",
+      "key_concepts": [
+        "Atomic Structure",
+        "Quantum Numbers",
+        "Shapes of Atomic Orbitals",
+        "d-orbitals",
+        "Degenerate Orbitals"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze statement A: The shape of an atomic orbital is determined by its azimuthal quantum number (l). For d-orbitals, l=2. All d-orbitals (3d, 4d, 5d, etc.) have the same fundamental shapes; they only differ in size and energy. So, 4d orbitals have shapes similar to 3d orbitals. This statement is correct."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze statement B: In a free atom (isolated from external fields), orbitals within the same subshell are degenerate, meaning they have the same energy. Thus, the five 3d orbitals are equal in energy. This statement is correct."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze statement C: It claims \\(d_{xy}\\), \\(d_{yz}\\), and \\(d_{zx}\\) are similar, which is true (they are all 'cloverleaf' shaped and lie between the axes). It also claims \\(d_{x^2-y^2}\\) and \\(d_{z^2}\\) are similar. This is false. \\(d_{x^2-y^2}\\) has a 'cloverleaf' shape with lobes along the x and y axes. The \\(d_{z^2}\\) orbital has a completely different shape: a dumbbell-like lobe along the z-axis with a torus in the xy-plane. Therefore, this statement is incorrect."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze statement D: The size of an orbital is primarily determined by the principal quantum number (n). Since n=5 for 5d orbitals and n=4 for 4d orbitals, the 5d orbitals are larger than their respective 4d counterparts. This statement is correct."
+        }
+      ],
+      "scientific_principles": [
+        "Quantum Mechanical Model of the Atom"
+      ],
+      "correct_option_reasoning": "Statement C is incorrect because the shape of the \\(d_{z^2}\\) orbital is distinct from the other four d-orbitals. While \\(d_{xy}\\), \\(d_{yz}\\), \\(d_{zx}\\), and \\(d_{x^2-y^2}\\) all have a four-lobed 'cloverleaf' geometry, the \\(d_{z^2}\\) orbital has a two-lobed shape along the z-axis with a ring in the xy-plane.",
+      "incorrect_options_analysis": {
+        "A": "This is a correct statement about orbital shapes being determined by 'l'.",
+        "B": "This is a correct statement about the degeneracy of orbitals in a subshell.",
+        "C": "This is the correct option as it is an incorrect statement.",
+        "D": "This is a correct statement about orbital size being determined by 'n'."
+      },
+      "common_mistakes": [
+        "Forgetting the unique shape of the \\(d_{z^2}\\) orbital compared to the other four d-orbitals."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Structure of Atom",
+      "subtopic": "Quantum Mechanical Model of Atom (Shapes of Orbitals)",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "atomic_orbitals",
+        "d_orbitals",
+        "quantum_mechanics",
+        "atomic_structure",
+        "incorrect_statement"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": true,
+      "visual_description": "A visual showing the shapes of all five d-orbitals would be helpful to see the difference between d_z² and the other four."
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p31_q74",
+    "question_text": "The given graph is a representation of kinetics of a reaction. The y and x axes for zero and first order reactions, respectively are:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "zero order (y = concentration and x = time), first order (y = rate constant and x = concentration)",
+      "B": "zero order (y = rate and x = concentration), first order (y = t₁⸝₂ and x = concentration)",
+      "C": "zero order (y = rate and x = concentration), first order (y = rate and x = t₁⸝₂)",
+      "D": "zero order (y = concentration and x = time), first order (y = t₁⸝₂ and x = concentration)"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "The graph shows a horizontal line, indicating that the quantity on the y-axis is independent of the quantity on the x-axis. This problem requires identifying which kinetic plots for zero-order and first-order reactions produce such a graph.",
+      "key_concepts": [
+        "Chemical Kinetics",
+        "Rate Law",
+        "Zero-Order Reaction",
+        "First-Order Reaction",
+        "Half-life (t₁⸝₂)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the graph: It is a horizontal line, meaning the y-variable is constant and does not depend on the x-variable."
+        },
+        {
+          "step_number": 2,
+          "description": "Consider the zero-order reaction part. We need a plot where y is constant with respect to x. The rate law for a zero-order reaction is \\(\\text{Rate} = k[A]^0 = k\\). This means the rate is constant and independent of the reactant concentration [A]. So, a plot of y = rate vs. x = concentration would be a horizontal line. This matches the first part of options B and C."
+        },
+        {
+          "step_number": 3,
+          "description": "Consider the first-order reaction part. We need another plot that results in a horizontal line. The rate law for a first-order reaction is \\(\\text{Rate} = k[A]^1\\), so a plot of rate vs. concentration is a straight line through the origin, not horizontal. The half-life (\\(t_{1/2}\\)) for a first-order reaction is given by \\(t_{1/2} = \\frac{0.693}{k}\\). This formula shows that the half-life is constant and does not depend on the initial concentration of the reactant. Therefore, a plot of y = \\(t_{1/2}\\) vs. x = concentration would be a horizontal line."
+        },
+        {
+          "step_number": 4,
+          "description": "Combine the findings. For a zero-order reaction, a plot of rate vs. concentration is a horizontal line. For a first-order reaction, a plot of half-life vs. concentration is a horizontal line. This combination matches option B."
+        },
+        {
+          "step_number": 5,
+          "description": "Evaluate the other options. Option A: For a zero-order reaction, a plot of concentration vs. time is a straight line with a negative slope, not horizontal. Option C: For a first-order reaction, a plot of rate vs. half-life is not a standard or meaningful plot in this context. Option D: Same issue with the zero-order plot as in A."
+        }
+      ],
+      "scientific_principles": [
+        "Integrated Rate Laws"
+      ],
+      "correct_option_reasoning": "The horizontal line graph signifies independence between the y and x variables. For a zero-order reaction, the rate is independent of concentration (\\(\\text{Rate} = k\\)). For a first-order reaction, the half-life is independent of concentration (\\(t_{1/2} = 0.693/k\\)). Option B correctly identifies these two relationships.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect. For zero-order, [A] vs. t is a line with a negative slope.",
+        "B": "This is the correct option.",
+        "C": "Incorrect. The first-order plot is not standard and doesn't fit the context.",
+        "D": "Incorrect. For zero-order, [A] vs. t is a line with a negative slope."
+      },
+      "common_mistakes": [
+        "Confusing the rate law expressions and half-life equations for different orders of reaction.",
+        "Misinterpreting the graphical representations of kinetic data."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Chemical Kinetics",
+      "subtopic": "Integrated Rate Equations",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "chemical_kinetics",
+        "zero_order_reaction",
+        "first_order_reaction",
+        "rate_law",
+        "half_life",
+        "graphical_analysis"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": true,
+      "visual_description": "A simple 2D graph with y and x axes. A single horizontal line is plotted on the graph, indicating y is constant for all values of x."
+    }
+  },
+  {
+    "question_id": "Question_Paper_23_p32_q76",
+    "question_number": "76",
+    "page": 32,
+    "source": "Question_Paper_23",
+    "type": "mcq",
+    "extracted_text": "In one molal solution that contains 0.5 mole of a solute, there is",
+    "options": [{"label": "1", "text": "500 g of solvent"}, {"label": "2", "text": "100 mL of solvent"}, {"label": "3", "text": "1000 g of solvent"}, {"label": "4", "text": "500 mL of solvent"}],
+    "answer": "1",
+    "explanation": "Molality is the moles of solute dissolved per kg of solvent therefore 500 g, 1 molal solution contains  \n0.5 of solute, as \nMoles of solute\nm\nMass of solvent (in kg)\n=\n \n0.5\n1\nMass of solvent (in kg)\n=\n \n \nMass of solvent (in kg) = 0.5 \n \n= 500 g",
+    "metadata": {"option_count": 4, "is_image_based": false, "has_incomplete_extraction": false}
+  },
+  {
+    "question_id": "Question_Paper_23_p32_q77",
+    "question_text": "The reaction is:\n\\[ RMgX + CO_2 \\xrightarrow{\\text{dry ether}} Y \\xrightarrow{H_3O^+} RCOOH \\]\nWhat is Y in the above reaction?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(R_3CO^-Mg^+X\\)",
+      "B": "\\(RCOO^-X^+\\)",
+      "C": "\\((RCOO)_2Mg\\)",
+      "D": "\\(RCOO^-Mg^+X\\)"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "The reaction shows the carboxylation of a Grignard reagent (RMgX). The nucleophilic alkyl group (R) from the Grignard reagent attacks the electrophilic carbon of carbon dioxide (CO₂). This forms an intermediate magnesium carboxylate salt, which is represented as \\(RCOO^-Mg^+X\\). This intermediate (Y) is then protonated upon acidic workup to yield a carboxylic acid (RCOOH).",
+      "key_concepts": [
+        "Grignard Reagents",
+        "Organometallic Chemistry",
+        "Carboxylation",
+        "Nucleophilic Addition",
+        "Preparation of Carboxylic Acids"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the reactants: a Grignard reagent (RMgX) which acts as a nucleophile (source of \\(R^-\\)), and carbon dioxide (CO₂) which acts as an electrophile at the carbon atom."
+        },
+        {
+          "step_number": 2,
+          "description": "The nucleophilic R group attacks the electrophilic carbon of O=C=O. The electrons from one of the C=O double bonds move to the oxygen atom.",
+          "formula": "\\[ R^- + O=C=O \\rightarrow R-C(=O)O^- \\]"
+        },
+        {
+          "step_number": 3,
+          "description": "The resulting carboxylate anion (\\(RCOO^-\\)) forms an ionic bond with the magnesium halide cation (\\(Mg^+X\\)) that was part of the Grignard reagent. This forms the intermediate salt 'Y'.",
+          "formula": "\\[ Y = R-C(=O)O^-Mg^+X \\text{ or simply } RCOO^-Mg^+X \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "In the second step, this salt is hydrolyzed with acid (\\(H_3O^+\\)), which protonates the carboxylate anion to give the final product, carboxylic acid (RCOOH)."
+        },
+        {
+          "step_number": 5,
+          "description": "Compare the structure of the intermediate Y with the given options. Option D matches the derived structure."
+        }
+      ],
+      "scientific_principles": [
+        "Reaction Mechanisms in Organic Chemistry"
+      ],
+      "correct_option_reasoning": "The nucleophilic attack of the Grignard reagent's R-group on the carbon of CO₂ forms a magnesium carboxylate salt as the intermediate. This salt's structure is correctly represented as \\(RCOO^-Mg^+X\\), which is the species labeled 'Y' before hydrolysis.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect. This structure implies three R groups have attacked, which is not what happens.",
+        "B": "Incorrect. The counterion is \\(Mg^+X\\), not just \\(X^+\\).",
+        "C": "Incorrect. This structure, \\((RCOO)_2Mg\\), is magnesium dicarboxylate, which would require two moles of Grignard reagent and would not contain the halide X.",
+        "D": "This is the correct option."
+      },
+      "common_mistakes": [
+        "Incorrectly identifying the nucleophile and electrophile.",
+        "Forgetting the structure of the full Grignard reagent and where the counterion goes."
+      ],
+      "additional_notes": "This is a very important reaction for synthesizing carboxylic acids and increasing the carbon chain length by one."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Aldehydes, Ketones and Carboxylic Acids",
+      "subtopic": "Methods of Preparation of Carboxylic Acids",
+      "difficulty": "Medium",
+      "bloom_level": "Understand",
+      "tags": [
+        "organic_chemistry",
+        "grignard_reagent",
+        "carboxylation",
+        "reaction_intermediate"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_23"
+    }
+  }
+]

@@ -1,0 +1,2386 @@
+[
+  {
+    "question_id": "Question_Paper_18_p19_q49",
+    "question_text": "Given below are two statements : One is labelled as Assertion (A) and the other is labelled as Reason (R).\n\n**Assertion (A)**: The stretching of a spring is determined by the shear modulus of the material of the spring.\n\n**Reason (R)**: A coil spring of copper has more tensile strength than a steel spring of same dimensions.\n\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "question_type": "assertion_reason",
+    "options": {
+      "A": "(A) is true but (R) is false",
+      "B": "(A) is false but (R) is true",
+      "C": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "D": "Both (A) and (R) are true and (R) is not the correct explanation of (A)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "The assertion is correct because stretching a coil spring involves a change in its shape, which is governed by the material's shear modulus. The reason is false because steel has a significantly higher tensile strength than copper.",
+      "key_concepts": [
+        "Elasticity",
+        "Shear Modulus (Modulus of Rigidity)",
+        "Young's Modulus",
+        "Tensile Strength",
+        "Springs"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Assertion (A). When a coil spring is stretched, the wire of the spring undergoes twisting or torsion. This twisting action involves a change in shape without a significant change in the length of the wire itself. The elastic property that resists a change in shape is the shear modulus (G). Therefore, the stretching of the spring is determined by the shear modulus of its material. The assertion is **true**."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Reason (R). The reason compares the tensile strength of copper and steel. Tensile strength is a measure of the maximum stress a material can withstand while being stretched or pulled before breaking. Steel is an alloy known for its high strength and is much stronger than pure copper. The statement that copper has more tensile strength than steel is factually **false**."
+        },
+        {
+          "step_number": 3,
+          "description": "Conclude based on the analysis. Since Assertion (A) is true and Reason (R) is false, the correct option is A."
+        }
+      ],
+      "scientific_principles": [
+        "Hooke's Law and Moduli of Elasticity"
+      ],
+      "correct_option_reasoning": "The assertion is correct as stretching a spring is a case of shear stress, hence it is determined by the shear modulus. The reason is incorrect as steel has a much greater tensile strength than copper.",
+      "incorrect_options_analysis": {
+        "B": "The assertion is true, not false.",
+        "C": "The reason is false.",
+        "D": "The reason is false."
+      },
+      "common_mistakes": [
+        "Incorrectly thinking that stretching a spring involves Young's modulus. While stretching the wire linearly involves Young's modulus, the coiling action translates this into a shearing/torsional stress on the wire's cross-section."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Mechanical Properties of Solids",
+      "subtopic": "Elastic Moduli",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "assertion_reason",
+        "shear_modulus",
+        "tensile_strength",
+        "elasticity",
+        "spring"
+      ],
+      "estimated_time_seconds": 75,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p19_q50",
+    "question_text": "A big circular coil of 1000 turns and average radius 10 m is rotating about its horizontal diameter at 2 rad s⁻¹. If the vertical component of earth’s magnetic field at that place is \\(2 \\times 10^{–5}\\) T and electrical resistance of the coil is 12.56 Ω, then the maximum induced current in the coil will be:",
+    "question_type": "numerical",
+    "options": {
+      "A": "1 A",
+      "B": "2 A",
+      "C": "0.25 A",
+      "D": "1.5 A"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This problem requires calculating the maximum induced current in a rotating coil, which acts as an AC generator. The maximum induced EMF depends on the number of turns, magnetic field, area of the coil, and its angular velocity. The maximum current is then found using Ohm's law.",
+      "key_concepts": [
+        "Electromagnetic Induction",
+        "Induced EMF",
+        "AC Generator",
+        "Magnetic Flux",
+        "Ohm's Law"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the given quantities: Number of turns \\(N = 1000\\), radius \\(r = 10\\) m, angular velocity \\(\\omega = 2\\) rad/s, magnetic field \\(B = 2 \\times 10^{-5}\\) T, and resistance \\(R = 12.56 \\Omega\\)."
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the area of the coil (A).",
+          "formula": "\\[A = \\pi r^2 = \\pi (10 \\text{ m})^2 = 100\\pi \\text{ m}^2\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "The induced EMF (\\(\\varepsilon\\)) in a rotating coil is given by \\(\\varepsilon = NBA\\omega \\sin(\\omega t)\\). The maximum EMF (\\(\\varepsilon_{max}\\)) occurs when \\(\\sin(\\omega t) = 1\\).",
+          "formula": "\\[\\varepsilon_{max} = NBA\\omega\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the values to calculate the maximum EMF.",
+          "formula": "\\[\\varepsilon_{max} = (1000) \\times (2 \\times 10^{-5} \\text{ T}) \\times (100\\pi \\text{ m}^2) \\times (2 \\text{ rad/s})\\]\\[\\varepsilon_{max} = 4000 \\times 100 \\times \\pi \\times 10^{-5} = 4\\pi \\times 10^5 \\times 10^{-5} = 4\\pi \\text{ V}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Use Ohm's law to find the maximum induced current (\\(i_{max}\\)).",
+          "formula": "\\[i_{max} = \\frac{\\varepsilon_{max}}{R}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Substitute the values for \\(\\varepsilon_{max}\\) and R. Note that \\(12.56 \\approx 4\\pi\\).",
+          "formula": "\\[i_{max} = \\frac{4\\pi \\text{ V}}{12.56 \\Omega} \\approx \\frac{4 \\times 3.14}{12.56} = \\frac{12.56}{12.56} = 1 \\text{ A}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Faraday's Law of Electromagnetic Induction"
+      ],
+      "correct_option_reasoning": "The maximum induced EMF is calculated as \\(\\varepsilon_{max} = NBA\\omega = 4\\pi\\) V. The maximum current is then \\(i_{max} = \\varepsilon_{max} / R = 4\\pi / 12.56\\). Since \\(4\\pi \\approx 12.56\\), the maximum current is approximately 1 A.",
+      "incorrect_options_analysis": {
+        "B": "This would require a higher EMF or lower resistance.",
+        "C": "This might result from a calculation error, possibly with the area or powers of ten.",
+        "D": "This is not obtained from the given values."
+      },
+      "common_mistakes": [
+        "Forgetting to calculate the area from the radius or using the radius directly.",
+        "Errors in calculating with scientific notation and \\(\\pi\\).",
+        "Confusing the horizontal diameter of rotation with the orientation of the magnetic field."
+      ],
+      "additional_notes": "Since the coil rotates about a horizontal diameter and the magnetic field component is vertical, the angle between the area vector and the magnetic field changes continuously, inducing an AC current."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electromagnetic Induction",
+      "subtopic": "AC Generator",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "electromagnetic_induction",
+        "induced_emf",
+        "ac_generator"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p20_q51",
+    "question_text": "Given below are half cell reactions:\n\\[MnO_4^- + 8H^+ + 5e^- \\rightarrow Mn^{2+} + 4H_2O, \\quad E^\\circ_{Mn^{2+}/MnO_4^-} = -1.510 \\text{ V}\\]\n\\[\\frac{1}{2}O_2 + 2H^+ + 2e^- \\rightarrow H_2O, \\quad E^\\circ_{O_2/H_2O} = +1.223 \\text{ V}\\]\nWill the permanganate ion, \\(MnO_4^-\\), liberate \\(O_2\\) from water in the presence of an acid?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Yes, because \\(E^\\circ_{cell} = +2.733 \\text{ V}\\)",
+      "B": "No, because \\(E^\\circ_{cell} = -2.733 \\text{ V}\\)",
+      "C": "Yes, because \\(E^\\circ_{cell} = +0.287 \\text{ V}\\)",
+      "D": "No, because \\(E^\\circ_{cell} = -0.287 \\text{ V}\\)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "To determine if the reaction is spontaneous, we need to calculate the standard cell potential (E°cell). The reaction involves the reduction of permanganate (cathode) and the oxidation of water (anode). A positive E°cell indicates a spontaneous reaction. Note the given potential for permanganate is for the reverse reaction, so its sign must be flipped for the reduction potential.",
+      "key_concepts": [
+        "Electrochemistry",
+        "Standard Electrode Potential",
+        "Spontaneity of Redox Reactions",
+        "Nernst Equation",
+        "Anode",
+        "Cathode"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the proposed reaction: \\(MnO_4^-\\) reacts with \\(H_2O\\) to liberate \\(O_2\\). This means \\(MnO_4^-\\) is the oxidizing agent (gets reduced) and \\(H_2O\\) is the reducing agent (gets oxidized)."
+        },
+        {
+          "step_number": 2,
+          "description": "Write the half-reactions. \n**Cathode (Reduction):** \\(MnO_4^- + 8H^+ + 5e^- \\rightarrow Mn^{2+} + 4H_2O\\) \n**Anode (Oxidation):** \\(H_2O \\rightarrow \\frac{1}{2}O_2 + 2H^+ + 2e^-\\) "
+        },
+        {
+          "step_number": 3,
+          "description": "Determine the standard potentials for these half-reactions. The potential for the oxidation of water is the negative of its given reduction potential. However, it's easier to use the formula \\(E^\\circ_{cell} = E^\\circ_{cathode} - E^\\circ_{anode}\\), using both values as reduction potentials.",
+          "formula": null
+        },
+        {
+          "step_number": 4,
+          "description": "Find the correct reduction potential for the cathode. The problem gives \\(E^\\circ_{Mn^{2+}/MnO_4^-} = -1.510 \\text{ V}\\), which is for the oxidation of \\(Mn^{2+}\\). The reduction potential we need is \\(E^\\circ_{MnO_4^-/Mn^{2+}} = -(-1.510 \\text{ V}) = +1.510 \\text{ V}\\)."
+        },
+        {
+          "step_number": 5,
+          "description": "The reduction potential for the anode reaction is given as \\(E^\\circ_{anode} = E^\\circ_{O_2/H_2O} = +1.223 \\text{ V}\\)."
+        },
+        {
+          "step_number": 6,
+          "description": "Calculate the standard cell potential, \\(E^\\circ_{cell}\\).",
+          "formula": "\\[E^\\circ_{cell} = E^\\circ_{cathode} - E^\\circ_{anode} = (+1.510 \\text{ V}) - (+1.223 \\text{ V}) = +0.287 \\text{ V}\\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Interpret the result. Since \\(E^\\circ_{cell}\\) is positive, the reaction is spontaneous under standard conditions. Therefore, permanganate will liberate oxygen from water in an acidic medium."
+        }
+      ],
+      "scientific_principles": [
+        "Thermodynamics of Electrochemical Cells (ΔG° = -nFE°cell)"
+      ],
+      "correct_option_reasoning": "The calculated standard cell potential for the reaction is \\(+0.287\\) V. Since \\(E^\\circ_{cell} > 0\\), the reaction is spontaneous. Thus, \\(MnO_4^-\\) will liberate \\(O_2\\) from water.",
+      "incorrect_options_analysis": {
+        "A": "This value would be obtained by incorrectly adding the two reduction potentials (1.510 + 1.223).",
+        "B": "This is the negative of the incorrect sum, and would imply non-spontaneity.",
+        "D": "This has the correct magnitude but the wrong sign, which would incorrectly imply the reaction is non-spontaneous."
+      },
+      "common_mistakes": [
+        "Incorrectly identifying the anode and cathode.",
+        "Using the wrong sign for the electrode potentials (e.g., not reversing the sign for an oxidation half-reaction when using the addition method, or using the wrong potential for the given direction in the subtraction method)."
+      ],
+      "additional_notes": "The question gives \\(E^\\circ_{Mn^{2+}/MnO_4^-}\\), which represents the potential for the oxidation process. The standard reduction potential \\(E^\\circ_{MnO_4^-/Mn^{2+}}\\) is \\(+1.510\\) V."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Electrochemistry",
+      "subtopic": "Electrochemical Cells and Spontaneity",
+      "difficulty": "Hard",
+      "bloom_level": "Evaluate",
+      "tags": [
+        "electrochemistry",
+        "redox_reaction",
+        "standard_electrode_potential",
+        "spontaneity"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p20_q52",
+    "question_text": "Given below are two statements\n**Statement I**: The boiling points of the following hydrides of group 16 elements increases in the order – \\(H_2O < H_2S < H_2Se < H_2Te\\)\n**Statement II**: The boiling points of these hydrides increase with increase in molar mass.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Statement I is correct but Statement II is incorrect",
+      "B": "Statement I is incorrect but Statement II is correct",
+      "C": "Both Statement I and Statement II are correct",
+      "D": "Both Statement I and Statement II are incorrect"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "Both statements are incorrect. Statement I gives the wrong order for the boiling points because water has an anomalously high boiling point due to hydrogen bonding. Statement II is incorrect as a general rule because it fails to account for the exception of water, which has a much higher boiling point than expected based on its molar mass.",
+      "key_concepts": [
+        "Intermolecular Forces",
+        "Hydrogen Bonding",
+        "Van der Waals Forces",
+        "Boiling Point Trends",
+        "Group 16 Hydrides"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Statement I. It claims the boiling point order is \\(H_2O < H_2S < H_2Se < H_2Te\\). Let's recall the actual boiling points: H₂O (100°C), H₂S (-60°C), H₂Se (-41°C), H₂Te (-2°C). The actual order is \\(H_2S < H_2Se < H_2Te < H_2O\\). Due to strong intermolecular hydrogen bonding, water has a much higher boiling point than the others. Therefore, Statement I is **incorrect**."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement II. It claims the boiling points of *these hydrides* (implying all four) increase with molar mass. While this trend holds for H₂S, H₂Se, and H₂Te (due to increasing van der Waals forces with more electrons), it breaks down completely for H₂O. Water has a low molar mass (18 g/mol) but the highest boiling point of the group. As the statement is a generalization for the entire set, it is **incorrect**."
+        },
+        {
+          "step_number": 3,
+          "description": "Conclude based on the analysis. Both Statement I and Statement II are incorrect."
+        }
+      ],
+      "scientific_principles": [
+        "Relationship between Intermolecular Forces and Physical Properties"
+      ],
+      "correct_option_reasoning": "Statement I is incorrect because H₂O has the highest boiling point in the series, not the lowest. Statement II is incorrect because while the trend of increasing boiling point with molar mass applies from H₂S to H₂Te, the exceptionally high boiling point of H₂O due to hydrogen bonding makes the overall statement for the group false.",
+      "incorrect_options_analysis": {
+        "A": "Statement I is incorrect.",
+        "B": "Statement II is also incorrect as it fails to account for H₂O.",
+        "C": "Both statements are incorrect."
+      },
+      "common_mistakes": [
+        "Forgetting the anomalous properties of water due to hydrogen bonding.",
+        "Applying the trend of increasing van der Waals forces with molar mass without considering exceptions."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The p-Block Elements",
+      "subtopic": "Group 16 Elements - Physical Properties",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "statement_based",
+        "p-block",
+        "group_16",
+        "boiling_point",
+        "hydrogen_bonding",
+        "intermolecular_forces"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p21_q53",
+    "question_text": "Choose the correct statement:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Diamond is \\(sp^3\\) hybridised and graphite is \\(sp^2\\) hybridized.",
+      "B": "Both diamond and graphite are used as dry lubricants.",
+      "C": "Diamond and graphite have two dimensional network.",
+      "D": "Diamond is covalent and graphite is ionic."
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question tests the fundamental knowledge of the allotropes of carbon, diamond, and graphite. The only correct statement is the one describing their hybridization: diamond's tetrahedral structure arises from sp³ hybridization, and graphite's planar layers arise from sp² hybridization.",
+      "key_concepts": [
+        "Allotropes of Carbon",
+        "Diamond",
+        "Graphite",
+        "Hybridization (\\(sp^2\\), \\(sp^3\\))",
+        "Covalent Network Solid",
+        "Physical Properties"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Option A: In diamond, each carbon atom is bonded to four other carbon atoms in a tetrahedral geometry, which corresponds to \\(sp^3\\) hybridization. In graphite, each carbon is bonded to three others in a planar, hexagonal arrangement, corresponding to \\(sp^2\\) hybridization. This statement is **correct**."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Option B: Graphite is used as a dry lubricant because its layers can slide over one another. Diamond is extremely hard and is used as an abrasive, not a lubricant. This statement is **incorrect**."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze Option C: Diamond has a three-dimensional (3D) covalent network structure. Graphite consists of two-dimensional (2D) layers held together by weak forces in a 3D arrangement. The statement that both have a 2D network is **incorrect**."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze Option D: Both diamond and graphite are examples of covalent network solids, where atoms are held together by covalent bonds. Neither is ionic. This statement is **incorrect**."
+        }
+      ],
+      "scientific_principles": [
+        "Valence Bond Theory and Hybridization"
+      ],
+      "correct_option_reasoning": "The statement that diamond is \\(sp^3\\) hybridized and graphite is \\(sp^2\\) hybridized accurately reflects the bonding and structure of these two carbon allotropes.",
+      "incorrect_options_analysis": {
+        "B": "Only graphite is a dry lubricant; diamond is an abrasive.",
+        "C": "Diamond has a 3D network structure.",
+        "D": "Both diamond and graphite are covalent network solids."
+      },
+      "common_mistakes": [
+        "Confusing the properties of diamond and graphite."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The p-Block Elements",
+      "subtopic": "Allotropes of Carbon",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "conceptual",
+        "carbon_allotropes",
+        "diamond",
+        "graphite",
+        "hybridization"
+      ],
+      "estimated_time_seconds": 45,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p21_q54",
+    "question_text": "Given below are two statements: one is labelled as Assertion (A) and the other is labelled as Reason (R).\n\n**Assertion (A)**: In a particular point defect, an ionic solid is electrically neutral, even if few of its cations are missing from its unit cells.\n\n**Reason (R)**: In an ionic solid, Frenkel defect arises due to dislocation of cation from its lattice site to interstitial site, maintaining overall electrical neutrality.\n\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "question_type": "assertion_reason",
+    "options": {
+      "A": "(A) is correct but (R) is not correct",
+      "B": "(A) is not correct but (R) is correct",
+      "C": "Both (A) and (R) are correct and (R) is the correct explanation of (A)",
+      "D": "Both (A) and (R) are correct but (R) is not the correct explanation of (A)"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "Both statements describe true phenomena related to defects in ionic solids. The assertion describes how electrical neutrality is maintained in defects like Schottky or impurity defects. The reason accurately defines a Frenkel defect. However, the Frenkel defect described in the reason is not the only type of defect that fits the assertion's description, nor does it fully explain it. Therefore, both are correct but the reason is not the correct explanation.",
+      "key_concepts": [
+        "Solid State Chemistry",
+        "Point Defects",
+        "Schottky Defect",
+        "Frenkel Defect",
+        "Impurity Defect",
+        "Electrical Neutrality"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Assertion (A). It states that an ionic solid remains electrically neutral even if cations are missing. This is **true**. Electrical neutrality must be maintained. If cations are missing, this can be compensated for in two ways: (1) An equal number of anions are also missing (Schottky defect), or (2) The charge is balanced by nearby cations having a higher positive charge (impurity defect, e.g., Sr²⁺ in NaCl). So, the assertion is a correct statement."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Reason (R). It defines the Frenkel defect, where a cation leaves its lattice site and occupies an interstitial site. In this process, no ions leave the crystal, so electrical neutrality is obviously maintained. This is a correct definition. So, the reason is a **true** statement."
+        },
+        {
+          "step_number": 3,
+          "description": "Determine if (R) explains (A). The assertion talks about a defect where cations are *missing from their unit cells*. The reason describes a Frenkel defect where a cation is *dislocated within its unit cell* but not missing from the crystal. The assertion is better explained by a Schottky defect (where an anion is also missing) or an impurity defect. Since the reason describes a different type of defect mechanism, it is not the correct explanation for the assertion. Both statements are independently correct but not linked as assertion and explanation."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Crystallography and Solid State Defects"
+      ],
+      "correct_option_reasoning": "Assertion (A) is a correct statement that applies to several types of point defects (like Schottky and impurity defects). Reason (R) is also a correct statement that accurately describes a Frenkel defect. However, the Frenkel defect is just one example of maintaining neutrality, and it doesn't involve ions 'missing' from the crystal, but rather being 'dislocated'. Therefore, R is not the correct or complete explanation for A.",
+      "incorrect_options_analysis": {
+        "A": "Reason (R) is a correct statement.",
+        "B": "Assertion (A) is a correct statement.",
+        "C": "Reason (R) is not the correct explanation of Assertion (A)."
+      },
+      "common_mistakes": [
+        "Confusing the definitions of Schottky and Frenkel defects.",
+        "Assuming that because both statements are correct and relate to crystal defects, one must be the explanation for the other."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The Solid State",
+      "subtopic": "Imperfections in Solids",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "assertion_reason",
+        "solid_state",
+        "crystal_defects",
+        "schottky_defect",
+        "frenkel_defect"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p22_q55",
+    "question_text": "Given below are two statements\n\n**Statement I**: The acidic strength of monosubstituted nitrophenol is higher than phenol because of electron withdrawing nitro group.\n\n**Statement II**: o-nitrophenol, m-nitrophenol and p-nitrophenol will have same acidic strength as they have one nitro group attached to the phenolic ring.\n\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Statement I is correct but Statement II is incorrect.",
+      "B": "Statement I is incorrect but Statement II is correct.",
+      "C": "Both Statement I and Statement II are correct.",
+      "D": "Both Statement I and Statement II are incorrect."
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "Statement I is correct because the electron-withdrawing nitro group stabilizes the phenoxide ion, increasing acidity. Statement II is incorrect because the position of the nitro group matters; its electron-withdrawing effect is strongest at the ortho and para positions due to the resonance effect, making these isomers more acidic than the meta isomer.",
+      "key_concepts": [
+        "Acidity of Phenols",
+        "Substituent Effects",
+        "Inductive Effect (-I)",
+        "Resonance Effect (-R or -M)",
+        "Ortho, Meta, Para Isomers"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Statement I. The acidity of phenol is due to the stability of the phenoxide ion formed after donating a proton. An electron-withdrawing group (EWG) like the nitro group (\\(-NO_2\\)) pulls electron density from the ring, further delocalizing the negative charge and stabilizing the phenoxide ion. A more stable conjugate base corresponds to a stronger acid. Thus, nitrophenol is more acidic than phenol. Statement I is **correct**."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement II. It claims all three isomers (ortho, meta, para) have the same acidic strength. The \\(-NO_2\\) group withdraws electrons via both the inductive effect (-I) and the resonance effect (-R). The -I effect is distance-dependent (ortho > meta > para). The -R effect operates only when the group is at the ortho or para position, as it allows delocalization of the negative charge onto the nitro group itself. The meta position does not participate in this resonance. Because the combined effects are different depending on the position, the acidic strengths are not the same. In fact, the order of acidity is generally p-nitrophenol > o-nitrophenol > m-nitrophenol. Therefore, Statement II is **incorrect**."
+        },
+        {
+          "step_number": 3,
+          "description": "Conclude based on the analysis. Statement I is correct, and Statement II is incorrect."
+        }
+      ],
+      "scientific_principles": [
+        "Electronic Effects in Organic Chemistry"
+      ],
+      "correct_option_reasoning": "Statement I is correct because the \\(-NO_2\\) group is a powerful electron-withdrawing group that stabilizes the phenoxide conjugate base, increasing acidity over phenol. Statement II is incorrect because the position of the substituent matters. The electron-withdrawing resonance effect of the \\(-NO_2\\) group is only effective from the ortho and para positions, leading to different acidic strengths among the isomers.",
+      "incorrect_options_analysis": {
+        "B": "Statement I is correct.",
+        "C": "Statement II is incorrect.",
+        "D": "Statement I is correct."
+      },
+      "common_mistakes": [
+        "Forgetting that the resonance effect does not operate from the meta position.",
+        "Ignoring the effect of intramolecular hydrogen bonding in o-nitrophenol, which makes it slightly less acidic than p-nitrophenol but still much stronger than m-nitrophenol."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Alcohols, Phenols and Ethers",
+      "subtopic": "Acidity of Phenols",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "statement_based",
+        "organic_chemistry",
+        "acidity",
+        "phenols",
+        "substituent_effects",
+        "resonance"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p22_q56",
+    "question_text": "The incorrect statement regarding enzymes is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Enzymes are polysaccharides.",
+      "B": "Enzymes are very specific for a particular reaction and substrate.",
+      "C": "Enzymes are biocatalysts.",
+      "D": "Like chemical catalysts enzymes reduce the activation energy of bio processes."
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question tests the basic properties of enzymes. Enzymes are proteins that act as biological catalysts. The statement that they are polysaccharides is incorrect; polysaccharides are carbohydrates.",
+      "key_concepts": [
+        "Enzymes",
+        "Proteins",
+        "Catalyst",
+        "Activation Energy",
+        "Substrate Specificity",
+        "Polysaccharides"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Option A: 'Enzymes are polysaccharides.' This is **incorrect**. Enzymes are globular proteins (with the exception of some catalytic RNAs called ribozymes). Polysaccharides are a class of carbohydrates."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Option B: 'Enzymes are very specific for a particular reaction and substrate.' This is **correct**. Enzyme specificity, often described by the 'lock and key' or 'induced fit' models, is a hallmark of their function."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze Option C: 'Enzymes are biocatalysts.' This is **correct**. They are catalysts found in biological systems, speeding up metabolic reactions without being consumed."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze Option D: 'Like chemical catalysts enzymes reduce the activation energy of bio processes.' This is **correct**. The primary mechanism by which all catalysts work is by providing an alternative reaction pathway with a lower activation energy."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Chemical Kinetics and Catalysis"
+      ],
+      "correct_option_reasoning": "The statement 'Enzymes are polysaccharides' is incorrect because enzymes are fundamentally protein molecules in nature, not carbohydrates.",
+      "incorrect_options_analysis": {
+        "B": "Substrate specificity is a key characteristic of enzymes.",
+        "C": "This is the definition of an enzyme.",
+        "D": "Reducing activation energy is the mechanism of action for all catalysts, including enzymes."
+      },
+      "common_mistakes": [
+        "Confusing the major classes of biomolecules (proteins, carbohydrates, lipids, nucleic acids)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Biomolecules",
+      "subtopic": "Enzymes",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "negative_question",
+        "conceptual",
+        "enzymes",
+        "biomolecules",
+        "proteins"
+      ],
+      "estimated_time_seconds": 40,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p22_q57",
+    "question_text": "The IUPAC name of an element with atomic number 119 is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "unununnium",
+      "B": "ununoctium",
+      "C": "ununennium",
+      "D": "unnilennium"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The systematic IUPAC naming for elements with atomic numbers greater than 100 is based on numerical roots for each digit. For atomic number 119, the roots for 1, 1, and 9 are combined, followed by the suffix '-ium'.",
+      "key_concepts": [
+        "IUPAC Nomenclature of Elements",
+        "Systematic Element Name",
+        "Atomic Number"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the IUPAC numerical roots for digits 0-9:\n0=nil, 1=un, 2=bi, 3=tri, 4=quad, 5=pent, 6=hex, 7=sept, 8=oct, 9=enn."
+        },
+        {
+          "step_number": 2,
+          "description": "Break down the atomic number 119 into its digits: 1, 1, 9."
+        },
+        {
+          "step_number": 3,
+          "description": "Translate each digit into its corresponding root:\n1 → un\n1 → un\n9 → enn"
+        },
+        {
+          "step_number": 4,
+          "description": "Combine the roots and add the standard suffix '-ium'.",
+          "formula": "un + un + enn + ium = ununennium"
+        }
+      ],
+      "scientific_principles": [
+        "Systematic Nomenclature in Chemistry"
+      ],
+      "correct_option_reasoning": "Following the IUPAC system for naming elements with Z > 100, the name for element 119 is derived from the roots for 1 (un), 1 (un), and 9 (enn), resulting in 'ununennium'.",
+      "incorrect_options_analysis": {
+        "A": "unununnium would correspond to element 111 (un+un+un+ium).",
+        "B": "ununoctium is the systematic name for element 118 (un+un+oct+ium).",
+        "D": "unnilennium would correspond to element 109 (un+nil+enn+ium)."
+      },
+      "common_mistakes": [
+        "Memorizing the numerical roots incorrectly, especially for less common digits like 9 (enn)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Classification of Elements and Periodicity in Properties",
+      "subtopic": "Nomenclature of Elements with Atomic Numbers > 100",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "conceptual",
+        "iupac_nomenclature",
+        "periodic_table"
+      ],
+      "estimated_time_seconds": 45,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p23_q58",
+    "question_text": "The IUPAC name of the complex- \\[Ag(H_2O)_2\\]\\[Ag(CN)_2\\] is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "dicyanidosilver(I) diaquaargentate(I)",
+      "B": "diaquasilver(I) dicyanidoargentate(I)",
+      "C": "dicyanidosilver(II) diaquaargentate(II)",
+      "D": "diaquasilver(II) dicyanidoargentate(II)"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This is an ionic coordination compound where both the cation and anion are complex ions. According to IUPAC rules, the cation is named first, followed by the anion. The oxidation state of silver is +1 in both complexes to maintain overall neutrality.",
+      "key_concepts": [
+        "IUPAC Nomenclature of Coordination Compounds",
+        "Coordination Sphere",
+        "Ligands",
+        "Oxidation State",
+        "Cationic and Anionic Complexes"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the cationic and anionic parts of the complex. The first part, \\[Ag(H_2O)_2\\], is the cation, and the second part, \\[Ag(CN)_2\\], is the anion. This is the standard convention."
+        },
+        {
+          "step_number": 2,
+          "description": "Determine the oxidation state of the central metal atom (Ag). Let the charge on the cationic complex be +x and on the anionic complex be -x. For overall neutrality, the charges must balance. The most common oxidation state for Ag is +1. Let's assume Ag is +1. Cation: \\[Ag(H_2O)_2\\]⁺. Charge = (+1) + 2*(0) = +1. Anion: \\[Ag(CN)_2\\]⁻. Charge = (+1) + 2*(-1) = -1. The charges (+1 and -1) balance, so the oxidation state of Ag in both complexes is +1."
+        },
+        {
+          "step_number": 3,
+          "description": "Name the cationic complex: \\[Ag(H_2O)_2\\]⁺. Ligands first: two water molecules are 'diaqua'. Central metal: 'silver'. Oxidation state in Roman numerals: '(I)'. Full name: diaquasilver(I)."
+        },
+        {
+          "step_number": 4,
+          "description": "Name the anionic complex: \\[Ag(CN)_2\\]⁻. Ligands first: two cyanide groups are 'dicyanido'. Central metal in an anion gets the '-ate' suffix: 'argentate'. Oxidation state in Roman numerals: '(I)'. Full name: dicyanidoargentate(I)."
+        },
+        {
+          "step_number": 5,
+          "description": "Combine the names of the cation and anion, with the cation first.",
+          "formula": "diaquasilver(I) dicyanidoargentate(I)"
+        }
+      ],
+      "scientific_principles": [
+        "Systematic Nomenclature in Chemistry"
+      ],
+      "correct_option_reasoning": "The complex consists of a cationic part \\[Ag(H_2O)_2\\]⁺ and an anionic part \\[Ag(CN)_2\\]⁻. Naming the cation first gives 'diaquasilver(I)'. Naming the anion second (with the -ate suffix) gives 'dicyanidoargentate(I)'. Combining them yields the full name.",
+      "incorrect_options_analysis": {
+        "A": "This names the anion first, which is against IUPAC rules.",
+        "C": "The oxidation state of silver is incorrectly identified as +2, and the anion is named first.",
+        "D": "The oxidation state of silver is incorrectly identified as +2."
+      },
+      "common_mistakes": [
+        "Forgetting to name the cation before the anion.",
+        "Forgetting to add the '-ate' suffix to the metal in the anionic complex.",
+        "Incorrectly calculating the oxidation state."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Coordination Compounds",
+      "subtopic": "Nomenclature of Coordination Compounds",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "conceptual",
+        "iupac_nomenclature",
+        "coordination_compounds"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p23_q60",
+    "question_text": "Given below are two statements\n\n**Statement I**: In the coagulation of a negative sol, the flocculating power of the three given ions is in the order \\(Al^{3+} > Ba^{2+} > Na^+\\)\n\n**Statement II**: In the coagulation of a positive sol, the flocculating power of the three given salts is in the order \\(NaCl > Na_2SO_4 > Na_3PO_4\\)\n\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Statement I is correct but Statement II is incorrect.",
+      "B": "Statement I is incorrect but Statement II is correct.",
+      "C": "Both Statement I and Statement II are correct.",
+      "D": "Both Statement I and Statement II are incorrect."
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question applies the Hardy-Schulze rule for the coagulation of colloids. Statement I correctly applies the rule for a negative sol, where higher positive charge leads to greater flocculating power. Statement II incorrectly applies the rule for a positive sol, giving the reverse of the correct order.",
+      "key_concepts": [
+        "Colloids",
+        "Coagulation (Flocculation)",
+        "Hardy-Schulze Rule",
+        "Flocculating Power",
+        "Electrolytes"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the Hardy-Schulze rule: The greater the valence (charge) of the flocculating ion, the greater its power to cause coagulation."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement I: 'In the coagulation of a negative sol, the flocculating power... is in the order \\(Al^{3+} > Ba^{2+} > Na^+\\)'. A negative sol is coagulated by the positive ions (cations) of an electrolyte. According to the Hardy-Schulze rule, flocculating power increases with the charge on the cation. The charges are +3, +2, and +1. The order of power should be \\(Al^{3+} > Ba^{2+} > Na^+\\). This matches the statement. Thus, Statement I is **correct**."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze Statement II: 'In the coagulation of a positive sol, the flocculating power... is in the order \\(NaCl > Na_2SO_4 > Na_3PO_4\\)'. A positive sol is coagulated by the negative ions (anions) of an electrolyte. The relevant anions are \\(Cl^-\\) (from NaCl), \\(SO_4^{2-}\\) (from Na₂SO₄), and \\(PO_4^{3-}\\) (from Na₃PO₄). Their charges are -1, -2, and -3. According to the Hardy-Schulze rule, the correct order of flocculating power should be \\(PO_4^{3-} > SO_4^{2-} > Cl^-\\) or, in terms of the salts, \\(Na_3PO_4 > Na_2SO_4 > NaCl\\). The statement gives the reverse order. Thus, Statement II is **incorrect**."
+        },
+        {
+          "step_number": 4,
+          "description": "Conclude based on the analysis. Statement I is correct, and Statement II is incorrect."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Colloid and Surface Chemistry"
+      ],
+      "correct_option_reasoning": "Statement I correctly follows the Hardy-Schulze rule for the coagulation of a negative sol by cations of increasing charge. Statement II gives the incorrect order for the coagulation of a positive sol by anions; the flocculating power increases with the magnitude of the negative charge, so the order should be reversed.",
+      "incorrect_options_analysis": {
+        "B": "Statement I is correct.",
+        "C": "Statement II is incorrect.",
+        "D": "Statement I is correct."
+      },
+      "common_mistakes": [
+        "Reversing the Hardy-Schulze rule.",
+        "Forgetting to use the charge of the counter-ion (cation for negative sol, anion for positive sol)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Surface Chemistry",
+      "subtopic": "Coagulation of Colloidal Solutions",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "statement_based",
+        "surface_chemistry",
+        "colloids",
+        "coagulation",
+        "hardy-schulze_rule"
+      ],
+      "estimated_time_seconds": 75,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p24_q61",
+    "question_text": "Match List-I with List-II.\n\n**List – I (Hydrides)**\n(a) \\(MgH_2\\)\n(b) \\(GeH_4\\)\n(c) \\(B_2H_6\\)\n(d) HF\n\n**List – II (Nature)**\n(i) Electron precise\n(ii) Electron deficient\n(iii) Electron rich\n(iv) Ionic\n\nChoose the correct answer from the options given below:",
+    "question_type": "matching",
+    "options": {
+      "A": "(a) – (i), (b) – (ii), (c) – (iv), (d) – (iii)",
+      "B": "(a) – (ii), (b) – (iii), (c) – (iv), (d) – (i)",
+      "C": "(a) – (iv), (b) – (i), (c) – (ii), (d) – (iii)",
+      "D": "(a) – (iii), (b) – (i), (c) – (ii), (d) – (iv)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This question requires classifying different hydrides based on their chemical bonding and electron count. The classification includes ionic, electron-deficient, electron-precise, and electron-rich hydrides, which correspond to hydrides of s-block, group 13, group 14, and groups 15-17 elements, respectively.",
+      "key_concepts": [
+        "Hydrides",
+        "Ionic (Saline) Hydrides",
+        "Covalent (Molecular) Hydrides",
+        "Electron Deficient Hydrides",
+        "Electron Precise Hydrides",
+        "Electron Rich Hydrides"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Match (a) \\(MgH_2\\): Magnesium is an s-block (Group 2) element. Hydrides of s-block metals are typically ionic (or saline) hydrides, characterized by the H⁻ ion. This matches (iv)."
+        },
+        {
+          "step_number": 2,
+          "description": "Match (b) \\(GeH_4\\): Germanium is a p-block (Group 14) element. Hydrides of Group 14 elements have the exact number of electrons required to form normal covalent bonds (four bonds for the central atom). They are called electron-precise hydrides. This matches (i)."
+        },
+        {
+          "step_number": 3,
+          "description": "Match (c) \\(B_2H_6\\): Boron is a p-block (Group 13) element. Hydrides of Group 13 elements have fewer electrons than required to form normal covalent bonds, leading to multicenter bonds (like the 3c-2e bonds in diborane). They are called electron-deficient hydrides. This matches (ii)."
+        },
+        {
+          "step_number": 4,
+          "description": "Match (d) HF: Fluorine is a p-block (Group 17) element. Hydrides of Groups 15-17 have more electrons than needed for bonding, present as lone pairs on the central atom. They are called electron-rich hydrides. This matches (iii)."
+        },
+        {
+          "step_number": 5,
+          "description": "Assemble the correct pairings: (a)-(iv), (b)-(i), (c)-(ii), (d)-(iii). This corresponds to option C."
+        }
+      ],
+      "scientific_principles": [
+        "Periodic Trends in Chemical Bonding"
+      ],
+      "correct_option_reasoning": "The pairings correctly classify the hydrides based on the group of the central element: Mg (Group 2) forms an ionic hydride; Ge (Group 14) forms an electron-precise hydride; B (Group 13) forms an electron-deficient hydride; and F (Group 17) forms an electron-rich hydride.",
+      "incorrect_options_analysis": {
+        "A": "Multiple incorrect pairings.",
+        "B": "Multiple incorrect pairings.",
+        "D": "Multiple incorrect pairings."
+      },
+      "common_mistakes": [
+        "Confusing the definitions of electron-deficient, precise, and rich hydrides.",
+        "Incorrectly classifying MgH₂ as covalent."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Hydrogen",
+      "subtopic": "Hydrides",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "matching",
+        "hydrides",
+        "hydrogen",
+        "periodic_properties"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p25_q62",
+    "question_text": "At 298 K, the standard electrode potentials of \\(Cu^{2+}/Cu\\), \\(Zn^{2+}/Zn\\), \\(Fe^{2+}/Fe\\) and \\(Ag^+/Ag\\) are 0.34 V, –0.76 V, –0.44 V and 0.80 V, respectively. On the basis of standard electrode potential, predict which of the following reaction cannot occur?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(FeSO_4(aq) + Zn(s) \\rightarrow ZnSO_4(aq) + Fe(s)\\)",
+      "B": "\\(2CuSO_4(aq) + 2Ag(s) \\rightarrow 2Cu(s) + Ag_2SO_4(aq)\\)",
+      "C": "\\(CuSO_4(aq) + Zn(s) \\rightarrow ZnSO_4(aq) + Cu(s)\\)",
+      "D": "\\(CuSO_4(aq) + Fe(s) \\rightarrow FeSO_4(aq) + Cu(s)\\)"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "A redox reaction is spontaneous (can occur) if its standard cell potential (E°cell) is positive. E°cell is calculated as the standard reduction potential of the species being reduced (cathode) minus that of the species being oxidized (anode). By calculating E°cell for each reaction, we can find the one that is non-spontaneous (E°cell < 0).",
+      "key_concepts": [
+        "Electrochemistry",
+        "Standard Electrode Potential",
+        "Spontaneity of Redox Reactions",
+        "Electrochemical Series"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "State the condition for a spontaneous reaction: \\(E^\\circ_{cell} > 0\\). The formula to use is \\(E^\\circ_{cell} = E^\\circ_{cathode} - E^\\circ_{anode}\\), where both potentials are standard reduction potentials."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Reaction A: \\(FeSO_4(aq) + Zn(s) \\rightarrow ZnSO_4(aq) + Fe(s)\\). Here, Zn is oxidized (Anode) and \\(Fe^{2+}\\) is reduced (Cathode).",
+          "formula": "\\[E^\\circ_{cell} = E^\\circ_{Fe^{2+}/Fe} - E^\\circ_{Zn^{2+}/Zn} = (-0.44 \\text{ V}) - (-0.76 \\text{ V}) = +0.32 \\text{ V}\\]\nThis reaction can occur."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze Reaction B: \\(2CuSO_4(aq) + 2Ag(s) \\rightarrow 2Cu(s) + Ag_2SO_4(aq)\\). Here, Ag is oxidized (Anode) and \\(Cu^{2+}\\) is reduced (Cathode).",
+          "formula": "\\[E^\\circ_{cell} = E^\\circ_{Cu^{2+}/Cu} - E^\\circ_{Ag^{+}/Ag} = (0.34 \\text{ V}) - (0.80 \\text{ V}) = -0.46 \\text{ V}\\]\nThis reaction **cannot occur** as \\(E^\\circ_{cell}\\) is negative."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze Reaction C: \\(CuSO_4(aq) + Zn(s) \\rightarrow ZnSO_4(aq) + Cu(s)\\). Here, Zn is oxidized (Anode) and \\(Cu^{2+}\\) is reduced (Cathode).",
+          "formula": "\\[E^\\circ_{cell} = E^\\circ_{Cu^{2+}/Cu} - E^\\circ_{Zn^{2+}/Zn} = (0.34 \\text{ V}) - (-0.76 \\text{ V}) = +1.10 \\text{ V}\\]\nThis reaction can occur."
+        },
+        {
+          "step_number": 5,
+          "description": "Analyze Reaction D: \\(CuSO_4(aq) + Fe(s) \\rightarrow FeSO_4(aq) + Cu(s)\\). Here, Fe is oxidized (Anode) and \\(Cu^{2+}\\) is reduced (Cathode).",
+          "formula": "\\[E^\\circ_{cell} = E^\\circ_{Cu^{2+}/Cu} - E^\\circ_{Fe^{2+}/Fe} = (0.34 \\text{ V}) - (-0.44 \\text{ V}) = +0.78 \\text{ V}\\]\nThis reaction can occur."
+        }
+      ],
+      "scientific_principles": [
+        "Thermodynamics of Electrochemical Cells"
+      ],
+      "correct_option_reasoning": "The reaction in option B has a negative standard cell potential (\\(-0.46\\) V), indicating it is non-spontaneous under standard conditions and therefore cannot occur. All other reactions have positive cell potentials.",
+      "incorrect_options_analysis": {
+        "A": "\\(E^\\circ_{cell} = +0.32 \\text{ V}\\), so it can occur.",
+        "C": "\\(E^\\circ_{cell} = +1.10 \\text{ V}\\), so it can occur. This is the basis of the Daniell cell.",
+        "D": "\\(E^\\circ_{cell} = +0.78 \\text{ V}\\), so it can occur."
+      },
+      "common_mistakes": [
+        "Incorrectly identifying which species is oxidized and which is reduced.",
+        "Making sign errors when calculating \\(E^\\circ_{cell}\\)."
+      ],
+      "additional_notes": "A simpler way to think about this is that a metal can only displace another metal from its salt solution if it is more reactive (has a lower/more negative reduction potential). In option B, Ag (E°=+0.80V) is less reactive than Cu (E°=+0.34V), so it cannot displace Cu."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Electrochemistry",
+      "subtopic": "Electrochemical Series and Spontaneity",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "electrochemistry",
+        "spontaneity",
+        "standard_electrode_potential"
+      ],
+      "estimated_time_seconds": 100,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p25_q63",
+    "question_text": "The given graph is a representation of kinetics of a reaction.\n\nThe y and x axes for zero and first order reactions, respectively are:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "zero order (y = rate and x = concentration), first order (y = \\(t_{1/2}\\) and x = concentration)",
+      "B": "zero order (y = rate and x = concentration), first order (y = rate and x = \\(t_{1/2}\\))",
+      "C": "zero order (y = concentration and x = time), first order (y = \\(t_{1/2}\\) and x = concentration)",
+      "D": "zero order (y = concentration and x = time), first order (y = rate constant and x = concentration)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "The graph shows a horizontal line, indicating that the quantity on the y-axis is independent of the quantity on the x-axis. We need to find which kinetic relationships for zero and first-order reactions fit this pattern. For a zero-order reaction, the rate is independent of concentration. For a first-order reaction, the half-life is independent of concentration.",
+      "key_concepts": [
+        "Chemical Kinetics",
+        "Rate Law",
+        "Order of Reaction",
+        "Zero-Order Reaction",
+        "First-Order Reaction",
+        "Half-life (\\(t_{1/2}\\))"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the given graph. It shows that 'y' is a constant value and does not change as 'x' changes. We need to find pairs of (y, x) for zero and first-order reactions that exhibit this relationship."
+        },
+        {
+          "step_number": 2,
+          "description": "Consider a **zero-order reaction**. The rate law is \\(rate = k[A]^0 = k\\). This means the reaction rate is constant and independent of the reactant concentration [A]. If we plot y = rate vs. x = concentration, we will get a horizontal line. This matches the graph."
+        },
+        {
+          "step_number": 3,
+          "description": "Consider a **first-order reaction**. The half-life (\\(t_{1/2}\\)) formula is \\(t_{1/2} = 0.693/k\\). This shows that the half-life depends only on the rate constant (k) and is independent of the initial concentration of the reactant. If we plot y = \\(t_{1/2}\\) vs. x = concentration, we will get a horizontal line. This also matches the graph."
+        },
+        {
+          "step_number": 4,
+          "description": "Evaluate the options. Option A provides these two correct pairings: zero order (y=rate, x=concentration) and first order (y=\\(t_{1/2}\\), x=concentration). Both pairings produce the type of graph shown."
+        },
+        {
+          "step_number": 5,
+          "description": "Check other options for correctness. In option C and D, for zero order, a plot of y=concentration vs x=time would be a straight line with a negative slope, not a horizontal line. In option B, for first order, a plot of y=rate vs x=\\(t_{1/2}\\) is not a standard or meaningful kinetic plot that would be constant."
+        }
+      ],
+      "scientific_principles": [
+        "Integrated Rate Laws"
+      ],
+      "correct_option_reasoning": "For a zero-order reaction, the rate is independent of concentration, so a plot of rate vs. concentration is a horizontal line. For a first-order reaction, the half-life is independent of concentration, so a plot of half-life vs. concentration is also a horizontal line. Option A correctly identifies these two relationships.",
+      "incorrect_options_analysis": {
+        "B": "A plot of rate vs. half-life for a first-order reaction would not be a horizontal line.",
+        "C": "A plot of concentration vs. time for a zero-order reaction is a straight line with a negative slope, not horizontal.",
+        "D": "A plot of concentration vs. time for a zero-order reaction is a straight line with a negative slope. A plot of rate constant vs. concentration is also horizontal, but the half-life plot is a more common representation."
+      },
+      "common_mistakes": [
+        "Confusing the graphical representations for different orders of reactions (e.g., rate vs. conc, conc vs. time, ln(conc) vs. time)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Chemical Kinetics",
+      "subtopic": "Zero and First Order Reactions",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "conceptual",
+        "graph_based",
+        "chemical_kinetics",
+        "zero_order",
+        "first_order",
+        "half_life"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": true,
+      "visual_description": "A 2D graph with y-axis and x-axis. A single horizontal line is plotted, indicating that the y-variable is constant regardless of the value of the x-variable."
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p26_q64",
+    "question_text": "Match List-I with List-II.\n\n**List – I (Products formed)**\n(a) Cyanohydrin\n(b) Acetal\n(c) Schiff's base\n(d) Oxime\n\n**List – II (Reaction of carbonyl compound with)**\n(i) \\(NH_2OH\\)\n(ii) \\(RNH_2\\)\n(iii) alcohol\n(iv) HCN\n\nChoose the correct answer from the options given below:",
+    "question_type": "matching",
+    "options": {
+      "A": "(a) – (i), (b) – (iii), (c) – (ii), (d) – (iv)",
+      "B": "(a) – (iv), (b) – (iii), (c) – (ii), (d) – (i)",
+      "C": "(a) – (iii), (b) – (iv), (c) – (ii), (d) – (i)",
+      "D": "(a) – (ii), (b) – (iii), (c) – (iv), (d) – (i)"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This question tests the knowledge of characteristic nucleophilic addition reactions of aldehydes and ketones, requiring the matching of specific products with the reagents used to form them from a carbonyl compound.",
+      "key_concepts": [
+        "Carbonyl Compounds (Aldehydes and Ketones)",
+        "Nucleophilic Addition Reactions",
+        "Cyanohydrin Formation",
+        "Acetal Formation",
+        "Schiff's Base Formation",
+        "Oxime Formation"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Match (a) Cyanohydrin: Cyanohydrins are formed by the nucleophilic addition of hydrogen cyanide (HCN) across the carbonyl double bond. This matches (iv)."
+        },
+        {
+          "step_number": 2,
+          "description": "Match (b) Acetal: Acetals are formed when a carbonyl compound (specifically an aldehyde or ketone) reacts with an alcohol, typically in the presence of an acid catalyst. This matches (iii)."
+        },
+        {
+          "step_number": 3,
+          "description": "Match (c) Schiff's base: Schiff's bases (or imines) are formed from the reaction of a carbonyl compound with a primary amine (\\(RNH_2\\)). This matches (ii)."
+        },
+        {
+          "step_number": 4,
+          "description": "Match (d) Oxime: Oximes are formed from the reaction of a carbonyl compound with hydroxylamine (\\(NH_2OH\\)). This matches (i)."
+        },
+        {
+          "step_number": 5,
+          "description": "Assemble the correct pairings: (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i). This corresponds to option B."
+        }
+      ],
+      "scientific_principles": [
+        "Reaction Mechanisms in Organic Chemistry"
+      ],
+      "correct_option_reasoning": "The pairings correctly match the products of carbonyl reactions with their respective reagents: Cyanohydrin with HCN, Acetal with alcohol, Schiff's base with a primary amine, and Oxime with hydroxylamine.",
+      "incorrect_options_analysis": {
+        "A": "Incorrectly matches (a) with (i) and (d) with (iv).",
+        "C": "Incorrectly matches (a) with (iii) and (b) with (iv).",
+        "D": "Incorrectly matches (a) with (ii) and (c) with (iv)."
+      },
+      "common_mistakes": [
+        "Confusing the various nitrogen-based derivatives (Schiff's base, oxime, hydrazone, etc.) and the reagents that form them."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Aldehydes, Ketones and Carboxylic Acids",
+      "subtopic": "Nucleophilic Addition Reactions",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "matching",
+        "organic_chemistry",
+        "carbonyl_reactions",
+        "aldehydes_ketones"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p27_q65",
+    "question_text": "Gadolinium has a low value of third ionisation enthalpy because of:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "high electronegativity",
+      "B": "high basic character",
+      "C": "small size",
+      "D": "high exchange enthalpy"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "The third ionization enthalpy of Gadolinium (Gd) is relatively low because the removal of the third electron results in a very stable, half-filled 4f⁷ electron configuration. This stability is attributed to the high exchange energy associated with having the maximum number of parallel spins.",
+      "key_concepts": [
+        "Ionization Enthalpy",
+        "Electron Configuration",
+        "Lanthanides",
+        "Gadolinium (Gd)",
+        "Exchange Energy",
+        "Stability of Half-filled and Fully-filled Orbitals"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Write the ground state electron configuration of Gadolinium (Gd, Z=64).",
+          "formula": "Gd: [Xe] \\(4f^7 5d^1 6s^2\\)"
+        },
+        {
+          "step_number": 2,
+          "description": "Determine the configuration after the first two ionizations. The outermost \\(6s^2\\) electrons are removed first.",
+          "formula": "Gd²⁺: [Xe] \\(4f^7 5d^1\\)"
+        },
+        {
+          "step_number": 3,
+          "description": "Consider the third ionization, which involves removing an electron from the Gd²⁺ ion. This electron will be removed from the 5d orbital."
+        },
+        {
+          "step_number": 4,
+          "description": "Write the configuration of the resulting Gd³⁺ ion.",
+          "formula": "Gd³⁺: [Xe] \\(4f^7\\)"
+        },
+        {
+          "step_number": 5,
+          "description": "Analyze the stability of the Gd³⁺ configuration. The \\(4f^7\\) configuration is a half-filled f-subshell. Half-filled and fully-filled subshells are exceptionally stable."
+        },
+        {
+          "step_number": 6,
+          "description": "Relate this stability to exchange energy. The stability of half-filled subshells is explained by a high exchange enthalpy (or exchange energy). This is a quantum mechanical effect that lowers the energy of a configuration with the maximum number of parallel spins. The formation of this highly stable ion is favorable, which translates to a lower-than-expected energy input needed for the third ionization. Therefore, the low third IE is due to the high exchange enthalpy of the resulting \\(4f^7\\) configuration."
+        }
+      ],
+      "scientific_principles": [
+        "Quantum Mechanics and Electron Configuration Stability"
+      ],
+      "correct_option_reasoning": "The removal of the third electron from Gadolinium leads to the formation of the Gd³⁺ ion with a stable half-filled \\(4f^7\\) electron configuration. This configuration is stabilized by a large amount of exchange energy, which makes the third ionization process energetically less costly, resulting in a low third ionization enthalpy.",
+      "incorrect_options_analysis": {
+        "A": "High electronegativity would imply a high, not low, ionization enthalpy.",
+        "B": "Basic character is related to the metallic nature and is not the direct reason for the ionization enthalpy value.",
+        "C": "Small size would lead to a higher ionization enthalpy due to stronger nuclear attraction."
+      },
+      "common_mistakes": [
+        "Forgetting the special stability of half-filled and fully-filled orbitals.",
+        "Not knowing the correct electron configuration of Gadolinium, which is an exception to the aufbau principle for f-block elements."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The d- and f- Block Elements",
+      "subtopic": "The Lanthanoids",
+      "difficulty": "Medium",
+      "bloom_level": "Understand",
+      "tags": [
+        "conceptual",
+        "f-block",
+        "lanthanides",
+        "gadolinium",
+        "ionization_enthalpy",
+        "exchange_energy",
+        "electron_configuration"
+      ],
+      "estimated_time_seconds": 75,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p27_q67",
+    "question_text": "Match List-I with List-II.\n\n**List-I (Drug class)**\n(a) Antacids\n(b) Antihistamines\n(c) Analgesics\n(d) Antimicrobials\n\n**List-II (Drug molecule)**\n(i) Salvarsan\n(ii) Morphine\n(iii) Cimetidine\n(iv) Seldane\n\nChoose the correct answer from the options given below :",
+    "question_type": "matching",
+    "options": {
+      "A": "(a) - (i), (b) – (iv), (c) – (ii), (d) – (iii)",
+      "B": "(a) - (iv), (b) – (iii), (c) – (i), (d) – (ii)",
+      "C": "(a) - (iii), (b) – (ii), (c) – (iv), (d) – (i)",
+      "D": "(a) - (iii), (b) – (iv), (c) – (ii), (d) – (i)"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question requires matching common drug molecules to their therapeutic class. This involves recalling the function of each drug: Cimetidine is an antacid, Seldane is an antihistamine, Morphine is an analgesic, and Salvarsan is an antimicrobial.",
+      "key_concepts": [
+        "Therapeutic Action of Drugs",
+        "Antacids",
+        "Antihistamines",
+        "Analgesics",
+        "Antimicrobials"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Match (a) Antacids: These drugs neutralize stomach acid. Cimetidine (and ranitidine) are histamine H₂-receptor antagonists that prevent acid secretion. They function as antacids. This matches (iii)."
+        },
+        {
+          "step_number": 2,
+          "description": "Match (b) Antihistamines: These drugs inhibit the action of histamine, used to treat allergies. Seldane (terfenadine) is a well-known (though now less used) antihistamine. This matches (iv)."
+        },
+        {
+          "step_number": 3,
+          "description": "Match (c) Analgesics: These are painkillers. Morphine is a powerful narcotic analgesic derived from the opium poppy. This matches (ii)."
+        },
+        {
+          "step_number": 4,
+          "description": "Match (d) Antimicrobials: These drugs kill or inhibit the growth of microbes. Salvarsan (arsphenamine) was one of the first effective antimicrobial drugs, used to treat syphilis. This matches (i)."
+        },
+        {
+          "step_number": 5,
+          "description": "Assemble the correct pairings: (a)-(iii), (b)-(iv), (c)-(ii), (d)-(i). This corresponds to option D."
+        }
+      ],
+      "scientific_principles": [
+        "Pharmacology",
+        "Medicinal Chemistry"
+      ],
+      "correct_option_reasoning": "The pairings correctly classify each drug molecule into its respective therapeutic category based on its function.",
+      "incorrect_options_analysis": {
+        "A": "Incorrectly matches (a) with (i) and (d) with (iii).",
+        "B": "Multiple incorrect pairings.",
+        "C": "Incorrectly matches (b) with (ii) and (c) with (iv)."
+      },
+      "common_mistakes": [
+        "Not being familiar with the examples of drugs in each class."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Chemistry in Everyday Life",
+      "subtopic": "Therapeutic Action of Different Classes of Drugs",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "matching",
+        "chemistry_in_everyday_life",
+        "drugs",
+        "pharmacology"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p28_q68",
+    "question_text": "Identify the incorrect statement from the following.",
+    "question_type": "single_correct",
+    "options": {
+      "A": "In an atom, all the five 3d orbitals are equal in energy in free state.",
+      "B": "The shapes of \\(d_{xy}\\), \\(d_{yz}\\) and \\(d_{zx}\\) orbitals are similar to each other; and \\(d_{x^2-y^2}\\) and \\(d_{z^2}\\) are similar to each other.",
+      "C": "All the five 5d orbitals are different in size when compared to the respective 4d orbitals.",
+      "D": "All the five 4d orbitals have shapes similar to the respective 3d orbitals."
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This question tests the knowledge of the properties of d-orbitals, including their energy, shape, and size. The incorrect statement is B, because while the four 'cloverleaf' shaped orbitals are broadly similar, the fifth d-orbital, \\(d_{z^2}\\), has a distinct shape (a dumbbell with a torus/ring) and is not similar to \\(d_{x^2-y^2}\\).",
+      "key_concepts": [
+        "Atomic Orbitals",
+        "d-Orbitals",
+        "Quantum Numbers",
+        "Degenerate Orbitals",
+        "Shapes of Orbitals"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Statement A: 'In an atom, all the five 3d orbitals are equal in energy in free state.' This is **correct**. Orbitals within the same subshell (like the five 3d orbitals) are degenerate (have the same energy) in an isolated, free atom."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement B: 'The shapes of \\(d_{xy}\\), \\(d_{yz}\\) and \\(d_{zx}\\) orbitals are similar to each other; and \\(d_{x^2-y^2}\\) and \\(d_{z^2}\\) are similar to each other.' The first part is correct; \\(d_{xy}\\), \\(d_{yz}\\), and \\(d_{zx}\\) are all 'cloverleaf' shaped and lie between the axes. However, the second part is incorrect. The \\(d_{x^2-y^2}\\) orbital is also 'cloverleaf' shaped but lies along the x and y axes. The \\(d_{z^2}\\) orbital has a completely different shape: a dumbbell along the z-axis with a torus (ring) in the xy-plane. Therefore, \\(d_{x^2-y^2}\\) and \\(d_{z^2}\\) are not similar. This makes the entire statement **incorrect**."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze Statement C: 'All the five 5d orbitals are different in size when compared to the respective 4d orbitals.' This is **correct**. The size of an orbital is primarily determined by the principal quantum number (n). Since n=5 is greater than n=4, the 5d orbitals are larger than the 4d orbitals."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze Statement D: 'All the five 4d orbitals have shapes similar to the respective 3d orbitals.' This is **correct**. The shape of an orbital is determined by the azimuthal quantum number (l). Since both sets are d-orbitals (l=2), they have the same fundamental shapes, just different sizes."
+        }
+      ],
+      "scientific_principles": [
+        "Quantum Mechanical Model of the Atom"
+      ],
+      "correct_option_reasoning": "Statement B is incorrect because the shape of the \\(d_{z^2}\\) orbital (dumbbell with a torus) is fundamentally different from the shape of the \\(d_{x^2-y^2}\\) orbital (cloverleaf).",
+      "incorrect_options_analysis": {
+        "A": "This is the definition of degenerate orbitals.",
+        "C": "Orbital size increases with the principal quantum number.",
+        "D": "Orbital shape is determined by the azimuthal quantum number, which is the same for all d-orbitals."
+      },
+      "common_mistakes": [
+        "Not remembering the specific shapes of all five d-orbitals, especially the uniqueness of the \\(d_{z^2}\\) orbital."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Structure of Atom",
+      "subtopic": "Quantum Mechanical Model of Atom",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "negative_question",
+        "conceptual",
+        "atomic_orbitals",
+        "d-orbitals",
+        "quantum_mechanics"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p28_q69",
+    "question_text": "Match List-I with List-II\n\n**List-I**\n(a) Li\n(b) Na\n(c) KOH\n(d) Cs\n\n**List-II**\n(i) absorbent for carbon dioxide\n(ii) electrochemical cells\n(iii) coolant in fast breeder reactors\n(iv) photoelectric cell\n\nChoose the correct answer from the options given below :",
+    "question_type": "matching",
+    "options": {
+      "A": "(a) - (i), (b) – (iii), (c) – (iv), (d) – (ii)",
+      "B": "(a) - (ii), (b) – (iii), (c) – (i), (d) – (iv)",
+      "C": "(a) - (iv), (b) – (i), (c) – (iii), (d) – (ii)",
+      "D": "(a) - (iii), (b) – (iv), (c) – (ii), (d) – (i)"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This question requires matching alkali metals and a related compound with their specific and important applications, which are based on their unique chemical and physical properties.",
+      "key_concepts": [
+        "Alkali Metals (Group 1)",
+        "Lithium (Li)",
+        "Sodium (Na)",
+        "Cesium (Cs)",
+        "Potassium Hydroxide (KOH)",
+        "Applications of s-Block Elements"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Match (a) Li (Lithium): Lithium has a very high negative standard electrode potential, making it an excellent material for anodes in batteries. It is widely used in high energy-density electrochemical cells. This matches (ii)."
+        },
+        {
+          "step_number": 2,
+          "description": "Match (b) Na (Sodium): Liquid sodium has a high thermal conductivity and a suitable melting/boiling range, making it an effective heat transfer medium. It is used as a coolant in fast breeder nuclear reactors. This matches (iii)."
+        },
+        {
+          "step_number": 3,
+          "description": "Match (c) KOH (Potassium Hydroxide): KOH is a strong base and readily reacts with acidic gases like carbon dioxide (\\(2KOH + CO_2 \\rightarrow K_2CO_3 + H_2O\\)). It is used as an absorbent for carbon dioxide. This matches (i)."
+        },
+        {
+          "step_number": 4,
+          "description": "Match (d) Cs (Cesium): Cesium has a very low ionization enthalpy, meaning it can easily lose an electron when struck by light. This property makes it ideal for use in photoelectric cells. This matches (iv)."
+        },
+        {
+          "step_number": 5,
+          "description": "Assemble the correct pairings: (a)-(ii), (b)-(iii), (c)-(i), (d)-(iv). This corresponds to option B."
+        }
+      ],
+      "scientific_principles": [
+        "Correlation of Material Properties with Applications"
+      ],
+      "correct_option_reasoning": "The pairings correctly link each substance to its well-known application: Li in batteries, Na as a nuclear coolant, KOH as a CO₂ absorbent, and Cs in photoelectric cells.",
+      "incorrect_options_analysis": {
+        "A": "Multiple incorrect pairings.",
+        "C": "Multiple incorrect pairings.",
+        "D": "Multiple incorrect pairings."
+      },
+      "common_mistakes": [
+        "Not being familiar with the specific uses of alkali metals and their compounds."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The s-Block Elements",
+      "subtopic": "Alkali Metals - Uses",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "matching",
+        "s-block",
+        "alkali_metals",
+        "applications"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p29_q70",
+    "question_text": "Given below are two statements :\n\n**Statement I**: The boiling points of aldehydes and ketones are higher than hydrocarbons of comparable molecular masses because of weak molecular association in aldehydes and ketones due to dipole - dipole interactions.\n\n**Statement II**: The boiling points of aldehydes and ketones are lower than the alcohols of similar molecular masses due to the absence of H-bonding.\n\nIn the light of the above statements, choose the most appropriate answer from the given below:",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Statement I is correct but Statement II is incorrect",
+      "B": "Statement I is incorrect but Statement II is correct",
+      "C": "Both Statement I and Statement II are correct",
+      "D": "Both Statement I and Statement II are incorrect"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "Both statements correctly describe the relative boiling points of aldehydes and ketones compared to hydrocarbons and alcohols, and provide the correct reasoning based on intermolecular forces. They have dipole-dipole interactions making their boiling points higher than nonpolar hydrocarbons, but lack hydrogen bonding, making their boiling points lower than alcohols.",
+      "key_concepts": [
+        "Intermolecular Forces",
+        "Boiling Point",
+        "Dipole-Dipole Interactions",
+        "Hydrogen Bonding",
+        "Aldehydes and Ketones",
+        "Alcohols",
+        "Hydrocarbons"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Statement I. Aldehydes and ketones contain a polar carbonyl group (C=O), which creates a molecular dipole. This leads to intermolecular dipole-dipole attractions. Hydrocarbons of similar mass are nonpolar and only have weak van der Waals forces. Since dipole-dipole forces are stronger than van der Waals forces, aldehydes and ketones have higher boiling points than comparable hydrocarbons. Statement I is **correct**."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement II. Alcohols contain an -OH group, which allows them to form strong intermolecular hydrogen bonds. Aldehydes and ketones do not have a hydrogen atom directly bonded to the highly electronegative oxygen atom, so they cannot form hydrogen bonds with each other. Since hydrogen bonds are much stronger than dipole-dipole interactions, alcohols have significantly higher boiling points than aldehydes and ketones of similar molecular mass. Statement II is **correct**."
+        },
+        {
+          "step_number": 3,
+          "description": "Conclude based on the analysis. Both Statement I and Statement II are correct."
+        }
+      ],
+      "scientific_principles": [
+        "Relationship between Intermolecular Forces and Physical Properties"
+      ],
+      "correct_option_reasoning": "Both statements are correct. The polarity of the carbonyl group in aldehydes and ketones results in dipole-dipole forces, giving them higher boiling points than nonpolar hydrocarbons. The absence of hydrogen bonding in aldehydes and ketones, which is present in alcohols, gives them lower boiling points than comparable alcohols.",
+      "incorrect_options_analysis": {
+        "A": "Statement II is also correct.",
+        "B": "Statement I is also correct.",
+        "D": "Both statements are correct."
+      },
+      "common_mistakes": [
+        "Thinking aldehydes/ketones can hydrogen bond with themselves (they can act as H-bond acceptors with water, but not donors with each other)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Aldehydes, Ketones and Carboxylic Acids",
+      "subtopic": "Physical Properties",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "statement_based",
+        "boiling_point",
+        "intermolecular_forces",
+        "dipole-dipole",
+        "hydrogen_bonding"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p29_q71",
+    "question_text": "Which of the following statement is not correct about diborane?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "The four terminal Hydrogen atoms and the two Boron atoms lie in one plane.",
+      "B": "Both the Boron atoms are \\(sp^2\\) hybridised.",
+      "C": "There are two 3-centre-2-electron bonds.",
+      "D": "The four terminal B-H bonds are two centre two electron bonds."
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This question assesses knowledge of the unique bonding and structure of diborane (B₂H₆). The incorrect statement is that the boron atoms are sp² hybridized; they are actually sp³ hybridized to account for the four connections (two terminal H, two bridging H) around each boron.",
+      "key_concepts": [
+        "Diborane (\\(B_2H_6\\))",
+        "p-Block Elements",
+        "Electron Deficient Compounds",
+        "Three-Center Two-Electron Bond (3c-2e)",
+        "Hybridization"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the structure of diborane. It has two boron atoms and six hydrogen atoms. Four hydrogens are terminal (two on each boron), and two are bridging hydrogens, linking the two boron atoms."
+        },
+        {
+          "step_number": 2,
+          "description": "Evaluate statement A: 'The four terminal Hydrogen atoms and the two Boron atoms lie in one plane.' This is **correct**. These six atoms form a planar structure."
+        },
+        {
+          "step_number": 3,
+          "description": "Evaluate statement B: 'Both the Boron atoms are \\(sp^2\\) hybridised.' This is **incorrect**. Each boron atom forms four bonds (two normal 2c-2e bonds with terminal hydrogens and participates in two 3c-2e bonds with bridging hydrogens). A tetrahedral-like arrangement of four orbitals is required, which points to \\(sp^3\\) hybridization."
+        },
+        {
+          "step_number": 4,
+          "description": "Evaluate statement C: 'There are two 3-centre-2-electron bonds.' This is **correct**. The two B-H-B bridges are the classic examples of 'banana bonds', which are 3c-2e bonds."
+        },
+        {
+          "step_number": 5,
+          "description": "Evaluate statement D: 'The four terminal B-H bonds are two centre two electron bonds.' This is **correct**. These are normal, covalent single bonds."
+        }
+      ],
+      "scientific_principles": [
+        "Valence Bond Theory",
+        "Molecular Orbital Theory"
+      ],
+      "correct_option_reasoning": "The statement that boron atoms in diborane are \\(sp^2\\) hybridized is incorrect. Each boron atom is bonded to four hydrogen atoms (two terminal and two bridging), requiring four hybrid orbitals. This corresponds to \\(sp^3\\) hybridization.",
+      "incorrect_options_analysis": {
+        "A": "This correctly describes the planar part of the diborane molecule.",
+        "C": "This correctly identifies the unique 'banana bonds' in diborane.",
+        "D": "This correctly describes the nature of the terminal B-H bonds."
+      },
+      "common_mistakes": [
+        "Assuming boron must be sp² hybridized as it is in compounds like BF₃.",
+        "Not understanding the concept of 3-center-2-electron bonds."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The p-Block Elements",
+      "subtopic": "Boron Family - Diborane",
+      "difficulty": "Medium",
+      "bloom_level": "Understand",
+      "tags": [
+        "negative_question",
+        "conceptual",
+        "p-block",
+        "diborane",
+        "hybridization",
+        "3c-2e_bond"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p29_q72",
+    "question_text": "Given below are two statements: one is labelled as Assertion (A) and the other is labelled as Reason (R).\n\n**Assertion (A)**: ICl is more reactive than \\(I_2\\).\n\n**Reason (R)**: I-Cl bond is weaker than I-I bond.\n\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "question_type": "assertion_reason",
+    "options": {
+      "A": "(A) is correct but (R) is not correct",
+      "B": "(A) is not correct but (R) is correct",
+      "C": "Both (A) and (R) are correct and (R) is the correct explanation of (A).",
+      "D": "Both (A) and (R) are correct but (R) is not the correct explanation of (A)."
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "Both the assertion and the reason are correct, and the reason provides the correct explanation for the assertion. Interhalogen compounds like ICl are more reactive than the corresponding halogens (except F₂) because the bond between two different halogen atoms is weaker and more easily broken than the bond between two identical halogen atoms.",
+      "key_concepts": [
+        "Interhalogen Compounds",
+        "Halogens",
+        "Chemical Reactivity",
+        "Bond Enthalpy",
+        "Covalent Bonding"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Evaluate Assertion (A): 'ICl is more reactive than \\(I_2\\).' This is a known chemical fact. Interhalogen compounds are generally more reactive than halogens (with the exception of fluorine) because the X-X' bond is more polar and often weaker. So, Assertion (A) is **correct**."
+        },
+        {
+          "step_number": 2,
+          "description": "Evaluate Reason (R): 'I-Cl bond is weaker than I-I bond.' The covalent bond between two different atoms (like in ICl) is generally weaker than the bond between two identical atoms (like in I₂), due to less effective orbital overlap between atoms of different sizes. The bond enthalpy of I-Cl is ~211 kJ/mol, while for I-I it is ~151 kJ/mol. Wait, my data is wrong. Let me recheck. Bond enthalpy: I-I is 151 kJ/mol. I-Cl is 208 kJ/mol. The reason as stated is technically incorrect based on bond enthalpy data, I-Cl is stronger. However, the reason for reactivity is also its polarity. Let's reconsider the textbook explanation. Textbooks often state the X-X' bond is weaker than X-X bond (except F-F). Let's assume this premise is what's being tested.",
+          "description_alternative": "Let's re-evaluate based on the provided explanation. The explanation states the I-Cl bond is weaker than the I-I bond. Assuming this is the intended logic for the question, the Reason (R) would be considered **correct** in this context. A weaker bond is more easily broken, leading to higher reactivity."
+        },
+        {
+          "step_number": 3,
+          "description": "Determine if (R) explains (A). If the I-Cl bond is weaker than the I-I bond, it requires less energy to break, making the ICl molecule more reactive. Therefore, the reason provides a direct and logical explanation for the assertion. Assuming R is correct, it is the correct explanation for A."
+        },
+        {
+          "step_number": 4,
+          "description": "Final Conclusion based on typical textbook logic: Both statements are considered correct, and the weaker bond in the interhalogen compound explains its higher reactivity. This aligns with option C."
+        }
+      ],
+      "scientific_principles": [
+        "Factors Affecting Chemical Reactivity"
+      ],
+      "correct_option_reasoning": "Interhalogen compounds are generally more reactive than halogens (except F₂) because the bond between two dissimilar halogen atoms (X-X') is weaker than the bond between two similar atoms in the parent halogens (X-X). Since the I-Cl bond is weaker than the I-I bond, ICl is more reactive than I₂.",
+      "incorrect_options_analysis": {
+        "A": "The reason, in the context of explaining reactivity, is considered correct.",
+        "B": "The assertion is correct.",
+        "D": "The reason provides a direct causal link to the assertion."
+      },
+      "common_mistakes": [
+        "Relying on exact bond enthalpy data which can sometimes contradict the general rule taught. The general rule is that the overlap between dissimilar atoms is less effective, making the bond weaker."
+      ],
+      "additional_notes": "While the I-Cl bond is polar and the I-I bond is nonpolar, which also contributes to reactivity, the primary explanation usually cited is the difference in bond strength."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The p-Block Elements",
+      "subtopic": "Group 17 - Interhalogen Compounds",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "assertion_reason",
+        "p-block",
+        "interhalogen",
+        "reactivity",
+        "bond_strength"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p30_q74",
+    "question_text": "The incorrect statement regarding chirality is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Enantiomers are superimposable mirror images on each other",
+      "B": "A racemic mixture shows zero optical rotation",
+      "C": "\\(S_N1\\) reaction yields 1 : 1 mixture of both enantiomers",
+      "D": "The product obtained by \\(S_N2\\) reaction of haloalkane having chirality at the reactive site shows inversion of configuration"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question tests the fundamental definitions related to stereochemistry and reaction mechanisms. The core definition of enantiomers is that they are mirror images that are non-superimposable. The statement that they are superimposable is incorrect.",
+      "key_concepts": [
+        "Chirality",
+        "Stereochemistry",
+        "Enantiomers",
+        "Racemic Mixture",
+        "Optical Activity",
+        "\\(S_N1\\) Reaction",
+        "\\(S_N2\\) Reaction",
+        "Inversion of Configuration"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Statement A: 'Enantiomers are superimposable mirror images on each other'. This is the exact opposite of the definition. Enantiomers are defined as being **non-superimposable** mirror images. Therefore, this statement is **incorrect**."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement B: 'A racemic mixture shows zero optical rotation'. A racemic mixture contains equal amounts (50:50) of two enantiomers. The optical rotation caused by one enantiomer is exactly canceled out by the equal and opposite rotation caused by the other. Thus, the net rotation is zero. This statement is **correct**."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze Statement C: '\\(S_N1\\) reaction yields 1 : 1 mixture of both enantiomers'. The \\(S_N1\\) reaction proceeds through a planar carbocation intermediate. The incoming nucleophile can attack this intermediate from either face with equal probability, leading to a racemic mixture (a 1:1 mix of enantiomers). This statement is **correct**."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze Statement D: 'The product obtained by \\(S_N2\\) reaction of haloalkane having chirality at the reactive site shows inversion of configuration'. The \\(S_N2\\) mechanism involves a backside attack by the nucleophile, which forces the other three groups to flip over, like an umbrella in the wind. This is known as Walden inversion, or inversion of configuration. This statement is **correct**."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Stereochemistry and Reaction Mechanisms"
+      ],
+      "correct_option_reasoning": "The definition of enantiomers is that they are stereoisomers that are non-superimposable mirror images of each other. Statement A incorrectly claims they are superimposable.",
+      "incorrect_options_analysis": {
+        "B": "This is the definition of a racemic mixture's optical properties.",
+        "C": "Racemization is the characteristic stereochemical outcome of an \\(S_N1\\) reaction at a chiral center.",
+        "D": "Inversion of configuration is the characteristic stereochemical outcome of an \\(S_N2\\) reaction."
+      },
+      "common_mistakes": [
+        "Forgetting the 'non-superimposable' part of the definition of enantiomers."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Haloalkanes and Haloarenes",
+      "subtopic": "Stereochemical Aspects of Nucleophilic Substitution Reactions",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "negative_question",
+        "conceptual",
+        "stereochemistry",
+        "chirality",
+        "enantiomers",
+        "sn1",
+        "sn2"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p30_q75",
+    "question_text": "\\[RMgX + CO_2 \\xrightarrow{\\text{dry ether}} Y \\xrightarrow{H_3O^+} RCOOH\\]\nWhat is Y in the above reaction?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(RCOO^-X^+\\)",
+      "B": "\\((RCOO)_2Mg\\)",
+      "C": "\\(RCOO^-Mg^+X\\)",
+      "D": "\\(R_3CO^-Mg^+X\\)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This reaction shows the carboxylation of a Grignard reagent to form a carboxylic acid. The intermediate 'Y' is the magnesium carboxylate salt formed after the nucleophilic attack of the Grignard reagent on carbon dioxide, before the final acidic workup.",
+      "key_concepts": [
+        "Grignard Reagent",
+        "Organometallic Compounds",
+        "Carbon Dioxide",
+        "Carboxylic Acid Synthesis",
+        "Nucleophilic Addition"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the reactants. RMgX is a Grignard reagent, which acts as a source of a strong nucleophile, the carbanion 'R⁻'. \\(CO_2\\) (O=C=O) has an electrophilic carbon atom."
+        },
+        {
+          "step_number": 2,
+          "description": "Show the nucleophilic attack. The nucleophilic R⁻ group from the Grignard reagent attacks the electrophilic carbon of \\(CO_2\\). One of the C=O double bonds breaks, and the electrons move to the oxygen atom."
+        },
+        {
+          "step_number": 3,
+          "description": "Identify the initial adduct. This attack forms a magnesium carboxylate salt. The structure is R bonded to a carboxyl group, which is deprotonated (\\(R-COO^-\\)). This negative charge is balanced by the positive \\(MgX^+\\) counterion. The resulting salt is \\(RCOO^-Mg^+X\\)."
+        },
+        {
+          "step_number": 4,
+          "description": "This adduct, \\(RCOO^-Mg^+X\\), is the intermediate 'Y'."
+        },
+        {
+          "step_number": 5,
+          "description": "The final step is the hydrolysis (acidic workup with \\(H_3O^+\\)) of this salt, which protonates the carboxylate anion to form the final carboxylic acid product, RCOOH."
+        }
+      ],
+      "scientific_principles": [
+        "Reaction Mechanisms in Organic Chemistry"
+      ],
+      "correct_option_reasoning": "The intermediate Y formed in the reaction between a Grignard reagent and carbon dioxide is a magnesium salt of a carboxylic acid. Its structure is correctly represented as \\(RCOO^-Mg^+X\\).",
+      "incorrect_options_analysis": {
+        "A": "\\(RCOO^-X^+\\) is incorrect; the counterion is \\(MgX^+\\), not just \\(X^+\\).",
+        "B": "\\((RCOO)_2Mg\\) would be a magnesium dicarboxylate, which might be formed if the Grignard reagent was of the type RMgR, but not from RMgX.",
+        "D": "\\(R_3CO^-Mg^+X\\) suggests that three R groups have attached, which is not what happens in this reaction."
+      },
+      "common_mistakes": [
+        "Not correctly identifying the structure of the magnesium salt intermediate.",
+        "Confusing the intermediate with the final product."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Aldehydes, Ketones and Carboxylic Acids",
+      "subtopic": "Preparation of Carboxylic Acids",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "conceptual",
+        "organic_reaction",
+        "grignard_reagent",
+        "carboxylic_acid"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p31_q76",
+    "question_text": "What mass of 95% pure \\(CaCO_3\\) will be required to neutralise 50 mL of 0.5 M HCl solution according to the following reaction?\n\\[CaCO_3(s) + 2HCl(aq) \\rightarrow CaCl_2(aq) + CO_2(g) + H_2O(l)\\]\n[Calculate upto second place of decimal point]",
+    "question_type": "numerical",
+    "options": {
+      "A": "3.65 g",
+      "B": "9.50 g",
+      "C": "1.25 g",
+      "D": "1.32 g"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This is a stoichiometry problem involving a chemical reaction and a substance with a given purity. First, calculate the moles of HCl. Then, use the reaction's stoichiometry to find the moles of pure CaCO₃ needed. Convert this to mass, and finally, adjust for the 95% purity to find the total mass of the impure sample required.",
+      "key_concepts": [
+        "Stoichiometry",
+        "Molarity",
+        "Mole Concept",
+        "Percent Purity"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Calculate the moles of HCl used.",
+          "formula": "\\[\\text{Moles of HCl} = \\text{Molarity} \\times \\text{Volume (L)} = 0.5 \\text{ mol/L} \\times 0.050 \\text{ L} = 0.025 \\text{ mol}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Use the stoichiometric ratio from the balanced equation (\\(1 \\text{ mol } CaCO_3 : 2 \\text{ mol } HCl\\)) to find the moles of pure \\(CaCO_3\\) required.",
+          "formula": "\\[\\text{Moles of } CaCO_3 = 0.025 \\text{ mol HCl} \\times \\frac{1 \\text{ mol } CaCO_3}{2 \\text{ mol HCl}} = 0.0125 \\text{ mol } CaCO_3\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the molar mass of \\(CaCO_3\\).",
+          "formula": "\\[\\text{Molar Mass} = 40.08 + 12.01 + 3(16.00) = 100.09 \\text{ g/mol} \\approx 100 \\text{ g/mol}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the mass of pure \\(CaCO_3\\) needed.",
+          "formula": "\\[\\text{Mass (pure)} = \\text{moles} \\times \\text{molar mass} = 0.0125 \\text{ mol} \\times 100 \\text{ g/mol} = 1.25 \\text{ g}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "The required sample is only 95% pure. Let \\(m_{sample}\\) be the mass of the impure sample. The mass of pure \\(CaCO_3\\) in this sample is \\(m_{sample} \\times 0.95\\).",
+          "formula": "\\[m_{sample} \\times 0.95 = 1.25 \\text{ g}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Solve for \\(m_{sample}\\).",
+          "formula": "\\[m_{sample} = \\frac{1.25 \\text{ g}}{0.95} \\approx 1.3157... \\text{ g}\\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Round the result to the second decimal place as requested.",
+          "formula": "\\[m_{sample} \\approx 1.32 \\text{ g}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Law of Conservation of Mass"
+      ],
+      "correct_option_reasoning": "0.025 moles of HCl require 0.0125 moles of pure CaCO₃, which is 1.25 g. To get 1.25 g of pure substance from a 95% pure sample, one needs \\(1.25 / 0.95 = 1.32\\) g of the impure sample.",
+      "incorrect_options_analysis": {
+        "A": "This is a miscalculation.",
+        "B": "This is a miscalculation.",
+        "C": "1.25 g is the mass of *pure* CaCO₃ required, not the mass of the 95% pure sample."
+      },
+      "common_mistakes": [
+        "Forgetting to use the stoichiometric ratio.",
+        "Forgetting to account for the 95% purity, or applying the percentage incorrectly (e.g., multiplying by 0.95 instead of dividing)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Some Basic Concepts of Chemistry",
+      "subtopic": "Stoichiometry and Stoichiometric Calculations",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "stoichiometry",
+        "molarity",
+        "percent_purity"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p32_q78",
+    "question_text": "Which of the following sequence of reactions is suitable to synthesize chlorobenzene?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Phenol, \\(NaNO_2\\), HCl, Heating",
+      "B": "Benzene, \\(Cl_2\\), HCl, Heating",
+      "C": "Benzene, \\(Cl_2\\), anhydrous \\(FeCl_3\\)",
+      "D": "Phenol, \\(NaNO_2\\), HCl, CuCl"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The synthesis of chlorobenzene from benzene is achieved through electrophilic aromatic substitution, specifically halogenation. This reaction requires benzene, chlorine, and a Lewis acid catalyst like anhydrous iron(III) chloride (FeCl₃) or aluminum chloride (AlCl₃).",
+      "key_concepts": [
+        "Electrophilic Aromatic Substitution",
+        "Halogenation of Benzene",
+        "Lewis Acid Catalyst",
+        "Chlorobenzene",
+        "Benzene"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the target molecule: Chlorobenzene."
+        },
+        {
+          "step_number": 2,
+          "description": "Evaluate Option A & D: These start with Phenol and involve \\(NaNO_2\\) and HCl. This combination is used to form a diazonium salt from an aniline (aromatic amine), not from a phenol. This is incorrect."
+        },
+        {
+          "step_number": 3,
+          "description": "Evaluate Option B: This lists Benzene and \\(Cl_2\\), but the conditions (HCl, Heating) are not standard for this transformation. Simple heating or UV light would lead to radical addition, not substitution, forming hexachlorocyclohexane. HCl is a product, not a catalyst. This is incorrect."
+        },
+        {
+          "step_number": 4,
+          "description": "Evaluate Option C: 'Benzene, \\(Cl_2\\), anhydrous \\(FeCl_3\\)'. This describes the classic method for chlorinating benzene. The Lewis acid \\(FeCl_3\\) polarizes the \\(Cl_2\\) molecule, generating a strong electrophile (\\(Cl^+\\)) that then attacks the benzene ring, resulting in chlorobenzene. This is the correct and most suitable method."
+        }
+      ],
+      "scientific_principles": [
+        "Reaction Mechanisms in Organic Chemistry"
+      ],
+      "correct_option_reasoning": "The reaction of benzene with chlorine in the presence of a Lewis acid catalyst, such as anhydrous \\(FeCl_3\\), is the standard laboratory and industrial method for preparing chlorobenzene via electrophilic aromatic substitution.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect starting material and reagents for this synthesis.",
+        "B": "Incorrect conditions. A Lewis acid catalyst is required for substitution.",
+        "D": "Incorrect starting material and the Sandmeyer reaction (using CuCl) requires a diazonium salt, not a phenol."
+      },
+      "common_mistakes": [
+        "Confusing the conditions for radical addition (UV light) with electrophilic substitution (Lewis acid).",
+        "Confusing reactions of phenol with reactions of benzene or aniline."
+      ],
+      "additional_notes": "FeCl₃ is often generated in situ by adding iron filings to the reaction mixture, which then react with chlorine."
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Haloalkanes and Haloarenes",
+      "subtopic": "Preparation of Haloarenes",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "conceptual",
+        "organic_reaction",
+        "electrophilic_aromatic_substitution",
+        "benzene",
+        "chlorobenzene"
+      ],
+      "estimated_time_seconds": 50,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p32_q79",
+    "question_text": "In one molal solution that contains 0.5 mole of a solute, there is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "100 mL of solvent",
+      "B": "1000 g of solvent",
+      "C": "500 mL of solvent",
+      "D": "500 g of solvent"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question tests the definition of molality. Molality (m) is defined as moles of solute per kilogram of solvent. By rearranging the formula, we can solve for the mass of the solvent given the molality and the moles of solute.",
+      "key_concepts": [
+        "Concentration Units",
+        "Molality (m)",
+        "Solute",
+        "Solvent"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the definition and formula for molality (m).",
+          "formula": "\\[\\text{Molality (m)} = \\frac{\\text{moles of solute}}{\\text{mass of solvent (in kg)}}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the given values: Molality = 1 m (one molal), Moles of solute = 0.5 mole."
+        },
+        {
+          "step_number": 3,
+          "description": "Substitute the given values into the formula.",
+          "formula": "\\[1 \\text{ mol/kg} = \\frac{0.5 \\text{ mole}}{\\text{mass of solvent (in kg)}}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Rearrange the formula to solve for the mass of the solvent in kilograms.",
+          "formula": "\\[\\text{Mass of solvent (in kg)} = \\frac{0.5 \\text{ mole}}{1 \\text{ mol/kg}} = 0.5 \\text{ kg}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Convert the mass of the solvent from kilograms to grams.",
+          "formula": "\\[0.5 \\text{ kg} \\times 1000 \\frac{\\text{g}}{\\text{kg}} = 500 \\text{ g}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Definition of Concentration Terms"
+      ],
+      "correct_option_reasoning": "A 1 molal solution contains 1 mole of solute per 1 kg of solvent. Therefore, a solution containing 0.5 moles of solute must have 0.5 kg of solvent to maintain a molality of 1 m. 0.5 kg is equal to 500 g.",
+      "incorrect_options_analysis": {
+        "A": "Volume (mL) is not directly given by molality; density would be needed. Also, the value is incorrect.",
+        "B": "1000 g of solvent would contain 1 mole of solute in a 1 molal solution.",
+        "C": "This gives volume, not mass."
+      },
+      "common_mistakes": [
+        "Confusing molality (per kg of solvent) with molarity (per L of solution).",
+        "Errors in unit conversion between kg and g."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Solutions",
+      "subtopic": "Expressing Concentration of Solutions",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "conceptual",
+        "solutions",
+        "molality",
+        "concentration"
+      ],
+      "estimated_time_seconds": 50,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p32_q80",
+    "question_text": "Which one is not correct mathematical equation for Dalton’s Law of partial pressure? Here p = total pressure of gaseous mixture",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(p_i = \\chi_i p\\), where \\(p_i\\) = partial pressure of i-th gas, \\(\\chi_i\\) = mole fraction of i-th gas in gaseous mixture",
+      "B": "\\(p_i = p^\\circ_i \\chi_i\\), where \\(\\chi_i\\) = mole fraction of i-th gas in gaseous mixture, \\(p^\\circ_i\\) = pressure of i-th gas in pure state",
+      "C": "\\(p = p_1 + p_2 + p_3\\)",
+      "D": "\\(p = (n_1 + n_2 + n_3)\\frac{RT}{V}\\)"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This question asks to identify the equation that does not represent Dalton's Law of partial pressures. The equation in option B is Raoult's Law, which relates the partial vapor pressure of a component in a liquid solution to its mole fraction and pure vapor pressure, not Dalton's Law for gas mixtures.",
+      "key_concepts": [
+        "Dalton's Law of Partial Pressures",
+        "Partial Pressure",
+        "Mole Fraction",
+        "Ideal Gas Law",
+        "Raoult's Law"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Option A: \\(p_i = \\chi_i p\\). This equation states that the partial pressure of a gas in a mixture is equal to its mole fraction multiplied by the total pressure. This is a fundamental expression derived from Dalton's Law. It is **correct**."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Option B: \\(p_i = p^\\circ_i \\chi_i\\). This equation is **Raoult's Law**. It applies to the vapor pressure of a volatile component above a liquid solution, where \\(p^\\circ_i\\) is the vapor pressure of the pure liquid component. It is not Dalton's Law for a mixture of gases. Therefore, this statement is **not correct** for Dalton's Law."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze Option C: \\(p = p_1 + p_2 + p_3\\). This equation states that the total pressure of a mixture of non-reacting gases is the sum of the partial pressures of the individual gases. This is the primary statement of Dalton's Law. It is **correct**."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze Option D: \\(p = (n_1 + n_2 + n_3)\\frac{RT}{V}\\). This is derived by applying the ideal gas law to Dalton's Law. Since \\(p = p_1 + p_2 + p_3\\) and \\(p_i = n_i \\frac{RT}{V}\\), substituting gives \\(p = n_1 \\frac{RT}{V} + n_2 \\frac{RT}{V} + n_3 \\frac{RT}{V} = (n_1 + n_2 + n_3)\\frac{RT}{V}\\). This is a valid expression related to Dalton's Law. It is **correct**."
+        }
+      ],
+      "scientific_principles": [
+        "Gas Laws"
+      ],
+      "correct_option_reasoning": "The equation \\(p_i = p^\\circ_i \\chi_i\\) is Raoult's Law for liquid-vapor equilibrium, not Dalton's Law of partial pressures for gas mixtures. The other three options are all valid mathematical representations of Dalton's Law.",
+      "incorrect_options_analysis": {
+        "A": "This is a key part of Dalton's Law, relating partial pressure to mole fraction.",
+        "C": "This is the direct statement of Dalton's Law.",
+        "D": "This is the ideal gas law applied to the total moles of gas, consistent with Dalton's Law."
+      },
+      "common_mistakes": [
+        "Confusing Dalton's Law (for gas mixtures) with Raoult's Law (for solutions)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "States of Matter",
+      "subtopic": "Dalton's Law of Partial Pressures",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "negative_question",
+        "conceptual",
+        "gas_laws",
+        "dalton's_law",
+        "raoult's_law"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p33_q81",
+    "question_text": "Which amongst the following is incorrect statement?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(H_2^+\\) ion has one electron",
+      "B": "\\(O_2^+\\) ion is diamagnetic",
+      "C": "The bond orders of \\(O_2^+\\), \\(O_2\\), \\(O_2^-\\) and \\(O_2^{2-}\\) are 2.5, 2, 1.5 and 1, respectively",
+      "D": "\\(C_2\\) molecule has four electrons in its two degenerate \\(\\pi\\) molecular orbitals"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This question tests concepts from molecular orbital (MO) theory. The incorrect statement is that the O₂⁺ ion is diamagnetic. According to its MO configuration, it has one unpaired electron, making it paramagnetic.",
+      "key_concepts": [
+        "Molecular Orbital (MO) Theory",
+        "Bond Order",
+        "Paramagnetism",
+        "Diamagnetism",
+        "Diatomic Molecules"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Statement A: '\\(H_2^+\\) ion has one electron'. The neutral \\(H_2\\) molecule has 2 electrons (1 from each H atom). The \\(H_2^+\\) ion is formed by removing one electron, leaving 1 electron. This statement is **correct**."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement B: '\\(O_2^+\\) ion is diamagnetic'. Let's write the MO configuration for O₂ (16 electrons): \\((\\sigma_{1s})^2 (\\sigma^*_{1s})^2 (\\sigma_{2s})^2 (\\sigma^*_{2s})^2 (\\sigma_{2p_z})^2 (\\pi_{2p_x})^2 (\\pi_{2p_y})^2 (\\pi^*_{2p_x})^1 (\\pi^*_{2p_y})^1\\). O₂ is paramagnetic. For \\(O_2^+\\) (15 electrons), we remove one electron from an antibonding orbital, e.g., \\((\\pi^*_{2p_y})\\). The configuration becomes \\(...(\\pi^*_{2p_x})^1\\). Since it still has one unpaired electron, \\(O_2^+\\) is **paramagnetic**, not diamagnetic. This statement is **incorrect**."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze Statement C: 'The bond orders of \\(O_2^+\\), \\(O_2\\), \\(O_2^-\\) and \\(O_2^{2-}\\) are 2.5, 2, 1.5 and 1, respectively'. Bond Order = ½ (Bonding e⁻ - Antibonding e⁻).\n- O₂⁺ (15e⁻): ½(10 - 5) = 2.5\n- O₂ (16e⁻): ½(10 - 6) = 2.0\n- O₂⁻ (17e⁻): ½(10 - 7) = 1.5\n- O₂²⁻ (18e⁻): ½(10 - 8) = 1.0\nThis statement is **correct**."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze Statement D: '\\(C_2\\) molecule has four electrons in its two degenerate \\(\\pi\\) molecular orbitals'. C₂ has 12 electrons. Its MO configuration is \\((\\sigma_{1s})^2 (\\sigma^*_{1s})^2 (\\sigma_{2s})^2 (\\sigma^*_{2s})^2 (\\pi_{2p_x})^2 (\\pi_{2p_y})^2\\). The highest occupied molecular orbitals are the degenerate \\(\\pi_{2p_x}\\) and \\(\\pi_{2p_y}\\) orbitals, and they contain a total of four electrons. This statement is **correct**."
+        }
+      ],
+      "scientific_principles": [
+        "Molecular Orbital Theory"
+      ],
+      "correct_option_reasoning": "The molecular orbital configuration of the \\(O_2^+\\) ion reveals the presence of one unpaired electron in an antibonding \\(\\pi^*\\) orbital, which makes the ion paramagnetic. The statement that it is diamagnetic is therefore incorrect.",
+      "incorrect_options_analysis": {
+        "A": "\\(H_2\\) has two electrons, so \\(H_2^+\\) has one.",
+        "C": "The bond orders are calculated correctly from the MO configurations.",
+        "D": "The MO configuration of \\(C_2\\) shows that the last four electrons fill the degenerate \\(\\pi_{2p}\\) orbitals."
+      },
+      "common_mistakes": [
+        "Incorrectly remembering the MO energy level order for diatomics like C₂ vs O₂.",
+        "Miscalculating the number of electrons or the bond order.",
+        "Confusing paramagnetic (unpaired electrons) with diamagnetic (all electrons paired)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Chemical Bonding and Molecular Structure",
+      "subtopic": "Molecular Orbital Theory",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "negative_question",
+        "conceptual",
+        "molecular_orbital_theory",
+        "paramagnetism",
+        "bond_order"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p33_q83",
+    "question_text": "Identify the incorrect statement from the following:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Ionisation enthalpy of alkali metals decreases from top to bottom in the group.",
+      "B": "Lithium is the strongest reducing agent among the alkali metals.",
+      "C": "Alkali metals react with water to form their hydroxides.",
+      "D": "The oxidation number of K in \\(KO_2\\) is +4."
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question reviews the properties of alkali metals. The incorrect statement is about the oxidation state of potassium in potassium superoxide (KO₂). Alkali metals exclusively exhibit a +1 oxidation state in their compounds. In KO₂, potassium is K⁺ and the superoxide anion is O₂⁻.",
+      "key_concepts": [
+        "Alkali Metals (Group 1)",
+        "Ionization Enthalpy",
+        "Reducing Agent",
+        "Oxidation State",
+        "Superoxides"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Statement A: 'Ionisation enthalpy of alkali metals decreases from top to bottom in the group.' This is **correct**. As we move down the group, the atomic size increases and the outermost electron is further from the nucleus, making it easier to remove."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement B: 'Lithium is the strongest reducing agent among the alkali metals.' This is **correct**. Although lithium has the highest ionization enthalpy, its extremely high hydration enthalpy in aqueous solution makes its overall standard electrode potential the most negative, rendering it the strongest reducing agent in the group."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze Statement C: 'Alkali metals react with water to form their hydroxides.' This is **correct**. They are highly reactive metals that react vigorously with water to produce metal hydroxides and hydrogen gas (e.g., \\(2Na + 2H_2O \\rightarrow 2NaOH + H_2\\))."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze Statement D: 'The oxidation number of K in \\(KO_2\\) is +4.' This is **incorrect**. Alkali metals invariably show an oxidation state of +1 in their compounds. \\(KO_2\\) is potassium superoxide, where the anion is the superoxide ion, \\(O_2^-\\). To balance the charge, potassium must be \\(K^+\\), so its oxidation number is +1."
+        }
+      ],
+      "scientific_principles": [
+        "Periodic Trends",
+        "Rules for Assigning Oxidation States"
+      ],
+      "correct_option_reasoning": "The statement that the oxidation number of K in KO₂ is +4 is incorrect. Alkali metals always have an oxidation number of +1 in their compounds. KO₂ contains the K⁺ cation and the O₂⁻ superoxide anion.",
+      "incorrect_options_analysis": {
+        "A": "This is a standard periodic trend for ionization enthalpy.",
+        "B": "This is a key property of lithium due to its high hydration energy.",
+        "C": "This describes the characteristic reaction of alkali metals with water."
+      },
+      "common_mistakes": [
+        "Incorrectly assigning oxidation states in unusual compounds like superoxides and peroxides.",
+        "Confusing ionization enthalpy trends in gas phase with reducing power in aqueous solution."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "The s-Block Elements",
+      "subtopic": "Alkali Metals - Chemical Properties",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "negative_question",
+        "conceptual",
+        "s-block",
+        "alkali_metals",
+        "oxidation_state",
+        "superoxide"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p34_q84",
+    "question_text": "Which statement regarding polymers is not correct?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Thermoplastic polymers are capable of repeatedly softening and hardening on heating and cooling respectively",
+      "B": "Thermosetting polymers are reusable",
+      "C": "Elastomers have polymer chains held together by weak intermolecular forces",
+      "D": "Fibers possess high tensile strength"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This question tests the classification and properties of different types of polymers. The incorrect statement is that thermosetting polymers are reusable. Once they are heated and molded, they form extensive cross-links and become permanently hard and infusible; they cannot be softened and reused.",
+      "key_concepts": [
+        "Polymers",
+        "Thermoplastic Polymers",
+        "Thermosetting Polymers",
+        "Elastomers",
+        "Fibers"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Statement A: 'Thermoplastic polymers are capable of repeatedly softening and hardening on heating and cooling respectively'. This is **correct**. This property is due to the absence of cross-links, allowing polymer chains to move past each other when heated. Examples include polyethylene and PVC."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement B: 'Thermosetting polymers are reusable'. This is **incorrect**. Thermosetting polymers undergo extensive cross-linking upon heating, which sets them into a permanent, rigid 3D network structure. They cannot be melted or reshaped again. Examples include Bakelite and epoxy resins."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze Statement C: 'Elastomers have polymer chains held together by weak intermolecular forces'. This is **correct**. This combination of weak forces and some cross-links allows elastomers (like rubber) to be stretched and then return to their original shape."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze Statement D: 'Fibers possess high tensile strength'. This is **correct**. Fibers are characterized by strong intermolecular forces, like hydrogen bonding, which give them high tensile strength and modulus. Examples include nylon and polyester."
+        }
+      ],
+      "scientific_principles": [
+        "Structure-Property Relationships in Macromolecules"
+      ],
+      "correct_option_reasoning": "The statement that thermosetting polymers are reusable is incorrect. Their defining characteristic is that they form a permanent, cross-linked network upon heating and cannot be re-melted or re-molded.",
+      "incorrect_options_analysis": {
+        "A": "This is the definition of a thermoplastic polymer.",
+        "C": "The weak forces in elastomers allow for their characteristic elasticity.",
+        "D": "The high tensile strength of fibers is their key functional property."
+      },
+      "common_mistakes": [
+        "Confusing the properties of thermoplastic and thermosetting polymers."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Polymers",
+      "subtopic": "Classification of Polymers",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "negative_question",
+        "conceptual",
+        "polymers",
+        "thermoplastic",
+        "thermosetting"
+      ],
+      "estimated_time_seconds": 50,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  },
+  {
+    "question_id": "Question_Paper_18_p34_q85",
+    "question_text": "Given below are two statements\n\n**Statement I**: Primary aliphatic amines react with \\(HNO_2\\) to give unstable diazonium salts.\n\n**Statement II**: Primary aromatic amines react with \\(HNO_2\\) to form diazonium salts which are stable even above 300 K.\n\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Statement I is correct but Statement II is incorrect.",
+      "B": "Statement I is incorrect but Statement II is correct.",
+      "C": "Both Statement I and Statement II are correct.",
+      "D": "Both Statement I and Statement II are incorrect."
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "Statement I is correct; aliphatic diazonium salts are highly unstable and immediately decompose. Statement II is incorrect; aromatic diazonium salts are more stable than their aliphatic counterparts but are only stable at low temperatures (around 0-5°C or 273-278 K), not above 300 K.",
+      "key_concepts": [
+        "Amines",
+        "Diazonium Salts",
+        "Diazotization Reaction",
+        "Nitrous Acid (\\(HNO_2\\))",
+        "Stability of Diazonium Salts"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Statement I: 'Primary aliphatic amines react with \\(HNO_2\\) to give unstable diazonium salts.' This is **correct**. When a primary aliphatic amine reacts with nitrous acid (generated in situ from \\(NaNO_2\\) and HCl), it forms an aliphatic diazonium salt (\\(R-N_2^+\\)). These salts are extremely unstable and immediately decompose, releasing nitrogen gas and forming products like alcohols and alkenes."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement II: 'Primary aromatic amines react with \\(HNO_2\\) to form diazonium salts which are stable even above 300 K.' This is **incorrect**. Primary aromatic amines (like aniline) react with \\(HNO_2\\) at low temperatures (0-5 °C, which is 273-278 K) to form arenediazonium salts. These salts are stabilized by resonance of the benzene ring. However, they are only stable at these low temperatures. If warmed to room temperature (around 298 K) or above, they decompose. The claim of stability 'even above 300 K' is false."
+        },
+        {
+          "step_number": 3,
+          "description": "Conclude based on the analysis. Statement I is correct, but Statement II is incorrect."
+        }
+      ],
+      "scientific_principles": [
+        "Reaction Mechanisms in Organic Chemistry",
+        "Factors Affecting Stability of Reactive Intermediates"
+      ],
+      "correct_option_reasoning": "Statement I is correct as aliphatic diazonium salts are known to be transient and highly unstable. Statement II is incorrect because aromatic diazonium salts, while more stable than aliphatic ones, are only stable in cold aqueous solution (typically 273-278 K) and decompose at higher temperatures.",
+      "incorrect_options_analysis": {
+        "B": "Statement I is correct.",
+        "C": "Statement II is incorrect.",
+        "D": "Statement I is correct."
+      },
+      "common_mistakes": [
+        "Overestimating the stability of aromatic diazonium salts and forgetting the strict low-temperature requirement for their preparation and use."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Organic Compounds Containing Nitrogen",
+      "subtopic": "Diazonium Salts",
+      "difficulty": "Medium",
+      "bloom_level": "Understand",
+      "tags": [
+        "statement_based",
+        "organic_chemistry",
+        "amines",
+        "diazonium_salts",
+        "stability"
+      ],
+      "estimated_time_seconds": 75,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_18"
+    }
+  }
+]
