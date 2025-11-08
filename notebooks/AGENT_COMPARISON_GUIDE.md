@@ -5,11 +5,13 @@ This guide shows how to compare Vanilla ANEETAA, DSPy Baseline, and Optimized DS
 ## Quick Start
 
 ### 1. Basic Comparison (All Three Agents)
+
 ```cmd
 python notebooks\compare_agents.py --provider openai --model gpt-4o-mini --test-samples 10
 ```
 
 This will evaluate:
+
 - ✅ Vanilla ANEETAA MCQ Solver
 - ✅ DSPy MCQ Solver Baseline (unoptimized)
 - ✅ DSPy MCQ Solver Optimized (if available)
@@ -17,6 +19,7 @@ This will evaluate:
 ### 2. Compare with Your Optimized Model
 
 If you have an optimized MCQ solver from a previous run:
+
 ```cmd
 python notebooks\compare_agents.py --provider openai --model gpt-4o-mini --test-samples 10 --optimized-model-uri "runs:/YOUR_RUN_ID/mcq_agent"
 ```
@@ -24,11 +27,13 @@ python notebooks\compare_agents.py --provider openai --model gpt-4o-mini --test-
 ### 3. Skip Certain Evaluations
 
 Skip vanilla ANEETAA (faster):
+
 ```cmd
 python notebooks\compare_agents.py --skip-vanilla --test-samples 10
 ```
 
 Only evaluate vanilla vs optimized:
+
 ```cmd
 python notebooks\compare_agents.py --skip-baseline --test-samples 10
 ```
@@ -46,6 +51,7 @@ python notebooks\compare_agents.py --skip-baseline --test-samples 10
 For each comparison run, MLflow tracks:
 
 ### Metrics:
+
 - `vanilla_mcq_score` - Vanilla ANEETAA accuracy
 - `dspy_baseline_score` - Unoptimized DSPy accuracy
 - `dspy_optimized_score` - Optimized DSPy accuracy
@@ -53,6 +59,7 @@ For each comparison run, MLflow tracks:
 - `improvement_vs_baseline` - Percentage improvement over baseline
 
 ### Parameters:
+
 - `test_samples` - Number of questions tested
 - `provider` - LLM provider (openai/ollama)
 - `model` - Model name used
@@ -65,6 +72,7 @@ For each comparison run, MLflow tracks:
 4. Compare metrics side-by-side
 
 ### Compare Multiple Runs:
+
 1. Select multiple runs (checkboxes)
 2. Click "Compare" button
 3. View metrics chart showing all three agents
@@ -72,11 +80,13 @@ For each comparison run, MLflow tracks:
 ## Advanced Options
 
 ### Use More Test Samples (More Accurate)
+
 ```cmd
 python notebooks\compare_agents.py --test-samples 30
 ```
 
 ### Use Ollama (Free, Local)
+
 ```cmd
 python notebooks\compare_agents.py --provider ollama --model llama3.1:8b --test-samples 10
 ```
@@ -133,20 +143,24 @@ Dspy Optimized Score         : 92.00%
 ## Troubleshooting
 
 ### "No test data loaded"
+
 - Check that `Processed Data/solved_question_papers.json` exists
 - Try with a smaller `--test-samples` number
 
 ### "Agent error"
+
 - Make sure all dependencies are installed
 - Check that vanilla agents are working: `python app.py`
 
 ### "Model not found"
+
 - Verify the model URI is correct
 - Try without `--optimized-model-uri` to use baseline
 
 ## Cost Estimation
 
 With OpenAI GPT-4o-mini:
+
 - 10 samples: ~$0.01-0.02
 - 30 samples: ~$0.03-0.06
 
