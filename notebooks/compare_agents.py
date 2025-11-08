@@ -78,34 +78,48 @@ def configure_llm(provider: str = "openai", model: str = None):
 
 def load_mcq_test_data(data_dir: Path = None, max_questions: int = 20) -> List[Dict]:
     """
-    Load MCQ test data from solved question papers.
+    Load MCQ test data from Gemini 2.5 Pro Data files.
     
     Returns:
         List of MCQ questions with answers
     """
     if data_dir is None:
-        data_dir = Path(__file__).parent.parent / 'Processed Data'
+        data_dir = Path(__file__).parent.parent / 'aneeta_v2' / 'Processed Data' / 'Gemini 2.5 Pro Data'
     
-    mcq_path = data_dir / 'solved_question_papers.json'
-    
-    if not mcq_path.exists():
-        print(f"⚠ Warning: {mcq_path} not found")
+    if not data_dir.exists():
+        print(f"⚠ Warning: {data_dir} not found")
         return []
     
-    with open(mcq_path, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    
-    # Extract MCQ questions
+    # Load all JSON files from the directory
     test_questions = []
-    for item in data[:max_questions]:
-        if 'question' in item and 'correct_answer' in item:
-            test_questions.append({
-                'question': item['question'],
-                'options': item.get('options', []),
-                'correct_answer': item['correct_answer'],
-                'subject': item.get('subject', 'unknown'),
-                'context': item.get('context', '')
-            })
+    json_files = sorted(data_dir.glob('*.json'))
+    
+    for json_file in json_files:
+        try:
+            with open(json_file, 'r', encoding='utf-8') as f:
+                file_data = json.load(f)
+                
+                # Each file contains a list of questions
+                for item in file_data:
+                    if 'question_text' in item and 'correct_answer' in item:
+                        test_questions.append({
+                            'question_id': item.get('question_id', ''),
+                            'question': item['question_text'],
+                            'options': item.get('options', []),
+                            'correct_answer': item['correct_answer'],
+                            'subject': item.get('metadata', {}).get('subject', 'unknown'),
+                            'context': ''
+                        })
+                        
+                        # Stop if we've reached max_questions
+                        if len(test_questions) >= max_questions:
+                            break
+        except Exception as e:
+            print(f"⚠ Error loading {json_file}: {e}")
+            continue
+        
+        if len(test_questions) >= max_questions:
+            break
     
     print(f"✓ Loaded {len(test_questions)} MCQ test questions")
     return test_questions

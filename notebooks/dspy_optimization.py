@@ -503,15 +503,15 @@ def optimize_teacher_agent(
     teacher_agent = TeacherAgentDSPy()
     print("✓ DSPy teacher agent initialized")
     
-    # Configure SIMBA optimizer
-    from dspy import SIMBA
-    optimizer = SIMBA(
+    # Configure MIPRO optimizer (better than SIMBA for most cases)
+    from dspy.teleprompt import MIPROv2
+    optimizer = MIPROv2(
         metric=validate_explanation,
-        max_demos=max_demos,
-        bsize=batch_size,
-        num_threads=num_threads
+        num_candidates=7,  # Number of instruction candidates to generate
+        init_temperature=1.0,
+        verbose=True
     )
-    print("✓ SIMBA optimizer configured")
+    print("✓ MIPRO optimizer configured")
     
     # Run optimization
     print(f"Starting optimization on {train_subset_size} training examples...")

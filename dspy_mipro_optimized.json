@@ -1,0 +1,36 @@
+{
+  "predictor.predict": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Solve a multiple choice question using step-by-step reasoning",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "The MCQ question with options A, B, C, D"
+        },
+        {
+          "prefix": "Subject:",
+          "description": "Subject area: Physics, Chemistry, or Biology"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Step-by-step explanation of how to solve this question"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "Final answer: A, B, C, or D"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.14",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}

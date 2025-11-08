@@ -1,0 +1,65 @@
+{
+  "predictor.predict": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Match List I with List II.\n\n**List I (Interacting species)**\nA. A Leopard and a Lion in a forest\/grassland\nB. A Cuckoo laying egg in a Crow's nest\nC. Fungi and root of a higher plant in Mycorrhizae\nD. A cattle egret and a Cattle in a field\n\n**List II (Name of interaction)**\nI. Competition\nII. Brood parasitism\nIII. Mutualism\nIV. Commensalism\n\nChoose the correct answer from the options given below.\n\nOptions:\nA: A-I, B-II, C-III, D-IV\nB: A-I, B-II, C-IV, D-III\nC: A-III, B-IV, C-I, D-II\nD: A-II, B-III, C-I, D-IV",
+        "subject": "Biology",
+        "reasoning": "To match the interactions in List I with the correct types of interactions in List II, we analyze each pair:\n\nA. A Leopard and a Lion in a forest\/grassland - This represents competition for resources (food, territory), so it matches with I. Competition.\n\nB. A Cuckoo laying an egg in a Crow's nest - This is a classic example of brood parasitism, where one species benefits at the expense of another, so it matches with II. Brood parasitism.\n\nC. Fungi and root of a higher plant in Mycorrhizae - This is a mutualistic relationship where both species benefit, so it matches with III. Mutualism.\n\nD. A cattle egret and a Cattle in a field - The cattle egret benefits from the cattle by feeding on insects disturbed by them, while the cattle are not significantly harmed or benefited, which is an example of commensalism, so it matches with IV. Commensalism.\n\nNow we can summarize the matches:\n- A - I (Competition)\n- B - II (Brood parasitism)\n- C - III (Mutualism)\n- D - IV (Commensalism)\n\nThus, the correct answer is A: A-I, B-II, C-III, D-IV.",
+        "answer": "A"
+      },
+      {
+        "augmented": true,
+        "question": "Which micronutrient is required for splitting of water molecule during photosynthesis?\n\nOptions:\nA: Manganese\nB: Molybdenum\nC: Magnesium\nD: Copper",
+        "subject": "Biology",
+        "reasoning": "In photosynthesis, the splitting of water molecules (photolysis) occurs during the light-dependent reactions. This process is essential for providing electrons to the photosystem II complex. Manganese is a crucial micronutrient that plays a significant role in this process, as it is part of the oxygen-evolving complex that facilitates the splitting of water molecules. \n\nThe other options, while important for various functions in plants, do not specifically relate to the splitting of water during photosynthesis:\n- Molybdenum is involved in nitrogen fixation.\n- Magnesium is a central component of chlorophyll but does not directly split water.\n- Copper is involved in electron transport but not in the water-splitting reaction.\n\nThus, the correct answer is A: Manganese.",
+        "answer": "A"
+      },
+      {
+        "augmented": true,
+        "question": "The entire fleet of buses in Delhi were converted to CNG from diesel. In reference to this, which one of the following statements is false?\n\nOptions:\nA: It is cheaper than diesel\nB: It cannot be adulterated like diesel\nC: CNG burns more efficiently than diesel\nD: The same diesel engine is used in CNG buses making the cost of conversion low",
+        "subject": "Biology",
+        "reasoning": "To determine which statement is false regarding the conversion of buses from diesel to CNG, we need to analyze each option:\n\nA: \"It is cheaper than diesel\" - This statement can be true in some regions, but it may not always hold true depending on market conditions.\n\nB: \"It cannot be adulterated like diesel\" - This statement is generally true. CNG is a cleaner fuel and is less likely to be adulterated compared to diesel.\n\nC: \"CNG burns more efficiently than diesel\" - This statement is also true. CNG typically burns more cleanly and efficiently than diesel.\n\nD: \"The same diesel engine is used in CNG buses making the cost of conversion low\" - This statement is false. While some modifications can be made to diesel engines to run on CNG, they are not the same, and the conversion often requires significant changes to the engine.\n\nBased on this analysis, the false statement is D.",
+        "answer": "D"
+      },
+      {
+        "augmented": true,
+        "question": "Given below are two statements:\n\n**Statement I:** Electrostatic precipitator is most widely used in thermal power plant.\n\n**Statement II:** Electrostatic precipitator in thermal power plant removes ionising radiations.\n\nIn the light of the above statements, choose the most appropriate answer from the options given below:\n\nOptions:\nA: Both Statement I and Statement II are incorrect.\nB: Statement I is correct but Statement II is incorrect.\nC: Statement I is incorrect but Statement II is correct.\nD: Both Statement I and Statement II are correct.",
+        "subject": "Biology",
+        "reasoning": "To evaluate the statements:\n\n**Statement I:** Electrostatic precipitators are indeed widely used in thermal power plants to remove particulate matter from flue gases. This statement is correct.\n\n**Statement II:** However, electrostatic precipitators do not remove ionizing radiation. They are designed to capture solid particles, not to filter out radiation. Therefore, this statement is incorrect.\n\nBased on this analysis, the correct answer is that Statement I is correct but Statement II is incorrect.",
+        "answer": "B"
+      }
+    ],
+    "signature": {
+      "instructions": "Solve a multiple choice question using step-by-step reasoning",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "The MCQ question with options A, B, C, D"
+        },
+        {
+          "prefix": "Subject:",
+          "description": "Subject area: Physics, Chemistry, or Biology"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Step-by-step explanation of how to solve this question"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "Final answer: A, B, C, or D"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.14",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}
