@@ -1,0 +1,104 @@
+I have a JSON dataset of NEET exam questions (Physics, Chemistry, Biology) that needs to be restructured for better machine learning training. Please transform each question entry with the following improvements:
+
+1. **Restructure options**: Convert from array format to dictionary format (A, B, C, D)
+
+2. **Mathematical/Chemical formatting**: 
+   - Convert all mathematical expressions to LaTeX using \( \) for inline and \[ \] for block formulas
+   - Convert chemical formulas to LaTeX (e.g., H₂O → \(H_2O\), CO₂ → \(CO_2\))
+   - For image-based options, keep the placeholder but note in metadata that visual content is required
+
+3. **Enhanced explanations**: Create a structured explanation object with:
+   - Analyze each question individually to extract actual key concepts
+   - Parse the existing explanations to check if the explanation is correct and rewrite/structure them better if necessary
+   - Key concepts/definitions involved
+   - Step-by-step reasoning for the correct answer
+   - Scientific principles applied
+   - "Incorrect Options" Reason about each wrong option based on the question content
+   - For statement-based questions, analyze each statement separately
+   - Do not truncate explanations, but instead keep them detailed but concise
+
+4. **Enriched metadata**: Add:
+   - subject (Physics/Chemistry/Biology)
+   - topic and subtopic (be specific)
+   - difficulty level (Easy/Medium/Hard)
+   - detailed tags array (include question type: numerical, statement-based, matching, etc.)
+   - Keep existing metadata fields
+   - For image-based questions, flag that images are required for complete understanding
+
+5. **Improve question_text**: 
+   - Clean up formatting and preserve structure
+   - Convert all mathematical/chemical notation to LaTeX
+   - Keep statement-based questions clearly formatted
+
+6. **Handle special cases**:
+   - Statement I/Statement II questions: Structure the explanation to address each statement
+   - Matching questions: Show correct pairings clearly
+   - Image-based questions: Note in explanation what visual information is needed
+
+7. **Fact check**:
+   - Ensure all content is factually accurate before returning it to user
+
+Return the transformed entries as valid JSON objects. Process all questions I provide and then output the final JSON file using this format
+{
+  "question_id": "string (unique identifier, e.g., 'Question_Paper_1_001')",
+  "question_text": "string (LaTeX formatted, cleaned and structured)",
+  "question_type": "string (enum: 'single_correct', 'multiple_correct', 'numerical', 'statement_based', 'matching', 'assertion_reason', 'integer_type')",
+  
+  "options": {
+    "A": "string (LaTeX formatted)",
+    "B": "string (LaTeX formatted)",
+    "C": "string (LaTeX formatted)",
+    "D": "string (LaTeX formatted)",
+    "E": "string (optional, for some question types)"
+  },
+  
+  "correct_answer": "string or array (e.g., 'B' or ['A', 'C'] for multiple correct)",
+  
+  "explanation": {
+    "summary": "string (brief 1-2 sentence overview)",
+    "key_concepts": [
+      "string (specific concept 1)",
+      "string (specific concept 2)"
+    ],
+    "step_by_step": [
+      {
+        "step_number": "integer",
+        "description": "string (LaTeX formatted)",
+        "formula": "string (optional, LaTeX formatted)"
+      }
+    ],
+    "scientific_principles": [
+      "string (principle/law/theory applied)"
+    ],
+    "correct_option_reasoning": "string (why the correct answer is right)",
+    "incorrect_options_analysis": {
+      "A": "string (why this is wrong, if not correct)",
+      "B": "string (why this is wrong, if not correct)",
+      "C": "string (why this is wrong, if not correct)",
+      "D": "string (why this is wrong, if not correct)"
+    },
+    "common_mistakes": [
+      "string (typical errors students make)"
+    ],
+    "additional_notes": "string (optional, extra context)"
+  },
+  
+  "metadata": {
+    "subject": "string (enum: 'Physics', 'Chemistry', 'Biology')",
+    "topic": "string (broad topic, e.g., 'Mechanics', 'Organic Chemistry', 'Cell Biology')",
+    "subtopic": "string (specific subtopic, e.g., 'Rotational Dynamics', 'Aromatic Compounds', 'Cell Division')",
+    "difficulty": "string (enum: 'Easy', 'Medium', 'Hard')",
+    "bloom_level": "string (enum: 'Remember', 'Understand', 'Apply', 'Analyze', 'Evaluate', 'Create')",
+    "tags": [
+      "string (question_type_tag, e.g., 'numerical_calculation')",
+      "string (concept_tag, e.g., 'newton_laws')",
+      "string (skill_tag, e.g., 'problem_solving')"
+    ],
+    "estimated_time_seconds": "integer (expected solve time)",
+    "requires_visual": "boolean (true if image/diagram needed)",
+    "visual_description": "string (optional, describes required visual content)",
+    "source": "string (original source/textbook reference)"
+  }
+}
+
+Here's my JSON data:

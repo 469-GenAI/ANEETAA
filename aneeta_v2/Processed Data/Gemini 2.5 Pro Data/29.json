@@ -1,0 +1,2577 @@
+[
+  {
+    "question_id": "Question_Paper_14_p6_q15",
+    "question_text": "A biconvex lens has radii of curvature, 20 cm each. If the refractive index of the material of the lens is 1.5, the power of the lens is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "+5 D",
+      "B": "Infinity",
+      "C": "+2 D",
+      "D": "+20 D"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This problem requires calculating the power of a biconvex lens using the Lens Maker's formula, given the radii of curvature and the refractive index of its material.",
+      "key_concepts": [
+        "Lens Maker's Formula",
+        "Power of a Lens",
+        "Refractive Index",
+        "Focal Length",
+        "Sign Convention for Lenses"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the given values: Refractive index \\(\\mu = 1.5\\). For a biconvex lens, the radius of the first surface \\(R_1\\) is positive and the radius of the second surface \\(R_2\\) is negative according to the sign convention. Given radii of curvature are 20 cm each, so \\(R_1 = +20\\) cm and \\(R_2 = -20\\) cm."
+        },
+        {
+          "step_number": 2,
+          "description": "Use the Lens Maker's formula to find the focal length \\(f\\).",
+          "formula": "\\[\\frac{1}{f} = (\\mu - 1) \\left( \\frac{1}{R_1} - \\frac{1}{R_2} \\right)\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Substitute the given values into the formula.",
+          "formula": "\\[\\frac{1}{f} = (1.5 - 1) \\left( \\frac{1}{20} - \\frac{1}{-20} \\right) = 0.5 \\left( \\frac{1}{20} + \\frac{1}{20} \\right)\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the value of \\(1/f\\).",
+          "formula": "\\[\\frac{1}{f} = 0.5 \\left( \\frac{2}{20} \\right) = 0.5 \\times \\frac{1}{10} = \\frac{1}{20} \\text{ cm}^{-1}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "This gives the focal length \\(f = 20\\) cm. To calculate the power of the lens in diopters (D), the focal length must be in meters. Convert \\(f\\) to meters: \\(f = 20 \\text{ cm} = 0.2 \\text{ m}\\)."
+        },
+        {
+          "step_number": 6,
+          "description": "Calculate the power \\(P\\) using the formula \\(P = 1/f\\), where \\(f\\) is in meters.",
+          "formula": "\\[P = \\frac{1}{f \\text{ (in m)}} = \\frac{1}{0.2} = 5 \\text{ D}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Refraction of Light"
+      ],
+      "correct_option_reasoning": "Using the Lens Maker's formula with \\(\\mu = 1.5\\), \\(R_1 = +20\\) cm, and \\(R_2 = -20\\) cm, the focal length is found to be 20 cm or 0.2 m. The power of the lens is the reciprocal of the focal length in meters, which is \\(1/0.2 = +5\\) D.",
+      "incorrect_options_analysis": {
+        "B": "Infinity power means zero focal length, which is incorrect.",
+        "C": "+2 D would imply a focal length of 0.5 m or 50 cm, which is incorrect.",
+        "D": "+20 D would imply a focal length of 0.05 m or 5 cm, which is incorrect."
+      },
+      "common_mistakes": [
+        "Incorrectly applying the sign convention for the radii of curvature \\(R_1\\) and \\(R_2\\).",
+        "Forgetting to convert the focal length from centimeters to meters before calculating the power in diopters."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Optics",
+      "subtopic": "Ray Optics and Optical Instruments",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "lens_makers_formula",
+        "power_of_lens",
+        "optics"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p7_q16",
+    "question_text": "An electric lift with a maximum load of 2000 kg (lift + passengers) is moving up with a constant speed of \\(1.5 \\text{ ms}^{-1}\\). The frictional force opposing the motion is 3000 N. The minimum power delivered by the motor to the lift in watts is : (\\(g = 10 \\text{ m s}^{-2}\\))",
+    "question_type": "numerical",
+    "options": {
+      "A": "34500",
+      "B": "23500",
+      "C": "23000",
+      "D": "20000"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "To find the minimum power delivered by the motor, we must first calculate the total upward force required to move the lift at a constant speed, which includes overcoming gravity and friction. Then, power is calculated as the product of this total force and the constant velocity.",
+      "key_concepts": [
+        "Power",
+        "Force",
+        "Newton's First Law",
+        "Gravitational Force",
+        "Frictional Force"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the forces acting on the lift. The motor must exert an upward force \\(F_{up}\\) to counteract two downward forces: the gravitational force (weight) and the frictional force."
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the gravitational force (weight, W) of the lift and passengers.",
+          "formula": "\\[W = mg = 2000 \\text{ kg} \\times 10 \\text{ m s}^{-2} = 20000 \\text{ N}\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "The frictional force \\(f\\) is given as 3000 N."
+        },
+        {
+          "step_number": 4,
+          "description": "Since the lift is moving at a constant speed, the net force on it is zero (Newton's First Law). Therefore, the upward force exerted by the motor must be equal to the total downward force.",
+          "formula": "\\[F_{up} = W + f = 20000 \\text{ N} + 3000 \\text{ N} = 23000 \\text{ N}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the power delivered by the motor. Power is the dot product of force and velocity. Since the force and velocity are in the same direction, power is simply their product.",
+          "formula": "\\[P = F_{up} \\times v\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Substitute the values of force and velocity to find the power.",
+          "formula": "\\[P = 23000 \\text{ N} \\times 1.5 \\text{ ms}^{-1} = 34500 \\text{ W}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Newton's Laws of Motion",
+        "Work-Energy Theorem"
+      ],
+      "correct_option_reasoning": "The total upward force required is the sum of the weight (20000 N) and the frictional force (3000 N), which is 23000 N. The power delivered is this force multiplied by the constant velocity (1.5 m/s), resulting in 34500 W.",
+      "incorrect_options_analysis": {
+        "B": "This value does not correspond to a logical calculation step.",
+        "C": "This is the value of the total upward force (23000 N), not the power.",
+        "D": "This is the value of the gravitational force (20000 N), not the power."
+      },
+      "common_mistakes": [
+        "Forgetting to include the frictional force in the total force calculation.",
+        "Calculating only the force and mistaking it for the power.",
+        "Forgetting to include the gravitational force."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Work, Energy and Power",
+      "subtopic": "Power",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "power",
+        "newtons_laws",
+        "mechanics"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p7_q17",
+    "question_text": "A body of mass 60 g experiences a gravitational force of 3.0 N, when placed at a particular point. The magnitude of the gravitational field intensity at that point is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "20 N/kg",
+      "B": "180 N/kg",
+      "C": "0.05 N/kg",
+      "D": "50 N/kg"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This problem requires calculating the gravitational field intensity using its definition: the gravitational force experienced per unit mass.",
+      "key_concepts": [
+        "Gravitational Field Intensity",
+        "Gravitational Force",
+        "Mass and Weight",
+        "Unit Conversion"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the definition of gravitational field intensity (E_G). It is the force (F) experienced by a test mass (m) placed at a point in the field, divided by the mass.",
+          "formula": "\\[E_G = \\frac{F}{m}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the given values: Gravitational force \\(F = 3.0 \\text{ N}\\) and mass \\(m = 60 \\text{ g}\\)."
+        },
+        {
+          "step_number": 3,
+          "description": "Convert the mass from grams (g) to kilograms (kg) to maintain SI units, as the force is in Newtons and the answer options are in N/kg.",
+          "formula": "\\[m = 60 \\text{ g} = 60 \\times 10^{-3} \\text{ kg} = 0.06 \\text{ kg}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the values of force and mass into the formula for gravitational field intensity.",
+          "formula": "\\[E_G = \\frac{3.0 \\text{ N}}{0.06 \\text{ kg}}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the final result.",
+          "formula": "\\[E_G = \\frac{300}{6} \\frac{\\text{N}}{\\text{kg}} = 50 \\frac{\\text{N}}{\\text{kg}}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Newton's Law of Universal Gravitation"
+      ],
+      "correct_option_reasoning": "The gravitational field intensity is the force per unit mass. With a force of 3.0 N on a mass of 60 g (0.06 kg), the intensity is \\(3.0 / 0.06 = 50\\) N/kg.",
+      "incorrect_options_analysis": {
+        "A": "This would result from an incorrect calculation.",
+        "B": "This value (3.0 * 60) results from incorrectly multiplying force and mass.",
+        "C": "This value (3.0 * 0.06 / 3.0) or (0.06 / 3.0) results from inverting the formula or miscalculation."
+      },
+      "common_mistakes": [
+        "Forgetting to convert the mass from grams to kilograms, which would lead to an answer of 3.0/60 = 0.05 N/g, potentially causing confusion with option C."
+      ],
+      "additional_notes": "The unit N/kg is dimensionally equivalent to m/s², so gravitational field intensity is also the acceleration due to gravity at that point."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Gravitation",
+      "subtopic": "Gravitational Field",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "gravitation",
+        "gravitational_field",
+        "unit_conversion"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p7_q18",
+    "question_text": "Plane angle and solid angle have:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "No units and no dimensions",
+      "B": "Both units and dimensions",
+      "C": "Units but no dimensions",
+      "D": "Dimensions but no units"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This question tests the understanding of the nature of plane angles and solid angles, which are supplementary physical quantities. They are unique in that they have defined SI units but are dimensionless.",
+      "key_concepts": [
+        "Physical Quantities",
+        "Supplementary Quantities",
+        "Units and Dimensions",
+        "Plane Angle (Radian)",
+        "Solid Angle (Steradian)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the plane angle. The plane angle (\\(\\theta\\)) is defined as the ratio of the arc length (s) to the radius (r).",
+          "formula": "\\[\\theta = \\frac{s}{r}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Determine the dimensions of the plane angle. The dimension of arc length is length [L], and the dimension of radius is also length [L]. Therefore, the dimension of the plane angle is \\([L]/[L] = [L^0] = [M^0L^0T^0]\\). It is a dimensionless quantity."
+        },
+        {
+          "step_number": 3,
+          "description": "Identify the unit of the plane angle. The SI unit for the plane angle is the radian (rad)."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze the solid angle. The solid angle (\\(\\Omega\\)) is defined as the ratio of the intercepted area (A) on a sphere to the square of the radius (r).",
+          "formula": "\\[\\Omega = \\frac{A}{r^2}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Determine the dimensions of the solid angle. The dimension of area is length squared \\([L^2]\\), and the dimension of radius squared is also \\([L^2]\\). Therefore, the dimension of the solid angle is \\([L^2]/[L^2] = [L^0] = [M^0L^0T^0]\\). It is also a dimensionless quantity."
+        },
+        {
+          "step_number": 6,
+          "description": "Identify the unit of the solid angle. The SI unit for the solid angle is the steradian (sr)."
+        },
+        {
+          "step_number": 7,
+          "description": "Conclude based on the analysis. Both plane angle and solid angle have units (radian and steradian, respectively) but are dimensionless."
+        }
+      ],
+      "scientific_principles": [],
+      "correct_option_reasoning": "Plane angle (radian) and solid angle (steradian) are defined as ratios of two lengths and two areas, respectively. This makes them dimensionless quantities because the units of length cancel out. However, they are assigned specific SI units to signify their geometric nature.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect. They have units (radian and steradian).",
+        "B": "Incorrect. They are dimensionless.",
+        "D": "Incorrect. This combination is not possible for physical quantities; if a quantity has dimensions, it must have units."
+      },
+      "common_mistakes": [
+        "Confusing the concepts of 'unit' and 'dimension'. A quantity can have a unit but be dimensionless, as is the case here."
+      ],
+      "additional_notes": "Plane angle and solid angle are classified as supplementary quantities in the SI system, distinct from the seven base quantities."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Units and Measurement",
+      "subtopic": "Dimensions of Physical Quantities",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "units_and_dimensions",
+        "plane_angle",
+        "solid_angle",
+        "radian",
+        "steradian",
+        "supplementary_quantities"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p8_q19",
+    "question_text": "In the given circuits (a), (b) and (c), the potential drop across the two p-n junctions are equal in:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Circuit (c) only",
+      "B": "Both circuits (a) and (c)",
+      "C": "Circuit (a) only",
+      "D": "Circuit (b) only"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "The potential drop across identical p-n junctions will be equal if they are biased in the same way (either both forward-biased or both reverse-biased). Analyzing the circuits shows that in (a) and (c), both diodes are forward-biased, while in (b), one is forward-biased and the other is reverse-biased.",
+      "key_concepts": [
+        "p-n Junction Diode",
+        "Forward Bias",
+        "Reverse Bias",
+        "Potential Drop",
+        "Semiconductor Circuits"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Establish the condition for equal potential drops. For two identical p-n junctions, the potential drop across them will be equal if they are in the same biasing condition (both forward or both reverse)."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Circuit (a). The current flows from the positive terminal of the battery. It splits, and for both diodes, the current enters the p-side and exits the n-side. This means both diodes are forward-biased. Therefore, the potential drops are equal.",
+          "formula": null
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze Circuit (b). Current from the positive terminal flows through the top diode from p-side to n-side (forward-biased). For the bottom diode, the connection is reversed (current would have to flow from n-side to p-side), making it reverse-biased. Since one is forward-biased and the other is reverse-biased, their potential drops will be very different. (The drop across a forward-biased silicon diode is ~0.7V, while across a reverse-biased diode it's nearly the full supply voltage).",
+          "formula": null
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze Circuit (c). The current flows from the positive terminal. It encounters the first diode's p-side and then the second diode's p-side. Both diodes are arranged to allow current flow in the conventional direction. Both are forward-biased. Therefore, the potential drops are equal.",
+          "formula": null
+        },
+        {
+          "step_number": 5,
+          "description": "Conclude based on the analysis. The potential drops are equal in circuits (a) and (c) because in both cases, the two p-n junctions are forward-biased."
+        }
+      ],
+      "scientific_principles": [
+        "Diode Biasing Principles"
+      ],
+      "correct_option_reasoning": "In circuit (a), the two diodes are in parallel and both are forward-biased. In circuit (c), the two diodes are in series and both are forward-biased. In both these configurations, the diodes are in the same biasing state, so the potential drop across them will be equal. In circuit (b), one diode is forward-biased and the other is reverse-biased, leading to unequal potential drops.",
+      "incorrect_options_analysis": {
+        "A": "This is incomplete; circuit (a) also has equal potential drops.",
+        "C": "This is incomplete; circuit (c) also has equal potential drops.",
+        "D": "This is incorrect; circuit (b) has unequal potential drops."
+      },
+      "common_mistakes": [
+        "Incorrectly identifying the biasing (forward vs. reverse) of a diode in a circuit diagram."
+      ],
+      "additional_notes": "This question relies on interpreting the circuit diagrams which were not provided in the text. The explanation assumes standard representations for circuits (a), (b), and (c)."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Semiconductor Electronics",
+      "subtopic": "Semiconductor Diode",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "semiconductors",
+        "pn_junction",
+        "diode_biasing",
+        "circuit_analysis",
+        "visual_based_question"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": true,
+      "visual_description": "The question requires analyzing three circuit diagrams, labeled (a), (b), and (c), each containing two p-n junction diodes connected to a voltage source. The specific arrangement of the diodes in each circuit is needed to determine their biasing.",
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p8_q20",
+    "question_text": "In half wave rectification, if the input frequency is 60 Hz, then the output frequency would be:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "60 Hz",
+      "B": "120 Hz",
+      "C": "Zero",
+      "D": "30 Hz"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This is a factual recall question about the behavior of a half-wave rectifier. It passes only one half of the AC cycle, so the fundamental frequency of the resulting pulsating DC output remains the same as the input AC frequency.",
+      "key_concepts": [
+        "Rectification",
+        "Half-wave Rectifier",
+        "Full-wave Rectifier",
+        "AC Frequency",
+        "Output Waveform"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Understand the function of a half-wave rectifier. It uses a single diode to block or clip one half of the alternating current (AC) input sine wave, allowing only the other half to pass through."
+        },
+        {
+          "step_number": 2,
+          "description": "Consider the input waveform. An AC signal with a frequency of 60 Hz completes 60 full cycles (one positive half-cycle and one negative half-cycle) every second."
+        },
+        {
+          "step_number": 3,
+          "description": "Consider the output waveform. The half-wave rectifier outputs one pulse (e.g., the positive half-cycle) for each full cycle of the input. The time period between the start of one output pulse and the start of the next is the same as the time period of the input AC wave."
+        },
+        {
+          "step_number": 4,
+          "description": "Since the time period (T) of the output waveform is the same as the input, the frequency (f = 1/T) must also be the same. Therefore, if the input frequency is 60 Hz, the output frequency is also 60 Hz."
+        }
+      ],
+      "scientific_principles": [],
+      "correct_option_reasoning": "In half-wave rectification, one pulse is generated in the output for each cycle of the input AC signal. The periodicity of the output waveform is identical to the input waveform. Consequently, the output frequency is the same as the input frequency, which is 60 Hz.",
+      "incorrect_options_analysis": {
+        "B": "120 Hz is the output frequency for a full-wave rectifier, which inverts the negative half-cycles, producing two pulses for every one input cycle.",
+        "C": "Zero frequency would imply a constant DC signal, which is not the case for a simple rectifier output (it's pulsating DC).",
+        "D": "30 Hz would mean the period has doubled, which is incorrect."
+      },
+      "common_mistakes": [
+        "Confusing the output frequency of a half-wave rectifier with that of a full-wave rectifier."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Semiconductor Electronics",
+      "subtopic": "Rectifiers",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "semiconductors",
+        "rectifier",
+        "half_wave_rectifier",
+        "frequency"
+      ],
+      "estimated_time_seconds": 45,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p8_q21",
+    "question_text": "In the given nuclear reaction, the element X is:\n\\[\\ce{^{22}_{11}Na -> X + e+ + \\nu}\\]",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(\\ce{^{22}_{10}Ne}\\)",
+      "B": "\\(\\ce{^{22}_{12}Mg}\\)",
+      "C": "\\(\\ce{^{23}_{11}Na}\\)",
+      "D": "\\(\\ce{^{23}_{10}Ne}\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This problem requires identifying the daughter nucleus (X) in a beta-plus (positron emission) decay. This is done by applying the principles of conservation of mass number and atomic number (charge) to the nuclear reaction.",
+      "key_concepts": [
+        "Nuclear Reactions",
+        "Beta-plus Decay (Positron Emission)",
+        "Conservation of Mass Number (A)",
+        "Conservation of Atomic Number (Z)",
+        "Isotopes and Elements"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Write out the full nuclear reaction, representing the unknown element X with mass number A and atomic number Z, and the positron with its corresponding numbers.",
+          "formula": "\\[\\ce{^{22}_{11}Na -> ^{A}_{Z}X + ^{0}_{1}e + \\nu}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Apply the conservation of mass number (the superscripts). The total mass number on the left side must equal the total mass number on the right side.",
+          "formula": "\\[22 = A + 0 \\implies A = 22\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Apply the conservation of atomic number (the subscripts). The total atomic number (charge) on the left side must equal the total atomic number on the right side.",
+          "formula": "\\[11 = Z + 1 \\implies Z = 11 - 1 = 10\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Identify the element X based on its atomic number Z. An element with Z = 10 is Neon (Ne)."
+        },
+        {
+          "step_number": 5,
+          "description": "Combine the mass number (A) and the element symbol to find the identity of X.",
+          "formula": "\\[X = \\ce{^{22}_{10}Ne}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Law of Conservation of Baryon Number",
+        "Law of Conservation of Charge"
+      ],
+      "correct_option_reasoning": "By conserving the mass number (A=22) and atomic number (Z=11) across the reaction, we find that the daughter nucleus X must have a mass number of 22 and an atomic number of 10. The element with atomic number 10 is Neon (Ne). Therefore, X is \\(\\ce{^{22}_{10}Ne}\\).",
+      "incorrect_options_analysis": {
+        "B": "\\(\\ce{^{22}_{12}Mg}\\) would result from beta-minus decay, not positron emission.",
+        "C": "\\(\\ce{^{23}_{11}Na}\\) has an incorrect mass number and atomic number.",
+        "D": "\\(\\ce{^{23}_{10}Ne}\\) has an incorrect mass number."
+      },
+      "common_mistakes": [
+        "Confusing positron emission (Z decreases by 1) with electron emission (beta-minus decay, where Z increases by 1).",
+        "Incorrectly balancing the subscripts (atomic numbers)."
+      ],
+      "additional_notes": "Positron emission is a type of beta decay where a proton in the nucleus is converted into a neutron, releasing a positron and a neutrino. \\(\\ce{p -> n + e+ + \\nu}\\)."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Nuclei",
+      "subtopic": "Radioactivity",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "nuclear_physics",
+        "radioactivity",
+        "beta_decay",
+        "positron_emission",
+        "balancing_nuclear_equations"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p9_q22",
+    "question_text": "The peak voltage of the ac source is equal to:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(\\sqrt{2}\\) times the rms value of the ac source",
+      "B": "\\(1/\\sqrt{2}\\) times the rms value of the ac source",
+      "C": "The value of voltage supplied to the circuit",
+      "D": "The rms value of the ac source"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This is a fundamental concept in alternating current (AC) circuits. The question asks for the relationship between the peak voltage (amplitude) and the root-mean-square (rms) voltage of a sinusoidal AC source.",
+      "key_concepts": [
+        "Alternating Current (AC)",
+        "Peak Voltage (Amplitude)",
+        "RMS (Root Mean Square) Voltage",
+        "Sinusoidal Waveform"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the definition of the root-mean-square (rms) value for a sinusoidal voltage. The rms value is the effective value of the varying voltage; it's the equivalent DC voltage that would deliver the same average power to a resistor.",
+          "formula": null
+        },
+        {
+          "step_number": 2,
+          "description": "State the standard formula that relates the rms voltage (\\(V_{rms}\\)) to the peak voltage (\\(V_0\\) or \\(V_{peak}\\)).",
+          "formula": "\\[V_{rms} = \\frac{V_0}{\\sqrt{2}}\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Rearrange this formula to solve for the peak voltage (\\(V_0\\)) in terms of the rms voltage (\\(V_{rms}\\)).",
+          "formula": "\\[V_0 = V_{rms} \\times \\sqrt{2}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Interpret the result. The peak voltage is \\(\\sqrt{2}\\) times the rms value of the AC source."
+        }
+      ],
+      "scientific_principles": [],
+      "correct_option_reasoning": "By definition, for a sinusoidal AC source, the rms voltage is the peak voltage divided by the square root of 2. Therefore, rearranging the formula \\(V_{rms} = V_0 / \\sqrt{2}\\) gives \\(V_0 = \\sqrt{2} \\times V_{rms}\\).",
+      "incorrect_options_analysis": {
+        "B": "This describes the relationship for \\(V_{rms}\\) in terms of \\(V_0\\), not the other way around.",
+        "C": "This is ambiguous. 'Voltage supplied' usually refers to the rms value in practical applications (e.g., a 220V supply is 220V rms).",
+        "D": "This is incorrect; the peak and rms values are not equal."
+      },
+      "common_mistakes": [
+        "Inverting the relationship and thinking \\(V_{rms} = V_0 \\times \\sqrt{2}\\)."
+      ],
+      "additional_notes": "The rms value is used for AC circuits because it allows power calculations (like \\(P = V^2/R\\)) to be done in the same way as for DC circuits, by using the rms values for voltage and current."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Alternating Current",
+      "subtopic": "AC Voltage Applied to a Resistor",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "alternating_current",
+        "rms_voltage",
+        "peak_voltage",
+        "ac_circuits"
+      ],
+      "estimated_time_seconds": 30,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p9_q23",
+    "question_text": "The dimensions \\([MLT^{-2}A^{-2}]\\) belong to the:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Magnetic permeability",
+      "B": "Electric permittivity",
+      "C": "Magnetic flux",
+      "D": "Self inductance"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question requires identifying the physical quantity that corresponds to the given dimensional formula \\([MLT^{-2}A^{-2}]\\). This is the dimensional formula for magnetic permeability (\\(\\mu_0\\)).",
+      "key_concepts": [
+        "Dimensional Analysis",
+        "Magnetic Permeability (\\(\\mu\\))",
+        "Electric Permittivity (\\(\\epsilon\\))",
+        "Magnetic Flux (\\(\\Phi_B\\))",
+        "Self Inductance (L)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Derive the dimensions for magnetic permeability (\\(\\mu\\)). A convenient formula is from the force between two parallel currents: \\(\\frac{F}{l} = \\frac{\\mu_0 I_1 I_2}{2\\pi r}\\). Rearranging for \\(\\mu_0\\): \\(\\mu_0 = \\frac{F \\cdot r}{l \\cdot I_1 I_2}\\).",
+          "formula": "\\[[\\mu] = \\frac{[MLT^{-2}] [L]}{[L] [A] [A]} = [MLT^{-2}A^{-2}]\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Alternatively, use the Biot-Savart Law: \\(dB = \\frac{\\mu_0}{4\\pi} \\frac{Idl\\sin\\theta}{r^2}\\). The dimension of magnetic field B can be found from \\(F=qvB\\) or \\(F=IlB\\). From \\(F=IlB\\), \\([B] = \\frac{[F]}{[I][l]} = \\frac{[MLT^{-2}]}{[A][L]} = [MT^{-2}A^{-1}]\\).",
+          "formula": "\\[[\\mu_0] = \\frac{[B] [r^2]}{[I] [dl]} = \\frac{[MT^{-2}A^{-1}] [L^2]}{[A] [L]} = [MLT^{-2}A^{-2}]\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Compare this derived dimension with the one given in the question. They match. Therefore, the dimensions belong to magnetic permeability."
+        },
+        {
+          "step_number": 4,
+          "description": "For completeness, find the dimensions of the other options: \n(B) Electric permittivity (\\(\\epsilon\\)): From Coulomb's Law, \\([\\epsilon_0] = [M^{-1}L^{-3}T^4A^2]\\). \n(C) Magnetic flux (\\(\\Phi_B = B \\cdot A\\)): \\([\\Phi_B] = [MT^{-2}A^{-1}][L^2] = [ML^2T^{-2}A^{-1}]\\). \n(D) Self inductance (L): From \\(E = -L\\frac{dI}{dt}\\), \\([L] = \\frac{[E][dt]}{[dI]} = \\frac{[ML^2T^{-3}A^{-1}][T]}{[A]} = [ML^2T^{-2}A^{-2}]\\)."
+        }
+      ],
+      "scientific_principles": [],
+      "correct_option_reasoning": "The dimensional formula \\([MLT^{-2}A^{-2}]\\) is correctly derived from fundamental equations involving magnetic permeability (\\(\\mu\\)), such as the formula for the force between parallel conductors or the Biot-Savart law. The dimensions of the other listed quantities do not match.",
+      "incorrect_options_analysis": {
+        "B": "Electric permittivity has dimensions \\([M^{-1}L^{-3}T^4A^2]\\).",
+        "C": "Magnetic flux has dimensions \\([ML^2T^{-2}A^{-1}]\\).",
+        "D": "Self inductance has dimensions \\([ML^2T^{-2}A^{-2}]\\), which is close but differs by a factor of \\([L]\\)."
+      },
+      "common_mistakes": [
+        "Errors in deriving dimensions from formulas.",
+        "Confusing the dimensions of permeability with permittivity, or inductance."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Units and Measurement",
+      "subtopic": "Dimensions of Physical Quantities",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "units_and_dimensions",
+        "dimensional_analysis",
+        "magnetic_permeability",
+        "electromagnetism"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p9_q24",
+    "question_text": "Match List-I with List-II\n\nList-I (Electromagnetic waves)\n(a) AM radio waves\n(b) Microwaves\n(c) Infrared radiations\n(d) X-rays\n\nList-II (Wavelength)\n(i) \\(10^{-10} \\text{ m}\\)\n(ii) \\(10^{2} \\text{ m}\\)\n(iii) \\(10^{-2} \\text{ m}\\)\n(iv) \\(10^{-4} \\text{ m}\\)\n\nChoose the correct answer from the options given below:",
+    "question_type": "matching",
+    "options": {
+      "A": "(a) - (iii), (b) - (iv), (c) - (ii), (d) - (i)",
+      "B": "(a) - (ii), (b) - (iii), (c) - (iv), (d) - (i)",
+      "C": "(a) - (iv), (b) - (iii), (c) - (ii), (d) - (i)",
+      "D": "(a) - (iii), (b) - (ii), (c) - (i), (d) - (iv)"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This question requires matching different types of electromagnetic waves with their typical wavelengths. It tests knowledge of the electromagnetic spectrum.",
+      "key_concepts": [
+        "Electromagnetic Spectrum",
+        "Wavelength",
+        "Radio Waves",
+        "Microwaves",
+        "Infrared",
+        "X-rays"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the order of the electromagnetic spectrum from longest wavelength to shortest wavelength: Radio waves, Microwaves, Infrared, Visible, Ultraviolet, X-rays, Gamma rays."
+        },
+        {
+          "step_number": 2,
+          "description": "Match each wave type with its approximate wavelength from the given list."
+        },
+        {
+          "step_number": 3,
+          "description": "(a) AM radio waves have very long wavelengths, typically in the range of hundreds of meters. From the options, \\(10^2 \\text{ m}\\) (100 m) is the most appropriate match. So, (a) -> (ii)."
+        },
+        {
+          "step_number": 4,
+          "description": "(b) Microwaves have shorter wavelengths than radio waves, typically in the range of centimeters to millimeters. From the options, \\(10^{-2} \\text{ m}\\) (1 cm) is a suitable match. So, (b) -> (iii)."
+        },
+        {
+          "step_number": 5,
+          "description": "(c) Infrared radiations have wavelengths shorter than microwaves but longer than visible light. The given value of \\(10^{-4} \\text{ m}\\) (100 micrometers) falls within the infrared range. So, (c) -> (iv)."
+        },
+        {
+          "step_number": 6,
+          "description": "(d) X-rays have very short wavelengths, shorter than UV light. Their wavelengths are typically on the order of angstroms (\\(1 \\text{ Å} = 10^{-10} \\text{ m}\\)). The value \\(10^{-10} \\text{ m}\\) is a perfect match. So, (d) -> (i)."
+        },
+        {
+          "step_number": 7,
+          "description": "Combine the pairings: (a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)."
+        }
+      ],
+      "scientific_principles": [],
+      "correct_option_reasoning": "The correct matching is based on the standard order and approximate wavelengths of the electromagnetic spectrum: AM Radio waves (~100s of m), Microwaves (~cm), Infrared (~10-100 μm), and X-rays (~Å). The provided options align with this knowledge: (a)-(ii), (b)-(iii), (c)-(iv), (d)-(i).",
+      "incorrect_options_analysis": {
+        "A": "Incorrectly matches radio waves, microwaves, and infrared.",
+        "C": "Incorrectly matches radio waves and infrared.",
+        "D": "Incorrectly matches most items."
+      },
+      "common_mistakes": [
+        "Confusing the order of the electromagnetic spectrum, especially between microwaves and infrared.",
+        "Not having a sense of the order of magnitude for the wavelengths of different EM waves."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electromagnetic Waves",
+      "subtopic": "Electromagnetic Spectrum",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "electromagnetic_waves",
+        "electromagnetic_spectrum",
+        "wavelength",
+        "matching",
+        "fact-based"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p10_q26",
+    "question_text": "Two resistors of resistance, 100 \\(\\Omega\\) and 200 \\(\\Omega\\) are connected in parallel in an electrical circuit. The ratio of the thermal energy developed in 100 \\(\\Omega\\) to that in 200 \\(\\Omega\\) in a given time is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "1 : 4",
+      "B": "4 : 1",
+      "C": "1 : 2",
+      "D": "2 : 1"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This problem requires finding the ratio of thermal energy (or power, since the time is the same) developed in two resistors connected in parallel. The key is to use the formula for power that involves voltage, as voltage is constant across parallel components.",
+      "key_concepts": [
+        "Joule's Law of Heating",
+        "Electric Power",
+        "Parallel Resistor Circuit",
+        "Ohm's Law"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the circuit configuration. The resistors \\(R_1 = 100 \\Omega\\) and \\(R_2 = 200 \\Omega\\) are connected in parallel. The key property of a parallel circuit is that the voltage (V) across both components is the same."
+        },
+        {
+          "step_number": 2,
+          "description": "Recall the formulas for thermal energy (H) or power (P). Energy \\(H = P \\times t\\). Power has three common forms: \\(P = VI\\), \\(P = I^2R\\), and \\(P = V^2/R\\)."
+        },
+        {
+          "step_number": 3,
+          "description": "Choose the most convenient formula for power. Since the voltage (V) is the same for both resistors, the formula \\(P = V^2/R\\) is the most suitable. Using \\(P = I^2R\\) would be more complex as the currents are different."
+        },
+        {
+          "step_number": 4,
+          "description": "The thermal energy developed is \\(H = (V^2/R) \\times t\\). We need to find the ratio \\(H_1 / H_2\\) for resistors \\(R_1\\) and \\(R_2\\).",
+          "formula": "\\[\\frac{H_1}{H_2} = \\frac{(V^2/R_1) \\times t}{(V^2/R_2) \\times t}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Simplify the ratio. The terms \\(V^2\\) and \\(t\\) are common to both the numerator and the denominator, so they cancel out.",
+          "formula": "\\[\\frac{H_1}{H_2} = \\frac{1/R_1}{1/R_2} = \\frac{R_2}{R_1}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Substitute the given resistance values to find the numerical ratio.",
+          "formula": "\\[\\frac{H_1}{H_2} = \\frac{200 \\Omega}{100 \\Omega} = \\frac{2}{1}\\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Express the ratio in the required format: \\(H_1 : H_2 = 2 : 1\\)."
+        }
+      ],
+      "scientific_principles": [
+        "Conservation of Energy"
+      ],
+      "correct_option_reasoning": "For resistors in parallel, the voltage is constant. The power dissipated is given by \\(P = V^2/R\\), which means power is inversely proportional to resistance (\\(P \\propto 1/R\\)). Therefore, the ratio of power (and thermal energy in a given time) in the 100 \\(\\Omega\\) resistor to the 200 \\(\\Omega\\) resistor is \\(P_1/P_2 = R_2/R_1 = 200/100 = 2/1\\).",
+      "incorrect_options_analysis": {
+        "A": "1 : 4 would imply a squared inverse relationship, which is incorrect.",
+        "B": "4 : 1 would imply a squared direct relationship, which is incorrect.",
+        "C": "1 : 2 would result from incorrectly assuming power is directly proportional to resistance (\\(P \\propto R\\)), which would be true for a series circuit where current is constant."
+      },
+      "common_mistakes": [
+        "Using the formula \\(P = I^2R\\) for a parallel circuit without realizing that the currents are different and must be calculated first.",
+        "Confusing the relationship for parallel circuits (\\(P \\propto 1/R\\)) with that for series circuits (\\(P \\propto R\\))."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "Heating Effects of Current",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "current_electricity",
+        "joule_heating",
+        "electric_power",
+        "parallel_circuits"
+      ],
+      "estimated_time_seconds": 75,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p10_q27",
+    "question_text": "Let \\(T_1\\) and \\(T_2\\) be the energy of an electron in the first and second excited states of hydrogen atom, respectively. According to the Bohr’s model of an atom, the ratio \\(T_1 : T_2\\) is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "4 : 9",
+      "B": "9 : 4",
+      "C": "1 : 4",
+      "D": "4 : 1"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This problem asks for the ratio of the total energies of an electron in the first and second excited states of a hydrogen atom. The solution requires knowing the Bohr model's formula for energy levels and correctly identifying the principal quantum numbers for the excited states.",
+      "key_concepts": [
+        "Bohr's Model of the Atom",
+        "Energy Levels of Hydrogen Atom",
+        "Principal Quantum Number (n)",
+        "Ground State vs. Excited States"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the energy of an electron in the n-th state of a hydrogen atom according to Bohr's model.",
+          "formula": "\\[E_n = -\\frac{E_0}{n^2}\\] where \\(E_0\\) is the ionization energy (13.6 eV) and \\(n\\) is the principal quantum number."
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the principal quantum numbers (n) for the states mentioned. The 'first excited state' corresponds to \\(n=2\\). The 'second excited state' corresponds to \\(n=3\\). (The ground state is \\(n=1\\))."
+        },
+        {
+          "step_number": 3,
+          "description": "Write the expression for the energy \\(T_1\\) in the first excited state (\\(n=2\\)).",
+          "formula": "\\[T_1 = E_2 = -\\frac{E_0}{2^2} = -\\frac{E_0}{4}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Write the expression for the energy \\(T_2\\) in the second excited state (\\(n=3\\)).",
+          "formula": "\\[T_2 = E_3 = -\\frac{E_0}{3^2} = -\\frac{E_0}{9}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the ratio \\(T_1 : T_2\\).",
+          "formula": "\\[\\frac{T_1}{T_2} = \\frac{-E_0/4}{-E_0/9} = \\frac{1/4}{1/9} = \\frac{9}{4}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Express the ratio in the required format: \\(T_1 : T_2 = 9 : 4\\)."
+        }
+      ],
+      "scientific_principles": [
+        "Quantization of Energy"
+      ],
+      "correct_option_reasoning": "The energy in the n-th level is proportional to \\(1/n^2\\). For the first excited state, \\(n=2\\), so \\(T_1 \\propto 1/4\\). For the second excited state, \\(n=3\\), so \\(T_2 \\propto 1/9\\). The ratio \\(T_1/T_2\\) is \\((1/4)/(1/9) = 9/4\\).",
+      "incorrect_options_analysis": {
+        "A": "4 : 9 is the inverted ratio \\(T_2 : T_1\\).",
+        "C": "1 : 4 would be the ratio of energies for the ground state (n=1) to the first excited state (n=2), if the squares were taken directly without inversion.",
+        "D": "4 : 1 is incorrect and may result from confusing the relationship."
+      },
+      "common_mistakes": [
+        "Using \\(n=1\\) and \\(n=2\\) for the first and second excited states, instead of \\(n=2\\) and \\(n=3\\).",
+        "Inverting the ratio during calculation."
+      ],
+      "additional_notes": "Note that the question uses 'T' for total energy. In some contexts, 'T' can represent kinetic energy. However, for total energy levels, the calculation is as shown. If the question had asked for kinetic energy (KE), since \\(KE_n = -E_n\\), the ratio would be the same, 9:4. If it asked for potential energy (PE), since \\(PE_n = 2E_n\\), the ratio would also be the same."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Atoms",
+      "subtopic": "Bohr Model of the Hydrogen Atom",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "atomic_physics",
+        "bohr_model",
+        "hydrogen_atom",
+        "energy_levels",
+        "excited_state",
+        "numerical_ratio"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p11_q28",
+    "question_text": "The ratio of the distances travelled by a freely falling body in the 1st, 2nd, 3rd and 4th second:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "1 : 3 : 5 : 7",
+      "B": "1 : 1 : 1 : 1",
+      "C": "1 : 2 : 3 : 4",
+      "D": "1 : 4 : 9 : 16"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question asks for the ratio of distances covered during successive seconds by a freely falling body starting from rest. This is a direct application of Galileo's law of odd numbers.",
+      "key_concepts": [
+        "Equations of Motion",
+        "Freely Falling Body",
+        "Galileo's Law of Odd Numbers",
+        "Distance in the n-th second"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the distance \\(S_{n^{th}}\\) covered by a body in the n-th second of its motion.",
+          "formula": "\\[S_{n^{th}} = u + \\frac{a}{2}(2n - 1)\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the initial conditions for a freely falling body. It starts from rest, so the initial velocity \\(u = 0\\). The acceleration is the acceleration due to gravity, \\(a = g\\)."
+        },
+        {
+          "step_number": 3,
+          "description": "Substitute these conditions into the formula.",
+          "formula": "\\[S_{n^{th}} = 0 + \\frac{g}{2}(2n - 1) = \\frac{g}{2}(2n - 1)\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the distance for each second: \n- For the 1st second (n=1): \\(S_1 = \\frac{g}{2}(2(1) - 1) = \\frac{g}{2}(1)\\) \n- For the 2nd second (n=2): \\(S_2 = \\frac{g}{2}(2(2) - 1) = \\frac{g}{2}(3)\\) \n- For the 3rd second (n=3): \\(S_3 = \\frac{g}{2}(2(3) - 1) = \\frac{g}{2}(5)\\) \n- For the 4th second (n=4): \\(S_4 = \\frac{g}{2}(2(4) - 1) = \\frac{g}{2}(7)\\)"
+        },
+        {
+          "step_number": 5,
+          "description": "Find the ratio of these distances: \\(S_1 : S_2 : S_3 : S_4\\).",
+          "formula": "\\[\\frac{g}{2}(1) : \\frac{g}{2}(3) : \\frac{g}{2}(5) : \\frac{g}{2}(7)\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Simplify the ratio by canceling the common factor \\(\\frac{g}{2}\\).",
+          "formula": "\\[1 : 3 : 5 : 7\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Galileo's Law of Odd Numbers"
+      ],
+      "correct_option_reasoning": "For an object starting from rest and moving with constant acceleration, the distances covered in successive equal time intervals are in the ratio of odd numbers (1:3:5:7...). A freely falling body fits these conditions perfectly. This is known as Galileo's law of odd numbers.",
+      "incorrect_options_analysis": {
+        "B": "1 : 1 : 1 : 1 would imply constant speed, which is incorrect for an accelerating body.",
+        "C": "1 : 2 : 3 : 4 is the ratio of velocities at the end of each second, not the distance covered during each second.",
+        "D": "1 : 4 : 9 : 16 is the ratio of the total distance covered from the start after 1s, 2s, 3s, and 4s (since \\(S = \\frac{1}{2}gt^2\\)), not the distance in each individual second."
+      },
+      "common_mistakes": [
+        "Confusing the distance traveled *in* the n-th second with the total distance traveled *after* n seconds."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Kinematics",
+      "subtopic": "Motion in a Straight Line",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "kinematics",
+        "equations_of_motion",
+        "free_fall",
+        "galileos_law",
+        "ratio_problem"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p12_q30",
+    "question_text": "When two monochromatic lights of frequency, \\(\\nu\\) and \\(\\frac{\\nu}{2}\\) are incident on a photoelectric metal, their stopping potential becomes \\(\\frac{V_s}{2}\\) and \\(V_s\\) respectively. The threshold frequency for this metal is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(\\frac{2}{3}\\nu\\)",
+      "B": "\\(\\frac{3}{2}\\nu\\)",
+      "C": "\\(2\\nu\\)",
+      "D": "\\(3\\nu\\)"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This problem involves using Einstein's photoelectric equation for two different incident frequencies and their corresponding stopping potentials. By setting up a system of two equations, we can solve for the unknown threshold frequency. Note: The problem statement has the stopping potentials swapped; the higher frequency should produce the higher stopping potential. The solution proceeds assuming the values are swapped as noted in the original explanation.",
+      "key_concepts": [
+        "Photoelectric Effect",
+        "Einstein's Photoelectric Equation",
+        "Stopping Potential",
+        "Work Function",
+        "Threshold Frequency"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Write down Einstein's photoelectric equation, which relates the maximum kinetic energy of the photoelectrons (\\(K_{max}\\)) to the incident photon energy (\\(h\\nu\\)) and the work function (\\(\\phi_0\\)). The stopping potential \\(V_s\\) is related to \\(K_{max}\\) by \\(K_{max} = eV_s\\).",
+          "formula": "\\[eV_s = h\\nu - \\phi_0\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "The work function \\(\\phi_0\\) can be expressed in terms of the threshold frequency \\(\\nu_0\\) as \\(\\phi_0 = h\\nu_0\\).",
+          "formula": "\\[eV_s = h\\nu - h\\nu_0\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "The question states that for frequency \\(\\nu\\), the stopping potential is \\(V_s/2\\), and for frequency \\(\\nu/2\\), the stopping potential is \\(V_s\\). This is physically incorrect as higher frequency should give higher stopping potential. We will assume a typo and that for frequency \\(\\nu\\), potential is \\(V_s\\) and for \\(\\nu/2\\), potential is \\(V_s/2\\). (Let's first solve with the values as given, which is what the original explanation likely did by swapping them). Let's follow the user-provided logic first. For frequency \\(\\nu\\) potential is \\(V_s/2\\). For frequency \\(\\nu/2\\) potential is \\(V_s\\).",
+          "formula": null
+        },
+        {
+          "step_number": 4,
+          "description": "Write the two equations based on the (likely incorrect) data given in the question: \nCase 1: Frequency \\(f_1 = \\nu\\), Stopping Potential \\(V_1 = V_s/2\\) -> \\(e(V_s/2) = h\\nu - h\\nu_0\\) (Eq. 1) \nCase 2: Frequency \\(f_2 = \\nu/2\\), Stopping Potential \\(V_2 = V_s\\) -> \\(eV_s = h(\\nu/2) - h\\nu_0\\) (Eq. 2)"
+        },
+        {
+          "step_number": 5,
+          "description": "Solve the system of equations. Substitute \\(eV_s\\) from Eq. 2 into Eq. 1.",
+          "formula": "\\[\\frac{1}{2} \\left( h\\frac{\\nu}{2} - h\\nu_0 \\right) = h\\nu - h\\nu_0\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Simplify and solve for \\(\\nu_0\\). Cancel the Planck's constant \\(h\\) from all terms.",
+          "formula": "\\[\\frac{\\nu}{4} - \\frac{\\nu_0}{2} = \\nu - \\nu_0 \\implies \\nu_0 - \\frac{\\nu_0}{2} = \\nu - \\frac{\\nu}{4}\\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Final calculation.",
+          "formula": "\\[\\frac{\\nu_0}{2} = \\frac{3\\nu}{4} \\implies \\nu_0 = \\frac{3\\nu}{2}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Quantization of Light (Photon Concept)",
+        "Conservation of Energy"
+      ],
+      "correct_option_reasoning": "Despite the apparent contradiction in the problem statement (lower frequency giving higher stopping potential), setting up the photoelectric equations as written and solving them algebraically yields a threshold frequency \\(\\nu_0 = \\frac{3}{2}\\nu\\). The mathematical procedure is sound, assuming the given values are to be used as stated.",
+      "incorrect_options_analysis": {
+        "A": "This might result from an algebraic error in solving the two equations.",
+        "C": "This result does not follow from the given data.",
+        "D": "This result does not follow from the given data."
+      },
+      "common_mistakes": [
+        "Not being able to set up the two simultaneous equations from the problem statement.",
+        "Making algebraic errors when solving for the threshold frequency \\(\\nu_0\\)."
+      ],
+      "additional_notes": "The question is indeed framed incorrectly from a physics standpoint. The higher frequency (\\(\\nu\\)) must produce a higher stopping potential than the lower frequency (\\(\\nu/2\\)). If we assume the stopping potentials were meant to be \\(V_s\\) and \\(V_s/2\\) for frequencies \\(\\nu\\) and \\(\\nu/2\\) respectively, the equations would be: (1) \\(eV_s = h\\nu - h\\nu_0\\) and (2) \\(e(V_s/2) = h(\\nu/2) - h\\nu_0\\). Solving this corrected system gives \\(2(h(\\nu/2) - h\\nu_0) = h\\nu - h\\nu_0 \\implies h\\nu - 2h\\nu_0 = h\\nu - h\\nu_0 \\implies -2h\\nu_0 = -h\\nu_0 \\implies \\nu_0 = 0\\), which is not a physical answer. This implies the setup as written in the question, though counter-intuitive, is the intended way to solve it to get one of the options."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Dual Nature of Radiation and Matter",
+      "subtopic": "Photoelectric Effect",
+      "difficulty": "Hard",
+      "bloom_level": "Analyze",
+      "tags": [
+        "numerical_calculation",
+        "photoelectric_effect",
+        "einsteins_equation",
+        "stopping_potential",
+        "threshold_frequency",
+        "problem_solving"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p12_q31",
+    "question_text": "Given below are two statements\nStatement I : Biot-Savart’s law gives us the expression for the magnetic field strength of an infinitesimal current element (Idl) of a current carrying conductor only.\nStatement II : Biot-Savart’s law is analogous to Coulomb’s inverse square law of charge q, with the former being related to the field produced by a scalar source, Idl while the latter being produced by a vector source, q.\nIn light of above statements choose the most appropriate answer from the options given below:",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Statement I is correct and Statement II is incorrect",
+      "B": "Statement I is incorrect and Statement II is correct",
+      "C": "Both Statement I and Statement II are correct",
+      "D": "Both Statement I and Statement II are incorrect"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question evaluates two statements concerning Biot-Savart's law. Statement I correctly describes the law's application to an infinitesimal current element. Statement II makes a correct analogy to Coulomb's law but incorrectly identifies the nature of the sources; the current element is a vector, and charge is a scalar.",
+      "key_concepts": [
+        "Biot-Savart's Law",
+        "Magnetic Field",
+        "Current Element (Idl)",
+        "Coulomb's Law",
+        "Electric Field",
+        "Scalar and Vector Sources"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Statement I. Biot-Savart's law is expressed as \\(\\vec{dB} = \\frac{\\mu_0}{4\\pi} \\frac{I(d\\vec{l} \\times \\vec{r})}{r^3}\\). This formula calculates the magnetic field \\(\\vec{dB}\\) produced by a small, infinitesimal segment of a current-carrying wire, known as the current element \\(I d\\vec{l}\\). It doesn't directly give the field for the entire conductor; that requires integrating this expression over the whole length of the conductor. Thus, the statement is correct."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement II. It claims an analogy between Biot-Savart's law and Coulomb's law. Both are inverse square laws for fields produced by sources. This part is correct. However, it then states that the magnetic field is produced by a scalar source \\(Idl\\) and the electric field by a vector source \\(q\\). This is incorrect."
+        },
+        {
+          "step_number": 3,
+          "description": "Correct the source types. The source of the magnetic field in Biot-Savart's law is the current element, \\(I d\\vec{l}\\), which is a vector quantity (it has magnitude and direction). The source of the electric field in Coulomb's law is electric charge, \\(q\\), which is a scalar quantity. Statement II has these reversed."
+        },
+        {
+          "step_number": 4,
+          "description": "Conclude based on the analysis. Statement I is correct, but Statement II is incorrect due to the mix-up of scalar and vector sources."
+        }
+      ],
+      "scientific_principles": [
+        "Principle of Superposition (for integrating dB)",
+        "Analogy between Electrostatics and Magnetostatics"
+      ],
+      "correct_option_reasoning": "Statement I is a precise definition of the scope of Biot-Savart's law. Statement II is incorrect because it misidentifies the nature of the sources: the current element \\(I d\\vec{l}\\) is a vector source for the magnetic field, while the electric charge \\(q\\) is a scalar source for the electric field.",
+      "incorrect_options_analysis": {
+        "B": "Incorrect, as Statement I is correct and Statement II is incorrect.",
+        "C": "Incorrect, as Statement II is incorrect.",
+        "D": "Incorrect, as Statement I is correct."
+      },
+      "common_mistakes": [
+        "Forgetting the vector nature of the current element \\(I d\\vec{l}\\).",
+        "Not remembering that electric charge is a scalar quantity."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Moving Charges and Magnetism",
+      "subtopic": "Biot-Savart Law",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "electromagnetism",
+        "biot-savart_law",
+        "coulombs_law",
+        "statement_based",
+        "scalar_vector_source"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p13_q33",
+    "question_text": "As the temperature increases, the electrical resistance:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Increases for conductors but decreases for semiconductors",
+      "B": "Decreases for conductors but increases for semiconductors",
+      "C": "Increases for both conductors and semiconductors",
+      "D": "Decreases for both conductors and semiconductors"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question tests the fundamental difference in the temperature dependence of electrical resistance for conductors (metals) and semiconductors.",
+      "key_concepts": [
+        "Electrical Resistance",
+        "Resistivity",
+        "Conductors (Metals)",
+        "Semiconductors",
+        "Temperature Coefficient of Resistance"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the effect of temperature on conductors (like copper, silver). In conductors, the number of free charge carriers (electrons) per unit volume is large and relatively constant. As temperature increases, the thermal vibrations of the metal ions (lattice) increase. This leads to more frequent collisions between the free electrons and the lattice ions, which impedes the flow of electrons. This increased scattering results in an increase in resistivity, and therefore, an increase in resistance. Conductors have a positive temperature coefficient of resistance."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze the effect of temperature on semiconductors (like silicon, germanium). In semiconductors, the number of free charge carriers (electrons and holes) is relatively small at low temperatures. As temperature increases, thermal energy breaks more covalent bonds, creating more electron-hole pairs. This significant increase in the number of charge carriers drastically increases conductivity (and decreases resistivity). Although scattering also increases with temperature, the effect of the increased carrier concentration is dominant. Therefore, the resistance of a semiconductor decreases as temperature increases. Semiconductors have a negative temperature coefficient of resistance."
+        },
+        {
+          "step_number": 3,
+          "description": "Combine the two findings. As temperature increases, the electrical resistance increases for conductors and decreases for semiconductors."
+        }
+      ],
+      "scientific_principles": [
+        "Band Theory of Solids"
+      ],
+      "correct_option_reasoning": "For conductors, rising temperature increases lattice vibrations, leading to more electron scattering and thus higher resistance. For semiconductors, rising temperature generates more free charge carriers (electrons and holes), which outweighs the effect of increased scattering, leading to lower resistance.",
+      "incorrect_options_analysis": {
+        "B": "This describes the opposite, incorrect behavior for both material types.",
+        "C": "Incorrect, as resistance decreases for semiconductors.",
+        "D": "Incorrect, as resistance increases for conductors."
+      },
+      "common_mistakes": [
+        "Confusing the behavior of conductors with semiconductors.",
+        "Forgetting the underlying physical reasons (lattice vibrations vs. carrier concentration) for the different behaviors."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "Electrical Resistance and Resistivity",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "current_electricity",
+        "semiconductors",
+        "conductors",
+        "resistance",
+        "resistivity",
+        "temperature_dependence"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p13_q34",
+    "question_text": "Two hollow conducting spheres of radii \\(R_1\\) and \\(R_2\\) (\\(R_1 >> R_2\\)) have equal charges. The potential would be:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Equal on both the spheres",
+      "B": "Dependent on the material property of the sphere",
+      "C": "More on bigger sphere",
+      "D": "More on smaller sphere"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question compares the electric potential on the surface of two conducting spheres of different sizes but with the same charge. Using the formula for the potential of a sphere, we can see its inverse relationship with the radius.",
+      "key_concepts": [
+        "Electric Potential",
+        "Conducting Sphere",
+        "Electrostatics",
+        "Charge Distribution on Conductors"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the electric potential (V) on the surface of a conducting sphere of radius R carrying a charge Q.",
+          "formula": "\\[V = \\frac{kQ}{R}\\] where \\(k = \\frac{1}{4\\pi\\epsilon_0}\\)."
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the conditions given in the problem. We have two spheres with radii \\(R_1\\) and \\(R_2\\), and charges \\(Q_1\\) and \\(Q_2\\). It is given that the charges are equal, so \\(Q_1 = Q_2 = Q\\). It is also given that \\(R_1 >> R_2\\), meaning sphere 1 is much bigger than sphere 2."
+        },
+        {
+          "step_number": 3,
+          "description": "Write the potential for each sphere: \n- Potential of the bigger sphere: \\(V_1 = \\frac{kQ}{R_1}\\) \n- Potential of the smaller sphere: \\(V_2 = \\frac{kQ}{R_2}\\)"
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze the relationship between potential and radius. From the formula \\(V = kQ/R\\), since k and Q are the same for both spheres, the potential V is inversely proportional to the radius R.",
+          "formula": "\\[V \\propto \\frac{1}{R}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Apply the given condition \\(R_1 > R_2\\) to the inverse relationship. Since the radius of the smaller sphere (\\(R_2\\)) is less than the radius of the bigger sphere (\\(R_1\\)), its potential (\\(V_2\\)) must be greater than the potential of the bigger sphere (\\(V_1\\)).",
+          "formula": "\\[R_1 > R_2 \\implies \\frac{1}{R_1} < \\frac{1}{R_2} \\implies V_1 < V_2\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Conclude that the potential is more on the smaller sphere."
+        }
+      ],
+      "scientific_principles": [
+        "Inverse Square Law (implicitly, as potential is derived from it)"
+      ],
+      "correct_option_reasoning": "The potential on a conducting sphere is given by \\(V = kQ/R\\). Since the charge Q is the same for both spheres, the potential is inversely proportional to the radius R. The smaller sphere has a smaller radius, and therefore, a higher potential.",
+      "incorrect_options_analysis": {
+        "A": "The potentials would be equal only if the ratio Q/R were the same for both, which is not the case here.",
+        "B": "For an ideal conducting sphere, the potential depends only on charge and radius, not the specific material (as long as it's a conductor).",
+        "C": "This is incorrect; it confuses the relationship, which is inverse, not direct."
+      },
+      "common_mistakes": [
+        "Assuming that a bigger sphere should have a higher potential.",
+        "Confusing potential (V) with charge (Q) or electric field (E)."
+      ],
+      "additional_notes": "This principle is related to why charge tends to accumulate at sharp points on a conductor (corona discharge), as a sharp point can be modeled as a sphere of very small radius, leading to a very high potential and electric field."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electrostatics",
+      "subtopic": "Electric Potential and Capacitance",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "electrostatics",
+        "electric_potential",
+        "conducting_sphere",
+        "conceptual"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p14_q36",
+    "question_text": "Two transparent media A and B are separated by a plane boundary. The speed of light in those media are \\(1.5 \\times 10^8 \\text{ m/s}\\) and \\(2.0 \\times 10^8 \\text{ m/s}\\), respectively. The critical angle for a ray of light for these two media is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(\\tan^{-1}(0.500)\\)",
+      "B": "\\(\\tan^{-1}(0.750)\\)",
+      "C": "\\(\\sin^{-1}(0.500)\\)",
+      "D": "\\(\\sin^{-1}(0.750)\\)"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "To find the critical angle, one must first determine the refractive indices of the two media from the given speeds of light. Then, apply Snell's law for the condition of total internal reflection, which occurs when light travels from the denser medium to the rarer medium.",
+      "key_concepts": [
+        "Refractive Index",
+        "Snell's Law",
+        "Total Internal Reflection (TIR)",
+        "Critical Angle"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the definition of refractive index (n) of a medium: \\(n = c/v\\), where \\(c\\) is the speed of light in vacuum (\\(\\approx 3.0 \\times 10^8 \\text{ m/s}\\)) and \\(v\\) is the speed of light in the medium."
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the refractive index of medium A (\\(n_A\\)).",
+          "formula": "\\[n_A = \\frac{3.0 \\times 10^8 \\text{ m/s}}{1.5 \\times 10^8 \\text{ m/s}} = 2.0\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the refractive index of medium B (\\(n_B\\)).",
+          "formula": "\\[n_B = \\frac{3.0 \\times 10^8 \\text{ m/s}}{2.0 \\times 10^8 \\text{ m/s}} = 1.5\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Identify the denser and rarer media. Since \\(n_A > n_B\\), medium A is optically denser and medium B is optically rarer."
+        },
+        {
+          "step_number": 5,
+          "description": "Recall the condition for total internal reflection (TIR). TIR occurs when a light ray travels from a denser medium to a rarer medium at an angle of incidence greater than the critical angle (\\(\\theta_C\\)). At the critical angle, the angle of refraction is 90°."
+        },
+        {
+          "step_number": 6,
+          "description": "Apply Snell's law for the light ray traveling from medium A (denser) to medium B (rarer) at the critical angle.",
+          "formula": "\\[n_A \\sin(\\theta_C) = n_B \\sin(90°)\\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Substitute the values and solve for \\(\\theta_C\\). Since \\(\\sin(90°) = 1\\), we have:",
+          "formula": "\\[2.0 \\times \\sin(\\theta_C) = 1.5 \\times 1 \\implies \\sin(\\theta_C) = \\frac{1.5}{2.0} = 0.75\\]"
+        },
+        {
+          "step_number": 8,
+          "description": "Express the critical angle using the inverse sine function.",
+          "formula": "\\[\\theta_C = \\sin^{-1}(0.75)\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Wave Theory of Light"
+      ],
+      "correct_option_reasoning": "Medium A is denser (n=2.0) and medium B is rarer (n=1.5). For total internal reflection, light must go from A to B. The critical angle \\(\\theta_C\\) is defined by \\(n_A \\sin(\\theta_C) = n_B \\sin(90°)\\). This gives \\(\\sin(\\theta_C) = n_B / n_A = 1.5 / 2.0 = 0.75\\). Thus, \\(\\theta_C = \\sin^{-1}(0.75)\\).",
+      "incorrect_options_analysis": {
+        "A": "Incorrect trigonometric function and value.",
+        "B": "Incorrect trigonometric function.",
+        "C": "This would be the result if the ratio were \\(1/2\\), which is incorrect."
+      },
+      "common_mistakes": [
+        "Incorrectly identifying which medium is denser.",
+        "Applying Snell's law for a ray traveling from rarer to denser, for which a critical angle does not exist.",
+        "Inverting the ratio of refractive indices when calculating \\(\\sin(\\theta_C)\\)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Optics",
+      "subtopic": "Refraction and Total Internal Reflection",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "optics",
+        "refractive_index",
+        "critical_angle",
+        "total_internal_reflection",
+        "snells_law"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p14_q37",
+    "question_text": "A nucleus of mass number 189 splits into two nuclei having mass number 125 and 64. The ratio of radius of two daughter nuclei respectively is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "5 : 4",
+      "B": "25 : 16",
+      "C": "1 : 1",
+      "D": "4 : 5"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This problem requires calculating the ratio of the radii of two daughter nuclei given their mass numbers. The solution uses the empirical formula that relates a nucleus's radius to the cube root of its mass number.",
+      "key_concepts": [
+        "Nuclear Radius",
+        "Mass Number (A)",
+        "Nuclear Structure"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the empirical formula for the radius (R) of a nucleus with mass number (A).",
+          "formula": "\\[R = R_0 A^{1/3}\\] where \\(R_0\\) is an empirical constant approximately equal to 1.2 fm."
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the mass numbers of the two daughter nuclei. Let \\(A_1 = 125\\) and \\(A_2 = 64\\)."
+        },
+        {
+          "step_number": 3,
+          "description": "Write the expressions for the radii of the two nuclei, \\(R_1\\) and \\(R_2\\).",
+          "formula": "\\[R_1 = R_0 A_1^{1/3} \\quad \\text{and} \\quad R_2 = R_0 A_2^{1/3}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Set up the ratio of the two radii, \\(R_1 / R_2\\).",
+          "formula": "\\[\\frac{R_1}{R_2} = \\frac{R_0 A_1^{1/3}}{R_0 A_2^{1/3}} = \\left(\\frac{A_1}{A_2}\\right)^{1/3}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Substitute the given mass numbers into the ratio formula.",
+          "formula": "\\[\\frac{R_1}{R_2} = \\left(\\frac{125}{64}\\right)^{1/3}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Calculate the cube roots to find the final ratio.",
+          "formula": "\\[\\frac{R_1}{R_2} = \\frac{(125)^{1/3}}{(64)^{1/3}} = \\frac{5}{4}\\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Express the ratio in the required format: \\(R_1 : R_2 = 5 : 4\\)."
+        }
+      ],
+      "scientific_principles": [
+        "Liquid Drop Model of the Nucleus (which supports the R ∝ A^(1/3) relationship)"
+      ],
+      "correct_option_reasoning": "The radius of a nucleus is proportional to the cube root of its mass number (\\(R \\propto A^{1/3}\\)). Therefore, the ratio of the radii of the two daughter nuclei is \\((125/64)^{1/3} = 5/4\\).",
+      "incorrect_options_analysis": {
+        "B": "25 : 16 is the ratio of the squares of the correct radii (\\(5^2:4^2\\)).",
+        "C": "1 : 1 would imply the radii are equal, which is incorrect as the mass numbers are different.",
+        "D": "4 : 5 is the inverted ratio."
+      },
+      "common_mistakes": [
+        "Forgetting that the radius depends on the cube root of the mass number, not the mass number directly or its square root.",
+        "Incorrectly calculating the cube roots of 125 and 64."
+      ],
+      "additional_notes": "The initial mass number of 189 splitting into 125 and 64 (125+64=189) confirms the conservation of mass number in the fission process described."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Nuclei",
+      "subtopic": "Size and Structure of Nucleus",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "nuclear_physics",
+        "nuclear_radius",
+        "mass_number",
+        "numerical_ratio"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p14_q38",
+    "question_text": "The truth table for the given logic circuit is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "A=0, B=0, C=1; A=0, B=1, C=0; A=1, B=0, C=1; A=1, B=1, C=0",
+      "B": "A=0, B=0, C=0; A=0, B=1, C=1; A=1, B=0, C=0; A=1, B=1, C=1",
+      "C": "A=0, B=0, C=0; A=0, B=1, C=1; A=1, B=0, C=1; A=1, B=1, C=0",
+      "D": "A=0, B=0, C=1; A=0, B=1, C=0; A=1, B=0, C=0; A=1, B=1, C=1"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This problem requires determining the truth table for a given logic circuit. The circuit consists of two AND gates with inverted inputs, feeding into a NOR gate. By simplifying the Boolean expression for the output C, it is found that the circuit behaves as an XOR gate.",
+      "key_concepts": [
+        "Logic Gates (AND, OR, NOT, NAND, NOR, XOR)",
+        "Boolean Algebra",
+        "Truth Tables",
+        "De Morgan's Theorems"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the circuit to write the Boolean expression for the output C. The circuit has two inputs A and B. There are two intermediate signals. The first is \\(Y_1 = A \\cdot \\bar{B}\\). The second is \\(Y_2 = \\bar{A} \\cdot B\\). These two signals are inputs to a NOR gate, but the provided explanation uses an OR followed by simplification. Let's re-evaluate the provided explanation's logic: C = (A.B) . (A.B) with bars on different parts. The expression C = (A.bar(B)) + (bar(A).B) corresponds to an XOR gate. The expression given in the explanation C = bar(B) seems to be a typo or a misinterpretation of a different circuit. Let's analyze the expression that matches the final truth table: C = A ⊕ B (XOR).",
+          "formula": "C = A \\oplus B = (A \\cdot \\bar{B}) + (\\bar{A} \\cdot B)"
+        },
+        {
+          "step_number": 2,
+          "description": "Let's assume the circuit is an XOR gate and build its truth table."
+        },
+        {
+          "step_number": 3,
+          "description": "Case 1: A=0, B=0. \\(C = (0 \\cdot \\bar{0}) + (\\bar{0} \\cdot 0) = (0 \\cdot 1) + (1 \\cdot 0) = 0 + 0 = 0\\). *Correction*: The final truth table given in the explanation is `A=0, B=0, C=1`. This corresponds to an XNOR gate or an error. Let's re-examine the original explanation's simplified expression: `C = bar(B)`. This would mean `A=0, B=0 -> C=1`; `A=0, B=1 -> C=0`; `A=1, B=0 -> C=1`; `A=1, B=1 -> C=0`. This matches the provided truth table.",
+          "formula": null
+        },
+        {
+          "step_number": 4,
+          "description": "Re-evaluating the Boolean Algebra in the original explanation. It seems highly garbled and incorrect. `C = bar(bar(A.bar(B)) . bar(bar(A).B))` would be from two NANDs feeding a NAND. `C = bar(bar(A.B) + bar(A.B))` is also problematic. Let's analyze the final truth table directly: `A=0, B=0, C=1`; `A=0, B=1, C=0`; `A=1, B=0, C=1`; `A=1, B=1, C=0`. The output C is 1 when A=B and 0 when A!=B, this is an XNOR gate. Wait, `C` is 1 when `B` is 0, and `C` is 0 when `B` is 1. This means `C = NOT B`. Let's verify: \n- A=0, B=0 -> NOT B = 1. Correct. \n- A=0, B=1 -> NOT B = 0. Correct. \n- A=1, B=0 -> NOT B = 1. Correct. \n- A=1, B=1 -> NOT B = 0. Correct."
+        },
+        {
+          "step_number": 5,
+          "description": "The logic circuit described, whose simplification leads to C = NOT B, is the one that produces the given truth table. The Boolean simplification given in the explanation, `C=(A+bar(A)).bar(B) -> C = 1.bar(B) -> C = bar(B)`, is one way to arrive at this result from a specific (but un-drawn) circuit. The option text is also garbled, but option '1' seems to contain the sequence '0 0 1, 0 1 0, 1 0 1, 1 1 0' which matches C = NOT B."
+        }
+      ],
+      "scientific_principles": [
+        "Boolean Logic"
+      ],
+      "correct_option_reasoning": "The provided truth table is: A=0, B=0 -> C=1; A=0, B=1 -> C=0; A=1, B=0 -> C=1; A=1, B=1 -> C=0. This table shows that the output C is always the logical inverse of input B, regardless of the state of input A. Therefore, the logic circuit simplifies to the function C = NOT B. This matches the values in option A.",
+      "incorrect_options_analysis": {
+        "B": "This table represents C = B.",
+        "C": "This table represents C = A XOR B.",
+        "D": "This table does not represent a standard simple logic function."
+      },
+      "common_mistakes": [
+        "Making errors in Boolean simplification.",
+        "Incorrectly tracing the logic states through the gates for each input combination."
+      ],
+      "additional_notes": "The question is highly dependent on the visual circuit diagram. The provided text explanation contains multiple errors in its Boolean algebra representation, but the final truth table and conclusion (C = NOT B) are consistent with the correct answer."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Semiconductor Electronics",
+      "subtopic": "Logic Gates",
+      "difficulty": "Hard",
+      "bloom_level": "Analyze",
+      "tags": [
+        "semiconductors",
+        "logic_gates",
+        "boolean_algebra",
+        "truth_table",
+        "circuit_analysis",
+        "visual_based_question"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": true,
+      "visual_description": "The question requires a diagram of a logic circuit with inputs A and B and output C. The circuit likely involves a combination of AND, OR, and NOT gates whose overall function needs to be determined.",
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p15_q39",
+    "question_text": "Given below are two statements : One is labelled as Assertion (A) and the other is labelled as Reason (R).\nAssertion (A): The stretching of a spring is determined by the shear modulus of the material of the spring.\nReason (R): A coil spring of copper has more tensile strength than a steel spring of same dimensions.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "question_type": "assertion_reason",
+    "options": {
+      "A": "(A) is true but (R) is false",
+      "B": "(A) is false but (R) is true",
+      "C": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "D": "Both (A) and (R) are true and (R) is not the correct explanation of (A)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question tests the understanding of the mechanics of spring stretching and material properties. The assertion correctly identifies shear modulus as the relevant property for a coil spring. The reason makes a false claim about the relative tensile strengths of copper and steel.",
+      "key_concepts": [
+        "Elasticity",
+        "Shear Modulus (Modulus of Rigidity)",
+        "Young's Modulus (Tensile Modulus)",
+        "Tensile Strength",
+        "Stress and Strain",
+        "Mechanics of Springs"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the Assertion (A). When a helical (coil) spring is stretched or compressed, the wire of the spring undergoes twisting or torsion. Torsional stress is a type of shearing stress. Therefore, the elastic property that governs this deformation is the shear modulus (or modulus of rigidity), not the Young's modulus (tensile modulus). The assertion is a correct statement."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze the Reason (R). It claims that a copper spring has more tensile strength than a steel spring of the same dimensions. Tensile strength is the maximum stress a material can withstand while being stretched before breaking. It is a well-known material property that steel is significantly stronger and has a much higher tensile strength than copper. Therefore, the Reason (R) is a false statement."
+        },
+        {
+          "step_number": 3,
+          "description": "Conclude based on the analysis. The Assertion (A) is true, and the Reason (R) is false."
+        }
+      ],
+      "scientific_principles": [
+        "Hooke's Law"
+      ],
+      "correct_option_reasoning": "Assertion (A) is correct because stretching a coil spring primarily involves shearing strain in the wire, so the shear modulus determines its stiffness. Reason (R) is false because steel has a significantly higher tensile strength than copper.",
+      "incorrect_options_analysis": {
+        "B": "Incorrect, as Assertion (A) is true and Reason (R) is false.",
+        "C": "Incorrect, as Reason (R) is false.",
+        "D": "Incorrect, as Reason (R) is false."
+      },
+      "common_mistakes": [
+        "Incorrectly assuming that stretching a spring involves tensile stress (and thus Young's modulus). While there is a small component of tensile stress, the dominant effect is shear."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Mechanical Properties of Solids",
+      "subtopic": "Elastic Moduli",
+      "difficulty": "Hard",
+      "bloom_level": "Analyze",
+      "tags": [
+        "properties_of_matter",
+        "elasticity",
+        "shear_modulus",
+        "tensile_strength",
+        "springs",
+        "assertion_reason"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p15_q40",
+    "question_text": "A capacitor of capacitance C = 900 pF is charged fully by 100 V battery B as shown in figure (a). Then it is disconnected from the battery and connected to another uncharged capacitor of capacitance C = 900 pF as shown in figure (b). The electrostatic energy stored by the system (b) is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(2.25 \\times 10^{-6} \\text{ J}\\)",
+      "B": "\\(1.5 \\times 10^{-6} \\text{ J}\\)",
+      "C": "\\(4.5 \\times 10^{-6} \\text{ J}\\)",
+      "D": "\\(3.25 \\times 10^{-6} \\text{ J}\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This problem involves calculating the final electrostatic energy of a system of two capacitors after a charged capacitor is connected to an uncharged one. The solution requires finding the initial charge, then the common potential after connection, and finally the total energy stored in the parallel combination.",
+      "key_concepts": [
+        "Capacitance",
+        "Energy Stored in a Capacitor",
+        "Conservation of Charge",
+        "Capacitors in Parallel",
+        "Common Potential"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Calculate the initial charge (Q) on the first capacitor (let's call it C1) after being fully charged by the 100 V battery.",
+          "formula": "\\[Q = C_1 V_1 = (900 \\times 10^{-12} \\text{ F}) \\times (100 \\text{ V}) = 9 \\times 10^{-8} \\text{ C}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the initial energy (U_initial) stored in the first capacitor.",
+          "formula": "\\[U_{initial} = \\frac{1}{2} C_1 V_1^2 = \\frac{1}{2} (900 \\times 10^{-12} \\text{ F}) (100 \\text{ V})^2 = 4.5 \\times 10^{-6} \\text{ J}\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "The first capacitor is disconnected and connected in parallel to an identical uncharged capacitor (C2 = 900 pF). When connected, charge is conserved and redistributes until they reach a common potential (V_common)."
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the common potential. The total charge Q remains the same, and the total capacitance is \\(C_{total} = C_1 + C_2\\).",
+          "formula": "\\[V_{common} = \\frac{\\text{Total Charge}}{\\text{Total Capacitance}} = \\frac{Q}{C_1 + C_2} = \\frac{9 \\times 10^{-8} \\text{ C}}{900 \\times 10^{-12} \\text{ F} + 900 \\times 10^{-12} \\text{ F}} = \\frac{9 \\times 10^{-8}}{1800 \\times 10^{-12}} = 50 \\text{ V}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the final electrostatic energy (U_final) stored in the system (b) using the total capacitance and the common potential.",
+          "formula": "\\[U_{final} = \\frac{1}{2} C_{total} V_{common}^2 = \\frac{1}{2} (C_1 + C_2) V_{common}^2\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Substitute the values to find the final energy.",
+          "formula": "\\[U_{final} = \\frac{1}{2} (1800 \\times 10^{-12} \\text{ F}) (50 \\text{ V})^2 = \\frac{1}{2} (1800 \\times 10^{-12}) (2500) = 2.25 \\times 10^{-6} \\text{ J}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Conservation of Electric Charge"
+      ],
+      "correct_option_reasoning": "The initial charge on the first capacitor is \\(9 \\times 10^{-8}\\) C. When connected to an identical uncharged capacitor, this charge redistributes over a total capacitance of 1800 pF, resulting in a common potential of 50 V. The final energy stored in this parallel combination is \\(U = \\frac{1}{2} C_{total} V_{common}^2 = \\frac{1}{2} (1800 \\times 10^{-12}) (50)^2 = 2.25 \\times 10^{-6}\\) J.",
+      "incorrect_options_analysis": {
+        "B": "This value does not correspond to a logical calculation step.",
+        "C": "\\(4.5 \\times 10^{-6}\\) J is the initial energy stored in the first capacitor. Energy is lost as heat and electromagnetic radiation during the charge redistribution process.",
+        "D": "This value does not correspond to a logical calculation step."
+      },
+      "common_mistakes": [
+        "Assuming that energy is conserved during the redistribution of charge. In fact, energy is always lost when connecting capacitors with different potentials.",
+        "Incorrectly calculating the common potential."
+      ],
+      "additional_notes": "The energy lost in the process is \\(U_{loss} = U_{initial} - U_{final} = 4.5 \\times 10^{-6} - 2.25 \\times 10^{-6} = 2.25 \\times 10^{-6}\\) J. Exactly half the initial energy is lost in this specific case where an identical capacitor is connected."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electrostatics",
+      "subtopic": "Electric Potential and Capacitance",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "capacitors",
+        "electrostatic_energy",
+        "charge_redistribution",
+        "common_potential",
+        "visual_based_question"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": true,
+      "visual_description": "The question requires two figures. Figure (a) shows a 900 pF capacitor being charged by a 100 V battery. Figure (b) shows the now-charged capacitor disconnected from the battery and connected in parallel to another uncharged 900 pF capacitor.",
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p16_q41",
+    "question_text": "Two point charges –q and +q are placed at a distance of L, as shown in the figure. The magnitude of electric field intensity at a distance R (R >> L) varies as:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "\\(\\frac{1}{R^4}\\)",
+      "B": "\\(\\frac{1}{R^6}\\)",
+      "C": "\\(\\frac{1}{R^2}\\)",
+      "D": "\\(\\frac{1}{R^3}\\)"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "The question describes an electric dipole (two equal and opposite charges separated by a small distance) and asks for the dependence of its electric field at a large distance. The electric field of a dipole falls off with the cube of the distance.",
+      "key_concepts": [
+        "Electric Dipole",
+        "Electric Field of a Dipole",
+        "Axial and Equatorial Fields",
+        "Far-field Approximation"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the charge configuration. Two equal and opposite charges (-q and +q) separated by a distance L form an electric dipole. The dipole moment is \\(p = qL\\)."
+        },
+        {
+          "step_number": 2,
+          "description": "Note the condition given: \\(R >> L\\). This means we are looking for the electric field at a point far away from the dipole (the far-field approximation)."
+        },
+        {
+          "step_number": 3,
+          "description": "Recall the formulas for the electric field of a dipole at a large distance R. \n- On the axial line: \\(E_{axial} = \\frac{1}{4\\pi\\epsilon_0} \\frac{2p}{R^3}\\) \n- On the equatorial line: \\(E_{equatorial} = \\frac{1}{4\\pi\\epsilon_0} \\frac{p}{R^3}\\)"
+        },
+        {
+          "step_number": 4,
+          "description": "Observe the dependence on R in both cases. In both the axial and equatorial cases (and for any point far away), the magnitude of the electric field intensity \\(E\\) is proportional to \\(1/R^3\\)."
+        },
+        {
+          "step_number": 5,
+          "description": "Compare this to the field of a single point charge, which varies as \\(1/R^2\\). The fields from the two opposite charges of the dipole nearly cancel each other out at large distances, leading to a faster fall-off rate."
+        }
+      ],
+      "scientific_principles": [
+        "Principle of Superposition"
+      ],
+      "correct_option_reasoning": "The arrangement of charges +q and -q separated by a distance L is an electric dipole. For distances R much larger than the separation L (R >> L), the electric field produced by the dipole decreases as the inverse cube of the distance, i.e., \\(E \\propto 1/R^3\\).",
+      "incorrect_options_analysis": {
+        "A": "\\(1/R^4\\) describes the fall-off of the force between two dipoles.",
+        "B": "\\(1/R^6\\) is related to potentials like the Lennard-Jones potential, not the electric field of a dipole.",
+        "C": "\\(1/R^2\\) is the inverse-square law for the electric field of a single point charge, not a dipole."
+      },
+      "common_mistakes": [
+        "Confusing the electric field of a dipole (\\(\\propto 1/R^3\\)) with that of a point charge (\\(\\propto 1/R^2\\))."
+      ],
+      "additional_notes": "The potential of an electric dipole falls off as \\(1/R^2\\) for large R."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electrostatics",
+      "subtopic": "Electric Charges and Fields",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "electrostatics",
+        "electric_dipole",
+        "electric_field",
+        "conceptual",
+        "visual_based_question"
+      ],
+      "estimated_time_seconds": 50,
+      "requires_visual": true,
+      "visual_description": "The question requires a figure showing two point charges, -q and +q, separated by a distance L. A point 'P' is shown at a distance R from the center of the dipole, where R >> L. The specific location of P (e.g., on the axis or equator) might be shown but is not necessary as the R-dependence is the same.",
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p16_q42",
+    "question_text": "A ball is projected with a velocity, \\(10 \\text{ ms}^{-1}\\), at an angle of 60° with the vertical direction. Its speed at the highest point of its trajectory will be:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(5 \\text{ ms}^{-1}\\)",
+      "B": "\\(10 \\text{ ms}^{-1}\\)",
+      "C": "Zero",
+      "D": "\\(5\\sqrt{3} \\text{ ms}^{-1}\\)"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This problem involves projectile motion. The key is to understand that at the highest point of the trajectory, the vertical component of velocity is zero, while the horizontal component remains constant. The angle of projection is given with respect to the vertical, which needs careful handling.",
+      "key_concepts": [
+        "Projectile Motion",
+        "Velocity Components",
+        "Trajectory",
+        "Angle of Projection"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the given information: initial velocity \\(u = 10 \\text{ ms}^{-1}\\) and the angle of projection with the vertical is 60°."
+        },
+        {
+          "step_number": 2,
+          "description": "Determine the angle of projection with the horizontal (\\(\\theta\\)). The horizontal and vertical directions are perpendicular. So, if the angle with the vertical is 60°, the angle with the horizontal is \\(\\theta = 90° - 60° = 30°\\)."
+        },
+        {
+          "step_number": 3,
+          "description": "Resolve the initial velocity into horizontal (\\(u_x\\)) and vertical (\\(u_y\\)) components.",
+          "formula": "\\[u_x = u \\cos(\\theta) = 10 \\cos(30°) \\quad \\text{and} \\quad u_y = u \\sin(\\theta) = 10 \\sin(30°)\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze the velocity at the highest point of the trajectory. At the peak of the projectile's path, the vertical component of velocity (\\(v_y\\)) becomes zero for an instant. The horizontal component of velocity (\\(v_x\\)) remains constant throughout the motion (ignoring air resistance) because there is no horizontal acceleration."
+        },
+        {
+          "step_number": 5,
+          "description": "Therefore, the speed at the highest point is equal to the constant horizontal component of velocity, \\(v_x = u_x\\)."
+        },
+        {
+          "step_number": 6,
+          "description": "Calculate the value of the speed at the highest point.",
+          "formula": "\\[\\text{Speed at highest point} = u_x = 10 \\cos(30°) = 10 \\times \\frac{\\sqrt{3}}{2} = 5\\sqrt{3} \\text{ ms}^{-1}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Independence of horizontal and vertical motion in projectile kinematics"
+      ],
+      "correct_option_reasoning": "The angle of projection with the horizontal is 90° - 60° = 30°. At the highest point of the trajectory, the vertical component of velocity is zero, and the speed is equal to the horizontal component of the initial velocity, which is \\(u_x = u \\cos(30°) = 10 \\times (\\sqrt{3}/2) = 5\\sqrt{3} \\text{ ms}^{-1}\\).",
+      "incorrect_options_analysis": {
+        "A": "\\(5 \\text{ ms}^{-1}\\) would be the answer if the angle with the horizontal were 60° (i.e., \\(10 \\cos(60°)\\)). This comes from misinterpreting the given angle.",
+        "B": "\\(10 \\text{ ms}^{-1}\\) is the initial speed, which is only the speed at the highest point if the projection angle is 0°.",
+        "C": "Zero speed would only occur if the ball were thrown straight up vertically."
+      },
+      "common_mistakes": [
+        "Using the given angle (60°) as the angle with the horizontal, instead of calculating the correct angle (30°).",
+        "Thinking that the velocity is zero at the highest point."
+      ],
+      "additional_notes": "Alternatively, one could use the angle with the vertical (60°) directly. The horizontal component would be \\(u_x = u \\sin(60°) = 10 \\times (\\sqrt{3}/2) = 5\\sqrt{3} \\text{ ms}^{-1}\\), leading to the same result."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Kinematics",
+      "subtopic": "Motion in a Plane (Projectile Motion)",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "kinematics",
+        "projectile_motion",
+        "velocity_components"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p17_q43",
+    "question_text": "A series LCR circuit with inductance 10 H, capacitance 10 \\(\\mu\\)F, resistance 50 \\(\\Omega\\) is connected to an ac source of voltage, \\(V = 200\\sin(100t)\\) volt. If the resonant frequency of the LCR circuit is \\(\\nu_0\\) and the frequency of the ac source is \\(\\nu\\), then:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(\\nu_0 = \\nu = \\frac{50}{\\pi} \\text{ Hz}\\)",
+      "B": "\\(\\nu_0 = 100 \\text{ Hz}; \\nu = \\frac{100}{\\pi} \\text{ Hz}\\)",
+      "C": "\\(\\nu_0 = \\nu = 50 \\text{ Hz}\\)",
+      "D": "\\(\\nu_0 = \\frac{50}{\\pi} \\text{ Hz}, \\nu = \\frac{50}{\\pi} \\text{ Hz}\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This problem requires calculating two frequencies for a series LCR circuit: the natural resonant frequency of the circuit and the frequency of the applied AC source. Both are found using their respective formulas.",
+      "key_concepts": [
+        "LCR Series Circuit",
+        "Resonant Frequency",
+        "AC Source Frequency",
+        "Angular Frequency (\\(\\omega\\))",
+        "Frequency (\\(\\nu\\) or f)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "First, calculate the resonant frequency (\\(\\nu_0\\)) of the LCR circuit. The formula for the resonant angular frequency (\\(\\omega_0\\)) is:",
+          "formula": "\\[\\omega_0 = \\frac{1}{\\sqrt{LC}}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Substitute the given values of L = 10 H and C = 10 \\(\\mu\\)F = \\(10 \\times 10^{-6}\\) F.",
+          "formula": "\\[\\omega_0 = \\frac{1}{\\sqrt{10 \\times (10 \\times 10^{-6})}} = \\frac{1}{\\sqrt{100 \\times 10^{-6}}} = \\frac{1}{\\sqrt{10^{-4}}} = \\frac{1}{10^{-2}} = 100 \\text{ rad/s}\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Convert the resonant angular frequency \\(\\omega_0\\) to linear frequency \\(\\nu_0\\) using the relation \\(\\omega = 2\\pi\\nu\\).",
+          "formula": "\\[\\nu_0 = \\frac{\\omega_0}{2\\pi} = \\frac{100}{2\\pi} = \\frac{50}{\\pi} \\text{ Hz}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Next, determine the frequency of the AC source (\\(\\nu\\)). The source voltage is given as \\(V = 200\\sin(100t)\\). This is in the standard form \\(V = V_0 \\sin(\\omega t)\\)."
+        },
+        {
+          "step_number": 5,
+          "description": "By comparing the given equation with the standard form, we can see that the angular frequency of the source is \\(\\omega = 100\\) rad/s."
+        },
+        {
+          "step_number": 6,
+          "description": "Convert the source angular frequency \\(\\omega\\) to linear frequency \\(\\nu\\).",
+          "formula": "\\[\\nu = \\frac{\\omega}{2\\pi} = \\frac{100}{2\\pi} = \\frac{50}{\\pi} \\text{ Hz}\\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Compare the two calculated frequencies: \\(\\nu_0 = \\frac{50}{\\pi} \\text{ Hz}\\) and \\(\\nu = \\frac{50}{\\pi} \\text{ Hz}\\). They are equal."
+        }
+      ],
+      "scientific_principles": [
+        "Resonance in Electrical Circuits"
+      ],
+      "correct_option_reasoning": "The resonant angular frequency \\(\\omega_0 = 1/\\sqrt{LC} = 1/\\sqrt{10 \\times 10^{-5}} = 100\\) rad/s. This corresponds to a resonant frequency \\(\\nu_0 = \\omega_0/(2\\pi) = 50/\\pi\\) Hz. The source voltage is \\(V = 200\\sin(100t)\\), so its angular frequency \\(\\omega\\) is 100 rad/s, which corresponds to a frequency \\(\\nu = \\omega/(2\\pi) = 50/\\pi\\) Hz. Thus, the resonant frequency and the source frequency are equal, and this state is called resonance.",
+      "incorrect_options_analysis": {
+        "B": "These are the angular frequencies (rad/s), not the linear frequencies (Hz).",
+        "C": "This incorrectly omits the factor of \\(\\pi\\) from the denominator.",
+        "D": "The structure of the option in the original file appears to be a typo for option A. Assuming it's distinct, it would be incorrect based on the calculations."
+      },
+      "common_mistakes": [
+        "Confusing angular frequency (\\(\\omega\\) in rad/s) with linear frequency (\\(\\nu\\) or f in Hz).",
+        "Errors in calculating the square root or handling powers of 10.",
+        "Forgetting the formula for resonant frequency."
+      ],
+      "additional_notes": "Since \\(\\nu = \\nu_0\\), the circuit is in a state of resonance. In this state, the impedance Z is at its minimum (Z = R), and the current in the circuit is maximum."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Alternating Current",
+      "subtopic": "Series LCR Circuit",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "lcr_circuit",
+        "alternating_current",
+        "resonance",
+        "resonant_frequency"
+      ],
+      "estimated_time_seconds": 100,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p17_q44",
+    "question_text": "The area of a rectangular field (in \\(m^2\\)) of length 55.3 m and breadth 25 m after rounding off the value for correct significant digits is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "1382.5",
+      "B": "\\(14 \\times 10^2\\)",
+      "C": "\\(138 \\times 10^1\\)",
+      "D": "1382"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This problem involves calculating the area of a rectangle and then rounding the result to the correct number of significant figures, according to the rules for multiplication of measured quantities.",
+      "key_concepts": [
+        "Significant Figures",
+        "Rules for Arithmetic Operations with Significant Figures",
+        "Rounding Off",
+        "Scientific Notation"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "First, calculate the raw area of the rectangular field by multiplying its length and breadth.",
+          "formula": "\\[\\text{Area} = \\text{length} \\times \\text{breadth} = 55.3 \\text{ m} \\times 25 \\text{ m} = 1382.5 \\text{ m}^2\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Determine the number of significant figures in each of the given measurements. \n- Length = 55.3 m has three significant figures (5, 5, 3). \n- Breadth = 25 m has two significant figures (2, 5)."
+        },
+        {
+          "step_number": 3,
+          "description": "Apply the rule for multiplication with significant figures. The result of a multiplication or division should be rounded to the same number of significant figures as the measurement with the least number of significant figures."
+        },
+        {
+          "step_number": 4,
+          "description": "In this case, the least number of significant figures is two (from the breadth, 25 m). Therefore, the final answer must be rounded to two significant figures."
+        },
+        {
+          "step_number": 5,
+          "description": "Round the calculated area, 1382.5, to two significant figures. The first two digits are '1' and '3'. The next digit is '8', which is 5 or greater, so we round up the preceding digit '3' to '4'. The remaining digits are replaced by zeros to maintain the order of magnitude. The rounded number is 1400."
+        },
+        {
+          "step_number": 6,
+          "description": "Express the rounded number 1400 in a way that clearly shows it has two significant figures. Writing it as 1400 is ambiguous (could be 2, 3, or 4 sig figs). Using scientific notation is the best practice: \\(1.4 \\times 10^3\\). The option given is \\(14 \\times 10^2\\), which is equivalent and also clearly indicates two significant figures.",
+          "formula": "\\[1382.5 \\text{ m}^2 \\approx 1400 \\text{ m}^2 = 14 \\times 10^2 \\text{ m}^2\\]"
+        }
+      ],
+      "scientific_principles": [],
+      "correct_option_reasoning": "The raw area is 55.3 m × 25 m = 1382.5 m². According to the rules of significant figures in multiplication, the result must be rounded to the least number of significant figures in the input values, which is two (from '25 m'). Rounding 1382.5 to two significant figures gives 1400. This is best represented as \\(1.4 \\times 10^3\\) or, as in the option, \\(14 \\times 10^2\\) to explicitly show two significant figures.",
+      "incorrect_options_analysis": {
+        "A": "1382.5 is the unrounded result and has five significant figures.",
+        "C": "\\(138 \\times 10^1\\) or 1380 has three significant figures.",
+        "D": "1382 has four significant figures."
+      },
+      "common_mistakes": [
+        "Forgetting to round the final answer to the correct number of significant figures.",
+        "Rounding to the wrong number of significant figures (e.g., three instead of two).",
+        "Incorrectly rounding the number (e.g., rounding 1382.5 down to 1300)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Units and Measurement",
+      "subtopic": "Significant Figures",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "significant_figures",
+        "rounding",
+        "measurement",
+        "error_analysis"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p17_q45",
+    "question_text": "The volume occupied by the molecules contained in 4.5 kg water at STP, if the intermolecular forces vanish away is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(5.6 \\times 10^{-3} \\text{ m}^3\\)",
+      "B": "\\(5.6 \\text{ m}^3\\)",
+      "C": "\\(5.6 \\times 10^{6} \\text{ m}^3\\)",
+      "D": "\\(5.6 \\times 10^{3} \\text{ m}^3\\)"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "The problem asks for the volume of 4.5 kg of water at STP under the condition that intermolecular forces vanish. This condition implies we should treat water as an ideal gas. The solution involves calculating the number of moles of water and then using the Ideal Gas Law to find the volume.",
+      "key_concepts": [
+        "Ideal Gas Law",
+        "Standard Temperature and Pressure (STP)",
+        "Moles and Molar Mass",
+        "States of Matter"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Interpret the problem statement. 'If the intermolecular forces vanish away' means we should treat the water as an ideal gas, not as liquid or solid. We need to find the volume of this water vapor under STP conditions."
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the STP conditions. Standard Temperature (T) is 273.15 K (or 273 K for simplicity). Standard Pressure (P) is \\(1 \\text{ atm} \\approx 1.013 \\times 10^5 \\text{ Pa}\\). The solution uses \\(10^5 \\text{ Pa}\\) which is the IUPAC standard pressure."
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the number of moles (n) of water. The mass of water (m) is 4.5 kg = 4500 g. The molar mass (M) of water (\\(H_2O\\)) is approximately \\(2(1) + 16 = 18 \\text{ g/mol}\\).",
+          "formula": "\\[n = \\frac{\\text{mass}}{\\text{Molar Mass}} = \\frac{4500 \\text{ g}}{18 \\text{ g/mol}} = 250 \\text{ mol}\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Use the Ideal Gas Law to find the volume (V).",
+          "formula": "\\[PV = nRT \\implies V = \\frac{nRT}{P}\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Substitute the values: \\(n = 250 \\text{ mol}\\), \\(R \\approx 8.314 \\text{ J/(mol K)}\\), \\(T = 273 \\text{ K}\\), and \\(P = 10^5 \\text{ Pa}\\).",
+          "formula": "\\[V = \\frac{(250 \\text{ mol}) \\times (8.314 \\text{ J/(mol K)}) \\times (273 \\text{ K})}{10^5 \\text{ Pa}}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Calculate the final volume.",
+          "formula": "\\[V \\approx \\frac{567355.5}{10^5} \\approx 5.67 \\text{ m}^3\\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Alternatively, use the molar volume of an ideal gas at STP. At STP (273.15 K and 1 atm), 1 mole of any ideal gas occupies 22.4 L. At IUPAC STP (273.15 K and 1 bar = \\(10^5\\) Pa), it is 22.7 L. Let's use 22.4 L = \\(22.4 \\times 10^{-3} \\text{ m}^3\\). \\(V = n \\times V_{molar} = 250 \\times 22.4 \\times 10^{-3} \\text{ m}^3 = 5600 \\times 10^{-3} \\text{ m}^3 = 5.6 \\text{ m}^3\\)."
+        }
+      ],
+      "scientific_principles": [
+        "Ideal Gas Law",
+        "Avogadro's Law"
+      ],
+      "correct_option_reasoning": "Treating water as an ideal gas (as intermolecular forces vanish), we first find the number of moles: n = 4500g / 18g/mol = 250 mol. The volume of one mole of an ideal gas at STP is approximately 22.4 L. Therefore, the total volume is 250 mol × 22.4 L/mol = 5600 L = 5.6 m³. Using the ideal gas law \\(V = nRT/P\\) gives the same result.",
+      "incorrect_options_analysis": {
+        "A": "\\(5.6 \\times 10^{-3} \\text{ m}^3\\) is 5.6 L, which would be the volume of only 0.25 moles of water vapor, or perhaps confused with the volume of 4.5 L (4.5 kg) of liquid water.",
+        "C": "This is an extremely large volume, incorrect by orders of magnitude.",
+        "D": "This is an extremely large volume, incorrect by orders of magnitude."
+      },
+      "common_mistakes": [
+        "Forgetting to convert the mass of water from kg to g before calculating moles.",
+        "Using the wrong value for R or STP conditions.",
+        "Mistakes in unit conversion between Liters and cubic meters."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Thermal Physics",
+      "subtopic": "Kinetic Theory of Gases",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "ideal_gas_law",
+        "stp",
+        "molar_volume",
+        "kinetic_theory"
+      ],
+      "estimated_time_seconds": 100,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p18_q47",
+    "question_text": "Match List-I with List-II\n\nList-I\n(a) Gravitational constant (G)\n(b) Gravitational potential energy\n(c) Gravitational potential\n(d) Gravitational intensity\n\nList-II\n(i) \\([L^2T^{-2}]\\)\n(ii) \\([M^{-1}L^3T^{-2}]\\)\n(iii) \\([LT^{-2}]\\)\n(iv) \\([ML^2T^{-2}]\\)\n\nChoose the correct answer from the options given below:",
+    "question_type": "matching",
+    "options": {
+      "A": "(a) - (ii), (b) - (iv), (c) - (iii), (d) - (i)",
+      "B": "(a) - (iv), (b) - (ii), (c) - (i), (d) - (iii)",
+      "C": "(a) - (ii), (b) - (i), (c) - (iv), (d) - (iii)",
+      "D": "(a) - (ii), (b) - (iv), (c) - (i), (d) - (iii)"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question requires determining the dimensional formulas for four different physical quantities related to gravitation and matching them with the given list.",
+      "key_concepts": [
+        "Dimensional Analysis",
+        "Gravitational Constant (G)",
+        "Gravitational Potential Energy (U)",
+        "Gravitational Potential (V)",
+        "Gravitational Field Intensity (E)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Find the dimensions for (a) Gravitational constant (G). Use Newton's law of gravitation, \\(F = G\\frac{m_1m_2}{r^2}\\). Rearrange to solve for G: \\(G = \\frac{Fr^2}{m_1m_2}\\).",
+          "formula": "\\[[G] = \\frac{[F][r^2]}{[m_1][m_2]} = \\frac{[MLT^{-2}][L^2]}{[M][M]} = [M^{-1}L^3T^{-2}]\\] This matches (ii)."
+        },
+        {
+          "step_number": 2,
+          "description": "Find the dimensions for (b) Gravitational potential energy. Energy has the same dimensions as work (Force × distance).",
+          "formula": "\\[[U] = [\\text{Work}] = [F][d] = [MLT^{-2}][L] = [ML^2T^{-2}]\\] This matches (iv)."
+        },
+        {
+          "step_number": 3,
+          "description": "Find the dimensions for (c) Gravitational potential. Gravitational potential (V) is defined as potential energy per unit mass.",
+          "formula": "\\[[V] = \\frac{[U]}{[m]} = \\frac{[ML^2T^{-2}]}{[M]} = [L^2T^{-2}]\\] This matches (i)."
+        },
+        {
+          "step_number": 4,
+          "description": "Find the dimensions for (d) Gravitational intensity. Gravitational field intensity (E) is defined as gravitational force per unit mass. Its dimensions are the same as acceleration.",
+          "formula": "\\[[E] = \\frac{[F]}{[m]} = \\frac{[MLT^{-2}]}{[M]} = [LT^{-2}]\\] This matches (iii)."
+        },
+        {
+          "step_number": 5,
+          "description": "Combine the correct pairings: (a)-(ii), (b)-(iv), (c)-(i), (d)-(iii). This corresponds to option D."
+        }
+      ],
+      "scientific_principles": [],
+      "correct_option_reasoning": "By deriving the dimensional formula for each quantity from its definition or a related physical law, we get the following matches: G with \\([M^{-1}L^3T^{-2}]\\), Gravitational potential energy with \\([ML^2T^{-2}]\\), Gravitational potential with \\([L^2T^{-2}]\\), and Gravitational intensity with \\([LT^{-2}]\\). This corresponds to the combination (a)-(ii), (b)-(iv), (c)-(i), (d)-(iii).",
+      "incorrect_options_analysis": {
+        "A": "Incorrectly matches (c) and (d).",
+        "B": "Incorrectly matches all items.",
+        "C": "Incorrectly matches (b), (c), and (d)."
+      },
+      "common_mistakes": [
+        "Confusing gravitational potential with gravitational potential energy.",
+        "Confusing gravitational intensity with gravitational constant.",
+        "Making algebraic errors during the derivation of dimensions."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Gravitation",
+      "subtopic": "Newton's Law of Gravitation",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "units_and_dimensions",
+        "dimensional_analysis",
+        "gravitation",
+        "matching"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p18_q48",
+    "question_text": "A wheatstone bridge is used to determine the value of unknown resistance X by adjusting the variable resistance Y as shown in the figure. For the most precise measurement of X, the resistances P and Q:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Should be very large and unequal",
+      "B": "Do not play any significant role",
+      "C": "Should be approximately equal to 2X",
+      "D": "Should be approximately equal and are small"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question asks for the optimal condition for the resistances P and Q in a Wheatstone bridge for achieving the most precise measurement. The sensitivity and precision of the bridge are maximized when all four resistances are of the same order of magnitude.",
+      "key_concepts": [
+        "Wheatstone Bridge",
+        "Null Deflection Method",
+        "Sensitivity of a Bridge",
+        "Precision in Measurement"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the working principle of a Wheatstone bridge. It is used to measure an unknown resistance by balancing two legs of a bridge circuit. The balanced condition is given by \\(P/Q = X/Y\\), where P and Q are the ratio arms.",
+          "formula": "\\[\\frac{P}{Q} = \\frac{X}{Y}\\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Understand the concept of 'most precise measurement'. This relates to the sensitivity of the bridge. The bridge is most sensitive when a small change in the variable resistance Y produces the largest possible deflection in the galvanometer when the bridge is near the balance point."
+        },
+        {
+          "step_number": 3,
+          "description": "State the condition for maximum sensitivity. The sensitivity of a Wheatstone bridge is maximum when all four resistances (P, Q, X, and Y) are of the same order of magnitude. This means P should be approximately equal to Q, and both should be of a similar value to X and Y."
+        },
+        {
+          "step_number": 4,
+          "description": "Evaluate the given options based on this condition. Option (D) states that P and Q should be approximately equal and are small. This aligns with the condition for high sensitivity, as having them of the same order as the likely small resistances being measured is ideal. Making P and Q equal simplifies the balance condition to X = Y."
+        }
+      ],
+      "scientific_principles": [
+        "Kirchhoff's Laws (which are used to derive the bridge condition)"
+      ],
+      "correct_option_reasoning": "A Wheatstone bridge is most sensitive (and thus provides the most precise measurement) when the resistances in all four arms are of the same order. This implies that the ratio arms P and Q should be approximately equal to each other and to the resistances X and Y. Having P and Q be small and equal makes the bridge particularly sensitive for measuring small unknown resistances.",
+      "incorrect_options_analysis": {
+        "A": "Very large and unequal resistances decrease the sensitivity of the bridge.",
+        "B": "The ratio arms P and Q are fundamental to the operation and precision of the bridge.",
+        "C": "There is no general condition that P and Q should be equal to 2X. The ideal condition is P ≈ Q ≈ X."
+      },
+      "common_mistakes": [
+        "Only remembering the balance condition \\(P/Q = X/Y\\) but not the conditions for maximum sensitivity."
+      ],
+      "additional_notes": "A meter bridge is a practical application of the Wheatstone bridge where this condition is often met."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "Wheatstone Bridge",
+      "difficulty": "Medium",
+      "bloom_level": "Understand",
+      "tags": [
+        "current_electricity",
+        "wheatstone_bridge",
+        "meter_bridge",
+        "measurement_precision",
+        "sensitivity",
+        "visual_based_question"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": true,
+      "visual_description": "The question requires the standard circuit diagram of a Wheatstone bridge. It shows four resistors P, Q, X, and Y arranged in a diamond shape. A galvanometer is connected between the middle two junctions, and a voltage source is connected across the other two junctions. P and Q are the ratio arms, X is the unknown resistance, and Y is the variable resistance.",
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p19_q49",
+    "question_text": "A big circular coil of 1000 turns and average radius 10 m is rotating about its horizontal diameter at \\(2 \\text{ rad s}^{-1}\\). If the vertical component of earth’s magnetic field at that place is \\(2 \\times 10^{-5} \\text{ T}\\) and electrical resistance of the coil is 12.56 \\(\\Omega\\), then the maximum induced current in the coil will be:",
+    "question_type": "numerical",
+    "options": {
+      "A": "1 A",
+      "B": "2 A",
+      "C": "0.25 A",
+      "D": "1.5 A"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This problem involves calculating the maximum induced current in a rotating coil in a magnetic field (an AC generator setup). The solution requires finding the maximum induced emf using the formula for a generator and then applying Ohm's law to find the current.",
+      "key_concepts": [
+        "Electromagnetic Induction",
+        "Magnetic Flux",
+        "Faraday's Law of Induction",
+        "Induced EMF in a Rotating Coil (AC Generator)",
+        "Ohm's Law"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the given values: Number of turns \\(N = 1000\\), radius \\(r = 10 \\text{ m}\\), angular velocity \\(\\omega = 2 \\text{ rad s}^{-1}\\), magnetic field (vertical component) \\(B = 2 \\times 10^{-5} \\text{ T}\\), and resistance \\(R = 12.56 \\Omega\\). The coil rotates about a horizontal diameter, so it cuts the vertical component of the magnetic field."
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the area (A) of the coil.",
+          "formula": "\\[A = \\pi r^2 = \\pi (10)^2 = 100\\pi \\text{ m}^2\\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Recall the formula for the instantaneous induced emf (\\(\\epsilon\\)) in a coil rotating in a uniform magnetic field.",
+          "formula": "\\[\\epsilon = NBA\\omega \\sin(\\omega t)\\]"
+        },
+        {
+          "step_number": 4,
+          "description": "From this formula, identify the maximum induced emf (\\(\\epsilon_{max}\\)), which occurs when \\(\\sin(\\omega t) = 1\\).",
+          "formula": "\\[\\epsilon_{max} = NBA\\omega\\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Substitute the given values to calculate \\(\\epsilon_{max}\\). Use \\(\\pi \\approx 3.14\\).",
+          "formula": "\\[\\epsilon_{max} = (1000) \\times (2 \\times 10^{-5} \\text{ T}) \\times (100\\pi \\text{ m}^2) \\times (2 \\text{ rad s}^{-1}) = 4000 \\times 10^{-5} \\times 100\\pi = 0.04 \\times 100\\pi = 4\\pi \\text{ V}\\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Use Ohm's law to find the maximum induced current (\\(i_{max}\\)).",
+          "formula": "\\[i_{max} = \\frac{\\epsilon_{max}}{R}\\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Substitute the values of \\(\\epsilon_{max}\\) and R. Notice that \\(12.56 = 4 \\times 3.14 = 4\\pi\\).",
+          "formula": "\\[i_{max} = \\frac{4\\pi \\text{ V}}{12.56 \\Omega} = \\frac{4\\pi}{4\\pi} = 1 \\text{ A}\\]"
+        }
+      ],
+      "scientific_principles": [
+        "Faraday's Law of Electromagnetic Induction"
+      ],
+      "correct_option_reasoning": "The maximum induced emf is \\(\\epsilon_{max} = NBA\\omega\\). Plugging in the values \\(N=1000, B=2\\times10^{-5}T, A=100\\pi m^2, \\omega=2 rad/s\\) gives \\(\\epsilon_{max} = 4\\pi\\) V. The maximum current is then \\(i_{max} = \\epsilon_{max} / R = 4\\pi / 12.56 = 4\\pi / (4\\pi) = 1\\) A.",
+      "incorrect_options_analysis": {
+        "B": "A result of 2 A would require the emf to be twice as large, possibly from an error in calculation.",
+        "C": "A result of 0.25 A would imply a calculation error, perhaps inverting a value.",
+        "D": "A result of 1.5 A does not correspond to a simple calculation error."
+      },
+      "common_mistakes": [
+        "Forgetting to calculate the area from the radius.",
+        "Using the wrong formula for induced emf.",
+        "Calculation errors, especially with powers of 10 and \\(\\pi\\)."
+      ],
+      "additional_notes": "The choice of \\(R=12.56\\Omega\\) is intentional to simplify the final calculation, as \\(4\\pi \\approx 12.56\\)."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electromagnetic Induction",
+      "subtopic": "AC Generator",
+      "difficulty": "Hard",
+      "bloom_level": "Apply",
+      "tags": [
+        "numerical_calculation",
+        "electromagnetic_induction",
+        "faradays_law",
+        "induced_emf",
+        "ac_generator"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p19_q50",
+    "question_text": "From Ampere’s circuital law for a long straight wire of circular cross-section carrying a steady current, the variation of magnetic field in the inside and outside region of the wire is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "A linearly increasing function of distance r upto the boundary of the wire and then decreasing one with \\(1/r\\) dependence for the outside region.",
+      "B": "A linearly decreasing function of distance upto the boundary of the wire and then a linearly increasing one for the outside region.",
+      "C": "Uniform and remains constant for both the regions.",
+      "D": "A linearly increasing function of distance upto the boundary of the wire and then linearly decreasing for the outside region."
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question asks to describe how the magnetic field varies with distance from the center of a long, straight wire carrying a steady current. The answer requires applying Ampere's law to find the field both inside and outside the wire.",
+      "key_concepts": [
+        "Ampere's Circuital Law",
+        "Magnetic Field of a Straight Wire",
+        "Current Density",
+        "Symmetry in Electromagnetism"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the region inside the wire (\\(r < R\\)), where r is the distance from the center and R is the radius of the wire. Assume the current I is uniformly distributed, so the current density is \\(J = I / (\\pi R^2)\\)."
+        },
+        {
+          "step_number": 2,
+          "description": "Apply Ampere's Law to an Amperian loop of radius r inside the wire: \\(\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_{enclosed}\\). Here, \\(\\oint \\vec{B} \\cdot d\\vec{l} = B(2\\pi r)\\).",
+          "formula": null
+        },
+        {
+          "step_number": 3,
+          "description": "The current enclosed by the loop is \\(I_{enclosed} = J \\times (\\pi r^2) = (I / (\\pi R^2)) \\times (\\pi r^2) = I (r^2 / R^2)\\)."
+        },
+        {
+          "step_number": 4,
+          "description": "Equating them gives \\(B(2\\pi r) = \\mu_0 I (r^2 / R^2)\\). Solving for B gives \\(B_{inside} = (\\frac{\\mu_0 I}{2\\pi R^2}) r\\). This shows that inside the wire, the magnetic field \\(B\\) increases linearly with the distance \\(r\\) from the center (\\(B \\propto r\\))."
+        },
+        {
+          "step_number": 5,
+          "description": "Analyze the region outside the wire (\\(r \\ge R\\)). Apply Ampere's Law to an Amperian loop of radius r outside the wire. The total current I is enclosed, so \\(I_{enclosed} = I\\)."
+        },
+        {
+          "step_number": 6,
+          "description": "The law becomes \\(B(2\\pi r) = \\mu_0 I\\). Solving for B gives \\(B_{outside} = \\frac{\\mu_0 I}{2\\pi r}\\). This shows that outside the wire, the magnetic field \\(B\\) is inversely proportional to the distance \\(r\\) (\\(B \\propto 1/r\\))."
+        },
+        {
+          "step_number": 7,
+          "description": "Combine the results: The magnetic field increases linearly from the center to the surface of the wire, and then decreases hyperbolically (as \\(1/r\\)) outside the wire."
+        }
+      ],
+      "scientific_principles": [
+        "Ampere's Law"
+      ],
+      "correct_option_reasoning": "Using Ampere's law, it can be derived that for a wire of radius R, the magnetic field inside (r < R) is \\(B \\propto r\\) (a linearly increasing function), and the magnetic field outside (r > R) is \\(B \\propto 1/r\\) (a decreasing function). This matches the description in option A.",
+      "incorrect_options_analysis": {
+        "B": "Incorrect, the field increases inside and decreases outside.",
+        "C": "Incorrect, the field is not uniform in either region.",
+        "D": "Incorrect, the field decreases as \\(1/r\\) outside, not linearly."
+      },
+      "common_mistakes": [
+        "Assuming the field inside is constant.",
+        "Thinking the field outside decreases as \\(1/r^2\\), confusing it with the electric field of a line charge or the Biot-Savart law's general form.",
+        "Confusing the result for a solid wire with that of a hollow wire (where B=0 inside)."
+      ],
+      "additional_notes": "The magnetic field is maximum at the surface of the wire (r = R)."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Moving Charges and Magnetism",
+      "subtopic": "Ampere's Circuital Law",
+      "difficulty": "Medium",
+      "bloom_level": "Understand",
+      "tags": [
+        "electromagnetism",
+        "amperes_law",
+        "magnetic_field",
+        "straight_wire",
+        "conceptual"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  },
+  {
+    "question_id": "Question_Paper_14_p20_q51",
+    "question_text": "Given below are two statements\nStatement I:\nIn the coagulation of a negative sol, the flocculating power of the three given ions is in the order\n\\[\\ce{Al^{3+} > Ba^{2+} > Na+ }\\]\nStatement II:\nIn the coagulation of a positive sol, the flocculating power of the three given salts is in the order\n\\[\\ce{NaCl > Na2SO4 > Na3PO4}\\]\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Statement I is correct but Statement II is incorrect.",
+      "B": "Statement I is incorrect but Statement II is correct.",
+      "C": "Both Statement I and Statement II are correct.",
+      "D": "Both Statement I and Statement II are incorrect."
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question tests the application of the Hardy-Schulze rule, which governs the coagulation of colloidal solutions by electrolytes. Statement I correctly applies the rule for a negative sol, while Statement II incorrectly applies it for a positive sol.",
+      "key_concepts": [
+        "Colloidal Solutions (Sols)",
+        "Coagulation (Flocculation)",
+        "Hardy-Schulze Rule",
+        "Flocculating Power",
+        "Valency of Ions"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "State the Hardy-Schulze Rule. It has two parts: \n1) The ion effective in causing coagulation is the one carrying a charge opposite to that of the colloidal particles. \n2) The coagulating or flocculating power of an electrolyte is directly proportional to the valency (charge) of the active ion (the ion causing coagulation)."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement I. It deals with the coagulation of a negative sol. According to the rule, positively charged ions (cations) will cause coagulation. The flocculating power depends on the magnitude of the positive charge. The ions are \\(\\ce{Al^{3+}}\\), \\(\\ce{Ba^{2+}}\\), and \\(\\ce{Na+}\\). Their charges are +3, +2, and +1 respectively. Since higher charge leads to greater flocculating power, the correct order is \\(\\ce{Al^{3+} > Ba^{2+} > Na+}\\). Therefore, Statement I is correct."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze Statement II. It deals with the coagulation of a positive sol. According to the rule, negatively charged ions (anions) will cause coagulation. The salts given are \\(\\ce{NaCl}\\), \\(\\ce{Na2SO4}\\), and \\(\\ce{Na3PO4}\\). The active anions are chloride (\\(\\ce{Cl-}\\)), sulfate (\\(\\ce{SO4^{2-}}\\)), and phosphate (\\(\\ce{PO4^{3-}}\\)). Their charges are -1, -2, and -3 respectively."
+        },
+        {
+          "step_number": 4,
+          "description": "According to the Hardy-Schulze rule, the flocculating power should increase with the magnitude of the negative charge. The correct order of flocculating power should be \\(\\ce{PO4^{3-} > SO4^{2-} > Cl-}\\), which means the order for the salts should be \\(\\ce{Na3PO4 > Na2SO4 > NaCl}\\). Statement II gives the reverse order (\\(\\ce{NaCl > Na2SO4 > Na3PO4}\\)). Therefore, Statement II is incorrect."
+        },
+        {
+          "step_number": 5,
+          "description": "Conclude based on the analysis. Statement I is correct, and Statement II is incorrect."
+        }
+      ],
+      "scientific_principles": [
+        "Hardy-Schulze Rule"
+      ],
+      "correct_option_reasoning": "Statement I correctly applies the Hardy-Schulze rule for a negative sol, stating that flocculating power increases with the valency of the cation (\\(\\ce{Al^{3+} > Ba^{2+} > Na+}\\)). Statement II incorrectly states the order for a positive sol; the flocculating power of anions should also increase with valency, so the correct order is \\(\\ce{Na3PO4 > Na2SO4 > NaCl}\\), the opposite of what is stated.",
+      "incorrect_options_analysis": {
+        "B": "Incorrect, as Statement I is correct and Statement II is incorrect.",
+        "C": "Incorrect, as Statement II is incorrect.",
+        "D": "Incorrect, as Statement I is correct."
+      },
+      "common_mistakes": [
+        "Reversing the relationship between valency and flocculating power.",
+        "Looking at the charge of the wrong ion (e.g., looking at Na+ for coagulating a positive sol)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Chemistry",
+      "topic": "Surface Chemistry",
+      "subtopic": "Colloids",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "surface_chemistry",
+        "colloids",
+        "coagulation",
+        "hardy-schulze_rule",
+        "flocculation",
+        "statement_based"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_14"
+    }
+  }
+]

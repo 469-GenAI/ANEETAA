@@ -1,0 +1,2568 @@
+[
+  {
+    "question_id": "Question_Paper_3_p67_q194",
+    "question_text": "The recombination frequency between the genes a & c is 5%, b & c is 15%, b & d is 9%, a & b is 20%, c & d is 24% and a & d is 29%. What will be the sequence of these genes on a linear chromosome?",
+    "question_type": "numerical",
+    "options": {
+      "A": "a, d, b, c",
+      "B": "d, b, a, c",
+      "C": "a, b, c, d",
+      "D": "a, c, b, d"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This problem requires constructing a genetic map from recombination frequencies. The frequency of recombination between two genes is proportional to the distance between them. By identifying the two genes with the largest recombination frequency as the endpoints, the other genes can be placed in between them based on their distances from the endpoints and each other.",
+      "key_concepts": [
+        "Linkage and Recombination",
+        "Genetic Mapping",
+        "Map Units (centiMorgan)",
+        "Recombination Frequency"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Understand that recombination frequency (%) is equivalent to map distance in centiMorgans (cM)."
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the pair of genes with the highest recombination frequency. This pair will be at the ends of the map segment. The distance between a & d is 29%, which is the largest value. So, 'a' and 'd' are the terminal genes."
+        },
+        {
+          "step_number": 3,
+          "description": "Place the other genes ('c' and 'b') relative to one of the ends, for example, 'a'.\nMap layout: a ..... d (Total distance = 29 units)"
+        },
+        {
+          "step_number": 4,
+          "description": "Position gene 'c'. The distance between a & c is 5%. So, 'c' is 5 units away from 'a'.\nMap: a --5-- c ..... d"
+        },
+        {
+          "step_number": 5,
+          "description": "Position gene 'b'. The distance between a & b is 20%. So, 'b' is 20 units away from 'a'.\nMap: a --5-- c --15-- b ..... d"
+        },
+        {
+          "step_number": 6,
+          "description": "Verify the internal distances with the proposed map: `a --5-- c --15-- b --9-- d`.\n- dist(a,c) = 5%. Matches.\n- dist(c,b) = 15%. Matches.\n- dist(b,d) = 9%. Matches.\n- dist(a,b) = 5 + 15 = 20%. Matches.\n- dist(c,d) = 15 + 9 = 24%. Matches.\n- dist(a,d) = 5 + 15 + 9 = 29%. Matches."
+        },
+        {
+          "step_number": 7,
+          "description": "All given distances are consistent with the sequence a, c, b, d. This matches option D."
+        }
+      ],
+      "scientific_principles": [
+        "Principle of Linear Arrangement of Genes on a Chromosome"
+      ],
+      "correct_option_reasoning": "By treating recombination frequencies as map distances, the linear order of the genes can be systematically constructed. The largest distance (a-d = 29%) sets the endpoints. The other genes (c and b) are then placed between them according to their distances from 'a' (a-c = 5%, a-b = 20%). The sequence a-c-b-d is the only one that is consistent with all the given recombination frequencies.",
+      "incorrect_options_analysis": {
+        "A": "This sequence is inconsistent with the given distances.",
+        "B": "This sequence is inconsistent with the given distances.",
+        "C": "This sequence is inconsistent with the given distances (e.g., it would imply dist(a,b) + dist(b,c) = dist(a,c)).",
+        "D": "This is the correct option."
+      },
+      "common_mistakes": [
+        "Not identifying the terminal genes first by finding the largest recombination frequency.",
+        "Making arithmetic errors when summing distances to check for consistency."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Biology",
+      "topic": "Principles of Inheritance and Variation",
+      "subtopic": "Linkage and Recombination",
+      "difficulty": "Hard",
+      "bloom_level": "Analyze",
+      "tags": [
+        "genetics",
+        "gene_mapping",
+        "recombination_frequency",
+        "linkage",
+        "problem_solving"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_3"
+    }
+  },
+  {
+    "question_id": "Question_Paper_3_p67_q195",
+    "question_text": "Ten E.coli cells with \\(^{15}N\\) - dsDNA are incubated in medium containing \\(^{14}N\\) nucleotide. After 60 minutes, how many E.coli cells will have DNA totally free from \\(^{15}N\\)?",
+    "question_type": "numerical",
+    "options": {
+      "A": "20 cells",
+      "B": "40 cells",
+      "C": "60 cells",
+      "D": "80 cells"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This problem is an application of the Meselson-Stahl experiment logic for semi-conservative DNA replication. Starting with 10 cells containing heavy DNA, we track the distribution of the original heavy strands through three generations (60 minutes, assuming a 20-minute generation time) to find the number of cells that will have DNA made exclusively of new, light material.",
+      "key_concepts": [
+        "Semi-Conservative DNA Replication",
+        "Meselson-Stahl Experiment",
+        "Bacterial Cell Division",
+        "Isotope Labeling"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Determine the number of generations. The generation time for E. coli is typically 20 minutes. Total time is 60 minutes. Number of generations (n) = Total time / Generation time = 60 / 20 = 3 generations."
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the total number of cells after 3 generations, starting with 10 cells.",
+          "formula": "\\[ \\text{Total Cells} = \\text{Initial Cells} \\times 2^n = 10 \\times 2^3 = 10 \\times 8 = 80 \\text{ cells} \\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Track the original \\(^{15}N\\) DNA strands. Initially, there are 10 cells, each with one dsDNA molecule, so there are \\(10 \\times 2 = 20\\) original \\(^{15}N\\) single strands."
+        },
+        {
+          "step_number": 4,
+          "description": "Due to semi-conservative replication, these 20 original \\(^{15}N\\) strands will be conserved and distributed among the daughter cells. Each of these strands will be part of a hybrid DNA molecule (one \\(^{15}N\\) strand and one \\(^{14}N\\) strand). Therefore, there will always be exactly 20 cells containing hybrid DNA, one for each original single strand."
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the number of cells with DNA totally free from \\(^{15}N\\). These are the cells containing only \\(^{14}N\\)-\\(^{14}N\\) dsDNA.",
+          "formula": "\\[ \\text{Cells free of } ^{15}N = \\text{Total Cells} - \\text{Hybrid Cells} = 80 - 20 = 60 \\text{ cells} \\]"
+        }
+      ],
+      "scientific_principles": [
+        "Principle of Semi-Conservative DNA Replication"
+      ],
+      "correct_option_reasoning": "After three generations (60 minutes), the initial 10 cells will multiply to 80 cells. The original 20 single strands of \\(^{15}N\\)-DNA will be distributed among 20 of these cells, forming 20 hybrid DNA molecules. The remaining cells (80 total - 20 hybrid) will have DNA made entirely of \\(^{14}N\\) nucleotides. Therefore, 60 cells will be totally free from \\(^{15}N\\).",
+      "incorrect_options_analysis": {
+        "A": "This is the number of cells after 2 generations (40 minutes), but it represents the number of hybrid cells, not the number of \\(^{14}N\\)-only cells.",
+        "B": "This is the total number of cells after 2 generations (40 minutes).",
+        "C": "This is the correct option.",
+        "D": "This is the total number of cells after 3 generations (60 minutes), not the number free from \\(^{15}N\\)."
+      },
+      "common_mistakes": [
+        "Errors in calculating the number of generations or the total number of cells.",
+        "Forgetting that the number of hybrid DNA molecules is always twice the number of initial parent cells."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Biology",
+      "topic": "Molecular Basis of Inheritance",
+      "subtopic": "The Search for Genetic Material (Meselson-Stahl Experiment)",
+      "difficulty": "Hard",
+      "bloom_level": "Apply",
+      "tags": [
+        "dna_replication",
+        "semi_conservative",
+        "meselson_stahl",
+        "numerical_calculation",
+        "e_coli"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_3"
+    }
+  },
+  {
+    "question_id": "Question_Paper_3_p68_q196",
+    "question_text": "Which of the following is not a desirable feature of a cloning vector?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Presence of origin of replication",
+      "B": "Presence of a marker gene",
+      "C": "Presence of single restriction enzyme site",
+      "D": "Presence of two or more recognition sites"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "The question asks for a feature that is NOT desirable in a cloning vector. While a vector needs restriction sites, having multiple recognition sites for the same enzyme would cause the vector to be fragmented into multiple pieces upon digestion, which is undesirable. Ideally, a vector should have a single recognition site for each of a number of different restriction enzymes.",
+      "key_concepts": [
+        "Biotechnology: Principles and Processes",
+        "Cloning Vector",
+        "Origin of Replication (ori)",
+        "Selectable Marker",
+        "Restriction Site",
+        "Multiple Cloning Site (MCS)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the essential features of an effective cloning vector (like a plasmid)."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Option A: 'Presence of origin of replication' (ori). This is a crucial feature, as it allows the vector and its inserted DNA to be replicated by the host cell's machinery."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze Option B: 'Presence of a marker gene'. This is also crucial. A selectable marker (e.g., an antibiotic resistance gene) enables the identification of cells that have successfully taken up the vector."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze Options C and D regarding restriction sites. To insert a piece of foreign DNA, the circular vector must be cut open, typically with a restriction enzyme. If the vector has only one recognition site for that enzyme (Option C), it will be linearized, creating a single gap for the DNA insert. This is highly desirable. If the vector has two or more recognition sites for the same enzyme (Option D), it will be cut into two or more pieces. This would make it very difficult or impossible to ligate the foreign DNA into a single, functional vector. Therefore, having multiple sites for the same enzyme is an undesirable feature."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Recombinant DNA Technology"
+      ],
+      "correct_option_reasoning": "A cloning vector needs to be cut at a single location to insert a gene of interest. If a restriction enzyme cuts the vector at multiple recognition sites, the vector will be fragmented, preventing the formation of a viable recombinant plasmid. Therefore, having two or more recognition sites for the same enzyme is an undesirable feature.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect. 'ori' is an essential feature.",
+        "B": "Incorrect. A marker gene is an essential feature.",
+        "C": "Incorrect. A single restriction site (per enzyme, often clustered in a polylinker) is a highly desirable feature.",
+        "D": "This is the correct option as it is an undesirable feature."
+      },
+      "common_mistakes": [
+        "Misunderstanding the function of restriction sites. While having many different unique restriction sites is good (a multiple cloning site), having many copies of the same site is bad."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Biology",
+      "topic": "Biotechnology: Principles and Processes",
+      "subtopic": "Tools of Recombinant DNA Technology",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "biotechnology",
+        "cloning_vector",
+        "plasmid",
+        "restriction_site",
+        "rdt"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_3"
+    }
+  },
+  {
+    "question_id": "Question_Paper_3_p68_q197",
+    "question_text": "Select the incorrect statement regarding synapses :",
+    "question_type": "single_correct",
+    "options": {
+      "A": "The membranes of presynaptic and postsynaptic neurons are in close proximity in an electrical synapse.",
+      "B": "Electrical current can flow directly from one neuron into the other across the electrical synapse.",
+      "C": "Chemical synapses use neurotransmitters",
+      "D": "Impulse transmission across a chemical synapse is always faster than that across an electrical synapse."
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This question asks to identify the incorrect statement about synapses. The incorrect statement is that chemical synapses are faster than electrical synapses. In fact, electrical synapses are faster because they allow direct ion flow through gap junctions, whereas chemical synapses involve the time-consuming steps of neurotransmitter release, diffusion, and receptor binding.",
+      "key_concepts": [
+        "Synapse",
+        "Chemical Synapse",
+        "Electrical Synapse",
+        "Neurotransmitter",
+        "Synaptic Transmission"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze statement A: In an electrical synapse, the membranes of the two neurons are connected by gap junctions, bringing them into very close proximity (about 3.5 nm apart). This is a correct statement."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze statement B: The gap junctions in an electrical synapse contain channels (connexons) that directly connect the cytoplasm of the two cells, allowing ions (electrical current) to flow directly from one neuron to the next with minimal delay. This is a correct statement."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze statement C: Chemical synapses are characterized by a synaptic cleft that separates the neurons. To bridge this gap, the presynaptic neuron releases chemical messengers called neurotransmitters, which diffuse across the cleft and bind to receptors on the postsynaptic neuron. This is a correct statement."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze statement D: 'Impulse transmission across a chemical synapse is always faster than that across an electrical synapse.' This is incorrect. Electrical synapses are nearly instantaneous because of the direct flow of current. Chemical synapses involve a synaptic delay (typically 0.5-1.0 ms) required for neurotransmitter release, diffusion across the cleft, and binding to receptors. Therefore, transmission across an electrical synapse is always faster than across a chemical synapse."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Neurophysiology"
+      ],
+      "correct_option_reasoning": "Statement D is factually incorrect. The process of neurotransmitter release, diffusion, and receptor binding at a chemical synapse introduces a significant delay (synaptic delay). In contrast, electrical synapses allow for the direct and almost instantaneous flow of ions between cells, making them much faster.",
+      "incorrect_options_analysis": {
+        "A": "This is a correct description of an electrical synapse.",
+        "B": "This is a correct description of transmission at an electrical synapse.",
+        "C": "This is the correct definition of how chemical synapses function.",
+        "D": "This is the correct option as it is a false statement."
+      },
+      "common_mistakes": [
+        "Confusing the properties of electrical and chemical synapses, especially with regard to speed of transmission."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Biology",
+      "topic": "Neural Control and Coordination",
+      "subtopic": "Transmission of Impulses",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "synapse",
+        "chemical_synapse",
+        "electrical_synapse",
+        "neurotransmission",
+        "incorrect_statement"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_3"
+    }
+  },
+  {
+    "question_id": "Question_Paper_3_p69_q198",
+    "question_text": "Which of the following statements is not true?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Analogous structures are a result of convergent evolution",
+      "B": "Sweet potato and potato is an example of analogy",
+      "C": "Homology indicates common ancestry",
+      "D": "Flippers of penguins and dolphins are a pair of homologous organs"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "The question asks for the statement that is not true. Flippers of penguins and dolphins are analogous organs, not homologous. They have similar functions (swimming) but different evolutionary origins and underlying structures (bird wing vs. mammal forelimb), arising from convergent evolution.",
+      "key_concepts": [
+        "Evidences for Evolution",
+        "Homologous Structures",
+        "Analogous Structures",
+        "Convergent Evolution",
+        "Divergent Evolution"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze statement A: 'Analogous structures are a result of convergent evolution'. This is the correct definition. Analogous structures arise when different species independently evolve similar traits as they adapt to similar environments or ecological niches. This process is called convergent evolution. This statement is true."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze statement B: 'Sweet potato and potato is an example of analogy'. A sweet potato is a modified storage root, while a potato is a modified storage stem (tuber). They have the same function (food storage) but different anatomical origins. This makes them analogous structures. This statement is true."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze statement C: 'Homology indicates common ancestry'. Homologous structures are features shared by related species because they have been inherited from a common ancestor. Even if the structures are now used for different functions (e.g., human arm, bat wing), their underlying similarity points to a shared origin. This statement is true."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze statement D: 'Flippers of penguins and dolphins are a pair of homologous organs'. A penguin's flipper is a modified bird wing, while a dolphin's flipper is a modified mammalian forelimb. They have very different evolutionary origins and internal bone structures, despite being adapted for the same function (swimming). Therefore, they are analogous, not homologous. This statement is not true."
+        }
+      ],
+      "scientific_principles": [
+        "Theory of Evolution by Natural Selection"
+      ],
+      "correct_option_reasoning": "The statement that the flippers of penguins and dolphins are homologous is incorrect. They are a classic example of analogous structures developed through convergent evolution to serve a similar purpose (propulsion in water) despite originating from different ancestral structures.",
+      "incorrect_options_analysis": {
+        "A": "This is a true statement defining the origin of analogous structures.",
+        "B": "This is a true statement providing a botanical example of analogy.",
+        "C": "This is a true statement and a fundamental concept in evolutionary biology.",
+        "D": "This is the correct option as it is a false statement."
+      },
+      "common_mistakes": [
+        "Confusing the definitions of homologous and analogous structures.",
+        "Mistaking functional similarity for structural (and thus, evolutionary) similarity."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Biology",
+      "topic": "Evolution",
+      "subtopic": "Evidences for Evolution",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "evolution",
+        "homologous_organs",
+        "analogous_organs",
+        "convergent_evolution",
+        "incorrect_statement"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_3"
+    }
+  },
+  {
+    "question_id": "Question_Paper_3_p69_q200",
+    "question_text": "Given below are two statements:\nStatement I:\nIn a scrubber the exhaust from the thermal plant is passed through the electric wires to charge the dust particles.\nStatement II:\nParticulate matter (PM 2.5) cannot be removed by scrubber but can be removed by an electrostatic precipitator.\nIn the light of the above statements, choose the most appropriate answer from the options given below :",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Both Statement I and Statement II are correct",
+      "B": "Both Statement I and Statement II are incorrect",
+      "C": "Statement I is correct but Statement II is incorrect",
+      "D": "Statement I is incorrect but Statement II is correct"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "Statement I incorrectly describes a scrubber; it actually describes the mechanism of an electrostatic precipitator. A scrubber uses a liquid spray (like water or lime) to remove gaseous pollutants. Statement II is correct; scrubbers are primarily for gases, while electrostatic precipitators are highly effective at removing particulate matter, including fine particles like PM 2.5.",
+      "key_concepts": [
+        "Environmental Issues",
+        "Air Pollution Control",
+        "Scrubber",
+        "Electrostatic Precipitator",
+        "Particulate Matter (PM)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Statement I: It describes a process where exhaust passes through electric wires to charge dust particles. This is the working principle of an *electrostatic precipitator*, which then uses charged plates to collect these particles. A *scrubber* works by passing exhaust through a spray of liquid (e.g., water or lime slurry) to remove gaseous pollutants like \\(SO_2\\). Therefore, Statement I is incorrect."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement II: It states that particulate matter (PM 2.5) cannot be removed by a scrubber but can be removed by an electrostatic precipitator. This is correct. Scrubbers are mainly effective against gases. Electrostatic precipitators are specifically designed to remove particulate matter and can achieve over 99% efficiency, even for very fine particles like PM 2.5. Therefore, Statement II is correct."
+        },
+        {
+          "step_number": 3,
+          "description": "Conclusion: Statement I is incorrect, and Statement II is correct."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Industrial Pollution Control"
+      ],
+      "correct_option_reasoning": "Statement I is false as it confuses the function of a scrubber with that of an electrostatic precipitator. Statement II is true because it correctly differentiates the primary targets of these two pollution control devices: scrubbers for gases and electrostatic precipitators for particulate matter.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect because Statement I is false.",
+        "B": "Incorrect because Statement II is true.",
+        "C": "Incorrect because Statement I is false and Statement II is true.",
+        "D": "This is the correct option."
+      },
+      "common_mistakes": [
+        "Confusing the mechanisms and functions of scrubbers and electrostatic precipitators."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Biology",
+      "topic": "Environmental Issues",
+      "subtopic": "Air Pollution and its Control",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "statement_based",
+        "pollution_control",
+        "scrubber",
+        "electrostatic_precipitator",
+        "particulate_matter"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_3"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p1_q1",
+    "question_text": "A bullet is fired from a gun at the speed of \\(280 \\text{ m s}^{-1}\\) in the direction 30° above the horizontal. The maximum height attained by the bullet is (g = 9.8 m s⁻², sin30° = 0.5):",
+    "question_type": "numerical",
+    "options": {
+      "A": "2800 m",
+      "B": "2000 m",
+      "C": "1000 m",
+      "D": "3000 m"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This is a standard projectile motion problem that requires calculating the maximum height reached. The solution involves using the formula for maximum height, which depends on the initial velocity, the launch angle, and the acceleration due to gravity.",
+      "key_concepts": [
+        "Projectile Motion",
+        "Kinematics",
+        "Maximum Height"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the maximum height (H) attained by a projectile launched with initial speed u at an angle θ to the horizontal.",
+          "formula": "\\[ H = \\frac{u^2 \\sin^2(\\theta)}{2g} \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the given values from the problem: \n- Initial speed, u = 280 m/s\n- Launch angle, θ = 30°\n- Acceleration due to gravity, g = 9.8 m/s²\n- It is also given that sin(30°) = 0.5."
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate \\(\\sin^2(\\theta)\\).",
+          "formula": "\\[ \\sin^2(30^{\\circ}) = (0.5)^2 = 0.25 \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the values into the maximum height formula.",
+          "formula": "\\[ H = \\frac{(280)^2 \\times 0.25}{2 \\times 9.8} \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Perform the calculation.",
+          "formula": "\\[ H = \\frac{78400 \\times 0.25}{19.6} = \\frac{19600}{19.6} = 1000 \\text{ m} \\]"
+        }
+      ],
+      "scientific_principles": [
+        "Equations of Motion under Constant Acceleration"
+      ],
+      "correct_option_reasoning": "Using the standard formula for the maximum height in projectile motion, \\(H = (u^2 \\sin^2 \\theta) / 2g\\), and plugging in the given values for initial velocity, angle, and g, the maximum height is calculated to be exactly 1000 m.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation.",
+        "B": "Incorrect calculation, possibly using g=10 and making an error.",
+        "C": "This is the correct option.",
+        "D": "Incorrect calculation."
+      },
+      "common_mistakes": [
+        "Forgetting to square the sine of the angle (using \\(\\sin(\\theta)\\) instead of \\(\\sin^2(\\theta)\\)).",
+        "Using the formula for range or time of flight instead of maximum height.",
+        "Arithmetic errors."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Motion in a Plane",
+      "subtopic": "Projectile Motion",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "projectile_motion",
+        "kinematics",
+        "maximum_height",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 75,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p1_q3",
+    "question_text": "Given below are two statements:\nStatement I: Photovoltaic devices can convert optical radiation into electricity.\nStatement II: Zener diode is designed to operate under reverse bias in breakdown region.\nIn the light of the above statements, choose the most appropriate answer from the options given below.",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Both Statement I and Statement II are correct",
+      "B": "Both Statement I and Statement II are incorrect",
+      "C": "Statement I is correct but Statement II is incorrect",
+      "D": "Statement I is incorrect but Statement II is correct"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "Both statements describe correct principles of semiconductor devices. Statement I accurately defines the function of a photovoltaic device like a solar cell. Statement II correctly describes the intended operating condition for a Zener diode, which is used for voltage regulation.",
+      "key_concepts": [
+        "Semiconductor Devices",
+        "Photovoltaic Effect",
+        "Solar Cell",
+        "Zener Diode",
+        "Reverse Bias",
+        "Breakdown Voltage"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze Statement I: 'Photovoltaic devices can convert optical radiation into electricity.' This is the definition of the photovoltaic effect and the primary function of devices like solar cells and photodiodes operating in photovoltaic mode. When light (optical radiation) strikes the p-n junction, it creates electron-hole pairs, generating a voltage and current. The statement is correct."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze Statement II: 'Zener diode is designed to operate under reverse bias in breakdown region.' A Zener diode is a special type of diode specifically designed to have a sharp, well-defined reverse breakdown voltage. Its main application is as a voltage regulator, and to perform this function, it must be operated in its reverse breakdown region, where the voltage across it remains nearly constant despite changes in current. The statement is correct."
+        },
+        {
+          "step_number": 3,
+          "description": "Conclusion: Both Statement I and Statement II are correct."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Semiconductor Physics"
+      ],
+      "correct_option_reasoning": "Both statements are correct and independent facts about two different semiconductor devices. Statement I defines a photovoltaic device, and Statement II defines the operating principle of a Zener diode.",
+      "incorrect_options_analysis": {
+        "A": "This is the correct option.",
+        "B": "Incorrect, as both statements are true.",
+        "C": "Incorrect, as Statement II is also true.",
+        "D": "Incorrect, as Statement I is also true."
+      },
+      "common_mistakes": [
+        "Confusing the operating modes of different types of diodes (e.g., a standard diode is not meant to operate in breakdown, but a Zener diode is)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Semiconductor Electronics",
+      "subtopic": "Special Purpose p-n Junction Diodes",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "statement_based",
+        "semiconductors",
+        "photovoltaic_device",
+        "zener_diode",
+        "solar_cell"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p1_q5",
+    "question_text": "If \\(\\oint_S \\vec{E} \\cdot d\\vec{S} = 0\\) over a surface, then:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "The number of flux lines entering the surface must be equal to the number of flux lines leaving it",
+      "B": "The magnitude of electric field on the surface is constant",
+      "C": "All the charges must necessarily be inside the surface",
+      "D": "The electric field inside the surface is necessarily uniform"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "The question presents Gauss's law for electricity, where the net electric flux through a closed surface is zero. This implies that the net charge enclosed by the surface is zero. Visually, this means that every electric field line that enters the closed surface must also exit it.",
+      "key_concepts": [
+        "Gauss's Law",
+        "Electric Flux",
+        "Electric Field Lines"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall Gauss's Law for electricity, which relates the net electric flux (\\(\\Phi_E\\)) through a closed surface to the net charge enclosed (\\(Q_{enc}\\)) by that surface.",
+          "formula": "\\[ \\Phi_E = \\oint_S \\vec{E} \\cdot d\\vec{S} = \\frac{Q_{enc}}{\\epsilon_0} \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "The problem states that \\(\\oint_S \\vec{E} \\cdot d\\vec{S} = 0\\). This means the net electric flux \\(\\Phi_E\\) is zero."
+        },
+        {
+          "step_number": 3,
+          "description": "From Gauss's Law, if \\(\\Phi_E = 0\\), then \\(Q_{enc} / \\epsilon_0 = 0\\), which implies that the net charge enclosed by the surface is zero (\\(Q_{enc} = 0\\))."
+        },
+        {
+          "step_number": 4,
+          "description": "Interpret this result in terms of electric field lines. Electric flux is a measure of the number of field lines passing through a surface. A positive flux corresponds to lines leaving the surface, and a negative flux corresponds to lines entering. If the net flux is zero, the total flux leaving must equal the total flux entering. In other words, the number of flux lines entering must equal the number of flux lines leaving."
+        },
+        {
+          "step_number": 5,
+          "description": "Analyze the options based on this understanding."
+        },
+        {
+          "step_number": 6,
+          "description": "Option A: This is a direct physical interpretation of zero net flux. It is correct."
+        },
+        {
+          "step_number": 7,
+          "description": "Option B, D: Zero net flux does not imply anything about the electric field being constant or uniform on or inside the surface. The field can be complex and non-uniform, as long as the net flux is zero (e.g., a dipole placed outside a closed surface)."
+        },
+        {
+          "step_number": 8,
+          "description": "Option C: Zero net flux means the net enclosed charge is zero. This could mean no charges are inside, or there are equal amounts of positive and negative charge inside. It does not mean *all* charges must be inside."
+        }
+      ],
+      "scientific_principles": [
+        "Gauss's Law for Electrostatics"
+      ],
+      "correct_option_reasoning": "The integral \\(\\oint \\vec{E} \\cdot d\\vec{S}\\) represents the net electric flux through a closed surface. If this value is zero, it means the net flow of the electric field across the surface is zero. This is visually and conceptually equivalent to stating that the number of electric field lines entering the volume enclosed by the surface is exactly balanced by the number of lines leaving it.",
+      "incorrect_options_analysis": {
+        "A": "This is the correct option.",
+        "B": "Incorrect. The field can vary over the surface; for example, for a dipole placed outside the surface.",
+        "C": "Incorrect. This condition only means the *net* charge inside is zero. There could also be charges outside the surface.",
+        "D": "Incorrect. The field inside is not necessarily uniform or zero."
+      },
+      "common_mistakes": [
+        "Assuming that zero flux implies zero electric field everywhere on the surface.",
+        "Assuming that zero enclosed charge means no charges are present inside the surface."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electric Charges and Fields",
+      "subtopic": "Gauss's Law",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "gausss_law",
+        "electric_flux",
+        "electrostatics",
+        "conceptual"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p1_q6",
+    "question_text": "The net magnetic flux through any closed surface is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Zero",
+      "B": "Positive",
+      "C": "Infinity",
+      "D": "Negative"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question states Gauss's law for magnetism, one of Maxwell's four equations. It asserts that the net magnetic flux through any closed surface is always zero. This is a consequence of the experimental fact that there are no magnetic monopoles.",
+      "key_concepts": [
+        "Magnetism",
+        "Magnetic Flux",
+        "Gauss's Law for Magnetism",
+        "Magnetic Monopoles",
+        "Maxwell's Equations"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall Gauss's law for magnetism.",
+          "formula": "\\[ \\oint \\vec{B} \\cdot d\\vec{S} = 0 \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "The integral \\(\\oint \\vec{B} \\cdot d\\vec{S}\\) represents the net magnetic flux through a closed surface S."
+        },
+        {
+          "step_number": 3,
+          "description": "The law states that this quantity is always zero."
+        },
+        {
+          "step_number": 4,
+          "description": "Understand the physical implication. Magnetic field lines always form closed loops; they do not originate from or terminate on 'magnetic charges' (monopoles). Therefore, any field line that enters a closed surface must also exit it. This makes the net flux (lines leaving minus lines entering) zero."
+        }
+      ],
+      "scientific_principles": [
+        "Gauss's Law for Magnetism"
+      ],
+      "correct_option_reasoning": "Gauss's law for magnetism is a fundamental law of physics stating that the net magnetic flux out of any closed surface is zero. This is equivalent to stating that magnetic monopoles do not exist.",
+      "incorrect_options_analysis": {
+        "A": "This is the correct option.",
+        "B": "Incorrect. A positive net flux would imply a 'north' magnetic pole is enclosed.",
+        "C": "Incorrect. This is not physically meaningful.",
+        "D": "Incorrect. A negative net flux would imply a 'south' magnetic pole is enclosed."
+      },
+      "common_mistakes": [
+        "Confusing Gauss's law for magnetism (flux is always zero) with Gauss's law for electricity (flux is proportional to enclosed charge)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Magnetism and Matter",
+      "subtopic": "Gauss's Law for Magnetism",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "gausss_law_magnetism",
+        "magnetic_flux",
+        "maxwells_equations",
+        "conceptual"
+      ],
+      "estimated_time_seconds": 30,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p2_q7",
+    "question_text": "If the galvanometer G does not show any deflection in the circuit shown, the value of R is given by:",
+    "question_type": "numerical",
+    "options": {
+      "A": "200 Ω",
+      "B": "50 Ω",
+      "C": "100 Ω",
+      "D": "400 Ω"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The circuit shown is a potentiometer circuit used to measure an unknown EMF or potential difference. When the galvanometer shows no deflection, it means the potential drop across the resistor R in the primary circuit is exactly equal to the EMF of the cell in the secondary circuit (2 V). By applying Ohm's law to the primary circuit, we can solve for the unknown resistance R.",
+      "key_concepts": [
+        "Potentiometer",
+        "Kirchhoff's Laws",
+        "Ohm's Law",
+        "EMF"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Analyze the circuit. It consists of a primary circuit with a 10 V battery, a 400 Ω resistor, and an unknown resistor R in series. The secondary circuit has a 2 V cell connected across the resistor R, with a galvanometer in between."
+        },
+        {
+          "step_number": 2,
+          "description": "The condition 'galvanometer G does not show any deflection' means there is no current flowing through the secondary circuit. This occurs when the potential difference across resistor R (\\(V_R\\)) is equal to the EMF of the 2 V cell."
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the current (I) flowing through the primary circuit using Ohm's law. The total resistance in the primary circuit is \\(R_{total} = 400 \\Omega + R\\).",
+          "formula": "\\[ I = \\frac{V_{primary}}{R_{total}} = \\frac{10 \\text{ V}}{400 + R} \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the potential difference across the resistor R using Ohm's law.",
+          "formula": "\\[ V_R = I \\times R = \\left( \\frac{10}{400 + R} \\right) R \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Set this potential difference equal to the EMF of the secondary cell, which is 2 V.",
+          "formula": "\\[ 2 = \\frac{10R}{400 + R} \\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Solve the equation for R.",
+          "formula": "\\[ 2(400 + R) = 10R \\implies 800 + 2R = 10R \\implies 800 = 8R \\implies R = 100 \\Omega \\]"
+        }
+      ],
+      "scientific_principles": [
+        "Potentiometer Principle",
+        "Kirchhoff's Voltage Law"
+      ],
+      "correct_option_reasoning": "For the galvanometer to show zero deflection, the potential drop across resistor R must balance the 2V EMF. By setting up an equation for the potential drop across R using the voltage divider rule or by calculating the primary circuit current, and equating it to 2V, the value of R is found to be 100 Ω.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation.",
+        "B": "Incorrect calculation.",
+        "C": "This is the correct option.",
+        "D": "This would be the case if the secondary cell was 8V."
+      },
+      "common_mistakes": [
+        "Incorrectly applying Kirchhoff's laws or the potentiometer principle.",
+        "Making algebraic errors when solving for R."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "Potentiometer",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "potentiometer",
+        "kirchhoffs_laws",
+        "circuit_analysis",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": true,
+      "visual_description": "A circuit diagram showing a primary loop with a 10V battery in series with a 400 Ohm resistor and another resistor labeled R. A secondary loop is tapped across the resistor R, containing a 2V battery and a galvanometer G."
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p2_q8",
+    "question_text": "In a series LCR circuit, the inductance L is 10 mH, capacitance C is 1 µF and resistance R is 100 Ω. The frequency at which resonance occurs is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "15.9 rad/s",
+      "B": "15.9 kHz",
+      "C": "1.59 rad/s",
+      "D": "1.59 kHz"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This problem requires calculating the resonant frequency (f₀) of a series LCR circuit. The resonant frequency is determined by the inductance (L) and capacitance (C) of the circuit, and is independent of the resistance (R).",
+      "key_concepts": [
+        "Alternating Current (AC)",
+        "LCR Circuit",
+        "Resonance",
+        "Resonant Frequency"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the resonant frequency (\\(f_0\\)) of a series LCR circuit.",
+          "formula": "\\[ f_0 = \\frac{1}{2\\pi\\sqrt{LC}} \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the given values and convert them to SI units: \n- L = 10 mH = \\(10 \\times 10^{-3}\\) H = \\(10^{-2}\\) H \n- C = 1 µF = \\(1 \\times 10^{-6}\\) F \n- R = 100 Ω (This value is not needed for calculating the resonant frequency)."
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the product LC.",
+          "formula": "\\[ LC = (10^{-2} \\text{ H}) \\times (10^{-6} \\text{ F}) = 10^{-8} \\text{ H·F} \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate \\(\\sqrt{LC}\\).",
+          "formula": "\\[ \\sqrt{LC} = \\sqrt{10^{-8}} = 10^{-4} \\text{ s} \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the resonant frequency \\(f_0\\).",
+          "formula": "\\[ f_0 = \\frac{1}{2\\pi \\times 10^{-4}} = \\frac{10^4}{2\\pi} \\text{ Hz} \\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Calculate the numerical value.",
+          "formula": "\\[ f_0 = \\frac{10000}{2 \\times 3.14159} \\approx 1591.5 \\text{ Hz} \\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Convert the result to kHz.",
+          "formula": "\\[ f_0 \\approx 1.59 \\text{ kHz} \\]"
+        }
+      ],
+      "scientific_principles": [
+        "Condition for Resonance in AC circuits (X_L = X_C)"
+      ],
+      "correct_option_reasoning": "Using the formula for resonant frequency \\(f_0 = 1/(2\\pi\\sqrt{LC})\\) with the given values for L and C (converted to SI units), the frequency is calculated to be approximately 1592 Hz, which is equal to 1.59 kHz.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect units and value. Angular frequency would be \\(10^4\\) rad/s.",
+        "B": "Incorrect. This is approximately 10 times the correct answer, likely due to an error in powers of ten.",
+        "C": "Incorrect units. The value is correct but the unit should be kHz.",
+        "D": "This is the correct option."
+      },
+      "common_mistakes": [
+        "Confusing frequency (f, in Hz) with angular frequency (ω, in rad/s).",
+        "Forgetting to convert mH to H and µF to F.",
+        "Errors in calculating with powers of ten and π."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Alternating Current",
+      "subtopic": "Series LCR Circuit and Resonance",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "lcr_circuit",
+        "resonance",
+        "resonant_frequency",
+        "alternating_current",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p2_q9",
+    "question_text": "The temperature of a gas is \\(-50^{\\circ}C\\). To what temperature the gas should be heated so that the rms speed is increased by 3 times?",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(669^{\\circ}C\\)",
+      "B": "\\(3295^{\\circ}C\\)",
+      "C": "3097 K",
+      "D": "223 K"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This problem relates the rms speed of gas molecules to the absolute temperature. The key steps are to convert the initial temperature to Kelvin, interpret the phrase 'increased by 3 times' to mean the final speed is four times the initial speed, and then use the proportionality \\(v_{rms} \\propto \\sqrt{T}\\) to find the final temperature in Kelvin before converting it back to Celsius.",
+      "key_concepts": [
+        "Kinetic Theory of Gases",
+        "RMS (Root Mean Square) Speed",
+        "Absolute Temperature (Kelvin Scale)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Convert the initial temperature from Celsius to Kelvin (K).",
+          "formula": "\\[ T_{initial} = -50 + 273 = 223 \\text{ K} \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Interpret the change in rms speed. 'Increased by 3 times' means the final speed is the initial speed plus three times the initial speed.",
+          "formula": "\\[ v_{final} = v_{initial} + 3 \\times v_{initial} = 4 \\times v_{initial} \\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Recall the relationship between rms speed (\\(v_{rms}\\)) and absolute temperature (T).",
+          "formula": "\\[ v_{rms} = \\sqrt{\\frac{3RT}{M}} \\implies v_{rms} \\propto \\sqrt{T} \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Use the proportionality to find the relationship between the final and initial temperatures.",
+          "formula": "\\[ \\frac{v_{final}}{v_{initial}} = \\sqrt{\\frac{T_{final}}{T_{initial}}} \\implies 4 = \\sqrt{\\frac{T_{final}}{223}} \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Solve for the final temperature in Kelvin.",
+          "formula": "\\[ T_{final} = 4^2 \\times T_{initial} = 16 \\times 223 \\text{ K} = 3568 \\text{ K} \\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Convert the final temperature from Kelvin back to Celsius (°C).",
+          "formula": "\\[ T_{final}(^{\\circ}C) = 3568 - 273 = 3295^{\\circ}C \\]"
+        }
+      ],
+      "scientific_principles": [
+        "Kinetic Theory of Gases"
+      ],
+      "correct_option_reasoning": "The rms speed is proportional to the square root of the absolute temperature. An increase 'by' 3 times means the final speed is 4 times the initial speed. This requires the final absolute temperature to be \\(4^2 = 16\\) times the initial absolute temperature. Converting -50°C to 223 K, the final temperature is \\(16 \\times 223 = 3568\\) K, which is 3295°C.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation. This might result from misinterpreting 'increased by 3 times' as `final = 3 * initial` which gives T_final = 9 * 223 = 2007 K = 1734°C.",
+        "B": "This is the correct option.",
+        "C": "Incorrect. This is the temperature in Kelvin if 'increased by 3 times' meant `final = 3 * initial` and there were other errors.",
+        "D": "This is the initial temperature in Kelvin, not the final temperature."
+      },
+      "common_mistakes": [
+        "Forgetting to convert temperatures to the Kelvin scale before applying the gas laws.",
+        "Misinterpreting the phrase 'increased by 3 times'. It means \\(v_f = v_i + 3v_i = 4v_i\\), not \\(v_f = 3v_i\\)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Kinetic Theory",
+      "subtopic": "Kinetic Theory of an Ideal Gas",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "kinetic_theory",
+        "rms_speed",
+        "temperature",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p2_q11",
+    "question_text": "A Carnot engine has an efficiency of 50% when its source is at a temperature 327°C. The temperature of the sink is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "27°C",
+      "B": "15°C",
+      "C": "100°C",
+      "D": "200°C"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This problem requires using the formula for the efficiency of a Carnot engine, which relates efficiency to the absolute temperatures of the hot source and the cold sink. The key is to convert all temperatures to Kelvin before performing calculations.",
+      "key_concepts": [
+        "Carnot Engine",
+        "Thermodynamic Efficiency",
+        "Heat Engines",
+        "Absolute Temperature (Kelvin Scale)"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the efficiency (η) of a Carnot engine.",
+          "formula": "\\[ \\eta = 1 - \\frac{T_{sink}}{T_{source}} \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the given values:\n- Efficiency, η = 50% = 0.5\n- Source temperature, \\(T_{source}\\) = 327°C"
+        },
+        {
+          "step_number": 3,
+          "description": "Convert the source temperature to Kelvin.",
+          "formula": "\\[ T_{source}(K) = 327 + 273 = 600 \\text{ K} \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the known values into the efficiency formula to solve for the sink temperature, \\(T_{sink}\\).",
+          "formula": "\\[ 0.5 = 1 - \\frac{T_{sink}}{600} \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Rearrange the equation and solve for \\(T_{sink}\\) in Kelvin.",
+          "formula": "\\[ \\frac{T_{sink}}{600} = 1 - 0.5 = 0.5 \\implies T_{sink} = 0.5 \\times 600 = 300 \\text{ K} \\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Convert the sink temperature from Kelvin back to Celsius.",
+          "formula": "\\[ T_{sink}(^{\\circ}C) = 300 - 273 = 27^{\\circ}C \\]"
+        }
+      ],
+      "scientific_principles": [
+        "Second Law of Thermodynamics",
+        "Carnot's Theorem"
+      ],
+      "correct_option_reasoning": "Using the Carnot efficiency formula \\(\\eta = 1 - T_{sink}/T_{source}\\), and ensuring temperatures are in Kelvin (Source = 600 K), the sink temperature is calculated to be 300 K. Converting this back to Celsius gives 27°C.",
+      "incorrect_options_analysis": {
+        "A": "This is the correct option.",
+        "B": "Incorrect calculation.",
+        "C": "Incorrect. This might result from errors in temperature conversion.",
+        "D": "Incorrect calculation."
+      },
+      "common_mistakes": [
+        "Forgetting to convert temperatures from Celsius to Kelvin before using them in the Carnot efficiency formula.",
+        "Making algebraic errors when solving for the unknown temperature."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Thermodynamics",
+      "subtopic": "Carnot Engine",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "carnot_engine",
+        "thermodynamics",
+        "efficiency",
+        "heat_engine",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 75,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p2_q12",
+    "question_text": "Resistance of a carbon resistor determined from colour codes is \\((22000 \\pm 5\\%) \\Omega\\). The colour of third band must be:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Red",
+      "B": "Green",
+      "C": "Orange",
+      "D": "Yellow"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This problem requires decoding a resistor's value to find the color of its third band. The first two bands represent the significant figures, and the third band represents the decimal multiplier. A value of 22000 Ω is written as 22 × 10³, and the multiplier 10³ corresponds to the color orange.",
+      "key_concepts": [
+        "Resistor Color Code",
+        "Current Electricity",
+        "Electronic Components"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Understand the 4-band resistor color code system: \n- 1st band: First significant digit.\n- 2nd band: Second significant digit.\n- 3rd band: Decimal multiplier (power of 10).\n- 4th band: Tolerance."
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze the given resistance value: 22000 Ω."
+        },
+        {
+          "step_number": 3,
+          "description": "Express the value in scientific notation with two significant figures: \\(22 \\times 10^3 \\Omega\\)."
+        },
+        {
+          "step_number": 4,
+          "description": "Identify the components corresponding to the bands:\n- First digit is 2.\n- Second digit is 2.\n- Multiplier is \\(10^3\\)."
+        },
+        {
+          "step_number": 5,
+          "description": "Recall the color code mnemonic (e.g., 'BB ROY of Great Britain has a Very Good Wife').\n- 0: Black, 1: Brown, 2: Red, 3: Orange, 4: Yellow, etc."
+        },
+        {
+          "step_number": 6,
+          "description": "The question asks for the color of the third band, which is the multiplier. The multiplier is \\(10^3\\). The number corresponding to the exponent (3) is Orange."
+        }
+      ],
+      "scientific_principles": [
+        "Standard Resistor Color Coding"
+      ],
+      "correct_option_reasoning": "The resistance value 22000 Ω is expressed as 22 followed by 3 zeros. In the color code, this translates to a first band for '2', a second band for '2', and a third multiplier band for '\\(\\times 10^3\\)'. The color for the digit '3' (representing the power of 10) is Orange.",
+      "incorrect_options_analysis": {
+        "A": "Red corresponds to the digit 2 and a multiplier of \\(10^2\\). It represents the first two bands, not the third.",
+        "B": "Green corresponds to the digit 5 and a multiplier of \\(10^5\\).",
+        "C": "This is the correct option.",
+        "D": "Yellow corresponds to the digit 4 and a multiplier of \\(10^4\\)."
+      },
+      "common_mistakes": [
+        "Confusing the digit color with the multiplier color.",
+        "Memorizing the color code in the wrong order."
+      ],
+      "additional_notes": "The tolerance of ±5% corresponds to a fourth band of Gold."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "Resistors and Colour Code",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "resistor_color_code",
+        "current_electricity",
+        "resistance"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p3_q14",
+    "question_text": "For Young’s double slit experiment, two statements are given below:\nStatement I : If screen is moved away from the plane of slits, angular separation of the fringes remains constant.\nStatement II : If the monochromatic source is replaced by another monochromatic source of larger wavelength, the angular separation of fringes decreases.\nIn the light of the above statements, choose the correct answer from the options given below:",
+    "question_type": "statement_based",
+    "options": {
+      "A": "Both Statement I and Statement II are true.",
+      "B": "Both Statement I and Statement II are false.",
+      "C": "Statement I is true but Statement II is false.",
+      "D": "Statement I is false but Statement II is true."
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This question tests the understanding of the factors affecting fringe separation in a Young's double-slit experiment. Statement I is true because angular separation depends only on wavelength and slit separation, not screen distance. Statement II is false because angular separation is directly proportional to wavelength, so a larger wavelength would increase, not decrease, the angular separation.",
+      "key_concepts": [
+        "Wave Optics",
+        "Young's Double Slit Experiment (YDSE)",
+        "Fringe Width",
+        "Angular Separation"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the angular separation (or angular fringe width), \\(\\theta\\), in a YDSE.",
+          "formula": "\\[ \\theta \\approx \\frac{\\lambda}{d} \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Here, \\(\\lambda\\) is the wavelength of light and d is the distance between the slits. Note that the linear fringe width is \\(\\beta = \\frac{\\lambda D}{d}\\), where D is the distance to the screen."
+        },
+        {
+          "step_number": 3,
+          "description": "Analyze Statement I: 'If screen is moved away from the plane of slits, angular separation of the fringes remains constant.' The formula for angular separation, \\(\\theta = \\lambda / d\\), does not depend on the screen distance D. Therefore, moving the screen away does not change the angular separation. Statement I is true."
+        },
+        {
+          "step_number": 4,
+          "description": "Analyze Statement II: 'If the monochromatic source is replaced by another monochromatic source of larger wavelength, the angular separation of fringes decreases.' From the formula \\(\\theta = \\lambda / d\\), the angular separation \\(\\theta\\) is directly proportional to the wavelength \\(\\lambda\\). Therefore, if the wavelength is made larger, the angular separation should increase, not decrease. Statement II is false."
+        },
+        {
+          "step_number": 5,
+          "description": "Conclusion: Statement I is true, and Statement II is false."
+        }
+      ],
+      "scientific_principles": [
+        "Principle of Interference of Light"
+      ],
+      "correct_option_reasoning": "The angular separation in YDSE is given by \\(\\theta = \\lambda / d\\). This expression is independent of the screen distance D, making Statement I correct. The expression is directly proportional to the wavelength \\(\\lambda\\), so increasing \\(\\lambda\\) increases \\(\\theta\\), making Statement II incorrect.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect, as Statement II is false.",
+        "B": "Incorrect, as Statement I is true.",
+        "C": "This is the correct option.",
+        "D": "Incorrect, as Statement I is true and Statement II is false."
+      },
+      "common_mistakes": [
+        "Confusing angular separation (\\(\\theta = \\lambda / d\\)) with linear fringe width (\\(\\beta = D\\lambda / d\\)). Linear fringe width *does* increase as the screen is moved away."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Wave Optics",
+      "subtopic": "Interference and Young's Double Slit Experiment",
+      "difficulty": "Medium",
+      "bloom_level": "Analyze",
+      "tags": [
+        "statement_based",
+        "wave_optics",
+        "ydse",
+        "interference",
+        "angular_separation",
+        "fringe_width"
+      ],
+      "estimated_time_seconds": 75,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p3_q15",
+    "question_text": "The work functions of Caesium (Cs), Potassium (K) and Sodium (Na) are 2.14 eV, 2.30 eV and 2.75 eV respectively. If incident electromagnetic radiation has an incident energy of 2.20 eV, which of these photosensitive surfaces may emit photoelectrons?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Cs only",
+      "B": "Both Na and K",
+      "C": "K only",
+      "D": "Na only"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This question applies the fundamental condition for the photoelectric effect. Photoemission can only occur if the energy of the incident photons is greater than or equal to the work function of the metal. By comparing the incident energy to the work function of each metal, we can determine which will emit photoelectrons.",
+      "key_concepts": [
+        "Photoelectric Effect",
+        "Work Function (Φ)",
+        "Photon Energy"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the condition for the photoelectric effect to occur: The energy of the incident photon (E) must be greater than or equal to the work function (Φ) of the material.",
+          "formula": "\\[ E \\ge \\Phi \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the given incident energy: E = 2.20 eV."
+        },
+        {
+          "step_number": 3,
+          "description": "Compare the incident energy with the work function of each metal:"
+        },
+        {
+          "step_number": 4,
+          "description": "For Caesium (Cs): Work function Φ_Cs = 2.14 eV. Since 2.20 eV > 2.14 eV, photoelectrons will be emitted."
+        },
+        {
+          "step_number": 5,
+          "description": "For Potassium (K): Work function Φ_K = 2.30 eV. Since 2.20 eV < 2.30 eV, photoelectrons will NOT be emitted."
+        },
+        {
+          "step_number": 6,
+          "description": "For Sodium (Na): Work function Φ_Na = 2.75 eV. Since 2.20 eV < 2.75 eV, photoelectrons will NOT be emitted."
+        },
+        {
+          "step_number": 7,
+          "description": "Conclusion: Only Caesium (Cs) will emit photoelectrons under these conditions."
+        }
+      ],
+      "scientific_principles": [
+        "Einstein's Photoelectric Equation"
+      ],
+      "correct_option_reasoning": "The photoelectric effect only occurs when the energy of the incident radiation (2.20 eV) exceeds the work function of the metal surface. Of the three metals listed, only Caesium has a work function (2.14 eV) that is less than the incident energy.",
+      "incorrect_options_analysis": {
+        "A": "This is the correct option.",
+        "B": "Incorrect. The incident energy is insufficient for both Na and K.",
+        "C": "Incorrect. The incident energy is insufficient for K.",
+        "D": "Incorrect. The incident energy is insufficient for Na."
+      },
+      "common_mistakes": [
+        "Reversing the condition for photoemission (thinking work function must be less than incident energy)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Dual Nature of Radiation and Matter",
+      "subtopic": "Photoelectric Effect",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "photoelectric_effect",
+        "work_function",
+        "photon_energy",
+        "conceptual"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p3_q16",
+    "question_text": "The magnitude and direction of the current in the following circuit is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "0.2 A from B to A through E",
+      "B": "0.5 A from A to B through E",
+      "C": "\\(\\frac{5}{9}\\) A from A to B through E",
+      "D": "1.5 A from B to A through E"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "This problem requires applying Kirchhoff's Voltage Law (KVL) to a single-loop circuit containing two batteries and several resistors to find the magnitude and direction of the current.",
+      "key_concepts": [
+        "Kirchhoff's Laws",
+        "Ohm's Law",
+        "DC Circuits"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Identify the components of the single-loop circuit: a 10 V battery, a 5 V battery, a 2 Ω resistor, a 1 Ω resistor, and a 7 Ω resistor."
+        },
+        {
+          "step_number": 2,
+          "description": "Determine the net EMF (electromotive force) in the loop. The two batteries are connected in opposition (positive to positive). The 10 V battery will 'win' and drive the current.",
+          "formula": "\\[ \\epsilon_{net} = 10 \\text{ V} - 5 \\text{ V} = 5 \\text{ V} \\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Determine the direction of the current. Since the 10 V battery has a higher EMF, it will push the current out of its positive terminal, which is at point A. The current will flow in the direction A to E to B."
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the total equivalent resistance (\\(R_{eq}\\)) in the loop. All resistors are in series.",
+          "formula": "\\[ R_{eq} = 7 \\Omega + 1 \\Omega + 2 \\Omega = 10 \\Omega \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Use Ohm's law for the entire circuit to find the magnitude of the current (I).",
+          "formula": "\\[ I = \\frac{\\epsilon_{net}}{R_{eq}} = \\frac{5 \\text{ V}}{10 \\Omega} = 0.5 \\text{ A} \\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Combine the magnitude and direction: The current is 0.5 A, flowing from A to B through the external resistor E (which is the 7 Ω resistor)."
+        }
+      ],
+      "scientific_principles": [
+        "Kirchhoff's Voltage Law"
+      ],
+      "correct_option_reasoning": "The two batteries oppose each other, resulting in a net EMF of 5 V. The total resistance of the series circuit is 10 Ω. By Ohm's law, the current is 5 V / 10 Ω = 0.5 A. The 10 V battery determines the direction, so the current flows from A to B through the external path.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect magnitude and direction.",
+        "B": "This is the correct option.",
+        "C": "Incorrect magnitude.",
+        "D": "Incorrect magnitude and direction."
+      },
+      "common_mistakes": [
+        "Adding the EMFs of the opposing batteries instead of subtracting them.",
+        "Incorrectly determining the direction of the current."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "Kirchhoff's Laws",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "kirchhoffs_laws",
+        "dc_circuit",
+        "circuit_analysis",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 75,
+      "requires_visual": true,
+      "visual_description": "A single-loop circuit diagram. Starting from point A, there's a 10V battery (positive at A), then a 2 Ohm resistor, then point B. From B, there's a 5V battery (positive at B), then a 1 Ohm resistor. This connects to an external 7 Ohm resistor (labeled E) which connects back to point A."
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p4_q19",
+    "question_text": "The half life of a radioactive substance is 20 minutes. In how much time, the activity of substance drops to \\(\\left(\\frac{1}{16}\\right)^{th}\\) of its initial value?",
+    "question_type": "numerical",
+    "options": {
+      "A": "20 minutes",
+      "B": "40 minutes",
+      "C": "60 minutes",
+      "D": "80 minutes"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "This problem involves radioactive decay. The activity of a substance decreases by half in one half-life. We need to find how many half-lives it takes for the activity to drop to 1/16th of its initial value and then multiply that number by the duration of one half-life.",
+      "key_concepts": [
+        "Radioactive Decay",
+        "Half-life",
+        "Activity"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula relating the activity A at time t to the initial activity A₀ and the number of half-lives (n).",
+          "formula": "\\[ A = A_0 \\left(\\frac{1}{2}\\right)^n \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "The problem states that the final activity is \\(1/16\\)th of the initial activity.",
+          "formula": "\\[ A = \\frac{1}{16} A_0 \\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Equate the two expressions to solve for n.",
+          "formula": "\\[ \\frac{1}{16} A_0 = A_0 \\left(\\frac{1}{2}\\right)^n \\implies \\frac{1}{16} = \\left(\\frac{1}{2}\\right)^n \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Express 1/16 as a power of 1/2. Since \\(16 = 2^4\\), \\(\\frac{1}{16} = \\left(\\frac{1}{2}\\right)^4\\)."
+        },
+        {
+          "step_number": 5,
+          "description": "By comparing the exponents, we find that the number of half-lives passed is n = 4."
+        },
+        {
+          "step_number": 6,
+          "description": "Calculate the total time elapsed. The total time is the number of half-lives multiplied by the duration of one half-life (\\(T_{1/2}\\)).",
+          "formula": "\\[ \\text{Total Time} = n \\times T_{1/2} = 4 \\times 20 \\text{ minutes} = 80 \\text{ minutes} \\]"
+        }
+      ],
+      "scientific_principles": [
+        "Law of Radioactive Decay"
+      ],
+      "correct_option_reasoning": "For the activity to drop to 1/16th of its initial value, four half-lives must elapse, because \\((1/2)^4 = 1/16\\). With a half-life of 20 minutes, the total time required is \\(4 \\times 20 = 80\\) minutes.",
+      "incorrect_options_analysis": {
+        "A": "This is one half-life, where the activity drops to 1/2.",
+        "B": "This is two half-lives, where the activity drops to 1/4.",
+        "C": "This is three half-lives, where the activity drops to 1/8.",
+        "D": "This is the correct option."
+      },
+      "common_mistakes": [
+        "Errors in calculating the number of half-lives from the fraction.",
+        "Confusing activity with the amount of substance (though they are directly proportional)."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Nuclei",
+      "subtopic": "Radioactivity",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "radioactivity",
+        "half_life",
+        "nuclear_physics",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p4_q20",
+    "question_text": "The venturi-meter works on:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Huygen’s principle",
+      "B": "Bernoulli’s principle",
+      "C": "The principle of parallel axes",
+      "D": "The principle of perpendicular axes"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "A Venturi meter is a device used to measure the speed of fluid flow. Its operation is a direct application of Bernoulli's principle, which relates the pressure, velocity, and height of a moving fluid.",
+      "key_concepts": [
+        "Fluid Dynamics",
+        "Bernoulli's Principle",
+        "Venturi Meter",
+        "Equation of Continuity"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the function of a Venturi meter. It measures the flow speed of a fluid in a pipe by measuring the pressure difference between a wide section and a narrow, constricted section (the throat)."
+        },
+        {
+          "step_number": 2,
+          "description": "Recall Bernoulli's principle, which states that for a fluid in motion, an increase in speed occurs simultaneously with a decrease in pressure or a decrease in the fluid's potential energy.",
+          "formula": "\\[ P + \\frac{1}{2}\\rho v^2 + \\rho gh = \\text{constant} \\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Apply this to the Venturi meter. As the fluid enters the narrow throat, its speed increases due to the equation of continuity (A₁v₁ = A₂v₂). According to Bernoulli's principle (for a horizontal pipe), this increase in speed (v) must be accompanied by a decrease in pressure (P)."
+        },
+        {
+          "step_number": 4,
+          "description": "By measuring this pressure drop, and knowing the areas of the pipe, one can calculate the flow speed. Therefore, the device's operation is based on Bernoulli's principle."
+        },
+        {
+          "step_number": 5,
+          "description": "Evaluate the other options. Huygen's principle deals with wave propagation. The parallel and perpendicular axes theorems relate to the moment of inertia in rotational mechanics. None of these apply to fluid flow."
+        }
+      ],
+      "scientific_principles": [
+        "Bernoulli's Principle"
+      ],
+      "correct_option_reasoning": "The operation of a Venturi meter is a classic application of Bernoulli's principle. The change in fluid speed due to the pipe's changing cross-section creates a measurable pressure difference, which is directly explained by Bernoulli's equation.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect. Huygen's principle is about wave optics.",
+        "B": "This is the correct option.",
+        "C": "Incorrect. The parallel axis theorem is about rotational dynamics.",
+        "D": "Incorrect. The perpendicular axis theorem is about rotational dynamics."
+      },
+      "common_mistakes": [
+        "Confusing various physics principles."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Mechanical Properties of Fluids",
+      "subtopic": "Bernoulli's Principle",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "venturi_meter",
+        "bernoullis_principle",
+        "fluid_dynamics",
+        "conceptual"
+      ],
+      "estimated_time_seconds": 30,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p4_q21",
+    "question_text": "An ac source is connected to a capacitor C. Due to decrease in its operating frequency:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Capacitive reactance decreases",
+      "B": "Displacement current increases",
+      "C": "Displacement current decreases",
+      "D": "Capacitive reactance remains constant"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "When the frequency of an AC source connected to a capacitor decreases, the capacitive reactance increases. This increased opposition to current flow causes the magnitude of the current in the circuit to decrease. Since the displacement current in the capacitor is equal to the conduction current in the wires, the displacement current also decreases.",
+      "key_concepts": [
+        "Alternating Current (AC)",
+        "Capacitive Reactance (Xc)",
+        "Displacement Current"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for capacitive reactance (\\(X_C\\)).",
+          "formula": "\\[ X_C = \\frac{1}{\\omega C} = \\frac{1}{2\\pi f C} \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Analyze the effect of a decrease in frequency (f) on \\(X_C\\). Since f is in the denominator, a decrease in f will cause \\(X_C\\) to increase. Therefore, options A and D are incorrect."
+        },
+        {
+          "step_number": 3,
+          "description": "Consider the current (I) flowing in the circuit, which is given by Ohm's law for AC circuits.",
+          "formula": "\\[ I = \\frac{V}{X_C} \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Since \\(X_C\\) increases and the source voltage V is constant, the current I must decrease."
+        },
+        {
+          "step_number": 5,
+          "description": "Recall the relationship between conduction current and displacement current in a capacitor. The displacement current (\\(I_d\\)) between the plates is equal to the conduction current (I) in the connecting wires.",
+          "formula": "\\[ I_d = I \\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Since the conduction current (I) decreases, the displacement current (\\(I_d\\)) must also decrease. Therefore, option B is incorrect and option C is correct."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of AC Circuits",
+        "Maxwell's Equations (specifically the concept of displacement current)"
+      ],
+      "correct_option_reasoning": "A decrease in frequency leads to an increase in capacitive reactance (\\(X_C \\propto 1/f\\)). According to Ohm's law (\\(I = V/X_C\\)), this increase in reactance causes a decrease in the current flowing in the circuit. The displacement current within the capacitor is equal to this circuit current, so it also decreases.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect. Capacitive reactance increases as frequency decreases.",
+        "B": "Incorrect. The current, and therefore the displacement current, decreases.",
+        "C": "This is the correct option.",
+        "D": "Incorrect. Capacitive reactance is frequency-dependent."
+      },
+      "common_mistakes": [
+        "Confusing capacitive reactance (inversely proportional to f) with inductive reactance (directly proportional to f).",
+        "Forgetting that displacement current equals conduction current in a simple capacitor circuit."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Alternating Current",
+      "subtopic": "AC Voltage Applied to a Capacitor",
+      "difficulty": "Easy",
+      "bloom_level": "Understand",
+      "tags": [
+        "alternating_current",
+        "capacitor",
+        "capacitive_reactance",
+        "displacement_current",
+        "frequency_dependence"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p4_q22",
+    "question_text": "A football player is moving southward and suddenly turns eastward with the same speed to avoid an opponent. The force that acts on the player while turning is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Along eastward",
+      "B": "Along northward",
+      "C": "Along north-east",
+      "D": "Along south-west"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The force acting on the player is proportional to the change in their velocity (\\(\\Delta \\vec{v}\\)). By treating the initial and final velocities as vectors and calculating the change in velocity (\\(\\vec{v}_{final} - \\vec{v}_{initial}\\)), we can determine the direction of the force.",
+      "key_concepts": [
+        "Newton's Second Law",
+        "Vectors",
+        "Change in Velocity",
+        "Force"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "According to Newton's Second Law, the direction of the net force is the same as the direction of the acceleration (\\(\\vec{F} = m\\vec{a}\\)). Acceleration is the rate of change of velocity, so the force is in the direction of the change in velocity, \\(\\Delta \\vec{v}\\)."
+        },
+        {
+          "step_number": 2,
+          "description": "Define a coordinate system. Let East be the positive x-direction (\\(\\hat{i}\\)) and North be the positive y-direction (\\(\\hat{j}\\)). Therefore, South is the negative y-direction (\\(-\\hat{j}\\))."
+        },
+        {
+          "step_number": 3,
+          "description": "Write the initial velocity vector (\\(\\vec{v}_{initial}\\)). The player is moving southward with speed v.",
+          "formula": "\\[ \\vec{v}_{initial} = -v \\hat{j} \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Write the final velocity vector (\\(\\vec{v}_{final}\\)). The player turns eastward with the same speed v.",
+          "formula": "\\[ \\vec{v}_{final} = +v \\hat{i} \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the change in velocity vector, \\(\\Delta \\vec{v}\\).",
+          "formula": "\\[ \\Delta \\vec{v} = \\vec{v}_{final} - \\vec{v}_{initial} = (v \\hat{i}) - (-v \\hat{j}) = v \\hat{i} + v \\hat{j} \\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Determine the direction of the vector \\(v \\hat{i} + v \\hat{j}\\). This vector has a positive x-component (East) and a positive y-component (North). A vector with equal positive x and y components points exactly in the North-East direction."
+        }
+      ],
+      "scientific_principles": [
+        "Newton's Second Law of Motion",
+        "Vector Subtraction"
+      ],
+      "correct_option_reasoning": "The force on the player is in the direction of the change in velocity. The initial velocity is South, and the final velocity is East. The change in velocity, \\(\\vec{v}_{final} - \\vec{v}_{initial}\\), is a vector pointing North-East. Therefore, the force must be directed along the North-East.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect. This would be true if the player started from rest.",
+        "B": "Incorrect. This would be true if the player was moving South and stopped.",
+        "C": "This is the correct option.",
+        "D": "Incorrect. This would be the direction of \\(\\vec{v}_{initial} - \\vec{v}_{final}\\)."
+      },
+      "common_mistakes": [
+        "Incorrectly performing vector subtraction (e.g., adding the vectors).",
+        "Confusing the direction of the final velocity with the direction of the change in velocity."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Laws of Motion",
+      "subtopic": "Newton's Second Law",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "newtons_laws",
+        "force",
+        "velocity",
+        "vectors",
+        "conceptual"
+      ],
+      "estimated_time_seconds": 75,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p4_q23",
+    "question_text": "A full wave rectifier circuit consists of two p-n junction diodes, a centre-tapped transformer, capacitor and a load resistance. Which of these components remove the ac ripple from the rectified output?",
+    "question_type": "single_correct",
+    "options": {
+      "A": "A centre-tapped transformer",
+      "B": "p-n junction diodes",
+      "C": "Capacitor",
+      "D": "Load resistance"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "In a rectifier circuit, the output after the diodes is a pulsating DC voltage, which still contains a significant AC component known as ripple. A filter circuit is used to smooth this output. The simplest and most common filter is a capacitor placed in parallel with the load resistance.",
+      "key_concepts": [
+        "Rectifier",
+        "Full-Wave Rectifier",
+        "Ripple Voltage",
+        "Filter Circuit",
+        "Capacitor"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Understand the function of each component in the described circuit."
+        },
+        {
+          "step_number": 2,
+          "description": "A centre-tapped transformer: Steps down the AC voltage and provides two out-of-phase secondary outputs."
+        },
+        {
+          "step_number": 3,
+          "description": "p-n junction diodes: Perform the rectification, converting the AC input into a pulsating DC output by allowing current to flow in only one direction."
+        },
+        {
+          "step_number": 4,
+          "description": "Load resistance: The component across which the final output voltage is developed."
+        },
+        {
+          "step_number": 5,
+          "description": "Capacitor: This component is used as a filter. It is placed in parallel with the load. It charges up during the peaks of the pulsating DC and then discharges slowly through the load when the input voltage drops. This action smooths out the pulsations, significantly reducing the AC ripple and making the output closer to a pure DC voltage."
+        }
+      ],
+      "scientific_principles": [
+        "Principles of Semiconductor Diodes",
+        "RC Circuits"
+      ],
+      "correct_option_reasoning": "The role of removing the AC ripple from the rectified output is performed by a filter. In this context, the capacitor acts as a simple but effective filter. It smooths the pulsating DC by storing charge when the voltage is high and releasing it when the voltage is low.",
+      "incorrect_options_analysis": {
+        "A": "The transformer only changes the voltage level of the AC signal.",
+        "B": "The diodes perform rectification but produce the ripple; they don't remove it.",
+        "C": "This is the correct option.",
+        "D": "The load resistance is where the output is utilized; it does not filter the signal."
+      },
+      "common_mistakes": [
+        "Confusing the function of rectification with filtering."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Semiconductor Electronics",
+      "subtopic": "Rectifiers",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "rectifier",
+        "full_wave_rectifier",
+        "capacitor",
+        "filter_circuit",
+        "ripple"
+      ],
+      "estimated_time_seconds": 50,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p4_q25",
+    "question_text": "In a plane electromagnetic wave travelling in free space, the electric field component oscillates sinusoidally at a frequency of \\(2.0 \\times 10^{10}\\) Hz and amplitude 48 V m⁻¹. Then the amplitude of the oscillating magnetic field is (Speed of light in free space = \\(3 \\times 10^8\\) m s⁻¹):",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(1.6 \\times 10^{-9} \\text{ T}\\)",
+      "B": "\\(1.6 \\times 10^{-8} \\text{ T}\\)",
+      "C": "\\(1.6 \\times 10^{-7} \\text{ T}\\)",
+      "D": "\\(1.6 \\times 10^{-6} \\text{ T}\\)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This problem requires finding the amplitude of the magnetic field (B₀) of an electromagnetic wave, given the amplitude of the electric field (E₀) and the speed of light (c). The relationship between these quantities in a vacuum is \\(E_0 / B_0 = c\\). The frequency of oscillation is irrelevant for this calculation.",
+      "key_concepts": [
+        "Electromagnetic Waves",
+        "Relationship between Electric and Magnetic Fields in EM Waves"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the relationship between the amplitudes of the electric field (\\(E_0\\)) and the magnetic field (\\(B_0\\)) in an electromagnetic wave traveling in a vacuum.",
+          "formula": "\\[ \\frac{E_0}{B_0} = c \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Identify the given values:\n- Electric field amplitude, \\(E_0 = 48\\) V/m\n- Speed of light, \\(c = 3 \\times 10^8\\) m/s\n- The frequency (\\(2.0 \\times 10^{10}\\) Hz) is not needed for this specific calculation."
+        },
+        {
+          "step_number": 3,
+          "description": "Rearrange the formula to solve for the magnetic field amplitude, \\(B_0\\).",
+          "formula": "\\[ B_0 = \\frac{E_0}{c} \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the given values and calculate.",
+          "formula": "\\[ B_0 = \\frac{48 \\text{ V/m}}{3 \\times 10^8 \\text{ m/s}} = 16 \\times 10^{-8} \\text{ T} \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Express the result in standard scientific notation.",
+          "formula": "\\[ B_0 = 1.6 \\times 10^{-7} \\text{ T} \\]"
+        }
+      ],
+      "scientific_principles": [
+        "Maxwell's Equations of Electromagnetism"
+      ],
+      "correct_option_reasoning": "The amplitude of the magnetic field in an electromagnetic wave is related to the amplitude of the electric field by \\(B_0 = E_0 / c\\). Dividing the given electric field amplitude (48 V/m) by the speed of light (3 × 10⁸ m/s) yields a magnetic field amplitude of \\(1.6 \\times 10^{-7}\\) T.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect. Error in powers of ten.",
+        "B": "Incorrect. Error in powers of ten.",
+        "C": "This is the correct option.",
+        "D": "Incorrect. Error in powers of ten."
+      },
+      "common_mistakes": [
+        "Inverting the relationship (calculating \\(B_0 = c \\times E_0\\)).",
+        "Making errors in handling scientific notation.",
+        "Thinking that the frequency is needed for the calculation of the amplitude."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Electromagnetic Waves",
+      "subtopic": "Properties of EM Waves",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "electromagnetic_waves",
+        "electric_field",
+        "magnetic_field",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p5_q26",
+    "question_text": "Light travels a distance x in time \\(t_1\\) in air and 10x in time \\(t_2\\) in another denser medium. What is the critical angle for this medium?",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(\\sin^{-1} \\left( \\frac{t_1}{t_2} \\right)\\)",
+      "B": "\\(\\sin^{-1} \\left( \\frac{t_2}{10t_1} \\right)\\)",
+      "C": "\\(\\sin^{-1} \\left( \\frac{10t_1}{t_2} \\right)\\)",
+      "D": "\\(\\sin^{-1} \\left( \\frac{t_1}{10t_2} \\right)\\)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This problem involves finding the critical angle between air and a denser medium. We first need to find the refractive index of the denser medium by calculating the speed of light in it. The critical angle can then be found using Snell's law, where the sine of the critical angle is the ratio of the refractive indices (rarer/denser).",
+      "key_concepts": [
+        "Total Internal Reflection (TIR)",
+        "Critical Angle",
+        "Snell's Law",
+        "Refractive Index",
+        "Speed of Light"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Calculate the speed of light in air (\\(v_{air}\\)). Since air's refractive index is ~1, this is approximately c.",
+          "formula": "\\[ v_{air} = \\frac{\\text{distance}}{\\text{time}} = \\frac{x}{t_1} \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the speed of light in the denser medium (\\(v_{med}\\)).",
+          "formula": "\\[ v_{med} = \\frac{\\text{distance}}{\\text{time}} = \\frac{10x}{t_2} \\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Total internal reflection occurs when light goes from the denser medium to the rarer medium (air). The sine of the critical angle (\\(\\theta_c\\)) is given by the ratio of the refractive index of the rarer medium to the denser medium.",
+          "formula": "\\[ \\sin(\\theta_c) = \\frac{n_{rarer}}{n_{denser}} = \\frac{n_{air}}{n_{med}} \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "The refractive index \\(n\\) is inversely proportional to the speed of light in the medium (\\(n=c/v\\)). Therefore, the ratio of refractive indices is the inverse ratio of the speeds.",
+          "formula": "\\[ \\sin(\\theta_c) = \\frac{v_{med}}{v_{air}} \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Substitute the expressions for the speeds into the formula for \\(\\sin(\\theta_c)\\).",
+          "formula": "\\[ \\sin(\\theta_c) = \\frac{10x/t_2}{x/t_1} = \\frac{10x}{t_2} \\times \\frac{t_1}{x} = \\frac{10t_1}{t_2} \\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Solve for the critical angle \\(\\theta_c\\).",
+          "formula": "\\[ \\theta_c = \\sin^{-1} \\left( \\frac{10t_1}{t_2} \\right) \\]"
+        }
+      ],
+      "scientific_principles": [
+        "Snell's Law of Refraction",
+        "Definition of Refractive Index"
+      ],
+      "correct_option_reasoning": "The speed of light in air is \\(x/t_1\\) and in the medium is \\(10x/t_2\\). Since the medium is denser, light travels from the medium to air for TIR. The sine of the critical angle is the ratio of the speed in the denser medium to the speed in the rarer medium: \\(\\sin(\\theta_c) = v_{med}/v_{air} = (10x/t_2) / (x/t_1) = 10t_1/t_2\\).",
+      "incorrect_options_analysis": {
+        "A": "Incorrect. Does not account for the factor of 10.",
+        "B": "Incorrect. This is the inverse ratio.",
+        "C": "This is the correct option.",
+        "D": "Incorrect."
+      },
+      "common_mistakes": [
+        "Inverting the ratio for the sine of the critical angle.",
+        "Mistakes in algebraic simplification."
+      ],
+      "additional_notes": "Note: An identical question appeared in another paper (Question_Paper_27_p2_q10) where the answer key pointed to a different option, suggesting a typo in the question text. This explanation is based on the literal text of the current question."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Ray Optics and Optical Instruments",
+      "subtopic": "Total Internal Reflection",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "critical_angle",
+        "refractive_index",
+        "snells_law",
+        "optics"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p5_q27",
+    "question_text": "The amount of energy required to form a soap bubble of radius 2 cm from a soap solution is nearly (surface tension of soap solution = 0.03 N m⁻¹):",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(30.16 \\times 10^{-4} \\text{ J}\\)",
+      "B": "\\(5.06 \\times 10^{-4} \\text{ J}\\)",
+      "C": "\\(3.01 \\times 10^{-4} \\text{ J}\\)",
+      "D": "\\(50.1 \\times 10^{-4} \\text{ J}\\)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "The energy required to form a soap bubble is equal to the work done against surface tension to create the new surface area. A soap bubble has two surfaces (an inner and an outer surface), so the total surface area created must be calculated accordingly.",
+      "key_concepts": [
+        "Surface Tension",
+        "Surface Energy",
+        "Work Done"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the formula for the energy (or work done, W) required to create a surface area \\(\\Delta A\\).",
+          "formula": "\\[ W = T \\times \\Delta A \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Recognize that a soap bubble has two surfaces (inner and outer), so the total surface area created is twice the surface area of a sphere of the same radius."
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the total change in surface area \\(\\Delta A\\). The radius is \\(R = 2 \\text{ cm} = 0.02 \\text{ m}\\).",
+          "formula": "\\[ \\Delta A = 2 \\times (4\\pi R^2) = 8\\pi R^2 \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Substitute the given values for surface tension (T = 0.03 N/m) and the radius into the work formula.",
+          "formula": "\\[ W = T \\times (8\\pi R^2) = (0.03) \\times 8 \\times \\pi \\times (0.02)^2 \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Perform the calculation.",
+          "formula": "\\[ W = 0.03 \\times 8 \\times \\pi \\times (4 \\times 10^{-4}) = 0.24 \\times 4\\pi \\times 10^{-4} = 0.96\\pi \\times 10^{-4} \\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Use the approximation \\(\\pi \\approx 3.14\\).",
+          "formula": "\\[ W \\approx 0.96 \\times 3.14 \\times 10^{-4} \\approx 3.0144 \\times 10^{-4} \\text{ J} \\]"
+        },
+        {
+          "step_number": 7,
+          "description": "The result is approximately \\(3.01 \\times 10^{-4} \\text{ J}\\)."
+        }
+      ],
+      "scientific_principles": [
+        "Definition of Surface Energy"
+      ],
+      "correct_option_reasoning": "The energy required is the product of the surface tension and the total new surface area created. For a soap bubble of radius R, the total area is \\(8\\pi R^2\\) (accounting for both inner and outer surfaces). The calculation yields an energy of approximately \\(3.01 \\times 10^{-4} \\text{ J}\\).",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation.",
+        "B": "Incorrect calculation.",
+        "C": "This is the correct option.",
+        "D": "Incorrect calculation."
+      },
+      "common_mistakes": [
+        "Forgetting that a soap bubble has two surfaces and using \\(4\\pi R^2\\) for the area instead of \\(8\\pi R^2\\).",
+        "Forgetting to convert the radius from cm to m."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Mechanical Properties of Fluids",
+      "subtopic": "Surface Tension",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "surface_tension",
+        "surface_energy",
+        "soap_bubble",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 80,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p5_q28",
+    "question_text": "A 12 V, 60 W lamp is connected to the secondary of a step-down transformer, whose primary is connected to ac mains of 220 V. Assuming the transformer to be ideal, what is the current in the primary winding?",
+    "question_type": "numerical",
+    "options": {
+      "A": "0.27 A",
+      "B": "2.7 A",
+      "C": "3.7 A",
+      "D": "0.37 A"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "For an ideal transformer, the power in the primary coil equals the power in the secondary coil. The power consumed by the lamp in the secondary circuit is given. This power is used to find the current in the primary winding using the primary voltage.",
+      "key_concepts": [
+        "Transformer",
+        "Ideal Transformer",
+        "Power in AC Circuits",
+        "Conservation of Energy"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the principle of an ideal transformer: Power input equals power output.",
+          "formula": "\\[ P_{primary} = P_{secondary} \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "The power in the secondary circuit is the power consumed by the lamp, which is given as \\(P_{secondary} = 60\\) W."
+        },
+        {
+          "step_number": 3,
+          "description": "Therefore, the power in the primary winding is also 60 W.",
+          "formula": "\\[ P_{primary} = 60 \\text{ W} \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Recall the formula for power in the primary circuit.",
+          "formula": "\\[ P_{primary} = V_{primary} \\times I_{primary} \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Identify the given primary voltage: \\(V_{primary} = 220\\) V."
+        },
+        {
+          "step_number": 6,
+          "description": "Substitute the values and solve for the primary current, \\(I_{primary}\\).",
+          "formula": "\\[ 60 \\text{ W} = 220 \\text{ V} \\times I_{primary} \\implies I_{primary} = \\frac{60}{220} \\text{ A} \\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Calculate the numerical value.",
+          "formula": "\\[ I_{primary} = \\frac{6}{22} = \\frac{3}{11} \\approx 0.2727 \\text{ A} \\]"
+        },
+        {
+          "step_number": 8,
+          "description": "The current in the primary winding is approximately 0.27 A."
+        }
+      ],
+      "scientific_principles": [
+        "Principle of Conservation of Energy"
+      ],
+      "correct_option_reasoning": "For an ideal transformer, power is conserved (\\(P_{in} = P_{out}\\)). The output power is 60 W. Given the input voltage of 220 V, the input current can be calculated as \\(I = P/V = 60/220 \\approx 0.27\\) A.",
+      "incorrect_options_analysis": {
+        "A": "This is the correct option.",
+        "B": "Incorrect. This is 10 times the correct answer.",
+        "C": "Incorrect calculation.",
+        "D": "Incorrect calculation."
+      },
+      "common_mistakes": [
+        "Calculating the secondary current (\\(I_s = 60/12 = 5\\) A) and getting confused.",
+        "Incorrectly applying the voltage/current transformation ratio."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Alternating Current",
+      "subtopic": "Transformers",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "transformer",
+        "ideal_transformer",
+        "power",
+        "ac_circuit",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 70,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p5_q29",
+    "question_text": "The angular acceleration of a body, moving along the circumference of a circle, is:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Along the radius, away from centre",
+      "B": "Along the radius towards the centre",
+      "C": "Along the tangent to its position",
+      "D": "Along the axis of rotation"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "Angular quantities in rotational motion, such as angular velocity (ω) and angular acceleration (α), are defined as axial vectors. Their direction is perpendicular to the plane of rotation, along the axis of rotation, determined by the right-hand rule.",
+      "key_concepts": [
+        "Rotational Motion",
+        "Angular Velocity",
+        "Angular Acceleration",
+        "Axial Vectors"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the definitions of linear and angular quantities for circular motion."
+        },
+        {
+          "step_number": 2,
+          "description": "Linear velocity (\\(\\vec{v}\\)) is tangential to the circle. Centripetal acceleration (\\(\\vec{a}_c\\)) is radial, directed towards the center. Tangential acceleration (\\(\\vec{a}_t\\)) is tangential to the circle."
+        },
+        {
+          "step_number": 3,
+          "description": "Angular velocity (\\(\\vec{\\omega}\\)) and angular acceleration (\\(\\vec{\\alpha}\\)) are vector quantities that describe the rotation itself, not the motion of a point on the body in the plane."
+        },
+        {
+          "step_number": 4,
+          "description": "These angular quantities are defined as axial vectors. Their direction is perpendicular to the plane of the circular motion, i.e., along the axis around which the body is rotating."
+        },
+        {
+          "step_number": 5,
+          "description": "The direction is given by the right-hand rule: if you curl the fingers of your right hand in the direction of rotation, your thumb points in the direction of \\(\\vec{\\omega}\\). The direction of \\(\\vec{\\alpha}\\) is the same as \\(\\vec{\\omega}\\) if the rotation is speeding up, and opposite if it is slowing down, but it is always along the axis."
+        }
+      ],
+      "scientific_principles": [
+        "Vector Nature of Rotational Motion"
+      ],
+      "correct_option_reasoning": "By convention, angular acceleration (like angular velocity) is a vector that lies along the axis of rotation. Its direction specifies the plane of rotation and the sense of the change in angular speed. The other directions listed (radial, tangential) correspond to linear acceleration components.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect. This is not a standard direction for any acceleration component.",
+        "B": "Incorrect. This is the direction of centripetal acceleration.",
+        "C": "Incorrect. This is the direction of tangential acceleration.",
+        "D": "This is the correct option."
+      },
+      "common_mistakes": [
+        "Confusing angular acceleration with its linear counterpart, tangential acceleration."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "System of Particles and Rotational Motion",
+      "subtopic": "Vector Product and Angular Quantities",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "rotational_motion",
+        "angular_acceleration",
+        "axial_vector",
+        "conceptual"
+      ],
+      "estimated_time_seconds": 45,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p5_q30",
+    "question_text": "A vehicle travels half the distance with speed v and the remaining distance with speed 2v. Its average speed is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(\\frac{3}{2}v\\)",
+      "B": "\\(\\frac{2}{3}v\\)",
+      "C": "\\(\\frac{4}{3}v\\)",
+      "D": "\\(\\frac{3}{4}v\\)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "To find the average speed, we use the formula: Average Speed = Total Distance / Total Time. We calculate the time taken for each half of the journey and sum them to find the total time. The average speed is then the total distance divided by this total time.",
+      "key_concepts": [
+        "Kinematics",
+        "Average Speed",
+        "Uniform Motion"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Let the total distance be 2d. The first half of the distance is d, and the second half is also d."
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the time taken for the first half of the journey (\\(t_1\\)).",
+          "formula": "\\[ t_1 = \\frac{\\text{distance}}{\\text{speed}} = \\frac{d}{v} \\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the time taken for the second half of the journey (\\(t_2\\)).",
+          "formula": "\\[ t_2 = \\frac{\\text{distance}}{\\text{speed}} = \\frac{d}{2v} \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the total time of the journey (\\(t_{total}\\)).",
+          "formula": "\\[ t_{total} = t_1 + t_2 = \\frac{d}{v} + \\frac{d}{2v} = \\frac{2d + d}{2v} = \\frac{3d}{2v} \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Calculate the average speed using the formula: Average Speed = Total Distance / Total Time.",
+          "formula": "\\[ v_{avg} = \\frac{2d}{t_{total}} = \\frac{2d}{\\frac{3d}{2v}} = 2d \\times \\frac{2v}{3d} = \\frac{4v}{3} \\]"
+        }
+      ],
+      "scientific_principles": [
+        "Definition of Average Speed"
+      ],
+      "correct_option_reasoning": "The average speed is the harmonic mean of the speeds when the distance is divided into equal halves. The calculation shows that the total distance \\(2d\\) divided by the total time \\(\\frac{3d}{2v}\\) results in an average speed of \\(\\frac{4v}{3}\\).",
+      "incorrect_options_analysis": {
+        "A": "Incorrect. This is the arithmetic mean of the speeds (\\((v+2v)/2\\)), which is only valid if the time intervals are equal, not the distances.",
+        "B": "Incorrect calculation.",
+        "C": "This is the correct option.",
+        "D": "Incorrect. This is the inverse of the correct answer."
+      },
+      "common_mistakes": [
+        "Using the arithmetic mean of the speeds instead of the correct formula for average speed over equal distances."
+      ],
+      "additional_notes": "The general formula for average speed over two equal distances with speeds v1 and v2 is the harmonic mean: \\(v_{avg} = \\frac{2v_1 v_2}{v_1 + v_2}\\)."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Motion in a Straight Line",
+      "subtopic": "Average Velocity and Average Speed",
+      "difficulty": "Easy",
+      "bloom_level": "Apply",
+      "tags": [
+        "average_speed",
+        "kinematics",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 60,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p5_q31",
+    "question_text": "The errors in the measurement which arise due to unpredictable fluctuations in temperature and voltage supply are:",
+    "question_type": "single_correct",
+    "options": {
+      "A": "Instrumental errors",
+      "B": "Personal errors",
+      "C": "Least count errors",
+      "D": "Random errors"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "summary": "The question describes errors that are caused by unpredictable and uncontrollable fluctuations in experimental conditions. This is the definition of random errors.",
+      "key_concepts": [
+        "Errors in Measurement",
+        "Systematic Errors",
+        "Random Errors",
+        "Least Count Error"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Define the different types of errors listed in the options."
+        },
+        {
+          "step_number": 2,
+          "description": "Instrumental errors: These are a type of systematic error caused by imperfections in the measuring instrument itself (e.g., a faulty calibration, a zero error)."
+        },
+        {
+          "step_number": 3,
+          "description": "Personal errors: These arise due to an individual's bias, lack of proper setting of the apparatus, or carelessness in taking observations (e.g., parallax error)."
+        },
+        {
+          "step_number": 4,
+          "description": "Least count errors: This error is associated with the resolution of the instrument. The least count is the smallest value that can be measured by the instrument. This is a form of random error but is very specific."
+        },
+        {
+          "step_number": 5,
+          "description": "Random errors: These are errors that occur irregularly and are random with respect to sign and size. They arise due to random and unpredictable fluctuations in experimental conditions like temperature, voltage supply, mechanical vibrations, etc. The description in the question matches this definition perfectly."
+        }
+      ],
+      "scientific_principles": [
+        "Theory of Measurement and Error Analysis"
+      ],
+      "correct_option_reasoning": "Errors that arise from unpredictable fluctuations in experimental conditions such as temperature and voltage supply are, by definition, random errors. They cause the measured value to fluctuate around the true value in an unpredictable way.",
+      "incorrect_options_analysis": {
+        "A": "Incorrect. Instrumental errors are systematic and related to the instrument itself.",
+        "B": "Incorrect. Personal errors are due to the observer.",
+        "C": "Incorrect. Least count error is a specific type of random error related to the instrument's resolution, but 'random errors' is the broader, more appropriate category for the described phenomena.",
+        "D": "This is the correct option."
+      },
+      "common_mistakes": [
+        "Confusing random errors with systematic errors. Systematic errors are consistent and repeatable, while random errors are not."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Units and Measurements",
+      "subtopic": "Errors in Measurement",
+      "difficulty": "Easy",
+      "bloom_level": "Remember",
+      "tags": [
+        "error_analysis",
+        "random_errors",
+        "systematic_errors",
+        "measurement",
+        "conceptual"
+      ],
+      "estimated_time_seconds": 45,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p6_q32",
+    "question_text": "The ratio of radius of gyration of a solid sphere of mass M and radius R about its own axis to the radius of gyration of the thin hollow sphere of same mass and radius about its axis is:",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(\\sqrt{3} : \\sqrt{5}\\)",
+      "B": "\\(\\sqrt{5} : \\sqrt{3}\\)",
+      "C": "\\(3 : 5\\)",
+      "D": "\\(5 : 3\\)"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "This problem requires calculating the radius of gyration (k) for a solid sphere and a hollow sphere of the same mass and radius, and then finding their ratio. The radius of gyration is related to the moment of inertia (I) and mass (M) by \\(I = Mk^2\\).",
+      "key_concepts": [
+        "Rotational Motion",
+        "Moment of Inertia",
+        "Radius of Gyration",
+        "Solid Sphere",
+        "Hollow Sphere"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "Recall the moment of inertia (\\(I_{solid}\\)) of a solid sphere about an axis through its center.",
+          "formula": "\\[ I_{solid} = \\frac{2}{5}MR^2 \\]"
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the radius of gyration of the solid sphere (\\(k_{solid}\\)) using \\(I_{solid} = Mk_{solid}^2\\).",
+          "formula": "\\[ Mk_{solid}^2 = \\frac{2}{5}MR^2 \\implies k_{solid} = \\sqrt{\\frac{2}{5}}R \\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Recall the moment of inertia (\\(I_{hollow}\\)) of a thin hollow sphere about an axis through its center.",
+          "formula": "\\[ I_{hollow} = \\frac{2}{3}MR^2 \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "Calculate the radius of gyration of the hollow sphere (\\(k_{hollow}\\)) using \\(I_{hollow} = Mk_{hollow}^2\\).",
+          "formula": "\\[ Mk_{hollow}^2 = \\frac{2}{3}MR^2 \\implies k_{hollow} = \\sqrt{\\frac{2}{3}}R \\]"
+        },
+        {
+          "step_number": 5,
+          "description": "Find the required ratio, \\(k_{solid} : k_{hollow}\\).",
+          "formula": "\\[ \\frac{k_{solid}}{k_{hollow}} = \\frac{\\sqrt{\\frac{2}{5}}R}{\\sqrt{\\frac{2}{3}}R} = \\sqrt{\\frac{2/5}{2/3}} = \\sqrt{\\frac{2}{5} \\times \\frac{3}{2}} = \\sqrt{\\frac{3}{5}} \\]"
+        },
+        {
+          "step_number": 6,
+          "description": "The ratio is \\(\\sqrt{3} : \\sqrt{5}\\)."
+        }
+      ],
+      "scientific_principles": [
+        "Theorems of Rotational Motion"
+      ],
+      "correct_option_reasoning": "The radius of gyration for the solid sphere is \\(k_{solid} = R\\sqrt{2/5}\\) and for the hollow sphere is \\(k_{hollow} = R\\sqrt{2/3}\\). Their ratio is \\(\\frac{k_{solid}}{k_{hollow}} = \\sqrt{\\frac{2/5}{2/3}} = \\sqrt{\\frac{3}{5}}\\), which corresponds to a ratio of \\(\\sqrt{3} : \\sqrt{5}\\).",
+      "incorrect_options_analysis": {
+        "A": "This is the correct option.",
+        "B": "This is the inverse ratio, \\(k_{hollow} : k_{solid}\\).",
+        "C": "This is the ratio of the squares of the radii of gyration, \\(k_{solid}^2 : k_{hollow}^2\\), which is also the ratio of the moments of inertia.",
+        "D": "This is the inverse of the ratio of the squares of the radii of gyration."
+      },
+      "common_mistakes": [
+        "Confusing the ratio of radii of gyration with the ratio of moments of inertia.",
+        "Using incorrect formulas for the moments of inertia.",
+        "Inverting the ratio."
+      ],
+      "additional_notes": "The original source file had a flawed option '3:5' and an incorrect explanation. This has been corrected to show the physically accurate answer and analysis."
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "System of Particles and Rotational Motion",
+      "subtopic": "Moment of Inertia",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "radius_of_gyration",
+        "moment_of_inertia",
+        "solid_sphere",
+        "hollow_sphere",
+        "rotational_motion",
+        "numerical_ratio",
+        "flawed_question"
+      ],
+      "estimated_time_seconds": 90,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  },
+  {
+    "question_id": "Question_Paper_30_p6_q33",
+    "question_text": "Two bodies of mass m and 9m are placed at a distance R. The gravitational potential on the line joining the bodies where the gravitational field equals zero, will be (G = gravitational constant):",
+    "question_type": "numerical",
+    "options": {
+      "A": "\\(- \\frac{8Gm}{R}\\)",
+      "B": "\\(- \\frac{12Gm}{R}\\)",
+      "C": "\\(- \\frac{16Gm}{R}\\)",
+      "D": "\\(- \\frac{20Gm}{R}\\)"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "This two-step problem requires first finding the point between the two masses where the net gravitational field is zero. Then, the gravitational potential (which is a scalar) at that specific point is calculated by summing the potentials due to each mass.",
+      "key_concepts": [
+        "Gravitational Field",
+        "Gravitational Potential",
+        "Superposition Principle",
+        "Newton's Law of Gravitation"
+      ],
+      "step_by_step": [
+        {
+          "step_number": 1,
+          "description": "First, find the location of the point where the gravitational field is zero. Let the mass 'm' be at the origin (x=0) and the mass '9m' be at x=R. The null point 'P' must lie between them at some distance 'r' from mass 'm'."
+        },
+        {
+          "step_number": 2,
+          "description": "At point P, the magnitudes of the gravitational fields due to the two masses must be equal and opposite. The distance from '9m' is (R-r).",
+          "formula": "\\[ E_m = E_{9m} \\implies \\frac{Gm}{r^2} = \\frac{G(9m)}{(R-r)^2} \\]"
+        },
+        {
+          "step_number": 3,
+          "description": "Solve for 'r'.",
+          "formula": "\\[ \\frac{1}{r^2} = \\frac{9}{(R-r)^2} \\implies \\frac{1}{r} = \\frac{3}{R-r} \\implies R-r = 3r \\implies R = 4r \\implies r = \\frac{R}{4} \\]"
+        },
+        {
+          "step_number": 4,
+          "description": "The point is at a distance of R/4 from 'm' and (R - R/4) = 3R/4 from '9m'."
+        },
+        {
+          "step_number": 5,
+          "description": "Now, calculate the total gravitational potential (V) at this point. Potential is a scalar, so we add the potentials from each mass.",
+          "formula": "\\[ V = V_m + V_{9m} = \\left(-\\frac{Gm}{r}\\right) + \\left(-\\frac{G(9m)}{R-r}\\right) \\]"
+        },
+        {
+          "step_number": 6,
+          "description": "Substitute the distances r = R/4 and (R-r) = 3R/4 into the potential equation.",
+          "formula": "\\[ V = -\\frac{Gm}{R/4} - \\frac{G(9m)}{3R/4} = -\\frac{4Gm}{R} - \\frac{36Gm}{3R} = -\\frac{4Gm}{R} - \\frac{12Gm}{R} \\]"
+        },
+        {
+          "step_number": 7,
+          "description": "Combine the terms to get the final potential.",
+          "formula": "\\[ V = -\\frac{16Gm}{R} \\]"
+        }
+      ],
+      "scientific_principles": [
+        "Newton's Law of Universal Gravitation",
+        "Principle of Superposition"
+      ],
+      "correct_option_reasoning": "First, the point of zero gravitational field is found by equating the magnitudes of the fields from the two masses, yielding a position r = R/4 from mass m. Then, the total gravitational potential at this point is calculated by summing the individual potentials, \\(V = -Gm/(R/4) - G(9m)/(3R/4)\\), which simplifies to \\(-16Gm/R\\).",
+      "incorrect_options_analysis": {
+        "A": "Incorrect calculation.",
+        "B": "Incorrect. This might be just the potential from the 9m mass at the null point.",
+        "C": "This is the correct option.",
+        "D": "Incorrect calculation."
+      },
+      "common_mistakes": [
+        "Confusing gravitational field (a vector) with gravitational potential (a scalar).",
+        "Making algebraic errors when solving for the position of the null point.",
+        "Sign errors when calculating the potential, as gravitational potential is always negative."
+      ],
+      "additional_notes": null
+    },
+    "metadata": {
+      "subject": "Physics",
+      "topic": "Gravitation",
+      "subtopic": "Gravitational Potential and Field",
+      "difficulty": "Medium",
+      "bloom_level": "Apply",
+      "tags": [
+        "gravitation",
+        "gravitational_field",
+        "gravitational_potential",
+        "null_point",
+        "numerical_calculation"
+      ],
+      "estimated_time_seconds": 120,
+      "requires_visual": false,
+      "visual_description": null,
+      "source": "Question_Paper_30"
+    }
+  }
+]
