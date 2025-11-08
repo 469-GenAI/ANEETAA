@@ -607,6 +607,7 @@ for model in models:
             "Answer_Preview": answer[:150] + "..." if len(answer) > 150 else answer,
             "Fact_Score": fact_score,
             "Quality_Score": quality_score,
+            "Judge_Reasoning": quality_result['reasoning'],  # Store full judge feedback
             "Latency_ms": round(latency_ms, 1)
         })
 
@@ -633,6 +634,7 @@ for i, q_data in enumerate(questions, 1):
             row[f"{model}_Output"] = model_result["Full_Answer"]
             row[f"{model}_Fact_Score"] = model_result["Fact_Score"]
             row[f"{model}_Quality_Score"] = model_result["Quality_Score"]
+            row[f"{model}_Judge_Reasoning"] = model_result["Judge_Reasoning"]
             row[f"{model}_Latency_ms"] = model_result["Latency_ms"]
     
     restructured_results.append(row)
