@@ -177,24 +177,41 @@ def fact_check_answer(model_answer: str, correct_answer: str, options: dict) -> 
     # Normalize inputs
     model_answer_lower = model_answer.lower()
     correct_answer_upper = correct_answer.upper()
+    correct_answer_lower = correct_answer.lower()
     
     # Check if correct option letter appears anywhere in the answer
-    correct_option_mentioned = re.search(rf"\(?{correct_answer_upper}\)?", model_answer)
+    # Match patterns like "B", "(B)", "**B:", "B:", "option B", "answer is B"
+    correct_patterns = [
+        rf"\b{correct_answer_lower}\b",  # standalone letter
+        rf"\({correct_answer_lower}\)",   # (B)
+        rf"\*\*{correct_answer_lower}:",  # **B:
+        rf"option\s+{correct_answer_lower}\b",  # option B
+        rf"answer\s+is\s+{correct_answer_lower}\b",  # answer is B
+        rf"correct\s+answer\s+is\s+{correct_answer_lower}\b",  # correct answer is B
+    ]
+    correct_option_mentioned = any(re.search(pattern, model_answer_lower) for pattern in correct_patterns)
     
-    # Check for wrong options explicitly stated
-    wrong_options = [opt for opt in options.keys() if opt != correct_answer]
-    wrong_option_pattern = re.compile(
-        rf"(?:answer|correct|option)(?:\s+is)?[\s:]*\(?({'|'.join(wrong_options)})\)?",
-        re.IGNORECASE
-    )
-    wrong_option_stated = wrong_option_pattern.search(model_answer)
+    # Check for wrong options explicitly stated as the answer
+    # Only flag if clearly stated as THE answer (not just mentioned)
+    wrong_options = [opt for opt in options.keys() if opt.upper() != correct_answer_upper]
+    wrong_answer_found = False
+    
+    for wrong_opt in wrong_options:
+        wrong_opt_lower = wrong_opt.lower()
+        # Check if wrong option is explicitly stated as the answer
+        wrong_patterns = [
+            rf"(?:correct\s+answer\s+is|answer\s+is|therefore.*option)\s+{wrong_opt_lower}\b",
+        ]
+        if any(re.search(pattern, model_answer_lower) for pattern in wrong_patterns):
+            wrong_answer_found = True
+            break
     
     # Binary scoring logic
-    if wrong_option_stated:
-        # Wrong answer explicitly stated
+    if wrong_answer_found:
+        # Wrong answer explicitly stated as THE answer
         return 0
     elif correct_option_mentioned:
-        # Correct option mentioned anywhere
+        # Correct option mentioned
         return 10
     else:
         # No identifiable answer
@@ -300,12 +317,10 @@ MCQ Solver Agent's Response:
 {answer}
 
 Provide your evaluation in this format:
-Subject: Physics
-Score: [number 1-10]
-Clarity: [score/10] - [specific feedback]
-Reasoning: [score/10] - [specific feedback]
-Approach: [score/10] - [specific feedback]
-Overall Reasoning: [2-3 sentences with specific examples from the agent's response]
+Overall Quality Score: [number 1-10]
+Clarity 30% Weight: [score/10] - [specific feedback]
+LOGICAL REASONING & STEPS 40% Weight: [score/10] - [specific feedback]
+CORRECTNESS OF APPROACH 30% Weight: [score/10] - [specific feedback]
 """
         
         elif "Chemistry" in subject:
@@ -388,12 +403,10 @@ MCQ Solver Agent's Response:
 {answer}
 
 Provide your evaluation in this format:
-Subject: Chemistry
-Score: [number 1-10]
-Clarity: [score/10] - [specific feedback]
-Reasoning: [score/10] - [specific feedback]
-Approach: [score/10] - [specific feedback]
-Overall Reasoning: [2-3 sentences with specific examples from the agent's response]
+Overall Quality Score: [number 1-10]
+Clarity 30% Weight: [score/10] - [specific feedback]
+LOGICAL REASONING & STEPS 40% Weight: [score/10] - [specific feedback]
+CORRECTNESS OF APPROACH 30% Weight: [score/10] - [specific feedback]
 """
         
         elif "Biology" in subject:
@@ -477,12 +490,10 @@ MCQ Solver Agent's Response:
 {answer}
 
 Provide your evaluation in this format:
-Subject: Biology
-Score: [number 1-10]
-Clarity: [score/10] - [specific feedback]
-Reasoning: [score/10] - [specific feedback]
-Approach: [score/10] - [specific feedback]
-Overall Reasoning: [2-3 sentences with specific examples from the agent's response]
+Overall Quality Score: [number 1-10]
+Clarity 30% Weight: [score/10] - [specific feedback]
+LOGICAL REASONING & STEPS 40% Weight: [score/10] - [specific feedback]
+CORRECTNESS OF APPROACH 30% Weight: [score/10] - [specific feedback]
 """
         
         else:
@@ -495,23 +506,35 @@ MCQ Solver Agent's Response:
 {answer}
 
 Provide your evaluation in this format:
-Subject: Unknown
-Score: [number 1-10]
-Reasoning: [2-3 sentences explaining the score and quality of the agent's response]
+Overall Quality Score: [number 1-10]
+Clarity 30% Weight: [score/10] - [specific feedback]
+LOGICAL REASONING & STEPS 40% Weight: [score/10] - [specific feedback]
+CORRECTNESS OF APPROACH 30% Weight: [score/10] - [specific feedback]
 """
         
         response = judge_llm.invoke(evaluation_prompt)
         response_text = response.content if hasattr(response, 'content') else str(response)
         
-        # Extract score
+        # Extract score from "Overall Quality Score:"
         import re
-        score_match = re.search(r"Score:\s*(\d+)", response_text)
+        score_match = re.search(r"Overall Quality Score:\s*(\d+)", response_text)
         score = int(score_match.group(1)) if score_match else 5
         score = max(1, min(10, score))
         
-        # Extract reasoning (everything after "Overall Reasoning:" or "Reasoning:")
-        reasoning_match = re.search(r"(?:Overall Reasoning|Reasoning):\s*(.+)", response_text, re.S)
-        reasoning = reasoning_match.group(1).strip() if reasoning_match else "No reasoning provided"
+        # Extract reasoning (everything after the score line)
+        reasoning_parts = []
+        clarity_match = re.search(r"Clarity 30% Weight:\s*(.+?)(?=LOGICAL REASONING|$)", response_text, re.S)
+        reasoning_match = re.search(r"LOGICAL REASONING & STEPS 40% Weight:\s*(.+?)(?=CORRECTNESS|$)", response_text, re.S)
+        approach_match = re.search(r"CORRECTNESS OF APPROACH 30% Weight:\s*(.+?)(?=$)", response_text, re.S)
+        
+        if clarity_match:
+            reasoning_parts.append(f"Clarity: {clarity_match.group(1).strip()}")
+        if reasoning_match:
+            reasoning_parts.append(f"Reasoning: {reasoning_match.group(1).strip()}")
+        if approach_match:
+            reasoning_parts.append(f"Approach: {approach_match.group(1).strip()}")
+        
+        reasoning = " | ".join(reasoning_parts) if reasoning_parts else "No reasoning provided"
         
         return {"score": score, "reasoning": reasoning, "subject": subject}
     except Exception as e:
