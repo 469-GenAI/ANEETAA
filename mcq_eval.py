@@ -544,8 +544,8 @@ for model in models:
         print(f"\n{'='*70}")
         print(f"QUESTION {i}/{len(questions)}: {subject}")
         print(f"{'='*70}")
-        print(f"Q: {q_data['question_text'][:]}")
-        print(f"Correct Answer: ({correct_answer})")
+        print(f"{question_text}")
+        print(f"\nCorrect Answer: ({correct_answer})")
         print(f"\nModel: {model}")
         print("-"*70)
         
@@ -580,6 +580,7 @@ for model in models:
             "Question_ID": q_data['question_id'],
             "Detected_Subject": detected_subject,
             "Correct_Answer": correct_answer,
+            "Full_Answer": answer,  # Store full answer without truncation
             "Answer_Preview": answer[:150] + "..." if len(answer) > 150 else answer,
             "Fact_Score": fact_score,
             "Quality_Score": quality_score,
@@ -591,32 +592,56 @@ print("\n" + "="*70)
 print("FINAL SUMMARY")
 print("="*70 + "\n")
 
-df_detailed = pd.DataFrame(results)
-print("DETAILED RESULTS:")
-print(df_detailed[["Model", "Question", "Fact_Score", "Quality_Score", "Latency_ms"]].to_string(index=False))
+# Restructure data: one row per question with all models side-by-side
+restructured_results = []
+for i, q_data in enumerate(questions, 1):
+    # Include full question with options (not truncated)
+    formatted_question = format_question(q_data)
+    row = {
+        "Subject": q_data['metadata']['subject'],
+        "Question": f"{formatted_question}\n\nCorrect Answer: {q_data['correct_answer']}"
+    }
+    
+    # Add each model's results
+    for model in models:
+        model_result = next((r for r in results if r["Model"] == model and r["Question"] == f"Q{i} ({q_data['metadata']['subject']})"), None)
+        if model_result:
+            # Use Full_Answer instead of Answer_Preview for complete output
+            row[f"{model}_Output"] = model_result["Full_Answer"]
+            row[f"{model}_Fact_Score"] = model_result["Fact_Score"]
+            row[f"{model}_Quality_Score"] = model_result["Quality_Score"]
+            row[f"{model}_Latency_ms"] = model_result["Latency_ms"]
+    
+    restructured_results.append(row)
 
-# Model summary
-print("\n" + "="*70)
+df_restructured = pd.DataFrame(restructured_results)
+
+# Model summary (without Overall_Score)
 print("MODEL SUMMARY")
 print("="*70)
 summary_data = []
+df_original = pd.DataFrame(results)
 for model in models:
-    model_results = df_detailed[df_detailed["Model"] == model]
+    model_results = df_original[df_original["Model"] == model]
     summary_data.append({
         "Model": model,
         "Avg_Fact_Score": round(model_results["Fact_Score"].mean(), 1),
         "Avg_Quality_Score": round(model_results["Quality_Score"].mean(), 1),
-        "Avg_Latency_ms": round(model_results["Latency_ms"].mean(), 1),
-        "Overall_Score": round((model_results["Fact_Score"].mean() + model_results["Quality_Score"].mean()) / 2, 1)
+        "Avg_Latency_ms": round(model_results["Latency_ms"].mean(), 1)
     })
 
-df_summary = pd.DataFrame(summary_data).sort_values("Overall_Score", ascending=False)
+df_summary = pd.DataFrame(summary_data)
 print(df_summary.to_string(index=False))
 
-# Save results
+# Save restructured results
 output_path = ROOT / "mcq_eval_results.csv"
-df_detailed.to_csv(output_path, index=False)
+df_restructured.to_csv(output_path, index=False)
 print(f"\n✓ Detailed results saved to: {output_path}")
+
+# Also save model summary as a separate CSV
+summary_output_path = ROOT / "mcq_eval_model_summary.csv"
+df_summary.to_csv(summary_output_path, index=False)
+print(f"✓ Model summary saved to: {summary_output_path}")
 
 print("\n" + "="*70)
 print("EVALUATION COMPLETE")
