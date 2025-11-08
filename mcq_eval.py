@@ -40,14 +40,46 @@ from langchain_ollama import ChatOllama
 
 print("✓ Loaded ANEETA MCQ solver agent")
 
-# Load questions from Gemini 2.5 Pro data
-questions_path = ROOT / "aneeta_v2" / "Processed Data" / "Gemini 2.5 Pro Data" / "01.json"
-with open(questions_path, 'r', encoding='utf-8') as f:
-    all_questions = json.load(f)
+# Load questions from all files in Gemini 2.5 Pro data folder
+import random
+import argparse
 
-# Get first 3 questions
-questions = all_questions[:3]
-print(f"✓ Loaded {len(questions)} questions from Gemini 2.5 Pro data\n")
+gemini_data_folder = ROOT / "aneeta_v2" / "Processed Data" / "Gemini 2.5 Pro Data"
+all_questions = []
+
+# Load all JSON files
+for json_file in gemini_data_folder.glob("*.json"):
+    try:
+        with open(json_file, 'r', encoding='utf-8') as f:
+            file_questions = json.load(f)
+            all_questions.extend(file_questions)
+    except Exception as e:
+        print(f"Warning: Could not load {json_file.name}: {e}")
+
+print(f"✓ Loaded {len(all_questions)} total questions from Gemini 2.5 Pro data folder")
+
+# Filter questions that don't require visual
+non_visual_questions = [q for q in all_questions if not q.get('metadata', {}).get('requires_visual', False)]
+print(f"✓ Filtered to {len(non_visual_questions)} non-visual questions")
+
+# Parse seed for reproducible sampling (required)
+parser = argparse.ArgumentParser(description='MCQ evaluator (deterministic question sampling with seed)')
+parser.add_argument('--seed', type=int, default=None, help='Integer seed for random sampling (defaults to RANDOM_SEED from .env)')
+args, unknown = parser.parse_known_args()
+
+# Get seed from CLI arg or env var (default to 42 if neither provided)
+seed = args.seed if args.seed is not None else (int(os.getenv('RANDOM_SEED')) if os.getenv('RANDOM_SEED') and os.getenv('RANDOM_SEED').isdigit() else 42)
+random.seed(seed)
+print(f"✓ Using random seed: {seed} (deterministic sampling)")
+
+# Randomly select 3 questions (deterministic if seed set)
+if len(non_visual_questions) < 3:
+    print(f"Warning: Only {len(non_visual_questions)} non-visual questions available")
+    questions = non_visual_questions
+else:
+    questions = random.sample(non_visual_questions, 3)
+
+print(f"✓ Randomly selected {len(questions)} questions for evaluation\n")
 
 # Format question for agent
 def format_question(q_data):
@@ -132,15 +164,13 @@ def mcq_question_solver(question: str, model_name: str, language: str = "English
 
 # Evaluation metrics
 def fact_check_answer(model_answer: str, correct_answer: str, options: dict) -> int:
-    """Score answer correctness with flexible range (0-10)
+    """Score answer correctness - binary scoring: correct or wrong
     
-    Scoring rubric:
-    - 10: Explicitly states correct option (e.g., "The answer is (D)" or "correct answer: D")
-    - 8-9: Mentions correct option letter prominently in explanation
-    - 6-7: Correct option appears in answer but not clearly identified as the answer
-    - 4-5: Provides correct reasoning/explanation but doesn't state the option
-    - 2-3: Wrong option stated but reasoning shows some understanding
-    - 0-1: Completely wrong or no identifiable answer
+    Scoring rubric (purely binary):
+    - 10: Correct option identified (explicitly, prominently, or anywhere in response)
+    - 0: Wrong option stated OR no correct option identified
+    
+    Note: Reasoning quality is evaluated separately by the LLM judge (Quality Score)
     """
     import re
     
@@ -148,26 +178,10 @@ def fact_check_answer(model_answer: str, correct_answer: str, options: dict) -> 
     model_answer_lower = model_answer.lower()
     correct_answer_upper = correct_answer.upper()
     
-    # Pattern 1: Explicit answer statement with option letter
-    # Matches: "answer is (D)", "correct answer: D", "option D is correct"
-    explicit_pattern = re.compile(
-        rf"(?:answer|correct|option)(?:\s+is)?[\s:]*\(?({correct_answer_upper})\)?",
-        re.IGNORECASE
-    )
-    explicit_match = explicit_pattern.search(model_answer)
+    # Check if correct option letter appears anywhere in the answer
+    correct_option_mentioned = re.search(rf"\(?{correct_answer_upper}\)?", model_answer)
     
-    # Pattern 2: Option letter in parentheses at start or prominent position
-    # Matches: "(D)" or "D)" at beginning or after keywords
-    prominent_pattern = re.compile(
-        rf"(?:^|\n|answer|solution|therefore|thus|hence)[\s:]*\(?({correct_answer_upper})\)?",
-        re.IGNORECASE
-    )
-    prominent_match = prominent_pattern.search(model_answer)
-    
-    # Pattern 3: Any mention of correct option letter
-    any_correct_option = re.search(rf"\(?{correct_answer_upper}\)?", model_answer)
-    
-    # Pattern 4: Check for wrong options explicitly stated
+    # Check for wrong options explicitly stated
     wrong_options = [opt for opt in options.keys() if opt != correct_answer]
     wrong_option_pattern = re.compile(
         rf"(?:answer|correct|option)(?:\s+is)?[\s:]*\(?({'|'.join(wrong_options)})\)?",
@@ -175,41 +189,13 @@ def fact_check_answer(model_answer: str, correct_answer: str, options: dict) -> 
     )
     wrong_option_stated = wrong_option_pattern.search(model_answer)
     
-    # Pattern 5: Check if the correct option text content appears in answer
-    correct_option_text = options.get(correct_answer, "").lower()
-    correct_text_appears = False
-    if len(correct_option_text) > 20:  # Only check if option text is substantial
-        # Check for significant overlap (at least 50% of words)
-        correct_words = set(re.findall(r'\w+', correct_option_text))
-        answer_words = set(re.findall(r'\w+', model_answer_lower))
-        if correct_words:
-            overlap = len(correct_words & answer_words) / len(correct_words)
-            correct_text_appears = overlap > 0.5
-    
-    # Scoring logic
-    if explicit_match:
-        # Clear, explicit identification of correct answer
+    # Binary scoring logic
+    if wrong_option_stated:
+        # Wrong answer explicitly stated
+        return 0
+    elif correct_option_mentioned:
+        # Correct option mentioned anywhere
         return 10
-    elif prominent_match:
-        # Correct option mentioned prominently
-        return 9
-    elif any_correct_option and not wrong_option_stated:
-        # Correct option mentioned but not prominently, no wrong option stated
-        return 7
-    elif correct_text_appears and not wrong_option_stated:
-        # Explains the correct option's content without stating the letter
-        return 5
-    elif wrong_option_stated:
-        # Explicitly states a wrong option
-        if correct_text_appears or any_correct_option:
-            # But shows some understanding (mentions correct option or reasoning)
-            return 3
-        else:
-            # Completely wrong
-            return 1
-    elif any_correct_option:
-        # Correct option buried somewhere, but wrong option might also be present
-        return 4
     else:
         # No identifiable answer
         return 0
@@ -235,10 +221,10 @@ Respond with ONLY ONE WORD: Physics, Chemistry, or Biology"""
         
         # Step 2: Subject-specific evaluation criteria
         if "Physics" in subject:
-            evaluation_prompt = f"""You are a strict NEET Physics examiner. Evaluate this answer with RIGOROUS standards.
+            evaluation_prompt = f"""You are evaluating an AI MCQ solver agent designed for NEET Physics questions. Assess the agent's response with RIGOROUS standards.
 
 ===================================================================================
-PHYSICS-SPECIFIC EVALUATION CRITERIA
+PHYSICS-SPECIFIC EVALUATION CRITERIA FOR MCQ SOLVER AGENT
 ===================================================================================
 
 CRITERION 1: CLARITY (30%)
@@ -310,7 +296,7 @@ UNACCEPTABLE (1-3):
 
 Question: {question}
 
-Student's Answer:
+MCQ Solver Agent's Response:
 {answer}
 
 Provide your evaluation in this format:
@@ -319,14 +305,14 @@ Score: [number 1-10]
 Clarity: [score/10] - [specific feedback]
 Reasoning: [score/10] - [specific feedback]
 Approach: [score/10] - [specific feedback]
-Overall Reasoning: [2-3 sentences with specific examples from the answer]
+Overall Reasoning: [2-3 sentences with specific examples from the agent's response]
 """
         
         elif "Chemistry" in subject:
-            evaluation_prompt = f"""You are a strict NEET Chemistry examiner. Evaluate this answer with RIGOROUS standards.
+            evaluation_prompt = f"""You are evaluating an AI MCQ solver agent designed for NEET Chemistry questions. Assess the agent's response with RIGOROUS standards.
 
 ===================================================================================
-CHEMISTRY-SPECIFIC EVALUATION CRITERIA
+CHEMISTRY-SPECIFIC EVALUATION CRITERIA FOR MCQ SOLVER AGENT
 ===================================================================================
 
 CRITERION 1: CLARITY (30%)
@@ -398,7 +384,7 @@ UNACCEPTABLE (1-3):
 
 Question: {question}
 
-Student's Answer:
+MCQ Solver Agent's Response:
 {answer}
 
 Provide your evaluation in this format:
@@ -407,14 +393,14 @@ Score: [number 1-10]
 Clarity: [score/10] - [specific feedback]
 Reasoning: [score/10] - [specific feedback]
 Approach: [score/10] - [specific feedback]
-Overall Reasoning: [2-3 sentences with specific examples from the answer]
+Overall Reasoning: [2-3 sentences with specific examples from the agent's response]
 """
         
         elif "Biology" in subject:
-            evaluation_prompt = f"""You are a strict NEET Biology examiner. Evaluate this answer with RIGOROUS standards.
+            evaluation_prompt = f"""You are evaluating an AI MCQ solver agent designed for NEET Biology questions. Assess the agent's response with RIGOROUS standards.
 
 ===================================================================================
-BIOLOGY-SPECIFIC EVALUATION CRITERIA
+BIOLOGY-SPECIFIC EVALUATION CRITERIA FOR MCQ SOLVER AGENT
 ===================================================================================
 
 CRITERION 1: CLARITY (30%)
@@ -487,7 +473,7 @@ UNACCEPTABLE (1-3):
 
 Question: {question}
 
-Student's Answer:
+MCQ Solver Agent's Response:
 {answer}
 
 Provide your evaluation in this format:
@@ -496,22 +482,22 @@ Score: [number 1-10]
 Clarity: [score/10] - [specific feedback]
 Reasoning: [score/10] - [specific feedback]
 Approach: [score/10] - [specific feedback]
-Overall Reasoning: [2-3 sentences with specific examples from the answer]
+Overall Reasoning: [2-3 sentences with specific examples from the agent's response]
 """
         
         else:
             # Fallback for unknown subject
-            evaluation_prompt = f"""Evaluate this NEET exam answer:
+            evaluation_prompt = f"""You are evaluating an AI MCQ solver agent designed for NEET exam questions. Assess the agent's response.
 
 Question: {question}
 
-Student's Answer:
+MCQ Solver Agent's Response:
 {answer}
 
 Provide your evaluation in this format:
 Subject: Unknown
 Score: [number 1-10]
-Reasoning: [2-3 sentences explaining the score]
+Reasoning: [2-3 sentences explaining the score and quality of the agent's response]
 """
         
         response = judge_llm.invoke(evaluation_prompt)
