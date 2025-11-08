@@ -67,6 +67,13 @@ src/aneeta/vectordb/chroma_vector_db_*/
 *.sqlite3
 *.db
 
+# MLflow - ignore all experiment data, keep only structure
+mlruns/
+!mlruns/.gitkeep
+mlartifacts/
+.mlflow/
+*.mlflow
+
 # Logs and temporary files
 *.log
 logs/

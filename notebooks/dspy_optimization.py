@@ -113,8 +113,9 @@ def configure_llm(provider: str = "openai", model: str = None):
     else:
         raise ValueError(f"Unknown provider: {provider}")
     
-    dspy.settings.configure(lm=lm)
+    dspy.settings.configure(lm=lm, cache_turn_on=False)
     print(f"✓ DSPy configured with {lm.model}")
+    print(f"✓ LLM caching disabled for optimization")
     return lm
 
 
@@ -122,27 +123,41 @@ def setup_mlflow():
     """Setup MLflow tracking with Databricks or local fallback."""
     load_dotenv()
     
-    mlflow_tracking_uri = os.getenv('MLFLOW_TRACKING_URI', 
-                                     f"file://{str(Path.cwd() / 'mlruns')}")
-    mlflow.set_tracking_uri(mlflow_tracking_uri)
+    # Check if user wants to use Databricks (requires credits)
+    use_databricks = os.getenv('USE_DATABRICKS_MLFLOW', 'false').lower() == 'true'
     
-    # Try to use Databricks experiment if configured
-    exp_id = os.getenv('MLFLOW_EXPERIMENT_ID')
-    if exp_id:
-        try:
-            client = MlflowClient()
-            exp = client.get_experiment(exp_id)
-            if exp is not None:
-                mlflow.set_experiment(experiment_id=exp_id)
-                print(f"✓ Using Databricks experiment: {exp.name} (ID: {exp_id})")
-            else:
-                print(f"Experiment ID {exp_id} not found, creating new experiment")
-                mlflow.set_experiment('aneeta-dspy-optimization')
-        except Exception as e:
-            print(f"Error accessing experiment ID: {e}")
-            mlflow.set_experiment('aneeta-dspy-optimization')
-    else:
+    if use_databricks:
+        # Try Databricks MLflow (requires credits)
+        exp_id = os.getenv('MLFLOW_EXPERIMENT_ID')
+        if exp_id:
+            try:
+                mlflow.set_tracking_uri("databricks")
+                client = MlflowClient()
+                exp = client.get_experiment(exp_id)
+                if exp is not None:
+                    mlflow.set_experiment(experiment_id=exp_id)
+                    print(f"✓ Using Databricks experiment: {exp.name} (ID: {exp_id})")
+                else:
+                    print(f"⚠️  Experiment ID {exp_id} not found, falling back to local MLflow")
+                    use_databricks = False
+            except Exception as e:
+                print(f"⚠️  Error accessing Databricks: {e}")
+                print("   Falling back to local MLflow...")
+                use_databricks = False
+    
+    if not use_databricks:
+        # Use LOCAL MLflow (100% FREE!)
+        mlflow_dir = Path.cwd() / 'mlruns'
+        mlflow_dir.mkdir(exist_ok=True)
+        
+        # Use relative path - works best on all platforms
+        mlflow.set_tracking_uri("./mlruns")
         mlflow.set_experiment('aneeta-dspy-optimization')
+        
+        print(f"✓ Using LOCAL MLflow (free)")
+        print(f"  📁 Runs saved to: {mlflow_dir}")
+        print(f"  🌐 To view UI, run: python -m mlflow ui --port 8080")
+        print(f"     Then open: http://localhost:8080")
     
     # Enable DSPy autologging if available
     try:
@@ -150,7 +165,7 @@ def setup_mlflow():
             mlflow.dspy.autolog()
             print("✓ DSPy autolog enabled")
     except Exception as e:
-        print(f"⚠ MLflow DSPy autolog not available: {e}")
+        print(f"⚠️  MLflow DSPy autolog not available: {e}")
     
     print(f"✓ MLflow configured - Tracking URI: {mlflow.get_tracking_uri()}")
 
@@ -195,9 +210,10 @@ def load_neet_training_data(data_dir: Path = None, max_chunks_per_subject: int =
                     examples.append(dspy.Example(
                         question=question,
                         context=content,
+                        language="English",  # Add language parameter
                         answer=answer[:500],
                         subject=subject
-                    ).with_inputs('question', 'context'))
+                    ).with_inputs('question', 'context', 'language'))
     
     print(f"✓ Loaded {len(examples)} training examples from JSON files")
     return examples
@@ -319,9 +335,10 @@ def load_neet_training_data_with_rag(
                 examples.append(dspy.Example(
                     question=question,
                     context=context_str[:2000],  # Limit context length
+                    language="English",  # Add language parameter
                     answer=answer,
                     subject=subject
-                ).with_inputs('question', 'context'))
+                ).with_inputs('question', 'context', 'language'))
                 
             except Exception as e:
                 print(f"⚠ Error creating example for '{question[:50]}...': {e}")
@@ -440,10 +457,11 @@ def evaluate_agent(agent, testset: List[dspy.Example], name: str = "Agent", max_
     
     for example in testset[:max_samples]:
         try:
+            # Call agent with all required parameters from the example
             prediction = agent(
-                question=example.question,
                 context=example.context,
-                language="English"
+                question=example.question,
+                language=example.language if hasattr(example, 'language') else "English"
             )
             score = validate_explanation(example, prediction)
             scores.append(score)
@@ -535,8 +553,8 @@ def test_optimized_agent(agent, question: str, context: str, language: str = "En
     print(f"Language: {language}")
     
     result = agent(
-        question=question,
         context=context,
+        question=question,
         language=language
     )
     
