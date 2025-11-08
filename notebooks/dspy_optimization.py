@@ -19,6 +19,8 @@ import numpy as np
 from dotenv import load_dotenv
 from mlflow.tracking import MlflowClient
 from sklearn.model_selection import train_test_split
+from langchain_community.vectorstores import Chroma
+from openai import OpenAI
 
 
 def setup_paths():
@@ -26,6 +28,54 @@ def setup_paths():
     src_path = Path(__file__).parent.parent / 'src'
     sys.path.insert(0, str(src_path))
     print(f"✓ Added to path: {src_path}")
+
+
+def load_vector_stores():
+    """
+    Load ANEETAA vector stores for realistic RAG-based training.
+    
+    Returns:
+        Dictionary of vector stores by subject
+    """
+    from aneeta.embeddingmodel.embedding import get_embeddings
+    
+    # Get embeddings model
+    embeddings = get_embeddings()
+    
+    # Vector DB configuration
+    VECTOR_DB_CONFIGS = {
+        'biology': 'chroma_vector_db_biology_nomic',
+        'chemistry': 'chroma_vector_db_chemistry_nomic',
+        'physics': 'chroma_vector_db_physics_nomic',
+        'question_bank': 'chroma_vector_db_questionbank_nomic',
+        'mentor': 'chroma_vector_db_mentor_nomic'
+    }
+    
+    base_path = Path(__file__).parent.parent / 'src' / 'aneeta' / 'vectordb'
+    vector_stores = {}
+    
+    print("\nLoading vector databases...")
+    for subject, db_name in VECTOR_DB_CONFIGS.items():
+        persist_dir = base_path / db_name
+        if not persist_dir.exists():
+            print(f"⚠ Warning: {subject} vector DB not found at {persist_dir}")
+            continue
+        
+        try:
+            vector_stores[subject] = Chroma(
+                persist_directory=str(persist_dir),
+                embedding_function=embeddings
+            )
+            # Test the store
+            count = vector_stores[subject]._collection.count()
+            print(f"✓ Loaded {subject}: {count} documents")
+        except Exception as e:
+            print(f"❌ Error loading {subject}: {e}")
+    
+    if not vector_stores:
+        raise RuntimeError("No vector stores loaded! Check your vectordb path.")
+    
+    return vector_stores
 
 
 def configure_llm(provider: str = "openai", model: str = None):
@@ -149,13 +199,213 @@ def load_neet_training_data(data_dir: Path = None, max_chunks_per_subject: int =
                         subject=subject
                     ).with_inputs('question', 'context'))
     
-    print(f"✓ Loaded {len(examples)} training examples")
+    print(f"✓ Loaded {len(examples)} training examples from JSON files")
+    return examples
+
+
+def load_neet_training_data_with_rag(
+    vector_stores: Dict,
+    max_examples_per_subject: int = 20,
+    retrieval_k: int = 3
+) -> List[dspy.Example]:
+    """
+    Load training data using RAG retrieval from vector databases.
+    This creates more realistic training examples that match production usage.
+    
+    Args:
+        vector_stores: Dictionary of loaded ChromaDB vector stores
+        max_examples_per_subject: Maximum examples to generate per subject
+        retrieval_k: Number of documents to retrieve for context
+    
+    Returns:
+        List of DSPy examples with RAG-retrieved context
+    """
+    examples = []
+    
+    # Sample NEET-style questions by subject
+    sample_questions = {
+        'biology': [
+            "What is the process of photosynthesis?",
+            "Explain the structure and function of mitochondria",
+            "What is DNA replication?",
+            "Describe the process of cell division",
+            "What are enzymes and how do they work?",
+            "Explain the human circulatory system",
+            "What is the role of ribosomes in protein synthesis?",
+            "Describe the process of respiration in plants",
+            "What are the differences between prokaryotic and eukaryotic cells?",
+            "Explain the concept of natural selection",
+            "What is the nitrogen cycle?",
+            "Describe the structure of the human heart",
+            "What are antibodies and their role in immunity?",
+            "Explain the process of digestion",
+            "What is the role of hormones in the human body?",
+            "Describe the process of photosynthesis in detail",
+            "What are chromosomes and genes?",
+            "Explain the mechanism of muscle contraction",
+            "What is the role of the nervous system?",
+            "Describe the process of cellular respiration"
+        ],
+        'chemistry': [
+            "What is atomic structure?",
+            "Explain the periodic table organization",
+            "What are chemical bonds?",
+            "Describe the properties of acids and bases",
+            "What is the mole concept?",
+            "Explain oxidation and reduction reactions",
+            "What are hydrocarbons?",
+            "Describe the states of matter",
+            "What is electrochemistry?",
+            "Explain the concept of chemical equilibrium",
+            "What are organic compounds?",
+            "Describe the properties of metals and non-metals",
+            "What is stoichiometry?",
+            "Explain the gas laws",
+            "What are coordination compounds?",
+            "Describe the structure of benzene",
+            "What is thermodynamics in chemistry?",
+            "Explain the concept of pH",
+            "What are polymers?",
+            "Describe the process of electrolysis"
+        ],
+        'physics': [
+            "What is Newton's first law of motion?",
+            "Explain the concept of energy conservation",
+            "What is electromagnetic induction?",
+            "Describe the properties of waves",
+            "What is the photoelectric effect?",
+            "Explain Ohm's law",
+            "What is gravitational force?",
+            "Describe the concept of work and power",
+            "What is the theory of relativity?",
+            "Explain the concept of electric current",
+            "What are the laws of thermodynamics?",
+            "Describe the phenomenon of refraction",
+            "What is the Doppler effect?",
+            "Explain the concept of momentum",
+            "What is magnetic field?",
+            "Describe the structure of an atom",
+            "What is radioactivity?",
+            "Explain the concept of potential energy",
+            "What are the properties of light?",
+            "Describe the working of a transformer"
+        ]
+    }
+    
+    print("\nGenerating RAG-based training examples...")
+    for subject, questions in sample_questions.items():
+        if subject not in vector_stores:
+            print(f"⚠ Skipping {subject} - vector store not available")
+            continue
+        
+        vectorstore = vector_stores[subject]
+        retriever = vectorstore.as_retriever(search_kwargs={"k": retrieval_k})
+        
+        # Generate examples using the first N questions
+        for question in questions[:max_examples_per_subject]:
+            try:
+                # Retrieve relevant context from vector DB (like production agents do)
+                retrieved_docs = retriever.invoke(question)
+                
+                if not retrieved_docs:
+                    continue
+                
+                # Combine retrieved documents into context
+                context_str = "\n\n".join(doc.page_content for doc in retrieved_docs)
+                
+                # Create a reference answer from the first retrieved doc
+                answer = retrieved_docs[0].page_content[:500] if retrieved_docs else ""
+                
+                examples.append(dspy.Example(
+                    question=question,
+                    context=context_str[:2000],  # Limit context length
+                    answer=answer,
+                    subject=subject
+                ).with_inputs('question', 'context'))
+                
+            except Exception as e:
+                print(f"⚠ Error creating example for '{question[:50]}...': {e}")
+                continue
+        
+        print(f"✓ Generated {min(max_examples_per_subject, len(questions))} examples for {subject}")
+    
+    print(f"✓ Total RAG-based examples: {len(examples)}")
     return examples
 
 
 def validate_explanation(example, prediction, trace=None) -> float:
     """
-    Validate if explanation is good quality.
+    Validate explanation quality using GPT-4o-mini as an LLM judge.
+    
+    Args:
+        example: The test example with question, context, answer
+        prediction: The agent's prediction/response
+        trace: Optional trace information (not used)
+    
+    Returns:
+        Score between 0.0 and 1.0
+    """
+    # Load environment to get OpenAI API key
+    load_dotenv()
+    api_key = os.getenv('OPENAI_API_KEY')
+    
+    if not api_key:
+        # Fallback to simple rule-based metric if no API key
+        print("⚠ No OpenAI API key found, using rule-based metric")
+        return validate_explanation_simple(example, prediction)
+    
+    # Get the response text
+    response = prediction.response if hasattr(prediction, 'response') else str(prediction)
+    
+    # Quick sanity check
+    if len(response) < 20:
+        return 0.0
+    
+    # Use GPT-4o-mini as judge
+    try:
+        client = OpenAI(api_key=api_key)
+        
+        judge_prompt = f"""You are an expert evaluator for NEET (medical entrance exam) tutoring responses.
+
+Question: {example.question}
+
+Reference Context: {example.context[:1000]}
+
+Student Level: NEET exam preparation (high school biology/chemistry/physics)
+
+AI Tutor's Response: {response}
+
+Please evaluate this response on a scale of 0.0 to 1.0 based on:
+1. ACCURACY (30%): Uses correct information from the reference context
+2. CLARITY (25%): Clear, easy to understand for NEET students
+3. COMPLETENESS (25%): Fully addresses the question
+4. PEDAGOGICAL QUALITY (20%): Good teaching approach, helps student learn
+
+Return ONLY a single number between 0.0 and 1.0 (e.g., 0.85).
+Do not include any explanation, just the number."""
+
+        response_obj = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[{"role": "user", "content": judge_prompt}],
+            temperature=0.0,
+            max_tokens=10
+        )
+        
+        score_text = response_obj.choices[0].message.content.strip()
+        score = float(score_text)
+        
+        # Clamp to valid range
+        score = max(0.0, min(1.0, score))
+        return score
+        
+    except Exception as e:
+        print(f"⚠ Error using LLM judge: {e}, falling back to rule-based metric")
+        return validate_explanation_simple(example, prediction)
+
+
+def validate_explanation_simple(example, prediction, trace=None) -> float:
+    """
+    Simple rule-based validation (fallback when LLM judge unavailable).
     
     Returns:
         Score between 0.0 and 1.0
@@ -331,8 +581,14 @@ def main():
                         help='LLM provider (openai or ollama)')
     parser.add_argument('--model', type=str, default=None,
                         help='Model name (e.g., gpt-4o-mini, llama3.1:8b)')
+    parser.add_argument('--use-rag', action='store_true', default=True,
+                        help='Use RAG-based training data from vector stores (recommended)')
+    parser.add_argument('--use-json', action='store_true',
+                        help='Use JSON file-based training data instead of RAG')
     parser.add_argument('--max-chunks', type=int, default=20,
-                        help='Maximum chunks per subject to load')
+                        help='Maximum chunks per subject to load (for JSON mode)')
+    parser.add_argument('--max-examples', type=int, default=20,
+                        help='Maximum examples per subject to generate (for RAG mode)')
     parser.add_argument('--train-size', type=int, default=30,
                         help='Number of training examples to use for optimization')
     parser.add_argument('--max-demos', type=int, default=3,
@@ -345,6 +601,10 @@ def main():
                         help='Skip logging model to MLflow')
     
     args = parser.parse_args()
+    
+    # Override use-rag if use-json is specified
+    if args.use_json:
+        args.use_rag = False
     
     print("="*60)
     print("DSPy Optimization for ANEETAA Agents")
@@ -363,8 +623,20 @@ def main():
     setup_mlflow()
     
     # Load training data
-    print("\nLoading NEET training data...")
-    training_data = load_neet_training_data(max_chunks_per_subject=args.max_chunks)
+    if args.use_rag:
+        print("\n" + "="*60)
+        print("Loading Training Data with RAG (Production-like)")
+        print("="*60)
+        vector_stores = load_vector_stores()
+        training_data = load_neet_training_data_with_rag(
+            vector_stores,
+            max_examples_per_subject=args.max_examples
+        )
+    else:
+        print("\n" + "="*60)
+        print("Loading Training Data from JSON Files")
+        print("="*60)
+        training_data = load_neet_training_data(max_chunks_per_subject=args.max_chunks)
     
     if not training_data:
         print("❌ No training data loaded. Exiting.")
@@ -372,7 +644,7 @@ def main():
     
     # Split into train/test
     trainset, testset = train_test_split(training_data, test_size=0.2, random_state=42)
-    print(f"Train: {len(trainset)} | Test: {len(testset)}")
+    print(f"\n✓ Data split: Train={len(trainset)} | Test={len(testset)}")
     
     # Optimize agent
     print("\n" + "="*60)
@@ -401,6 +673,7 @@ def main():
     print("\n" + "="*60)
     print("✓ Optimization Complete!")
     print("="*60)
+    print(f"Training Mode: {'RAG-based (Production-like)' if args.use_rag else 'JSON file-based'}")
     print(f"Baseline Score: {baseline_score:.2%}")
     print(f"Optimized Score: {optimized_score:.2%}")
     print(f"Improvement: {improvement:+.1f}%")
@@ -409,6 +682,11 @@ def main():
     print("2. Test the optimized agent with different questions")
     print("3. Optimize other agents (MCQ Solver, Mentor)")
     print("4. Expand training data for better results")
+    if args.use_rag:
+        print("\n💡 Tip: This optimization used RAG-retrieved context like production!")
+        print("   The prompts are now optimized for your actual vector DB setup.")
+    else:
+        print("\n💡 Tip: Consider using --use-rag for more production-like training.")
 
 
 if __name__ == "__main__":
