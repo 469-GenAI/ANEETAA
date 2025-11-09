@@ -53,7 +53,7 @@ python notebooks/scripts/train_mcq_solver.py --questions 100 --method bootstrap 
 ### Compare Agents
 
 ```bash
-python notebooks/scripts/compare_three_agents.py --test-samples 10 --dspy-provider openai --dspy-model gpt-4o-mini --optimized-model-path dspy_bootstrap_optimized.json
+python notebooks/scripts/compare_three_agents.py --test-samples 10 --dspy-provider openai --dspy-model gpt-4o-mini --optimized-model-path models/dspy_bootstrap_optimized.json
 ```
 
 ### Run Tests

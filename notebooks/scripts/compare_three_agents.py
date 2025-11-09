@@ -434,7 +434,7 @@ def main():
         # Save results
         import pandas as pd
         df = pd.DataFrame(all_results)
-        output_file = ROOT / "three_way_comparison_results.csv"
+        output_file = ROOT / "results" / "three_way_comparison_results.csv"
         df.to_csv(output_file, index=False)
         
         mlflow.log_artifact(str(output_file))

@@ -37,7 +37,7 @@ ollama list
 This compares **Vanilla ANEETAA** vs **DSPy Baseline** (unoptimized):
 
 ```powershell
-python notebooks/compare_three_agents.py --test-samples 5
+python notebooks/scripts/compare_three_agents.py --test-samples 5
 ```
 
 **What this does:**
@@ -88,7 +88,7 @@ python notebooks/dspy_optimization.py --training-data dspy_training_data.json --
 Now run the full comparison with the optimized model:
 
 ```powershell
-python notebooks/compare_three_agents.py --test-samples 10 --optimized-model-path optimized_mcq_solver.json
+python notebooks/scripts/compare_three_agents.py --test-samples 10 --optimized-model-path optimized_mcq_solver.json
 ```
 
 **Expected Output:**
@@ -104,27 +104,27 @@ DSPy Optimized           | Accuracy: YY.Y% | Latency: XXXXms (should be higher a
 
 ### Basic Run (5 questions)
 ```powershell
-python notebooks/compare_three_agents.py --test-samples 5
+python notebooks/scripts/compare_three_agents.py --test-samples 5
 ```
 
 ### With Optimized Model
 ```powershell
-python notebooks/compare_three_agents.py --test-samples 10 --optimized-model-path optimized_mcq_solver.json
+python notebooks/scripts/compare_three_agents.py --test-samples 10 --optimized-model-path optimized_mcq_solver.json
 ```
 
 ### Use Ollama for DSPy (instead of OpenAI)
 ```powershell
-python notebooks/compare_three_agents.py --test-samples 5 --dspy-provider ollama --dspy-model llama3.1:8b
+python notebooks/scripts/compare_three_agents.py --test-samples 5 --dspy-provider ollama --dspy-model llama3.1:8b
 ```
 
 ### Different Vanilla Model
 ```powershell
-python notebooks/compare_three_agents.py --test-samples 5 --vanilla-model llama3.1:8b
+python notebooks/scripts/compare_three_agents.py --test-samples 5 --vanilla-model llama3.1:8b
 ```
 
 ### Reproducible Seed
 ```powershell
-python notebooks/compare_three_agents.py --test-samples 10 --seed 123
+python notebooks/scripts/compare_three_agents.py --test-samples 10 --seed 123
 ```
 
 ---
@@ -172,7 +172,7 @@ If you just want to see the comparison without optimization:
 
 ```powershell
 # 1. Run baseline comparison
-python notebooks/compare_three_agents.py --test-samples 5
+python notebooks/scripts/compare_three_agents.py --test-samples 5
 
 # 2. View in MLflow
 # Open http://localhost:8080 and check experiment "aneetaa-three-way-comparison"
@@ -225,5 +225,5 @@ Based on typical DSPy optimization:
 
 **Ready to start?** Run:
 ```powershell
-python notebooks/compare_three_agents.py --test-samples 5
+python notebooks/scripts/compare_three_agents.py --test-samples 5
 ```

@@ -427,8 +427,8 @@ def main():
         df_detailed = pd.DataFrame(restructured_results)
         
         # Save CSVs
-        detailed_output = ROOT / "mlflow_mcq_detailed_results.csv"
-        summary_output = ROOT / "mlflow_mcq_model_summary.csv"
+        detailed_output = ROOT / "results" / "mlflow_mcq_detailed_results.csv"
+        summary_output = ROOT / "results" / "mlflow_mcq_model_summary.csv"
         
         df_detailed.to_csv(detailed_output, index=False)
         df_summary.to_csv(summary_output, index=False)

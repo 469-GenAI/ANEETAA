@@ -481,7 +481,7 @@ def main():
             mlflow.log_param("train_size", len(trainset))
             
             # Save model
-            save_path = ROOT / "dspy_bootstrap_optimized.json"
+            save_path = ROOT / "models" / "dspy_bootstrap_optimized.json"
             bootstrap.save(str(save_path))
             print(f"\n✓ Saved Bootstrap model: {save_path}")
     
@@ -498,7 +498,7 @@ def main():
             mlflow.log_param("train_size", len(trainset))
             
             # Save model
-            save_path = ROOT / "dspy_mipro_optimized.json"
+            save_path = ROOT / "models" / "dspy_mipro_optimized.json"
             mipro.save(str(save_path))
             print(f"\n✓ Saved MIPRO model: {save_path}")
     

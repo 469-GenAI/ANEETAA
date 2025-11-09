@@ -58,8 +58,18 @@ venv.bak/
 *.tsv
 *.xlsx
 *.xls
-*.json (optional - comment out if needed)
-*.jsonl (optional - comment out if needed)
+# Uncomment to track specific JSON files:
+# *.json
+# *.jsonl
+
+# Results folder (regenerable)
+results/
+!results/.gitkeep
+
+# Models folder (trained models - can be regenerated)
+models/
+!models/.gitkeep
+!models/README.md
 
 # Chroma Vector Database (local) - regenerable from source data
 chroma_vector_db*/

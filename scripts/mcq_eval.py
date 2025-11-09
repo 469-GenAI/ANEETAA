@@ -659,12 +659,12 @@ df_summary = pd.DataFrame(summary_data)
 print(df_summary.to_string(index=False))
 
 # Save restructured results
-output_path = ROOT / "mcq_eval_results.csv"
+output_path = ROOT / "results" / "mcq_eval_results.csv"
 df_restructured.to_csv(output_path, index=False)
 print(f"\n✓ Detailed results saved to: {output_path}")
 
 # Also save model summary as a separate CSV
-summary_output_path = ROOT / "mcq_eval_model_summary.csv"
+summary_output_path = ROOT / "results" / "mcq_eval_model_summary.csv"
 df_summary.to_csv(summary_output_path, index=False)
 print(f"✓ Model summary saved to: {summary_output_path}")
 

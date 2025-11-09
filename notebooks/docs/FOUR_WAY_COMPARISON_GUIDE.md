@@ -47,7 +47,7 @@ python notebooks/optimize_both_methods.py --train-size 20 --test-size 10 --train
 - Testing both on 10 validation examples
 - Saving optimized models:
   - `dspy_mipro_optimized.json`
-  - `dspy_bootstrap_optimized.json`
+  - `models/dspy_bootstrap_optimized.json`
 
 **Expected time:** 8-15 minutes total
 - MIPROv2: 5-10 minutes
@@ -57,7 +57,7 @@ python notebooks/optimize_both_methods.py --train-size 20 --test-size 10 --train
 ```bash
 python notebooks/compare_four_agents.py --test-samples 10 \
   --mipro-model dspy_mipro_optimized.json \
-  --bootstrap-model dspy_bootstrap_optimized.json
+  --bootstrap-model models/dspy_bootstrap_optimized.json
 ```
 
 **This will:**
@@ -88,7 +88,7 @@ python notebooks/compare_four_agents.py --test-samples 10 \
 ### Data Files
 - `dspy_training_data.json` - 30 training examples
 - `dspy_mipro_optimized.json` - MIPROv2 optimized model (pending)
-- `dspy_bootstrap_optimized.json` - BootstrapFewShot optimized model (pending)
+- `models/dspy_bootstrap_optimized.json` - BootstrapFewShot optimized model (pending)
 
 ### Results Files
 - `four_way_comparison_results.csv` - Detailed results (pending)
