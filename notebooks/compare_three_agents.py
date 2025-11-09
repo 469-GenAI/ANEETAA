@@ -45,8 +45,10 @@ print("="*70 + "\n")
 class MCQSolverSignature(dspy.Signature):
     """Solve NEET MCQ questions with explanations."""
     
-    question = dspy.InputField(desc="The MCQ question with options")
-    answer = dspy.OutputField(desc="Selected answer option (A/B/C/D) with explanation")
+    question = dspy.InputField(desc="The MCQ question with options A, B, C, D")
+    subject = dspy.InputField(desc="Subject area: Physics, Chemistry, or Biology")
+    reasoning = dspy.OutputField(desc="Step-by-step explanation of how to solve this question")
+    answer = dspy.OutputField(desc="Final answer: A, B, C, or D")
 
 
 class MCQSolverModule(dspy.Module):
@@ -54,11 +56,12 @@ class MCQSolverModule(dspy.Module):
     
     def __init__(self):
         super().__init__()
-        self.solver = dspy.ChainOfThought(MCQSolverSignature)
+        # Use 'predictor' to match optimized model naming
+        self.predictor = dspy.ChainOfThought(MCQSolverSignature)
     
-    def forward(self, question: str) -> dspy.Prediction:
+    def forward(self, question: str, subject: str = "Biology") -> dspy.Prediction:
         """Solve MCQ question."""
-        return self.solver(question=question)
+        return self.predictor(question=question, subject=subject)
 
 
 # ============================================================================
@@ -106,13 +109,13 @@ def vanilla_aneetaa_agent(question: str, model_name: str = "gemma2:9b") -> str:
     return str(result)
 
 
-def dspy_baseline_agent(question: str) -> dspy.Prediction:
+def dspy_baseline_agent(question: str, subject: str = "Biology") -> dspy.Prediction:
     """Unoptimized DSPy agent (baseline)."""
     solver = MCQSolverModule()
-    return solver(question=question)
+    return solver(question=question, subject=subject)
 
 
-def dspy_optimized_agent(question: str, optimized_model_path: str = None) -> dspy.Prediction:
+def dspy_optimized_agent(question: str, subject: str = "Biology", optimized_model_path: str = None) -> dspy.Prediction:
     """Optimized DSPy agent (after SIMBA/COPRO)."""
     if optimized_model_path and Path(optimized_model_path).exists():
         # Load optimized model
@@ -124,7 +127,7 @@ def dspy_optimized_agent(question: str, optimized_model_path: str = None) -> dsp
         print(f"  ⚠ No optimized model found, using baseline")
         solver = MCQSolverModule()
     
-    return solver(question=question)
+    return solver(question=question, subject=subject)
 
 
 # ============================================================================
@@ -167,12 +170,20 @@ def load_test_questions(max_questions: int = 10, seed: int = 42, filter_visual: 
     ]
 
 
-def format_question(q_data: Dict) -> str:
+def format_question(q_data: Dict, add_cache_buster: bool = False) -> str:
     """Format question with options."""
     q_text = q_data['question']
     options = q_data['options']
     options_text = "\n".join([f"{k}: {v}" for k, v in options.items()])
-    return f"{q_text}\n\nOptions:\n{options_text}"
+    
+    formatted = f"{q_text}\n\nOptions:\n{options_text}"
+    
+    # Add cache buster to ensure unique prompts
+    if add_cache_buster:
+        import uuid
+        formatted += f"\n\n[Request ID: {uuid.uuid4()}]"
+    
+    return formatted
 
 
 # ============================================================================
@@ -212,8 +223,11 @@ def validate_answer(response: str, correct_answer: str) -> bool:
 
 def evaluate_agent(agent_type: str, question_data: Dict, **kwargs) -> Dict:
     """Evaluate a single agent on a single question."""
-    question_text = format_question(question_data)
+    # Add cache buster for DSPy agents
+    add_cache_buster = agent_type.startswith('dspy')
+    question_text = format_question(question_data, add_cache_buster=add_cache_buster)
     correct_answer = question_data['correct']
+    subject = question_data.get('subject', 'Biology')
     
     try:
         t0 = time.time()
@@ -223,22 +237,22 @@ def evaluate_agent(agent_type: str, question_data: Dict, **kwargs) -> Dict:
             response = vanilla_aneetaa_agent(question_text, model_name)
         
         elif agent_type == "dspy_baseline":
-            # Configure DSPy
+            # Configure DSPy with cache busting
             provider = kwargs.get('provider', 'openai')
             model = kwargs.get('model', 'gpt-4o-mini')
-            configure_dspy(provider, model)
+            configure_dspy(provider, model, force_new=True)
             
-            prediction = dspy_baseline_agent(question_text)
+            prediction = dspy_baseline_agent(question_text, subject=subject)
             response = prediction.answer if hasattr(prediction, 'answer') else str(prediction)
         
         elif agent_type == "dspy_optimized":
-            # Configure DSPy
+            # Configure DSPy with cache busting
             provider = kwargs.get('provider', 'openai')
             model = kwargs.get('model', 'gpt-4o-mini')
-            configure_dspy(provider, model)
+            configure_dspy(provider, model, force_new=True)
             
             optimized_path = kwargs.get('optimized_model_path')
-            prediction = dspy_optimized_agent(question_text, optimized_path)
+            prediction = dspy_optimized_agent(question_text, subject=subject, optimized_model_path=optimized_path)
             response = prediction.answer if hasattr(prediction, 'answer') else str(prediction)
         
         else:
@@ -271,23 +285,47 @@ def evaluate_agent(agent_type: str, question_data: Dict, **kwargs) -> Dict:
         }
 
 
-def configure_dspy(provider: str, model: str):
-    """Configure DSPy LM."""
+def configure_dspy(provider: str, model: str, force_new: bool = False):
+    """Configure DSPy LM with proper cache busting."""
+    
+    # Vary temperature slightly to prevent caching
+    # Use timestamp to generate slightly different temp each time (0.3-0.5 range)
+    temp_variation = (hash(str(time.time())) % 20) / 100  # 0.00 to 0.19
+    base_temp = 0.3
+    temperature = base_temp + temp_variation if force_new else 0.3
+    
     if provider == "openai":
         api_key = os.getenv('OPENAI_API_KEY')
         if not api_key:
             raise ValueError("OPENAI_API_KEY not set")
         
-        lm = dspy.LM(model=f"openai/{model}", max_tokens=500, temperature=0.1)
+        lm = dspy.LM(
+            model=f"openai/{model}",
+            max_tokens=500,
+            temperature=temperature
+        )
     
     elif provider == "ollama":
         ollama_url = os.getenv("OLLAMA_URL", "http://localhost:11434")
-        lm = dspy.LM(model=f"ollama_chat/{model}", api_base=ollama_url, max_tokens=500, temperature=0.1)
+        
+        lm = dspy.LM(
+            model=f"ollama_chat/{model}",
+            api_base=ollama_url,
+            max_tokens=500,
+            temperature=temperature
+        )
     
     else:
         raise ValueError(f"Unknown provider: {provider}")
     
-    dspy.settings.configure(lm=lm, cache_turn_on=False)
+    # Configure with explicit cache disable
+    dspy.settings.configure(lm=lm)
+    
+    # Force disable any caching mechanisms
+    if hasattr(dspy.settings, 'cache_turn_on'):
+        dspy.settings.cache_turn_on = False
+    if hasattr(lm, '_cache'):
+        lm._cache = None
 
 
 # ============================================================================
