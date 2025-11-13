@@ -303,9 +303,10 @@ ANEETAA/
 ### Quick Start Commands:
 
 ```bash
-# 1. View MLflow results
-mlflow ui --port 8080
-# Open: http://localhost:8080
+# 1. Start MLflow Server (from project root)
+cd D:\Git Projects\SMU\ANEETAA
+mlflow ui --backend-store-uri "file:///D:/Git Projects/SMU/ANEETAA/mlruns" --port 8080
+# Then open browser: http://localhost:8080
 
 # 2. Train MIPROv2 models (all 3)
 python notebooks/scripts/runners/train_all_models_miprov2.py
@@ -313,13 +314,15 @@ python notebooks/scripts/runners/train_all_models_miprov2.py
 # 3. Run 3×4 matrix comparison
 python notebooks/scripts/controllers/compare_3x4_controller.py
 
-# 4. Switch LLM judge (FREE Groq)
+# 4. Switch LLM judge (FREE Groq instead of OpenAI)
 python notebooks/scripts/config/judge_config_controller.py --preset groq-default
 
 # 5. View results
 # Excel: results/3x4_matrix_summary.csv
 # Detailed: results/3x4_matrix_detailed_results.csv
 ```
+
+**Note:** MLflow server must be running from the project root directory to access the correct mlruns folder with all experiment tracking data.
 
 ---
 

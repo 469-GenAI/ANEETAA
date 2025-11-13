@@ -53,8 +53,8 @@ venv.bak/
 *.npy
 *.npz
 
-# Large data files
-*.csv
+# Large data files (except results folder)
+# *.csv
 *.tsv
 *.xlsx
 *.xls
@@ -62,9 +62,10 @@ venv.bak/
 # *.json
 # *.jsonl
 
+# Track all results folder files
+!results/
+
 # # Results folder (regenerable)
-# results/
-# !results/.gitkeep
 
 # Models folder (trained models - can be regenerated)
 models/

@@ -26,7 +26,7 @@ load_dotenv()
 
 JUDGE_CONFIG = {
     # Provider Options: 'openai', 'groq', 'anthropic', 'ollama'
-    'provider': 'openai',
+    'provider': 'groq',
     
     # Model configurations per provider
     'models': {
@@ -36,9 +36,10 @@ JUDGE_CONFIG = {
             'legacy': 'gpt-3.5-turbo',     # Cheapest
         },
         'groq': {
-            'default': 'llama-3.1-70b-versatile',  # Fast, good quality
+            'default': 'openai/gpt-oss-120b',      # GPT OSS 120B (30 req/min, 1k req/day cap)
             'fast': 'llama-3.1-8b-instant',        # Fastest
             'strong': 'llama-3.2-90b-vision-preview',  # Strongest
+            'legacy': 'llama-3.1-70b-versatile',   # Previous default
         },
         'anthropic': {
             'default': 'claude-3-haiku-20240307',   # Fast, cheap
@@ -51,7 +52,7 @@ JUDGE_CONFIG = {
     },
     
     # Active model (or use 'default', 'strong', etc.)
-    'model': 'gpt-4o',
+    'model': 'openai/gpt-oss-120b',
     
     # LLM parameters
     'temperature': 0,      # 0 for deterministic evaluation
@@ -68,6 +69,7 @@ JUDGE_CONFIG = {
             'llama-3.1-70b-versatile': {'input': 0.59, 'output': 0.79},
             'llama-3.1-8b-instant': {'input': 0.05, 'output': 0.08},
             'llama-3.2-90b-vision-preview': {'input': 0.90, 'output': 0.90},
+            'openai/gpt-oss-120b': {'input': 0.0, 'output': 0.0},  # FREE (rate-limited: 30 req/min, 1k req/day)
         },
         'anthropic': {
             'claude-3-haiku-20240307': {'input': 0.25, 'output': 1.25},
