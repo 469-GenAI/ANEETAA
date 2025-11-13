@@ -2,7 +2,7 @@
 MLflow MCQ Solver Evaluation - Combined Best of Both Worlds
 Features:
 - Multi-model comparison (llama3.1:8b, gemma2:9b, mistral-nemo:12b)
-- GPT-4o-mini LLM judge with subject-specific criteria
+- Centralized LLM judge configuration (supports OpenAI, Groq, Anthropic, Ollama)
 - MLflow experiment tracking
 - Seed-based reproducible sampling
 - Advanced answer validation with regex patterns
@@ -24,6 +24,11 @@ import importlib
 ROOT = Path(__file__).parent.resolve()
 sys.path.insert(0, str(ROOT / "src"))
 
+# Add notebooks/scripts to path for centralized judge config
+NOTEBOOKS_SCRIPTS = ROOT / "notebooks" / "scripts"
+sys.path.insert(0, str(NOTEBOOKS_SCRIPTS))
+from llm_judge_config import get_judge_llm, estimate_judge_cost, JUDGE_CONFIG
+
 # Configure base environment
 os.environ["EMBEDDING_MODEL"] = "nomic-embed-text"
 os.environ["VECTORDB_BASE_PATH"] = str(ROOT / "src" / "aneeta" / "vectordb")
@@ -40,7 +45,6 @@ mlflow.set_experiment(os.getenv('MLFLOW_EXPERIMENT_NAME', 'aneetaa-mcq-model-com
 from aneeta.state.models import State
 from aneeta.core import resources
 from langchain_core.messages import HumanMessage
-from langchain_openai import ChatOpenAI
 from langchain_ollama import ChatOllama
 
 print("="*70)
@@ -200,13 +204,10 @@ def fact_check_answer(model_answer: str, correct_answer: str, options: dict) -> 
 
 
 def judge_answer_quality(question: str, answer: str) -> dict:
-    """Use GPT-4o-mini to judge answer quality with subject-specific criteria."""
+    """Use configured LLM judge to evaluate answer quality with subject-specific criteria."""
     try:
-        openai_key = os.getenv("OPENAI_API_KEY")
-        if not openai_key or openai_key == "your-api-key-here":
-            return {"score": 5, "reasoning": "OpenAI API key not configured", "subject": "Unknown"}
-        
-        judge_llm = ChatOpenAI(model="gpt-4o-mini", api_key=openai_key, temperature=0)
+        # Get judge from centralized config
+        judge_llm = get_judge_llm()
         
         # Step 1: Identify the subject
         subject_identification_prompt = f"""Analyze this NEET exam question and identify which subject it belongs to.
@@ -308,6 +309,18 @@ def main():
     parser.add_argument('--filter-visual', action='store_true', default=True,
                         help='Filter out questions requiring visual aids (default: True)')
     args = parser.parse_args()
+    
+    # Print LLM judge configuration
+    print("\n" + "="*70)
+    print("LLM JUDGE CONFIGURATION")
+    print("="*70)
+    print(f"Provider: {JUDGE_CONFIG['provider']}")
+    print(f"Model: {JUDGE_CONFIG['model']}")
+    print(f"Temperature: {JUDGE_CONFIG['temperature']}")
+    if JUDGE_CONFIG['provider'] in ['openai', 'groq', 'anthropic']:
+        est_cost = estimate_judge_cost(args.test_samples * len(args.models))
+        print(f"Estimated Cost: ${est_cost:.4f}")
+    print("="*70 + "\n")
     
     # Load test questions
     print("Loading test questions...")

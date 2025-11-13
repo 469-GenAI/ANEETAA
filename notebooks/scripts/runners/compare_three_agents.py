@@ -23,12 +23,12 @@ import dspy
 from dotenv import load_dotenv
 
 # Setup paths
-ROOT = Path(__file__).parent.parent.parent.resolve()  # Go up to project root
+ROOT = Path(__file__).parent.parent.parent.parent.resolve()  # Go up to project root
 sys.path.insert(0, str(ROOT / "src"))
 
-# Add notebooks/scripts to path for centralized judge config
-NOTEBOOKS_SCRIPTS = Path(__file__).parent.resolve()
-sys.path.insert(0, str(NOTEBOOKS_SCRIPTS))
+# Add config folder to path for centralized judge config
+CONFIG_DIR = Path(__file__).parent.parent / "config"
+sys.path.insert(0, str(CONFIG_DIR))
 from llm_judge_config import get_judge_llm, estimate_judge_cost, JUDGE_CONFIG
 
 load_dotenv()

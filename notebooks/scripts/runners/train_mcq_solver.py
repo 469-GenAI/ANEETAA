@@ -19,7 +19,7 @@ from dotenv import load_dotenv
 from sklearn.model_selection import train_test_split
 
 # Setup paths
-ROOT = Path(__file__).parent.parent.resolve()
+ROOT = Path(__file__).parent.parent.parent.parent.resolve()  # Go up to project root from runners/
 sys.path.insert(0, str(ROOT / "src"))
 
 load_dotenv()
@@ -55,11 +55,69 @@ class MCQSolverModule(dspy.Module):
 # PART 2: Data Loading
 # ============================================================================
 
+def load_split_datasets(
+    train_samples: int = 200,
+    val_samples: int = 40,
+    seed: int = 42
+) -> tuple[List[Dict], List[Dict]]:
+    """
+    Load questions from the split train/val datasets.
+    
+    Args:
+        train_samples: Number of questions to sample from train.jsonl
+        val_samples: Number of questions to sample from val.jsonl
+        seed: Random seed for reproducibility
+        
+    Returns:
+        Tuple of (train_questions, val_questions)
+    """
+    train_file = ROOT / "aneeta_v2" / "Processed Data" / "dspy_dataset_train.jsonl"
+    val_file = ROOT / "aneeta_v2" / "Processed Data" / "dspy_dataset_val.jsonl"
+    
+    if not train_file.exists():
+        raise FileNotFoundError(f"Training dataset not found: {train_file}")
+    if not val_file.exists():
+        raise FileNotFoundError(f"Validation dataset not found: {val_file}")
+    
+    print(f"Loading split datasets:")
+    print(f"  Train: {train_file}")
+    print(f"  Val: {val_file}")
+    
+    # Load training data
+    train_questions = []
+    with open(train_file, 'r', encoding='utf-8') as f:
+        for line in f:
+            train_questions.append(json.loads(line))
+    print(f"✓ Loaded {len(train_questions)} training questions")
+    
+    # Load validation data
+    val_questions = []
+    with open(val_file, 'r', encoding='utf-8') as f:
+        for line in f:
+            val_questions.append(json.loads(line))
+    print(f"✓ Loaded {len(val_questions)} validation questions")
+    
+    # Sample from train
+    if len(train_questions) > train_samples:
+        random.seed(seed)
+        train_questions = random.sample(train_questions, train_samples)
+        print(f"✓ Sampled {train_samples} training questions (seed={seed})")
+    
+    # Sample from val
+    if len(val_questions) > val_samples:
+        random.seed(seed + 1)  # Different seed for val to avoid overlap
+        val_questions = random.sample(val_questions, val_samples)
+        print(f"✓ Sampled {val_samples} validation questions (seed={seed + 1})")
+    
+    return train_questions, val_questions
+
+
 def load_gemini_processed_questions(
     data_dir: Path = None,
     max_questions: int = 100,
     filter_visual: bool = True,
-    seed: int = 42
+    seed: int = 42,
+    use_combined_dataset: bool = False
 ) -> List[Dict]:
     """
     Load questions from Gemini 2.5 Pro processed data.
@@ -69,10 +127,33 @@ def load_gemini_processed_questions(
         max_questions: Maximum number of questions to load
         filter_visual: If True, exclude questions with require_visuals=True
         seed: Random seed for reproducibility
+        use_combined_dataset: If True, use dspy_dataset_combined.jsonl instead
         
     Returns:
         List of question dictionaries
     """
+    # Option to use the combined dataset (7,874 questions)
+    if use_combined_dataset:
+        combined_file = ROOT / "aneeta_v2" / "Processed Data" / "dspy_dataset_combined.jsonl"
+        if combined_file.exists():
+            print(f"Loading combined dataset from: {combined_file}")
+            all_questions = []
+            with open(combined_file, 'r', encoding='utf-8') as f:
+                for line in f:
+                    all_questions.append(json.loads(line))
+            print(f"✓ Total questions loaded: {len(all_questions)}")
+            
+            # Sample if needed
+            if len(all_questions) > max_questions:
+                random.seed(seed)
+                all_questions = random.sample(all_questions, max_questions)
+                print(f"✓ Sampled {max_questions} questions (seed={seed})")
+            
+            return all_questions
+        else:
+            print(f"⚠ Combined dataset not found at {combined_file}, falling back to original method")
+    
+    # Original loading method
     if data_dir is None:
         data_dir = ROOT / "aneeta_v2" / "Processed Data" / "Gemini 2.5 Pro Data"
     
@@ -117,13 +198,22 @@ def format_question_for_dspy(q_data: Dict) -> str:
     """Format question with options for DSPy input."""
     q_text = q_data['question_text']
     options = q_data.get('options', {})
-    options_text = "\n".join([f"{k}: {v}" for k, v in options.items()])
+    
+    # Handle both dict and list formats for options
+    if isinstance(options, dict):
+        options_text = "\n".join([f"{k}: {v}" for k, v in options.items()])
+    elif isinstance(options, list):
+        options_text = "\n".join([f"{chr(65+i)}: {opt}" for i, opt in enumerate(options)])
+    else:
+        options_text = ""
+    
     return f"{q_text}\n\nOptions:\n{options_text}"
 
 
 def create_dspy_examples(questions: List[Dict]) -> List[dspy.Example]:
     """
     Convert question dictionaries to DSPy examples.
+    Works with both Gemini format and combined dataset format.
     
     Args:
         questions: List of question dictionaries
@@ -141,12 +231,32 @@ def create_dspy_examples(questions: List[Dict]) -> List[dspy.Example]:
         # Format question
         question_text = format_question_for_dspy(q)
         
-        # Extract subject from metadata
-        subject = q.get('metadata', {}).get('subject', 'Unknown')
+        # Extract subject - works for both formats
+        # Combined dataset has 'subject' at top level
+        # Gemini format has it in 'metadata'
+        subject = q.get('subject') or q.get('metadata', {}).get('subject', 'Unknown')
         
-        # Get explanation if available
+        # Get explanation - combined dataset has richer structure
         explanation = q.get('explanation', {})
-        reasoning = explanation.get('step_by_step', '') or explanation.get('summary', '')
+        
+        # Handle both dict and string formats for explanation
+        if isinstance(explanation, str):
+            # If explanation is a string, use it directly as reasoning
+            reasoning = explanation[:500] if explanation else "Solve step by step."
+        elif isinstance(explanation, dict):
+            # Try to get step-by-step reasoning from dict
+            step_by_step = explanation.get('step_by_step', [])
+            if isinstance(step_by_step, list) and step_by_step:
+                # Combine steps into reasoning
+                reasoning = "\n".join([
+                    f"Step {s.get('step_number', i+1)}: {s.get('description', '')}"
+                    for i, s in enumerate(step_by_step)
+                ])
+            else:
+                # Fallback to summary or correct_option_reasoning
+                reasoning = explanation.get('summary', '') or explanation.get('correct_option_reasoning', '')
+        else:
+            reasoning = "Solve step by step."
         
         # Create example
         example = dspy.Example(
@@ -374,7 +484,11 @@ def train_mipro_model(
     print("This may take 10-20 minutes...")
     
     baseline = MCQSolverModule()
-    optimized = optimizer.compile(baseline, trainset=trainset)
+    optimized = optimizer.compile(
+        baseline, 
+        trainset=trainset,
+        requires_permission_to_run=False  # Disable interactive confirmation
+    )
     
     print("\n✓ Optimization complete!")
     
@@ -396,8 +510,8 @@ def setup_mlflow():
     mlflow.set_experiment('mcq-solver-training')
     
     print(f"\n✓ MLflow tracking: {mlflow_dir}")
-    print(f"  To view UI: mlflow ui --port 5000")
-    print(f"  Then open: http://localhost:5000\n")
+    print(f"  To view UI: mlflow ui --port 8080")
+    print(f"  Then open: http://localhost:8080\n")
 
 
 # ============================================================================
@@ -416,6 +530,14 @@ def main():
     parser.add_argument('--candidates', type=int, default=7, help='Candidates for MIPRO')
     parser.add_argument('--save-path', default='dspy_mcq_optimized.json', help='Path to save optimized model')
     parser.add_argument('--seed', type=int, default=42, help='Random seed')
+    parser.add_argument('--use-combined', action='store_true', 
+                        help='Use dspy_dataset_combined.jsonl (7,874 questions) instead of Gemini data')
+    parser.add_argument('--use-split-datasets', action='store_true',
+                        help='Use split train/val datasets instead of combined dataset')
+    parser.add_argument('--train-samples', type=int, default=200, 
+                        help='Number of samples from train.jsonl (only with --use-split-datasets)')
+    parser.add_argument('--val-samples', type=int, default=40,
+                        help='Number of samples from val.jsonl (only with --use-split-datasets)')
     
     args = parser.parse_args()
     
@@ -438,23 +560,49 @@ def main():
     print("LOADING TRAINING DATA")
     print("="*70)
     
-    questions = load_gemini_processed_questions(
-        max_questions=args.questions,
-        filter_visual=True,
-        seed=args.seed
-    )
-    
-    # Convert to DSPy examples
-    examples = create_dspy_examples(questions)
-    
-    # Split train/test
-    trainset, testset = train_test_split(
-        examples,
-        test_size=args.test_split,
-        random_state=args.seed
-    )
-    
-    print(f"\n✓ Data split: Train={len(trainset)} | Test={len(testset)}")
+    if args.use_split_datasets:
+        # Use the split train/val datasets
+        train_questions, val_questions = load_split_datasets(
+            train_samples=args.train_samples,
+            val_samples=args.val_samples,
+            seed=args.seed
+        )
+        
+        # Combine for training (all from train + all from val)
+        all_questions = train_questions + val_questions
+        print(f"\n✓ Total questions: {len(all_questions)} ({len(train_questions)} train + {len(val_questions)} val)")
+        
+        # Convert to DSPy examples
+        examples = create_dspy_examples(all_questions)
+        
+        # Split: Use train_questions for training, val_questions for testing
+        train_examples = create_dspy_examples(train_questions)
+        test_examples = create_dspy_examples(val_questions)
+        
+        trainset = train_examples
+        testset = test_examples
+        
+        print(f"✓ Data split: Train={len(trainset)} | Test={len(testset)}")
+    else:
+        # Original behavior
+        questions = load_gemini_processed_questions(
+            max_questions=args.questions,
+            filter_visual=True,
+            seed=args.seed,
+            use_combined_dataset=args.use_combined  # Use the combined dataset if flag is set
+        )
+        
+        # Convert to DSPy examples
+        examples = create_dspy_examples(questions)
+        
+        # Split train/test
+        trainset, testset = train_test_split(
+            examples,
+            test_size=args.test_split,
+            random_state=args.seed
+        )
+        
+        print(f"\n✓ Data split: Train={len(trainset)} | Test={len(testset)}")
     
     # Train models based on method
     results = {}
@@ -480,8 +628,12 @@ def main():
             mlflow.log_param("max_demos", args.max_demos)
             mlflow.log_param("train_size", len(trainset))
             
-            # Save model
-            save_path = ROOT / "models" / "dspy_bootstrap_optimized.json"
+            # Save model using the provided save_path argument
+            # If save_path already includes 'models/', use it as is, otherwise prepend it
+            if args.save_path.startswith('models/') or args.save_path.startswith('models\\'):
+                save_path = ROOT / args.save_path
+            else:
+                save_path = ROOT / "models" / args.save_path
             bootstrap.save(str(save_path))
             print(f"\n✓ Saved Bootstrap model: {save_path}")
     
@@ -497,8 +649,12 @@ def main():
             mlflow.log_param("num_candidates", args.candidates)
             mlflow.log_param("train_size", len(trainset))
             
-            # Save model
-            save_path = ROOT / "models" / "dspy_mipro_optimized.json"
+            # Save model using the provided save_path argument
+            mipro_save_path = args.save_path.replace('bootstrap', 'mipro')
+            if mipro_save_path.startswith('models/') or mipro_save_path.startswith('models\\'):
+                save_path = ROOT / mipro_save_path
+            else:
+                save_path = ROOT / "models" / mipro_save_path
             mipro.save(str(save_path))
             print(f"\n✓ Saved MIPRO model: {save_path}")
     
@@ -517,7 +673,7 @@ def main():
                 improvement = (data['accuracy'] - baseline_acc) / baseline_acc * 100 if baseline_acc > 0 else 0
                 print(f"\n{name.upper()} Improvement over Baseline: {improvement:+.1f}%")
     
-    print("\n✓ View results in MLflow UI: mlflow ui --port 5000")
+    print("\n✓ View results in MLflow UI: mlflow ui --port 8080")
     print("="*70)
 
 
