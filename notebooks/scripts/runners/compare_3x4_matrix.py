@@ -13,7 +13,6 @@ import os
 import sys
 import json
 import time
-import random
 import argparse
 import pandas as pd
 from pathlib import Path
@@ -24,7 +23,7 @@ from dotenv import load_dotenv
 # Import centralized judge config
 CONFIG_DIR = Path(__file__).parent.parent / "config"
 sys.path.insert(0, str(CONFIG_DIR))
-from llm_judge_config import get_judge_llm, estimate_judge_cost, JUDGE_CONFIG
+from llm_judge_config import get_judge_llm, estimate_judge_cost, JUDGE_CONFIG, GROQ_API_KEYS
 
 # Setup
 ROOT = Path(__file__).parent.parent.parent.parent.resolve()
@@ -109,8 +108,21 @@ class MCQSolverModule(dspy.Module):
 # Data Loading
 # ============================================================================
 
-def load_test_questions(max_questions: int = 100, seed: int = 42, use_validation_set: bool = True) -> List[Dict]:
-    """Load test questions from validation dataset or combined dataset."""
+def load_test_questions(max_questions: int = 100, use_validation_set: bool = True, start_index: int = 0) -> List[Dict]:
+    """Load test questions from validation dataset or combined dataset.
+    
+    Args:
+        max_questions: Maximum number of questions to load
+        use_validation_set: Whether to use validation set (default: True)
+        start_index: Starting index for deterministic slicing (default: 0)
+    
+    Returns:
+        List of question dictionaries
+    
+    Note:
+        Questions are loaded deterministically in order (no random sampling).
+        This ensures reproducibility and allows for batch-based API key rotation.
+    """
     if use_validation_set:
         val_file = ROOT / "aneeta_v2" / "Processed Data" / "dspy_dataset_val.jsonl"
         if val_file.exists():
@@ -120,14 +132,14 @@ def load_test_questions(max_questions: int = 100, seed: int = 42, use_validation
                 for line in f:
                     all_questions.append(json.loads(line))
             
-            print(f"✓ Loaded {len(all_questions)} validation questions")
+            print(f"✓ Loaded {len(all_questions)} total validation questions")
             
-            if len(all_questions) > max_questions:
-                random.seed(seed)
-                all_questions = random.sample(all_questions, max_questions)
-                print(f"✓ Sampled {max_questions} questions (seed={seed})")
+            # Deterministic slicing (no random sampling)
+            end_index = min(start_index + max_questions, len(all_questions))
+            questions = all_questions[start_index:end_index]
+            print(f"✓ Selected questions [{start_index}:{end_index}] = {len(questions)} questions")
             
-            return all_questions
+            return questions
     
     # Fallback to combined dataset
     combined_file = ROOT / "aneeta_v2" / "Processed Data" / "dspy_dataset_combined.jsonl"
@@ -140,12 +152,12 @@ def load_test_questions(max_questions: int = 100, seed: int = 42, use_validation
     
     print(f"✓ Loaded {len(all_questions)} total questions")
     
-    if len(all_questions) > max_questions:
-        random.seed(seed)
-        all_questions = random.sample(all_questions, max_questions)
-        print(f"✓ Sampled {max_questions} questions (seed={seed})")
+    # Deterministic slicing (no random sampling)
+    end_index = min(start_index + max_questions, len(all_questions))
+    questions = all_questions[start_index:end_index]
+    print(f"✓ Selected questions [{start_index}:{end_index}] = {len(questions)} questions")
     
-    return all_questions
+    return questions
 
 def format_question(q_data: Dict) -> str:
     """Format question with options."""
@@ -253,11 +265,20 @@ def dspy_optimized_agent(question: str, subject: str, model_name: str, optimized
 # LLM Judge
 # ============================================================================
 
-def judge_answer_quality(question: str, answer: str) -> dict:
-    """Use configured LLM judge to evaluate answer quality with subject-specific criteria."""
+def judge_answer_quality(question: str, answer: str, api_key_index: int = 0) -> dict:
+    """Use configured LLM judge to evaluate answer quality with subject-specific criteria.
+    
+    Args:
+        question: The question text
+        answer: The model's answer/response
+        api_key_index: Index for API key rotation (for Groq rate limit management)
+    
+    Returns:
+        Dictionary with score, reasoning, and detected subject
+    """
     try:
-        # Get judge from centralized config
-        judge_llm = get_judge_llm()
+        # Get judge from centralized config with API key rotation
+        judge_llm = get_judge_llm(api_key_index=api_key_index)
         
         # Step 1: Identify the subject
         subject_identification_prompt = f"""Analyze this NEET exam question and identify which subject it belongs to.
@@ -384,8 +405,18 @@ def fact_check_answer(model_answer: str, correct_answer: str, options: dict) -> 
 # Evaluation
 # ============================================================================
 
-def evaluate_configuration(model_config: Dict, agent_type: str, question: Dict) -> Dict:
-    """Evaluate one configuration on one question."""
+def evaluate_configuration(model_config: Dict, agent_type: str, question: Dict, api_key_index: int = 0) -> Dict:
+    """Evaluate one configuration on one question.
+    
+    Args:
+        model_config: Model configuration dictionary
+        agent_type: Type of agent (vanilla, dspy_baseline, etc.)
+        question: Question dictionary
+        api_key_index: Index for API key rotation (for Groq rate limit management)
+    
+    Returns:
+        Dictionary with evaluation results
+    """
     model_name = model_config['name']
     model_display = model_config['display']
     question_text = format_question(question)
@@ -416,8 +447,8 @@ def evaluate_configuration(model_config: Dict, agent_type: str, question: Dict) 
         fact_score = fact_check_answer(response, correct_answer, question.get('options', {}))
         is_correct = fact_score == 10  # Backward compatibility
         
-        # Judge quality
-        quality_result = judge_answer_quality(question_text, response)
+        # Judge quality with API key rotation
+        quality_result = judge_answer_quality(question_text, response, api_key_index=api_key_index)
         
         return {
             'question_id': question.get('question_id', ''),
@@ -461,7 +492,10 @@ def evaluate_configuration(model_config: Dict, agent_type: str, question: Dict) 
 def main():
     parser = argparse.ArgumentParser(description='3×4 Matrix Comparison (with MIPROv2)')
     parser.add_argument('--test-samples', type=int, default=100, help='Number of test questions')
-    parser.add_argument('--seed', type=int, default=42, help='Random seed')
+    parser.add_argument('--batch-size', type=int, default=20, 
+                        help='Batch size for API key rotation (default: 20)')
+    parser.add_argument('--start-index', type=int, default=0,
+                        help='Starting index in dataset (default: 0)')
     parser.add_argument('--use-validation-set', action='store_true', default=True,
                         help='Use validation dataset (default: True)')
     args = parser.parse_args()
@@ -476,17 +510,26 @@ def main():
     print(f"Model: {model_name}")
     print(f"Temperature: {JUDGE_CONFIG['temperature']}")
     
+    # Show API key rotation info
+    if JUDGE_CONFIG['provider'] == 'groq':
+        print(f"\n🔑 API Key Rotation:")
+        print(f"   Available Keys: {len(GROQ_API_KEYS)}")
+        print(f"   Batch Size: {args.batch_size} questions per key")
+        total_batches = (args.test_samples + args.batch_size - 1) // args.batch_size
+        print(f"   Total Batches: {total_batches}")
+        print(f"   Rate Limit: 30 req/min per key, 1000 req/day per key")
+    
     # Estimate cost (12 configurations = 3 models × 4 agent types)
     cost_est = estimate_judge_cost(args.test_samples * len(MODELS) * len(AGENT_TYPES))
-    print(f"Estimated cost: ${cost_est['estimated_cost_usd']:.4f}")
+    print(f"\nEstimated cost: ${cost_est['estimated_cost_usd']:.4f}")
     print("="*70)
     
-    # Load questions
+    # Load questions deterministically
     print("\nLoading test questions...")
     questions = load_test_questions(
-        max_questions=args.test_samples, 
-        seed=args.seed,
-        use_validation_set=args.use_validation_set
+        max_questions=args.test_samples,
+        use_validation_set=args.use_validation_set,
+        start_index=args.start_index
     )
     
     print(f"\n📊 Evaluating {len(questions)} questions across 3×4 matrix")
@@ -501,19 +544,28 @@ def main():
         mlflow.log_param("num_questions", len(questions))
         mlflow.log_param("num_models", len(MODELS))
         mlflow.log_param("num_agent_types", len(AGENT_TYPES))
-        mlflow.log_param("seed", args.seed)
+        mlflow.log_param("start_index", args.start_index)
+        mlflow.log_param("batch_size", args.batch_size)
+        mlflow.log_param("deterministic", True)
         
         all_results = []
         
-        # Evaluate each configuration
+        # Evaluate each configuration with batch-based API key rotation
         for i, question in enumerate(questions, 1):
-            print(f"\n[Question {i}/{len(questions)}] {question.get('subject', 'Unknown')}")
+            # Calculate which API key to use based on batch size
+            batch_index = (i - 1) // args.batch_size
+            api_key_index = batch_index % len(GROQ_API_KEYS) if GROQ_API_KEYS else 0
+            
+            if (i - 1) % args.batch_size == 0 and JUDGE_CONFIG['provider'] == 'groq':
+                print(f"\n🔑 Switching to API Key #{api_key_index + 1}/{len(GROQ_API_KEYS)} for batch {batch_index + 1}")
+            
+            print(f"\n[Question {i}/{len(questions)}] {question.get('subject', 'Unknown')} (Batch {batch_index + 1}, Key #{api_key_index + 1})")
             print(f"Question: {question['question_text'][:80]}...")
             print("-"*70)
             
             for model_config in MODELS:
                 for agent_type in AGENT_TYPES:
-                    result = evaluate_configuration(model_config, agent_type, question)
+                    result = evaluate_configuration(model_config, agent_type, question, api_key_index=api_key_index)
                     all_results.append(result)
                     
                     status = "[OK]" if result['is_correct'] else "[X]"

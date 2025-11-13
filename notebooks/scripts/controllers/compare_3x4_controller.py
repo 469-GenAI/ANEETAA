@@ -18,7 +18,8 @@ from pathlib import Path
 COMPARISON_CONFIG = {
     # Test Configuration
     'test_samples': 40,              # Number of test questions
-    'seed': 123,                     # Random seed (changed from 42)
+    'batch_size': 20,                # Questions per API key (for Groq rate limiting)
+    'start_index': 0,                # Starting index in dataset (deterministic)
     'use_validation_set': True,      # Use validation dataset
 }
 
@@ -29,21 +30,24 @@ COMPARISON_CONFIG = {
 # Quick test (10 questions)
 # COMPARISON_CONFIG = {
 #     'test_samples': 10,
-#     'seed': 42,
+#     'batch_size': 10,
+#     'start_index': 0,
 #     'use_validation_set': True,
 # }
 
 # Medium test (30 questions)
 # COMPARISON_CONFIG = {
 #     'test_samples': 30,
-#     'seed': 42,
+#     'batch_size': 15,
+#     'start_index': 0,
 #     'use_validation_set': True,
 # }
 
-# Full test (100 questions)
+# Full test (100 questions, 5 batches of 20)
 # COMPARISON_CONFIG = {
 #     'test_samples': 100,
-#     'seed': 42,
+#     'batch_size': 20,
+#     'start_index': 0,
 #     'use_validation_set': True,
 # }
 
@@ -83,7 +87,8 @@ def build_command(config):
     
     cmd = [sys.executable, str(script_path)]
     cmd.extend(['--test-samples', str(config['test_samples'])])
-    cmd.extend(['--seed', str(config['seed'])])
+    cmd.extend(['--batch-size', str(config['batch_size'])])
+    cmd.extend(['--start-index', str(config['start_index'])])
     
     if config.get('use_validation_set', True):
         cmd.append('--use-validation-set')
@@ -104,7 +109,16 @@ def print_config(config, existing_models, missing_models):
     print(f"  Test Samples: {config['test_samples']} questions")
     dataset_source = "Validation dataset (val.jsonl)" if config.get('use_validation_set', True) else "Combined dataset"
     print(f"  Dataset Source: {dataset_source}")
-    print(f"  Random Seed: {config['seed']}")
+    print(f"  Start Index: {config['start_index']} (deterministic, no random sampling)")
+    print(f"  Question Range: [{config['start_index']} : {config['start_index'] + config['test_samples']}]")
+    
+    # API key rotation info
+    print("\n🔑 API Key Rotation (Groq):")
+    print(f"  Batch Size: {config['batch_size']} questions per API key")
+    num_batches = (config['test_samples'] + config['batch_size'] - 1) // config['batch_size']
+    print(f"  Total Batches: {num_batches}")
+    print(f"  Rate Limit: 30 req/min per key, 1000 req/day per key")
+    print(f"  Note: Configure multiple keys in .env as GROQ_API_KEY, GROQ_API_KEY_2, etc.")
     
     # Matrix dimensions
     print("\n🔢 Matrix Dimensions:")

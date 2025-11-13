@@ -24,6 +24,18 @@ load_dotenv()
 # CONFIGURATION - Edit this to change judge settings
 # ============================================================================
 
+# Multiple Groq API Keys for rate limit management
+# Add your Groq API keys here (each has 30 req/min, 1000 req/day limit)
+GROQ_API_KEYS = [
+    os.getenv("GROQ_API_KEY"),          # Primary key from .env
+    os.getenv("GROQ_API_KEY_2"),        # Additional keys
+    os.getenv("GROQ_API_KEY_3"),
+    os.getenv("GROQ_API_KEY_4"),
+    os.getenv("GROQ_API_KEY_5"),
+]
+# Filter out None values
+GROQ_API_KEYS = [key for key in GROQ_API_KEYS if key]
+
 JUDGE_CONFIG = {
     # Provider Options: 'openai', 'groq', 'anthropic', 'ollama'
     'provider': 'groq',
@@ -129,7 +141,7 @@ def get_model_name(provider: str = None, model: str = None) -> str:
     return model
 
 
-def get_judge_llm(provider: str = None, model: str = None, temperature: float = None):
+def get_judge_llm(provider: str = None, model: str = None, temperature: float = None, api_key_index: int = 0):
     """
     Create and return configured LLM judge.
     
@@ -137,6 +149,7 @@ def get_judge_llm(provider: str = None, model: str = None, temperature: float = 
         provider: Provider name (overrides JUDGE_CONFIG)
         model: Model name or preset key (overrides JUDGE_CONFIG)
         temperature: Temperature setting (overrides JUDGE_CONFIG)
+        api_key_index: Index for Groq API key rotation (default: 0)
     
     Returns:
         Configured LLM instance from LangChain
@@ -161,9 +174,13 @@ def get_judge_llm(provider: str = None, model: str = None, temperature: float = 
     
     elif provider == 'groq':
         from langchain_groq import ChatGroq
-        api_key = os.getenv("GROQ_API_KEY")
-        if not api_key:
-            raise ValueError("GROQ_API_KEY not found in environment. Get one free at https://console.groq.com")
+        
+        # Use API key rotation for Groq
+        if not GROQ_API_KEYS:
+            raise ValueError("No GROQ_API_KEY found in environment. Get one free at https://console.groq.com")
+        
+        # Rotate through available API keys
+        api_key = GROQ_API_KEYS[api_key_index % len(GROQ_API_KEYS)]
         
         return ChatGroq(
             model=model_name,
