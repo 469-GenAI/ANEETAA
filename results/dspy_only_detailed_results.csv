@@ -1,0 +1,169 @@
+question_id,subject,model,agent_type,response,correct_answer,is_correct,latency_ms,error_trace
+Question_Paper_37_p30_q140,Biology,Llama 3.1 8B,DSPy Baseline,B,D,False,2081.8,
+Question_Paper_37_p30_q140,Biology,Llama 3.1 8B,DSPy Optimized,D,D,True,9901.1,
+Question_Paper_37_p30_q140,Biology,Gemma2 9B,DSPy Baseline,B,D,False,36.9,
+Question_Paper_37_p30_q140,Biology,Gemma2 9B,DSPy Optimized,B,D,False,8963.1,
+Question_Paper_37_p30_q140,Biology,Mistral Nemo 12B,DSPy Baseline,D: Statement I is correct but Statement II is false.,D,True,29.9,
+Question_Paper_37_p30_q140,Biology,Mistral Nemo 12B,DSPy Optimized,D,D,True,8564.3,
+Question_Paper_14_p13_q34,Physics,Llama 3.1 8B,DSPy Baseline,D,D,True,32.2,
+Question_Paper_14_p13_q34,Physics,Llama 3.1 8B,DSPy Optimized,D,D,True,9762.5,
+Question_Paper_14_p13_q34,Physics,Gemma2 9B,DSPy Baseline,D,D,True,34.4,
+Question_Paper_14_p13_q34,Physics,Gemma2 9B,DSPy Optimized,D,D,True,10741.0,
+Question_Paper_14_p13_q34,Physics,Mistral Nemo 12B,DSPy Baseline,D: More on smaller sphere,D,True,33.0,
+Question_Paper_14_p13_q34,Physics,Mistral Nemo 12B,DSPy Optimized,D,D,True,11297.8,
+Question_Paper_10_p13_q36,Physics,Llama 3.1 8B,DSPy Baseline,[Error: 'list' object has no attribute 'items'],C,False,0.0,"Traceback (most recent call last):
+  File ""C:\Users\benja\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\dspy\adapters\base.py"", line 33, in __call__
+    value = self.parse(signature, output)
+  File ""C:\Users\benja\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\dspy\utils\callback.py"", line 234, in wrapper
+    return fn(instance, *args, **kwargs)
+  File ""C:\Users\benja\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\dspy\adapters\chat_adapter.py"", line 84, in parse
+    raise ValueError(f""Expected {signature.output_fields.keys()} but got {fields.keys()}"")
+ValueError: Expected dict_keys(['reasoning', 'answer']) but got dict_keys(['reasoning'])
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""D:\Git Projects\SMU\ANEETAA\notebooks\scripts\compare_3x3_simple.py"", line 162, in evaluate_config
+    prediction = solver(question=question_text, subject=subject)
+  File ""C:\Users\benja\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\dspy\utils\callback.py"", line 234, in wrapper
+    return fn(instance, *args, **kwargs)
+  File ""C:\Users\benja\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\dspy\primitives\program.py"", line 22, in __call__
+    return self.forward(*args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File ""D:\Git Projects\SMU\ANEETAA\notebooks\scripts\compare_3x3_simple.py"", line 64, in forward
+    return self.predictor(question=question, subject=subject)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\benja\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\dspy\utils\callback.py"", line 234, in wrapper
+    return fn(instance, *args, **kwargs)
+  File ""C:\Users\benja\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\dspy\primitives\program.py"", line 22, in __call__
+    return self.forward(*args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File ""C:\Users\benja\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\dspy\predict\chain_of_thought.py"", line 20, in forward
+    return self.predict(**kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\benja\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\dspy\utils\callback.py"", line 234, in wrapper
+    return fn(instance, *args, **kwargs)
+  File ""C:\Users\benja\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\dspy\predict\predict.py"", line 67, in __call__
+    return self.forward(**kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^
+  File ""C:\Users\benja\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\dspy\predict\predict.py"", line 97, in forward
+    completions = adapter(lm, lm_kwargs=config, signature=signature, demos=demos, inputs=kwargs)
+  File ""C:\Users\benja\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\dspy\adapters\base.py"", line 51, in __call__
+    return JSONAdapter()(lm, lm_kwargs, signature, demos, inputs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\benja\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\dspy\adapters\json_adapter.py"", line 60, in __call__
+    value = self.parse(signature, output)
+  File ""C:\Users\benja\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\dspy\utils\callback.py"", line 234, in wrapper
+    return fn(instance, *args, **kwargs)
+  File ""C:\Users\benja\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\dspy\adapters\json_adapter.py"", line 94, in parse
+    fields = {k: v for k, v in fields.items() if k in signature.output_fields}
+                               ^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'items'
+"
+Question_Paper_10_p13_q36,Physics,Llama 3.1 8B,DSPy Optimized,D,C,False,9793.0,
+Question_Paper_10_p13_q36,Physics,Gemma2 9B,DSPy Baseline,"D: ν₀ = 50 Hz, ν = 100/π Hz",C,False,33.4,
+Question_Paper_10_p13_q36,Physics,Gemma2 9B,DSPy Optimized,D,C,False,11113.0,
+Question_Paper_10_p13_q36,Physics,Mistral Nemo 12B,DSPy Baseline,"ν₀ = 50 Hz, ν = 100 Hz",C,False,33.4,
+Question_Paper_10_p13_q36,Physics,Mistral Nemo 12B,DSPy Optimized,B,C,False,12058.0,
+Question_Paper_42_p11_q55,Chemistry,Llama 3.1 8B,DSPy Baseline,D,D,True,32.8,
+Question_Paper_42_p11_q55,Chemistry,Llama 3.1 8B,DSPy Optimized,D,D,True,11176.5,
+Question_Paper_42_p11_q55,Chemistry,Gemma2 9B,DSPy Baseline,D,D,True,8944.3,
+Question_Paper_42_p11_q55,Chemistry,Gemma2 9B,DSPy Optimized,D,D,True,3316.5,
+Question_Paper_42_p11_q55,Chemistry,Mistral Nemo 12B,DSPy Baseline,D,D,True,9119.8,
+Question_Paper_42_p11_q55,Chemistry,Mistral Nemo 12B,DSPy Optimized,A,D,False,2966.5,
+Question_Paper_20_p56_q148,Biology,Llama 3.1 8B,DSPy Baseline,A,A,True,7821.8,
+Question_Paper_20_p56_q148,Biology,Llama 3.1 8B,DSPy Optimized,A,A,True,2626.0,
+Question_Paper_20_p56_q148,Biology,Gemma2 9B,DSPy Baseline,A,A,True,7793.7,
+Question_Paper_20_p56_q148,Biology,Gemma2 9B,DSPy Optimized,A,A,True,2342.1,
+Question_Paper_20_p56_q148,Biology,Mistral Nemo 12B,DSPy Baseline,A,A,True,9289.1,
+Question_Paper_20_p56_q148,Biology,Mistral Nemo 12B,DSPy Optimized,A,A,True,2843.3,
+Question_Paper_2_p30_q73,Chemistry,Llama 3.1 8B,DSPy Baseline,C,B,False,9196.8,
+Question_Paper_2_p30_q73,Chemistry,Llama 3.1 8B,DSPy Optimized,A,B,False,3694.5,
+Question_Paper_2_p30_q73,Chemistry,Gemma2 9B,DSPy Baseline,A,B,False,8507.1,
+Question_Paper_2_p30_q73,Chemistry,Gemma2 9B,DSPy Optimized,A,B,False,3266.2,
+Question_Paper_2_p30_q73,Chemistry,Mistral Nemo 12B,DSPy Baseline,A,B,False,8082.1,
+Question_Paper_2_p30_q73,Chemistry,Mistral Nemo 12B,DSPy Optimized,A,B,False,2554.5,
+Question_Paper_19_p32_q71,Chemistry,Llama 3.1 8B,DSPy Baseline,A,C,False,8754.6,
+Question_Paper_19_p32_q71,Chemistry,Llama 3.1 8B,DSPy Optimized,C,C,True,2447.4,
+Question_Paper_19_p32_q71,Chemistry,Gemma2 9B,DSPy Baseline,C,C,True,8915.5,
+Question_Paper_19_p32_q71,Chemistry,Gemma2 9B,DSPy Optimized,C,C,True,3209.8,
+Question_Paper_19_p32_q71,Chemistry,Mistral Nemo 12B,DSPy Baseline,C,C,True,8077.7,
+Question_Paper_19_p32_q71,Chemistry,Mistral Nemo 12B,DSPy Optimized,C,C,True,2635.0,
+Question_Paper_15_p43_q99,Chemistry,Llama 3.1 8B,DSPy Baseline,D,D,True,8207.3,
+Question_Paper_15_p43_q99,Chemistry,Llama 3.1 8B,DSPy Optimized,A: 0.4606,D,False,2105.3,
+Question_Paper_15_p43_q99,Chemistry,Gemma2 9B,DSPy Baseline,A,D,False,9084.3,
+Question_Paper_15_p43_q99,Chemistry,Gemma2 9B,DSPy Optimized,D,D,True,4185.5,
+Question_Paper_15_p43_q99,Chemistry,Mistral Nemo 12B,DSPy Baseline,A: 0.4606,D,False,9971.9,
+Question_Paper_15_p43_q99,Chemistry,Mistral Nemo 12B,DSPy Optimized,B,D,False,3005.8,
+Question_Paper_41_p29_q147,Biology,Llama 3.1 8B,DSPy Baseline,B,C,False,7891.9,
+Question_Paper_41_p29_q147,Biology,Llama 3.1 8B,DSPy Optimized,C,C,True,2504.4,
+Question_Paper_41_p29_q147,Biology,Gemma2 9B,DSPy Baseline,"A: C, B, D, A",C,False,9277.7,
+Question_Paper_41_p29_q147,Biology,Gemma2 9B,DSPy Optimized,C,C,True,3115.1,
+Question_Paper_41_p29_q147,Biology,Mistral Nemo 12B,DSPy Baseline,C,C,True,9963.2,
+Question_Paper_41_p29_q147,Biology,Mistral Nemo 12B,DSPy Optimized,A,C,False,2079.0,
+Question_Paper_13_p54_q151,Biology,Llama 3.1 8B,DSPy Baseline,B,B,True,8907.8,
+Question_Paper_13_p54_q151,Biology,Llama 3.1 8B,DSPy Optimized,B,B,True,3017.6,
+Question_Paper_13_p54_q151,Biology,Gemma2 9B,DSPy Baseline,B,B,True,8343.8,
+Question_Paper_13_p54_q151,Biology,Gemma2 9B,DSPy Optimized,B,B,True,3101.6,
+Question_Paper_13_p54_q151,Biology,Mistral Nemo 12B,DSPy Baseline,A,B,False,9967.4,
+Question_Paper_13_p54_q151,Biology,Mistral Nemo 12B,DSPy Optimized,B,B,True,2313.8,
+Question_Paper_39_p36_q166,Biology,Llama 3.1 8B,DSPy Baseline,B,B,True,8205.2,
+Question_Paper_39_p36_q166,Biology,Llama 3.1 8B,DSPy Optimized,A,B,False,1832.7,
+Question_Paper_39_p36_q166,Biology,Gemma2 9B,DSPy Baseline,B,B,True,7987.6,
+Question_Paper_39_p36_q166,Biology,Gemma2 9B,DSPy Optimized,B,B,True,1992.2,
+Question_Paper_39_p36_q166,Biology,Mistral Nemo 12B,DSPy Baseline,B,B,True,8075.0,
+Question_Paper_39_p36_q166,Biology,Mistral Nemo 12B,DSPy Optimized,D,B,False,1950.3,
+Question_Paper_42_p7_q40,Physics,Llama 3.1 8B,DSPy Baseline,A,A,True,13247.9,
+Question_Paper_42_p7_q40,Physics,Llama 3.1 8B,DSPy Optimized,A,A,True,3823.6,
+Question_Paper_42_p7_q40,Physics,Gemma2 9B,DSPy Baseline,A,A,True,11465.4,
+Question_Paper_42_p7_q40,Physics,Gemma2 9B,DSPy Optimized,A,A,True,5056.3,
+Question_Paper_42_p7_q40,Physics,Mistral Nemo 12B,DSPy Baseline,D: 3 \times 10^{-3} °C^{-1},A,False,10386.5,
+Question_Paper_42_p7_q40,Physics,Mistral Nemo 12B,DSPy Optimized,A,A,True,3139.0,
+Question_Paper_6_165,Biology,Llama 3.1 8B,DSPy Baseline,C: Statement I is correct but Statement II is incorrect,C,True,8112.4,
+Question_Paper_6_165,Biology,Llama 3.1 8B,DSPy Optimized,D,C,False,1654.3,
+Question_Paper_6_165,Biology,Gemma2 9B,DSPy Baseline,C,C,True,7691.3,
+Question_Paper_6_165,Biology,Gemma2 9B,DSPy Optimized,C,C,True,2172.9,
+Question_Paper_6_165,Biology,Mistral Nemo 12B,DSPy Baseline,C: Statement I is correct but Statement II is incorrect,C,True,8399.1,
+Question_Paper_6_165,Biology,Mistral Nemo 12B,DSPy Optimized,D,C,False,2256.8,
+Question_Paper_32_p50_q197,Biology,Llama 3.1 8B,DSPy Baseline,A: B and C only,B,False,7982.0,
+Question_Paper_32_p50_q197,Biology,Llama 3.1 8B,DSPy Optimized,A,B,False,3394.8,
+Question_Paper_32_p50_q197,Biology,Gemma2 9B,DSPy Baseline,C,B,False,9069.1,
+Question_Paper_32_p50_q197,Biology,Gemma2 9B,DSPy Optimized,B,B,True,4142.9,
+Question_Paper_32_p50_q197,Biology,Mistral Nemo 12B,DSPy Baseline,C: C and D only,B,False,9056.6,
+Question_Paper_32_p50_q197,Biology,Mistral Nemo 12B,DSPy Optimized,B,B,True,2002.5,
+Question_Paper_13_p2_q4,Physics,Llama 3.1 8B,DSPy Baseline,C: 2 : 1,D,False,9292.7,
+Question_Paper_13_p2_q4,Physics,Llama 3.1 8B,DSPy Optimized,D,D,True,4203.3,
+Question_Paper_13_p2_q4,Physics,Gemma2 9B,DSPy Baseline,B: 1 : \sqrt{2},D,False,10808.8,
+Question_Paper_13_p2_q4,Physics,Gemma2 9B,DSPy Optimized,\sqrt{2} : 1,D,False,7240.4,
+Question_Paper_13_p2_q4,Physics,Mistral Nemo 12B,DSPy Baseline,B: 1 : \sqrt{2},D,False,10132.6,
+Question_Paper_13_p2_q4,Physics,Mistral Nemo 12B,DSPy Optimized,B: 1 : \sqrt{2},D,False,3812.1,
+Question_Paper_35_p9_q50,Physics,Llama 3.1 8B,DSPy Baseline,A,A,True,8429.5,
+Question_Paper_35_p9_q50,Physics,Llama 3.1 8B,DSPy Optimized,A,A,True,3210.5,
+Question_Paper_35_p9_q50,Physics,Gemma2 9B,DSPy Baseline,A,A,True,9195.0,
+Question_Paper_35_p9_q50,Physics,Gemma2 9B,DSPy Optimized,A,A,True,3603.9,
+Question_Paper_35_p9_q50,Physics,Mistral Nemo 12B,DSPy Baseline,A: 4.77 Å,A,True,8562.4,
+Question_Paper_35_p9_q50,Physics,Mistral Nemo 12B,DSPy Optimized,A,A,True,2885.1,
+Question_Paper_27_p35_q162,Biology,Llama 3.1 8B,DSPy Baseline,C,D,False,9060.4,
+Question_Paper_27_p35_q162,Biology,Llama 3.1 8B,DSPy Optimized,C,D,False,3474.7,
+Question_Paper_27_p35_q162,Biology,Gemma2 9B,DSPy Baseline,D,D,True,8248.0,
+Question_Paper_27_p35_q162,Biology,Gemma2 9B,DSPy Optimized,D,D,True,2395.2,
+Question_Paper_27_p35_q162,Biology,Mistral Nemo 12B,DSPy Baseline,A: IRV + ERV,D,False,8988.3,
+Question_Paper_27_p35_q162,Biology,Mistral Nemo 12B,DSPy Optimized,C,D,False,4525.9,
+Question_Paper_10_p41_q102,Biology,Llama 3.1 8B,DSPy Baseline,C,C,True,8295.6,
+Question_Paper_10_p41_q102,Biology,Llama 3.1 8B,DSPy Optimized,C,C,True,1858.8,
+Question_Paper_10_p41_q102,Biology,Gemma2 9B,DSPy Baseline,C,C,True,8772.9,
+Question_Paper_10_p41_q102,Biology,Gemma2 9B,DSPy Optimized,C,C,True,1894.9,
+Question_Paper_10_p41_q102,Biology,Mistral Nemo 12B,DSPy Baseline,C: Frankia,C,True,8443.1,
+Question_Paper_10_p41_q102,Biology,Mistral Nemo 12B,DSPy Optimized,C,C,True,1600.2,
+Question_Paper_10_p33_q81,Chemistry,Llama 3.1 8B,DSPy Baseline,D,D,True,9514.3,
+Question_Paper_10_p33_q81,Chemistry,Llama 3.1 8B,DSPy Optimized,B,D,False,3019.3,
+Question_Paper_10_p33_q81,Chemistry,Gemma2 9B,DSPy Baseline,D,D,True,9338.1,
+Question_Paper_10_p33_q81,Chemistry,Gemma2 9B,DSPy Optimized,D,D,True,3538.0,
+Question_Paper_10_p33_q81,Chemistry,Mistral Nemo 12B,DSPy Baseline,D,D,True,8162.8,
+Question_Paper_10_p33_q81,Chemistry,Mistral Nemo 12B,DSPy Optimized,C,D,False,2537.2,
+Question_Paper_13_p27_q69,Chemistry,Llama 3.1 8B,DSPy Baseline,A,A,True,9487.7,
+Question_Paper_13_p27_q69,Chemistry,Llama 3.1 8B,DSPy Optimized,A,A,True,3071.0,
+Question_Paper_13_p27_q69,Chemistry,Gemma2 9B,DSPy Baseline,A,A,True,9369.4,
+Question_Paper_13_p27_q69,Chemistry,Gemma2 9B,DSPy Optimized,A,A,True,3721.7,
+Question_Paper_13_p27_q69,Chemistry,Mistral Nemo 12B,DSPy Baseline,A,A,True,10766.0,
+Question_Paper_13_p27_q69,Chemistry,Mistral Nemo 12B,DSPy Optimized,B,A,False,2722.2,

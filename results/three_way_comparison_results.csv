@@ -1,0 +1,38 @@
+question_id,subject,agent_type,response,correct_answer,is_correct,fact_score,quality_score,judge_reasoning,detected_subject,latency_ms
+Question_Paper_3_p45_q115,Biology,vanilla,"The correct answer is **D: Reduction of NADP to NADPH_2 on the stroma side of the membrane**.
+
+**Explanation:**
+
+Chemiosmosis is the process by which ATP is synthesized using the energy stored in a proton gradient across a membrane.  Here's how it works and why option D is incorrect:
+
+* **Proton Gradient:** Chemiosmosis relies on the establishment of a proton (H+) gradient across a membrane. Protons are pumped from one side of the membrane to the other, creating a higher concentration of protons on one side. This difference in concentration represents potential energy.
+* **Breakdown of the Gradient:** When protons flow back across the membrane through a special protein complex called ATP synthase, their movement releases energy. This energy is used to drive the synthesis of ATP from ADP and inorganic phosphate (Pi).
+
+Let's analyze the options:
+
+* **A: Breakdown of proton gradient:**  This is **true**. The flow of protons down their concentration gradient provides the energy for ATP synthesis.
+* **B: Breakdown of electron gradient:** While electron transport chains are involved in establishing the proton gradient, the direct breakdown of an electron gradient isn't the primary mechanism of ATP synthesis during chemiosmosis. 
+* **C: Movement of protons across the membrane to the stroma:** This is **true** in the case of chloroplasts (photosynthesis). Protons are pumped into the thylakoid space, creating a gradient that drives ATP synthesis.
+* **D: Reduction of NADP to NADPH_2 on the stroma side of the membrane:** This process is part of photosynthesis but is not directly related to chemiosmosis and ATP synthesis. NADPH formation is driven by the electron transport chain, which contributes to the proton gradient.",B,True,10,5,Judge error: No module named 'langchain_groq',Unknown,10607.8
+NEET_Q_36_P41_192,Biology,vanilla,"The correct answer is **D: 5’-ATCGATCGATCGATCGATCGATCGATCG-3’**
+
+**Explanation:**
+
+* **mRNA and Coding Strand:**  mRNA (messenger RNA) carries the genetic code from DNA to ribosomes for protein synthesis. The coding strand of DNA is the strand that has the same sequence as the mRNA, except it contains thymine (T) instead of uracil (U).
+* **Transcription:** The process of making mRNA from DNA is called transcription. During transcription, RNA polymerase reads the DNA template strand and builds a complementary mRNA molecule. 
+
+* **Complementary Base Pairing:**  Remember that in DNA and RNA, bases pair up specifically:
+    * Adenine (A) pairs with Thymine (T) in DNA or Uracil (U) in RNA.
+    * Guanine (G) pairs with Cytosine (C).
+
+
+Let me know if you have any other questions!",D,True,10,5,Judge error: No module named 'langchain_groq',Unknown,4441.2
+Question_Paper_30_p27_q133,Biology,vanilla,"**Answer:** A: Insect-pollinated plants 
+
+**Explanation:**  Large, colorful flowers with nectar are adaptations to attract insects for pollination. Insects are drawn to the bright colors and sweet nectar, and in the process of feeding, they transfer pollen from one flower to another.",A,True,10,5,Judge error: No module named 'langchain_groq',Unknown,2485.9
+Question_Paper_3_p45_q115,Biology,dspy_baseline,B,B,True,10,5,Judge error: No module named 'langchain_groq',Unknown,7559.1
+NEET_Q_36_P41_192,Biology,dspy_baseline,D,D,True,10,5,Judge error: No module named 'langchain_groq',Unknown,9792.3
+Question_Paper_30_p27_q133,Biology,dspy_baseline,A,A,True,10,5,Judge error: No module named 'langchain_groq',Unknown,8676.1
+Question_Paper_3_p45_q115,Biology,dspy_optimized,B,B,True,10,5,Judge error: No module named 'langchain_groq',Unknown,6537.8
+NEET_Q_36_P41_192,Biology,dspy_optimized,D,D,True,10,5,Judge error: No module named 'langchain_groq',Unknown,5170.2
+Question_Paper_30_p27_q133,Biology,dspy_optimized,A,A,True,10,5,Judge error: No module named 'langchain_groq',Unknown,5692.3
