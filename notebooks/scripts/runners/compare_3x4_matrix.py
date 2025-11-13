@@ -196,13 +196,14 @@ def vanilla_aneetaa_agent(question: str, model_name: str) -> str:
         return f"[Error: {str(e)}]\n{traceback.format_exc()}"
 
 def configure_dspy_ollama(model_name: str):
-    """Configure DSPy to use Ollama model."""
+    """Configure DSPy to use Ollama model WITHOUT caching."""
     ollama_url = os.getenv("OLLAMA_URL", "http://localhost:11434")
     lm = dspy.LM(
         model=f"ollama_chat/{model_name}",
         api_base=ollama_url,
         max_tokens=500,
-        temperature=0.3
+        temperature=0.02,
+        cache=False  # ⚠️ DISABLE CACHING for fair evaluation
     )
     dspy.settings.configure(lm=lm)
 
@@ -212,7 +213,15 @@ def dspy_baseline_agent(question: str, subject: str, model_name: str) -> str:
         configure_dspy_ollama(model_name)
         solver = MCQSolverModule()
         prediction = solver(question=question, subject=subject)
-        return prediction.answer if hasattr(prediction, 'answer') else str(prediction)
+        # Return both answer and reasoning for LLM judge
+        answer = getattr(prediction, 'answer', None)
+        reasoning = getattr(prediction, 'reasoning', None)
+        if answer and reasoning:
+            return f"{answer}\n\nExplanation: {reasoning}"
+        elif answer:
+            return str(answer)
+        else:
+            return str(prediction)
     except Exception as e:
         return f"[Error: {str(e)}]"
 
@@ -228,7 +237,15 @@ def dspy_optimized_agent(question: str, subject: str, model_name: str, optimized
             print(f"  ⚠️  {optimizer_name} model not found: {optimized_path}, using baseline")
         
         prediction = solver(question=question, subject=subject)
-        return prediction.answer if hasattr(prediction, 'answer') else str(prediction)
+        # Return both answer and reasoning for LLM judge
+        answer = getattr(prediction, 'answer', None)
+        reasoning = getattr(prediction, 'reasoning', None)
+        if answer and reasoning:
+            return f"{answer}\n\nExplanation: {reasoning}"
+        elif answer:
+            return str(answer)
+        else:
+            return str(prediction)
     except Exception as e:
         return f"[Error: {str(e)}]"
 
@@ -538,49 +555,48 @@ def main():
         # Save results
         df_detailed = pd.DataFrame(all_results)
         
-        detailed_output = ROOT / "results" / "3x4_matrix_detailed_results.csv"
-        summary_output = ROOT / "results" / "3x4_matrix_summary.csv"
-        
+        detailed_output = ROOT / "results" / "one_question_test.csv"
+        summary_output = ROOT / "results" / "one_question_test_summary.csv"
+
         df_detailed.to_csv(detailed_output, index=False)
         df_summary.to_csv(summary_output, index=False)
-        
+
         mlflow.log_artifact(str(detailed_output))
         mlflow.log_artifact(str(summary_output))
-        
-        # Log metrics
-        for row in summary_data:
-            prefix = f"{row['Model'].replace(' ', '_')}_{row['Agent_Type'].replace(' ', '_')}"
-            mlflow.log_metric(f"{prefix}_accuracy", row['Accuracy_%'])
-            mlflow.log_metric(f"{prefix}_fact_score", row['Avg_Fact_Score'])
-            mlflow.log_metric(f"{prefix}_quality", row['Avg_Quality_Score'])
-            mlflow.log_metric(f"{prefix}_latency", row['Avg_Latency_ms'])
-        
-        print(f"\n✓ Detailed results: {detailed_output}")
-        print(f"✓ Summary: {summary_output}")
-        print(f"✓ MLflow: {mlflow.get_tracking_uri()}")
-        
-        # Find best configuration
-        best_idx = df_summary['Accuracy_%'].idxmax()
-        best_config = df_summary.iloc[best_idx]
-        print(f"\n🏆 Best Configuration:")
-        print(f"   {best_config['Model']} + {best_config['Agent_Type']}")
-        print(f"   Accuracy: {best_config['Accuracy_%']}%")
-        print(f"   Quality: {best_config['Avg_Quality_Score']}/10")
-        
-        # Compare Bootstrap vs MIPROv2
-        print(f"\n📊 Bootstrap vs MIPROv2 Comparison:")
-        for model_config in MODELS:
-            bootstrap_results = [r for r in summary_data 
-                                if r['Model'] == model_config['display'] and 'Bootstrap' in r['Agent_Type']]
-            mipro_results = [r for r in summary_data 
-                           if r['Model'] == model_config['display'] and 'MIPROv2' in r['Agent_Type']]
-            
-            if bootstrap_results and mipro_results:
-                bootstrap_acc = bootstrap_results[0]['Accuracy_%']
-                mipro_acc = mipro_results[0]['Accuracy_%']
-                diff = mipro_acc - bootstrap_acc
-                print(f"   {model_config['display']}:")
-                print(f"      Bootstrap: {bootstrap_acc}% | MIPROv2: {mipro_acc}% | Δ {diff:+.1f}%")
+
+    # Log metrics
+    for row in summary_data:
+        prefix = f"{row['Model'].replace(' ', '_')}_{row['Agent_Type'].replace(' ', '_')}"
+        mlflow.log_metric(f"{prefix}_accuracy", row['Accuracy_%'])
+        mlflow.log_metric(f"{prefix}_fact_score", row['Avg_Fact_Score'])
+        mlflow.log_metric(f"{prefix}_quality", row['Avg_Quality_Score'])
+        mlflow.log_metric(f"{prefix}_latency", row['Avg_Latency_ms'])
+
+    print(f"\n✓ Detailed results: {detailed_output}")
+    print(f"✓ Summary: {summary_output}")
+    print(f"✓ MLflow: {mlflow.get_tracking_uri()}")
+
+    # Find best configuration
+    best_idx = df_summary['Accuracy_%'].idxmax()
+    best_config = df_summary.iloc[best_idx]
+    print(f"\n🏆 Best Configuration:")
+    print(f"   {best_config['Model']} + {best_config['Agent_Type']}")
+    print(f"   Accuracy: {best_config['Accuracy_%']}%")
+    print(f"   Quality: {best_config['Avg_Quality_Score']}/10")
+
+    # Compare Bootstrap vs MIPROv2
+    print(f"\n📊 Bootstrap vs MIPROv2 Comparison:")
+    for model_config in MODELS:
+        bootstrap_results = [r for r in summary_data 
+                            if r['Model'] == model_config['display'] and 'Bootstrap' in r['Agent_Type']]
+        mipro_results = [r for r in summary_data 
+                       if r['Model'] == model_config['display'] and 'MIPROv2' in r['Agent_Type']]
+        if bootstrap_results and mipro_results:
+            bootstrap_acc = bootstrap_results[0]['Accuracy_%']
+            mipro_acc = mipro_results[0]['Accuracy_%']
+            diff = mipro_acc - bootstrap_acc
+            print(f"   {model_config['display']}:")
+            print(f"      Bootstrap: {bootstrap_acc}% | MIPROv2: {mipro_acc}% | Δ {diff:+.1f}%")
     
     print("\n" + "="*70)
     print("EVALUATION COMPLETE")
