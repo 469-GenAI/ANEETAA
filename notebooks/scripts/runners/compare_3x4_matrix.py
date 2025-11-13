@@ -607,8 +607,8 @@ def main():
         # Save results
         df_detailed = pd.DataFrame(all_results)
         
-        detailed_output = ROOT / "results" / "one_question_test.csv"
-        summary_output = ROOT / "results" / "one_question_test_summary.csv"
+        detailed_output = ROOT / "results" / "3x4_matrix_detailed_results.csv"
+        summary_output = ROOT / "results" / "3x4_matrix_summary.csv"
 
         df_detailed.to_csv(detailed_output, index=False)
         df_summary.to_csv(summary_output, index=False)
