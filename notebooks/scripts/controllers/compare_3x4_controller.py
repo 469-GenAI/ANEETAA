@@ -17,7 +17,7 @@ from pathlib import Path
 
 COMPARISON_CONFIG = {
     # Test Configuration
-    'test_samples': 40,              # Number of test questions
+    'test_samples': 1,              # Number of test questions
     'batch_size': 20,                # Questions per API key (for Groq rate limiting)
     'start_index': 0,                # Starting index in dataset (deterministic)
     'use_validation_set': True,      # Use validation dataset
